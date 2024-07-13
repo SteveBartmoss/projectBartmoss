@@ -1,11 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
+import { DivMain } from './componentes/contenedores/contenedores';
 
 function App() {
   return (
-    <div className="App">
+    <DivMain>
       
-    </div>
+    </DivMain>
   );
 }
 
