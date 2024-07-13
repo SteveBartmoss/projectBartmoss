@@ -7,3 +7,11 @@ export function DivMain({children}){
         </div>
     )
 }
+
+export function DivRow({children}){
+    return(
+        <div>
+            {children}
+        </div>
+    )
+}
