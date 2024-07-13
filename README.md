@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Repositorio del blog personas de Steve
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Visita el blog en [aqui](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
