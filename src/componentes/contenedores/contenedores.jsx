@@ -15,3 +15,11 @@ export function DivRow({children}){
         </div>
     )
 }
+
+export function DivCol({children}){
+    return(
+        <div>
+            {children}
+        </div>
+    )
+}
