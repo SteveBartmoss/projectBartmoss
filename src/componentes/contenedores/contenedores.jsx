@@ -10,7 +10,7 @@ export function DivMain({children}){
 
 export function DivRow({children}){
     return(
-        <div>
+        <div className="div-row">
             {children}
         </div>
     )
@@ -18,7 +18,7 @@ export function DivRow({children}){
 
 export function DivCol({children}){
     return(
-        <div>
+        <div className="div-col">
             {children}
         </div>
     )
