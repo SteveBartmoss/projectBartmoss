@@ -9,7 +9,7 @@ export function Portada({imgPortada}){
                     <img className="img-portada" src="/Assets/steveBartmoss.jpg" /> 
                 </div>
                 <DivCol>
-                    <h1>Steve Bartmoss</h1>
+                    <h1 className="title-portada">Steve Bartmoss</h1>
                     <p className="text-portada">No le preguntes a la documentacion pregutame a mi</p>
                 </DivCol>
             </DivRow>
