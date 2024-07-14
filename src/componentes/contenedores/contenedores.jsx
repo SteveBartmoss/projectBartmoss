@@ -23,3 +23,11 @@ export function DivCol({children}){
         </div>
     )
 }
+
+export function DivSection({children}){
+    return(
+        <div className="div-section">
+            {children}
+        </div>
+    )
+}
