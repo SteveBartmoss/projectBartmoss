@@ -15,6 +15,12 @@
 .frame-img {
     width: 15%;
     margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.title-portada{
+    color: white;
+    font-family: "Poppins";
 }
 
 .img-portada {
