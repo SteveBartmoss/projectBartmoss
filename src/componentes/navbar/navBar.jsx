@@ -6,8 +6,9 @@ export function NavBar(){
     return(
         <div className="div-nav-bar">
             <NavLink to={"/"}>Void return</NavLink>
-            <NavLink to={"steve"}>Steve</NavLink>
             <NavLink to={"docu"}>Docu</NavLink>
+            <NavLink to={"steve"}>Steve</NavLink>
+            
         </div>
     )
 }
