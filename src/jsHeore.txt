@@ -1,0 +1,146 @@
+
+en el desarrollo de la web uno de los lenguajes mas usados es java script pero aunque este lenguaje tiene muchas 
+funciones interesantes existen algunos casos que pueden generar resultados
+inesperados 
+
+JavaScript es un lenguaje de programación muy popular, especialmente en el desarrollo web. Sin embargo, como cualquier otro lenguaje, tiene sus propias peculiaridades y desafíos que pueden llevar a problemas si no se manejan correctamente. Aquí hay algunos ejemplos de inconvenientes comunes en JavaScript:
+1. Manejo de Asincronía
+
+JavaScript es un lenguaje asincrónico por naturaleza, lo que significa que puede realizar múltiples tareas simultáneamente. Sin embargo, esto puede llevar a problemas si no se maneja adecuadamente.
+Problema de Callback Hell
+
+El uso excesivo de callbacks anidados puede hacer que el código sea difícil de leer y mantener.
+
+doSomething(function(result) {
+    doSomethingElse(result, function(newResult) {
+        doAnotherThing(newResult, function(finalResult) {
+            console.log(finalResult);
+        });
+    });
+});
+
+Solución: Promesas y Async/Await
+
+El uso de Promesas y async/await puede hacer que el código asincrónico sea más limpio y manejable.
+
+async function asyncTask() {
+    try {
+        const result = await doSomething();
+        const newResult = await doSomethingElse(result);
+        const finalResult = await doAnotherThing(newResult);
+        console.log(finalResult);
+    } catch (error) {
+        console.error(error);
+    }
+}
+
+
+2. Manejo de Memoria y Fugas de Memoria
+
+Aunque JavaScript tiene un recolector de basura, aún es posible crear fugas de memoria si no se maneja adecuadamente.
+Fuga de Memoria por Referencias No Liberadas
+
+function createBigArray() {
+    let bigArray = new Array(1000000).fill('some data');
+    return function() {
+        console.log(bigArray);
+    };
+}
+
+const leakyFunction = createBigArray();
+
+
+Solución: Liberar Referencias
+
+Asegúrate de liberar las referencias a objetos grandes cuando ya no se necesiten.
+
+function createBigArray() {
+    let bigArray = new Array(1000000).fill('some data');
+    return function() {
+        console.log(bigArray);
+        bigArray = null; // Liberar referencia
+    };
+}
+
+const leakyFunction = createBigArray();
+
+
+3. Coerción de Tipos
+
+JavaScript es un lenguaje débilmente tipado, lo que significa que las variables pueden cambiar de tipo dinámicamente. Esto puede llevar a comportamientos inesperados.
+Comparaciones de Tipos
+
+console.log(1 == '1'); // true
+console.log(1 === '1'); // false
+
+
+Solución: Usar Comparaciones Estrictas
+
+Siempre que sea posible, usa comparaciones estrictas (=== y !==) para evitar la coerción de tipos.
+
+4. El Alcance de Variables
+
+El alcance de variables en JavaScript puede ser confuso, especialmente con la diferencia entre var, let, y const.
+Problema con var
+
+for (var i = 0; i < 5; i++) {
+    setTimeout(function() {
+        console.log(i); // Imprime 5 cinco veces
+    }, 1000);
+}
+
+
+Solución: Usar let o const
+
+for (let i = 0; i < 5; i++) {
+    setTimeout(function() {
+        console.log(i); // Imprime 0, 1, 2, 3, 4
+    }, 1000);
+}
+
+
+5. Problemas de Contexto (this)
+
+El valor de this puede ser confuso en JavaScript, ya que depende del contexto en el que se llama a la función.
+
+const person = {
+    name: 'John',
+    greet: function() {
+        setTimeout(function() {
+            console.log(`Hello, my name is ${this.name}`); // `this` no se refiere a `person`
+        }, 1000);
+    }
+};
+
+person.greet(); // Undefined
+
+Solución: Usar Arrow Functions o bind
+
+const person = {
+    name: 'John',
+    greet: function() {
+        setTimeout(() => {
+            console.log(`Hello, my name is ${this.name}`); // `this` se refiere a `person`
+        }, 1000);
+    }
+};
+
+person.greet(); // "Hello, my name is John"
+
+6. Mutabilidad de Objetos y Arrays
+
+En JavaScript, los objetos y arrays son mutables por defecto, lo que puede llevar a cambios no deseados en datos.
+Problema
+
+const person = { name: 'John', age: 30 };
+const anotherPerson = person;
+anotherPerson.age = 35;
+console.log(person.age); // 35
+
+Solución: Crear Copias
+
+Para evitar mutaciones, crea copias de objetos y arrays.
+
+const person = { name: 'John', age: 30 };
+const anotherPerson = { ...person, age: 35 };
+console.log(person.age); // 30
