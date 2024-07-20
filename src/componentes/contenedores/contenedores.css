@@ -15,6 +15,6 @@
 
 .div-section{
     width: 70%;
-    height: 100vh;
+    min-height: 100vh;
     margin: auto;
 }
