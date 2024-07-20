@@ -2,13 +2,16 @@ import './navBar.css'
 import { NavLink } from "react-router-dom";
 
 
-export function NavBar(){
-    return(
+export function NavBar() {
+    return (
         <div className="div-nav-bar">
-            <NavLink to={"/"}>Void return</NavLink>
-            <NavLink to={"docu"}>Docu</NavLink>
-            <NavLink to={"steve"}>Steve</NavLink>
-            
+            <div>
+                <NavLink className="nav-item" to={"/"}>Void return</NavLink>
+            </div>
+            <di>
+                <NavLink className="nav-item" to={"docu"}>Docu</NavLink>
+                <NavLink className="nav-item" to={"steve"}>Steve</NavLink>
+            </di>
         </div>
     )
 }
