@@ -2,7 +2,7 @@ import { useState } from "react";
 import './tabs.css';
 import { DivCol, DivRow } from "../contenedores/contenedores";
 
-export function Tabs({ headers, elements }) {
+export function Tabs({ headers, elements, position="" }) {
 
     const [currentTab, setCurrentTab] = useState(1);
 
@@ -12,7 +12,7 @@ export function Tabs({ headers, elements }) {
 
     return (
         <DivCol>
-            <div className="container-head">
+            <div className={`container-head ${position}`}>
                 {
                     headers.map(head =>
                         <div key={head.title} className="header-tabs">
