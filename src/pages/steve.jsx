@@ -8,7 +8,7 @@ export function Steve() {
         <div>
             <Portada />
             <DivSection>
-                <Tabs headers={
+                <Tabs position="position-center" headers={
                     [
                         {
                             id: 0,
