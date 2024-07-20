@@ -31,3 +31,11 @@ export function DivSection({children}){
         </div>
     )
 }
+
+export function DivPanel({children}){
+    return(
+        <div className="div-panel">
+            {children}
+        </div>
+    )
+}
