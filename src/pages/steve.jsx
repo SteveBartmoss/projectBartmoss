@@ -15,7 +15,13 @@ export function Steve() {
                             title: "Info",
                             content:
                                 <div>
-                                    <h1>Info personal</h1>
+                                    <h1>Acerca de steve</h1>
+                                    <p>
+                                        Programador web fan de los temas cyberpunk 
+                                        sobre prgramacion, tecnologia y videojuegos. 
+                                        Con la idea de poder compartir con otas personas 
+                                        el conocimiento sobre programacion que posee
+                                    </p>
                                     <DivCol>
                                         <DivRow>
                                             <DivCol>
