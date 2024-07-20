@@ -1,4 +1,5 @@
 import { Card, CardText, CardTitle } from "../componentes/card/card";
+import { Chip } from "../componentes/chips/chip";
 import { DivCol, DivPanel, DivRow, DivSection } from "../componentes/contenedores/contenedores";
 import { Portada } from "../componentes/portada/portada";
 import { Tabs } from "../componentes/tabs/tabs";
@@ -30,9 +31,11 @@ export function Steve() {
                                             <DivCol>
                                                 <Card>
                                                     <CardTitle>Skills</CardTitle>
-                                                    <p>React</p>
-                                                    <p>JavaScript</p>
-                                                    <p>Linux</p>
+                                                    <DivRow>
+                                                        <Chip color={"principal"}>React</Chip>
+                                                        <Chip color={"warning"}>JavaScript</Chip>
+                                                        <Chip color={"success"}>Linux</Chip>
+                                                    </DivRow>
                                                 </Card>
                                                 <Card>
                                                     <CardTitle>Stats</CardTitle>
@@ -49,7 +52,7 @@ export function Steve() {
                                                     <CardTitle>Uso de Lenguajes</CardTitle>
                                                 </Card>
                                             </DivCol>
-                                            
+
                                             <DivCol>
 
                                                 <Card>
