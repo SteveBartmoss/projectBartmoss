@@ -12,7 +12,7 @@ export function Tabs({ headers, elements }) {
 
     return (
         <DivCol>
-            <DivRow>
+            <div className="container-head">
                 {
                     headers.map(head =>
                         <div key={head.title} className="header-tabs">
@@ -20,7 +20,7 @@ export function Tabs({ headers, elements }) {
                         </div>
                     )
                 }
-            </DivRow>
+            </div>
             <DivRow>
                 {
                     headers.map(head =>
