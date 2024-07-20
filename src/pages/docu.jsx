@@ -1,8 +1,11 @@
+import { DivSection } from "../componentes/contenedores/contenedores";
 
-export function Docu(){
-    return(
+export function Docu() {
+    return (
         <div>
-            <h1>Docu</h1>
+            <DivSection>
+                <h1>Docu</h1>
+            </DivSection>
         </div>
     )
 }
