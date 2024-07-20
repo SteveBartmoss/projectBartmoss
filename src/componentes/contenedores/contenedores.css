@@ -1,7 +1,5 @@
 .div-main {
     background-color: #282c34;
-    width: 100vw;
-    height: 100vh;
     color: white;
 }
 
@@ -17,6 +15,6 @@
 
 .div-section{
     width: 70%;
-    height: 90%;
+    height: 100vh;
     margin: auto;
 }
