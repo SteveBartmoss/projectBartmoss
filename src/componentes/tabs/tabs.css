@@ -3,6 +3,18 @@
     flex-direction: row;
 }
 
+.position-center{
+    margin: auto;
+}
+
+.position-left{
+    flex-direction: row-reverse;
+}
+
+.position-fill{
+    justify-content: space-between;
+}
+
 .header-tabs {
     display: flex;
     flex-direction: row;
