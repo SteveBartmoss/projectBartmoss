@@ -1,4 +1,4 @@
-import { Card, CardTitle } from "../componentes/card/card";
+import { Card, CardText, CardTitle } from "../componentes/card/card";
 import { DivCol, DivPanel, DivRow, DivSection } from "../componentes/contenedores/contenedores";
 import { Portada } from "../componentes/portada/portada";
 import { Tabs } from "../componentes/tabs/tabs";
@@ -16,36 +16,46 @@ export function Steve() {
                             title: "Info",
                             content:
                                 <div>
-                                    <h1>Acerca de steve</h1>
-                                    <p>
-                                        Programador web fan de los temas cyberpunk
-                                        sobre prgramacion, tecnologia y videojuegos.
-                                        Con la idea de poder compartir con otas personas
-                                        el conocimiento sobre programacion que posee
-                                    </p>
+                                    <Card>
+                                        <CardTitle>Acerca de steve</CardTitle>
+                                        <CardText>
+                                            Programador web fan de los temas cyberpunk
+                                            sobre prgramacion, tecnologia y videojuegos.
+                                            Con la idea de poder compartir con otas personas
+                                            el conocimiento sobre programacion que posee
+                                        </CardText>
+                                    </Card>
                                     <DivCol>
                                         <DivRow>
                                             <DivCol>
-                                                <div>
-                                                    <h1>Skills</h1>
+                                                <Card>
+                                                    <CardTitle>Skills</CardTitle>
                                                     <p>React</p>
                                                     <p>JavaScript</p>
                                                     <p>Linux</p>
-                                                </div>
-                                                <div>
+                                                </Card>
+                                                <Card>
+                                                    <CardTitle>Stats</CardTitle>
+                                                    <CardText></CardText>
                                                     <p>Horas de programacion:</p>
-                                                </div>
-                                                <div>
-                                                    <h1>Manejador de Versiones</h1>
-                                                    <h1>Editor Favorito</h1>
-                                                    <h1>Distribucion usada</h1>
-                                                    <h1>Lenguaje Favorito</h1>
-                                                </div>
-                                                <div>
-                                                    <h1>Lenguajes Usados</h1>
-                                                </div>
+                                                </Card>
+                                                <Card>
+                                                    <CardTitle>Manejador de Versiones</CardTitle>
+                                                    <CardTitle>Editor Favorito</CardTitle>
+                                                    <CardTitle>Distribucion usada</CardTitle>
+                                                    <CardTitle>Lenguaje Favorito</CardTitle>
+                                                </Card>
+                                                <Card>
+                                                    <CardTitle>Uso de Lenguajes</CardTitle>
+                                                </Card>
                                             </DivCol>
+                                            
                                             <DivCol>
+
+                                                <Card>
+                                                    <CardTitle>Proyectos Actuales</CardTitle>
+                                                </Card>
+
                                                 <Card>
                                                     <CardTitle>Lenguajes usados</CardTitle>
                                                 </Card>
