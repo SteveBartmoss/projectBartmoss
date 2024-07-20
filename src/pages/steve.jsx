@@ -3,8 +3,8 @@ import { Portada } from "../componentes/portada/portada";
 import { Tabs } from "../componentes/tabs/tabs";
 
 
-export function Steve(){
-    return(
+export function Steve() {
+    return (
         <div>
             <Portada />
             <DivSection>
@@ -16,12 +16,22 @@ export function Steve(){
                             content:
                                 <div>
                                     <h1>Info personal</h1>
+                                    <DivCol>
+                                        <DivRow>
+                                            <DivCol>
+                                                <h1>Section de informacion</h1>
+                                            </DivCol>
+                                            <DivCol>
+                                                <h1>Section de marcadores</h1>
+                                            </DivCol>
+                                        </DivRow>
+                                    </DivCol>
                                 </div>
                         },
                         {
                             id: 1,
                             title: "Time Line",
-                            content: 
+                            content:
                                 <div>
                                     <h1>Info Time line</h1>
                                 </div>,
@@ -35,19 +45,9 @@ export function Steve(){
                                 </div>,
                         }
                     ]
-                    
+
                 } />
-                <h1>Conetnido del perfil</h1>
-                <DivCol>
-                    <DivRow>
-                        <DivCol>
-                            <h1>Section de informacion</h1>
-                        </DivCol>
-                        <DivCol>
-                            <h1>Section de marcadores</h1>
-                        </DivCol>
-                    </DivRow>
-                </DivCol>
+
             </DivSection>
         </div>
     )
