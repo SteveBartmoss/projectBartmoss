@@ -1,4 +1,4 @@
-# Repositorio del blog personas de Steve
+# Repositorio del blog personal de Steve
 
 Visita el blog en [aqui](https://github.com/facebook/create-react-app).
 
