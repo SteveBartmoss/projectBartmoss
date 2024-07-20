@@ -1,8 +1,62 @@
 .card-basic {
-    /*background-color: var(--gris-3);*/
+    background-color: var(--gris-3);
     min-width: 30rem;
     border-radius: 1rem;
     padding: 1rem;
     margin: 1rem;
     box-shadow: 0px 1px 10px rgba(116, 152, 182, 0.2);
+}
+
+.card {
+    min-width: 30rem;
+    min-height: 25rem;
+    border-radius: 1rem;
+    margin: 1rem;
+    box-shadow: 0px 1px 10px rgba(116, 152, 182, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.card-img-content {
+    background-color: var(--gris-3);
+    padding: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.card-title {
+    color: white;
+    font-family: "Poppins";
+    font-size: 1.3rem;
+}
+
+.card-text {
+    color: white;
+    font-family: "Poppins";
+    font-size: 1.2;
+}
+
+.card-link {
+    text-decoration: none;
+    color: white;
+    font-family: "Poppins";
+    font-weight: 600;
+    background-color: var(--azul-11);
+    padding: 1rem;
+    border-radius: .5rem;
+}
+
+.card-actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.card-content {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
 }
