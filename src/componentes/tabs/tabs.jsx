@@ -7,9 +7,7 @@ export function Tabs({ headers, elements }) {
     const [currentTab, setCurrentTab] = useState(1);
 
     const onTabChange = (id) => {
-        //console.log('id',id)
         setCurrentTab(id)
-        //console.log('tab', currentTab)
     }
 
     return (
