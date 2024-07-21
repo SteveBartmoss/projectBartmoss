@@ -1,18 +1,18 @@
 # Repositorio del blog personal de Steve
 
-Visita el blog en [aqui](https://github.com/facebook/create-react-app).
+Visita el blog en siguiente enlace [project bartmoss](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Sobre el blog
 
-In the project directory, you can run:
+Pagina creada para compartir estados que se me ocurran ya que funcionara 
+como blog personal, blog de tutoriales o blog de ayuda para los desarrolladores 
+asi que puede que el contenido te resulte interesante
 
-### `npm start`
+### `Actualizaciones`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Se espera que la actualizacion del blog sea al menos una vez por semana 
+pero esto no sera una especie de regla ya que puede que esto sea intermmitente 
+(no siempre tengo tiempo o mucha creatividad para escribir)
 
 ### `npm test`
 
