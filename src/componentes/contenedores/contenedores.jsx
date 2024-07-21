@@ -39,3 +39,11 @@ export function DivPanel({children}){
         </div>
     )
 }
+
+export function DivArticle({children}){
+    return(
+        <div className="div-article">
+            {children}
+        </div>
+    )
+}
