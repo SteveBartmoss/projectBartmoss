@@ -1,16 +1,16 @@
 import './portada.css';
 import { DivCol, DivRow } from "../contenedores/contenedores";
 
-export function Portada({imgPortada}){
+export function Portada({imgPortada, title, text}){
     return(
         <section className="portada">
             <DivRow>
                 <div className="frame-img">
-                    <img alt="imgPerfil" className="img-portada" src="/Assets/steveBartmoss.jpg" /> 
+                    <img alt="imgPerfil" className="img-portada" src={imgPortada} /> 
                 </div>
                 <DivCol>
-                    <h1 className="title-portada">Steve Bartmoss</h1>
-                    <p className="text-portada">No le preguntes a la documentacion pregutame a mi</p>
+                    <h1 className="title-portada">{title}</h1>
+                    <p className="text-portada">{text}</p>
                 </DivCol>
             </DivRow>
         </section>
