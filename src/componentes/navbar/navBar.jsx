@@ -8,10 +8,10 @@ export function NavBar() {
             <div>
                 <NavLink className="nav-item" to={"/"}>Void return</NavLink>
             </div>
-            <di>
+            <div>
                 <NavLink className="nav-item" to={"docu"}>Docu</NavLink>
                 <NavLink className="nav-item" to={"steve"}>Steve</NavLink>
-            </di>
+            </div>
         </div>
     )
 }
