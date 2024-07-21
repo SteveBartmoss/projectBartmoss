@@ -8,7 +8,7 @@ import { Tabs } from "../componentes/tabs/tabs";
 export function Steve() {
     return (
         <div>
-            <Portada />
+            <Portada imgPortada={"/Assets/steveBartmoss.jpg"} title={"Steve Bartmoss"} text={"No le preuntesa la documentacion, preguntame a mi"} />
             <DivSection>
                 <Tabs position="position-center" headers={
                     [
