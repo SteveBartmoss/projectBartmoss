@@ -1,14 +1,13 @@
 import { DivSection } from "../componentes/contenedores/contenedores";
+import { Portada } from "../componentes/portada/portada";
 
 export function Home() {
     return (
         <div>
+            <Portada imgPortada={"/Assets/steveBartmoss.jpg"} title={"Void Return"} 
+                text={"Blog dedicado a contar la vida de un programador y algunas otras cosas interesates"} />
             <DivSection>
-                <h1>Void Return</h1>
-                <p>Blog dedicado a contar la vida de un programador</p>
-
                 <h1>Ultimos Articulos</h1>
-                
                 <p>
                     Lista de articulos XD
                 </p>
