@@ -18,3 +18,9 @@
     min-height: 100vh;
     margin: auto;
 }
+
+.div-article{
+    width: 60%;
+    margin: auto;
+    padding: 1rem;
+}
