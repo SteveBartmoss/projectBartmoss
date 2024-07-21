@@ -13,7 +13,7 @@ export function Docu() {
                         aqui te contamos cosas que te pueden ayudar
                     </CardText>
                     <CardAccions>
-                        <CardLink url={''} text={'Ir al articulo'} />
+                        <CardLink url={'docu/primerospasos'} text={'Ir al articulo'} />
                     </CardAccions>
                 </Card>
             </DivSection>
