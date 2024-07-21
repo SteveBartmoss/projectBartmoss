@@ -20,7 +20,7 @@ export function Docu() {
                         </CardText>
                         <Chip color="warning">Java Script</Chip>
                         <CardAccions>
-                            <CardLink url={'docu/primerospasos'} text={'Ir al articulo'} />
+                            <CardLink url={'primerospasos'} text={'Ir al articulo'} />
                         </CardAccions>
                     </Card>
                 </DivTopicos>
