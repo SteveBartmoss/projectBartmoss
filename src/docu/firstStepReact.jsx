@@ -154,22 +154,130 @@ export function FirstStepReact() {
                     <a href="https://code.visualstudio.com/Download" target="_blank">vs Code</a>
 
                     <p>
-                        Si ya tienes otro editor de codigo preferido se puede usar 
+                        Si ya tienes otro editor de codigo preferido se puede usar
                         cualquier otro que sea de tu agrado
                     </p>
 
                     <h1>Crea un proyecto nuevo con react</h1>
 
                     <p>
-                        Ahora que tenemos instalado el ambiente podemos 
-                        empezar con nuestra primera aplicacion de 
+                        Ahora que tenemos instalado el ambiente podemos
+                        empezar con nuestra primera aplicacion de
                         reasct
                     </p>
 
                     <h2>Comando create-react-app</h2>
 
                     <p>
-                        Lo primero que tenemos que hacer es 
+                        Lo primero que tenemos que hacer es
+                    </p>
+
+                    <p>
+                        abrir una terminal en nuestra computadora
+                        para ejecutar el siguiente comando
+                    </p>
+
+                    <code>
+                        npm create-react-app prueba
+                    </code>
+
+                    <p>
+                        Esto crea un proyecto de react que estara listo
+                        para desplegarse en caso de que se quiera hacer
+                        alguna prueba
+                    </p>
+
+                    <p>
+                        Nota: el comando no admite la siguiente sentencia Prueba, proyectoPrueba o proyecto_prueba
+                        esto se debe a la forma en que trabaja el script y solo admite nombres en minusculas o con
+                        kebab case por ejemplo proyecto-prueba
+                    </p>
+
+                    <p>
+                        Una vez que el comando ese ejecute correctamente habra una carpeta con el nombre que
+                        pasamos al comando y entonces podemos entrar a la carpeta del proyecto y levantar
+                        el proyecto con el siguiente comando
+                    </p>
+
+                    <code>
+                        npm start
+                    </code>
+
+                    <p>
+                        Esto levanatara un servidor de desarrollo en nuestro equipo mediante la llamada de
+                        react-scripts lo cual levantara el servidor en el local host de la maquina con el puerto
+                        3000 por defecto, este servidor es accesible desde la red si usamos la ip de la maquina
+                        y el puerto, esto nos permite poder ver la aplicacion desde diferentes dispositivos de manera
+                        nativa lo cual es util cuando estas desarrollando una aplicación multi plataforma
+                    </p>
+
+                    <h1>Estructura de directorios</h1>
+
+                    <p>
+                        Dentro de la carpeta que creo el comando de react podremos ver la siguiente estructura de ficheros
+                    </p>
+
+                    <p>
+                        public <br />
+                        src <br />
+                        node_modules
+                    </p>
+
+                    <h1>
+                        Directorio public
+                    </h1>
+
+                    <p>
+                        Este directorio es donde se almacenan cierta clase de archivos en genera cuenta con las siguientes
+                        características
+                    </p>
+
+                    <h2>Archivos Estáticos</h2>
+
+                    <p>
+                        La carpeta public se utiliza para almacenar archivos estáticos que no necesitan ser procesados por Webpack. Estos archivos se copian tal cual al directorio de construcción (build) durante el proceso de construcción.
+                    </p>
+
+                    <h2>index.html</h2>
+
+                    <p>
+                        El archivo index.html en la carpeta public es la plantilla HTML principal de tu aplicación.
+                        Durante el proceso de construcción, CRA inyecta automáticamente los bundles de JavaScript y CSS en este archivo.
+                        Puedes personalizar este archivo para incluir meta tags, enlaces a hojas de estilo externas, scripts, etc.
+                    </p>
+
+                    <h2>Meta Tags y SEO</h2>
+
+                    <p>
+                        Puedes añadir meta tags dentro de index.html para mejorar el SEO y la apariencia de la página en los motores de búsqueda.
+                        Ejemplos incluyen
+                    </p>
+
+                    <code>
+                        meta name="description" content="Descripción de tu aplicación"  y meta property="og:image" content="/path/to/image.jpg"
+                    </code>
+
+                    <h2>Archivos de Configuración</h2>
+
+                    <p>
+                        Archivos como manifest.json y robots.txt suelen estar en la carpeta public.
+                        manifest.json se utiliza para la configuración de Progressive Web Apps (PWA).
+                        robots.txt se usa para dar instrucciones a los motores de búsqueda sobre qué partes de tu sitio pueden rastrear.
+                    </p>
+
+                    <h2>Imágenes y Medios</h2>
+
+                    <p>
+
+                    </p>
+
+                    <p>
+                        Cualquier imagen, fuente o archivo multimedia que coloques en la carpeta public estará disponible en la raíz de tu aplicación. Por ejemplo, un archivo public/logo.png estará disponible en https://tusitio.com/logo.png.
+                    </p>
+
+                    <h2>Favicon</h2>
+                    <p>
+                        Puedes colocar tu favicon en la carpeta public y referenciarlo en index.html mediante link rel="icon" href="%PUBLIC_URL%/favicon.ico".
                     </p>
                 </DivArticle>
             </DivSection>
