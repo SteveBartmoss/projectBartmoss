@@ -279,6 +279,77 @@ export function FirstStepReact() {
                     <p>
                         Puedes colocar tu favicon en la carpeta public y referenciarlo en index.html mediante link rel="icon" href="%PUBLIC_URL%/favicon.ico".
                     </p>
+
+                    <h1>Directorio src</h1>
+
+                    <p>
+                        En un proyecto de React creado con Create React App (CRA), la carpeta src es donde resides el código fuente de tu aplicación. Esta carpeta contiene todos los componentes, estilos y archivos que se procesarán y transpilizarán mediante Webpack para crear el paquete final de tu aplicación. Aquí hay un desglose de sus funciones y características clave:
+                    </p>
+
+                    <h2>Función de la Carpeta src</h2>
+
+                    <h3>Contener Componentes React</h3>
+
+                    <p>
+                        Aquí es donde defines tus componentes de React, tanto funcionales como de clase.
+                        Los componentes pueden estar organizados en subcarpetas para mantener el proyecto limpio y estructurado.
+                    </p>
+
+                    <h3>Almacenar Estilos y Archivos CSS/SCSS</h3>
+
+                    <p>
+                        Archivos de estilo como CSS, SCSS o cualquier otro preprocesador pueden residir aquí.
+                        Puedes importar estos archivos directamente en tus componentes.
+                    </p>
+
+                    <h3>Lógica de Aplicación</h3>
+
+                    <p>
+                        Archivos que contienen la lógica de tu aplicación, como funciones utilitarias, hooks personalizados, contextos y más, se encuentran aquí.
+                    </p>
+
+                    <h3>Archivos de Configuración y Entrypoint</h3>
+
+                    <p>
+                        Contiene el punto de entrada de la aplicación, generalmente index.js o index.tsx, donde ReactDOM.render se llama para montar la aplicación en el DOM.
+                        También contiene otros archivos de configuración como App.js o App.tsx que definen la estructura base de la aplicación.
+                    </p>
+
+                    <h1>Directorio node_modules</h1>
+
+                    <p>
+                        La carpeta node_modules contiene todas las dependencias del proyecto. Estas dependencias son bibliotecas y paquetes que el proyecto necesita para funcionar correctamente. La gestión de estas dependencias se realiza mediante el archivo package.json y se instala utilizando el comando npm install o yarn install.
+                    </p>
+
+                    <h2>Características de la Carpeta node_modules</h2>
+
+                    <h3>Almacenamiento de Dependencias</h3>
+
+                    <p>
+                        Todos los paquetes especificados en las secciones dependencies y devDependencies del archivo package.json se instalan en esta carpeta.
+                        También incluye todas las dependencias de las dependencias, lo que puede resultar en una estructura de directorios bastante profunda.
+                    </p>
+
+                    <h3>Gestión de Paquetes</h3>
+
+                    <p>
+                        Al utilizar npm (Node Package Manager) o Yarn, las dependencias se descargan y almacenan en node_modules.
+                        npm y Yarn manejan versiones específicas de cada paquete para asegurar la consistencia del entorno de desarrollo y producción.
+                    </p>
+
+                    <h3>Optimización y Desduplicación</h3>
+
+                    <p>
+                        npm y Yarn intentan optimizar la instalación de paquetes para evitar duplicados siempre que sea posible. Sin embargo, puede haber múltiples versiones de una misma biblioteca si diferentes dependencias requieren diferentes versiones.
+                    </p>
+
+                    <h3>No Debe Versionarse</h3>
+
+                    <p>
+                        Por lo general, node_modules no se incluye en el control de versiones (como Git). En su lugar, se utiliza el archivo package-lock.json o yarn.lock para garantizar que todas las instalaciones sean consistentes en diferentes entornos.
+                        El archivo .gitignore suele contener una entrada para node_modules para asegurarse de que esta carpeta no se suba al repositorio.
+                    </p>
+
                 </DivArticle>
             </DivSection>
         </>
