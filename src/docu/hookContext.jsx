@@ -1,5 +1,5 @@
 
-export function hookContext() {
+export function HookContext() {
     return (
         <>
             <h1>El hook Context en react</h1>
