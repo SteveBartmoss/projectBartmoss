@@ -5,7 +5,7 @@ import { Portada } from "../componentes/portada/portada";
 export function MistBorn1(){
     return(
         <>
-            <Portada imgPortada={"/Assets/steveBartmoss.jpg"} title={"El imperio final es waku waku"} text={"Por Steve 26/07/2024"} />
+            <Portada imgPortada={"/Assets/steveA.png"} title={"El imperio final es waku waku"} text={"Por Steve 26/07/2024"} />
             <DivSection>
                 <DivArticle>
                     <p>
