@@ -5,7 +5,7 @@ import { Portada } from "../componentes/portada/portada";
 export function FirstStepReact() {
     return (
         <>
-            <Portada imgPortada={"/Assets/steveBartmoss.jpg"} title={"Primeros pasos en react"} text={"Por Steve 21/07/2024"} />
+            <Portada imgPortada={"/Assets/steveA.png"} title={"Primeros pasos en react"} text={"Por Steve 21/07/2024"} />
             <DivSection>
                 <DivArticle>
                     <p>
