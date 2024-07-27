@@ -40,7 +40,7 @@ export function FirstStepReact() {
                         necesitamos
                     </p>
 
-                    <a href="https://nodejs.org/en/download/prebuilt-installer" target="_blank">Sitio de Node</a>
+                    <a href="https://nodejs.org/en/download/prebuilt-installer" rel="noreferrer" target="_blank">Sitio de Node</a>
 
                     <h2>Linux</h2>
 
@@ -151,7 +151,7 @@ export function FirstStepReact() {
                         de instalar y que se puede obtener en el siguiente enlace
                     </p>
 
-                    <a href="https://code.visualstudio.com/Download" target="_blank">vs Code</a>
+                    <a href="https://code.visualstudio.com/Download" rel="noreferrer" target="_blank">vs Code</a>
 
                     <p>
                         Si ya tienes otro editor de codigo preferido se puede usar
