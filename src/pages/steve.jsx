@@ -4,11 +4,10 @@ import { DivCol, DivPanel, DivRow, DivSection } from "../componentes/contenedore
 import { Portada } from "../componentes/portada/portada";
 import { Tabs } from "../componentes/tabs/tabs";
 
-
 export function Steve() {
     return (
         <div>
-            <Portada imgPortada={"/Assets/steveBartmoss.jpg"} title={"Steve Bartmoss"} text={"No le preuntesa la documentacion, preguntame a mi"} />
+            <Portada imgPortada={"/Assets/steveA.png"} title={"Steve Bartmoss"} text={"No le preuntesa la documentacion, preguntame a mi"} />
             <DivSection>
                 <Tabs position="position-center" headers={
                     [
