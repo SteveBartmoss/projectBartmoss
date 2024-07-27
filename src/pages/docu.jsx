@@ -6,7 +6,7 @@ import { Portada } from "../componentes/portada/portada";
 export function Docu() {
     return (
         <div>
-            <Portada imgPortada={"/Assets/steveBartmoss.jpg"}
+            <Portada imgPortada={"/Assets/steveA.png"}
                 title={"La guia del internet"}
                 text={"Por Steve Bartmoss"} />
             <DivSection>
