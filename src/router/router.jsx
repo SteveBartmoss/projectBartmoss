@@ -5,6 +5,7 @@ import { Footer } from "../componentes/footer/footer";
 import { Steve } from "../pages/steve";
 import { Docu } from "../pages/docu";
 import { FirstStepReact } from "../docu/firstStepReact";
+import { HookContext } from "../docu/hookContext";
 
 
 export function RouterBlog(){
@@ -16,6 +17,8 @@ export function RouterBlog(){
                 <Route path="steve" element={<Steve />} />
                 <Route path="docu" element={<Docu />} />
                 <Route path="docu/primerospasos" element={<FirstStepReact /> } />
+                <Route path="docu/hookcontext" element={<HookContext /> } />
+
             </Routes>
             <Footer />
         </BrowserRouter>
