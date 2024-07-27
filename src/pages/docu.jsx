@@ -23,6 +23,18 @@ export function Docu() {
                             <CardLink url={'primerospasos'} text={'Ir al articulo'} />
                         </CardAccions>
                     </Card>
+
+                    <Card variant="card-outlined">
+                    <CardTitle>El hookContext</CardTitle>
+                        <CardText>
+                            El hook context puede ser confuso 
+                            pero ahora si lo entenderas
+                        </CardText>
+                        <Chip color="warning">Java Script</Chip>
+                        <CardAccions>
+                            <CardLink url={'hookcontext'} text={'Ir al articulo'} />
+                        </CardAccions>
+                    </Card>
                 </DivTopicos>
             </DivSection>
         </div>
