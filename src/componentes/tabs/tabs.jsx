@@ -24,7 +24,7 @@ export function Tabs({ headers, elements, position="" }) {
             <DivRow>
                 {
                     headers.map(head =>
-                        <div key={head.id} className={currentTab === head.id ? '' : 'tab-close'}>
+                        <div key={head.id} className={currentTab === head.id ? 'container-content' : 'tab-close'}>
                             {head.content}
                         </div>
                     )
