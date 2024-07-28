@@ -3,6 +3,10 @@
     flex-direction: row;
 }
 
+.container-content{
+    margin: auto;
+}
+
 .position-center{
     margin: auto;
 }
