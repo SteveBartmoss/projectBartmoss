@@ -1,6 +1,6 @@
 import { Card, CardText, CardTitle } from "../componentes/card/card";
 import { Chip } from "../componentes/chips/chip";
-import { DivCol, DivPanel, DivRow, DivSection } from "../componentes/contenedores/contenedores";
+import { DivArticle, DivCol, DivPanel, DivRow, DivSection } from "../componentes/contenedores/contenedores";
 import { Portada } from "../componentes/portada/portada";
 import { Tabs } from "../componentes/tabs/tabs";
 import { TimeItem } from "../componentes/timeItem/timeItem";
@@ -97,9 +97,8 @@ export function Steve() {
                             title: "Time Line",
                             content:
                                 <div>
-                                    <h1>Info Time line</h1>
-                                    <TimeItem 
-                                        fecha="28/07/2024" 
+                                    <TimeItem
+                                        fecha="28/07/2024" autor="Steve"
                                         texto="Bueno manetener el sofware no es tan malo, en 
                                         algun momento esto tiene que funcionar no?" />
                                 </div>,
