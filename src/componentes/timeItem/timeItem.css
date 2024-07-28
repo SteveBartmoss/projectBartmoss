@@ -1,11 +1,24 @@
 
+.div-time-item{
+    width: 60%;
+    margin: auto;
+    border: solid .1rem;
+    border-color: #149eca;
+    border-radius: .5rem;
+    padding: 1rem;
+}
+
+.div-date-item{
+    display: flex;
+}
 
 .img-time-item{
-    width: 5%;
+    width: 3rem;
     border-radius: 50%;
+    padding: 1rem;
 }
 
 .head-time-item{
     display: flex;
-    
+    flex-direction: row;
 }
