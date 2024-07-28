@@ -3,6 +3,7 @@ import { Chip } from "../componentes/chips/chip";
 import { DivCol, DivPanel, DivRow, DivSection } from "../componentes/contenedores/contenedores";
 import { Portada } from "../componentes/portada/portada";
 import { Tabs } from "../componentes/tabs/tabs";
+import { TimeItem } from "../componentes/timeItem/timeItem";
 
 export function Steve() {
     return (
@@ -97,6 +98,10 @@ export function Steve() {
                             content:
                                 <div>
                                     <h1>Info Time line</h1>
+                                    <TimeItem 
+                                        fecha="28/07/2024" 
+                                        texto="Bueno manetener el sofware no es tan malo, en 
+                                        algun momento esto tiene que funcionar no?" />
                                 </div>,
                         },
                         {
