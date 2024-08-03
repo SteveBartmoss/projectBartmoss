@@ -8,7 +8,7 @@ import { TimeItem } from "../componentes/timeItem/timeItem";
 export function Steve() {
     return (
         <div>
-            <Portada imgPortada={"/Assets/steveA.png"} title={"Steve Bartmoss"} text={"No le preuntesa la documentacion, preguntame a mi"} />
+            <Portada imgPortada={"/Assets/steveA.png"} title={"Steve Bartmoss"} text={"No le preuntes a la documentacion, preguntame a mi"} />
             <DivSection>
                 <Tabs position="position-center" headers={
                     [
@@ -20,8 +20,8 @@ export function Steve() {
                                     <Card>
                                         <CardTitle>Acerca de steve</CardTitle>
                                         <CardText>
-                                            Programador web fan de los temas cyberpunk
-                                            sobre prgramacion, tecnologia y videojuegos.
+                                            Programador web fan de los temas cyberpunk,
+                                            sobre programacion, tecnologia y videojuegos.
                                             Con la idea de poder compartir con otas personas
                                             el conocimiento sobre programacion que posee
                                         </CardText>
@@ -40,7 +40,7 @@ export function Steve() {
                                                 <Card>
                                                     <CardTitle>Stats</CardTitle>
                                                     <CardText></CardText>
-                                                    <p>Horas de programacion:</p>
+                                                    <p>Horas de programacion: 960 </p>
                                                 </Card>
                                                 <Card>
                                                     <CardTitle>Manejador de Versiones</CardTitle>
