@@ -1,6 +1,6 @@
 import { Card, CardText, CardTitle } from "../componentes/card/card";
 import { Chip } from "../componentes/chips/chip";
-import { DivArticle, DivCol, DivPanel, DivRow, DivSection } from "../componentes/contenedores/contenedores";
+import { DivCol, DivRow, DivSection } from "../componentes/contenedores/contenedores";
 import { Portada } from "../componentes/portada/portada";
 import { Tabs } from "../componentes/tabs/tabs";
 import { TimeItem } from "../componentes/timeItem/timeItem";
