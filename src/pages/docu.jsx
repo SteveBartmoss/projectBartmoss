@@ -1,6 +1,6 @@
 import { Card, CardAccions, CardLink, CardText, CardTitle } from "../componentes/card/card";
 import { Chip } from "../componentes/chips/chip";
-import { DivArticle, DivSection, DivTopicos } from "../componentes/contenedores/contenedores";
+import { DivSection, DivTopicos } from "../componentes/contenedores/contenedores";
 import { Portada } from "../componentes/portada/portada";
 import { useApp } from "../context/contextApp";
 
