@@ -2,8 +2,12 @@ import { Card, CardAccions, CardLink, CardText, CardTitle } from "../componentes
 import { Chip } from "../componentes/chips/chip";
 import { DivArticle, DivSection, DivTopicos } from "../componentes/contenedores/contenedores";
 import { Portada } from "../componentes/portada/portada";
+import { useApp } from "../context/contextApp";
 
 export function Docu() {
+
+    const {isDarkTheme} = useApp()
+
     return (
         <div>
             <Portada imgPortada={"/Assets/steveA.png"}
@@ -11,7 +15,7 @@ export function Docu() {
                 text={"Por Steve Bartmoss"} />
             <DivSection>
                 <DivTopicos>
-                    <Card variant="card-outlined">
+                    <Card variant={isDarkTheme ? 'card-outlined-ligth' : 'card-outlined-dark' }>
                         <CardTitle>Primeros Pasos React</CardTitle>
                         <CardText>
                             Tus primeros pasos en la libreria de
