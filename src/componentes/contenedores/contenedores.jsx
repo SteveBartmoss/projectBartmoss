@@ -6,7 +6,7 @@ export function DivMain({children}){
     const {isDarkTheme} = useApp();
 
     return(
-        <div className="div-main">
+        <div className={isDarkTheme ? 'div-main-light' : 'div-main-dark' }>
             {children}
         </div>
     )
