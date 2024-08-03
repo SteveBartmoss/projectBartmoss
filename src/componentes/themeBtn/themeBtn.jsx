@@ -1,8 +1,11 @@
+import { useApp } from "../../context/contextApp"
 
 
-export function ThemeBtn({estado,accion}){
+export function ThemeBtn(){
+
+    const {isDarkTheme, toggleTheme} = useApp()
 
     return(
-        <button onClick={accion}>{estado ? 'On' : 'off'}</button>
+        <button onClick={toggleTheme}>{isDarkTheme ? 'on' : 'off'}</button>
     )
 }
