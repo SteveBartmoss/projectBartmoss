@@ -6,6 +6,6 @@ export function ThemeBtn(){
     const {isDarkTheme, toggleTheme} = useApp()
 
     return(
-        <button className="btn-theme" onClick={toggleTheme}>{isDarkTheme ? 'on' : 'off'}</button>
+        <button className={isDarkTheme ? 'btn-theme-ligth' : 'btn-theme-dark'} onClick={toggleTheme}>{isDarkTheme ? 'on' : 'off'}</button>
     )
 }
