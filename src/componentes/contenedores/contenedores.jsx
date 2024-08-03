@@ -1,6 +1,10 @@
+import { useApp } from '../../context/contextApp';
 import './contenedores.css';
 
 export function DivMain({children}){
+
+    const {isDarkTheme} = useApp();
+
     return(
         <div className="div-main">
             {children}
