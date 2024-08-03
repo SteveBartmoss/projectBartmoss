@@ -7,13 +7,24 @@
     box-shadow: 0px 1px 10px rgba(116, 152, 182, 0.2);
 }
 
-.card-outlined {
+.card-outlined-dark{
     min-width: 30rem;
     border-radius: 1rem;
     padding: 1rem;
     margin: 1rem;
     border: solid .1rem;
     border-color: #149eca;
+    font-family: "Poppins";
+}
+
+.card-outlined-ligth{
+    min-width: 30rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 1rem;
+    border: solid .1rem;
+    border-color: #384B55;
+    font-family: "Poppins";
 }
 
 .card {
@@ -35,14 +46,10 @@
 }
 
 .card-title {
-    color: white;
-    font-family: "Poppins";
     font-size: 1.3rem;
 }
 
 .card-text {
-    color: white;
-    font-family: "Poppins";
     font-size: 1.2;
 }
 
