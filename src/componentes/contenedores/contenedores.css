@@ -1,11 +1,11 @@
 .div-main-dark {
     background-color: #282c34;
-    color: white;
+    color: #D3C6AA;
 }
 
 .div-main-light {
-    background-color: white;
-    color: black;
+    background-color: #9DA9A0;
+    color: #1E2326;
 }
 
 .div-row {
