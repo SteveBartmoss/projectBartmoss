@@ -5,9 +5,17 @@
     justify-content: space-between;
 }
 
-.nav-item{
+.nav-item-dark{
     padding: 0 1rem;
-    color: white;
+    color: #D3C6AA;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.nav-item-light{
+    padding: 0 1rem;
+    color: #1E2326;
     text-decoration: none;
     font-size: 1.5rem;
     font-weight: 600;
