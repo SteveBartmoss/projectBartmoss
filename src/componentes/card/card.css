@@ -1,3 +1,19 @@
+.card-basic{
+    min-width: 30rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 1rem;
+    font-family: "Poppins";
+}
+
+.card-basic h1 {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.card-basic p {
+    font-size: 1.2;
+}
 .card-basic-dark {
     background-color: #23272f;
     min-width: 30rem;
@@ -34,17 +50,6 @@
     border: solid .1rem;
     border-color: #384B55;
     font-family: "Poppins";
-}
-
-.card {
-    min-width: 30rem;
-    min-height: 25rem;
-    border-radius: 1rem;
-    margin: 1rem;
-    box-shadow: 0px 1px 10px rgba(116, 152, 182, 0.2);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
 }
 
 .card-img-content {
