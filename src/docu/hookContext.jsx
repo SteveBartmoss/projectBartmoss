@@ -4,12 +4,11 @@ import { Portada } from "../componentes/portada/portada"
 export function HookContext() {
     return (
         <>
-            <Portada imgPortada={"/Assets/steveA.png"} title={"Primeros pasos en react"} text={"Por Steve 21/07/2024"} />
+            <Portada imgPortada={"/Assets/steveA.png"} title={"El hook Context en react"} text={"Por Steve 21/07/2024"} />
 
             <DivArticle>
                 <DivArticle>
-                    <h1>El hook Context en react</h1>
-
+                    
                     <p>
                         Si has trabajado con react entonces sabras
                         que mantener el estado en los componentes
