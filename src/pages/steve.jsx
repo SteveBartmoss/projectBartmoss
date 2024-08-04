@@ -18,19 +18,19 @@ export function Steve() {
                             content:
                                 <div>
                                     <Card>
-                                        <CardTitle>Acerca de steve</CardTitle>
-                                        <CardText>
+                                        <h1>Acerca de steve</h1>
+                                        <p>
                                             Programador web fan de los temas cyberpunk,
                                             sobre programacion, tecnologia y videojuegos.
                                             Con la idea de poder compartir con otas personas
                                             el conocimiento sobre programacion que posee
-                                        </CardText>
+                                        </p>
                                     </Card>
                                     <DivCol>
                                         <DivRow>
                                             <DivCol>
                                                 <Card>
-                                                    <CardTitle>Skills</CardTitle>
+                                                    <h1>Skills</h1>
                                                     <DivRow>
                                                         <Chip color={"principal"}>React</Chip>
                                                         <Chip color={"warning"}>JavaScript</Chip>
@@ -38,53 +38,48 @@ export function Steve() {
                                                     </DivRow>
                                                 </Card>
                                                 <Card>
-                                                    <CardTitle>Stats</CardTitle>
-                                                    <CardText></CardText>
+                                                    <h1>Stats</h1>
                                                     <p>Horas de programacion: 960 </p>
                                                 </Card>
                                                 <Card>
-                                                    <CardTitle>Manejador de Versiones</CardTitle>
-                                                    <CardTitle>Editor Favorito</CardTitle>
-                                                    <CardTitle>Distribucion usada</CardTitle>
-                                                    <CardTitle>Lenguaje Favorito</CardTitle>
+                                                    <h1>Manejador de Versiones</h1>
+                                                    <h1>Editor Favorito</h1>
+                                                    <h1>Distribucion usada</h1>
+                                                    <h1>Lenguaje Favorito</h1>
                                                 </Card>
                                                 <Card>
-                                                    <CardTitle>Uso de Lenguajes</CardTitle>
+                                                    <h1>Uso de Lenguajes</h1>
                                                 </Card>
                                             </DivCol>
 
                                             <DivCol>
 
                                                 <Card>
-                                                    <CardTitle>Proyectos Actuales</CardTitle>
+                                                    <h1>Proyectos Actuales</h1>
                                                 </Card>
 
                                                 <Card>
-                                                    <CardTitle>Lenguajes usados</CardTitle>
+                                                    <h1>Lenguajes usados</h1>
                                                 </Card>
 
                                                 <Card>
-                                                    <CardTitle>Lenguajes usados</CardTitle>
+                                                    <h1>Mi perfil de spotyfi</h1>
                                                 </Card>
 
                                                 <Card>
-                                                    <CardTitle>Mi perfil de spotyfi</CardTitle>
+                                                    <h1>Mi perfil de steam</h1>
                                                 </Card>
 
                                                 <Card>
-                                                    <CardTitle>Mi perfil de steam</CardTitle>
+                                                    <h1>Stack de lenguajes</h1>
                                                 </Card>
 
                                                 <Card>
-                                                    <CardTitle>Stack de lenguajes</CardTitle>
+                                                    <h1>Stack de tecnologias</h1>
                                                 </Card>
 
                                                 <Card>
-                                                    <CardTitle>Stack de tecnologias</CardTitle>
-                                                </Card>
-
-                                                <Card>
-                                                    <CardTitle>Stack de proyectos</CardTitle>
+                                                    <h1>Stack de proyectos</h1>
                                                 </Card>
 
                                             </DivCol>
@@ -97,7 +92,7 @@ export function Steve() {
                             title: "Time Line",
                             content:
                                 <div>
-                                    <TimeItem fecha="03/08/2024" autor="Steve" 
+                                    <TimeItem fecha="03/08/2024" autor="Steve"
                                         texto="Wow ya mas de la mitad del 2024, 
                                         que rapido pasa el tiempo cuando te va mal XD, 
                                         el invierno se acerca" />
