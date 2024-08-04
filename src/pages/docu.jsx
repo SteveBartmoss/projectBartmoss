@@ -15,7 +15,7 @@ export function Docu() {
                 text={"Por Steve Bartmoss"} />
             <DivSection>
                 <DivTopicos>
-                    <Card variant={isDarkTheme ? 'card-outlined-ligth' : 'card-outlined-dark' }>
+                    <Card>
                         <CardTitle>Primeros Pasos React</CardTitle>
                         <CardText>
                             Tus primeros pasos en la libreria de
@@ -28,7 +28,7 @@ export function Docu() {
                         </CardAccions>
                     </Card>
 
-                    <Card variant="card-outlined">
+                    <Card>
                     <CardTitle>El hookContext</CardTitle>
                         <CardText>
                             El hook context puede ser confuso 
