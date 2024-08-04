@@ -7,12 +7,12 @@
 }
 
 .card-basic h1 {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-weight: 500;
 }
 
 .card-basic p {
-    font-size: 1.2;
+    font-size: 1.2rem;
 }
 
 .dark{
@@ -22,7 +22,7 @@
 
 .ligth{
     background-color: #374145;
-    color: #1E2326;
+    color: #9DA9A0;
 }
 
 .card-basic-dark {
