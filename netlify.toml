@@ -1,0 +1,4 @@
+[[redirects]]
+  from = "/rss.xml"
+  to = "/public/rss.xml"
+  status = 200
