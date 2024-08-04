@@ -2,12 +2,12 @@ import { NavLink } from 'react-router-dom';
 import './card.css';
 import { useApp } from '../../context/contextApp';
 
-export function Card({children,variant}){
+export function Card({children,variant=''}){
 
     const {isDarkTheme} = useApp()
 
     return(
-        <div className={variant ? variant : isDarkTheme ? 'card-basic-ligth' : 'card-basic-dark'}>
+        <div className={`card-basic ${variant} ${isDarkTheme ? 'ligth' : 'dark'}`   }>
             {children}
         </div>
     )
