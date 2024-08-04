@@ -25,24 +25,6 @@
     color: #9DA9A0;
 }
 
-.card-basic-dark {
-    background-color: #23272f;
-    min-width: 30rem;
-    border-radius: 1rem;
-    padding: 1rem;
-    margin: 1rem;
-    box-shadow: 0px 1px 10px rgba(116, 152, 182, 0.2);
-}
-
-.card-basic-ligth {
-    background-color: #374145;
-    min-width: 30rem;
-    border-radius: 1rem;
-    padding: 1rem;
-    margin: 1rem;
-    box-shadow: 0px 1px 10px rgba(116, 152, 182, 0.2);
-}
-
 .card-outlined-dark{
     min-width: 30rem;
     border-radius: 1rem;
@@ -68,14 +50,6 @@
     padding: 1rem;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
-}
-
-.card-title {
-    font-size: 1.3rem;
-}
-
-.card-text {
-    font-size: 1.2;
 }
 
 .card-link {
