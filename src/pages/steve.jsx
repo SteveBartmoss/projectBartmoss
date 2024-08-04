@@ -1,4 +1,4 @@
-import { Card, CardText, CardTitle } from "../componentes/card/card";
+import { Card, CardContent, CardText, CardTitle } from "../componentes/card/card";
 import { Chip } from "../componentes/chips/chip";
 import { DivCol, DivRow, DivSection } from "../componentes/contenedores/contenedores";
 import { Portada } from "../componentes/portada/portada";
@@ -56,6 +56,11 @@ export function Steve() {
 
                                                 <Card>
                                                     <h1>Proyectos Actuales</h1>
+                                                    <CardContent>
+                                                        <p>UiSteve</p>
+                                                        <p>sqlSteve</p>
+                                                        <p>Darrow</p>
+                                                    </CardContent>
                                                 </Card>
 
                                                 <Card>
