@@ -1,6 +1,6 @@
 # Repositorio del blog personal de Steve
 
-Visita el blog en siguiente enlace [project bartmoss](https://github.com/facebook/create-react-app).
+Visita el blog en siguiente enlace [project bartmoss](https://voidreturn.netlify.app/steve).
 
 ## Sobre el blog
 
@@ -14,10 +14,10 @@ Se espera que la actualizacion del blog sea al menos una vez por semana
 pero esto no sera una especie de regla ya que puede que esto sea intermmitente 
 (no siempre tengo tiempo o mucha creatividad para escribir)
 
-### `npm test`
+### `Novedades`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Se actualizo la pagina con un modo oscuro y un modo claro, se estan trabajando en 
+agregar mas contenido a la pagina
 
 ### `npm run build`
 
