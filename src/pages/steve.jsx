@@ -65,14 +65,31 @@ export function Steve() {
 
                                                 <Card>
                                                     <h1>Lenguajes usados</h1>
+                                                    <CardContent>
+                                                        <p>C</p>
+                                                        <p>php</p>
+                                                        <p>js</p>
+                                                        <p>Java</p>
+                                                    </CardContent>
+                                                    
                                                 </Card>
 
                                                 <Card>
-                                                    <h1>Mi perfil de spotyfi</h1>
+                                                    <h1>Mi perfil de ytMusic</h1>
+                                                    <p>
+                                                        No todo se trata de programar asi 
+                                                        que de debes en cuando me gusta 
+                                                        escuchar un poco de musica
+                                                    </p>
                                                 </Card>
 
                                                 <Card>
                                                     <h1>Mi perfil de steam</h1>
+                                                    <p>
+                                                        No seria un buen programador 
+                                                        si no me gustara pasar parte de mi 
+                                                        tiempo libre con los videojuegos
+                                                    </p>
                                                 </Card>
 
                                                 <Card>
