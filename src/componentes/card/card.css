@@ -14,6 +14,17 @@
 .card-basic p {
     font-size: 1.2;
 }
+
+.dark{
+    background-color: #23272f;
+    color: #9DA9A0;
+}
+
+.ligth{
+    background-color: #374145;
+    color: #1E2326;
+}
+
 .card-basic-dark {
     background-color: #23272f;
     min-width: 30rem;
