@@ -16,12 +16,11 @@ export function Docu() {
             <DivSection>
                 <DivTopicos>
                     <Card>
-                        <CardTitle>Primeros Pasos React</CardTitle>
-                        <CardText>
-                            Tus primeros pasos en la libreria de
+                        <h1>Primeros Pasos React</h1>
+                        <p> Tus primeros pasos en la libreria de
                             react pueden ser algo complejos, pero
                             aqui te contamos cosas que te pueden ayudar
-                        </CardText>
+                        </p>
                         <Chip color="warning">Java Script</Chip>
                         <CardAccions>
                             <CardLink url={'primerospasos'} text={'Ir al articulo'} />
@@ -29,11 +28,11 @@ export function Docu() {
                     </Card>
 
                     <Card>
-                    <CardTitle>El hookContext</CardTitle>
-                        <CardText>
+                        <h1>El hookContext</h1>
+                        <p>
                             El hook context puede ser confuso 
                             pero ahora si lo entenderas
-                        </CardText>
+                        </p>
                         <Chip color="warning">Java Script</Chip>
                         <CardAccions>
                             <CardLink url={'hookcontext'} text={'Ir al articulo'} />
