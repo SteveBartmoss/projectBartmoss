@@ -12,7 +12,7 @@ export function HookContext() {
                     <p>
                         Si has trabajado con react entonces sabras
                         que mantener el estado en los componentes
-                        no suele ser tan trivial pero aun pero es
+                        no suele ser tan trivial pero aun peor es
                         la comunicacion que existe entre componentes
                         padres e hijos
                     </p>
