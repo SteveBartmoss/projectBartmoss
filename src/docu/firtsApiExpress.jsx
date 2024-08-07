@@ -76,6 +76,23 @@ export function FirsApiExpress() {
                         js y permitira ejecutar el contenido de index.js, si ejecutamos el contenido 
                         sin agregar la propiedad al json entonces no saldra un error
                     </p>
+
+                    <p>
+                        Ahora podemos levantar el servidor de la api con el siguiente 
+                        codigo agregado a index.js:
+                    </p>
+
+                    <code>
+                        const app = express()
+
+                        app.listen(3300)
+                    </code>
+
+                    <p>
+                        Esto nos levanta un servidor que escucha el puesto 3300 asi que ya 
+                        tenemos el servidor iniciado pero hay otra configuracion que se tiene 
+                        que hacer y es instalar nodemon
+                    </p>
                 </DivArticle>
             </DivSection>
 
