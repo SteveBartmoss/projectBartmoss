@@ -44,7 +44,13 @@ export function FirsApiExpress() {
                     </p>
 
                     <code>npm i express</code>
-                    
+
+                    <p>
+                        Ahora que tenemos instalado express podemos crear nuestro archivos 
+                        index.js que sera el punto de inicio de nuestra api, el archivo debe estar 
+                        en la raiz del proyecto o en otras palabras debe estar al mismo nivel que 
+                        los archivos package.json
+                    </p>
                 </DivArticle>
             </DivSection>
 
