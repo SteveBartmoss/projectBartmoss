@@ -51,6 +51,31 @@ export function FirsApiExpress() {
                         en la raiz del proyecto o en otras palabras debe estar al mismo nivel que 
                         los archivos package.json
                     </p>
+
+                    <p>
+                        En el archivo index.js podemos agregar la siguiente linea de codigo:
+                    </p>
+
+                    <code>import express from 'express'</code>
+
+                    <p>
+                        Algo importante es que esta sintaxis es de ecma script o en teoria 
+                        es de la sixtasis moderna de javascript asi que tenemos que hacer 
+                        un cambio para poder usar esta sintaxis
+                    </p>
+
+                    <p>
+                        Debemos ir a nuestro archivo package.json y agregar la siguiente propiedad 
+                        en el objeto json:
+                    </p>
+
+                    <code>"type": "module",</code>
+
+                    <p>
+                        Esto le indicara a node js que debe trabar con la sintaxis moderla de 
+                        js y permitira ejecutar el contenido de index.js, si ejecutamos el contenido 
+                        sin agregar la propiedad al json entonces no saldra un error
+                    </p>
                 </DivArticle>
             </DivSection>
 
