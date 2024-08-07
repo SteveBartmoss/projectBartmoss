@@ -37,6 +37,14 @@ export function FirsApiExpress() {
                         de igual manera se inicializa la aplicacion pero tendremos 
                         que responder una serie de preguntas
                     </p>
+
+                    <p>
+                        Ahora debemos instalar express que es el framework que nos permitira 
+                        crear todo lo realcionado con la api, podemos usar el siguiente comando:
+                    </p>
+
+                    <code>npm i express</code>
+                    
                 </DivArticle>
             </DivSection>
 
