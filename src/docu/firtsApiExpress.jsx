@@ -93,6 +93,19 @@ export function FirsApiExpress() {
                         tenemos el servidor iniciado pero hay otra configuracion que se tiene 
                         que hacer y es instalar nodemon
                     </p>
+
+                    <p>
+                        El uso de nodemon es necesario porque la configuracion actual del proyecto no 
+                        detecta los cambios y los ejecuta en el mismo instante, nodemon no ayuda a 
+                        que detecte cambios en el proyecto y a volvel a ejecutar la aplicacion cada 
+                        que esto pasa, asi que no es necesario hacer lo anterior de manera manual
+                    </p>
+
+                    <p>
+                        Para instalar nodemon es tan simple como usar el siguiente comando: 
+                    </p>
+
+                    <code>npm install nodemon </code>
                 </DivArticle>
             </DivSection>
 
