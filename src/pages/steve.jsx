@@ -60,6 +60,7 @@ export function Steve() {
                                                         <p>UiSteve</p>
                                                         <p>sqlSteve</p>
                                                         <p>Darrow</p>
+                                                        <p>mochaEditor</p>
                                                     </CardContent>
                                                 </Card>
 
@@ -68,7 +69,7 @@ export function Steve() {
                                                     <CardContent>
                                                         <p>C</p>
                                                         <p>php</p>
-                                                        <p>js</p>
+                                                        <p>JavaScript</p>
                                                         <p>Java</p>
                                                     </CardContent>
                                                     
