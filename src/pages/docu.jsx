@@ -38,6 +38,18 @@ export function Docu() {
                             <CardLink url={'hookcontext'} text={'Ir al articulo'} />
                         </CardAccions>
                     </Card>
+
+                    <Card>
+                        <h1>Llaves foraneas y velocidad</h1>
+                        <p>
+                            La informacion que siempre quisistes saber 
+                            sobre las llaves foraneas
+                        </p>
+                        <Chip>Sql</Chip>
+                        <CardAcccions>
+                            <CardLink url={'fkvelocidad'} text={'Ir al articulo'} />
+                        </CardAcccions>
+                    </Card>
                 </DivTopicos>
             </DivSection>
         </div>
