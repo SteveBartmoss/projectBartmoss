@@ -67,5 +67,84 @@
         En el caso de no tener una llave foranea que relacione las tablas se puede mejorar el tiempo de 
         la consulta si hacemos indices los campos que estan siendo utilizados por la sentencia join
     </p>
+
+    <h2>Indices la clave de la velocidad</h2>
+
+    <p>
+        Un índice es una estructura que almacena el valor de una o más columnas de 
+        una tabla en un orden específico, junto con punteros que apuntan a las filas 
+        correspondientes en la tabla. Esto permite a la base de datos encontrar y 
+        acceder a los datos de manera más eficiente.
+    </p>
+
+    <h2>Tipos de indices</h2>
+
+    <p>
+        Índice simple: Un índice basado en una sola columna. 
+        Índice compuesto: Un índice basado en múltiples columnas.
+    </p>
+
+    <p>
+        Índice único: Asegura que todos los valores en la columna indexada sean distintos.
+        Índice no único: Permite valores duplicados en la columna indexada.
+    </p>
+
+    <p>
+        B-Tree (Árbol-B): El tipo de índice más común, adecuado para una amplia gama de consultas.
+        Hash: Adecuado para búsquedas de igualdad, como = y IN. No es eficiente para búsquedas de rango.
+    </p>
+
+    <h2>Ventajas de los índices</h2>
+
+    <p>
+        Mejora en el rendimiento de las consultas: Los índices permiten a la base 
+        de datos encontrar datos rápidamente sin tener que escanear toda la tabla.
+    </p>
+
+    <p>
+        Eficiencia en la búsqueda: Almacenar datos en un orden específico facilita 
+        las búsquedas y las operaciones de ordenamiento.
+    </p>
+
+    <p>
+        Facilita la ejecución de operaciones JOIN y ORDER BY: Los índices pueden 
+        acelerar la ejecución de estas operaciones al proporcionar un acceso rápido 
+        a las filas relevantes.
+    </p>
+
+    <h2>Desventajas de los índices</h2>
+    
+    <p>
+        Espacio adicional: Los índices requieren espacio adicional en disco para almacenarse.
+    </p>
+    
+    <p>
+        Coste de mantenimiento: Cada vez que se inserta, actualiza o elimina un registro en 
+        la tabla, los índices deben actualizarse, lo que puede ralentizar estas operaciones.
+    </p>
+
+    <p>
+        Selección inadecuada de índices: Crear índices en columnas que no se usan frecuentemente 
+        en las consultas puede resultar en un uso ineficiente de recursos.
+    </p>
+
+    <h2>Mejores prácticas</h2>
+
+    <p>
+        Seleccionar columnas adecuadas: Crea índices en columnas que se utilizan 
+        frecuentemente en condiciones de búsqueda (WHERE), ordenamiento (ORDER BY), 
+        y en condiciones de unión (JOIN).
+    </p>
+
+    <p>
+        Evitar índices innecesarios: No crees índices en columnas con datos altamente 
+        repetitivos o en columnas que no se utilizan frecuentemente en consultas.
+    </p>
+
+    <p>
+        Monitorizar y ajustar: Utiliza herramientas de monitoreo y analítica de bases 
+        de datos para identificar índices que no se están utilizando o que están causando 
+        problemas de rendimiento.
+    </p>
     
 </>
