@@ -4,26 +4,22 @@
     <h1>Llaves foraneas e Indices en sql</h1>
 
     <p>
-        Si alguna vez tomaste clases de base de datos
-        o trabajas con bases de datos entonces recordaras que
-        siempre te decian que debes tener relacionadas tus tablas
-        y por lo tanto tener llaves foraneas para estas relaciones
+        Si alguna vez tomaste clases de bases de datos o trabajas con ellas, 
+        seguramente recordarás que siempre te insistieron en la importancia 
+        de relacionar tus tablas, y por lo tanto, tener claves foráneas para 
+        establecer esas relaciones.
     </p>
 
     <p>
-        Pero una de las preguntas que siempre hacia pero no
-        me respondian de todo bien es porque tenia que poner
-        llaves foraneas para relacionar las tablas y su unica
-        respuesta es que las llaves foraneas son necesarias
-        porque esto forma la relacion pero fuera de esto no
-        habia mas explicacion
+        Una de las preguntas que siempre hacía, pero que nunca me respondían 
+        del todo bien, era por qué tenía que poner claves foráneas para relacionar 
+        las tablas. Su única respuesta era que las claves foráneas son necesarias 
+        porque forman la relación, pero fuera de eso, no había más explicación.
     </p>
 
     <p>
-        Bueno resulta que existe una mejor explicacion
-        que simplemente formar un relacion y es que la
-        creacion de llaves foraneas tambien vuelve
-        mas rapida un consulta con joins
+        Resulta que existe una mejor explicación que simplemente formar una relación: 
+        la creación de claves foráneas también hace más rápida una consulta con joins.
     </p>
 
     <h2>Llaves Foraneas y velocidad</h2>
