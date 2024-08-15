@@ -91,15 +91,15 @@ export function FirstStepReact() {
                     </code>
 
                     <p>
-                        Con esto tenemos instalada la version 14.4.0 de node js,
-                        este comando instala la version de node que especifiquemos
-                        asi que basta con cambiemos el numero de version en el
-                        comando para instalar otra version
+                        Con esto, tenemos instalada la versión 14.4.0 de Node.js. Este 
+                        comando instala la versión de Node.js que especifiquemos, por lo 
+                        que solo necesitamos cambiar el número de versión en el comando 
+                        para instalar otra versión.
                     </p>
 
                     <p>
                         Estos otros comandos puden ser utiles si se esta usando
-                        la herramienta nvm
+                        la herramienta NVM
                     </p>
 
                     <p>
@@ -121,9 +121,9 @@ export function FirstStepReact() {
                     <h3>Instalando Nodesource</h3>
 
                     <p>
-                        Esto tambien permite instalar node pero usando otra
-                        herramienta que es Nodesource lo cual podemos
-                        hacer con el siguiente comando
+                        Esto también permite instalar Node.js, pero utilizando 
+                        otra herramienta que es Nodesource, lo cual podemos hacer 
+                        con el siguiente comando.
                     </p>
 
                     <code>
@@ -131,10 +131,10 @@ export function FirstStepReact() {
                     </code>
 
                     <p>
-                        En este caso indicamos que la version es la 14 pues tenemos
-                        setup_14.x pero podemos cambiar el numero por que queremos
-                        instalar. Ya que hemos hecho esto podemos ejecutar los
-                        siguientes comando para instalar node
+                        En este caso, indicamos que la versión es la 14, 
+                        ya que tenemos setup_14.x, pero podemos cambiar el 
+                        número por el que queremos instalar. Una vez hecho esto, 
+                        podemos ejecutar los siguientes comandos para instalar Node.js.
                     </p>
 
                     <code>
