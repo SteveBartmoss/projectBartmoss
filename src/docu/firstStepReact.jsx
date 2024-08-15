@@ -144,8 +144,8 @@ export function FirstStepReact() {
                     <h1>Editor de codigo</h1>
 
                     <p>
-                        El editor de codigo que suelo usar es vscode el cual tambien es facil
-                        de instalar y que se puede obtener en el siguiente enlace
+                        El editor de código que suelo usar es VSCode, el cual también 
+                        es fácil de instalar y se puede obtener en el siguiente enlace.
                     </p>
 
                     <a href="https://code.visualstudio.com/Download" rel="noreferrer" target="_blank">vs Code</a>
@@ -160,18 +160,15 @@ export function FirstStepReact() {
                     <p>
                         Ahora que tenemos instalado el ambiente podemos
                         empezar con nuestra primera aplicacion de
-                        reasct
+                        react
                     </p>
 
                     <h2>Comando create-react-app</h2>
 
                     <p>
-                        Lo primero que tenemos que hacer es
-                    </p>
-
-                    <p>
-                        abrir una terminal en nuestra computadora
-                        para ejecutar el siguiente comando
+                        Lo primero que tenemos que hacer es abrir una 
+                        terminal en nuestra computadora para ejecutar 
+                        el siguiente comando:
                     </p>
 
                     <code>
