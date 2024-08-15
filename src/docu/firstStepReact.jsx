@@ -51,14 +51,13 @@ export function FirstStepReact() {
                     <h3>Usando nvm</h3>
 
                     <p>
-                        Para esto debemos instalar nvm que es un manejador
-                        de versiones de node, el cual es una muy buena herramienta
-                        ya que permite administrar diferentes versiones de
-                        node sin tener que mover tantos archivos
+                        Para esto, debemos instalar NVM, que es un manejador de versiones 
+                        de Node. Esta herramienta es muy útil, ya que permite administrar 
+                        diferentes versiones de Node sin tener que mover tantos archivos.
                     </p>
 
                     <p>
-                        Para instalar nvm se puede usar el siguiente codigo en
+                        Para instalar NVM se puede usar el siguiente codigo en
                         la terminal
                     </p>
 
@@ -73,7 +72,7 @@ export function FirstStepReact() {
                     </p>
 
                     <p>
-                        Se puede compronar que tenemos instalada la herramienta
+                        Se puede comprobar que tenemos instalada la herramienta
                         con el siguiente comando:
                     </p>
 
@@ -82,9 +81,9 @@ export function FirstStepReact() {
                     </code>
 
                     <p>
-                        Esto nos arroja la version de la herramienta y si no sale
-                        en pantalla una serie de numeros entonces podemos seguir con
-                        el siguiente comando para instalar node js:
+                        Esto nos muestra la versión de la herramienta, y si no aparece 
+                        en pantalla una serie de números, podemos continuar con el 
+                        siguiente comando para instalar Node.js:
                     </p>
 
                     <code>
