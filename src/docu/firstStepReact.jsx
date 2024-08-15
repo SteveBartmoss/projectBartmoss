@@ -9,11 +9,10 @@ export function FirstStepReact() {
             <DivSection>
                 <DivArticle>
                     <p>
-                        La libreria de react es una gran herramienta
-                        para crear sitios web y aplicaciones de una
-                        manera simple y rapida, es una herramienta creada
-                        por facebook y ahora tiene una gran comunidad que
-                        hacen que sea una buena opcion para empezar.
+                        La librería de React es una gran herramienta para crear 
+                        sitios web y aplicaciones de una manera simple y rápida. 
+                        Fue creada por Facebook y ahora cuenta con una gran comunidad, 
+                        lo que la convierte en una buena opción para empezar.
                     </p>
 
                     <h1>Antes de empezar</h1>
@@ -33,11 +32,10 @@ export function FirstStepReact() {
                     <h2>Windos/MacOs</h2>
 
                     <p>
-                        En caso de tener un sistema operativo como
-                        windows o macOs es bastante simple pues solo
-                        tenemos que dirigirnos a la pagina oficial de
-                        node js y seleccionar la verson del instalador que
-                        necesitamos
+                        En caso de tener un sistema operativo como Windows o macOS, 
+                        es bastante simple. Solo tenemos que dirigirnos a la página 
+                        oficial de Node.js y seleccionar la versión del instalador 
+                        que necesitamos.
                     </p>
 
                     <a href="https://nodejs.org/en/download/prebuilt-installer" rel="noreferrer" target="_blank">Sitio de Node</a>
@@ -45,9 +43,9 @@ export function FirstStepReact() {
                     <h2>Linux</h2>
 
                     <p>
-                        En el caso de linux el camino no siempre es facil pero
-                        como suelen decir el camino asi es, afortunadamente
-                        existen formas simples de hacer esto y ahora lo veremos
+                        En el caso de Linux, el camino no siempre es fácil, pero, 
+                        como suelen decir, el camino así es. Afortunadamente, existen 
+                        formas simples de hacerlo, y ahora las veremos.
                     </p>
 
                     <h3>Usando nvm</h3>
