@@ -19,11 +19,9 @@ fue positivo o me dio poderes y una mentalidad de tiburon como dicen los gurus
 del emprendimiento, simplementa fue un cambio el cual puede que para mi fue bueno 
 pero para no otros no sea gran cosa.
           </p>
-        </DivArticle>
-      </DivSection>
-      <p>
 
-Una de las primeras cosas que note es que ya no estaba al dia con acontecimientos 
+          <p>
+            Una de las primeras cosas que note es que ya no estaba al dia con acontecimientos 
 relevantes o de la cultura popular, que si bien puede sonar mal o como una gran 
 perdida, tampoco es la gran cosa pues principalmente el tipo de cosas que me habia perdido 
 eran en su mayoria memes, eventos canonicos del internet (como el don que compuso una porra para 
@@ -32,7 +30,12 @@ como puede ser el conflicto de ucrania, elecciones precidenciales o lo que paso 
 llegaron a mi pues solo deje las redes sociales, tampoco es como que me fuera a vivir a una cueva (aunque 
 lo he pensado y no es tan mala idea) asi que la gran cantidad de noticias importantes seguian llegando 
 para mi, pero por otra parte deje de recibir algunas noticias no que eran relevantes o que simplemente 
-eran paja en mi vida cotidiana y debo decir que este fue el cambio mas interesante. 
+eran paja en mi vida cotidiana y debo decir que este fue el cambio mas interesante.
+          </p>
+        </DivArticle>
+      </DivSection>
+      <p>
+
 
         Esto no lo percibi como que mi dia paso a 25 horas o que magicamente encontre mucho mas tiempo 
 libre porque ya no lo pierdon haciendo scroll, ya que la verdad simplemente cambie un abito por otro u 
