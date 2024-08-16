@@ -32,12 +32,9 @@ lo he pensado y no es tan mala idea) asi que la gran cantidad de noticias import
 para mi, pero por otra parte deje de recibir algunas noticias no que eran relevantes o que simplemente 
 eran paja en mi vida cotidiana y debo decir que este fue el cambio mas interesante.
           </p>
-        </DivArticle>
-      </DivSection>
-      <p>
 
-
-        Esto no lo percibi como que mi dia paso a 25 horas o que magicamente encontre mucho mas tiempo 
+          <p>
+             Esto no lo percibi como que mi dia paso a 25 horas o que magicamente encontre mucho mas tiempo 
 libre porque ya no lo pierdon haciendo scroll, ya que la verdad simplemente cambie un abito por otro u 
 otros, por ejemplo, en lugar de pasar mi tiempo en el transporte publico haciendo scroll en facebook o 
 instagram, simplemente me puse algun leer libro o si podia ver una serie que tenia ganas, de esta manera 
@@ -45,8 +42,14 @@ no es como que mi productividad subio al maximo como te hacen creer, simplmente 
 por otro, que puede resultar mas sano ? Bueno eso depende de la persona, en mi caso queria leer algunos 
 libros que me recomendaron asi que para mi fue mejor, ademas me logre poner al dia con las temporadas 
 de rick and morty asi que tampoco gane un nobel por esto, pero si pase mas tiempo haciendo algo que me 
-llamaba la atencion. 
+llamaba la atencion.
+          </p>
+        </DivArticle>
+      </DivSection>
+      <p>
 
+
+       
 En el caso de cuando me encontraba en casa, tampoco es que tuviera mas productividad ya que es mas de lo 
 mismo solo cambie algo por otro ya que en este caso pasaba mas tiempo jugando algun videojuego que me 
 gustara o viendo algo en youtube o incluso trabajando en mis propios proyectos, asi que tal vez si mejorara 
