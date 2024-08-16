@@ -54,21 +54,9 @@ y es que el volumen de informacion que recivia era menor que en antes y esto dej
 ya que no era como antes que sentia que muchos problemas agenos me arruniaban el dia pues una de las razonas por 
 las que deje de usar la redes sociales era porque la nueva moralidad de internet me tenia cansado.
           </p>
-        </DivArticle>
-      </DivSection>
-      <p>
 
-
-       
-En el caso de cuando me encontraba en casa, tampoco es que tuviera mas productividad ya que es mas de lo 
-mismo solo cambie algo por otro ya que en este caso pasaba mas tiempo jugando algun videojuego que me 
-gustara o viendo algo en youtube o incluso trabajando en mis propios proyectos, asi que tal vez si mejorara 
-un poco mi productividad pero no siento que fuera algo del otro mundo como todos lo comentan, per si note algo bueno 
-y es que el volumen de informacion que recivia era menor que en antes y esto dejaba mi cerebro mas relajado 
-ya que no era como antes que sentia que muchos problemas agenos me arruniaban el dia pues una de las razonas por 
-las que deje de usar la redes sociales era porque la nueva moralidad de internet me tenia cansado.
-
-        Puede que las demás personas entren a su perfil de Facebook y en la actualizaciones de estado 
+          <p>
+                    Puede que las demás personas entren a su perfil de Facebook y en la actualizaciones de estado 
 Solo aparezcan memes, publicaciones interesantes o algo que les llame la atención pero en mi caso 
 Me llegaban todo tipo de publicaciones menos de memes, llegaba cansado de la escuela o de mi trabajo en turno 
 Y lo unico que encontraba era publicaciones de feminismo, crímenes de mi ciudad, problemas de tráfico, cosas de derecha 
@@ -76,6 +64,13 @@ Y cosas de izquierda que realmente no me interesaban para nada, no porque no com
 Simplemente queria entrar a una red social para olvidarme de los problemas y las miseria de mi vida no para sumergirme mas 
 En eso y fue por esta razón que abandone las redes sociales, ya que estaba arto de tener que ver toda esta información que a 
 Mi no me interesaba ni importaba.
+          </p>
+          
+        </DivArticle>
+      </DivSection>
+      <p>
+
+
 
 Actualmente debo decir que me siento mejor al no tener toda esta cantidad de información en mi vida cotidiana pero 
 Al mismo tiempo perdi el poco contacto que tenia con algunos de mi amigos lo cual me puso un poco triste pero no fue tanto 
