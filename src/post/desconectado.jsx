@@ -1,8 +1,11 @@
+import { DivArticle, DivSection } from "../componentes/contenedores/contenedores";
+import { Portada } from "../componentes/portada/portada";
 
 export function DesconectadoLife(){
 
   return(
     <>
+      <Portada imgPortada={"/Assets/steveA.png"} title={"Vida Desconectado"} text={"Por Steve 16/08/2024"} />
       <p>Desde hace un par de anios deje las redes sociales o al 
           menos la mayoria ya que si consideramos youtube y whatsapp como 
           red social entonces no he dejado por completo las redes sociales, 
