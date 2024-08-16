@@ -6,7 +6,10 @@ export function DesconectadoLife(){
   return(
     <>
       <Portada imgPortada={"/Assets/steveA.png"} title={"Vida Desconectado"} text={"Por Steve 16/08/2024"} />
-      <p>Desde hace un par de anios deje las redes sociales o al 
+      <DivSection>
+        <DivArticle>
+          <p>
+            Desde hace un par de anios deje las redes sociales o al 
           menos la mayoria ya que si consideramos youtube y whatsapp como 
           red social entonces no he dejado por completo las redes sociales, 
 pero la mayoria de las aplciaciones populares como facebook, instagram, o X ya 
@@ -15,6 +18,10 @@ se puede notar un cambio pero contrario a lo que puedes creer no todo el cambio
 fue positivo o me dio poderes y una mentalidad de tiburon como dicen los gurus 
 del emprendimiento, simplementa fue un cambio el cual puede que para mi fue bueno 
 pero para no otros no sea gran cosa.
+          </p>
+        </DivArticle>
+      </DivSection>
+      <p>
 
 Una de las primeras cosas que note es que ya no estaba al dia con acontecimientos 
 relevantes o de la cultura popular, que si bien puede sonar mal o como una gran 
