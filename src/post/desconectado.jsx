@@ -40,7 +40,23 @@ gustara o viendo algo en youtube o incluso trabajando en mis propios proyectos, 
 un poco mi productividad pero no siento que fuera algo del otro mundo como todos lo comentan, per si note algo bueno 
 y es que el volumen de informacion que recivia era menor que en antes y esto dejaba mi cerebro mas relajado 
 ya que no era como antes que sentia que muchos problemas agenos me arruniaban el dia pues una de las razonas por 
-las que deje de usar la redes sociales era porque la nueva moralidad de internet me tenia cansado
+las que deje de usar la redes sociales era porque la nueva moralidad de internet me tenia cansado.
+
+        Puede que las demás personas entren a su perfil de Facebook y en la actualizaciones de estado 
+Solo aparezcan memes, publicaciones interesantes o algo que les llame la atención pero en mi caso 
+Me llegaban todo tipo de publicaciones menos de memes, llegaba cansado de la escuela o de mi trabajo en turno 
+Y lo unico que encontraba era publicaciones de feminismo, crímenes de mi ciudad, problemas de tráfico, cosas de derecha 
+Y cosas de izquierda que realmente no me interesaban para nada, no porque no comparta sus ideas si no que 
+Simplemente queria entrar a una red social para olvidarme de los problemas y las miseria de mi vida no para sumergirme mas 
+En eso y fue por esta razón que abandone las redes sociales, ya que estaba arto de tener que ver toda esta información que a 
+Mi no me interesaba ni importaba.
+
+Actualmente debo decir que me siento mejor al no tener toda esta cantidad de información en mi vida cotidiana pero 
+Al mismo tiempo perdi el poco contacto que tenia con algunos de mi amigos lo cual me puso un poco triste pero no fue tanto 
+Ya que aun tenia acceso a whatssapp así que no estaba del todo incomunicado, aun con todo esto no se si es totalmente 
+Recomendable que la gente empieza a dejar de usar sus redes sociales pues no necesariamente les van a dar resultados positivos 
+En todo los casos y ademas esto no es una especie de recomendación o algún discurso gurú simplemente tenia ganas de compartir 
+Mi experiencia dejando las redes sociales por un tiempo
       </p>
     </>
   )
