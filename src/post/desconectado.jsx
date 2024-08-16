@@ -44,6 +44,16 @@ libros que me recomendaron asi que para mi fue mejor, ademas me logre poner al d
 de rick and morty asi que tampoco gane un nobel por esto, pero si pase mas tiempo haciendo algo que me 
 llamaba la atencion.
           </p>
+
+          <p>
+            En el caso de cuando me encontraba en casa, tampoco es que tuviera mas productividad ya que es mas de lo 
+mismo solo cambie algo por otro ya que en este caso pasaba mas tiempo jugando algun videojuego que me 
+gustara o viendo algo en youtube o incluso trabajando en mis propios proyectos, asi que tal vez si mejorara 
+un poco mi productividad pero no siento que fuera algo del otro mundo como todos lo comentan, per si note algo bueno 
+y es que el volumen de informacion que recivia era menor que en antes y esto dejaba mi cerebro mas relajado 
+ya que no era como antes que sentia que muchos problemas agenos me arruniaban el dia pues una de las razonas por 
+las que deje de usar la redes sociales era porque la nueva moralidad de internet me tenia cansado.
+          </p>
         </DivArticle>
       </DivSection>
       <p>
