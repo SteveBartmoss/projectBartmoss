@@ -115,6 +115,10 @@ export function Steve() {
                             title: "Time Line",
                             content:
                                 <div>
+                                    <TimeItem fecha="16/08/2024" autor="Steve"
+                                        texto="Una nueva gpu no arreglara mis problemas 
+                                        pero seguramente si me haga feliz XD" />
+                                    
                                     <TimeItem fecha="13/08/2024" autor="Steve"
                                         texto="Los editores de codigo deberian 
                                         ser eternos, XD" />
