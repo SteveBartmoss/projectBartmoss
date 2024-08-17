@@ -72,12 +72,12 @@ export function DesconectadoLife() {
           </p>
 
           <p>
-            Actualmente debo decir que me siento mejor al no tener toda esta cantidad de información en mi vida cotidiana pero
-            Al mismo tiempo perdi el poco contacto que tenia con algunos de mi amigos lo cual me puso un poco triste pero no fue tanto
-            Ya que aun tenia acceso a whatssapp así que no estaba del todo incomunicado, aun con todo esto no se si es totalmente
-            Recomendable que la gente empieza a dejar de usar sus redes sociales pues no necesariamente les van a dar resultados positivos
-            En todo los casos y ademas esto no es una especie de recomendación o algún discurso gurú simplemente tenia ganas de compartir
-            Mi experiencia dejando las redes sociales por un tiempo
+            Actualmente, debo decir que me siento mejor al no tener toda esa cantidad de información en mi vida cotidiana. 
+            Sin embargo, al mismo tiempo, perdí el poco contacto que tenía con algunos de mis amigos, lo cual me puso un 
+            poco triste. Aun así, no fue tan grave, ya que todavía tenía acceso a WhatsApp, por lo que no estaba completamente 
+            incomunicado. A pesar de todo esto, no sé si es totalmente recomendable que la gente deje de usar sus redes sociales, 
+            pues no necesariamente obtendrán resultados positivos en todos los casos. Además, esto no es una especie de recomendación 
+            ni un discurso de gurú; simplemente quería compartir mi experiencia dejando las redes sociales por un tiempo.
           </p>
 
         </DivArticle>
