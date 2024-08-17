@@ -76,15 +76,21 @@ export function DesconectadoLife() {
             cansado.
           </p>
 
+          <h2>Las redes ya no eran felices</h2>
+
           <p>
             Puede que otras personas entren a su perfil de Facebook y en las actualizaciones de estado solo vean
             memes, publicaciones interesantes o algo que les llame la atención. Pero en mi caso, me llegaban todo
             tipo de publicaciones, excepto memes. Llegaba cansado de la escuela o de mi trabajo, y lo único que
             encontraba eran publicaciones sobre feminismo, crímenes en mi ciudad, problemas de tráfico, temas de
-            derecha y de izquierda que realmente no me interesaban. No es que no comparta algunas de esas ideas,
-            sino que simplemente quería entrar a una red social para olvidarme de los problemas y la miseria de mi
-            vida, no para sumergirme más en ellos. Fue por esta razón que abandoné las redes sociales: estaba harto
-            de tener que ver toda esa información que no me interesaba ni importaba.
+            derecha y de izquierda que realmente no me interesaban. 
+          </p>
+
+          <p>
+            No es que no comparta algunas de esas ideas, sino que simplemente quería entrar a una red social para 
+            olvidarme de los problemas y la miseria de mi vida, no para sumergirme más en ellos. Fue por esta razón 
+            que abandoné las redes sociales: estaba harto de tener que ver toda esa información que no me interesaba 
+            ni importaba.
           </p>
 
           <p>
