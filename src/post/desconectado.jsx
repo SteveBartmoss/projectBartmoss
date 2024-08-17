@@ -50,13 +50,14 @@ export function DesconectadoLife() {
           </p>
 
           <p>
-            En el caso de cuando me encontraba en casa, tampoco es que tuviera mas productividad ya que es mas de lo
-            mismo solo cambie algo por otro ya que en este caso pasaba mas tiempo jugando algun videojuego que me
-            gustara o viendo algo en youtube o incluso trabajando en mis propios proyectos, asi que tal vez si mejorara
-            un poco mi productividad pero no siento que fuera algo del otro mundo como todos lo comentan, per si note algo bueno
-            y es que el volumen de informacion que recivia era menor que en antes y esto dejaba mi cerebro mas relajado
-            ya que no era como antes que sentia que muchos problemas agenos me arruniaban el dia pues una de las razonas por
-            las que deje de usar la redes sociales era porque la nueva moralidad de internet me tenia cansado.
+            Cuando estaba en casa, tampoco noté un aumento significativo en mi productividad. Fue más de lo 
+            mismo: simplemente cambié una cosa por otra. En este caso, pasaba más tiempo jugando algún videojuego 
+            que me gustaba, viendo algo en YouTube, o incluso trabajando en mis propios proyectos. Tal vez mi 
+            productividad mejoró un poco, pero no siento que fuera algo extraordinario, como muchos lo mencionan. 
+            Sin embargo, noté algo positivo: el volumen de información que recibía era menor que antes, y esto 
+            dejaba mi mente más relajada. Ya no sentía que los problemas ajenos arruinaban mi día, pues una de 
+            las razones por las que dejé de usar redes sociales fue porque la nueva moralidad de internet me tenía 
+            cansado.
           </p>
 
           <p>
