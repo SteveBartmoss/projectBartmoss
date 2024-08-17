@@ -83,21 +83,27 @@ export function DesconectadoLife() {
             memes, publicaciones interesantes o algo que les llame la atención. Pero en mi caso, me llegaban todo
             tipo de publicaciones, excepto memes. Llegaba cansado de la escuela o de mi trabajo, y lo único que
             encontraba eran publicaciones sobre feminismo, crímenes en mi ciudad, problemas de tráfico, temas de
-            derecha y de izquierda que realmente no me interesaban. 
+            derecha y de izquierda que realmente no me interesaban.
           </p>
 
           <p>
-            No es que no comparta algunas de esas ideas, sino que simplemente quería entrar a una red social para 
-            olvidarme de los problemas y la miseria de mi vida, no para sumergirme más en ellos. Fue por esta razón 
-            que abandoné las redes sociales: estaba harto de tener que ver toda esa información que no me interesaba 
+            No es que no comparta algunas de esas ideas, sino que simplemente quería entrar a una red social para
+            olvidarme de los problemas y la miseria de mi vida, no para sumergirme más en ellos. Fue por esta razón
+            que abandoné las redes sociales: estaba harto de tener que ver toda esa información que no me interesaba
             ni importaba.
           </p>
+
+          <h2>Solo es mi experiencia no un consejo</h2>
 
           <p>
             Actualmente, debo decir que me siento mejor al no tener toda esa cantidad de información en mi vida cotidiana.
             Sin embargo, al mismo tiempo, perdí el poco contacto que tenía con algunos de mis amigos, lo cual me puso un
             poco triste. Aun así, no fue tan grave, ya que todavía tenía acceso a WhatsApp, por lo que no estaba completamente
-            incomunicado. A pesar de todo esto, no sé si es totalmente recomendable que la gente deje de usar sus redes sociales,
+            incomunicado.
+          </p>
+
+          <p>
+            A pesar de todo esto, no sé si es totalmente recomendable que la gente deje de usar sus redes sociales,
             pues no necesariamente obtendrán resultados positivos en todos los casos. Además, esto no es una especie de recomendación
             ni un discurso de gurú; simplemente quería compartir mi experiencia dejando las redes sociales por un tiempo.
           </p>
