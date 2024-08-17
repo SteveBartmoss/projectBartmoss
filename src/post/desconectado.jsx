@@ -55,10 +55,10 @@ export function DesconectadoLife() {
           </p>
 
           <p>
-            De esta manera, no es que mi productividad se disparó como te hacen creer; simplemente 
-            cambié un pasatiempo por otro. ¿Puede resultar más sano? Bueno, eso depende de la persona. 
-            En mi caso, quería leer algunos libros que me recomendaron, así que para mí fue mejor. Además, 
-            logré ponerme al día con las temporadas de Rick and Morty, así que tampoco es que gané un Nobel 
+            De esta manera, no es que mi productividad se disparó como te hacen creer; simplemente
+            cambié un pasatiempo por otro. ¿Puede resultar más sano? Bueno, eso depende de la persona.
+            En mi caso, quería leer algunos libros que me recomendaron, así que para mí fue mejor. Además,
+            logré ponerme al día con las temporadas de Rick and Morty, así que tampoco es que gané un Nobel
             por esto, pero sí pasé más tiempo haciendo algo que me interesaba.
           </p>
 
@@ -67,6 +67,9 @@ export function DesconectadoLife() {
             mismo: simplemente cambié una cosa por otra. En este caso, pasaba más tiempo jugando algún videojuego
             que me gustaba, viendo algo en YouTube, o incluso trabajando en mis propios proyectos. Tal vez mi
             productividad mejoró un poco, pero no siento que fuera algo extraordinario, como muchos lo mencionan.
+          </p>
+
+          <p>
             Sin embargo, noté algo positivo: el volumen de información que recibía era menor que antes, y esto
             dejaba mi mente más relajada. Ya no sentía que los problemas ajenos arruinaban mi día, pues una de
             las razones por las que dejé de usar redes sociales fue porque la nueva moralidad de internet me tenía
