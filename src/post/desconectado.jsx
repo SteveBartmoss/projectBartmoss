@@ -22,16 +22,18 @@ export function DesconectadoLife() {
           </p>
 
           <p>
-            Una de las primeras cosas que note es que ya no estaba al dia con acontecimientos
-            relevantes o de la cultura popular, que si bien puede sonar mal o como una gran
-            perdida, tampoco es la gran cosa pues principalmente el tipo de cosas que me habia perdido
-            eran en su mayoria memes, eventos canonicos del internet (como el don que compuso una porra para
-            sus pumas, algun chisme de celebridades o cosas por el estilo) noticias de un caracter mas serio
-            como puede ser el conflicto de ucrania, elecciones precidenciales o lo que paso con trump obviamnete
-            llegaron a mi pues solo deje las redes sociales, tampoco es como que me fuera a vivir a una cueva (aunque
-            lo he pensado y no es tan mala idea) asi que la gran cantidad de noticias importantes seguian llegando
-            para mi, pero por otra parte deje de recibir algunas noticias no que eran relevantes o que simplemente
-            eran paja en mi vida cotidiana y debo decir que este fue el cambio mas interesante.
+            Una de las primeras cosas que noté es que ya no estaba al día con 
+            acontecimientos relevantes o de la cultura popular. Aunque esto podría 
+            sonar mal o como una gran pérdida, en realidad no es algo tan significativo. 
+            Principalmente, lo que me perdí fueron, en su mayoría, memes, eventos 
+            canónicos de internet (como el hombre que compuso una porra para sus Pumas), 
+            algún chisme de celebridades o cosas por el estilo. Noticias de carácter más 
+            serio, como el conflicto en Ucrania, las elecciones presidenciales o lo que 
+            pasó con Trump, obviamente llegaron a mí. Solo dejé las redes sociales; no es 
+            como si me hubiera ido a vivir a una cueva (aunque lo he considerado, y no es 
+            tan mala idea). Así que la mayoría de las noticias importantes seguían llegando 
+            a mí. Sin embargo, dejé de recibir algunas noticias irrelevantes o que simplemente 
+            eran paja en mi vida cotidiana, y debo decir que este fue el cambio más interesante.
           </p>
 
           <p>
