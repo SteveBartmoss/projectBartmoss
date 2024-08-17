@@ -25,20 +25,24 @@ export function DesconectadoLife() {
           </p>
 
           <h2>Menos informacion basura</h2>
-          
+
           <p>
             Una de las primeras cosas que noté es que ya no estaba al día con
             acontecimientos relevantes o de la cultura popular. Aunque esto podría
             sonar mal o como una gran pérdida, en realidad no es algo tan significativo.
             Principalmente, lo que me perdí fueron, en su mayoría, memes, eventos
             canónicos de internet (como el hombre que compuso una porra para sus Pumas),
-            algún chisme de celebridades o cosas por el estilo. Noticias de carácter más
-            serio, como el conflicto en Ucrania, las elecciones presidenciales o lo que
-            pasó con Trump, obviamente llegaron a mí. Solo dejé las redes sociales; no es
-            como si me hubiera ido a vivir a una cueva (aunque lo he considerado, y no es
-            tan mala idea). Así que la mayoría de las noticias importantes seguían llegando
-            a mí. Sin embargo, dejé de recibir algunas noticias irrelevantes o que simplemente
-            eran paja en mi vida cotidiana, y debo decir que este fue el cambio más interesante.
+            algún chisme de celebridades o cosas por el estilo.
+          </p>
+
+          <p>
+            Noticias de carácter más serio, como el conflicto en Ucrania, las elecciones 
+            presidenciales o lo que pasó con Trump, obviamente llegaron a mí. Solo dejé las 
+            redes sociales; no es como si me hubiera ido a vivir a una cueva (aunque lo he 
+            considerado, y no es tan mala idea). Así que la mayoría de las noticias importantes 
+            seguían llegando a mí. Sin embargo, dejé de recibir algunas noticias irrelevantes o 
+            que simplemente eran paja en mi vida cotidiana, y debo decir que este fue el cambio 
+            más interesante.
           </p>
 
           <p>
