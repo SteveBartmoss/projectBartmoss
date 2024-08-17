@@ -37,15 +37,16 @@ export function DesconectadoLife() {
           </p>
 
           <p>
-            Esto no lo percibi como que mi dia paso a 25 horas o que magicamente encontre mucho mas tiempo
-            libre porque ya no lo pierdon haciendo scroll, ya que la verdad simplemente cambie un abito por otro u
-            otros, por ejemplo, en lugar de pasar mi tiempo en el transporte publico haciendo scroll en facebook o
-            instagram, simplemente me puse algun leer libro o si podia ver una serie que tenia ganas, de esta manera
-            no es como que mi productividad subio al maximo como te hacen creer, simplmente cambie un pasatiempo
-            por otro, que puede resultar mas sano ? Bueno eso depende de la persona, en mi caso queria leer algunos
-            libros que me recomendaron asi que para mi fue mejor, ademas me logre poner al dia con las temporadas
-            de rick and morty asi que tampoco gane un nobel por esto, pero si pase mas tiempo haciendo algo que me
-            llamaba la atencion.
+            No percibí esto como si mi día hubiese pasado a tener 25 horas o que mágicamente 
+            encontré mucho más tiempo libre porque ya no lo perdía haciendo scroll. La verdad 
+            es que simplemente cambié un hábito por otro, u otros. Por ejemplo, en lugar de pasar mi 
+            tiempo en el transporte público haciendo scroll en Facebook o Instagram, simplemente me 
+            puse a leer algún libro o, si podía, ver una serie que tenía ganas de ver. De esta manera, 
+            no es que mi productividad se disparó como te hacen creer; simplemente cambié un pasatiempo 
+            por otro. ¿Puede resultar más sano? Bueno, eso depende de la persona. En mi caso, quería leer 
+            algunos libros que me recomendaron, así que para mí fue mejor. Además, logré ponerme al día 
+            con las temporadas de Rick and Morty, así que tampoco es que gané un Nobel por esto, pero sí 
+            pasé más tiempo haciendo algo que me interesaba.
           </p>
 
           <p>
