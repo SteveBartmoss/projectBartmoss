@@ -9,15 +9,16 @@ export function DesconectadoLife() {
       <DivSection>
         <DivArticle>
           <p>
-            Desde hace un par de anios deje las redes sociales o al
-            menos la mayoria ya que si consideramos youtube y whatsapp como
-            red social entonces no he dejado por completo las redes sociales,
-            pero la mayoria de las aplciaciones populares como facebook, instagram, o X ya
-            no forman parte de mi telefono y tampoco de mi vida cotidiana, y ciertamente
-            se puede notar un cambio pero contrario a lo que puedes creer no todo el cambio
-            fue positivo o me dio poderes y una mentalidad de tiburon como dicen los gurus
-            del emprendimiento, simplementa fue un cambio el cual puede que para mi fue bueno
-            pero para no otros no sea gran cosa.
+            Hace un par de años dejé las redes sociales, o al menos 
+            la mayoría, ya que si consideramos YouTube y WhatsApp como 
+            redes sociales, entonces no las he dejado por completo. Sin 
+            embargo, las aplicaciones más populares como Facebook, Instagram, 
+            o X ya no forman parte de mi teléfono ni de mi vida cotidiana. 
+            Ciertamente, se nota un cambio, pero, contrario a lo que podrías 
+            pensar, no todo fue positivo ni me otorgó "poderes" o una "mentalidad 
+            de tiburón", como dicen los gurús del emprendimiento. Simplemente fue 
+            un cambio que, para mí, pudo haber sido bueno, pero que para otros puede 
+            no significar gran cosa.
           </p>
 
           <p>
