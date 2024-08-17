@@ -61,14 +61,14 @@ export function DesconectadoLife() {
           </p>
 
           <p>
-            Puede que las demás personas entren a su perfil de Facebook y en la actualizaciones de estado
-            Solo aparezcan memes, publicaciones interesantes o algo que les llame la atención pero en mi caso
-            Me llegaban todo tipo de publicaciones menos de memes, llegaba cansado de la escuela o de mi trabajo en turno
-            Y lo unico que encontraba era publicaciones de feminismo, crímenes de mi ciudad, problemas de tráfico, cosas de derecha
-            Y cosas de izquierda que realmente no me interesaban para nada, no porque no comparta sus ideas si no que
-            Simplemente queria entrar a una red social para olvidarme de los problemas y las miseria de mi vida no para sumergirme mas
-            En eso y fue por esta razón que abandone las redes sociales, ya que estaba arto de tener que ver toda esta información que a
-            Mi no me interesaba ni importaba.
+            Puede que otras personas entren a su perfil de Facebook y en las actualizaciones de estado solo vean 
+            memes, publicaciones interesantes o algo que les llame la atención. Pero en mi caso, me llegaban todo 
+            tipo de publicaciones, excepto memes. Llegaba cansado de la escuela o de mi trabajo, y lo único que 
+            encontraba eran publicaciones sobre feminismo, crímenes en mi ciudad, problemas de tráfico, temas de 
+            derecha y de izquierda que realmente no me interesaban. No es que no comparta algunas de esas ideas, 
+            sino que simplemente quería entrar a una red social para olvidarme de los problemas y la miseria de mi 
+            vida, no para sumergirme más en ellos. Fue por esta razón que abandoné las redes sociales: estaba harto 
+            de tener que ver toda esa información que no me interesaba ni importaba.
           </p>
 
           <p>
