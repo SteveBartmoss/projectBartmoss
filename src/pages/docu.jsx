@@ -6,7 +6,7 @@ import { useApp } from "../context/contextApp";
 
 export function Docu() {
 
-    const {isDarkTheme} = useApp()
+    const { isDarkTheme } = useApp()
 
     return (
         <div>
@@ -30,7 +30,7 @@ export function Docu() {
                     <Card>
                         <h1>El hookContext</h1>
                         <p>
-                            El hook context puede ser confuso 
+                            El hook context puede ser confuso
                             pero ahora si lo entenderas
                         </p>
                         <Chip color="warning">Java Script</Chip>
@@ -42,13 +42,13 @@ export function Docu() {
                     <Card>
                         <h1>Llaves foraneas y velocidad</h1>
                         <p>
-                            La informacion que siempre quisistes saber 
+                            La informacion que siempre quisistes saber
                             sobre las llaves foraneas
                         </p>
                         <Chip>Sql</Chip>
-                        <CardAcccions>
+                        <CardAccions>
                             <CardLink url={'fkvelocidad'} text={'Ir al articulo'} />
-                        </CardAcccions>
+                        </CardAccions>
                     </Card>
                 </DivTopicos>
             </DivSection>
