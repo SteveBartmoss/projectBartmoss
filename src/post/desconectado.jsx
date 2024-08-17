@@ -36,26 +36,30 @@ export function DesconectadoLife() {
           </p>
 
           <p>
-            Noticias de carácter más serio, como el conflicto en Ucrania, las elecciones 
-            presidenciales o lo que pasó con Trump, obviamente llegaron a mí. Solo dejé las 
-            redes sociales; no es como si me hubiera ido a vivir a una cueva (aunque lo he 
-            considerado, y no es tan mala idea). Así que la mayoría de las noticias importantes 
-            seguían llegando a mí. Sin embargo, dejé de recibir algunas noticias irrelevantes o 
-            que simplemente eran paja en mi vida cotidiana, y debo decir que este fue el cambio 
+            Noticias de carácter más serio, como el conflicto en Ucrania, las elecciones
+            presidenciales o lo que pasó con Trump, obviamente llegaron a mí. Solo dejé las
+            redes sociales; no es como si me hubiera ido a vivir a una cueva (aunque lo he
+            considerado, y no es tan mala idea). Así que la mayoría de las noticias importantes
+            seguían llegando a mí. Sin embargo, dejé de recibir algunas noticias irrelevantes o
+            que simplemente eran paja en mi vida cotidiana, y debo decir que este fue el cambio
             más interesante.
           </p>
 
+          <h2>Menos scroll mas tiempo ?</h2>
           <p>
             No percibí esto como si mi día hubiese pasado a tener 25 horas o que mágicamente
             encontré mucho más tiempo libre porque ya no lo perdía haciendo scroll. La verdad
             es que simplemente cambié un hábito por otro, u otros. Por ejemplo, en lugar de pasar mi
             tiempo en el transporte público haciendo scroll en Facebook o Instagram, simplemente me
-            puse a leer algún libro o, si podía, ver una serie que tenía ganas de ver. De esta manera,
-            no es que mi productividad se disparó como te hacen creer; simplemente cambié un pasatiempo
-            por otro. ¿Puede resultar más sano? Bueno, eso depende de la persona. En mi caso, quería leer
-            algunos libros que me recomendaron, así que para mí fue mejor. Además, logré ponerme al día
-            con las temporadas de Rick and Morty, así que tampoco es que gané un Nobel por esto, pero sí
-            pasé más tiempo haciendo algo que me interesaba.
+            puse a leer algún libro o, si podía, ver una serie que tenía ganas de ver.
+          </p>
+
+          <p>
+            De esta manera, no es que mi productividad se disparó como te hacen creer; simplemente 
+            cambié un pasatiempo por otro. ¿Puede resultar más sano? Bueno, eso depende de la persona. 
+            En mi caso, quería leer algunos libros que me recomendaron, así que para mí fue mejor. Además, 
+            logré ponerme al día con las temporadas de Rick and Morty, así que tampoco es que gané un Nobel 
+            por esto, pero sí pasé más tiempo haciendo algo que me interesaba.
           </p>
 
           <p>
