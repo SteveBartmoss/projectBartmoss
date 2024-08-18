@@ -21,7 +21,7 @@ export function RouterBlog(){
                 <Route path="docu/primerospasos" element={<FirstStepReact /> } />
                 <Route path="docu/hookcontext" element={<HookContext /> } />
                 <Route path="docu/fkvelocidad" element={<FkAndIndex />} />
-                <Route path="post/desconectado" element={<DesconectadoLife />} />
+                <Route path="steve/desconectado" element={<DesconectadoLife />} />
 
             </Routes>
             <Footer />
