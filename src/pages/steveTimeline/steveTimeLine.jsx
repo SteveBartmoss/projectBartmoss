@@ -4,6 +4,11 @@ import { TimeItem } from "../../componentes/timeItem/timeItem";
 export function SteveTimeLine() {
     return (
         <div>
+            <TimeItem fecha="21/08/2024" autor="Steve" 
+                texto="Si bueno, igual pensar en hacer un editor 
+                por mi cuenta no fue una idea tan buena, pero el 
+                camino asi es" />
+            
             <TimeItem fecha="16/08/2024" autor="Steve"
                 texto="Una nueva gpu no arreglara mis problemas 
                 pero seguramente si me haga feliz XD" />
