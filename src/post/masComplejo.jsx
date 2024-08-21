@@ -18,3 +18,11 @@
 <p>
     Luego de esto valore mas el trabajo de las personas que crea los compiladores pues poco se decide de su trabajo y es cuando menos una de las tareas mas difíciles de resolver, no por nada el libro de compiladores tiene la imagen de un dragon contra un caballero, esta experiencia me dejo la lección de que no siempre se debe insultar la función de un programa o el trabajo de otros ya que si no quieres tener estos fallos o mala experiencia entonces has tu propio programa
 </p>
+
+<p>
+    No es un mensaje de ofensa ni nada por el estilo, es la verdad, prueba a crear tu propia aplicación ya que de esta ,manera no solo aprenderás como funciona una aplicación y el proceso de crear la misma, lo cual puede ayudarte mucho para mejorar como desarrollador pues sales de tu zona de confort y aprendes algo nuevo.  También  descubrirás que el hacer una aplicación lleva su tiempo y ademas tiene una complejidad para la persona que lo desarrolla o incluso el equipo de personas encargados de llevar a cabo una aplicación no tiene una tarea sencilla, por esto es bueno que los usuarios también tomen la inciativa ya que ademas de aprender mas sobre técnicas de software también aprendes a valorar mas sobre el trabajo de otras personas al crear una aplicación. 
+</p>
+
+<p>
+    Es por eso que ahora trato de entender mejor la complejidad del software que uso y como es el proceso de crear aplicaciones para poder valorar mas cuando una aplicación me ofrece una interfaz agradable, amigable o funcionalidades complejas que me facilitan el trabajo, ya que detrás de eso hay una persona que hizo un gran esfuerzo para completar la tarea
+</p>
