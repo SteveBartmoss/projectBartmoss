@@ -73,6 +73,15 @@ export function ProfileSteve() {
 
                         <Card>
                             <h1>Stack de lenguajes</h1>
+                            <p>
+                                Dart
+                            </p>
+                            <p>
+                                Go
+                            </p>
+                            <p>
+                                Rust
+                            </p>
                         </Card>
 
                         <Card>
