@@ -99,6 +99,12 @@ export function ProfileSteve() {
 
                         <Card>
                             <h1>Stack de proyectos</h1>
+                            <p>
+                                Desplegar una api
+                            </p>
+                            <p>
+                                Completar la version 1 de la Ui
+                            </p>
                         </Card>
                     </DivCol>
                 </DivRow>
