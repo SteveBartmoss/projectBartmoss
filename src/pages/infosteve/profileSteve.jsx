@@ -86,6 +86,15 @@ export function ProfileSteve() {
 
                         <Card>
                             <h1>Stack de tecnologias</h1>
+                            <p>
+                                Docker
+                            </p>
+                            <p>
+                                Nest.js
+                            </p>
+                            <p>
+                                Mongo db
+                            </p>
                         </Card>
 
                         <Card>
