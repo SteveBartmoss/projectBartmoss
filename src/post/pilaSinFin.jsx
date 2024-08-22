@@ -33,3 +33,13 @@
     de la base de datos pero ahora eso habia terminado tenia que aprender 
     una forma de trabajo para backend y otra para frontend.
 </p>
+
+<p>
+    Yo no entendia porque necesitava tener el proyecto dividido en dos 
+    partes lo cual me daba la tarea de aprender dos cosas diferentes 
+    y para este momento ya tenia mas cosas que agregar a la pila de tecnologias 
+    que tenia que aprender, ademas de esto empezaban a llegar mas cosas 
+    como dockerizacion, pruebas unitarias, bases no relacionales, manejadores 
+    de estado, web hosting, aws y muchas otras tecnologias que me abrumaban 
+    pues parecia no tener la cantidad de cosas que tenia que aprender
+</p>
