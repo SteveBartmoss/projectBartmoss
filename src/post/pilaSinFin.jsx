@@ -22,3 +22,14 @@
   los estandares habian desaparecido, tenia que entrar al mundo de los 
   frameworks.
 </p>
+
+<p>
+    Lo primero que me causo confusion era la necesidad de separar 
+    el programa en dos partes, el frontend y el backend ya que hasta el 
+    momento no usaba esta separacion para los programas que solia crear 
+    y tener que separarlo en dos diferentes no me daba mucho sentido 
+    pero eso no era todo, hasta el momento un solo lenguaje era capas 
+    de crear tanto la interfaz de usuario como traer la informaicon 
+    de la base de datos pero ahora eso habia terminado tenia que aprender 
+    una forma de trabajo para backend y otra para frontend.
+</p>
