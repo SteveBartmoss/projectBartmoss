@@ -43,6 +43,14 @@ export function ProfileSteve() {
 
                     <DivCol>
                         <Card>
+                            <h1>Proyectos Actuales</h1>
+                            <CardContent>
+                                <p>Ui Steve</p>
+                                <p>Sql Steve</p>
+                                <p>mochaEditor</p>
+                            </CardContent>
+                        </Card>
+                        <Card>
                             <h1>Lenguajes usados</h1>
                             <CardContent>
 
