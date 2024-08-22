@@ -43,3 +43,15 @@
     de estado, web hosting, aws y muchas otras tecnologias que me abrumaban 
     pues parecia no tener la cantidad de cosas que tenia que aprender
 </p>
+
+<p>
+    Para este punto se que pensaras que no es necesario tener todos 
+    esos conocimientos, ya que no todos los lenguajes que salen deben 
+    ser aprendidos o tenemos que volvernos expertos en ellos y eso 
+    actualmente lo entiendo pero aun asi es algo intimidante que la 
+    pila cresca tan rapido y que ademas el cambio pueda ser lento o que 
+    en algunos casos no se acepte el cambio pues muchas empresas se 
+    reusan a cambiar su pila de tecnologias y prefieren quedarse con 
+    sus sistemas y solamente seguir lanzando parches para hacer funcionar 
+    su codigo.
+</p>
