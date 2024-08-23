@@ -1,4 +1,11 @@
 <p>
+  Cuando inicias un desarrollo en una pila de tecnologia 
+  que involucra el lenguaje php entonces es posible que 
+  te encuentres con un programa llamado composer, el cual 
+  puede que no conoscas pero no resulta tan complejo
+</p>
+
+<p>
   Composer es una herramienta de gestión de dependencias para PHP. Facilita la administración de las librerías y paquetes que un proyecto PHP necesita para funcionar. Composer permite declarar las bibliotecas que tu proyecto depende y se encarga de instalarlas y actualizarlas según sea necesario, garantizando que tengas todas las versiones correctas y compatibles.
 </p>
 
