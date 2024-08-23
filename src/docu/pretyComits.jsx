@@ -118,3 +118,7 @@
   Closes #123
 </p>
 
+<p>
+  Conventional Commits proporciona una manera estándar y estructurada de redactar mensajes de commit, lo que facilita la colaboración, el mantenimiento del código, y la automatización de procesos. Al seguir estas reglas, puedes asegurarte de que los commits sean claros, concisos y útiles para cualquier persona que trabaje en el proyecto.
+</p>
+
