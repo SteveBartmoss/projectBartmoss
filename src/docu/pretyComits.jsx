@@ -86,3 +86,24 @@
 
   Ejemplo: ci: update GitHub Actions workflow
 </p>
+
+<p>
+  Uso del Scope:
+  scope es opcional, pero útil para indicar qué parte del proyecto se vio afectada.
+  Ejemplo: feat(auth): add JWT token verification
+</p>
+
+<p>
+  Descripción:
+  La descripción debe ser breve, clara y en tiempo presente.
+  Ejemplo: fix: correct validation logic in login form
+</p>
+
+<p>
+  Cuerpo del Commit (Opcional):
+  Proporciona detalles adicionales si es necesario.
+  
+  fix: correct validation logic in login form
+
+  The previous logic did not account for edge cases where the user inputs special characters. This change introduces a regex to handle these cases correctly.
+</p>
