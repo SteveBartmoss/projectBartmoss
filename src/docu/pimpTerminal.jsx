@@ -23,4 +23,11 @@
   instala y listo
 </p>
 
+<p>
+  Esto solos nos permite tener un esquema de colores llamativo pero 
+  si queremos algo mejor entonces podemos modificar el promp de nuestro 
+  terminal para que se va mas como si fuera un hacker entonces 
+  podemos modificar el promp del terminal
+</p>
+
 
