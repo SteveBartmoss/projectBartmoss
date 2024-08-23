@@ -19,3 +19,26 @@
 <p>
     Conventional Commits es una convención para escribir mensajes de commit de forma estructurada y estandarizada. Esta convención permite a los equipos de desarrollo mantener un historial de commits claro y coherente, facilitando la comprensión del código, el control de versiones y la automatización en procesos como el versionado semántico y la generación de changelogs.
 </p>
+
+<p>
+    Reglas para Redactar un Buen Commit Usando Conventional Commits
+
+    Formato Básico:
+
+    Cada commit debe seguir el siguiente formato:
+    <type>[optional scope]: <description>
+
+    [optional body]
+
+    [optional footer(s)]
+
+    type: Es un tipo obligatorio que indica la naturaleza del cambio.
+
+    scope: (Opcional) Indica la parte del proyecto afectada por el commit.
+
+    description: Es una descripción corta y concisa del cambio.
+
+    body: (Opcional) Explicación más detallada del cambio.
+
+    footer: (Opcional) Información adicional, como referencias a tickets o breaking changes.
+</p>
