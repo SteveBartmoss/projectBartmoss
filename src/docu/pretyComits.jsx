@@ -15,3 +15,7 @@
   organizar los mensajes de los commits pero esto puede cambiar cuando 
   trabajamos con un grupo de personas
 </p>
+
+<p>
+    Conventional Commits es una convención para escribir mensajes de commit de forma estructurada y estandarizada. Esta convención permite a los equipos de desarrollo mantener un historial de commits claro y coherente, facilitando la comprensión del código, el control de versiones y la automatización en procesos como el versionado semántico y la generación de changelogs.
+</p>
