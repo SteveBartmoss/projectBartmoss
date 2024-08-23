@@ -107,3 +107,14 @@
 
   The previous logic did not account for edge cases where the user inputs special characters. This change introduces a regex to handle these cases correctly.
 </p>
+
+<p>
+  Footer (Opcional):
+
+  Se usa para referencias a tickets (por ejemplo, Jira, GitHub Issues) o para indicar cambios importantes.
+
+  BREAKING CHANGE: the login API now requires an email instead of username
+
+  Closes #123
+</p>
+
