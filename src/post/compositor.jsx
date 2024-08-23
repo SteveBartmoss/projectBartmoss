@@ -32,5 +32,37 @@
       Composer utiliza un repositorio central llamado Packagist para encontrar y descargar paquetes de PHP. Packagist es el repositorio principal donde los desarrolladores publican sus bibliotecas y herramientas para que otros puedan usarlas.
 </p>
 
+<p>
+      Archivo composer.json
+
+      El archivo composer.json es donde defines las dependencias de tu proyecto. Aquí es donde especificas qué bibliotecas necesitas, sus versiones, y cualquier otro metadato necesario.
+</p>
+
+<p>
+      Comandos Básicos de Composer
+
+      Instalar Dependencias: Instala las dependencias definidas en composer.json.
+
+      composer install
+
+      Actualizar Dependencias: Actualiza las dependencias a sus versiones más recientes permitidas por composer.json.
+
+      composer update
+
+      Añadir una Dependencia: Añade una nueva biblioteca al proyecto y la instala.
+
+      composer require nombre/paquete
+
+      Eliminar una Dependencia: Elimina una biblioteca del proyecto y actualiza composer.json.
+
+      composer remove nombre/paquete
+</p>
+
+<p>
+      Composer es una herramienta esencial para cualquier proyecto PHP moderno. Facilita la gestión de dependencias, asegurando que todas las bibliotecas necesarias estén disponibles y funcionando correctamente en tu proyecto, mientras automatiza tareas tediosas como el autoloading de clases. Es ampliamente utilizado en la comunidad PHP y ha transformado la forma en que los desarrolladores manejan sus proyectos.
+</p>
+
+
+
 
 
