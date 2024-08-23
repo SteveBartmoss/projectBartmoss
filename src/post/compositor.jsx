@@ -6,6 +6,13 @@
 </p>
 
 <p>
+  Si has trabajado con proyectos de JavaScript y con 
+  npm entonces tienes el concepto de lo que es un manejador 
+  de paquetes y composer es eso aunque digamos que con 
+  otro lenguaje como objetivo
+</p>
+
+<p>
   Composer es una herramienta de gestión de dependencias para PHP. Facilita la administración de las librerías y paquetes que un proyecto PHP necesita para funcionar. Composer permite declarar las bibliotecas que tu proyecto depende y se encarga de instalarlas y actualizarlas según sea necesario, garantizando que tengas todas las versiones correctas y compatibles.
 </p>
 
