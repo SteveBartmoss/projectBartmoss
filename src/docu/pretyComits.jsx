@@ -42,3 +42,47 @@
 
     footer: (Opcional) Información adicional, como referencias a tickets o breaking changes.
 </p>
+
+<p>
+  Tipos Comunes de Commits:
+
+  feat: Introducción de una nueva funcionalidad.
+
+  Ejemplo: feat: add user authentication
+
+  fix: Corrección de un bug.
+
+  Ejemplo: fix: resolve issue with user login
+
+  docs: Cambios en la documentación.
+
+  Ejemplo: docs: update API documentation for login endpoint
+
+  style: Cambios que no afectan la lógica del código, solo el formato (espacios, comas, etc.).
+
+  Ejemplo: style: format code with prettier
+
+  refactor: Cambio en el código que no añade funcionalidad nueva ni corrige un error.
+
+  Ejemplo: refactor: optimize authentication flow
+
+  test: Añadir o modificar pruebas.
+
+  Ejemplo: test: add unit tests for login service
+
+  chore: Actualización de tareas de construcción, configuración de herramientas, etc.
+
+  Ejemplo: chore: update dependencies
+
+  perf: Mejoras en el rendimiento.
+
+  Ejemplo: perf: improve database query performance
+
+  build: Cambios que afectan el sistema de construcción o dependencias externas.
+
+  Ejemplo: build: update webpack to version 5
+
+  ci: Cambios en la configuración de integración continua.
+
+  Ejemplo: ci: update GitHub Actions workflow
+</p>
