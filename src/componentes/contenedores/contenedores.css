@@ -20,6 +20,14 @@
     border-radius: 20px;
 }
 
+.div-main-dark #linkto {
+    color: #149eca;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+/*estilos para colores claros*/
 .div-main-light {
     background-color: #9DA9A0;
     color: #1E2326;
@@ -40,6 +48,13 @@
 .div-main-light::-webkit-scrollbar-thumb {
     background-color: #384B55;
     border-radius: 20px;
+}
+
+.div-main-light #linkto {
+    color: #384B55;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
 }
 
 .div-row {
@@ -84,12 +99,6 @@
 
 .div-article p {
     font-size: 1.5rem;
-}
-
-.div-article a {
-    color: #149eca;
-    text-decoration: none;
-    font-size: 1.2rem;
 }
 
 .div-article code {
