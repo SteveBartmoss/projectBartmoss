@@ -11,6 +11,7 @@ import { FkAndIndex } from "../docu/llavesIndices";
 import { PretyCommits } from "../docu/pretyComits";
 import { PilaSinFin } from "../post/pilaSinFin";
 import { Compositor } from "../docu/compositor";
+import { PimpTerminal } from "../post/pimpTerminal";
 
 
 export function RouterBlog(){
@@ -29,6 +30,7 @@ export function RouterBlog(){
 
                 <Route path="steve/desconectado" element={<DesconectadoLife />} />
                 <Route path="steve/pilasinfin" element={<PilaSinFin />} />
+                <Route path="steve/pimpterminal" element={<PimpTerminal />} />
 
             </Routes>
             <Footer />
