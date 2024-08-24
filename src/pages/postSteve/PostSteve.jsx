@@ -30,6 +30,18 @@ export function PostSteve() {
                             <CardLink url={'pilasinfin'} text={'Ir al articulo'} />
                         </CardAccions>
                     </Card>
+
+                    <Card>
+                        <h1>Pimp my Terminal</h1>
+                        <p>
+                            Trabajar en una terminal no te obliga 
+                            a tener que ser aburrido
+                        </p>
+                        <CardAccions>
+                            <CardLink url={'pimpterminal'} text={'Ir al articulo'} />
+                        </CardAccions>
+                    </Card>
+                    
                 </DivTopicos>
             </DivSection>
         </div>
