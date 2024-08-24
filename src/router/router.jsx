@@ -8,6 +8,7 @@ import { FirstStepReact } from "../docu/firstStepReact";
 import { HookContext } from "../docu/hookContext";
 import { DesconectadoLife } from "../post/desconectado";
 import { FkAndIndex } from "../docu/llavesIndices";
+import { PretyCommits } from "../docu/pretyComits";
 
 
 export function RouterBlog(){
@@ -21,6 +22,7 @@ export function RouterBlog(){
                 <Route path="docu/primerospasos" element={<FirstStepReact /> } />
                 <Route path="docu/hookcontext" element={<HookContext /> } />
                 <Route path="docu/fkvelocidad" element={<FkAndIndex />} />
+                <Route path="docu/pretycommits" element={<PretyCommits />} />
                 <Route path="steve/desconectado" element={<DesconectadoLife />} />
 
             </Routes>
