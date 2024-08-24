@@ -50,6 +50,18 @@ export function Docu() {
                             <CardLink url={'fkvelocidad'} text={'Ir al articulo'} />
                         </CardAccions>
                     </Card>
+
+                    <Card>
+                        <h1>Prety commits</h1>
+                        <p>
+                            Una forma de hacer mas efientes 
+                            los commits para los demas
+                        </p>
+                        <Chip>Git</Chip>
+                        <CardAccions>
+                            <CardLink url={'pretycommits'} text={'Ir al articulo'} />
+                        </CardAccions>
+                    </Card>
                 </DivTopicos>
             </DivSection>
         </div>
