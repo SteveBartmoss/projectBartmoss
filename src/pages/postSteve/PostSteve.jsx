@@ -18,6 +18,18 @@ export function PostSteve() {
                             <CardLink url={'desconectado'} text={'Ir al articulo'} />
                         </CardAccions>
                     </Card>
+
+                    <Card>
+                        <h1>Pila sin fin</h1>
+                        <p>
+                            La tecnologia parese no tener 
+                            fin y continuamente salen 
+                            mas cosas que aprender
+                        </p>
+                        <CardAccions>
+                            <CardLink url={'pilasinfin'} text={'Ir al articulo'} />
+                        </CardAccions>
+                    </Card>
                 </DivTopicos>
             </DivSection>
         </div>
