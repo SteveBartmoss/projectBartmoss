@@ -1,124 +1,143 @@
-<p>
-  Cuando se trabaja con un proyecto de software ya sea 
-  de manera independiente, colaborando en un proyecto de 
-  codigo abierto o en una empresa es casi seguro que usen 
-  un manejador de versiones como lo es git, lo cual no es 
-  precisamente el tema de este post pero si tiene relacion 
-  y es que los commits pueden ser algo serio
-</p>
+import { DivArticle, DivSection } from "../componentes/contenedores/contenedores"
+import { Portada } from "../componentes/portada/portada"
 
-<p>
-  Cuando trabajamos en nuestro propio repositorio puede que 
-  no sigamos un orden claro a la hora de hacer commits y 
-  es que realmente los unicos que vemos estos mensajes somos 
-  nosotros mismos, lo cual hace que pensemos que no tiene sentido 
-  organizar los mensajes de los commits pero esto puede cambiar cuando 
-  trabajamos con un grupo de personas
-</p>
+export function PretyCommits() {
+  return (
+    <>
+      <Portada imgPortada={"/Assets/steveA.png"} title={"Prety Commits"} text={"Por Steve 21/08/2024"} />
 
-<p>
-    Conventional Commits es una convención para escribir mensajes de commit de forma estructurada y estandarizada. Esta convención permite a los equipos de desarrollo mantener un historial de commits claro y coherente, facilitando la comprensión del código, el control de versiones y la automatización en procesos como el versionado semántico y la generación de changelogs.
-</p>
+      <DivSection>
+        <DivArticle>
+          <p>
+            Cuando se trabaja con un proyecto de software ya sea
+            de manera independiente, colaborando en un proyecto de
+            codigo abierto o en una empresa es casi seguro que usen
+            un manejador de versiones como lo es git, lo cual no es
+            precisamente el tema de este post pero si tiene relacion
+            y es que los commits pueden ser algo serio
+          </p>
 
-<p>
-    Reglas para Redactar un Buen Commit Usando Conventional Commits
+          <p>
+            Cuando trabajamos en nuestro propio repositorio puede que
+            no sigamos un orden claro a la hora de hacer commits y
+            es que realmente los unicos que vemos estos mensajes somos
+            nosotros mismos, lo cual hace que pensemos que no tiene sentido
+            organizar los mensajes de los commits pero esto puede cambiar cuando
+            trabajamos con un grupo de personas
+          </p>
 
-    Formato Básico:
+          <p>
+            Conventional Commits es una convención para escribir mensajes de commit de forma estructurada y estandarizada. Esta convención permite a los equipos de desarrollo mantener un historial de commits claro y coherente, facilitando la comprensión del código, el control de versiones y la automatización en procesos como el versionado semántico y la generación de changelogs.
+          </p>
 
-    Cada commit debe seguir el siguiente formato:
-    <type>[optional scope]: <description>
+          <p>
+            Reglas para Redactar un Buen Commit Usando Conventional Commits
 
-    [optional body]
+            Formato Básico:
 
-    [optional footer(s)]
+            Cada commit debe seguir el siguiente formato:
+            
+            &lt;type&gt; [optional scope]: &lt;description&gt;
 
-    type: Es un tipo obligatorio que indica la naturaleza del cambio.
+              [optional body]
 
-    scope: (Opcional) Indica la parte del proyecto afectada por el commit.
+              [optional footer(s)]
 
-    description: Es una descripción corta y concisa del cambio.
+              type: Es un tipo obligatorio que indica la naturaleza del cambio.
 
-    body: (Opcional) Explicación más detallada del cambio.
+              scope: (Opcional) Indica la parte del proyecto afectada por el commit.
 
-    footer: (Opcional) Información adicional, como referencias a tickets o breaking changes.
-</p>
+              description: Es una descripción corta y concisa del cambio.
 
-<p>
-  Tipos Comunes de Commits:
+              body: (Opcional) Explicación más detallada del cambio.
 
-  feat: Introducción de una nueva funcionalidad.
+              footer: (Opcional) Información adicional, como referencias a tickets o breaking changes.
+            </p>
 
-  Ejemplo: feat: add user authentication
+              <p>
+                Tipos Comunes de Commits:
 
-  fix: Corrección de un bug.
+                feat: Introducción de una nueva funcionalidad.
 
-  Ejemplo: fix: resolve issue with user login
+                Ejemplo: feat: add user authentication
 
-  docs: Cambios en la documentación.
+                fix: Corrección de un bug.
 
-  Ejemplo: docs: update API documentation for login endpoint
+                Ejemplo: fix: resolve issue with user login
 
-  style: Cambios que no afectan la lógica del código, solo el formato (espacios, comas, etc.).
+                docs: Cambios en la documentación.
 
-  Ejemplo: style: format code with prettier
+                Ejemplo: docs: update API documentation for login endpoint
 
-  refactor: Cambio en el código que no añade funcionalidad nueva ni corrige un error.
+                style: Cambios que no afectan la lógica del código, solo el formato (espacios, comas, etc.).
 
-  Ejemplo: refactor: optimize authentication flow
+                Ejemplo: style: format code with prettier
 
-  test: Añadir o modificar pruebas.
+                refactor: Cambio en el código que no añade funcionalidad nueva ni corrige un error.
 
-  Ejemplo: test: add unit tests for login service
+                Ejemplo: refactor: optimize authentication flow
 
-  chore: Actualización de tareas de construcción, configuración de herramientas, etc.
+                test: Añadir o modificar pruebas.
 
-  Ejemplo: chore: update dependencies
+                Ejemplo: test: add unit tests for login service
 
-  perf: Mejoras en el rendimiento.
+                chore: Actualización de tareas de construcción, configuración de herramientas, etc.
 
-  Ejemplo: perf: improve database query performance
+                Ejemplo: chore: update dependencies
 
-  build: Cambios que afectan el sistema de construcción o dependencias externas.
+                perf: Mejoras en el rendimiento.
 
-  Ejemplo: build: update webpack to version 5
+                Ejemplo: perf: improve database query performance
 
-  ci: Cambios en la configuración de integración continua.
+                build: Cambios que afectan el sistema de construcción o dependencias externas.
 
-  Ejemplo: ci: update GitHub Actions workflow
-</p>
+                Ejemplo: build: update webpack to version 5
 
-<p>
-  Uso del Scope:
-  scope es opcional, pero útil para indicar qué parte del proyecto se vio afectada.
-  Ejemplo: feat(auth): add JWT token verification
-</p>
+                ci: Cambios en la configuración de integración continua.
 
-<p>
-  Descripción:
-  La descripción debe ser breve, clara y en tiempo presente.
-  Ejemplo: fix: correct validation logic in login form
-</p>
+                Ejemplo: ci: update GitHub Actions workflow
+              </p>
 
-<p>
-  Cuerpo del Commit (Opcional):
-  Proporciona detalles adicionales si es necesario.
-  
-  fix: correct validation logic in login form
+              <p>
+                Uso del Scope:
+                scope es opcional, pero útil para indicar qué parte del proyecto se vio afectada.
+                Ejemplo: feat(auth): add JWT token verification
+              </p>
 
-  The previous logic did not account for edge cases where the user inputs special characters. This change introduces a regex to handle these cases correctly.
-</p>
 
-<p>
-  Footer (Opcional):
+              <p>
+                Descripción:
+                La descripción debe ser breve, clara y en tiempo presente.
+                Ejemplo: fix: correct validation logic in login form
+              </p>
 
-  Se usa para referencias a tickets (por ejemplo, Jira, GitHub Issues) o para indicar cambios importantes.
+              <p>
+                Cuerpo del Commit (Opcional):
+                Proporciona detalles adicionales si es necesario.
 
-  BREAKING CHANGE: the login API now requires an email instead of username
+                fix: correct validation logic in login form
 
-  Closes #123
-</p>
+                The previous logic did not account for edge cases where the user inputs special characters. This change introduces a regex to handle these cases correctly.
+              </p>
 
-<p>
-  Conventional Commits proporciona una manera estándar y estructurada de redactar mensajes de commit, lo que facilita la colaboración, el mantenimiento del código, y la automatización de procesos. Al seguir estas reglas, puedes asegurarte de que los commits sean claros, concisos y útiles para cualquier persona que trabaje en el proyecto.
-</p>
+              <p>
+                Footer (Opcional):
+
+                Se usa para referencias a tickets (por ejemplo, Jira, GitHub Issues) o para indicar cambios importantes.
+
+                BREAKING CHANGE: the login API now requires an email instead of username
+
+                Closes #123
+              </p>
+
+              <p>
+                Conventional Commits proporciona una manera estándar y estructurada de redactar mensajes de commit, lo que facilita la colaboración, el mantenimiento del código, y la automatización de procesos. Al seguir estas reglas, puedes asegurarte de que los commits sean claros, concisos y útiles para cualquier persona que trabaje en el proyecto.
+              </p>
+            </DivArticle>
+          </DivSection>
+        </>
+        )
+}
+
+
 
