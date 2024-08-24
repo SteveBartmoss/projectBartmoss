@@ -38,7 +38,7 @@ export function FirstStepReact() {
                         que necesitamos.
                     </p>
 
-                    <a href="https://nodejs.org/en/download/prebuilt-installer" rel="noreferrer" target="_blank">Sitio de Node</a>
+                    <a id="linkto" href="https://nodejs.org/en/download/prebuilt-installer" rel="noreferrer" target="_blank">Sitio de Node</a>
 
                     <h2>Linux</h2>
 
