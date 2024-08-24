@@ -9,6 +9,7 @@ import { HookContext } from "../docu/hookContext";
 import { DesconectadoLife } from "../post/desconectado";
 import { FkAndIndex } from "../docu/llavesIndices";
 import { PretyCommits } from "../docu/pretyComits";
+import { PilaSinFin } from "../post/pilaSinFin";
 
 
 export function RouterBlog(){
@@ -23,7 +24,9 @@ export function RouterBlog(){
                 <Route path="docu/hookcontext" element={<HookContext /> } />
                 <Route path="docu/fkvelocidad" element={<FkAndIndex />} />
                 <Route path="docu/pretycommits" element={<PretyCommits />} />
+
                 <Route path="steve/desconectado" element={<DesconectadoLife />} />
+                <Route path="steve/pilasinfin" element={<PilaSinFin />} />
 
             </Routes>
             <Footer />
