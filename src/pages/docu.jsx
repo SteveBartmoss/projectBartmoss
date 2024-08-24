@@ -62,6 +62,19 @@ export function Docu() {
                             <CardLink url={'pretycommits'} text={'Ir al articulo'} />
                         </CardAccions>
                     </Card>
+
+                    <Card>
+                        <h1>Que es composer</h1>
+                        <p>
+                            Uno de los programas inconicos 
+                            cuando se maneja una pila de tecnologias 
+                            de php
+                        </p>
+                        <Chip>php</Chip>
+                        <CardAccions>
+                            <CardLink url={'compositor'} text={'Ir al articulo'} />
+                        </CardAccions>
+                    </Card>
                 </DivTopicos>
             </DivSection>
         </div>
