@@ -10,16 +10,7 @@ export function PilaSinFin() {
         <DivArticle>
           
           <p>
-            Cuando empiezas a estudiar temas de programacion no eres capas de
-            ver todo lo que aun no abarcas sobre el mismo tema y es que de alguna
-            manera la pila de tecnologias se crece demasiado rapido y las curvas de
-            aprendizaje no siempre son amigables. Antes de decir enfocarme en el desarrollo
-            web solo conocia tres lenguajes que eran java, C y C++ los cuales no dominaba ninguno
-            pero al menos me centraba en aprender java, luego de esto aprendi sobre
-            bases de datos, un poco de emsamblador por las clases de lenguajes
-            de inerfaz, luego pase por el horrible mundo de php, llegue al extrano
-            universo de javascript donde todo existe y no existe a la vez y finalmente
-            tuve que aprender python para un proyecto de inteligencia artificial.
+            Cuando comienzas a estudiar programación, no eres capaz de ver todo lo que aún no abarcas sobre el tema. De alguna manera, la pila de tecnologías crece demasiado rápido, y las curvas de aprendizaje no siempre son amigables. Antes de enfocarme en el desarrollo web, solo conocía tres lenguajes: Java, C y C++. No dominaba ninguno, pero al menos me centraba en aprender Java. Luego de esto, aprendí sobre bases de datos, un poco de ensamblador en las clases de lenguajes de interfaz, y después pasé por el desafiante mundo de PHP. Llegué al extraño universo de JavaScript, donde todo parece existir y no existir a la vez, y finalmente tuve que aprender Python para un proyecto de inteligencia artificial.
           </p>
 
           <p>
