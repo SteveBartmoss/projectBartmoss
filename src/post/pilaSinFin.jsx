@@ -14,15 +14,7 @@ export function PilaSinFin() {
           </p>
 
           <p>
-            Si bien solo pase de manera superficial por esto lenguajes si empezo a
-            preocuparme la cantidad de tecnologias que existian y que yo desconocia
-            pero todo cambiaria cuando la nacion de la web ataco, si bien habia
-            aprendido un poco de creacion de paginas web con el uso de htlm y css
-            esto solo permitia crear paginas estaticas que eran lo mas parecido a
-            lo que se encontraba en el internet de los 80, asi que tenia que entrar
-            a otra nueva dimension una en la que todo el mundo daba su aporte pero
-            los estandares habian desaparecido, tenia que entrar al mundo de los
-            frameworks.
+            Si bien solo pasé de manera superficial por estos lenguajes, empezó a preocuparme la cantidad de tecnologías que existían y que yo desconocía. Pero todo cambiaría cuando la "nación de la web" atacó. Había aprendido un poco sobre la creación de páginas web con HTML y CSS, pero eso solo me permitía crear páginas estáticas, similares a lo que se encontraba en el internet de los 80. Así que tuve que adentrarme en una nueva dimensión, una en la que todo el mundo hacía su aporte, pero donde los estándares parecían haber desaparecido. Tenía que entrar en el mundo de los frameworks.
           </p>
 
           <p>
