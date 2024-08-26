@@ -18,14 +18,7 @@ export function PilaSinFin() {
           </p>
 
           <p>
-            Lo primero que me causo confusion era la necesidad de separar
-            el programa en dos partes, el frontend y el backend ya que hasta el
-            momento no usaba esta separacion para los programas que solia crear
-            y tener que separarlo en dos diferentes no me daba mucho sentido
-            pero eso no era todo, hasta el momento un solo lenguaje era capas
-            de crear tanto la interfaz de usuario como traer la informaicon
-            de la base de datos pero ahora eso habia terminado tenia que aprender
-            una forma de trabajo para backend y otra para frontend.
+            Lo primero que me causó confusión fue la necesidad de separar el programa en dos partes: el frontend y el backend. Hasta ese momento, no usaba esta separación en los programas que solía crear, y dividirlos en dos partes diferentes no tenía mucho sentido para mí. Pero eso no era todo. Hasta entonces, un solo lenguaje era capaz de crear tanto la interfaz de usuario como de manejar la información de la base de datos. Sin embargo, ahora tenía que aprender una forma de trabajo para el backend y otra para el frontend.
           </p>
 
           <p>
