@@ -14,3 +14,21 @@
   de root asi que tendremo que usar el comando sudo su para 
   que poder correr comandos como super usuario
 </p>
+
+<p>
+  Podemos resolver esto de una forma simple agregando nuestro 
+  usuario al grupo lo cual se puede hacer de la siguiente manera.
+  Primero tenemos que modificar el archivo de super usuario 
+  el cual esta en la siguiente ubicacion /etc/sudoers
+</p>
+
+<p>
+    Si nos movimos al directorio etc, solo tenemos que usar 
+    el comando nano sudoers lo cual permite que el editor de terminal 
+    nano edite el archivo y podamos agregar debajo del apartado User 
+    privilege specification lo siguiente:
+</p>
+
+<p>
+  miusuario ALL=(ALL:ALL) ALL
+</p>
