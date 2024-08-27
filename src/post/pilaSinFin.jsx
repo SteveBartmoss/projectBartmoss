@@ -22,13 +22,7 @@ export function PilaSinFin() {
           </p>
 
           <p>
-            Yo no entendia porque necesitava tener el proyecto dividido en dos
-            partes lo cual me daba la tarea de aprender dos cosas diferentes
-            y para este momento ya tenia mas cosas que agregar a la pila de tecnologias
-            que tenia que aprender, ademas de esto empezaban a llegar mas cosas
-            como dockerizacion, pruebas unitarias, bases no relacionales, manejadores
-            de estado, web hosting, aws y muchas otras tecnologias que me abrumaban
-            pues parecia no tener la cantidad de cosas que tenia que aprender
+            Yo no entendía por qué necesitaba tener el proyecto dividido en dos partes, lo cual me obligaba a aprender dos cosas diferentes. Para este momento, ya tenía más elementos que agregar a la pila de tecnologías que debía aprender. Además de esto, comenzaban a aparecer nuevas exigencias, como la dockerización, las pruebas unitarias, las bases de datos no relacionales, los manejadores de estado, el web hosting, AWS y muchas otras tecnologías que me abrumaban, pues parecía que la lista de cosas por aprender no tenía fin.
           </p>
 
           <p>
