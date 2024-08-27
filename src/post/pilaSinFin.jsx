@@ -26,15 +26,7 @@ export function PilaSinFin() {
           </p>
 
           <p>
-            Para este punto se que pensaras que no es necesario tener todos
-            esos conocimientos, ya que no todos los lenguajes que salen deben
-            ser aprendidos o tenemos que volvernos expertos en ellos y eso
-            actualmente lo entiendo pero aun asi es algo intimidante que la
-            pila cresca tan rapido y que ademas el cambio pueda ser lento o que
-            en algunos casos no se acepte el cambio pues muchas empresas se
-            reusan a cambiar su pila de tecnologias y prefieren quedarse con
-            sus sistemas y solamente seguir lanzando parches para hacer funcionar
-            su codigo.
+            Para este punto, sé que podrías pensar que no es necesario tener todos esos conocimientos, ya que no todos los lenguajes que aparecen deben ser aprendidos ni necesitamos convertirnos en expertos en ellos. Eso es algo que ahora entiendo, pero aun así, es intimidante ver cómo la pila tecnológica crece tan rápido y cómo el cambio puede ser lento o, en algunos casos, no ser aceptado. Muchas empresas se resisten a cambiar su pila de tecnologías y prefieren mantener sus sistemas, lanzando parches para hacer que su código siga funcionando.
           </p>
 
         </DivArticle>
