@@ -32,3 +32,19 @@
 <p>
   miusuario ALL=(ALL:ALL) ALL
 </p>
+
+<p>
+  Anadir usuario al grupo Sudo
+</p>
+
+<p>
+  Para esto podemos usar el siguiente comando: 
+</p>
+
+<p>
+  sudo usermod -aG sudo miusuario
+</p>
+
+<p>
+  Para comprobar que el usuario forma parte del grupo sudo se puede usar el siguiente comando
+</p>
