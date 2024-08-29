@@ -66,3 +66,10 @@
     Otro de las cosas que podemos hacer para mejorar el uso del es instalar 
     algunas extensiones para mejorar ciertas funciones del sistema
   </p>
+
+  <p>
+    Las extensiones no son unicamente del sistema debian, si no que se 
+    aplican al entorno de escritorio que se llama gnome, en este caso 
+    se deberian poder instalar las extensiones si usas otra distribucion 
+    pero el mismo entorno de escritorio que es gnome
+  </p>
