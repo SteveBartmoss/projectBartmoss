@@ -48,3 +48,11 @@
 <p>
   Para comprobar que el usuario forma parte del grupo sudo se puede usar el siguiente comando
 </p>
+
+  <p>
+    groups miusuario
+  </p>
+
+<p>
+  Esto mostrara lso grupos a los que pertenece el usuario que especificamos en el comando groups
+</p>
