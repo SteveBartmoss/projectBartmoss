@@ -73,3 +73,9 @@
     se deberian poder instalar las extensiones si usas otra distribucion 
     pero el mismo entorno de escritorio que es gnome
   </p>
+
+  <p>
+    Para poder instalar esto tenemos que tener instalado el gesto de 
+    extensiones el cual podemos obtenerlo de una forma simple 
+    si vamos a la tienda de debian y buscamos extensiones
+  </p>
