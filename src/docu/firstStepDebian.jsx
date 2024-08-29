@@ -79,3 +79,12 @@
     extensiones el cual podemos obtenerlo de una forma simple 
     si vamos a la tienda de debian y buscamos extensiones
   </p>
+
+  <p>
+    Si prefieres la vieja escuela puedes instalar el gestor de extensiones usando 
+    el siguiente comando
+  </p>
+
+  <p>
+    sudo apt install gnome-shell-extension-prefs
+  </p>
