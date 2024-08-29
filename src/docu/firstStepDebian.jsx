@@ -56,3 +56,13 @@
 <p>
   Esto mostrara lso grupos a los que pertenece el usuario que especificamos en el comando groups
 </p>
+
+<p>
+  Tener esta configuracion hara que sea mas comodo instalar programas o realizar 
+  modificaciones desde la terminal y conseder permisos con nuestro usuario
+</p>
+
+  <p>
+    Otro de las cosas que podemos hacer para mejorar el uso del es instalar 
+    algunas extensiones para mejorar ciertas funciones del sistema
+  </p>
