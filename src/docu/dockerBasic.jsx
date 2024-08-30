@@ -10,3 +10,9 @@
   cada maquina que tenemos que implementar, cada uno de los 
   contenedores esta aislado entre ellos.
 </p>
+
+<p>
+    Estos contenedores son mas eficientes y portatiles que 
+    una maquina virtual pero tambien dependen mas del sistema 
+    operavito que contiene el motor de docker
+</p>
