@@ -16,3 +16,12 @@
     una maquina virtual pero tambien dependen mas del sistema 
     operavito que contiene el motor de docker
 </p>
+
+<p>
+    Para hacer la instalacion podemos ir a la documentacion de docker 
+    en el siguiente enlace
+</p>
+
+<p>
+  https://docs.docker.com/engine/install/debian/
+</p>
