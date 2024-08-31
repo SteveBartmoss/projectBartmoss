@@ -88,6 +88,19 @@ export function Docu() {
                         </CardAccions>
                     </Card>
 
+                    <Card>
+                        <h1>Empezar con Docker</h1>
+                        <p>
+                            Docker es una buena herramienta 
+                            si eres desarrollador o encargado de 
+                            despliegues de aplicacion
+                        </p>
+                        <Chip>Docker</Chip>
+                        <CardAccions>
+                            <CardLink url={'basicDocker'} text={'Ir al articulo'} />
+                        </CardAccions>
+                    </Card>
+
                 </DivTopicos>
             </DivSection>
         </div>
