@@ -1,7 +1,7 @@
 import { Card, CardContent } from "../../componentes/card/card";
 import { Chip } from "../../componentes/chips/chip";
 import { DivCol, DivRow } from "../../componentes/contenedores/contenedores";
-import { ProgresBar } from "../../componentes/progrescard/ProgresBar";
+import { ProgresBar } from "../../componentes/progresbar/ProgresBar";
 
 
 export function ProfileSteve() {
