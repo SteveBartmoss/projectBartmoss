@@ -1,9 +1,25 @@
 import { Card, CardContent } from "../../componentes/card/card";
 import { Chip } from "../../componentes/chips/chip";
 import { DivCol, DivRow } from "../../componentes/contenedores/contenedores";
+import { ProgresBar } from "../../componentes/progrescard/ProgresBar";
 
 
 export function ProfileSteve() {
+
+    const lenguajeElements=[
+        {
+            value: 90,
+            label: "JavaScript"
+        },
+        {
+            value: 50,
+            label: "Java"
+        },
+        {
+            value: 60,
+            label: "php"
+        }
+    ]
     return (
         <div>
             <Card>
@@ -36,8 +52,14 @@ export function ProfileSteve() {
                             <h1>Distribucion usada</h1>
                             <h1>Lenguaje Favorito</h1>
                         </Card>
+
                         <Card>
-                            <h1>Uso de Lenguajes</h1>
+                            <h1>Lenguahes usados</h1>
+                            {
+                                lenguajeElements.map(item=>
+                                    <ProgresBar key={item.label} title={item.label} percent={item.value} />
+                                )
+                            }
                         </Card>
                     </DivCol>
 
