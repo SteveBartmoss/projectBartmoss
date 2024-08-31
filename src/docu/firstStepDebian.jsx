@@ -5,7 +5,7 @@ import { Portada } from "../componentes/portada/portada"
 export function FirstStepDebian() {
   return (
     <>
-      <Portada imgPortada={"/Assets/steveA.png"} title={"Mejorar debian"} text={"Por Steve 23/08/2024"} />
+      <Portada imgPortada={"/Assets/steveA.png"} title={"Mejorar debian"} text={"Por Steve 27/08/2024"} />
 
       <DivSection>
         <DivArticle>
