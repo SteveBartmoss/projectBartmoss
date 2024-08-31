@@ -13,6 +13,7 @@ import { PilaSinFin } from "../post/pilaSinFin";
 import { Compositor } from "../docu/compositor";
 import { PimpTerminal } from "../post/pimpTerminal";
 import { FirstStepDebian } from "../docu/firstStepDebian";
+import { MasComplejo } from "../post/masComplejo";
 
 
 export function RouterBlog(){
@@ -33,6 +34,7 @@ export function RouterBlog(){
                 <Route path="steve/desconectado" element={<DesconectadoLife />} />
                 <Route path="steve/pilasinfin" element={<PilaSinFin />} />
                 <Route path="steve/pimpterminal" element={<PimpTerminal />} />
+                <Route path="steve/mascomplejo" element={<MasComplejo/>} />
 
             </Routes>
             <Footer />
