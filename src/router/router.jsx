@@ -14,6 +14,7 @@ import { Compositor } from "../docu/compositor";
 import { PimpTerminal } from "../post/pimpTerminal";
 import { FirstStepDebian } from "../docu/firstStepDebian";
 import { MasComplejo } from "../post/masComplejo";
+import { DockerBasic } from "../docu/dockerBasic";
 
 
 export function RouterBlog(){
@@ -30,6 +31,7 @@ export function RouterBlog(){
                 <Route path="docu/pretycommits" element={<PretyCommits />} />
                 <Route path="docu/compositor" element={<Compositor />} />
                 <Route path="docu/mejorardebian" element={<FirstStepDebian />} />
+                <Route path="docu/basicDocker" element={<DockerBasic />} />
 
                 <Route path="steve/desconectado" element={<DesconectadoLife />} />
                 <Route path="steve/pilasinfin" element={<PilaSinFin />} />
