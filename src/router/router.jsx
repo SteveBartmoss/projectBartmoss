@@ -12,6 +12,7 @@ import { PretyCommits } from "../docu/pretyComits";
 import { PilaSinFin } from "../post/pilaSinFin";
 import { Compositor } from "../docu/compositor";
 import { PimpTerminal } from "../post/pimpTerminal";
+import { FirstStepDebian } from "../docu/firstStepDebian";
 
 
 export function RouterBlog(){
@@ -27,6 +28,7 @@ export function RouterBlog(){
                 <Route path="docu/fkvelocidad" element={<FkAndIndex />} />
                 <Route path="docu/pretycommits" element={<PretyCommits />} />
                 <Route path="docu/compositor" element={<Compositor />} />
+                <Route path="docu/mejorardebian" element={<FirstStepDebian />} />
 
                 <Route path="steve/desconectado" element={<DesconectadoLife />} />
                 <Route path="steve/pilasinfin" element={<PilaSinFin />} />
