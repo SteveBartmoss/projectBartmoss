@@ -75,6 +75,19 @@ export function Docu() {
                             <CardLink url={'compositor'} text={'Ir al articulo'} />
                         </CardAccions>
                     </Card>
+
+                    <Card>
+                        <h1>Mejorar debian</h1>
+                        <p>
+                            Cuando terminas de instalar debian no 
+                            siempre esta todo listo
+                        </p>
+                        <Chip>linux</Chip>
+                        <CardAccions>
+                            <CardLink url={'mejorardebian'} text={'Ir al articulo'} />
+                        </CardAccions>
+                    </Card>
+
                 </DivTopicos>
             </DivSection>
         </div>
