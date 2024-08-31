@@ -41,6 +41,17 @@ export function PostSteve() {
                             <CardLink url={'pimpterminal'} text={'Ir al articulo'} />
                         </CardAccions>
                     </Card>
+
+                    <Card>
+                        <h1>Haslo tu mismo</h1>
+                        <p>
+                            No te agrada un programa, entonces haslo 
+                            tu mismo
+                        </p>
+                        <CardAccions>
+                            <CardLink url={'mascomplejo'} text={'Ir al articulo'} />
+                        </CardAccions>
+                    </Card>
                     
                 </DivTopicos>
             </DivSection>
