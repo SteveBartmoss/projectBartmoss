@@ -1,4 +1,4 @@
-import { Card, CardAccions, CardContent, CardLink } from "../../componentes/card/card";
+import { Card, CardAccions, CardLink } from "../../componentes/card/card";
 import { Chip } from "../../componentes/chips/chip";
 import { DivCol, DivRow } from "../../componentes/contenedores/contenedores";
 import { ProgresBar } from "../../componentes/progresbar/ProgresBar";
