@@ -1,4 +1,4 @@
-import { Card, CardContent } from "../../componentes/card/card";
+import { Card, CardAccions, CardContent, CardLink } from "../../componentes/card/card";
 import { Chip } from "../../componentes/chips/chip";
 import { DivCol, DivRow } from "../../componentes/contenedores/contenedores";
 import { ProgresBar } from "../../componentes/progresbar/ProgresBar";
@@ -6,7 +6,7 @@ import { ProgresBar } from "../../componentes/progresbar/ProgresBar";
 
 export function ProfileSteve() {
 
-    const lenguajeElements=[
+    const lenguajeElements = [
         {
             value: 90,
             label: "JavaScript"
@@ -21,7 +21,7 @@ export function ProfileSteve() {
         }
     ]
 
-    const proyectElements=[
+    const proyectElements = [
         {
             value: 70,
             label: "UiSteve",
@@ -72,7 +72,7 @@ export function ProfileSteve() {
                         <Card>
                             <h1>Lenguajes usados</h1>
                             {
-                                lenguajeElements.map(item=>
+                                lenguajeElements.map(item =>
                                     <ProgresBar key={item.label} title={item.label} percent={item.value} />
                                 )
                             }
@@ -83,7 +83,7 @@ export function ProfileSteve() {
                         <Card>
                             <h1>Proyectos Actuales</h1>
                             {
-                                proyectElements.map(item=>
+                                proyectElements.map(item =>
                                     <ProgresBar key={item.label} title={item.label} percent={item.value} />
                                 )
                             }
@@ -96,6 +96,9 @@ export function ProfileSteve() {
                                 que de debes en cuando me gusta
                                 es
                             </p>
+                            <CardAccions>
+                                <CardLink url={'https://music.youtube.com/channel/UCWA78kP1nB1AvCrex-VO10g?si=-TtFFostuF98o-1t'} text={'Seguir'} isBlank={true} />
+                            </CardAccions>
                         </Card>
 
                         <Card>
