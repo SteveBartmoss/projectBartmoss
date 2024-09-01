@@ -20,6 +20,22 @@ export function ProfileSteve() {
             label: "php"
         }
     ]
+
+    const proyectElements=[
+        {
+            value: 70,
+            label: "UiSteve",
+        },
+        {
+            value: 10,
+            label: "Sql Steve",
+        },
+        {
+            value: 10,
+            label: "Mocha Editor"
+        }
+    ]
+
     return (
         <div>
             <Card>
@@ -54,7 +70,7 @@ export function ProfileSteve() {
                         </Card>
 
                         <Card>
-                            <h1>Lenguahes usados</h1>
+                            <h1>Lenguajes usados</h1>
                             {
                                 lenguajeElements.map(item=>
                                     <ProgresBar key={item.label} title={item.label} percent={item.value} />
@@ -66,21 +82,11 @@ export function ProfileSteve() {
                     <DivCol>
                         <Card>
                             <h1>Proyectos Actuales</h1>
-                            <CardContent>
-                                <p>Ui Steve</p>
-                                <p>Sql Steve</p>
-                                <p>mochaEditor</p>
-                            </CardContent>
-                        </Card>
-                        <Card>
-                            <h1>Lenguajes usados</h1>
-                            <CardContent>
-
-                                <p>C</p>
-                                <p>php</p>
-                                <p>JavaScript</p>
-                                <p>Java</p>
-                            </CardContent>
+                            {
+                                proyectElements.map(item=>
+                                    <ProgresBar key={item.label} title={item.label} percent={item.value} />
+                                )
+                            }
                         </Card>
 
                         <Card>
