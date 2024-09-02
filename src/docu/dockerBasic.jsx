@@ -60,7 +60,33 @@ export function DockerBasic() {
             Distribución: Las imágenes pueden ser distribuidas a través de un registro, como Docker Hub, lo que facilita el compartir y desplegar aplicaciones en diferentes sistemas o entornos.
           </p>
 
-          
+          <p>
+            Un contenedor en Docker es una instancia en ejecución de una imagen de Docker. Es un entorno aislado donde se ejecuta una aplicación con todas sus dependencias, configuraciones, y bibliotecas necesarias para funcionar correctamente. A diferencia de las máquinas virtuales, los contenedores son ligeros y comparten el mismo núcleo del sistema operativo, lo que los hace más eficientes en términos de recursos.
+          </p>
+
+          <p>
+            Características principales de un contenedor Docker:
+          </p>
+
+          <p>
+            Aislamiento: Un contenedor está aislado del sistema host y de otros contenedores, lo que significa que cada contenedor tiene su propio sistema de archivos, espacio de red, y entorno de ejecución. Sin embargo, todos los contenedores comparten el mismo núcleo del sistema operativo.
+          </p>
+
+          <p>
+            Portabilidad: Los contenedores pueden ejecutarse de manera consistente en diferentes entornos, ya sea en una máquina local, en un servidor de producción, o en un entorno en la nube. Esto es posible porque los contenedores incluyen todas las dependencias necesarias en la imagen base.
+          </p>
+
+          <p>
+            Eficiencia: A diferencia de las máquinas virtuales, que requieren su propio sistema operativo completo, los contenedores comparten el núcleo del sistema operativo del host, lo que reduce el uso de recursos y permite ejecutar múltiples contenedores en una sola máquina de manera más eficiente.
+          </p>
+
+          <p>
+            Ciclo de vida: Los contenedores pueden iniciarse, detenerse, reiniciarse y eliminarse de manera muy rápida, lo que facilita su manejo en entornos de desarrollo, pruebas, y producción.
+          </p>
+
+          <p>
+            Volatilidad: Un contenedor es efímero por naturaleza. Esto significa que, si se elimina un contenedor, todo lo que estaba en él se pierde a menos que se haya configurado almacenamiento persistente o se hayan guardado los datos en un volumen.
+          </p>
 
         </DivArticle>
       </DivSection>
