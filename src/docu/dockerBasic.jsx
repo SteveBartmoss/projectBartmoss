@@ -36,14 +36,34 @@ export function DockerBasic() {
             https://docs.docker.com/engine/install/debian/
           </p>
 
+          <p>
+            Una imagen en Docker es una plantilla inmutable que contiene todo lo necesario para ejecutar una aplicación, incluyendo el código, las bibliotecas, las dependencias, las variables de entorno y los archivos de configuración. Las imágenes son la base para crear contenedores, que son instancias en ejecución de estas imágenes.
+          </p>
+
+          <p>
+            Características de las imágenes Docker:
+          </p>
+
+          <p>
+            Capas: Las imágenes de Docker están compuestas de capas, donde cada capa representa una instrucción en el Dockerfile, como la instalación de un paquete o la copia de archivos. Esto permite que las imágenes sean ligeras y eficientes, ya que las capas pueden ser compartidas entre múltiples imágenes.
+          </p>
+
+          <p>
+            Inmutabilidad: Una vez que una imagen es creada, no puede ser modificada. Esto garantiza que la misma imagen siempre producirá el mismo contenedor, lo que es clave para la reproducibilidad y la consistencia en diferentes entornos.
+          </p>
+
+          <p>
+            Versionamiento: Las imágenes pueden tener múltiples versiones o tags, permitiendo a los desarrolladores y operadores especificar qué versión de la aplicación desean ejecutar.
+          </p>
+
+          <p>
+            Distribución: Las imágenes pueden ser distribuidas a través de un registro, como Docker Hub, lo que facilita el compartir y desplegar aplicaciones en diferentes sistemas o entornos.
+          </p>
+
+          
+
         </DivArticle>
       </DivSection>
     </>
   )
 }
-
-
-
-
-
-
