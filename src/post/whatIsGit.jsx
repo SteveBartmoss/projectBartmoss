@@ -17,3 +17,7 @@
 <p>
     Distribuido: A diferencia de otros sistemas de control de versiones que requieren un servidor central, Git es distribuido, lo que significa que cada desarrollador tiene una copia completa del historial del proyecto. Esto mejora la redundancia y permite trabajar sin conexión.
 </p>
+
+<p>
+    Para instalar git en un sistema windows debemos ir al siguiente enlace:
+</p>
