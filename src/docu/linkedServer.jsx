@@ -18,3 +18,11 @@
 <p>
   Cuando configuras un Linked Server, estás creando una conexión persistente entre el servidor SQL y otro servidor o base de datos. Esto te permite ejecutar consultas que cruzan servidores, como si los datos estuvieran en el mismo servidor.
 </p>
+
+<p>
+  Centralización de datos: Permite acceder a datos distribuidos en varios servidores desde un solo punto.
+
+  Interoperabilidad: Puedes consultar bases de datos que no están en el mismo motor, por ejemplo, SQL Server con MySQL.
+
+  Consultas distribuidas: Ejecutas consultas que combinan datos de múltiples servidores.
+</p>
