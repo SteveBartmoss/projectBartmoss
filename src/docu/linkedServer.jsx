@@ -26,3 +26,8 @@
 
   Consultas distribuidas: Ejecutas consultas que combinan datos de múltiples servidores.
 </p>
+
+<p>
+  Aunque los linked solo existen en sql server otro sistemas de bases de datos tienen sistemas similares 
+  como Federated Storage Engine o MySQL Replication para consultar datos de otros servidores remotos. Para motores como PostgreSQL u Oracle, existen funcionalidades similares a través de DBLinks (Database Links) o servicios de integración de datos.
+</p>
