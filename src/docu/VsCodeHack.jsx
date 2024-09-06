@@ -14,3 +14,9 @@
     cntrl + p nos permitira buscar de forma rapida un archivo en nuestro proyecto, basta con 
     poner el nombre del archivo que no encontramos para poder abrir el archivo.
 </p>
+
+<p>
+      cntrl + t permite buscar el contenido dentro de un archivo, como por ejemplo 
+      si queremos buscar un archivo pero no recordamos el nombre pero si el nombre 
+      un metodo podemos buscar el nombre del metodo con este comando
+</p>
