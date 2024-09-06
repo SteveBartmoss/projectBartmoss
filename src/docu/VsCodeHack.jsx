@@ -9,3 +9,8 @@
   explorador de archivos, el estatus de git o diferentes extensiones que tenemos instaladas,
   esto permite liberar mas espacio visual a la hora de programar.
 </p>
+
+<p>
+    cntrl + p nos permitira buscar de forma rapida un archivo en nuestro proyecto, basta con 
+    poner el nombre del archivo que no encontramos para poder abrir el archivo.
+</p>
