@@ -15,6 +15,9 @@ import { PimpTerminal } from "../post/pimpTerminal";
 import { FirstStepDebian } from "../docu/firstStepDebian";
 import { MasComplejo } from "../post/masComplejo";
 import { DockerBasic } from "../docu/dockerBasic";
+import { WhatIsGit } from "../docu/whatIsGit";
+import { LinkedServer } from "../docu/linkedServer";
+import { VsCodeHack } from "../docu/VsCodeHack";
 
 
 export function RouterBlog(){
@@ -32,6 +35,9 @@ export function RouterBlog(){
                 <Route path="docu/compositor" element={<Compositor />} />
                 <Route path="docu/mejorardebian" element={<FirstStepDebian />} />
                 <Route path="docu/basicDocker" element={<DockerBasic />} />
+                <Route path="docu/whatisgit" element={<WhatIsGit />} />
+                <Route path="docu/linkedserver" element={<LinkedServer />} />
+                <Route path="docu/hackvscode" element={<VsCodeHack />} />
 
                 <Route path="steve/desconectado" element={<DesconectadoLife />} />
                 <Route path="steve/pilasinfin" element={<PilaSinFin />} />
