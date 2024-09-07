@@ -101,6 +101,44 @@ export function Docu() {
                         </CardAccions>
                     </Card>
 
+                    <Card>
+                        <h1>Que es git</h1>
+                        <p>
+                            Si eres desarrollador entonces 
+                            te interesa saber que esta gran herramienta
+                        </p>
+                        <Chip>Git</Chip>
+                        <CardAccions>
+                            <CardLink url={'whatisgit'} text={'Ir al articulo'} />
+                        </CardAccions>
+                    </Card>
+
+                    <Card>
+                        <h1>Linked Server</h1>
+                        <p>
+                            Una forma de tener acceso a diferentes 
+                            bases de datos no siempre es dificil
+                        </p>
+                        <Chip>Git</Chip>
+                        <CardAccions>
+                            <CardLink url={'linkedserver'} text={'Ir al articulo'} />
+                        </CardAccions>
+                    </Card>
+
+                    <Card>
+                        <h1>Hacks de Vscode</h1>
+                        <p>
+                            Con esta lista de atajos 
+                            podras usar de manera mas 
+                            eficiente este editor
+                        </p>
+                        <Chip>Git</Chip>
+                        <CardAccions>
+                            <CardLink url={'hackvscode'} text={'Ir al articulo'} />
+                        </CardAccions>
+                    </Card>
+                    
+
                 </DivTopicos>
             </DivSection>
         </div>
