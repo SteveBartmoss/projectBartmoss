@@ -1,17 +1,17 @@
 [
   {
-    "Titulo": "Primeros pasos react",
-    "Descripcion": "Tus primeros pasos en la libreria de react pueden ser algo complejos, pero aqui te contamos cosas que te pueden ayudar",
-    "url": "primerospasos",
+    "titulo": "Primeros pasos react",
+    "descripcion": "Tus primeros pasos en la libreria de react pueden ser algo complejos, pero aqui te contamos cosas que te pueden ayudar",
+    "url": "primerospasos"
   },
   {
-    "Titulo": "El hookContext",
-    "Descripcion": "El hook context puede ser confuso pero ahora si lo entenderas",
-    "url": "hookcontext",
+    "titulo": "El hookContext",
+    "descripcion": "El hook context puede ser confuso pero ahora si lo entenderas",
+    "url": "hookcontext"
   },
   {
-    "Titulo": "Llaves foraneas y velocidad",
-    "Descripcion": "La informacion que siempre quisistes saber sobre las llaves foraneas",
-    "url": "fkvelocidad",
+    "titulo": "Llaves foraneas y velocidad",
+    "descripcion": "La informacion que siempre quisistes saber sobre las llaves foraneas",
+    "url": "fkvelocidad"
   }
 ]
