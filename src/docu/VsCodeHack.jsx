@@ -44,6 +44,11 @@ export function VsCodeHack() {
             vamos recoriendo lo cual es util si queremos hacar un copiado o correccion de 
             una palabra
           </p>
+
+          <p>
+            cntrl + d Si tenemos seleccionada una palara y esta se repite en el documento se puede 
+            seleccionar otra instancia mas de la palabra usando este comando
+          </p>
         </DivArticle>
       </DivSection>
     </>
