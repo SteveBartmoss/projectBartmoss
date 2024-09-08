@@ -38,6 +38,12 @@ export function VsCodeHack() {
             alt + flecha izquierda/flecha derecha permite movernos horizontalmente 
             entre palabras lo cual es mas rapido que saltar espacio por espacio
           </p>
+
+          <p>
+            alt + shift + flecha izquierda/flecha derecha seleccionara las palabras que 
+            vamos recoriendo lo cual es util si queremos hacar un copiado o correccion de 
+            una palabra
+          </p>
         </DivArticle>
       </DivSection>
     </>
