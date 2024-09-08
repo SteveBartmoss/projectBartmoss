@@ -5,7 +5,7 @@ import { Portada } from "../componentes/portada/portada";
 export function FkAndIndex() {
     return (
         <>
-            <Portada imgPortada={"/Assets/steveA.png"} title={"Vida Desconectado"} text={"Por Steve 17/08/2024"} />
+            <Portada imgPortada={"/Assets/steveA.png"} title={"Llaves e Indices sql"} text={"Por Steve 17/08/2024"} />
 
             <DivSection>
                 <DivArticle>
