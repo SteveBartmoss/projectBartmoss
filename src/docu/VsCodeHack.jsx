@@ -49,6 +49,11 @@ export function VsCodeHack() {
             cntrl + d Si tenemos seleccionada una palara y esta se repite en el documento se puede 
             seleccionar otra instancia mas de la palabra usando este comando
           </p>
+
+          <p>
+            cntrl + a permite seleccionar todo el texto de una archivo muy util para borrar su contenido 
+            o copiarlo a algun otro lado
+          </p>
         </DivArticle>
       </DivSection>
     </>
