@@ -17,7 +17,7 @@ export function VsCodeHack() {
             comoda
           </p>
 
-          <h2>cntrl + b</h2>
+          <h2>ctrl + b</h2>
 
           <p>
             permite colapsar la barra de actividad del editor, que es donde se suele mostrar el
@@ -26,12 +26,12 @@ export function VsCodeHack() {
           </p>
 
           <p>
-            cntrl + p nos permitira buscar de forma rapida un archivo en nuestro proyecto, basta con
+            ctrl + p nos permitira buscar de forma rapida un archivo en nuestro proyecto, basta con
             poner el nombre del archivo que no encontramos para poder abrir el archivo.
           </p>
 
           <p>
-            cntrl + t permite buscar el contenido dentro de un archivo, como por ejemplo
+            ctrl + t permite buscar el contenido dentro de un archivo, como por ejemplo
             si queremos buscar un archivo pero no recordamos el nombre pero si el nombre
             un metodo podemos buscar el nombre del metodo con este comando
           </p>
@@ -53,12 +53,12 @@ export function VsCodeHack() {
           </p>
 
           <p>
-            cntrl + d Si tenemos seleccionada una palara y esta se repite en el documento se puede 
+            ctrl + d Si tenemos seleccionada una palara y esta se repite en el documento se puede 
             seleccionar otra instancia mas de la palabra usando este comando
           </p>
 
           <p>
-            cntrl + a permite seleccionar todo el texto de una archivo muy util para borrar su contenido 
+            ctrl + a permite seleccionar todo el texto de una archivo muy util para borrar su contenido 
             o copiarlo a algun otro lado
           </p>
         </DivArticle>
