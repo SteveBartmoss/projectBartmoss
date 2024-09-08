@@ -28,6 +28,11 @@ export function VsCodeHack() {
             si queremos buscar un archivo pero no recordamos el nombre pero si el nombre
             un metodo podemos buscar el nombre del metodo con este comando
           </p>
+
+          <p>
+            alt + flecha abajo/flecha arriba permite mover una linea de texto hacia arriba 
+            o hacia abajo
+          </p>
         </DivArticle>
       </DivSection>
     </>
