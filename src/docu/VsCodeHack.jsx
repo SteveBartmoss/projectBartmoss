@@ -4,7 +4,7 @@ import { Portada } from "../componentes/portada/portada"
 export function VsCodeHack() {
   return (
     <>
-      <Portada imgPortada={"/Assets/steveA.png"} title={"El hook Context en react"} text={"Por Steve 06/09/2024"} />
+      <Portada imgPortada={"/Assets/steveA.png"} title={"Comandos de VsCode"} text={"Por Steve 06/09/2024"} />
 
       <DivSection>
         <DivArticle>
