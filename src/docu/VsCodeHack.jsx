@@ -69,11 +69,18 @@ export function VsCodeHack() {
           </p>
 
           <h2>ctrl + a </h2>
-          
+
           <p>
             permite seleccionar todo el texto de una archivo muy util para borrar su contenido 
             o copiarlo a algun otro lado
           </p>
+
+          <h2>alt + click izquiera</h2>
+          
+          <p>
+            permite insertar un nuevo cursor en la linea en que hicimos click
+          </p>
+          
         </DivArticle>
       </DivSection>
     </>
