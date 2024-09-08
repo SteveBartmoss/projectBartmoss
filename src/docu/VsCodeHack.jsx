@@ -33,6 +33,11 @@ export function VsCodeHack() {
             alt + flecha abajo/flecha arriba permite mover una linea de texto hacia arriba 
             o hacia abajo
           </p>
+
+          <p>
+            alt + flecha izquierda/flecha derecha permite movernos horizontalmente 
+            entre palabras lo cual es mas rapido que saltar espacio por espacio
+          </p>
         </DivArticle>
       </DivSection>
     </>
