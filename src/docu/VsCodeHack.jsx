@@ -25,40 +25,53 @@ export function VsCodeHack() {
             esto permite liberar mas espacio visual a la hora de programar.
           </p>
 
+          <h2>ctrl + p</h2>
+
           <p>
-            ctrl + p nos permitira buscar de forma rapida un archivo en nuestro proyecto, basta con
+            nos permitira buscar de forma rapida un archivo en nuestro proyecto, basta con
             poner el nombre del archivo que no encontramos para poder abrir el archivo.
           </p>
 
+          <h2>ctrl + t</h2>
+
           <p>
-            ctrl + t permite buscar el contenido dentro de un archivo, como por ejemplo
+            permite buscar el contenido dentro de un archivo, como por ejemplo
             si queremos buscar un archivo pero no recordamos el nombre pero si el nombre
             un metodo podemos buscar el nombre del metodo con este comando
           </p>
 
+          <h2>alt + flecha abajo/flecha arriba</h2>
+
           <p>
-            alt + flecha abajo/flecha arriba permite mover una linea de texto hacia arriba 
+            permite mover una linea de texto hacia arriba 
             o hacia abajo
           </p>
 
+          <h2>alt + flecha izquierda/flecha derecha</h2>
+
           <p>
-            alt + flecha izquierda/flecha derecha permite movernos horizontalmente 
+            permite movernos horizontalmente 
             entre palabras lo cual es mas rapido que saltar espacio por espacio
           </p>
+          
+          <h2>alt + shift + flecha izquierda/flecha derecha</h2>
 
           <p>
-            alt + shift + flecha izquierda/flecha derecha seleccionara las palabras que 
-            vamos recoriendo lo cual es util si queremos hacar un copiado o correccion de 
-            una palabra
+            seleccionara las palabras que vamos recoriendo lo cual es util si 
+            queremos hacar un copiado o correccion de una palabra
           </p>
 
+          <h2>ctrl + d</h2>
+
           <p>
-            ctrl + d Si tenemos seleccionada una palara y esta se repite en el documento se puede 
+            Si tenemos seleccionada una palara y esta se repite en el documento se puede 
             seleccionar otra instancia mas de la palabra usando este comando
           </p>
 
+          <h2>ctrl + a </h2>
+          
           <p>
-            ctrl + a permite seleccionar todo el texto de una archivo muy util para borrar su contenido 
+            permite seleccionar todo el texto de una archivo muy util para borrar su contenido 
             o copiarlo a algun otro lado
           </p>
         </DivArticle>
