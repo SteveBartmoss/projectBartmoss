@@ -4,6 +4,12 @@ import { TimeItem } from "../../componentes/timeItem/timeItem";
 export function SteveTimeLine() {
     return (
         <div>
+            
+            <TimeItem fecha="06/09/2024" autor="Steve" 
+                exto="Lo logre, consegui una invitacion 
+                para probar deadlockm ahora si viene lo chido" 
+                />
+            
             <TimeItem fecha="06/09/2024" autor="Steve" 
                 texto="Oh no hermano, como que el codigo 
                 no se resuelve solo bueno al menos sera 
