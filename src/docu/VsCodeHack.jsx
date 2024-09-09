@@ -80,6 +80,13 @@ export function VsCodeHack() {
           <p>
             permite insertar un nuevo cursor en la linea en que hicimos click
           </p>
+
+          <h2>alt + [ / ] </h2>
+
+          <p>
+            Permite identar las lineas de codigo o quitar la identacion de 
+            las lineas de codigo.
+          </p>
           
         </DivArticle>
       </DivSection>
