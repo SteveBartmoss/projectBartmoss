@@ -29,6 +29,12 @@ export function SqlStandar(){
                         llamdo informix que no deberia haber existido nunca descubri que nada 
                         del estandar tiene sentido
                     </p>
+
+                    <p>
+                        Por ejemplo si quieres definir un numero auto incrementable para una columna 
+                        en mysql lo haces con la sintaxis AUTO_INCREMENT lo cual hace sentido pero 
+                        en sqlserver no funciona asi 
+                    </p>
                 </DivArticle>
             </DivSection>
 
