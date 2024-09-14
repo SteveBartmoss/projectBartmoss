@@ -22,6 +22,13 @@ export function SqlStandar(){
                         trababa de ese tipo de base de datos pero luego descubri que 
                         slq es un estandar pero realmente de estandar no tiene nada
                     </p>
+
+                    <p>
+                        No se si yo entendi mal la razon por la que es un estandar o simplemente 
+                        soy un bobo pero luego de trabajar con sqlserver, mysql, mariadb y algo 
+                        llamdo informix que no deberia haber existido nunca descubri que nada 
+                        del estandar tiene sentido
+                    </p>
                 </DivArticle>
             </DivSection>
 
