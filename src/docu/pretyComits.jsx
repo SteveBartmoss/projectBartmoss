@@ -30,7 +30,7 @@ export function PretyCommits() {
           </p>
 
           <h2>Conventional Commits</h2>
-          
+
           <p>
             Conventional Commits es una convención para escribir mensajes de 
             commit de forma estructurada y estandarizada. Esta convención permite 
@@ -39,15 +39,15 @@ export function PretyCommits() {
             y la automatización en procesos como el versionado semántico y la generación 
             de changelogs.
           </p>
+          
+          <h2>Reglas para Redactar un Buen Commit Usando Conventional Commits</h2>
 
+          <h3>Formato Básico:</h3>
+          
           <p>
-            Reglas para Redactar un Buen Commit Usando Conventional Commits
-
-            Formato Básico:
-
             Cada commit debe seguir el siguiente formato:
-            
-            &lt;type&gt; [optional scope]: &lt;description&gt;
+
+              &lt;type&gt; [optional scope]: &lt;description&gt;
 
               [optional body]
 
@@ -62,6 +62,11 @@ export function PretyCommits() {
               body: (Opcional) Explicación más detallada del cambio.
 
               footer: (Opcional) Información adicional, como referencias a tickets o breaking changes.
+          </p>
+
+          <p>
+
+          
             </p>
 
               <p>
