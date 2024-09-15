@@ -8,6 +8,9 @@ export function PretyCommits() {
 
       <DivSection>
         <DivArticle>
+
+          <h1>Mejorar tus commits</h1>
+
           <p>
             Cuando se trabaja con un proyecto de software ya sea
             de manera independiente, colaborando en un proyecto de
@@ -26,8 +29,15 @@ export function PretyCommits() {
             trabajamos con un grupo de personas
           </p>
 
+          <h2>Conventional Commits</h2>
+          
           <p>
-            Conventional Commits es una convención para escribir mensajes de commit de forma estructurada y estandarizada. Esta convención permite a los equipos de desarrollo mantener un historial de commits claro y coherente, facilitando la comprensión del código, el control de versiones y la automatización en procesos como el versionado semántico y la generación de changelogs.
+            Conventional Commits es una convención para escribir mensajes de 
+            commit de forma estructurada y estandarizada. Esta convención permite 
+            a los equipos de desarrollo mantener un historial de commits claro y 
+            coherente, facilitando la comprensión del código, el control de versiones 
+            y la automatización en procesos como el versionado semántico y la generación 
+            de changelogs.
           </p>
 
           <p>
