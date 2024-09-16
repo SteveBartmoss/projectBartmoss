@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { DivRow, DivSection } from "../componentes/contenedores/contenedores";
+import { DivGrow, DivRow, DivSection, DivTopicos } from "../componentes/contenedores/contenedores";
 import { Portada } from "../componentes/portada/portada";
 import { Card } from "../componentes/card/card";
 
@@ -33,34 +33,38 @@ export function Home() {
                 <p>
                     Lista de articulos XD
                 </p>
-                <DivRow>
-                    {
-                        dataDocu && Array.isArray(dataDocu) ? (
-                            dataDocu.map(item =>
-                                <Card>
-                                    <h1>{item.titulo}</h1>
-                                    <p>{item.descripcion}</p>
-                                </Card>
+                <DivTopicos>
+
+                    <DivGrow>
+                        {
+                            dataDocu && Array.isArray(dataDocu) ? (
+                                dataDocu.map(item =>
+                                    <Card>
+                                        <h1>{item.titulo}</h1>
+                                        <p>{item.descripcion}</p>
+                                    </Card>
+                                )
+                            ) : (
+                                <p>Cargando informacion ...</p>
                             )
-                        ) : (
-                            <p>Cargando informacion ...</p>
-                        )
-                    }
-                </DivRow>
-                <DivRow>
-                    {
-                        dataPost && Array.isArray(dataPost) ? (
-                            dataPost.map(item => 
-                                <Card>
-                                    <h1>{item.titulo}</h1>
-                                    <p>{item.descripcion}</p>
-                                </Card>
+                        }
+                    </DivGrow>
+                    <DivGrow>
+                        {
+                            dataPost && Array.isArray(dataPost) ? (
+                                dataPost.map(item =>
+                                    <Card>
+                                        <h1>{item.titulo}</h1>
+                                        <p>{item.descripcion}</p>
+                                    </Card>
+                                )
+                            ) : (
+                                <p>Caragando informacion ...</p>
                             )
-                        ) : (
-                            <p>Caragando informacion ...</p>
-                        )
-                    }
-                </DivRow>
+                        }
+                    </DivGrow>
+                </DivTopicos>
+
             </DivSection>
         </div>
     )
