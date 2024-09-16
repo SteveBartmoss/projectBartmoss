@@ -62,6 +62,12 @@
     flex-direction: row;
 }
 
+.div-grow{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 .div-col {
     display: flex;
     flex-direction: column;
