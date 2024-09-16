@@ -20,6 +20,14 @@ export function DivRow({children}){
     )
 }
 
+export function DivGrow({children}){
+    return(
+        <div className="div-grow">
+            {children}
+        </div>
+    )
+}
+
 export function DivCol({children}){
     return(
         <div className="div-col">
