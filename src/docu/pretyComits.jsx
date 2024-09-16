@@ -1,7 +1,9 @@
 import { DivArticle, DivSection } from "../componentes/contenedores/contenedores"
+import { Lista } from "../componentes/lista/Lista"
 import { Portada } from "../componentes/portada/portada"
 
 export function PretyCommits() {
+
   return (
     <>
       <Portada imgPortada={"/Assets/steveA.png"} title={"Prety Commits"} text={"Por Steve 21/08/2024"} />
@@ -45,13 +47,13 @@ export function PretyCommits() {
           <h3>Formato Básico:</h3>
           
           <p>
-            Cada commit debe seguir el siguiente formato:
+            Cada commit debe seguir el siguiente formato: <br/>
 
-              &lt;type&gt; [optional scope]: &lt;description&gt;
+              &lt;type&gt; [optional scope]: &lt;description&gt; <br/>
 
-              [optional body]
+              [optional body] <br/>
 
-              [optional footer(s)]
+              [optional footer(s)] <br/>
 
               type: Es un tipo obligatorio que indica la naturaleza del cambio.
 
