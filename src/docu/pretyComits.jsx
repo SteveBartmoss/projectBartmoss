@@ -4,6 +4,14 @@ import { Portada } from "../componentes/portada/portada"
 
 export function PretyCommits() {
 
+  const listaTipos = [
+    "type: Es un tipo obligatorio que indica la naturaleza del cambio.", 
+    "scope: (Opcional) Indica la parte del proyecto afectada por el commit.", 
+    "description: Es una descripción corta y concisa del cambio.", 
+    "body: (Opcional) Explicación más detallada del cambio.", 
+    "footer: (Opcional) Información adicional, como referencias a tickets o breaking changes."
+  ];
+
   return (
     <>
       <Portada imgPortada={"/Assets/steveA.png"} title={"Prety Commits"} text={"Por Steve 21/08/2024"} />
@@ -55,20 +63,12 @@ export function PretyCommits() {
 
               [optional footer(s)] <br/>
 
-              type: Es un tipo obligatorio que indica la naturaleza del cambio.
-
-              scope: (Opcional) Indica la parte del proyecto afectada por el commit.
-
-              description: Es una descripción corta y concisa del cambio.
-
-              body: (Opcional) Explicación más detallada del cambio.
-
-              footer: (Opcional) Información adicional, como referencias a tickets o breaking changes.
           </p>
+
+          <Lista elementos={listaTipos} />
 
           <p>
 
-          
             </p>
 
               <p>
