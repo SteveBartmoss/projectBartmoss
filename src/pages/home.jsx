@@ -30,9 +30,6 @@ export function Home() {
                 text={"Blog dedicado a contar la vida de un programador y algunas otras cosas interesates"} />
             <DivSection>
                 <h1>Ultimos Articulos</h1>
-                <p>
-                    Lista de articulos XD
-                </p>
                 <DivTopicos>
 
                     <DivGrow>
