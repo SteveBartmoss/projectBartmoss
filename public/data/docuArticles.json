@@ -2,16 +2,61 @@
   {
     "titulo": "Primeros pasos react",
     "descripcion": "Tus primeros pasos en la libreria de react pueden ser algo complejos, pero aqui te contamos cosas que te pueden ayudar",
-    "url": "primerospasos"
+    "url": "primerospasos",
+    "topico": ["Java Script"]
   },
   {
     "titulo": "El hookContext",
     "descripcion": "El hook context puede ser confuso pero ahora si lo entenderas",
-    "url": "hookcontext"
+    "url": "hookcontext",
+    "topico": ["Java Script"]
   },
   {
     "titulo": "Llaves foraneas y velocidad",
     "descripcion": "La informacion que siempre quisistes saber sobre las llaves foraneas",
-    "url": "fkvelocidad"
+    "url": "fkvelocidad",
+    "topico": ["Sql"]
+  },
+  {
+    "titulo": "Prety commits",
+    "descripcion": "Una forma de hacer mas efientes los commits para los demas",
+    "url": "pretycommits",
+    "topico": ["Git"]
+  },
+  {
+    "titulo": "Que es composer",
+    "descripcion": "Uno de los programas inconicos cuando se maneja una pila de tecnologias de php",
+    "url": "compositor",
+    "topico": ["php"]
+  },
+  {
+    "titulo": "Mejorar debian",
+    "descripcion": "Cuando terminas de instalar debian no siempre esta todo listo",
+    "url": "mejorardebian",
+    "topico": ["linux"]
+  },
+  {
+    "titulo": "Empezar con Docker",
+    "descripcion": "Docker es una buena herramienta si eres desarrollador o encargado de despliegues de aplicacion",
+    "url": "basicDocker",
+    "topico": ["Docker"]
+  },
+  {
+    "titulo": "Que es git",
+    "descripcion": "Si eres desarrollador entonces te interesa saber que esta gran herramienta",
+    "url": "whatisgit",
+    "topico": ["Git"]
+  },
+  {
+    "titulo": "Linked Server",
+    "descripcion": "Una forma de tener acceso a diferentes bases de datos no siempre es dificil",
+    "url": "linkedserver",
+    "topico": ["sql"]
+  },
+  {
+    "titulo": "Hacks de Vscode",
+    "descripcion": "Con esta lista de atajos podras usar de manera mas eficiente este editor",
+    "url": "hackvscode",
+    "topico": ["vsCode"]
   }
 ]
