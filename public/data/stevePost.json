@@ -1,17 +1,22 @@
 [
     {
       "titulo": "Estado desconectado",
-      "descripcion": "Tus primeros pasos en la libreria de react pueden ser algo complejos, pero aqui te contamos cosas que te pueden ayudar",
-      "url": "primerospasos"
+      "descripcion": "Dejar la redes fue algo interesante pero no es como lo pintaban o al menos no lo fue para mi",
+      "url": "desconectado"
     },
     {
       "titulo": "Pila sin fin",
-      "descripcion": "El hook context puede ser confuso pero ahora si lo entenderas",
-      "url": "hookcontext"
+      "descripcion": "La tecnologia parese no tener fin y continuamente salen mas cosas que aprender",
+      "url": "pilasinfin"
     },
     {
       "titulo": "Pimp my terminal",
-      "descripcion": "La informacion que siempre quisistes saber sobre las llaves foraneas",
-      "url": "fkvelocidad"
-    }
-  ]
+      "descripcion": "Trabajar en una terminal no te obliga a tener que ser aburrido",
+      "url": "pimpterminal"
+    },
+    {
+      "titulo": "Haslo tu mismo",
+      "descripcion": "No te agrada un programa, entonces haslo tu mismo",
+      "url": "mascomplejo"
+    }    
+]
