@@ -16,6 +16,9 @@ pero esto no sera una especie de regla ya que puede que esto sea intermmitente
 
 ### `Novedades`
 
+Se agrego contenido para la pagina de home y ahora se muestran algunas cards 
+se agrego mas compatibilidad con telefonos mobiles y aun se sigue trabajando en eso
+
 Se actualizo la pagina con un modo oscuro y un modo claro, se estan trabajando en 
 agregar mas contenido a la pagina
 
