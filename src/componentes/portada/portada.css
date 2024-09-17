@@ -32,3 +32,40 @@
     color: #D3C6AA;
     font-family: "Poppins";
 }
+
+@media (min-width: 360px) and (max-width: 430px){
+    .portada {
+        width: 70%;
+        height: 300px;
+        background: url("../../../public/Assets/fog_forest_alt_2.png") no-repeat center center/cover;
+        padding-bottom: 50px;
+        /*margin-bottom: 20px;*/
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin: auto;
+        margin-top: 2rem;
+        border-radius: 1rem;
+    }
+    
+    .frame-img {
+        width: 70%;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    
+    .title-portada{
+        color: #D3C6AA;
+        font-family: "Poppins";
+    }
+    
+    .img-portada {
+        width: 100%;
+        border-radius: 1rem;
+    }
+    
+    .text-portada {
+        color: #D3C6AA;
+        font-family: "Poppins";
+    }
+}
