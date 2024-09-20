@@ -148,7 +148,7 @@ export function FirstStepReact() {
                         es fácil de instalar y se puede obtener en el siguiente enlace.
                     </p>
 
-                    <a href="https://code.visualstudio.com/Download" rel="noreferrer" target="_blank">vs Code</a>
+                    <a id="linkto" href="https://code.visualstudio.com/Download" rel="noreferrer" target="_blank">vs Code</a>
 
                     <p>
                         Si ya tienes otro editor de codigo preferido se puede usar
@@ -343,6 +343,9 @@ export function FirstStepReact() {
                         Por lo general, node_modules no se incluye en el control de versiones (como Git). En su lugar, se utiliza el archivo package-lock.json o yarn.lock para garantizar que todas las instalaciones sean consistentes en diferentes entornos.
                         El archivo .gitignore suele contener una entrada para node_modules para asegurarse de que esta carpeta no se suba al repositorio.
                     </p>
+
+                    <h1>Descripcion de los archivos</h1>
+                    
 
                 </DivArticle>
             </DivSection>
