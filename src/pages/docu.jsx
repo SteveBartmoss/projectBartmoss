@@ -27,8 +27,8 @@ export function Docu() {
                 <DivTopicos>
                     {
                         dataDocu && Array.isArray(dataDocu) ? (
-                            dataDocu.map(item =>
-                                <Card>
+                            dataDocu.map((item,index) =>
+                                <Card key={index}>
                                     <h1>{item.titulo}</h1>
                                     <p>{item.descripcion}</p>
                                     {
