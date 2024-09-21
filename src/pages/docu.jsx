@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
 import { Card, CardAccions, CardLink, CardText, CardTitle } from "../componentes/card/card";
 import { Chip } from "../componentes/chips/chip";
-import { DivRow, DivSection, DivTopicos } from "../componentes/contenedores/contenedores";
+import { DivCol, DivRow, DivSection, DivTopicos } from "../componentes/contenedores/contenedores";
 import { Portada } from "../componentes/portada/portada";
 import { useApp } from "../context/contextApp";
 import { TextField } from "../componentes/textField/TextField";
+import { Btn } from "../componentes/btn/Btn";
 
 export function Docu() {
 
@@ -12,6 +13,11 @@ export function Docu() {
 
     const handleChange=(event)=>{
         setTextSearch(event.target.value)
+    }
+
+    const filterArticles=()=>{
+        setDataDocu(dataDocu.filter((element)=> element.titulo.includes(textSearch) ))
+        console.log(textSearch)
     }
 
     const [dataDocu,setDataDocu]=useState(null)
@@ -33,8 +39,12 @@ export function Docu() {
             <DivSection>
                 <DivTopicos>
                     <DivRow>
-                        <TextField label={"buscar"} isPass={false} text={textSearch} action={handleChange} />
-                        
+                        <DivCol>
+                            <TextField label={"buscar"} isPass={false} text={textSearch} action={handleChange} />
+                        </DivCol>
+                        <DivCol>
+                            <Btn evento={filterArticles} color="principal" >Buscar</Btn>
+                        </DivCol>
                     </DivRow>
                 </DivTopicos>
                 <DivTopicos>
