@@ -15,8 +15,6 @@ export function Home() {
             .then((jsonData) => setDataDocu(jsonData))
             .catch((error) => console.log('Error: ', error))
 
-        console.log(dataDocu)
-
         fetch('/data/stevePost.json')
             .then((response) => response.json())
             .then((jsonData) => setDataPost(jsonData))
