@@ -34,7 +34,7 @@ export function Home() {
                         {
                             dataDocu && Array.isArray(dataDocu) ? (
                                 dataDocu.map(item =>
-                                    <Card>
+                                    <Card key={item.titulo}>
                                         <h1>{item.titulo}</h1>
                                         <p>{item.descripcion}</p>
                                     </Card>
@@ -48,7 +48,7 @@ export function Home() {
                         {
                             dataPost && Array.isArray(dataPost) ? (
                                 dataPost.map(item =>
-                                    <Card>
+                                    <Card key={item.titulo}>
                                         <h1>{item.titulo}</h1>
                                         <p>{item.descripcion}</p>
                                     </Card>
