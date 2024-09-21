@@ -23,11 +23,11 @@
 }
 
 .text-field:hover {
-    border-color: var(--azul-11);
+    border-color: #149eca;
 }
 
 .text-field:focus {
-    border-color: var(--azul-11);
+    border-color: #149eca;
 }
 
 .text-field-label {
@@ -37,10 +37,10 @@
     padding: 0 0.5rem;
     font-family: "Poppins";
     font-size: 1.2rem;
-    color: var(--azul-11);
+    color: #149eca;
     cursor: text;
     transition: top 200ms ease-in, left 200ms ease-in font-size 200ms ease-in;
-    background-color: var(--gris-3);
+    background-color: #282c34;
 }
 
 .text-field:focus~.text-field-label,
