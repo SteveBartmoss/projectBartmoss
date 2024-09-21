@@ -1,0 +1,34 @@
+.btn-basic {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: white;
+    font-family: "Poppins";
+    border-radius: .5rem;
+    border: none;
+    padding: .5rem;
+    margin: .5rem;
+}
+
+.btn-basic:hover {
+    cursor: pointer;
+}
+
+.principal {
+    background-color: #149eca;
+}
+
+.success {
+    background-color: #00C853;
+}
+
+.info {
+    background-color: #2962FF;
+}
+
+.warning {
+    background-color: #FFAB00;
+}
+
+.error {
+    background-color: #D84315;
+}
