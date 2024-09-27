@@ -17,4 +17,10 @@
 </p>
 
 <p>
+    filter
+    Aunque pueda parecer un meme esta funcion es basicamente un map 
+    pero con una caracteristica interesante y es que regresa un arrelgo
+    con los datos que cumplen la funcion que recibe, esto por ejemplo es 
+    util cuando tenemos un arreglo de trabajadores y queremos filtrar 
+    los que tienen un puesto especifico o tambien un nombre
 </p>
