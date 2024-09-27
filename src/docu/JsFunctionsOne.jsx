@@ -24,3 +24,13 @@
     util cuando tenemos un arreglo de trabajadores y queremos filtrar 
     los que tienen un puesto especifico o tambien un nombre
 </p>
+
+<p>
+    includes
+    La mayoria de funciones se aplican a los arreglos ya que suelen 
+    ser un tipo de dato comun cuando se trabaja con aplicaciones web 
+    y esta es especialmente util cuando se quiere hacer un filtro 
+    basandonos en dos arreglos ya que esta funcion regresa true si 
+    algun elemente de su array cumple con la funcion que le pasamos 
+    como parametro
+</p>
