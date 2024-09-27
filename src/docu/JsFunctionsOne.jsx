@@ -7,3 +7,14 @@
   servido o que uso mas a menudo para resolver problemas 
   en javascript
 </p>
+
+<p>
+  map 
+  Esta funcion me resulta muy util cuando tengo que recorrer 
+  respuestas de una api, y sea para acomodar los valores 
+  que necesito, para hacer validaciones o simplemente para 
+  realizar un algoritmo
+</p>
+
+<p>
+</p>
