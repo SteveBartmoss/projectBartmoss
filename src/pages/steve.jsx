@@ -1,9 +1,6 @@
-import { Card, CardContent, CardText, CardTitle } from "../componentes/card/card";
-import { Chip } from "../componentes/chips/chip";
-import { DivCol, DivRow, DivSection } from "../componentes/contenedores/contenedores";
+import { DivSection } from "../componentes/contenedores/contenedores";
 import { Portada } from "../componentes/portada/portada";
 import { Tabs } from "../componentes/tabs/tabs";
-import { TimeItem } from "../componentes/timeItem/timeItem";
 import { ProfileSteve } from "./infosteve/profileSteve";
 import { PortFolio } from "./portfolio/portfolioMain";
 import { PostSteve } from "./postSteve/PostSteve";
