@@ -56,7 +56,7 @@ export function Docu() {
                                     <p>{item.descripcion}</p>
                                     {
                                         item.topico.map(topic =>
-                                            <Chip color="warning">{topic}</Chip>
+                                            <Chip key={index} color="warning">{topic}</Chip>
                                         )
                                     }
                                     <CardAccions>
