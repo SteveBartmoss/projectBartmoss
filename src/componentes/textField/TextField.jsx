@@ -1,13 +1,6 @@
-import { useState } from "react";
 import './TextField.css';
 
 export function TextField({label,isPass,text,action}) {
-
-    /*const [text,setText] = useState("")
-
-    const handleChange=(event)=>{
-        setText(event.target.value)
-    }*/
 
     return (
         <>
