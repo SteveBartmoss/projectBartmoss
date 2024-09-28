@@ -5,6 +5,7 @@ import { Portada } from "../componentes/portada/portada";
 import { Tabs } from "../componentes/tabs/tabs";
 import { TimeItem } from "../componentes/timeItem/timeItem";
 import { ProfileSteve } from "./infosteve/profileSteve";
+import { PortFolio } from "./portfolio/portfolioMain";
 import { PostSteve } from "./postSteve/PostSteve";
 import { SteveTimeLine } from "./steveTimeline/steveTimeLine";
 
@@ -32,6 +33,12 @@ export function Steve() {
                             title: "Post",
                             content:
                                 <PostSteve />,
+                        },
+                        {
+                            id: 4,
+                            title: "Portfolio",
+                            content:
+                                <PortFolio />,
                         }
                     ]
 
