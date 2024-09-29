@@ -19,6 +19,12 @@
       <description>Guia para el el hook context</description>
       <pubDate>Sun, 21 Jul 2024 00:00:00 +0000</pubDate>
     </item>
+    <item>
+      <title>Llaves foraneas y velocidad</title>
+      <link>https://voidreturn.netlify.app/docu/fkvelocidad</link>
+      <description>La informacion que siempre quisistes saber sobre las llaves foraneas</description>
+      <pubDate>Sat, 18 Sep 2024 00:00:00 +0000</pubDate>
+    </item>
     <!-- Agrega más elementos según sea necesario -->
   </channel>
 </rss>
