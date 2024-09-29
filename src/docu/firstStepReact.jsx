@@ -9,9 +9,9 @@ export function FirstStepReact() {
             <DivSection>
                 <DivArticle>
                     <p>
-                        La librería de React es una gran herramienta para crear 
-                        sitios web y aplicaciones de una manera simple y rápida. 
-                        Fue creada por Facebook y ahora cuenta con una gran comunidad, 
+                        La librería de React es una gran herramienta para crear
+                        sitios web y aplicaciones de una manera simple y rápida.
+                        Fue creada por Facebook y ahora cuenta con una gran comunidad,
                         lo que la convierte en una buena opción para empezar.
                     </p>
 
@@ -32,9 +32,9 @@ export function FirstStepReact() {
                     <h2>Windos/MacOs</h2>
 
                     <p>
-                        En caso de tener un sistema operativo como Windows o macOS, 
-                        es bastante simple. Solo tenemos que dirigirnos a la página 
-                        oficial de Node.js y seleccionar la versión del instalador 
+                        En caso de tener un sistema operativo como Windows o macOS,
+                        es bastante simple. Solo tenemos que dirigirnos a la página
+                        oficial de Node.js y seleccionar la versión del instalador
                         que necesitamos.
                     </p>
 
@@ -43,16 +43,16 @@ export function FirstStepReact() {
                     <h2>Linux</h2>
 
                     <p>
-                        En el caso de Linux, el camino no siempre es fácil, pero, 
-                        como suelen decir, el camino así es. Afortunadamente, existen 
+                        En el caso de Linux, el camino no siempre es fácil, pero,
+                        como suelen decir, el camino así es. Afortunadamente, existen
                         formas simples de hacerlo, y ahora las veremos.
                     </p>
 
                     <h3>Usando nvm</h3>
 
                     <p>
-                        Para esto, debemos instalar NVM, que es un manejador de versiones 
-                        de Node. Esta herramienta es muy útil, ya que permite administrar 
+                        Para esto, debemos instalar NVM, que es un manejador de versiones
+                        de Node. Esta herramienta es muy útil, ya que permite administrar
                         diferentes versiones de Node sin tener que mover tantos archivos.
                     </p>
 
@@ -81,8 +81,8 @@ export function FirstStepReact() {
                     </code>
 
                     <p>
-                        Esto nos muestra la versión de la herramienta, y si no aparece 
-                        en pantalla una serie de números, podemos continuar con el 
+                        Esto nos muestra la versión de la herramienta, y si no aparece
+                        en pantalla una serie de números, podemos continuar con el
                         siguiente comando para instalar Node.js:
                     </p>
 
@@ -91,9 +91,9 @@ export function FirstStepReact() {
                     </code>
 
                     <p>
-                        Con esto, tenemos instalada la versión 14.4.0 de Node.js. Este 
-                        comando instala la versión de Node.js que especifiquemos, por lo 
-                        que solo necesitamos cambiar el número de versión en el comando 
+                        Con esto, tenemos instalada la versión 14.4.0 de Node.js. Este
+                        comando instala la versión de Node.js que especifiquemos, por lo
+                        que solo necesitamos cambiar el número de versión en el comando
                         para instalar otra versión.
                     </p>
 
@@ -121,8 +121,8 @@ export function FirstStepReact() {
                     <h3>Instalando Nodesource</h3>
 
                     <p>
-                        Esto también permite instalar Node.js, pero utilizando 
-                        otra herramienta que es Nodesource, lo cual podemos hacer 
+                        Esto también permite instalar Node.js, pero utilizando
+                        otra herramienta que es Nodesource, lo cual podemos hacer
                         con el siguiente comando.
                     </p>
 
@@ -131,9 +131,9 @@ export function FirstStepReact() {
                     </code>
 
                     <p>
-                        En este caso, indicamos que la versión es la 14, 
-                        ya que tenemos setup_14.x, pero podemos cambiar el 
-                        número por el que queremos instalar. Una vez hecho esto, 
+                        En este caso, indicamos que la versión es la 14,
+                        ya que tenemos setup_14.x, pero podemos cambiar el
+                        número por el que queremos instalar. Una vez hecho esto,
                         podemos ejecutar los siguientes comandos para instalar Node.js.
                     </p>
 
@@ -144,7 +144,7 @@ export function FirstStepReact() {
                     <h1>Editor de codigo</h1>
 
                     <p>
-                        El editor de código que suelo usar es VSCode, el cual también 
+                        El editor de código que suelo usar es VSCode, el cual también
                         es fácil de instalar y se puede obtener en el siguiente enlace.
                     </p>
 
@@ -166,8 +166,8 @@ export function FirstStepReact() {
                     <h2>Comando create-react-app</h2>
 
                     <p>
-                        Lo primero que tenemos que hacer es abrir una 
-                        terminal en nuestra computadora para ejecutar 
+                        Lo primero que tenemos que hacer es abrir una
+                        terminal en nuestra computadora para ejecutar
                         el siguiente comando:
                     </p>
 
@@ -345,8 +345,34 @@ export function FirstStepReact() {
                     </p>
 
                     <h1>Descripcion de los archivos</h1>
-                    
 
+                    <h2>index.js</h2>
+
+                    <p>
+                        Este es el punto inicial de una aplicacion react, es como el archivo que contiene
+                        la funcion main de c o java, por lo general al crear una aplicacion con el comando
+                        create react app suele tener la siguiente estructura
+                    </p>
+
+                    <code>
+                        import React from 'react'; <br/>
+                        import ReactDOM from 'react-dom/client'; <br/>
+                        import './index.css'; <br/>
+                        import App from './App'; <br/>
+                        import reportWebVitals from './reportWebVitals'; <br/>
+
+                        const root = ReactDOM.createRoot(document.getElementById('root')); <br/>
+                        root.render( <br/>
+                        &lt;React.StrictMode&gt; <br/>
+                            &lt;App /&gt; <br/>
+                        &lt;/React.StrictMode&gt; <br/>
+                        ); <br/>
+
+                        
+                        reportWebVitals(); <br/>
+                    </code>
+
+                    
                 </DivArticle>
             </DivSection>
         </>
