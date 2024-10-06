@@ -1,6 +1,7 @@
 import { useState } from "react";
-import { DivArticle, DivSection } from "../../../componentes/contenedores/contenedores";
+import { DivArticle, DivCol, DivRow, DivSection } from "../../../componentes/contenedores/contenedores";
 import { TextField } from "../../../componentes/textField/TextField";
+import { Btn } from "../../../componentes/btn/Btn";
 
 
 export function YesOrNot(){
@@ -16,8 +17,15 @@ export function YesOrNot(){
         <DivSection>
             <DivArticle>
                 <h1>Yes Or No</h1>
-
-                <TextField label={"Pregunta"} isPass={false} text={question} action={handleChange} /> 
+                <DivRow>
+                    <DivCol>
+                        <TextField label={"Pregunta"} isPass={false} text={question} action={handleChange} />
+                    </DivCol>
+                    <DivCol>
+                        <Btn>Buscar</Btn>
+                    </DivCol>
+                </DivRow>
+                 
             </DivArticle>
         </DivSection>
     )
