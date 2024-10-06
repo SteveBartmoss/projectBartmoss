@@ -1,8 +1,7 @@
+import axios from "axios";
 
 export const getOracle=async()=>{
-    const url='https://yesno.wtf/api'
-    const response=await fetch(url);
-    const data=await response.json()
-
-    return data
+    let response = null
+    response = await axios.get('https://yesno.wtf/api')
+    return response.data
 }
