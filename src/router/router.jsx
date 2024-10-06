@@ -18,6 +18,7 @@ import { DockerBasic } from "../docu/dockerBasic";
 import { WhatIsGit } from "../docu/whatIsGit";
 import { LinkedServer } from "../docu/linkedServer";
 import { VsCodeHack } from "../docu/VsCodeHack";
+import { YesOrNot } from "../pages/portfolio/oraculo/yesOrNo";
 
 
 export function RouterBlog(){
@@ -44,6 +45,8 @@ export function RouterBlog(){
                 <Route path="steve/pimpterminal" element={<PimpTerminal />} />
                 <Route path="steve/mascomplejo" element={<MasComplejo/>} />
 
+                <Route path="portfolio/yesornot" element={<YesOrNot />}/> 
+                
             </Routes>
             <Footer />
         </BrowserRouter>
