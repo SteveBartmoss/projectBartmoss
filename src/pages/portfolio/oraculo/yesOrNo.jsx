@@ -5,23 +5,29 @@ import { Btn } from "../../../componentes/btn/Btn";
 import { getOracle } from "../helpers/api";
 
 
-export function YesOrNot(){
+export function YesOrNot() {
 
-    const [question,setQuestion] = useState("")
-    const [repondeApi,setResponseApi]=useState('')
+    const [question, setQuestion] = useState("")
+    const [repondeApi, setResponseApi] = useState('')
+    const [objResponse, setObjResponse] = useState("")
 
-    const handleChange=(event)=>{
+    const handleChange = (event) => {
         setQuestion(event.target.value)
     }
 
-    const sendQuestion=async()=>{
-        //console.log(question)
+    const sendQuestion = async () => {
+        setObjResponse(null)
         let info = await getOracle()
-        console.log(info)
+        setObjResponse({
+            title: question,
+            response: info.answer,
+            img: info.image
+        })
+        setQuestion("")
     }
 
 
-    return(
+    return (
         <DivSection>
             <DivArticle>
                 <h1>Yes Or No</h1>
@@ -33,7 +39,19 @@ export function YesOrNot(){
                         <Btn evento={sendQuestion} >Buscar</Btn>
                     </DivCol>
                 </DivRow>
-                 
+
+                {
+                    objResponse && (
+                        <>
+                            <h1>{objResponse?.title}</h1>
+
+                            <h2>{objResponse?.response}</h2>
+
+                            <img src={objResponse.img} />
+                        </>
+                    )
+                }
+
             </DivArticle>
         </DivSection>
     )
