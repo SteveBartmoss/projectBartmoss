@@ -38,7 +38,7 @@ export function YesOrNot() {
                         <TextField label={"Pregunta"} isPass={false} text={question} action={handleChange} />
                     </div>
                     <div className="div-component">
-                        <Btn evento={sendQuestion} >Buscar</Btn>
+                        <Btn evento={sendQuestion} >Preguntar</Btn>
                     </div>
                 </div>
 
@@ -58,6 +58,9 @@ export function YesOrNot() {
                 }
 
             </DivArticle>
+            <div className="div-center">
+                <h1>Power by <a id="linkto" className="uisteve" href="https://uisteve.netlify.app/" rel="noreferrer" target="_blank">Ui Steve</a></h1>
+            </div>
         </DivSection>
     )
 }
