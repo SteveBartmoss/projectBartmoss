@@ -33,11 +33,11 @@ export function YesOrNot() {
                 <div className="div-center">
                     <h1>Yes Or No</h1>
                 </div>
-                <div>
+                <div className="div-elements">
                     <div>
                         <TextField label={"Pregunta"} isPass={false} text={question} action={handleChange} />
                     </div>
-                    <div>
+                    <div className="div-component">
                         <Btn evento={sendQuestion} >Buscar</Btn>
                     </div>
                 </div>
