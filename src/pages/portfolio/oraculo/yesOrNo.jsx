@@ -3,7 +3,7 @@ import { DivArticle, DivCol, DivRow, DivSection } from "../../../componentes/con
 import { TextField } from "../../../componentes/textField/TextField";
 import { Btn } from "../../../componentes/btn/Btn";
 import { getOracle } from "../helpers/api";
-
+import './yesOrNo.css'
 
 export function YesOrNot() {
 
@@ -30,24 +30,29 @@ export function YesOrNot() {
     return (
         <DivSection>
             <DivArticle>
-                <h1>Yes Or No</h1>
-                <DivRow>
-                    <DivCol>
+                <div className="div-center">
+                    <h1>Yes Or No</h1>
+                </div>
+                <div>
+                    <div>
                         <TextField label={"Pregunta"} isPass={false} text={question} action={handleChange} />
-                    </DivCol>
-                    <DivCol>
+                    </div>
+                    <div>
                         <Btn evento={sendQuestion} >Buscar</Btn>
-                    </DivCol>
-                </DivRow>
+                    </div>
+                </div>
 
                 {
                     objResponse && (
                         <>
-                            <h1>{objResponse?.title}</h1>
+                            <div className="div-center">
+                                <h1>{objResponse?.title}</h1>
 
-                            <h2>{objResponse?.response}</h2>
+                                <h1>{objResponse?.response}</h1>
 
-                            <img src={objResponse.img} />
+                                <img className="img-response" src={objResponse.img} />
+                            </div>
+
                         </>
                     )
                 }
