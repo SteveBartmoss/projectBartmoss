@@ -40,12 +40,11 @@
     color: #149eca;
     cursor: text;
     transition: top 200ms ease-in, left 200ms ease-in font-size 200ms ease-in;
-    background-color: #282c34;
 }
 
 .text-field:focus~.text-field-label,
 .text-field:not(:placeholder-shown).text-field:not(:focus)~.text-field-label {
-    top: -0.5rem;
-    font-size: 0.8rem;
+    top: -1.5rem;
+    font-size: 0.9rem;
     left: 0.8rem;
 }
