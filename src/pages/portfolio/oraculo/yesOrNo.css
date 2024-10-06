@@ -5,3 +5,15 @@
 .div-center{
     text-align: center;
 }
+
+.div-elements{
+    display: flex;
+    justify-content: center;
+}
+
+.div-component{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+}
