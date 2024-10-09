@@ -5,6 +5,11 @@ export function SteveTimeLine() {
     return (
         <div>
 
+            <TimeItem fecha="9/10/2024" autor="Steve"
+                texto="Bueno la liberia esta mejor, 
+                espero que pronto se pueda liberar la 
+                version 1" />
+
             <TimeItem fecha="8/10/2024" autor="Steve"
                 texto="Caracoles jimbo el socialismo de 
                 you tube no funciona" />
