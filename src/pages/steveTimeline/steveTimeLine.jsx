@@ -5,8 +5,12 @@ export function SteveTimeLine() {
     return (
         <div>
 
+            <TimeItem fecha="10/10/2024" autor="Steve"
+                texto="whats the matter pumpkin? 
+                (Que te pasa calabaza?)" />
+
             <TimeItem fecha="9/10/2024" autor="Steve"
-                texto="Bueno la liberia esta mejor, 
+                texto="Bueno la libreria esta mejor, 
                 espero que pronto se pueda liberar la 
                 version 1" />
 
