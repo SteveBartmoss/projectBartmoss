@@ -16,7 +16,6 @@ export function NavBar() {
             </div>
             <div>
                 <ThemeBtn />
-                <Switch />
                 <NavLink className= {isDarkTheme ? 'nav-item-light' : 'nav-item-dark'} to={"docu"}>Docu</NavLink>
                 <NavLink className= {isDarkTheme ? 'nav-item-light' : 'nav-item-dark'} to={"steve"}>Steve</NavLink>
             </div>
