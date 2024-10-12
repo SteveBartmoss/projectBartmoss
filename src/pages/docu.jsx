@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Card, CardAccions, CardLink} from "../componentes/card/card";
+import { Card, CardAccions, CardLink } from "../componentes/card/card";
 import { Chip } from "../componentes/chips/chip";
 import { DivCol, DivRow, DivSection, DivTopicos } from "../componentes/contenedores/contenedores";
 import { Portada } from "../componentes/portada/portada";
@@ -9,33 +9,33 @@ import { Btn } from "../componentes/btn/Btn";
 
 export function Docu() {
 
-    const [textSearch,setTextSearch] = useState("")
+    const [textSearch, setTextSearch] = useState("")
 
-    const [dataDocu,setDataDocu]=useState(null)
-    const [filterDocu,setFilterDocu]=useState(null)
+    const [dataDocu, setDataDocu] = useState(null)
+    const [filterDocu, setFilterDocu] = useState(null)
 
-    const handleChange=(event)=>{
+    const handleChange = (event) => {
         setTextSearch(event.target.value)
     }
 
-    const filterArticles=()=>{
+    const filterArticles = () => {
         setDataDocu(filterDocu)
-        if(textSearch.trim().length !== 0){
-            setDataDocu(dataDocu.filter((element)=> element.titulo.includes(textSearch) ))
+        if (textSearch.trim().length !== 0) {
+            setDataDocu(dataDocu.filter((element) => element.titulo.includes(textSearch)))
         }
     }
 
     const { isDarkTheme } = useApp()
 
-    useEffect(()=>{
+    useEffect(() => {
         fetch('/data/docuArticles.json')
             .then((response) => response.json())
-            .then((jsonData) =>{
-                setDataDocu(jsonData) 
+            .then((jsonData) => {
+                setDataDocu(jsonData)
                 setFilterDocu(jsonData)
             })
             .catch((error) => console.log('Error: ', error))
-    },[])
+    }, [])
 
     return (
         <div>
@@ -44,19 +44,19 @@ export function Docu() {
                 text={"Por Steve Bartmoss"} />
             <DivSection>
                 <DivTopicos>
-                    <DivRow>
-                        <DivCol>
+                    <div className="div-elements">
+                        <div>
                             <TextField label={"buscar"} isPass={false} text={textSearch} action={handleChange} />
-                        </DivCol>
-                        <DivCol>
+                        </div>
+                        <div className="div-component">
                             <Btn evento={filterArticles} color="principal" >Buscar</Btn>
-                        </DivCol>
-                    </DivRow>
+                        </div>
+                    </div>
                 </DivTopicos>
                 <DivTopicos>
                     {
                         dataDocu && Array.isArray(dataDocu) ? (
-                            dataDocu.map((item,index) =>
+                            dataDocu.map((item, index) =>
                                 <Card key={index}>
                                     <h1>{item.titulo}</h1>
                                     <p>{item.descripcion}</p>
