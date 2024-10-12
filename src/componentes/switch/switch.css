@@ -1,0 +1,43 @@
+.toogle {
+    max-width: 2.5rem;
+    height: .9rem;
+    appearance: none;
+    background: #edf1f4;
+    outline: none;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+
+.toogle::-webkit-slider-thumb {
+    appearance: none;
+    width: 1rem;
+    height: 1rem;
+    background: #fff;
+    border-radius: 50%;
+    border: 2px solid var(--azul-12);
+    box-shadow: -407px 0 0 400px var(--azul-12);
+    cursor: pointer;
+}
+
+.toogle::-moz-range-thumb {
+    appearance: none;
+    width: 1rem;
+    height: 1rem;
+    background: #fff;
+    border-radius: 50%;
+    border: 2px solid var(--azul-12);
+    box-shadow: -407px 0 0 400px var(--azul-12);
+    cursor: pointer;
+}
+
+.toogle::-ms-thumb {
+    appearance: none;
+    width: 1rem;
+    height: 1rem;
+    background: #fff;
+    border-radius: 50%;
+    border: 2px solid var(--azul-12);
+    box-shadow: -407px 0 0 400px var(--azul-12);
+    cursor: pointer;
+}
