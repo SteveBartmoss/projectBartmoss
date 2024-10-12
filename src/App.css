@@ -44,3 +44,16 @@
 .content-article{
   font-size: 1.5rem;
 }
+
+
+.div-elements{
+  display: flex;
+  justify-content: center;
+}
+
+.div-component{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+}
