@@ -1,4 +1,5 @@
 import { useState } from "react"
+import './switch.css';
 
 export function Switch(){
 
