@@ -11,23 +11,29 @@ export function Docu() {
 
     const [textSearch,setTextSearch] = useState("")
 
+    const [dataDocu,setDataDocu]=useState(null)
+    const [filterDocu,setFilterDocu]=useState(null)
+
     const handleChange=(event)=>{
         setTextSearch(event.target.value)
     }
 
     const filterArticles=()=>{
-        setDataDocu(dataDocu.filter((element)=> element.titulo.includes(textSearch) ))
-        console.log(textSearch)
+        setDataDocu(filterDocu)
+        if(textSearch.trim().length !== 0){
+            setDataDocu(dataDocu.filter((element)=> element.titulo.includes(textSearch) ))
+        }
     }
-
-    const [dataDocu,setDataDocu]=useState(null)
 
     const { isDarkTheme } = useApp()
 
     useEffect(()=>{
         fetch('/data/docuArticles.json')
             .then((response) => response.json())
-            .then((jsonData) => setDataDocu(jsonData))
+            .then((jsonData) =>{
+                setDataDocu(jsonData) 
+                setFilterDocu(jsonData)
+            })
             .catch((error) => console.log('Error: ', error))
     },[])
 
