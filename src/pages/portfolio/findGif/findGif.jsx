@@ -1,11 +1,16 @@
+import { DivArticle, DivSection } from "../../../componentes/contenedores/contenedores";
 
 
-export function FindGif(){
-    return(
+export function FindGif() {
+    return (
         <>
-            <div>
-                <h1>Find gifs</h1>
-            </div>
+            <DivSection>
+                <DivArticle>
+                    <div>
+                        <h1>Find gifs</h1>
+                    </div>
+                </DivArticle>
+            </DivSection>
         </>
     )
 }
