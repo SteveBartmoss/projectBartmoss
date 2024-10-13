@@ -19,6 +19,7 @@ import { WhatIsGit } from "../docu/whatIsGit";
 import { LinkedServer } from "../docu/linkedServer";
 import { VsCodeHack } from "../docu/VsCodeHack";
 import { YesOrNot } from "../pages/portfolio/oraculo/yesOrNo";
+import { FindGif } from "../pages/portfolio/findGif/findGif";
 
 
 export function RouterBlog(){
@@ -46,7 +47,7 @@ export function RouterBlog(){
                 <Route path="steve/mascomplejo" element={<MasComplejo/>} />
 
                 <Route path="portfolio/yesornot" element={<YesOrNot />}/> 
-                
+                <Route path="portfolio/findgif" element={<FindGif />} />
             </Routes>
             <Footer />
         </BrowserRouter>
