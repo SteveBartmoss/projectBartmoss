@@ -6,6 +6,11 @@ export function SteveTimeLine() {
         <div>
 
             <TimeItem fecha="14/10/2024" autor="Steve"
+                texto="Quizas usar un vps para mis proyectos
+                seria buena idea, pero no soy rico asi que 
+                tendra que esperar" />
+                
+            <TimeItem fecha="14/10/2024" autor="Steve"
                 texto="Oh no hermano, wordpress esta en 
                 peligro, bueno nunca me gusto ese servicio"
                 />
