@@ -6,10 +6,15 @@ export function SteveTimeLine() {
         <div>
 
             <TimeItem fecha="21/10/2024" auto="Steve"
+                texto="Bueno el futuro no es como el doc 
+                lo penso pero quizas estamos en el futuro malo"
+                />
+
+            <TimeItem fecha="21/10/2024" auto="Steve"
                 texto="Ya solo un mes mas y 23 dias para 
                 que sea navidad, que rapido XD"
                 />
-                
+
             <TimeItem fecha="18/10/2024" auto="Steve"
                 texto="Al fin es viernes, espero este fin 
                 no se pase tan rapido"
