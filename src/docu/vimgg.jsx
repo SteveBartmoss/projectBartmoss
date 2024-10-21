@@ -30,3 +30,13 @@ Empezar a utilizar vim no es un camino facil
             de ayuda.
 
             ¿Que es vim?
+
+            Vim es un editor de codigo de pero con una caracteristica interesante y 
+            es que principalmente se usa en una cli o (interfaz de linea de comandos) 
+            que basicamente es una terminal de computadora, se creo de esa manera pues 
+            en el tiempo en que se creo las computadoras no solina tener interfaces 
+            graficas como ahora si no que solo se tenia una terminal de comandos. 
+
+            Por esta razon es que se creo un programa como vin ya que aun no habia 
+            tantos programas con interfaz grafica y tampoco muchos editores de texto 
+            asi que este programa fue de gran utilidad para ese entonces.
