@@ -92,3 +92,15 @@ Empezar a utilizar vim no es un camino facil
             inferior izquierda de la terminal en la que veremos la leyenda -- INSERT --
             en esto modo ya podemos escribir y ver reflejado lo que escribimos 
 
+            Este modo seria uno de los mas usados ya que lo usamos cuando escribimos, en el 
+            cual tambien pedemos recorrer el contenido del texto usando las flechas de movimiento 
+            del teclado. 
+
+            Esto ultimo es importante ya que el mouse no podra tener control sobre el cursor del 
+            editor de texto ya que aunque hagamos click en alguna parte de la terminal el cursor no 
+            se movera hacia esa posicion, ya que la unica manera de mover el cursor es usando las teclas 
+            de direccion o las letras h,j,k o l, la razon de usar las teclas h,j,k,l es porque 
+            las personas que usan mecanografia pueden usar estas teclas una formas eficiente.
+
+            
+
