@@ -40,3 +40,24 @@ Empezar a utilizar vim no es un camino facil
             Por esta razon es que se creo un programa como vin ya que aun no habia 
             tantos programas con interfaz grafica y tampoco muchos editores de texto 
             asi que este programa fue de gran utilidad para ese entonces.
+
+            Installas vim
+
+            Si usas una distribucion de tipo unix como puede ser linux puede que 
+            ya este instalado por lo que podemos simplemente ejecutar el comando vim 
+            en la terminal y que el programa se ejecute, pero en caso de que no se 
+            encuentre instalado podemos usar los siguientes comandos para instalar vim
+
+            Si usamos una ditribucion derivada de debian 
+            sudo apt install vim
+
+            Si usamos fedora
+            sudo dnf install vim
+
+            si usamos arch linux
+            pacman -S vim
+
+            Si queremos usar la version de snap
+            sudo snap install vim-editor --beta
+
+            
