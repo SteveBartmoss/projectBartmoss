@@ -60,4 +60,13 @@ Empezar a utilizar vim no es un camino facil
             Si queremos usar la version de snap
             sudo snap install vim-editor --beta
 
-            
+            En caso de que tengamos windows podemos instalarlos desde la pagina 
+            oficial https://www.vim.org/download.php#pc 
+
+            Cuando instalamos el ejecutable podemos ver que existen dos  versiones 
+            que se instalaron vim y gvim 
+
+            Gvim es una version grafica de vim lo que quiere decir que no se ejecuta 
+            en la consola si no que se ejecuta como un programa independiente y por esta 
+            razon es que se considera GUI o que tiene una interfaz de grafica de usuario.
+
