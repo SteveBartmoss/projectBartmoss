@@ -70,3 +70,9 @@ Empezar a utilizar vim no es un camino facil
             en la consola si no que se ejecuta como un programa independiente y por esta 
             razon es que se considera GUI o que tiene una interfaz de grafica de usuario.
 
+            En caso de que tengamos un sistema con MacOs podemos instalarlo desde el 
+            siguiente enlace de su pagina oficial https://www.vim.org/download.php#mac
+
+            En general seria buena idea solo usar las versiones de terminal pero si 
+            se desea usar las versiones graficas no existe problema
+
