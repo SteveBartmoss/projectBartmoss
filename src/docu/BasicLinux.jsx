@@ -1,8 +1,14 @@
+import { DivSection } from "../componentes/contenedores/contenedores";
+import { Portada } from "../componentes/portada/portada";
 
 
 export function BasicLinux(){
     return (
         <>
+        <Portada imgPortada={"/Assets/steveA.png"} title={"Primeros pasos en react"} text={"Por Steve 21/07/2024"} />
+        <DivSection>
+            
+        </DivSection>
             <p>
                 Comandos basicos de linux
 
