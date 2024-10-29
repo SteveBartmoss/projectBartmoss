@@ -1,28 +1,31 @@
-import { DivSection } from "../componentes/contenedores/contenedores";
+import { DivArticle, DivSection } from "../componentes/contenedores/contenedores";
 import { Portada } from "../componentes/portada/portada";
 
 
-export function BasicLinux(){
+export function BasicLinux() {
     return (
         <>
-        <Portada imgPortada={"/Assets/steveA.png"} title={"Primeros pasos en react"} text={"Por Steve 21/07/2024"} />
-        <DivSection>
-            
-        </DivSection>
+            <Portada imgPortada={"/Assets/steveA.png"} title={"Comandos basicos de linux"} text={"Por Steve 28/10/2024"} />
+            <DivSection>
+                <DivArticle>
+                    <p>
+                        La mejor forma de usar Linux es mediante comandos y a
+                        continuación se muestran algunos de los más escenciales
+                        a la hora de usar un sistema Linux.
+                    </p>
+
+                    <h2>cd</h2>
+
+                    <p>
+                        Este comando permite al usuario cambiar entre rutas de las
+                        terminal, haciendo cd documentos entraremos a la carpeta documentos,
+                        siempre y cuando estemos en el mismo nivel de la carpeta, si queremos
+                        salir da la carpeta actual podemos hacer lo con cd..lo cual nos
+                        dejara un nivel arriba.
+                    </p>
+                </DivArticle>
+            </DivSection>
             <p>
-                Comandos basicos de linux
-
-                La mejor forma de usar Linux es mediante comandos y a
-                continuación se muestran algunos de los más escenciales
-                a la hora de usar un sistema Linux.
-
-                cd
-
-                este comando permite al usuario cambiar entre rutas de las
-                terminal, haciendo cd documentos entraremos a la carpeta documentos,
-                siempre y cuando estemos en el mismo nivel de la carpeta, si queremos
-                salir da la carpeta actual podemos hacer lo con cd..lo cual nos
-                dejara un nivel arriba.
 
                 ls
 
