@@ -64,5 +64,11 @@
     "descripcion": "Con esta lista de comandos podras usar linux como un pro",
     "url": "basiclinux",
     "topico": ["linux"]
+  },
+  {
+    "titulo": "Vimgg una guia facil",
+    "descripcion": "Con este post podras empezar a usar vim sin morrir en el intento",
+    "url": "vimgg",
+    "topico": ["vim"]
   }
 ]
