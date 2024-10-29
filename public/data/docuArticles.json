@@ -58,5 +58,11 @@
     "descripcion": "Con esta lista de atajos podras usar de manera mas eficiente este editor",
     "url": "hackvscode",
     "topico": ["vsCode"]
+  },
+  {
+    "titulo": "Comandos Basicos de linux",
+    "descripcion": "Con esta lista de comandos podras usar linux como un pro",
+    "url": "basiclinux",
+    "topico": ["linux"]
   }
 ]
