@@ -21,6 +21,7 @@ import { VsCodeHack } from "../docu/VsCodeHack";
 import { YesOrNot } from "../pages/portfolio/oraculo/yesOrNo";
 import { FindGif } from "../pages/portfolio/findGif/findGif";
 import { Vimgg } from "../docu/vimgg";
+import { BasicLinux } from "../docu/BasicLinux";
 
 
 export function RouterBlog(){
@@ -41,6 +42,7 @@ export function RouterBlog(){
                 <Route path="docu/whatisgit" element={<WhatIsGit />} />
                 <Route path="docu/linkedserver" element={<LinkedServer />} />
                 <Route path="docu/hackvscode" element={<VsCodeHack />} />
+                <Route path="docu/basiclinux" element={<BasicLinux />} />
                 <Route path="docu/vimgg" element={<Vimgg />} />
 
                 <Route path="steve/desconectado" element={<DesconectadoLife />} />
