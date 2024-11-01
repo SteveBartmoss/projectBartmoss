@@ -28,3 +28,10 @@ te conectaste por ssh y no tiene tantas opciones.
 
 En estos casos es bueno saber que existen estas opciones 
 ya que nunca se sabe cuando se pueden necesitar. 
+
+(poner como instalar htop)
+
+Tmux 
+
+Considero que esta es una de las herramientas mas utiles 
+pero al mismo tiempo tiene una ligera curva de aprendizaje 
