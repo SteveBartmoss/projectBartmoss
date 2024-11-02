@@ -71,27 +71,17 @@ export function BasicLinux() {
                         el nombre del archivo.deb.
                     </p>
 
+                    <h2>apt install</h2>
+
+                    <p>
+                        este comando permite instalar aplicaciones mediante el manejador de parques apt,
+                        debemos pasar como argumento el nombre del paquete por ejemplo apt install vim, requiere permisos
+                        de root para poder ejecutarse.
+                    </p>
+
                 </DivArticle>
             </DivSection>
             <p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-                apt install
-
-                este comando permite instalar aplicaciones mediante el manejador de parques apt,
-                debemos pasar como argumento el nombre del paquete por ejemplo apt install vim, requiere permisos
-                de root para poder ejecutarse.
 
                 este comando también permite instalar paquetes.deb con la diferencia de que también
                 resuelve las dependencias que no estén en el paquete.deb y también sean necesarias.Para ejecutar
