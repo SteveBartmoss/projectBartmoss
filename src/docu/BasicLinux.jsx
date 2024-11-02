@@ -32,22 +32,21 @@ export function BasicLinux() {
                         navegar, este comando recibe argumentos que modificaran la salida como ls - l que
                         mostrará el listado largo o ls - a que mostrará todos los archivos.
                     </p>
+
+                    <h2>touch</h2>
+
+                    <p>
+                        este comando permite crear un archivo en la carpeta o ruta actual en la que
+                        estamos y también puede cambiar las marcas de tiempo del archivo, pero la verdad
+                        esto último no lo había utilizado y es posible que el mayor uso que le des sea para
+                        crear archivos.Para crear el archivo basta con usar touch nombrearchivo y poner la
+                        extensión que queremos que tenga, se pueden generar más de un archivo a la vez si lo
+                        deseamos.
+                    </p>
+                    
                 </DivArticle>
             </DivSection>
             <p>
-
-
-
-
-
-                touch
-
-                este comando permite crear un archivo en la carpeta o ruta actual en la que
-                estamos y también puede cambiar las marcas de tiempo del archivo, pero la verdad
-                esto último no lo había utilizado y es posible que el mayor uso que le des sea para
-                crear archivos.Para crear el archivo basta con usar touch nombrearchivo y poner la
-                extensión que queremos que tenga, se pueden generar más de un archivo a la vez si lo
-                deseamos.
 
                 apt update
 
