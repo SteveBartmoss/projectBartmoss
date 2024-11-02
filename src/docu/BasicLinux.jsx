@@ -61,7 +61,16 @@ export function BasicLinux() {
                         permisos de súper usuario así que debemos estar en una cuenta root o agregar sudo antes de
                         los comandos.
                     </p>
-                    
+
+                    <h2>dpkg - i</h2>
+
+                    <p>
+                        este comando y el parámetro i permiten instalar paquetes.deb que pertenecen a debian,
+                        de esta forma podemos instalar programa que no se encuentran medían apt install, para ejecutar lo
+                        debemos estar en el mismo directorio en que se encuentra el paquete y ejecutar el comandó agregando
+                        el nombre del archivo.deb.
+                    </p>
+
                 </DivArticle>
             </DivSection>
             <p>
@@ -74,12 +83,9 @@ export function BasicLinux() {
 
 
 
-                dpkg - i
 
-                este comando y el parámetro i permiten instalar paquetes.deb que pertenecen a debian,
-                de esta forma podemos instalar programa que no se encuentran medían apt install, para ejecutar lo
-                debemos estar en el mismo directorio en que se encuentra el paquete y ejecutar el comandó agregando
-                el nombre del archivo.deb.
+
+
 
                 apt install
 
