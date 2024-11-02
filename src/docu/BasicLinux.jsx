@@ -43,16 +43,21 @@ export function BasicLinux() {
                         extensión que queremos que tenga, se pueden generar más de un archivo a la vez si lo
                         deseamos.
                     </p>
-                    
+
+                    <h2>apt update</h2>
+
+                    <p>
+                        este comando actualiza las lista de los paquetes disponibles para nuestro
+                        sistema pero no instala nada, se puede ver como un comando para apuntar a los paquetes
+                        nuevos que después actualizaremos.
+                    </p>
                 </DivArticle>
             </DivSection>
             <p>
 
-                apt update
 
-                este comando actualiza las lista de los paquetes disponibles para nuestro
-                sistema pero no instala nada, se puede ver como un comando para apuntar a los paquetes
-                nuevos que después actualizaremos.
+
+
 
                 apt upgrade
 
