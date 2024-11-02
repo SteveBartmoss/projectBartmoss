@@ -79,18 +79,24 @@ export function BasicLinux() {
                         de root para poder ejecutarse.
                     </p>
 
+                    <p>
+                        este comando también permite instalar paquetes.deb con la diferencia de que también
+                        resuelve las dependencias que no estén en el paquete.deb y también sean necesarias.Para ejecutar
+                        lo basta con agregar la ruta del archivo.deb y tendremos instalado nuestro programa.
+                    </p>
+
+                    <h2>Importante</h2>
+
+                    <p>
+                        los comandos apt están disponibles por defecto para distribuciónes basadas en debian, como Ubuntu
+                        Linux mint o el propio debian.Para otras distribuciónes el manejador de paquete cambia como es en fedora con
+                        el comando dnf, red hat con yum o Arch con pacman, si estás en una distribución diferente a debian o derivados
+                        debes buscar su comando específico.
+                    </p>
+
                 </DivArticle>
             </DivSection>
             <p>
-
-                este comando también permite instalar paquetes.deb con la diferencia de que también
-                resuelve las dependencias que no estén en el paquete.deb y también sean necesarias.Para ejecutar
-                lo basta con agregar la ruta del archivo.deb y tendremos instalado nuestro programa.
-
-                Importante los comandos apt están disponibles por defecto para distribuciónes basadas en debian, como Ubuntu
-                Linux mint o el propio debian.Para otras distribuciónes el manejador de paquete cambia como es en fedora con
-                el comando dnf, red hat con yum o Arch con pacman, si estás en una distribución diferente a debian o derivados
-                debes buscar su comando específico.
 
                 rm
 
