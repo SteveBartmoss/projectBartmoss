@@ -23,16 +23,22 @@ export function BasicLinux() {
                         salir da la carpeta actual podemos hacer lo con cd..lo cual nos
                         dejara un nivel arriba.
                     </p>
+
+                    <h2>ls</h2>
+
+                    <p>
+                        este comando listara el contenido de la carpeta en la que nos encontramos,
+                        esto nos permitirá ver qué archivo queremos ejecutar o hacía que carpeta debemos
+                        navegar, este comando recibe argumentos que modificaran la salida como ls - l que
+                        mostrará el listado largo o ls - a que mostrará todos los archivos.
+                    </p>
                 </DivArticle>
             </DivSection>
             <p>
 
-                ls
 
-                este comando listara el contenido de la carpeta en la que nos encontramos,
-                esto nos permitirá ver qué archivo queremos ejecutar o hacía que carpeta debemos
-                navegar, este comando recibe argumentos que modificaran la salida como ls - l que
-                mostrará el listado largo o ls - a que mostrará todos los archivos.
+
+
 
                 touch
 
