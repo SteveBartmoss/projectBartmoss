@@ -51,6 +51,17 @@ export function BasicLinux() {
                         sistema pero no instala nada, se puede ver como un comando para apuntar a los paquetes
                         nuevos que después actualizaremos.
                     </p>
+
+                    <h2>apt upgrade</h2>
+
+                    <p>
+                        este comando toma la lista actualizada de los paquetes disponibles y los instala,
+                        así que podemos decir que ambos comandos van unidos así que la gente prefiere usar
+                        apt update && upgrade para lanzar los comando uno detrás del otro.Ambos comandos requieren
+                        permisos de súper usuario así que debemos estar en una cuenta root o agregar sudo antes de
+                        los comandos.
+                    </p>
+                    
                 </DivArticle>
             </DivSection>
             <p>
@@ -59,13 +70,9 @@ export function BasicLinux() {
 
 
 
-                apt upgrade
 
-                este comando toma la lista actualizada de los paquetes disponibles y los instala,
-                así que podemos decir que ambos comandos van unidos así que la gente prefiere usar
-                apt update && upgrade para lanzar los comando uno detrás del otro.Ambos comandos requieren
-                permisos de súper usuario así que debemos estar en una cuenta root o agregar sudo antes de
-                los comandos.
+
+
 
                 dpkg - i
 
