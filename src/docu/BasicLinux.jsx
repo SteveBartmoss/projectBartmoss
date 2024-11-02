@@ -94,15 +94,17 @@ export function BasicLinux() {
                         debes buscar su comando específico.
                     </p>
 
+                    <h2>rm</h2>
+
+                    <p>
+                        este comando permite eliminar un archivo pero hay que usarlo con cautela ya que eliminara el archivo sin
+                        preguntar antes o esperar una confirmación, se puede pasar el parámetro - r para que la llamada sea recursiva lo
+                        cual permite borrar los archivos y las subcarpetas así que también es peligroso.
+                    </p>
+
                 </DivArticle>
             </DivSection>
             <p>
-
-                rm
-
-                este comando permite eliminar un archivo pero hay que usarlo con cautela ya que eliminara el archivo sin
-                preguntar antes o esperar una confirmación, se puede pasar el parámetro - r para que la llamada sea recursiva lo
-                cual permite borrar los archivos y las subcarpetas así que también es peligroso.
 
                 cp
 
