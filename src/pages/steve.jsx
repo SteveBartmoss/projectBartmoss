@@ -9,7 +9,7 @@ import { SteveTimeLine } from "./steveTimeline/steveTimeLine";
 export function Steve() {
     return (
         <div>
-            <Portada imgPortada={"/Assets/steveA.png"} title={"Steve Bartmoss"} text={"No le preuntes a la documentacion, preguntame a mi"} />
+            <Portada imgPortada={"/Assets/steveA.png"} title={"Steve Bartmoss"} text={"No le preguntes a la documentacion, preguntame a mi"} />
             <DivSection>
                 <Tabs position="position-center" headers={
                     [
