@@ -102,16 +102,22 @@ export function BasicLinux() {
                         cual permite borrar los archivos y las subcarpetas así que también es peligroso.
                     </p>
 
+                    <h2>cp</h2>
+
+                    <p>
+                        este comando permite mover una archivo o fichero hacía otra ruta la cual recibe como argumento, para utilizar
+                        debemos pasar el nombre del archivo o directorio a mover, seguido de la ruta en que se encuentra el archivo y luego
+                        la ruta hacia la que queremos mover el archivo.Este comando es similar a cortar y pegar así que no se mantendrá una
+                        copia del archivo o fichero en la ruta origen.
+                    </p>
+
                 </DivArticle>
             </DivSection>
             <p>
 
-                cp
 
-                este comando permite mover una archivo o fichero hacía otra ruta la cual recibe como argumento, para utilizar
-                debemos pasar el nombre del archivo o directorio a mover, seguido de la ruta en que se encuentra el archivo y luego
-                la ruta hacia la que queremos mover el archivo.Este comando es similar a cortar y pegar así que no se mantendrá una
-                copia del archivo o fichero en la ruta origen.
+
+
 
                 pwd
 
