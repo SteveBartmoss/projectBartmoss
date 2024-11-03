@@ -1,8 +1,17 @@
+import { DivArticle, DivSection } from "../componentes/contenedores/contenedores";
+import { Portada } from "../componentes/portada/portada";
 
 
 export function Vimgg() {
     return (
         <>
+            <Portada imgPortada={"/Assets/steveA.png"} title={"Vimgg guia para inexpertos"} text={"Por Steve 03/11/2024"} />
+
+            <DivSection>
+                <DivArticle>
+                    
+                </DivArticle>
+            </DivSection>
             <p>
                 Vimgg
 
