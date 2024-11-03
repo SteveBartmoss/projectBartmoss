@@ -38,6 +38,11 @@ export function Vimgg() {
                         otra opcion mas que usar el terminal.
                     </p>
 
+                    <p>
+                        En estos casos es donde aprender una herramienta como vim puede ser de
+                        de ayuda.
+                    </p>
+
                 </DivArticle>
             </DivSection>
             <p>
@@ -50,8 +55,7 @@ export function Vimgg() {
 
 
 
-                En estos casos es donde aprender una herramienta como vim puede ser de
-                de ayuda.
+
 
                 ¿Que es vim?
 
