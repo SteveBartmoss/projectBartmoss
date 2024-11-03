@@ -17,20 +17,26 @@ export function Vimgg() {
                         variar el entorno de trabajo y poder elegir de otras opciones
                     </p>
 
+                    <h2>¿Porque aprender vim?</h2>
+
+                    <p>
+                        Aunque puede parecer que este tipo de programas solo perjudica a
+                        los usuarios en lugar de ayudarlos la realidad es que si puede llegar
+                        a ser una buena herramienta para los desarrolladores ya que por ejemplo
+                        si estuvieras trabajando en un servidor al cual solo es accesible desde
+                        ssh, como podemos editar un archivo que se encuentra en el servidor sin
+                        tener la posibilidad de usar un edutor como vscode o sublime text?
+                    </p>
+
                 </DivArticle>
             </DivSection>
             <p>
 
 
 
-                ¿Porque aprender vim?
 
-                Aunque puede parecer que este tipo de programas solo perjudica a
-                los usuarios en lugar de ayudarlos la realidad es que si puede llegar
-                a ser una buena herramienta para los desarrolladores ya que por ejemplo
-                si estuvieras trabajando en un servidor al cual solo es accesible desde
-                ssh, como podemos editar un archivo que se encuentra en el servidor sin
-                tener la posibilidad de usar un edutor como vscode o sublime text?
+
+
 
                 Puede que esta situacion no sea tan creible pero incluso si estuvieramos
                 en la sala del servidor es comun que el servidor no tenga la pantalla ni siquiera
