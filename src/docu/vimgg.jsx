@@ -5,22 +5,23 @@ import { Portada } from "../componentes/portada/portada";
 export function Vimgg() {
     return (
         <>
-            <Portada imgPortada={"/Assets/steveA.png"} title={"Vimgg guia para inexpertos"} text={"Por Steve 03/11/2024"} />
+            <Portada imgPortada={"/Assets/steveA.png"} title={"Vimgg guia para mostales"} text={"Por Steve 03/11/2024"} />
 
             <DivSection>
                 <DivArticle>
-                    
+
+                    <p>
+                        Empezar a utilizar vim no es un camino facil
+                        pero aprender nuevas cosas resulta interesante y ademas te puede dar
+                        una nueva herramienta para futuros proyectos o simplemente para poder
+                        variar el entorno de trabajo y poder elegir de otras opciones
+                    </p>
+
                 </DivArticle>
             </DivSection>
             <p>
-                Vimgg
 
-                Una guia para los mortales como steve
 
-                Empezar a utilizar vim no es un camino facil
-                pero aprender nuevas cosas resulta interesante y ademas te puede dar
-                una nueva herramienta para futuros proyectos o simplemente para poder
-                variar el entorno de trabajo y poder elegir de otras opciones
 
                 ¿Porque aprender vim?
 
