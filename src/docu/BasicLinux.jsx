@@ -126,15 +126,20 @@ export function BasicLinux() {
                         directorio.
                     </p>
 
+                    <h2>man</h2>
+
+                    <p>
+                        este comando mostrará información sobre un comando que se pase como parametro, de esta manera podemos aprender
+                        sobre un comando que nos interese o que no conoscamos.También se puede usar el comando info o help ambos muestran ayuda
+                        sobre comandos pero uno mostrara menos o más información así que depende que tanta ayuda necesites uno será más útil que otro.
+                    </p>
+
                 </DivArticle>
             </DivSection>
             <p>
 
-                man
 
-                este comando mostrará información sobre un comando que se pase como parametro, de esta manera podemos aprender
-                sobre un comando que nos interese o que no conoscamos.También se puede usar el comando info o help ambos muestran ayuda
-                sobre comandos pero uno mostrara menos o más información así que depende que tanta ayuda necesites uno será más útil que otro.
+
 
                 Estos comandos te permitirán realizar acciones básicas en un sistema linux al menos cuando empiezas por primera vez con
                 un sistema operativo de Linux.
