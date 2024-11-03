@@ -118,23 +118,17 @@ export function BasicLinux() {
                         encuentras y poder moverte hacia otro directorio con el comando cd.
                     </p>
 
+                    <h2>mkdir</h2>
+
+                    <p>
+                        este comando permite crear un directorio con el nombre que le pasemos como argumento, la carpeta será creada
+                        por defecto en el directorio actual de trabajo y si queremos que se se cree en otra ubicación debemos cambiar nos de
+                        directorio.
+                    </p>
+
                 </DivArticle>
             </DivSection>
             <p>
-
-
-
-
-
-
-
-
-
-                mkdir
-
-                este comando permite crear un directorio con el nombre que le pasemos como argumento, la carpeta será creada
-                por defecto en el directorio actual de trabajo y si queremos que se se cree en otra ubicación debemos cambiar nos de
-                directorio.
 
                 man
 
