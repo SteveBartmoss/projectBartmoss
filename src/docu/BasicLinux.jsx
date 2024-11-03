@@ -111,6 +111,13 @@ export function BasicLinux() {
                         copia del archivo o fichero en la ruta origen.
                     </p>
 
+                    <h2>pwd</h2>
+
+                    <p>
+                        este comando te permite mostrar la ruta actual en la que te encuentras, esto es util para saber en qué nivel te
+                        encuentras y poder moverte hacia otro directorio con el comando cd.
+                    </p>
+
                 </DivArticle>
             </DivSection>
             <p>
@@ -119,10 +126,9 @@ export function BasicLinux() {
 
 
 
-                pwd
 
-                este comando te permite mostrar la ruta actual en la que te encuentras, esto es util para saber en qué nivel te
-                encuentras y poder moverte hacia otro directorio con el comando cd.
+
+
 
                 mkdir
 
