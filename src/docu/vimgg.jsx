@@ -28,6 +28,16 @@ export function Vimgg() {
                         tener la posibilidad de usar un edutor como vscode o sublime text?
                     </p>
 
+                    <p>
+                        Puede que esta situacion no sea tan creible pero incluso si estuvieramos
+                        en la sala del servidor es comun que el servidor no tenga la pantalla ni siquiera
+                        mucho menos teclado y raton pero en el caso de que estos elementos estuvieran precentes
+                        pot alguna razon, muchos servidores ahorran recursos y no tienen entorno
+                        grafico ya que el usuario normalmente no vera esto asi que aun cuando
+                        quisieramos acceder al servidor como una maquina de escritorio, no tenemos
+                        otra opcion mas que usar el terminal.
+                    </p>
+
                 </DivArticle>
             </DivSection>
             <p>
@@ -38,13 +48,7 @@ export function Vimgg() {
 
 
 
-                Puede que esta situacion no sea tan creible pero incluso si estuvieramos
-                en la sala del servidor es comun que el servidor no tenga la pantalla ni siquiera
-                mucho menos teclado y raton pero en el caso de que estos elementos estuvieran precentes
-                pot alguna razon, muchos servidores ahorran recursos y no tienen entorno
-                grafico ya que el usuario normalmente no vera esto asi que aun cuando
-                quisieramos acceder al servidor como una maquina de escritorio, no tenemos
-                otra opcion mas que usar el terminal.
+
 
                 En estos casos es donde aprender una herramienta como vim puede ser de
                 de ayuda.
