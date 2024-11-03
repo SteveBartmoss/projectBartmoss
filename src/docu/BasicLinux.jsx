@@ -134,16 +134,13 @@ export function BasicLinux() {
                         sobre comandos pero uno mostrara menos o más información así que depende que tanta ayuda necesites uno será más útil que otro.
                     </p>
 
+                    <p>
+                        Estos comandos te permitirán realizar acciones básicas en un sistema linux al menos cuando empiezas por primera vez con
+                        un sistema operativo de Linux.
+                    </p>
+                    
                 </DivArticle>
             </DivSection>
-            <p>
-
-
-
-
-                Estos comandos te permitirán realizar acciones básicas en un sistema linux al menos cuando empiezas por primera vez con
-                un sistema operativo de Linux.
-            </p>
         </>
     )
 }
