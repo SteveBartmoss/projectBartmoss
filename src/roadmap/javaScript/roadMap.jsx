@@ -252,6 +252,14 @@ export function RoadMap() {
                         Compatibilidad y conflictos **: Consideraciones al extender prototipos, especialmente en librerías compartidas.
                     </p>
 
+                    <h2>Implementando Herencia</h2>
+
+                    <p>
+                        Herencia prototipal **: Usar prototipos para crear una relación entre objetos que permita la herencia de métodos y propiedades.
+                        Clases en ES6 **: Uso de `extends` y `super` en ES6 para implementar herencia de manera más legible y estructurada.
+                        Prototipos heredados **: Cómo funcionan los prototipos en la herencia para compartir métodos entre subclases y superclases.
+                    </p>
+
                 </DivTopicos>
             </DivArticle>
         </>
@@ -289,13 +297,6 @@ estos temas si deberian ir en el curso de js mas basico
 - **Multilínea**: Crear cadenas de varias líneas sin caracteres de escape.
 - **Expresiones complejas en plantillas**: Incluir llamadas a funciones, operaciones matemáticas y lógica simple.
 */
-
-### Implementando Herencia
-    - ** Herencia prototipal **: Usar prototipos para crear una relación entre objetos que permita la herencia de métodos y propiedades.
-- ** Clases en ES6 **: Uso de `extends` y `super` en ES6 para implementar herencia de manera más legible y estructurada.
-- ** Prototipos heredados **: Cómo funcionan los prototipos en la herencia para compartir métodos entre subclases y superclases.
-
----
 
 ### Constructor Padre
     - ** Uso del constructor padre **: Llamada al constructor del objeto o clase padre desde la subclase usando`super`.
