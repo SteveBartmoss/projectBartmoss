@@ -220,6 +220,14 @@ export function RoadMap() {
                         Clases en ES6 **: Cómo las clases en JavaScript implementan herencia de forma más sencilla que los prototipos.
                     </p>
 
+                    <h2>Prototipos</h2>
+
+                    <p>
+                        Sistema de prototipos en JavaScript **: Entender que cada objeto tiene una referencia interna(`[[Prototype]]`) a otro objeto.
+                        Objeto`prototype` **: Cómo funciona y se usa el `prototype` en funciones constructoras para definir métodos y propiedades compartidas.
+                        Prototypal Chain **: Cadena de prototipos que permite a los objetos buscar propiedades y métodos en su prototipo si no están definidos localmente.
+                    </p>
+
                 </DivTopicos>
             </DivArticle>
         </>
@@ -257,14 +265,7 @@ estos temas si deberian ir en el curso de js mas basico
 - **Multilínea**: Crear cadenas de varias líneas sin caracteres de escape.
 - **Expresiones complejas en plantillas**: Incluir llamadas a funciones, operaciones matemáticas y lógica simple.
 */
-
-#### 
     
-#### Prototipos
-    - ** Sistema de prototipos en JavaScript **: Entender que cada objeto tiene una referencia interna(`[[Prototype]]`) a otro objeto.
-- ** Objeto`prototype` **: Cómo funciona y se usa el `prototype` en funciones constructoras para definir métodos y propiedades compartidas.
-- ** Prototypal Chain **: Cadena de prototipos que permite a los objetos buscar propiedades y métodos en su prototipo si no están definidos localmente.
-
 #### Prototipos VS Instancias
     - ** Diferencia entre prototipos e instancias **: Qué se comparte entre instancias(métodos del prototipo) y qué es exclusivo de cada instancia(propiedades propias).
 - ** Métodos compartidos **: Ventajas de definir métodos en el prototipo en lugar de dentro de cada instancia.
