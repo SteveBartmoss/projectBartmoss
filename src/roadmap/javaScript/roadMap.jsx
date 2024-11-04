@@ -44,19 +44,23 @@ export function RoadMap() {
                         Herencia **: Conceptos básicos de herencia utilizando`extends`.
                     </p>
 
+                    <h1>Funciones</h1>
+
+                    <h2>Function</h2>
+
+                    <p>
+                        Declaración y expresión de funciones **: Diferencias entre `function` y funciones de tipo`function expression`.
+                        Funciones anónimas y nombradas **: Cuándo usar cada tipo y las ventajas de cada una.
+                        Arrow functions **: Cómo y cuándo usar `=>` para simplificar la sintaxis.
+                        Contexto`this` **: Cómo cambia el contexto de `this` en funciones regulares vs.funciones flecha.
+                    </p>
+                    
                 </DivTopicos>
             </DivArticle>
         </>
     )
 }
 
-
-### Funciones
-#### Function
-    - ** Declaración y expresión de funciones **: Diferencias entre `function` y funciones de tipo`function expression`.
-- ** Funciones anónimas y nombradas **: Cuándo usar cada tipo y las ventajas de cada una.
-- ** Arrow functions **: Cómo y cuándo usar `=>` para simplificar la sintaxis.
-- ** Contexto`this` **: Cómo cambia el contexto de `this` en funciones regulares vs.funciones flecha.
 
 #### Valor y referencia
     - ** Paso por valor **: Cómo los tipos primitivos(números, cadenas) se pasan por valor.
