@@ -27,6 +27,14 @@ export function RoadMap() {
                         Ventajas: Mejor organización y encapsulamiento en comparación con el uso directo de objetos literales.
                         Ejemplos: Crear objetos con propiedades y métodos compartidos, sin el uso de`new`.
                     </p>
+
+                    <h2>Constructor Functions</h2>
+
+                    <p>
+                        Funciones constructoras: Uso de funciones con `new` para crear instancias de objetos.
+                        Convenciones: Nombrado con mayúscula inicial(`PascalCase`) y uso de `this` para propiedades.
+                        Prototipos: Introducción a cómo las constructor functions pueden utilizar prototipos para métodos compartidos.
+                    </p>
                     
                 </DivTopicos>
             </DivArticle>
@@ -35,10 +43,6 @@ export function RoadMap() {
 }
 
     
-#### Constructor Functions
-    - ** Funciones constructoras **: Uso de funciones con `new` para crear instancias de objetos.
-- ** Convenciones **: Nombrado con mayúscula inicial(`PascalCase`) y uso de `this` para propiedades.
-- ** Prototipos **: Introducción a cómo las constructor functions pueden utilizar prototipos para métodos compartidos.
 
 #### Atajos Constructores
     - ** Clases(ES6) **: La sintaxis de `class` y cómo es un atajo para crear funciones constructoras.
