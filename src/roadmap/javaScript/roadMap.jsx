@@ -157,6 +157,14 @@ export function RoadMap() {
                         Aplicación en funciones **: Cómo simplificar la obtención de propiedades de objetos y arrays dentro de funciones.
                     </p>
 
+                    <h2>Getters y Setters</h2>
+
+                    <p>
+                        Definición de getters y setters **: Creación de funciones `get` y `set` dentro de objetos y clases.
+                        Uso en encapsulación de datos **: Control de acceso a propiedades privadas o internas.
+                        Ventajas **: Permitir lógica adicional al acceder o modificar una propiedad, y validar datos de entrada.
+                    </p>
+
                 </DivTopicos>
             </DivArticle>
         </>
@@ -195,14 +203,6 @@ estos temas si deberian ir en el curso de js mas basico
 - **Expresiones complejas en plantillas**: Incluir llamadas a funciones, operaciones matemáticas y lógica simple.
 */
 
----
-
-### Getters y Setters
-    - ** Definición de getters y setters **: Creación de funciones `get` y `set` dentro de objetos y clases.
-- ** Uso en encapsulación de datos **: Control de acceso a propiedades privadas o internas.
-- ** Ventajas **: Permitir lógica adicional al acceder o modificar una propiedad, y validar datos de entrada.
-
----
 
 ### Try y Catch
     - ** Bloque`try...catch` **: Manejo de excepciones en JavaScript, estructura básica.
@@ -235,3 +235,91 @@ estos temas si deberian ir en el curso de js mas basico
 - ** Arrow functions vs.funciones normales **: Diferencias en el uso y cómo afecta el contexto de`this`.
 
 ---
+
+
+¡Claro! Aquí tienes un desglose detallado de cada tema relacionado con el uso de prototipos y los principios de la programación orientada a objetos (POO) en JavaScript. Este esquema debería ayudarte a organizar el contenido que necesitas estudiar.
+
+---
+
+### Prototipos
+
+#### 4 Principios de la POO
+- **Encapsulación**: Agrupación de datos y métodos en una estructura (como un objeto o clase) y control de su acceso.
+- **Abstracción**: Ocultación de detalles internos complejos, proporcionando una interfaz simplificada.
+- **Herencia**: Creación de nuevas estructuras (clases u objetos) que adquieren propiedades de otras.
+- **Polimorfismo**: Capacidad de los objetos para compartir la misma interfaz y responder de manera específica según su tipo.
+
+#### Herencia
+- **Concepto de herencia en JavaScript**: Entender cómo un objeto puede "heredar" propiedades y métodos de otro objeto o clase.
+- **Uso de `Object.create()`**: Crear objetos heredando prototipos específicos.
+- **Clases en ES6**: Cómo las clases en JavaScript implementan herencia de forma más sencilla que los prototipos.
+
+#### Prototipos
+- **Sistema de prototipos en JavaScript**: Entender que cada objeto tiene una referencia interna (`[[Prototype]]`) a otro objeto.
+- **Objeto `prototype`**: Cómo funciona y se usa el `prototype` en funciones constructoras para definir métodos y propiedades compartidas.
+- **Prototypal Chain**: Cadena de prototipos que permite a los objetos buscar propiedades y métodos en su prototipo si no están definidos localmente.
+
+#### Prototipos VS Instancias
+- **Diferencia entre prototipos e instancias**: Qué se comparte entre instancias (métodos del prototipo) y qué es exclusivo de cada instancia (propiedades propias).
+- **Métodos compartidos**: Ventajas de definir métodos en el prototipo en lugar de dentro de cada instancia.
+- **Instancias**: Cómo crear instancias que contienen sus propias propiedades, pero comparten métodos con otros objetos de la misma clase/prototipo.
+
+---
+
+### Iterando Propiedades
+- **Métodos de iteración de propiedades**: `for...in`, `Object.keys()`, `Object.values()`, y `Object.entries()`.
+- **Propiedades enumerables**: Qué significa que una propiedad sea enumerable y cómo afecta la iteración.
+- **Distinguir propiedades propias y heredadas**: Uso de `hasOwnProperty()` para identificar las propiedades definidas en el propio objeto versus las del prototipo.
+
+---
+
+### Extendiendo Prototipos
+- **Extensión de prototipos**: Agregar nuevos métodos y propiedades al `prototype` de una función constructora.
+- **Extender tipos nativos**: Riesgos y ventajas de modificar los prototipos de tipos nativos como `Array` o `String`.
+- **Compatibilidad y conflictos**: Consideraciones al extender prototipos, especialmente en librerías compartidas.
+
+---
+
+### Implementando Herencia
+- **Herencia prototipal**: Usar prototipos para crear una relación entre objetos que permita la herencia de métodos y propiedades.
+- **Clases en ES6**: Uso de `extends` y `super` en ES6 para implementar herencia de manera más legible y estructurada.
+- **Prototipos heredados**: Cómo funcionan los prototipos en la herencia para compartir métodos entre subclases y superclases.
+
+---
+
+### Constructor Padre
+- **Uso del constructor padre**: Llamada al constructor del objeto o clase padre desde la subclase usando `super`.
+- **Configuración de propiedades heredadas**: Cómo inicializar las propiedades del constructor padre en una subclase.
+- **Superclase y subclase**: Definir y diferenciar entre una clase base (padre) y una clase derivada (hija).
+
+---
+
+### Method Override
+- **Sobrescribir métodos**: Cómo una subclase puede redefinir los métodos heredados de una superclase.
+- **Uso de `super.methodName()`**: Llamada al método de la superclase desde la subclase para extender la funcionalidad.
+- **Buenas prácticas**: Casos donde es recomendable sobrescribir métodos y cómo hacerlo de manera efectiva.
+
+---
+
+### Polimorfismo
+- **Polimorfismo en JavaScript**: Capacidad de múltiples clases de compartir la misma interfaz (métodos) con implementaciones específicas.
+- **Uso de polimorfismo en herencia**: Crear métodos comunes con comportamientos específicos en clases derivadas.
+- **Ventajas de polimorfismo**: Ejemplos prácticos de cómo el polimorfismo facilita la expansión y mantenimiento del código.
+
+---
+
+### Composición VS Herencia
+- **Concepto de composición**: Creación de objetos complejos a partir de componentes más simples en lugar de usar herencia.
+- **Diferencias entre composición y herencia**: Ventajas de cada enfoque y casos de uso recomendados.
+- **Patrones de composición**: Ejemplos como el patrón "Módulo" o la técnica "Mixin" para combinar funcionalidades.
+
+---
+
+### Mixins
+- **Concepto de Mixins**: Definición de objetos o funciones que contienen métodos y propiedades para combinar en otros objetos.
+- **Implementación de Mixins**: Uso de funciones o `Object.assign()` para mezclar métodos en un objeto o clase.
+- **Ventajas y casos de uso**: Flexibilidad al agregar comportamientos sin herencia, permitiendo una "herencia múltiple" en JavaScript.
+
+---
+
+Este desglose abarca los puntos esenciales de cada tema sobre prototipos y POO en JavaScript, permitiéndote entender cómo funcionan y cuándo usarlos de forma efectiva. Si necesitas profundizar en alguna sección, estaré encantado de ayudarte.
