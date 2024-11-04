@@ -16,7 +16,7 @@ export function MainRoad() {
                         <h1>JavaScript</h1>
                         <p>Guia para estudiar JavaScript</p>
                         <CardAccions>
-                            <CardLink url="JavaScript" text={'Ir al articulo'} />
+                            <CardLink url="javascript" text={'Ir al articulo'} />
                         </CardAccions>
                     </Card>
                 </DivTopicos>
