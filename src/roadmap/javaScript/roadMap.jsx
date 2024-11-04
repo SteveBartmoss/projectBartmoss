@@ -123,7 +123,15 @@ export function RoadMap() {
                         Limitaciones de `arguments` en arrow functions **: Explicación de por qué `arguments` no funciona en arrow functions.
                         Uso de`arguments.length` **: Determinar la cantidad de argumentos en una función, especialmente cuando se usan parámetros variables.
                     </p>
-                    
+
+                    <h2>Fat Arrow Function( => )</h2>
+
+                    <p>
+                        Sintaxis básica **: Introducción a la sintaxis de las arrow functions.
+                        Ventajas **: Simplificación del código, especialmente en funciones cortas y de una línea.
+                        Limitaciones **: Ausencia del objeto `arguments` y del propio`this`.
+                        Ámbito léxico de`this` **: Cómo las arrow functions no tienen su propio`this`, lo que evita problemas de alcance.
+                    </p>
                 </DivTopicos>
             </DivArticle>
         </>
@@ -163,11 +171,6 @@ estos temas si deberian ir en el curso de js mas basico
 */
 
 
-### Fat Arrow Function(`=> `)
-    - ** Sintaxis básica **: Introducción a la sintaxis de las arrow functions.
-- ** Ventajas **: Simplificación del código, especialmente en funciones cortas y de una línea.
-- ** Limitaciones **: Ausencia del objeto `arguments` y del propio`this`.
-- ** Ámbito léxico de`this` **: Cómo las arrow functions no tienen su propio`this`, lo que evita problemas de alcance.
 
 ---
 
