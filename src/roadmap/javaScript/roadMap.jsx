@@ -189,7 +189,18 @@ export function RoadMap() {
                         Uso en clases y objetos **: `this` en métodos de clase y en constructores.
                         Ámbito léxico en arrow functions **: Cómo el `this` en una arrow function hereda el contexto del `this` exterior.
                     </p>
-                    
+
+                    <h2>Cambiando el contexto</h2>
+
+                    <p>
+                        Métodos`call`, `apply`, y`bind` **:
+                        `call` **: Cambiar el contexto de `this` pasando los argumentos uno a uno.
+                        `apply` **: Cambiar el contexto de `this` pasando los argumentos como array.
+                        `bind` **: Crear una nueva función con un contexto de `this` fijado.
+                        Usos comunes **: Ejemplos prácticos de cuándo y por qué cambiar el contexto(eventos en navegadores, herencia, etc.).
+                        Arrow functions vs.funciones normales **: Diferencias en el uso y cómo afecta el contexto de`this`.
+                    </p>
+
                 </DivTopicos>
             </DivArticle>
         </>
@@ -227,23 +238,6 @@ estos temas si deberian ir en el curso de js mas basico
 - **Multilínea**: Crear cadenas de varias líneas sin caracteres de escape.
 - **Expresiones complejas en plantillas**: Incluir llamadas a funciones, operaciones matemáticas y lógica simple.
 */
-
-
-
----
-
-### Cambiando el contexto
-    - ** Métodos`call`, `apply`, y`bind` **:
-  - ** `call` **: Cambiar el contexto de `this` pasando los argumentos uno a uno.
-  - ** `apply` **: Cambiar el contexto de `this` pasando los argumentos como array.
-  - ** `bind` **: Crear una nueva función con un contexto de `this` fijado.
-- ** Usos comunes **: Ejemplos prácticos de cuándo y por qué cambiar el contexto(eventos en navegadores, herencia, etc.).
-- ** Arrow functions vs.funciones normales **: Diferencias en el uso y cómo afecta el contexto de`this`.
-
----
-
-
-¡Claro! Aquí tienes un desglose detallado de cada tema relacionado con el uso de prototipos y los principios de la programación orientada a objetos(POO) en JavaScript.Este esquema debería ayudarte a organizar el contenido que necesitas estudiar.
 
 ---
 
@@ -327,5 +321,3 @@ estos temas si deberian ir en el curso de js mas basico
 - ** Ventajas y casos de uso **: Flexibilidad al agregar comportamientos sin herencia, permitiendo una "herencia múltiple" en JavaScript.
 
 ---
-
-    Este desglose abarca los puntos esenciales de cada tema sobre prototipos y POO en JavaScript, permitiéndote entender cómo funcionan y cuándo usarlos de forma efectiva.Si necesitas profundizar en alguna sección, estaré encantado de ayudarte.
