@@ -41,6 +41,13 @@ export function JsFunctionsOne() {
             como parametro
           </p>
 
+          <p>
+            find
+            Esat funcion es muy util para buscar un elemento dentro de un array, 
+            de esta forma podemos obtener el objeto o valor que cumple con la 
+            condicion que se pasa como parametro
+          </p>
+
         </DivArticle>
       </DivSection>
     </>
