@@ -22,6 +22,7 @@ import { YesOrNot } from "../pages/portfolio/oraculo/yesOrNo";
 import { FindGif } from "../pages/portfolio/findGif/findGif";
 import { Vimgg } from "../docu/vimgg";
 import { BasicLinux } from "../docu/BasicLinux";
+import { MainRoad } from "../pages/mainRoad";
 
 
 export function RouterBlog(){
@@ -32,6 +33,7 @@ export function RouterBlog(){
                 <Route path="/" element={<Home />} />
                 <Route path="steve" element={<Steve />} />
                 <Route path="docu" element={<Docu />} />
+                <Route path="roadmap" element={<MainRoad />} />
                 <Route path="docu/primerospasos" element={<FirstStepReact /> } />
                 <Route path="docu/hookcontext" element={<HookContext /> } />
                 <Route path="docu/fkvelocidad" element={<FkAndIndex />} />
