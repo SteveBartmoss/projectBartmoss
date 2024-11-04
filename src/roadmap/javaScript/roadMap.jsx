@@ -149,6 +149,14 @@ export function RoadMap() {
                         Uso de expresiones **: Asignar un valor predeterminado basado en el valor de otros parámetros.
                     </p>
 
+                    <h2>Param Destructuring</h2>
+
+                    <p>
+                        Destructuración de parámetros **: Extraer propiedades directamente de objetos pasados como argumentos.
+                        Parámetros con valores predeterminados **: Destructuración combinada con valores predeterminados.
+                        Aplicación en funciones **: Cómo simplificar la obtención de propiedades de objetos y arrays dentro de funciones.
+                    </p>
+
                 </DivTopicos>
             </DivArticle>
         </>
@@ -186,17 +194,6 @@ estos temas si deberian ir en el curso de js mas basico
 - **Multilínea**: Crear cadenas de varias líneas sin caracteres de escape.
 - **Expresiones complejas en plantillas**: Incluir llamadas a funciones, operaciones matemáticas y lógica simple.
 */
-
-
-###
-
-
----
-
-### Param Destructuring
-    - ** Destructuración de parámetros **: Extraer propiedades directamente de objetos pasados como argumentos.
-- ** Parámetros con valores predeterminados **: Destructuración combinada con valores predeterminados.
-- ** Aplicación en funciones **: Cómo simplificar la obtención de propiedades de objetos y arrays dentro de funciones.
 
 ---
 
