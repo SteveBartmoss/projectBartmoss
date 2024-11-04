@@ -173,6 +173,14 @@ export function RoadMap() {
                         Propagación de errores **: Cómo los errores se "propagan" y pueden capturarse en niveles superiores.
                         Manejo de errores en funciones asincrónicas **: Introducción a `async / await ` y cómo usar `try...catch` con promesas.
                     </p>
+
+                    <h2>`this`</h2>
+
+                    <p>
+                        Definición básica **: Explicación de `this` como referencia al contexto de ejecución actual.
+                        `this` en objetos y funciones **: Cómo cambia `this` en distintos contextos(en métodos, en funciones, y en el ámbito global).
+                        Problemas comunes **: Ejemplos donde `this` no es lo que se espera(como en funciones internas).
+                    </p>
                     
                 </DivTopicos>
             </DivArticle>
@@ -211,17 +219,6 @@ estos temas si deberian ir en el curso de js mas basico
 - **Multilínea**: Crear cadenas de varias líneas sin caracteres de escape.
 - **Expresiones complejas en plantillas**: Incluir llamadas a funciones, operaciones matemáticas y lógica simple.
 */
-
-
-
----
-
-### `this`
-    - ** Definición básica **: Explicación de `this` como referencia al contexto de ejecución actual.
-- ** `this` en objetos y funciones **: Cómo cambia `this` en distintos contextos(en métodos, en funciones, y en el ámbito global).
-- ** Problemas comunes **: Ejemplos donde `this` no es lo que se espera(como en funciones internas).
-
----
 
 ### Contexto de`this`
     - ** Ámbito de `this` en funciones **: Cómo el contexto de `this` varía en funciones regulares, métodos y arrow functions.
