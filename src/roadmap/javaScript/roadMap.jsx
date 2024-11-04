@@ -141,6 +141,14 @@ export function RoadMap() {
                         Distinción con`arguments` **: Diferencias entre `...args` y`arguments`, especialmente en arrow functions.
                     </p>
 
+                    <h2>Parámetros predeterminados</h2>
+
+                    <p>
+                        Parámetros con valores por defecto **: Establecer valores predeterminados para parámetros en funciones.
+                        Orden de los parámetros **: Colocar los parámetros predeterminados al final para evitar conflictos.
+                        Uso de expresiones **: Asignar un valor predeterminado basado en el valor de otros parámetros.
+                    </p>
+
                 </DivTopicos>
             </DivArticle>
         </>
@@ -180,10 +188,8 @@ estos temas si deberian ir en el curso de js mas basico
 */
 
 
-### Parámetros predeterminados
-    - ** Parámetros con valores por defecto **: Establecer valores predeterminados para parámetros en funciones.
-- ** Orden de los parámetros **: Colocar los parámetros predeterminados al final para evitar conflictos.
-- ** Uso de expresiones **: Asignar un valor predeterminado basado en el valor de otros parámetros.
+###
+
 
 ---
 
