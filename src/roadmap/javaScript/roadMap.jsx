@@ -107,51 +107,51 @@ export function RoadMap() {
                         `function` **: Uso de funciones declaradas, diferencias de alcance y `hoisting` con `let` y`const`.
                     </p>
 
+                    <h2>Alcance(Scope)</h2>
+
+                    <p>
+                        Ámbito global y local **: Cómo y cuándo se pueden acceder las variables en distintos contextos.
+                        Ámbito de bloque **: Uso de `let` y `const` dentro de bloques(como`if` y`for`).
+                        Ámbito de función **: Cómo las funciones crean su propio contexto de alcance.
+                        Closures **: Concepto de closures y cómo el alcance de las variables afecta la ejecución.
+                    </p>
                 </DivTopicos>
             </DivArticle>
         </>
     )
 }
 
-    /*
-    
-    estos temas si deberian ir en el curso de js mas basico
-    
-    ### Math
-        - ** Métodos básicos **: `Math.round`, `Math.ceil`, `Math.floor`, `Math.abs`.
-    - ** Funciones avanzadas **: `Math.random`, `Math.pow`, `Math.sqrt`, `Math.max`, `Math.min`.
-    - ** Redondeo **: Diferencias entre redondeo estándar y truncado.
-    - ** Generación de números aleatorios **: Cómo generar números en rangos específicos.
-    
-    ---
-    
-    ### Date
-        - ** Crear fechas **: Uso de`new Date()`, pasando argumentos específicos.
-    - ** Métodos para obtener y modificar **: `getFullYear`, `getMonth`, `getDate`, `setFullYear`, etc.
-    - ** Formateo de fechas **: Técnicas para convertir fechas en cadenas con formatos específicos.
-    - ** Operaciones de fecha **: Restar, sumar y comparar fechas, uso de `Date.now()` para obtener marcas de tiempo.
-    
-    ---
-    
-    ### Strings
-    #### Caracteres de escape
-        - ** Uso de caracteres de escape **: Cómo insertar comillas, saltos de línea(`\n`), tabulaciones(`\t`) y otros caracteres especiales.
-    - ** Secuencias de escape comunes **: `\'`, `\"`, `\\`, `\u`(para Unicode).
-    
-    #### Template Strings
-        - ** Introducción a las plantillas de cadenas **: Uso de las comillas invertidas(\`\`) para incluir expresiones dinámicas.
-    - **Interpolación**: Uso de `${ expresión }` para incrustar valores dentro de cadenas.
-    - **Multilínea**: Crear cadenas de varias líneas sin caracteres de escape.
-    - **Expresiones complejas en plantillas**: Incluir llamadas a funciones, operaciones matemáticas y lógica simple.
-    */
-
-### Alcance(Scope)
-    - ** Ámbito global y local **: Cómo y cuándo se pueden acceder las variables en distintos contextos.
-- ** Ámbito de bloque **: Uso de `let` y `const` dentro de bloques(como`if` y`for`).
-- ** Ámbito de función **: Cómo las funciones crean su propio contexto de alcance.
-- ** Closures **: Concepto de closures y cómo el alcance de las variables afecta la ejecución.
-
+/*
+ 
+estos temas si deberian ir en el curso de js mas basico
+ 
+### Math
+    - ** Métodos básicos **: `Math.round`, `Math.ceil`, `Math.floor`, `Math.abs`.
+- ** Funciones avanzadas **: `Math.random`, `Math.pow`, `Math.sqrt`, `Math.max`, `Math.min`.
+- ** Redondeo **: Diferencias entre redondeo estándar y truncado.
+- ** Generación de números aleatorios **: Cómo generar números en rangos específicos.
+ 
 ---
+ 
+### Date
+    - ** Crear fechas **: Uso de`new Date()`, pasando argumentos específicos.
+- ** Métodos para obtener y modificar **: `getFullYear`, `getMonth`, `getDate`, `setFullYear`, etc.
+- ** Formateo de fechas **: Técnicas para convertir fechas en cadenas con formatos específicos.
+- ** Operaciones de fecha **: Restar, sumar y comparar fechas, uso de `Date.now()` para obtener marcas de tiempo.
+ 
+---
+ 
+### Strings
+#### Caracteres de escape
+    - ** Uso de caracteres de escape **: Cómo insertar comillas, saltos de línea(`\n`), tabulaciones(`\t`) y otros caracteres especiales.
+- ** Secuencias de escape comunes **: `\'`, `\"`, `\\`, `\u`(para Unicode).
+ 
+#### Template Strings
+    - ** Introducción a las plantillas de cadenas **: Uso de las comillas invertidas(\`\`) para incluir expresiones dinámicas.
+- **Interpolación**: Uso de `${ expresión }` para incrustar valores dentro de cadenas.
+- **Multilínea**: Crear cadenas de varias líneas sin caracteres de escape.
+- **Expresiones complejas en plantillas**: Incluir llamadas a funciones, operaciones matemáticas y lógica simple.
+*/
 
 ### Arguments
     - ** Objeto`arguments` **: Cómo acceder a todos los argumentos pasados a una función, especialmente en funciones que no especifican parámetros explícitos.
