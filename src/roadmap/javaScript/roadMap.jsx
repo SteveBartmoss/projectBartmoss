@@ -236,6 +236,14 @@ export function RoadMap() {
                         Instancias **: Cómo crear instancias que contienen sus propias propiedades, pero comparten métodos con otros objetos de la misma clase / prototipo.
                     </p>
 
+                    <h2>Iterando Propiedades</h2>
+
+                    <p>
+                        Métodos de iteración de propiedades **: `for...in`, `Object.keys()`, `Object.values()`, y`Object.entries()`.
+                        Propiedades enumerables **: Qué significa que una propiedad sea enumerable y cómo afecta la iteración.
+                        Distinguir propiedades propias y heredadas **: Uso de `hasOwnProperty()` para identificar las propiedades definidas en el propio objeto versus las del prototipo.
+                    </p>
+
                 </DivTopicos>
             </DivArticle>
         </>
@@ -273,13 +281,6 @@ estos temas si deberian ir en el curso de js mas basico
 - **Multilínea**: Crear cadenas de varias líneas sin caracteres de escape.
 - **Expresiones complejas en plantillas**: Incluir llamadas a funciones, operaciones matemáticas y lógica simple.
 */
-
-### Iterando Propiedades
-    - ** Métodos de iteración de propiedades **: `for...in`, `Object.keys()`, `Object.values()`, y`Object.entries()`.
-- ** Propiedades enumerables **: Qué significa que una propiedad sea enumerable y cómo afecta la iteración.
-- ** Distinguir propiedades propias y heredadas **: Uso de `hasOwnProperty()` para identificar las propiedades definidas en el propio objeto versus las del prototipo.
-
----
 
 ### Extendiendo Prototipos
     - ** Extensión de prototipos **: Agregar nuevos métodos y propiedades al `prototype` de una función constructora.
