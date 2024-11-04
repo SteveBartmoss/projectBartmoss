@@ -98,6 +98,15 @@ export function RoadMap() {
                         Diferencias clave **: `Hoisting`, asignación de funciones como valores y el concepto de funciones anónimas.
                     </p>
 
+                    <h2> let, var, const, function</h2>
+
+                    <p>
+                        `var` **: Declaración de variables antes de ES6, ámbito global o de función, problemas de`hoisting`.
+                        `let` **: Introducción en ES6, ámbito de bloque, diferencia con`var`.
+                        `const` **: Variables constantes, reglas de asignación y ámbito de bloque.
+                        `function` **: Uso de funciones declaradas, diferencias de alcance y `hoisting` con `let` y`const`.
+                    </p>
+
                 </DivTopicos>
             </DivArticle>
         </>
@@ -135,19 +144,6 @@ export function RoadMap() {
     - **Multilínea**: Crear cadenas de varias líneas sin caracteres de escape.
     - **Expresiones complejas en plantillas**: Incluir llamadas a funciones, operaciones matemáticas y lógica simple.
     */
-
-###
-
-
----
-
-### `let`, `var`, `const`, `function`
-    - ** `var` **: Declaración de variables antes de ES6, ámbito global o de función, problemas de`hoisting`.
-- ** `let` **: Introducción en ES6, ámbito de bloque, diferencia con`var`.
-- ** `const` **: Variables constantes, reglas de asignación y ámbito de bloque.
-- ** `function` **: Uso de funciones declaradas, diferencias de alcance y `hoisting` con `let` y`const`.
-
----
 
 ### Alcance(Scope)
     - ** Ámbito global y local **: Cómo y cuándo se pueden acceder las variables en distintos contextos.
