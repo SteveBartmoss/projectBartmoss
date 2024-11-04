@@ -132,6 +132,15 @@ export function RoadMap() {
                         Limitaciones **: Ausencia del objeto `arguments` y del propio`this`.
                         Ámbito léxico de`this` **: Cómo las arrow functions no tienen su propio`this`, lo que evita problemas de alcance.
                     </p>
+
+                    <h2>Rest</h2>
+
+                    <p>
+                        Sintaxis de Rest(`...args`) **: Recolección de argumentos restantes en una función.
+                        Uso en funciones **: Cómo manejar múltiples argumentos de entrada de manera flexible.
+                        Distinción con`arguments` **: Diferencias entre `...args` y`arguments`, especialmente en arrow functions.
+                    </p>
+
                 </DivTopicos>
             </DivArticle>
         </>
@@ -170,16 +179,6 @@ estos temas si deberian ir en el curso de js mas basico
 - **Expresiones complejas en plantillas**: Incluir llamadas a funciones, operaciones matemáticas y lógica simple.
 */
 
-
-
----
-
-### Rest
-    - ** Sintaxis de Rest(`...args`) **: Recolección de argumentos restantes en una función.
-- ** Uso en funciones **: Cómo manejar múltiples argumentos de entrada de manera flexible.
-- ** Distinción con`arguments` **: Diferencias entre `...args` y`arguments`, especialmente en arrow functions.
-
----
 
 ### Parámetros predeterminados
     - ** Parámetros con valores por defecto **: Establecer valores predeterminados para parámetros en funciones.
