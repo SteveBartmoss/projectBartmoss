@@ -1,0 +1,35 @@
+
+.extend-panel {
+    background-color: #15202B;
+    border-radius: .5rem;
+    margin-top: .5rem;
+}
+
+.extend-head {
+    color: white;
+    font-family: "Poppins";
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: .5rem;
+}
+
+.extend-content {
+    color: white;
+    font-family: "Poppins";
+    font-size: 1.2rem;
+    padding: .5rem;
+}
+
+.close-content {
+    display: none;
+}
+
+.down-icon {
+    transform: rotate(180deg);
+}
+
+.up-icon {
+    transform: rotate(360deg);
+}
