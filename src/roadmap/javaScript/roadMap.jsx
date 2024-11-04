@@ -276,6 +276,14 @@ export function RoadMap() {
                         Buenas prácticas **: Casos donde es recomendable sobrescribir métodos y cómo hacerlo de manera efectiva.
                     </p>
 
+                    <h2>Polimorfismo</h2>
+
+                    <p>
+                        Polimorfismo en JavaScript **: Capacidad de múltiples clases de compartir la misma interfaz(métodos) con implementaciones específicas.
+                        Uso de polimorfismo en herencia **: Crear métodos comunes con comportamientos específicos en clases derivadas.
+                        Ventajas de polimorfismo **: Ejemplos prácticos de cómo el polimorfismo facilita la expansión y mantenimiento del código.
+                    </p>
+                    
                 </DivTopicos>
             </DivArticle>
         </>
@@ -313,13 +321,6 @@ estos temas si deberian ir en el curso de js mas basico
 - **Multilínea**: Crear cadenas de varias líneas sin caracteres de escape.
 - **Expresiones complejas en plantillas**: Incluir llamadas a funciones, operaciones matemáticas y lógica simple.
 */
-
-### Polimorfismo
-    - ** Polimorfismo en JavaScript **: Capacidad de múltiples clases de compartir la misma interfaz(métodos) con implementaciones específicas.
-- ** Uso de polimorfismo en herencia **: Crear métodos comunes con comportamientos específicos en clases derivadas.
-- ** Ventajas de polimorfismo **: Ejemplos prácticos de cómo el polimorfismo facilita la expansión y mantenimiento del código.
-
----
 
 ### Composición VS Herencia
     - ** Concepto de composición **: Creación de objetos complejos a partir de componentes más simples en lugar de usar herencia.
