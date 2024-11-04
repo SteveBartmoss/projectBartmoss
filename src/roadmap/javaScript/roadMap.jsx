@@ -72,17 +72,20 @@ export function RoadMap() {
                         Enumeración vs.Propiedades propias **: Uso de `hasOwnProperty` y técnicas para evitar propiedades de prototipos.
                     </p>
 
+                    <h2>Clonando objetos</h2>
+
+                    <p>
+                        Shallow Copy vs.Deep Copy **: Diferencias entre copia superficial(usando`Object.assign`) y profunda(con bibliotecas o JSON).
+                        Métodos de clonación **: `Object.assign()`, desestructuración, `JSON.parse(JSON.stringify())`, y bibliotecas externas.
+                        Copias inmutables **: Técnicas para crear copias de objetos para prevenir modificaciones accidentales.
+                    </p>
+
                 </DivTopicos>
             </DivArticle>
         </>
     )
 }
 
-    
-#### Clonando objetos
-    - ** Shallow Copy vs.Deep Copy **: Diferencias entre copia superficial(usando`Object.assign`) y profunda(con bibliotecas o JSON).
-- ** Métodos de clonación **: `Object.assign()`, desestructuración, `JSON.parse(JSON.stringify())`, y bibliotecas externas.
-- ** Copias inmutables **: Técnicas para crear copias de objetos para prevenir modificaciones accidentales.
 
 #### Privado vs.Público
     - ** Privacidad en objetos **: Uso de closures y símbolos para simular miembros privados.
