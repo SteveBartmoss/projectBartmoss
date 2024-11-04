@@ -212,6 +212,14 @@ export function RoadMap() {
                         Polimorfismo **: Capacidad de los objetos para compartir la misma interfaz y responder de manera específica según su tipo.
                     </p>
 
+                    <h2>Herencia</h2>
+
+                    <p>
+                        Concepto de herencia en JavaScript **: Entender cómo un objeto puede "heredar" propiedades y métodos de otro objeto o clase.
+                        Uso de`Object.create()` **: Crear objetos heredando prototipos específicos.
+                        Clases en ES6 **: Cómo las clases en JavaScript implementan herencia de forma más sencilla que los prototipos.
+                    </p>
+
                 </DivTopicos>
             </DivArticle>
         </>
@@ -250,11 +258,8 @@ estos temas si deberian ir en el curso de js mas basico
 - **Expresiones complejas en plantillas**: Incluir llamadas a funciones, operaciones matemáticas y lógica simple.
 */
 
-#### Herencia
-    - ** Concepto de herencia en JavaScript **: Entender cómo un objeto puede "heredar" propiedades y métodos de otro objeto o clase.
-- ** Uso de`Object.create()` **: Crear objetos heredando prototipos específicos.
-- ** Clases en ES6 **: Cómo las clases en JavaScript implementan herencia de forma más sencilla que los prototipos.
-
+#### 
+    
 #### Prototipos
     - ** Sistema de prototipos en JavaScript **: Entender que cada objeto tiene una referencia interna(`[[Prototype]]`) a otro objeto.
 - ** Objeto`prototype` **: Cómo funciona y se usa el `prototype` en funciones constructoras para definir métodos y propiedades compartidas.
