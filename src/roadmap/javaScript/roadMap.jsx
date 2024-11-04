@@ -19,6 +19,14 @@ export function RoadMap() {
                         Enumeración de propiedades: Cómo recorrer propiedades de un objeto (`for...in`, `Object.keys`, `Object.values`, `Object.entries`).
                         Mutabilidad: Cómo los objetos pueden cambiar a lo largo del tiempo y cómo funciona el paso por referencia.
                     </p>
+
+                    <h2>Factory Functions</h2>
+
+                    <p>
+                        Funciones de fábrica: Crear funciones que devuelvan objetos para reutilizar la lógica de creación.
+                        Ventajas: Mejor organización y encapsulamiento en comparación con el uso directo de objetos literales.
+                        Ejemplos: Crear objetos con propiedades y métodos compartidos, sin el uso de`new`.
+                    </p>
                     
                 </DivTopicos>
             </DivArticle>
@@ -26,14 +34,7 @@ export function RoadMap() {
     )
 }
 
-
-
-
-#### Factory Functions
-    - ** Funciones de fábrica **: Crear funciones que devuelvan objetos para reutilizar la lógica de creación.
-- ** Ventajas **: Mejor organización y encapsulamiento en comparación con el uso directo de objetos literales.
-- ** Ejemplos **: Crear objetos con propiedades y métodos compartidos, sin el uso de`new`.
-
+    
 #### Constructor Functions
     - ** Funciones constructoras **: Uso de funciones con `new` para crear instancias de objetos.
 - ** Convenciones **: Nombrado con mayúscula inicial(`PascalCase`) y uso de `this` para propiedades.
