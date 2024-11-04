@@ -63,6 +63,15 @@ export function RoadMap() {
                         Inmutabilidad **: Técnicas para hacer que los datos sean inmutables, como el uso de`Object.freeze()`.
                     </p>
 
+                    <h2>Listar propiedades</h2>
+
+                    <p>
+                        `Object.keys` **: Devuelve las claves de un objeto en un array.
+                        `Object.values` **: Devuelve los valores de un objeto en un array.
+                        `Object.entries` **: Devuelve un array de pares `[clave, valor]` para cada propiedad.
+                        Enumeración vs.Propiedades propias **: Uso de `hasOwnProperty` y técnicas para evitar propiedades de prototipos.
+                    </p>
+
                 </DivTopicos>
             </DivArticle>
         </>
@@ -70,12 +79,6 @@ export function RoadMap() {
 }
 
     
-#### Listar propiedades
-    - ** `Object.keys` **: Devuelve las claves de un objeto en un array.
-- ** `Object.values` **: Devuelve los valores de un objeto en un array.
-- ** `Object.entries` **: Devuelve un array de pares `[clave, valor]` para cada propiedad.
-- ** Enumeración vs.Propiedades propias **: Uso de `hasOwnProperty` y técnicas para evitar propiedades de prototipos.
-
 #### Clonando objetos
     - ** Shallow Copy vs.Deep Copy **: Diferencias entre copia superficial(usando`Object.assign`) y profunda(con bibliotecas o JSON).
 - ** Métodos de clonación **: `Object.assign()`, desestructuración, `JSON.parse(JSON.stringify())`, y bibliotecas externas.
