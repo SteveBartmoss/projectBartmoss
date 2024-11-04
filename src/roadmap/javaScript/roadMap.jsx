@@ -283,6 +283,14 @@ export function RoadMap() {
                         Uso de polimorfismo en herencia **: Crear métodos comunes con comportamientos específicos en clases derivadas.
                         Ventajas de polimorfismo **: Ejemplos prácticos de cómo el polimorfismo facilita la expansión y mantenimiento del código.
                     </p>
+
+                    <h2>Composición VS Herencia</h2>
+
+                    <p>
+                        Concepto de composición **: Creación de objetos complejos a partir de componentes más simples en lugar de usar herencia.
+                        Diferencias entre composición y herencia **: Ventajas de cada enfoque y casos de uso recomendados.
+                        Patrones de composición **: Ejemplos como el patrón "Módulo" o la técnica "Mixin" para combinar funcionalidades.
+                    </p>
                     
                 </DivTopicos>
             </DivArticle>
@@ -321,13 +329,6 @@ estos temas si deberian ir en el curso de js mas basico
 - **Multilínea**: Crear cadenas de varias líneas sin caracteres de escape.
 - **Expresiones complejas en plantillas**: Incluir llamadas a funciones, operaciones matemáticas y lógica simple.
 */
-
-### Composición VS Herencia
-    - ** Concepto de composición **: Creación de objetos complejos a partir de componentes más simples en lugar de usar herencia.
-- ** Diferencias entre composición y herencia **: Ventajas de cada enfoque y casos de uso recomendados.
-- ** Patrones de composición **: Ejemplos como el patrón "Módulo" o la técnica "Mixin" para combinar funcionalidades.
-
----
 
 ### Mixins
     - ** Concepto de Mixins **: Definición de objetos o funciones que contienen métodos y propiedades para combinar en otros objetos.
