@@ -88,6 +88,16 @@ export function RoadMap() {
                         Módulos y encapsulación **: Uso de módulos para limitar el alcance de propiedades y métodos.
                     </p>
 
+                    <h1>Funciones</h1>
+
+                    <h2>Declaración VS Expresión</h2>
+
+                    <p>
+                        Declaración de funciones **: `function myFunction() {... }`, en qué casos se recomienda su uso.
+                        Expresión de funciones **: `const myFunction = function () {... }`, ventajas y diferencias respecto a la declaración.
+                        Diferencias clave **: `Hoisting`, asignación de funciones como valores y el concepto de funciones anónimas.
+                    </p>
+
                 </DivTopicos>
             </DivArticle>
         </>
@@ -126,10 +136,8 @@ export function RoadMap() {
     - **Expresiones complejas en plantillas**: Incluir llamadas a funciones, operaciones matemáticas y lógica simple.
     */
 
-### Declaración VS Expresión
-    - ** Declaración de funciones **: `function myFunction() { ... }`, en qué casos se recomienda su uso.
-- ** Expresión de funciones **: `const myFunction = function () { ... }`, ventajas y diferencias respecto a la declaración.
-- ** Diferencias clave **: `Hoisting`, asignación de funciones como valores y el concepto de funciones anónimas.
+###
+
 
 ---
 
