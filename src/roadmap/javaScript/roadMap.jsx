@@ -268,6 +268,14 @@ export function RoadMap() {
                         Superclase y subclase **: Definir y diferenciar entre una clase base(padre) y una clase derivada(hija).
                     </p>
 
+                    <h2>Method Override</h2>
+
+                    <p>
+                        Sobrescribir métodos **: Cómo una subclase puede redefinir los métodos heredados de una superclase.
+                        Uso de`super.methodName()` **: Llamada al método de la superclase desde la subclase para extender la funcionalidad.
+                        Buenas prácticas **: Casos donde es recomendable sobrescribir métodos y cómo hacerlo de manera efectiva.
+                    </p>
+
                 </DivTopicos>
             </DivArticle>
         </>
@@ -305,13 +313,6 @@ estos temas si deberian ir en el curso de js mas basico
 - **Multilínea**: Crear cadenas de varias líneas sin caracteres de escape.
 - **Expresiones complejas en plantillas**: Incluir llamadas a funciones, operaciones matemáticas y lógica simple.
 */
-
-### Method Override
-    - ** Sobrescribir métodos **: Cómo una subclase puede redefinir los métodos heredados de una superclase.
-- ** Uso de`super.methodName()` **: Llamada al método de la superclase desde la subclase para extender la funcionalidad.
-- ** Buenas prácticas **: Casos donde es recomendable sobrescribir métodos y cómo hacerlo de manera efectiva.
-
----
 
 ### Polimorfismo
     - ** Polimorfismo en JavaScript **: Capacidad de múltiples clases de compartir la misma interfaz(métodos) con implementaciones específicas.
