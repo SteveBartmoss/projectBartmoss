@@ -54,19 +54,22 @@ export function RoadMap() {
                         Arrow functions **: Cómo y cuándo usar `=>` para simplificar la sintaxis.
                         Contexto`this` **: Cómo cambia el contexto de `this` en funciones regulares vs.funciones flecha.
                     </p>
-                    
+
+                    <h2>Valor y referencia</h2>
+
+                    <p>
+                        Paso por valor **: Cómo los tipos primitivos(números, cadenas) se pasan por valor.
+                        Paso por referencia **: Cómo los objetos, arrays y funciones se pasan por referencia, lo que afecta la mutabilidad.
+                        Inmutabilidad **: Técnicas para hacer que los datos sean inmutables, como el uso de`Object.freeze()`.
+                    </p>
+
                 </DivTopicos>
             </DivArticle>
         </>
     )
 }
 
-
-#### Valor y referencia
-    - ** Paso por valor **: Cómo los tipos primitivos(números, cadenas) se pasan por valor.
-- ** Paso por referencia **: Cómo los objetos, arrays y funciones se pasan por referencia, lo que afecta la mutabilidad.
-- ** Inmutabilidad **: Técnicas para hacer que los datos sean inmutables, como el uso de`Object.freeze()`.
-
+    
 #### Listar propiedades
     - ** `Object.keys` **: Devuelve las claves de un objeto en un array.
 - ** `Object.values` **: Devuelve los valores de un objeto en un array.
