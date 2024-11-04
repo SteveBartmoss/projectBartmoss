@@ -228,6 +228,14 @@ export function RoadMap() {
                         Prototypal Chain **: Cadena de prototipos que permite a los objetos buscar propiedades y métodos en su prototipo si no están definidos localmente.
                     </p>
 
+                    <h2>Prototipos VS Instancias</h2>
+
+                    <p>
+                        Diferencia entre prototipos e instancias **: Qué se comparte entre instancias(métodos del prototipo) y qué es exclusivo de cada instancia(propiedades propias).
+                        Métodos compartidos **: Ventajas de definir métodos en el prototipo en lugar de dentro de cada instancia.
+                        Instancias **: Cómo crear instancias que contienen sus propias propiedades, pero comparten métodos con otros objetos de la misma clase / prototipo.
+                    </p>
+
                 </DivTopicos>
             </DivArticle>
         </>
@@ -265,13 +273,6 @@ estos temas si deberian ir en el curso de js mas basico
 - **Multilínea**: Crear cadenas de varias líneas sin caracteres de escape.
 - **Expresiones complejas en plantillas**: Incluir llamadas a funciones, operaciones matemáticas y lógica simple.
 */
-    
-#### Prototipos VS Instancias
-    - ** Diferencia entre prototipos e instancias **: Qué se comparte entre instancias(métodos del prototipo) y qué es exclusivo de cada instancia(propiedades propias).
-- ** Métodos compartidos **: Ventajas de definir métodos en el prototipo en lugar de dentro de cada instancia.
-- ** Instancias **: Cómo crear instancias que contienen sus propias propiedades, pero comparten métodos con otros objetos de la misma clase / prototipo.
-
----
 
 ### Iterando Propiedades
     - ** Métodos de iteración de propiedades **: `for...in`, `Object.keys()`, `Object.values()`, y`Object.entries()`.
