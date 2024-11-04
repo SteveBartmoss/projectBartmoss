@@ -1,4 +1,13 @@
+import { Portada } from "../../componentes/portada/portada"
 
+
+export function RoadMap(){
+    return (
+        <>
+            <Portada imgPortada={"/Assets/steveA.png"} title={"Road map Js"} text={"Por Steve 04/11/2024"} />
+        </>
+    )
+}
 
 ### Objetos
 #### Dinamismo
