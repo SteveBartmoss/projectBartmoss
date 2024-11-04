@@ -35,21 +35,21 @@ export function RoadMap() {
                         Convenciones: Nombrado con mayúscula inicial(`PascalCase`) y uso de `this` para propiedades.
                         Prototipos: Introducción a cómo las constructor functions pueden utilizar prototipos para métodos compartidos.
                     </p>
-                    
+
+                    <h2>Atajos Constructores</h2>
+
+                    <p>
+                        Clases(ES6) **: La sintaxis de `class` y cómo es un atajo para crear funciones constructoras.
+                        Métodos estáticos y de instancia **: Cómo definir métodos que no necesitan una instancia y cómo se relacionan con la clase.
+                        Herencia **: Conceptos básicos de herencia utilizando`extends`.
+                    </p>
+
                 </DivTopicos>
             </DivArticle>
         </>
     )
 }
 
-    
-
-#### Atajos Constructores
-    - ** Clases(ES6) **: La sintaxis de `class` y cómo es un atajo para crear funciones constructoras.
-- ** Métodos estáticos y de instancia **: Cómo definir métodos que no necesitan una instancia y cómo se relacionan con la clase.
-- ** Herencia **: Conceptos básicos de herencia utilizando`extends`.
-
----
 
 ### Funciones
 #### Function
