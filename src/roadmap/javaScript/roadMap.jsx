@@ -115,6 +115,15 @@ export function RoadMap() {
                         Ámbito de función **: Cómo las funciones crean su propio contexto de alcance.
                         Closures **: Concepto de closures y cómo el alcance de las variables afecta la ejecución.
                     </p>
+
+                    <h2>Arguments</h2>
+
+                    <p>
+                        Objeto`arguments` **: Cómo acceder a todos los argumentos pasados a una función, especialmente en funciones que no especifican parámetros explícitos.
+                        Limitaciones de `arguments` en arrow functions **: Explicación de por qué `arguments` no funciona en arrow functions.
+                        Uso de`arguments.length` **: Determinar la cantidad de argumentos en una función, especialmente cuando se usan parámetros variables.
+                    </p>
+                    
                 </DivTopicos>
             </DivArticle>
         </>
@@ -153,12 +162,6 @@ estos temas si deberian ir en el curso de js mas basico
 - **Expresiones complejas en plantillas**: Incluir llamadas a funciones, operaciones matemáticas y lógica simple.
 */
 
-### Arguments
-    - ** Objeto`arguments` **: Cómo acceder a todos los argumentos pasados a una función, especialmente en funciones que no especifican parámetros explícitos.
-- ** Limitaciones de `arguments` en arrow functions **: Explicación de por qué `arguments` no funciona en arrow functions.
-- ** Uso de`arguments.length` **: Determinar la cantidad de argumentos en una función, especialmente cuando se usan parámetros variables.
-
----
 
 ### Fat Arrow Function(`=> `)
     - ** Sintaxis básica **: Introducción a la sintaxis de las arrow functions.
