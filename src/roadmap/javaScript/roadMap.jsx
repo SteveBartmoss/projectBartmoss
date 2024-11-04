@@ -181,6 +181,14 @@ export function RoadMap() {
                         `this` en objetos y funciones **: Cómo cambia `this` en distintos contextos(en métodos, en funciones, y en el ámbito global).
                         Problemas comunes **: Ejemplos donde `this` no es lo que se espera(como en funciones internas).
                     </p>
+
+                    <h2>Contexto de`this`</h2>
+
+                    <p>
+                        Ámbito de `this` en funciones **: Cómo el contexto de `this` varía en funciones regulares, métodos y arrow functions.
+                        Uso en clases y objetos **: `this` en métodos de clase y en constructores.
+                        Ámbito léxico en arrow functions **: Cómo el `this` en una arrow function hereda el contexto del `this` exterior.
+                    </p>
                     
                 </DivTopicos>
             </DivArticle>
@@ -220,10 +228,7 @@ estos temas si deberian ir en el curso de js mas basico
 - **Expresiones complejas en plantillas**: Incluir llamadas a funciones, operaciones matemáticas y lógica simple.
 */
 
-### Contexto de`this`
-    - ** Ámbito de `this` en funciones **: Cómo el contexto de `this` varía en funciones regulares, métodos y arrow functions.
-- ** Uso en clases y objetos **: `this` en métodos de clase y en constructores.
-- ** Ámbito léxico en arrow functions **: Cómo el `this` en una arrow function hereda el contexto del `this` exterior.
+
 
 ---
 
