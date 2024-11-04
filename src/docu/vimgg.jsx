@@ -129,6 +129,13 @@ export function Vimgg() {
                 se movera hacia esa posicion, ya que la unica manera de mover el cursor es usando las teclas
                 de direccion o las letras h,j,k o l, la razon de usar las teclas h,j,k,l es porque
                 las personas que usan mecanografia pueden usar estas teclas una formas eficiente.
+
+                Cuando estamos en un modo, por ejemplo en el modo insertar podemos salir de este y cualquier 
+                otro modo si pulsamos la tecla esc (escape) de esta forma saldremos de cualquier modo en el que 
+                no encontramos, esto lo podemos confirmar al ver que que en la esquina inferior izquierda ya no 
+                aparece ningun texto.
+
+                
             </p>
         </>
     )
