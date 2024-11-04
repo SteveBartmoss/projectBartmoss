@@ -244,6 +244,14 @@ export function RoadMap() {
                         Distinguir propiedades propias y heredadas **: Uso de `hasOwnProperty()` para identificar las propiedades definidas en el propio objeto versus las del prototipo.
                     </p>
 
+                    <h2>Extendiendo Prototipos</h2>
+
+                    <p>
+                        Extensión de prototipos **: Agregar nuevos métodos y propiedades al `prototype` de una función constructora.
+                        Extender tipos nativos **: Riesgos y ventajas de modificar los prototipos de tipos nativos como `Array` o`String`.
+                        Compatibilidad y conflictos **: Consideraciones al extender prototipos, especialmente en librerías compartidas.
+                    </p>
+
                 </DivTopicos>
             </DivArticle>
         </>
@@ -281,13 +289,6 @@ estos temas si deberian ir en el curso de js mas basico
 - **Multilínea**: Crear cadenas de varias líneas sin caracteres de escape.
 - **Expresiones complejas en plantillas**: Incluir llamadas a funciones, operaciones matemáticas y lógica simple.
 */
-
-### Extendiendo Prototipos
-    - ** Extensión de prototipos **: Agregar nuevos métodos y propiedades al `prototype` de una función constructora.
-- ** Extender tipos nativos **: Riesgos y ventajas de modificar los prototipos de tipos nativos como `Array` o`String`.
-- ** Compatibilidad y conflictos **: Consideraciones al extender prototipos, especialmente en librerías compartidas.
-
----
 
 ### Implementando Herencia
     - ** Herencia prototipal **: Usar prototipos para crear una relación entre objetos que permita la herencia de métodos y propiedades.
