@@ -201,6 +201,17 @@ export function RoadMap() {
                         Arrow functions vs.funciones normales **: Diferencias en el uso y cómo afecta el contexto de`this`.
                     </p>
 
+                    <h1>Prototipos</h1>
+
+                    <h2>4 Principios de la POO</h2>
+
+                    <p>
+                        Encapsulación **: Agrupación de datos y métodos en una estructura(como un objeto o clase) y control de su acceso.
+                        Abstracción **: Ocultación de detalles internos complejos, proporcionando una interfaz simplificada.
+                        Herencia **: Creación de nuevas estructuras(clases u objetos) que adquieren propiedades de otras.
+                        Polimorfismo **: Capacidad de los objetos para compartir la misma interfaz y responder de manera específica según su tipo.
+                    </p>
+
                 </DivTopicos>
             </DivArticle>
         </>
@@ -238,16 +249,6 @@ estos temas si deberian ir en el curso de js mas basico
 - **Multilínea**: Crear cadenas de varias líneas sin caracteres de escape.
 - **Expresiones complejas en plantillas**: Incluir llamadas a funciones, operaciones matemáticas y lógica simple.
 */
-
----
-
-### Prototipos
-
-#### 4 Principios de la POO
-    - ** Encapsulación **: Agrupación de datos y métodos en una estructura(como un objeto o clase) y control de su acceso.
-- ** Abstracción **: Ocultación de detalles internos complejos, proporcionando una interfaz simplificada.
-- ** Herencia **: Creación de nuevas estructuras(clases u objetos) que adquieren propiedades de otras.
-- ** Polimorfismo **: Capacidad de los objetos para compartir la misma interfaz y responder de manera específica según su tipo.
 
 #### Herencia
     - ** Concepto de herencia en JavaScript **: Entender cómo un objeto puede "heredar" propiedades y métodos de otro objeto o clase.
