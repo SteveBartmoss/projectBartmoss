@@ -260,6 +260,14 @@ export function RoadMap() {
                         Prototipos heredados **: Cómo funcionan los prototipos en la herencia para compartir métodos entre subclases y superclases.
                     </p>
 
+                    <h2>Constructor Padre</h2>
+
+                    <p>
+                        Uso del constructor padre **: Llamada al constructor del objeto o clase padre desde la subclase usando`super`.
+                        Configuración de propiedades heredadas **: Cómo inicializar las propiedades del constructor padre en una subclase.
+                        Superclase y subclase **: Definir y diferenciar entre una clase base(padre) y una clase derivada(hija).
+                    </p>
+
                 </DivTopicos>
             </DivArticle>
         </>
@@ -297,13 +305,6 @@ estos temas si deberian ir en el curso de js mas basico
 - **Multilínea**: Crear cadenas de varias líneas sin caracteres de escape.
 - **Expresiones complejas en plantillas**: Incluir llamadas a funciones, operaciones matemáticas y lógica simple.
 */
-
-### Constructor Padre
-    - ** Uso del constructor padre **: Llamada al constructor del objeto o clase padre desde la subclase usando`super`.
-- ** Configuración de propiedades heredadas **: Cómo inicializar las propiedades del constructor padre en una subclase.
-- ** Superclase y subclase **: Definir y diferenciar entre una clase base(padre) y una clase derivada(hija).
-
----
 
 ### Method Override
     - ** Sobrescribir métodos **: Cómo una subclase puede redefinir los métodos heredados de una superclase.
