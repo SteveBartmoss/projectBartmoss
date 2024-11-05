@@ -318,6 +318,13 @@ export function RoadMap() {
                         Métodos`.then()` y`.catch()` **: Uso de estos métodos para manejar resultados de éxito y errores en promesas.
                     </p>
 
+                    <h2>Cadena</h2>
+
+                    <p>
+                        Encadenamiento de promesas **: Cómo estructurar varias operaciones asíncronas en secuencia usando `.then()` para mejorar la legibilidad del código.
+                        Propagación de errores **: Cómo manejar errores en una cadena de promesas sin romper el flujo.
+                    </p>
+
                 </DivTopicos>
             </DivArticle>
         </>
@@ -356,9 +363,6 @@ estos temas si deberian ir en el curso de js mas basico
 - **Expresiones complejas en plantillas**: Incluir llamadas a funciones, operaciones matemáticas y lógica simple.
 */
 
-#### Cadena
-    - ** Encadenamiento de promesas **: Cómo estructurar varias operaciones asíncronas en secuencia usando `.then()` para mejorar la legibilidad del código.
-- ** Propagación de errores **: Cómo manejar errores en una cadena de promesas sin romper el flujo.
 
 #### Catch y Finally
     - ** Método`.catch()` **: Captura de errores en una cadena de promesas y cómo usarlos para manejar excepciones de forma centralizada.
