@@ -816,7 +816,62 @@ export function MapObjects() {
             <p>
                 En este ejemplo, sumar es un método estático y se accede directamente mediante Calculadora.sumar(5, 10). En cambio, multiplicar es un método de instancia y requiere crear una instancia de Calculadora antes de poder llamarlo.
             </p>
-            
+
+            <h2>Herencia con Clases</h2>
+
+            <p>
+                La herencia es un concepto clave en la programación orientada a objetos, y en ES6 se implementa mediante la palabra clave extends. Con extends, una clase puede heredar propiedades y métodos de otra, lo que permite crear una estructura de clases más específica y reutilizar código.
+            </p>
+
+            <p>
+                Para crear una clase que herede de otra:
+
+                Define una clase Padre con las propiedades y métodos básicos.
+                Usa extends para crear una clase Hija que herede de Padre.
+                Si necesitas un constructor en la clase hija, usa super() para llamar al constructor de la clase padre.
+            </p>
+
+            <p>
+                Ejemplo de Herencia
+            </p>
+
+            <code>
+                // Clase base o padre
+                class Animal {
+                    constructor(nombre) {
+                        this.nombre = nombre;
+                    }
+
+                    hacerSonido() {
+                        console.log(`${this.nombre} hace un sonido.`);
+                    }
+                }
+
+                // Clase hija que extiende de Animal
+                class Perro extends Animal {
+                    constructor(nombre, raza) {
+                        super(nombre); // Llamada al constructor de la clase padre
+                        this.raza = raza;
+                    }
+
+                    hacerSonido() {
+                        console.log(`${this.nombre} ladra.`);
+                    }
+                }
+
+                const animal = new Animal("Gato");
+                animal.hacerSonido(); // "Gato hace un sonido."
+
+                const perro = new Perro("Firulais", "Labrador");
+                perro.hacerSonido(); // "Firulais ladra."
+                console.log(perro.raza); // "Labrador"
+
+            </code>
+
+            <p>
+                En este ejemplo, Perro hereda de Animal. La función super(nombre) llama al constructor de Animal para inicializar nombre. La clase hija también puede sobrescribir métodos de la clase padre, como el método hacerSonido en este caso.
+            </p>
+
         </>
     )
 }
