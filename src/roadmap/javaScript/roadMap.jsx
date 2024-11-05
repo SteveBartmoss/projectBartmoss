@@ -347,6 +347,14 @@ export function RoadMap() {
                         Ejemplos prácticos **: Situaciones en las que se podría usar `all` y `race` para manejar tareas concurrentes, como la carga de múltiples recursos o la espera de la respuesta más rápida.
                     </p>
 
+                    <h2>Paralelo, `any` y`allSettled`</h2>
+
+                    <p>
+                        `Promise.any()` **: Esperar a que cualquiera de las promesas en un conjunto se cumpla con éxito.
+                        `Promise.allSettled()` **: Ejecutar promesas en paralelo sin importar el resultado, obteniendo información sobre todas ellas, sean éxito o error.
+                        Usos y ejemplos **: Casos de uso en los que estas funciones son útiles, como cuando se necesitan resultados parciales o cuando se desea manejar errores individualmente.
+                    </p>
+
                 </DivTopicos>
             </DivArticle>
         </>
@@ -384,14 +392,6 @@ estos temas si deberian ir en el curso de js mas basico
 - **Multilínea**: Crear cadenas de varias líneas sin caracteres de escape.
 - **Expresiones complejas en plantillas**: Incluir llamadas a funciones, operaciones matemáticas y lógica simple.
 */
-
-
-### Paralelo, `any` y`allSettled`
-    - ** `Promise.any()` **: Esperar a que cualquiera de las promesas en un conjunto se cumpla con éxito.
-- ** `Promise.allSettled()` **: Ejecutar promesas en paralelo sin importar el resultado, obteniendo información sobre todas ellas, sean éxito o error.
-- ** Usos y ejemplos **: Casos de uso en los que estas funciones son útiles, como cuando se necesitan resultados parciales o cuando se desea manejar errores individualmente.
-
----
 
 ### Argumentos
     - ** Manejo de argumentos en promesas **: Pasar datos desde una promesa a la siguiente en una cadena de promesas.
