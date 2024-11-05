@@ -332,6 +332,13 @@ export function RoadMap() {
                         Método`.finally()` **: Uso de `.finally()` para ejecutar código independientemente del resultado, como tareas de limpieza o registro.
                     </p>
 
+                    <h2>Métodos estáticos</h2>
+
+                    <p>
+                        `Promise.resolve()` y`Promise.reject()` **: Métodos para crear promesas que ya están en un estado de éxito o error.
+                        `Promise.all()`, `Promise.race()`, `Promise.any()`, `Promise.allSettled()` **: Métodos que permiten controlar y combinar múltiples promesas en paralelo.
+                    </p>
+
                 </DivTopicos>
             </DivArticle>
         </>
@@ -370,11 +377,7 @@ estos temas si deberian ir en el curso de js mas basico
 - **Expresiones complejas en plantillas**: Incluir llamadas a funciones, operaciones matemáticas y lógica simple.
 */
 
-#### Métodos estáticos
-    - ** `Promise.resolve()` y`Promise.reject()` **: Métodos para crear promesas que ya están en un estado de éxito o error.
-- ** `Promise.all()`, `Promise.race()`, `Promise.any()`, `Promise.allSettled()` **: Métodos que permiten controlar y combinar múltiples promesas en paralelo.
-
----
+   
 
 ### Paralelo, `all` y`race`
     - ** `Promise.all()` **: Ejecutar múltiples promesas en paralelo y obtener un solo resultado si todas se cumplen o una falla.
