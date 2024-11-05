@@ -310,6 +310,14 @@ export function RoadMap() {
                         Callbacks**: Introducción a los callbacks como la primera técnica usada para manejar operaciones asíncronas y sus limitaciones (como el "callback hell").
                     </p>
 
+                    <h2>Promesas</h2>
+
+                    <p>
+                        ¿Qué es una promesa ?**: Concepto de promesa como un objeto que representa la eventual finalización(o falla) de una operación asíncrona.
+                        Estados de las promesas **: Explicación de los estados(`pending`, `fulfilled`, y`rejected`) y cómo las promesas se mueven entre ellos.
+                        Métodos`.then()` y`.catch()` **: Uso de estos métodos para manejar resultados de éxito y errores en promesas.
+                    </p>
+
                 </DivTopicos>
             </DivArticle>
         </>
@@ -348,12 +356,6 @@ estos temas si deberian ir en el curso de js mas basico
 - **Expresiones complejas en plantillas**: Incluir llamadas a funciones, operaciones matemáticas y lógica simple.
 */
 
-
-### Promesas
-    - **¿Qué es una promesa ?**: Concepto de promesa como un objeto que representa la eventual finalización(o falla) de una operación asíncrona.
-- ** Estados de las promesas **: Explicación de los estados(`pending`, `fulfilled`, y`rejected`) y cómo las promesas se mueven entre ellos.
-- ** Métodos`.then()` y`.catch()` **: Uso de estos métodos para manejar resultados de éxito y errores en promesas.
-  
 #### Cadena
     - ** Encadenamiento de promesas **: Cómo estructurar varias operaciones asíncronas en secuencia usando `.then()` para mejorar la legibilidad del código.
 - ** Propagación de errores **: Cómo manejar errores en una cadena de promesas sin romper el flujo.
