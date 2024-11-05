@@ -565,9 +565,9 @@ export function MapObjects() {
             <code>
                 function Persona(nombre, edad) {
                     this.nombre = nombre;
-                    this.edad = edad;
-                    this.saludar = function() {
-                        console.log(`Hola, mi nombre es ${this.nombre} y tengo ${this.edad} años.`);
+                this.edad = edad;
+                this.saludar = function() {
+                    console.log(`Hola, mi nombre es ${this.nombre} y tengo ${this.edad} años.`);
                     };
                 }
 
@@ -575,6 +575,48 @@ export function MapObjects() {
                 persona3.saludar(); // "Hola, mi nombre es Carlos y tengo 40 años."
 
             </code>
+
+            <h1>Funciones Constructoras</h1>
+
+            <p>
+                Las funciones constructoras son una forma de crear objetos en JavaScript mediante el uso del operador new. Cuando llamamos a una función con new, JavaScript automáticamente crea un nuevo objeto, asigna ese objeto a this dentro de la función, y lo devuelve al final de la ejecución. Esto permite crear múltiples instancias de objetos con propiedades y métodos definidos.
+            </p>
+
+            <h2>Creación de una Función Constructora</h2>
+
+            <p>
+                Para crear una función constructora:
+                Define una función cuyo nombre comienza en mayúscula (PascalCase) como convención.
+                Usa el operador new al invocarla para crear una nueva instancia de objeto.
+                Utiliza this para asignar propiedades y métodos a la nueva instancia.
+            </p>
+
+            <p>
+                Ejemplo Básico
+            </p>
+
+            <code>
+                function Persona(nombre, edad) {
+                    this.nombre = nombre; // 'this' se refiere a la nueva instancia creada
+                    this.edad = edad;
+
+                    this.saludar = function() {
+                        console.log(`Hola, mi nombre es ${this.nombre} y tengo ${this.edad} años.`);
+                    };
+                }
+
+                const persona1 = new Persona("Ana", 30);
+                const persona2 = new Persona("Luis", 25);
+
+                persona1.saludar(); // "Hola, mi nombre es Ana y tengo 30 años."
+                persona2.saludar(); // "Hola, mi nombre es Luis y tengo 25 años."
+            </code>
+
+            <p>
+                En este ejemplo, persona1 y persona2 son dos instancias de la función constructora Persona, cada una con sus propios valores de nombre y edad.
+            </p>
+
+            
         </>
     )
 }
