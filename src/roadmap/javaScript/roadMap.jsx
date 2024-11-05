@@ -389,6 +389,14 @@ export function RoadMap() {
                         Operaciones CRUD **: Ejemplos prácticos de solicitudes para crear, leer, actualizar y eliminar datos en una API REST usando`fetch`.
                     </p>
 
+                    <h2>Opciones de Fetch</h2>
+
+                    <p>
+                        Configuración avanzada de`fetch` **: Modificación de opciones de la solicitud, como los encabezados, el método y el cuerpo.
+                        Configuración de encabezados **: Añadir encabezados de autorización o personalizar encabezados para peticiones específicas.
+                        Otras opciones de`fetch` **: Controlar el modo(como`cors` o`no-cors`), credenciales, y otros parámetros de la solicitud.
+                    </p>
+
                 </DivTopicos>
             </DivArticle>
         </>
@@ -426,11 +434,6 @@ estos temas si deberian ir en el curso de js mas basico
 - **Multilínea**: Crear cadenas de varias líneas sin caracteres de escape.
 - **Expresiones complejas en plantillas**: Incluir llamadas a funciones, operaciones matemáticas y lógica simple.
 */
-
-#### Opciones de Fetch
-    - ** Configuración avanzada de`fetch` **: Modificación de opciones de la solicitud, como los encabezados, el método y el cuerpo.
-- ** Configuración de encabezados **: Añadir encabezados de autorización o personalizar encabezados para peticiones específicas.
-- ** Otras opciones de`fetch` **: Controlar el modo(como`cors` o`no-cors`), credenciales, y otros parámetros de la solicitud.
 
 #### Abortar Fetch
     - ** AbortController **: Cómo usar `AbortController` para cancelar una solicitud `fetch` en curso.
