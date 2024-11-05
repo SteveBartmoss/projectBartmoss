@@ -421,6 +421,76 @@ export function MapObjects() {
 
             </code>
 
+            <h1>Funciones de Fábrica en JavaScript</h1>
+
+            <p>
+                Las funciones de fábrica son un patrón de diseño en JavaScript que permite crear objetos de manera flexible y reutilizable. A diferencia de las funciones constructores, las funciones de fábrica no requieren el uso del operador new y son ideales para crear múltiples instancias de un objeto con una lógica común.
+            </p>
+
+            <h2>¿Qué es una Función de Fábrica?</h2>
+
+            <p>
+                Una función de fábrica es una función que devuelve un nuevo objeto cada vez que es invocada.
+                Permiten encapsular la lógica de creación de objetos y pueden incluir propiedades y métodos.
+                Se utilizan comúnmente para crear objetos similares sin necesidad de definir una clase o utilizar el operador new.
+            </p>
+
+            <p>
+                Ejemplo Básico de una Función de Fábrica
+            </p>
+
+            <code>
+                function crearPersona(nombre, edad) {
+                    return {
+                    nombre: nombre,
+                    edad: edad,
+                    saludar: function() {
+                            console.log(`Hola, mi nombre es ${this.nombre} y tengo ${this.edad} años.`);
+                        }
+                    };
+                }
+
+                const persona1 = crearPersona("Ana", 30);
+                const persona2 = crearPersona("Luis", 25);
+
+                persona1.saludar(); // "Hola, mi nombre es Ana y tengo 30 años."
+                persona2.saludar(); // "Hola, mi nombre es Luis y tengo 25 años."
+
+            </code>
+
+            <h2>Ventajas de Usar Funciones de Fábrica</h2>
+
+            <p>
+                Reutilización de Código: Permiten evitar la duplicación de código al encapsular la lógica de creación.
+                Flexibilidad: Puedes modificar la función de fábrica para que genere diferentes tipos de objetos o incluya lógica adicional.
+                Manejo de Estado: Cada instancia creada por la función de fábrica puede tener su propio estado interno, permitiendo la encapsulación.
+            </p>
+
+            <p>
+                Ejemplo de Flexibilidad
+            </p>
+
+            <code>
+                function crearVehiculo(tipo, marca) {
+                    return {
+                        tipo: tipo,
+                        marca: marca,
+                        moverse: function() {
+                            console.log(`El ${this.marca} se está moviendo.`);
+                        }
+                    };
+                }
+
+                const coche = crearVehiculo("coche", "Toyota");
+                const moto = crearVehiculo("moto", "Yamaha");
+
+                coche.moverse(); // "El Toyota se está moviendo."
+                moto.moverse();  // "El Yamaha se está moviendo."
+
+            </code>
+
+            <h2>Parámetros y Personalización</h2>
+
         </>
     )
 }
