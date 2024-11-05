@@ -372,6 +372,16 @@ export function RoadMap() {
                         Manejo de errores con `try/catch` en funciones`async` **: Cómo capturar errores dentro de funciones asíncronas usando bloques`try/catch`.
                     </p>
 
+                    <h1>Fetch</h1>
+
+                    <h2>Conceptos</h2>
+
+                    <p>
+                        Introducción a`fetch` **: API moderna para hacer solicitudes HTTP en JavaScript.
+                        Sintaxis básica **: Cómo hacer una solicitud GET con `fetch` y obtener una respuesta en formato JSON.
+                        Métodos HTTP(GET, POST, etc.) **: Uso de `fetch` para realizar otros tipos de solicitudes, como POST, enviando datos en el cuerpo de la solicitud.
+                    </p>
+
                 </DivTopicos>
             </DivArticle>
         </>
@@ -410,12 +420,6 @@ estos temas si deberian ir en el curso de js mas basico
 - **Expresiones complejas en plantillas**: Incluir llamadas a funciones, operaciones matemáticas y lógica simple.
 */
 
-    
-
-### Fetch
-    - ** Introducción a`fetch` **: API moderna para hacer solicitudes HTTP en JavaScript.
-- ** Sintaxis básica **: Cómo hacer una solicitud GET con `fetch` y obtener una respuesta en formato JSON.
-- ** Métodos HTTP(GET, POST, etc.) **: Uso de `fetch` para realizar otros tipos de solicitudes, como POST, enviando datos en el cuerpo de la solicitud.
   
 #### APIs REST
     - ** Concepto de APIs REST **: Comprensión de cómo funcionan las APIs RESTful y cómo `fetch` permite interactuar con ellas.
