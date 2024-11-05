@@ -635,9 +635,9 @@ export function MapObjects() {
             <code>
                 function Animal(tipo, sonido) {
                     this.tipo = tipo;
-                    this.sonido = sonido;
+                this.sonido = sonido;
 
-                    this.hacerSonido = function() {
+                this.hacerSonido = function() {
                     console.log(`El ${this.tipo} hace ${this.sonido}`);
                     };
                 }
@@ -647,6 +647,41 @@ export function MapObjects() {
 
                 perro.hacerSonido(); // "El perro hace guau"
                 gato.hacerSonido(); // "El gato hace miau"
+
+            </code>
+
+            <h2>Prototipos en Funciones Constructoras</h2>
+
+            <p>
+                Los prototipos permiten a las funciones constructoras compartir métodos entre todas sus instancias, lo que ahorra memoria y facilita la administración del código. Cuando se define un método en el prototipo de una función constructora, todas las instancias de esa función pueden acceder al método a través de su prototipo.
+            </p>
+
+            <h3>Introducción a Prototipos</h3>
+
+            <p>
+                Cada función en JavaScript tiene una propiedad llamada prototype. Podemos añadir métodos y propiedades al prototype de una función constructora para que todas las instancias compartan estos métodos, en lugar de definirlos directamente en cada instancia.
+            </p>
+
+            <p>
+                Ejemplo: Uso de Prototipos para Métodos Compartidos
+            </p>
+
+            <code>
+                function Vehiculo(marca, modelo) {
+                    this.marca = marca;
+                    this.modelo = modelo;
+                }
+
+                // Definir un método en el prototipo
+                Vehiculo.prototype.informacion = function() {
+                    console.log(`Vehículo: ${this.marca} ${this.modelo}`);
+                };
+
+                const coche1 = new Vehiculo("Toyota", "Corolla");
+                const coche2 = new Vehiculo("Ford", "Focus");
+
+                coche1.informacion(); // "Vehículo: Toyota Corolla"
+                coche2.informacion(); // "Vehículo: Ford Focus"
 
             </code>
 
