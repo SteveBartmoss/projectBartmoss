@@ -5,6 +5,10 @@ export function MapObjects() {
         <>
             <h1>Propiedades dinámicas</h1>
 
+            <p>
+                En JavaScript, los objetos son dinámicos, lo que permite añadir, modificar o eliminar propiedades y métodos en cualquier momento después de la creación del objeto.
+            </p>
+
             <h2>Añadir propiedades dinámicamente</h2>
 
             <p>
