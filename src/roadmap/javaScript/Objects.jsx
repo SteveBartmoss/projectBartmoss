@@ -73,6 +73,10 @@ export function MapObjects() {
                 persona.saludar(); // "Hola, soy Ana"
             </code>
 
+            <p>
+                También se puede añadir un metodo usando corchetes [], esto es útil cuando el nombre del método está almacenado en una variable.
+            </p>
+
         </>
     )
 }
