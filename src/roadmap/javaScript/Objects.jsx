@@ -132,8 +132,14 @@ export function MapObjects() {
 
             <code>
                 const objeto = {"nombre completo": "Luis Pérez" };
-                console.log(objeto.nombre completo); // ❌ Error de sintaxis
+                console.log(objeto.nombre completo);
             </code>
+
+            <h2>Notación de Corchetes ([])</h2>
+
+            <p>
+                a notación de corchetes es útil cuando el nombre de la propiedad es dinámico, se almacena en una variable, o no es un identificador válido.
+            </p>
 
         </>
     )
