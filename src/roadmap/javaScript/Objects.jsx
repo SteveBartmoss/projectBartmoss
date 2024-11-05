@@ -124,6 +124,17 @@ export function MapObjects() {
                 console.log(persona.edad); // 30
             </code>
 
+            <p>
+                No se puede usar la notación de punto si el nombre de la propiedad:
+                Contiene caracteres especiales (por ejemplo, persona["nombre completo"] no funciona con persona.nombre completo).
+                Es un número o comienza con un número (persona.123 no es válido).
+            </p>
+
+            <code>
+                const objeto = {"nombre completo": "Luis Pérez" };
+                console.log(objeto.nombre completo); // ❌ Error de sintaxis
+            </code>
+
         </>
     )
 }
