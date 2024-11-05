@@ -192,7 +192,35 @@ export function MapObjects() {
                 Este bucle es útil cuando necesitas iterar tanto sobre las propiedades propias como heredadas de un objeto.
                 Es especialmente relevante en objetos donde el prototipo juega un papel importante.
             </p>
-            
+
+            <h2>Object.keys()</h2>
+
+            <p>
+                Object.keys() devuelve un array con los nombres (claves) de las propiedades propias y enumerables de un objeto, excluyendo las heredadas.
+                El método es ideal cuando solo necesitas las claves sin preocuparte por las propiedades del prototipo.
+            </p>
+
+            <code>
+                const producto = {nombre: "Laptop", precio: 1500, disponible: true };
+                const propiedades = Object.keys(producto);
+                console.log(propiedades); // ["nombre", "precio", "disponible"]
+            </code>
+
+            <p>
+                Iteración Usando forEach
+            </p>
+
+            <code>
+                propiedades.forEach(propiedad => {
+                    console.log(`${propiedad}: ${producto[propiedad]}`);
+                });
+            </code>
+
+            <p>
+                Es útil para obtener una lista de todas las claves del objeto, especialmente si no necesitas iterar sobre propiedades heredadas.
+                Object.keys() es más seguro y específico que for...in para evitar propiedades del prototipo.
+            </p>
+
         </>
     )
 }
