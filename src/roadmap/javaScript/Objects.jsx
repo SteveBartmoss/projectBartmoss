@@ -33,7 +33,18 @@ export function MapObjects() {
                 persona.edad = 31; // Cambia el valor de la propiedad 'edad'
                 console.log(persona); // {nombre: "Juan", edad: 31, ocupacion: "Desarrollador" }
             </code>
-            
+
+            <h2>Eliminar propiedades dinámicamente</h2>
+
+            <p>
+                Para eliminar una propiedad, utiliza el operador delete:
+            </p>
+
+            <code>
+                delete persona.edad; // Elimina la propiedad 'edad'
+                console.log(persona); // {nombre: "Juan", ocupacion: "Desarrollador" }
+            </code>
+
         </>
     )
 }
