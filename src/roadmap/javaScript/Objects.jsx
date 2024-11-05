@@ -443,9 +443,9 @@ export function MapObjects() {
                 function crearPersona(nombre, edad) {
                     return {
                     nombre: nombre,
-                    edad: edad,
-                    saludar: function() {
-                            console.log(`Hola, mi nombre es ${this.nombre} y tengo ${this.edad} años.`);
+                edad: edad,
+                saludar: function() {
+                    console.log(`Hola, mi nombre es ${this.nombre} y tengo ${this.edad} años.`);
                         }
                     };
                 }
@@ -473,10 +473,10 @@ export function MapObjects() {
             <code>
                 function crearVehiculo(tipo, marca) {
                     return {
-                        tipo: tipo,
-                        marca: marca,
-                        moverse: function() {
-                            console.log(`El ${this.marca} se está moviendo.`);
+                    tipo: tipo,
+                marca: marca,
+                moverse: function() {
+                    console.log(`El ${this.marca} se está moviendo.`);
                         }
                     };
                 }
@@ -490,6 +490,33 @@ export function MapObjects() {
             </code>
 
             <h2>Parámetros y Personalización</h2>
+
+            <p>
+                Las funciones de fábrica pueden aceptar parámetros para personalizar los objetos que crean. Esto permite que el comportamiento de los objetos se ajuste a las necesidades específicas.
+            </p>
+
+            <p>
+                Ejemplo con Parámetros
+            </p>
+
+            <code>
+                function crearLibro(titulo, autor) {
+                return {
+                    titulo: titulo,
+                    autor: autor,
+                    leer: function() {
+                            console.log(`Leyendo ${this.titulo} de ${this.autor}.`);
+                        }
+                    };
+                }
+
+                const libro1 = crearLibro("1984", "George Orwell");
+                const libro2 = crearLibro("Cien años de soledad", "Gabriel García Márquez");
+
+                libro1.leer(); // "Leyendo 1984 de George Orwell."
+                libro2.leer(); // "Leyendo Cien años de soledad de Gabriel García Márquez."
+
+            </code>
 
         </>
     )
