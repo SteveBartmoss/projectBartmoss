@@ -390,13 +390,34 @@ export function MapObjects() {
             <code>
                 const persona = {
                     nombre: "Ana",
-                    direccion: {ciudad: "Lima", pais: "Perú" }
+                direccion: {ciudad: "Lima", pais: "Perú" }
                 };
 
                 const copiaProfunda = structuredClone(persona);
                 copiaProfunda.direccion.ciudad = "Cusco";
 
                 console.log(persona.direccion.ciudad); // "Lima" (el original no se ve afectado)
+
+            </code>
+
+            <h2>Aplicaciones Prácticas de la Mutabilidad</h2>
+
+            <p>
+                Gestión de Estado en Aplicaciones: En frameworks como React, se suele evitar la mutabilidad directa de los estados (usar copias) para prevenir efectos colaterales y facilitar la depuración.
+                Patrones de Diseño: En patrones como el Estado Inmutable o Data-First, la mutabilidad controlada es fundamental para mantener datos consistentes.
+            </p>
+
+            <p>
+                Ejemplo en React (Evitar Mutación Directa del Estado)
+            </p>
+
+            <code>
+                const [persona, setPersona] = useState({nombre: "Pedro", edad: 25 });
+
+                function actualizarEdad() {
+                    // Usamos una copia para evitar mutación directa
+                    setPersona(prevPersona => ({ ...prevPersona, edad: prevPersona.edad + 1 }));
+                }
 
             </code>
 
