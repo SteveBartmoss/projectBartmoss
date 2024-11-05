@@ -248,6 +248,34 @@ export function MapObjects() {
                 Ideal para casos en los que solo necesitas los valores de las propiedades, como cuando quieres sumar valores o realizar operaciones estadísticas.
             </p>
 
+            <h2>Object.entries()</h2>
+
+            <p>
+                Object.entries() devuelve un array de arrays, donde cada sub-array contiene un par [clave, valor].
+                Es útil para obtener tanto la clave como el valor en una estructura de datos que facilita la iteración.
+            </p>
+
+            <code>
+                const empleado = { nombre: "Carlos", rol: "Desarrollador", edad: 28 };
+                const entradas = Object.entries(empleado);
+                console.log(entradas);
+            </code>
+
+            <p>
+                Recorriendo con forEach
+            </p>
+
+            <code>
+                entradas.forEach(([clave, valor]) => {
+                    console.log(`${clave}: ${valor}`);
+                });
+            </code>
+
+            <p>
+                Es una excelente opción cuando necesitas tanto las claves como los valores en una estructura fácil de manejar.
+                Útil en operaciones de mapeo y transformación de objetos.
+            </p>
+
         </>
     )
 }
