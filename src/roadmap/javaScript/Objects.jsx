@@ -598,10 +598,10 @@ export function MapObjects() {
             <code>
                 function Persona(nombre, edad) {
                     this.nombre = nombre; // 'this' se refiere a la nueva instancia creada
-                    this.edad = edad;
+                this.edad = edad;
 
-                    this.saludar = function() {
-                        console.log(`Hola, mi nombre es ${this.nombre} y tengo ${this.edad} años.`);
+                this.saludar = function() {
+                    console.log(`Hola, mi nombre es ${this.nombre} y tengo ${this.edad} años.`);
                     };
                 }
 
@@ -616,7 +616,40 @@ export function MapObjects() {
                 En este ejemplo, persona1 y persona2 son dos instancias de la función constructora Persona, cada una con sus propios valores de nombre y edad.
             </p>
 
-            
+            <h2>Convenciones en el Uso de Funciones Constructoras</h2>
+
+            <p>
+                Cuando se trabaja con funciones constructoras, existen algunas convenciones importantes a seguir para que el código sea más claro y legible:
+                Nombres en PascalCase: Los nombres de las funciones constructoras deben comenzar con mayúscula para indicar que se usan con new. Ejemplos: Persona, Coche, Animal.
+                Uso de this: Dentro de una función constructora, this hace referencia a la nueva instancia que está siendo creada. Utilizamos this para asignar propiedades o métodos a esa instancia.
+            </p>
+
+            <p>
+                Estas convenciones son importantes porque permiten que otros desarrolladores identifiquen rápidamente cuándo una función está destinada a usarse como un constructor.
+            </p>
+
+            <p>
+                Ejemplo de Convención PascalCase
+            </p>
+
+            <code>
+                function Animal(tipo, sonido) {
+                    this.tipo = tipo;
+                    this.sonido = sonido;
+
+                    this.hacerSonido = function() {
+                    console.log(`El ${this.tipo} hace ${this.sonido}`);
+                    };
+                }
+
+                const perro = new Animal("perro", "guau");
+                const gato = new Animal("gato", "miau");
+
+                perro.hacerSonido(); // "El perro hace guau"
+                gato.hacerSonido(); // "El gato hace miau"
+
+            </code>
+
         </>
     )
 }
