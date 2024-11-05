@@ -27,6 +27,11 @@ export function MapObjects() {
                 También se puede añadir una propiedad usando corchetes [], lo cual es útil cuando el nombre de la propiedad está almacenado en una variable:
             </p>
 
+            <code>
+                const key = "ocupacion";
+                persona[key] = "Desarrollador";
+            </code>
+
             <h2>Modificar propiedades dinámicamente</h2>
 
             <p>
