@@ -397,6 +397,14 @@ export function RoadMap() {
                         Otras opciones de`fetch` **: Controlar el modo(como`cors` o`no-cors`), credenciales, y otros parámetros de la solicitud.
                     </p>
 
+                    <h2>Abortar Fetch</h2>
+
+                    <p>
+                        AbortController **: Cómo usar `AbortController` para cancelar una solicitud `fetch` en curso.
+                        Abortar solicitudes **: Ejemplos de cuándo es útil abortar una solicitud, como al cambiar de página o al recibir datos incompletos.
+                        Manejo de errores al abortar **: Cómo capturar y manejar los errores cuando una solicitud se aborta, mejorando la experiencia del usuario.
+                    </p>
+
                 </DivTopicos>
             </DivArticle>
         </>
@@ -434,10 +442,3 @@ estos temas si deberian ir en el curso de js mas basico
 - **Multilínea**: Crear cadenas de varias líneas sin caracteres de escape.
 - **Expresiones complejas en plantillas**: Incluir llamadas a funciones, operaciones matemáticas y lógica simple.
 */
-
-#### Abortar Fetch
-    - ** AbortController **: Cómo usar `AbortController` para cancelar una solicitud `fetch` en curso.
-- ** Abortar solicitudes **: Ejemplos de cuándo es útil abortar una solicitud, como al cambiar de página o al recibir datos incompletos.
-- ** Manejo de errores al abortar **: Cómo capturar y manejar los errores cuando una solicitud se aborta, mejorando la experiencia del usuario.
-
----
