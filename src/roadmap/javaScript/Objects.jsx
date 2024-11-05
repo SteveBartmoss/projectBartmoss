@@ -503,9 +503,9 @@ export function MapObjects() {
                 function crearLibro(titulo, autor) {
                 return {
                     titulo: titulo,
-                    autor: autor,
-                    leer: function() {
-                            console.log(`Leyendo ${this.titulo} de ${this.autor}.`);
+                autor: autor,
+                leer: function() {
+                    console.log(`Leyendo ${this.titulo} de ${this.autor}.`);
                         }
                     };
                 }
@@ -515,6 +515,38 @@ export function MapObjects() {
 
                 libro1.leer(); // "Leyendo 1984 de George Orwell."
                 libro2.leer(); // "Leyendo Cien años de soledad de Gabriel García Márquez."
+
+            </code>
+
+            <h2>Encapsulamiento y Estado Privado</h2>
+
+            <p>
+                Las funciones de fábrica pueden utilizar cierres (closures) para crear propiedades o métodos que sean privados y no accesibles desde fuera del objeto. Esto permite un mayor control sobre el estado interno del objeto.
+            </p>
+
+            <p>
+                Ejemplo de Estado Privado
+            </p>
+
+            <code>
+                function crearContador() {
+                    let conteo = 0; // Estado privado
+
+                return {
+                        incrementar: function() {
+                            conteo++;
+                        console.log(`Contador: ${conteo}`);
+                        },
+                        obtenerConteo: function() {
+                            return conteo;
+                        }
+                    };
+                }
+
+                const contador = crearContador();
+                contador.incrementar(); // "Contador: 1"
+                contador.incrementar(); // "Contador: 2"
+                console.log(contador.obtenerConteo()); // 2
 
             </code>
 
