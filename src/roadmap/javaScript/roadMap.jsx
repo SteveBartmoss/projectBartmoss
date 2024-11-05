@@ -382,6 +382,13 @@ export function RoadMap() {
                         Métodos HTTP(GET, POST, etc.) **: Uso de `fetch` para realizar otros tipos de solicitudes, como POST, enviando datos en el cuerpo de la solicitud.
                     </p>
 
+                    <h2>APIs REST</h2>
+
+                    <p>
+                        Concepto de APIs REST **: Comprensión de cómo funcionan las APIs RESTful y cómo `fetch` permite interactuar con ellas.
+                        Operaciones CRUD **: Ejemplos prácticos de solicitudes para crear, leer, actualizar y eliminar datos en una API REST usando`fetch`.
+                    </p>
+
                 </DivTopicos>
             </DivArticle>
         </>
@@ -420,11 +427,6 @@ estos temas si deberian ir en el curso de js mas basico
 - **Expresiones complejas en plantillas**: Incluir llamadas a funciones, operaciones matemáticas y lógica simple.
 */
 
-  
-#### APIs REST
-    - ** Concepto de APIs REST **: Comprensión de cómo funcionan las APIs RESTful y cómo `fetch` permite interactuar con ellas.
-- ** Operaciones CRUD **: Ejemplos prácticos de solicitudes para crear, leer, actualizar y eliminar datos en una API REST usando`fetch`.
-  
 #### Opciones de Fetch
     - ** Configuración avanzada de`fetch` **: Modificación de opciones de la solicitud, como los encabezados, el método y el cuerpo.
 - ** Configuración de encabezados **: Añadir encabezados de autorización o personalizar encabezados para peticiones específicas.
