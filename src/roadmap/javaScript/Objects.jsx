@@ -768,6 +768,55 @@ export function MapObjects() {
 
             </code>
 
+            <p>
+                En este ejemplo, Persona es una clase con un constructor que inicializa las propiedades nombre y edad, y un método saludar que puede ser usado por cada instancia.
+            </p>
+
+            <h2>Métodos de Instancia y Métodos Estáticos</h2>
+
+            <p>
+                Dentro de una clase, podemos definir:
+
+                Métodos de instancia: Estos métodos solo se pueden llamar en instancias de la clase (por ejemplo, persona1.saludar()).
+                Métodos estáticos: Métodos que pertenecen a la clase en sí misma, en lugar de a las instancias. Se definen usando la palabra clave static y se llaman directamente en la clase, sin necesidad de crear una instancia.
+            </p>
+
+            <h2>Definición y Uso de Métodos Estáticos</h2>
+
+            <p>
+                Los métodos estáticos son útiles para funciones relacionadas con la clase pero que no dependen de ninguna instancia en particular, como utilidades o métodos auxiliares.
+            </p>
+
+            <p>
+                Ejemplo de Métodos Estáticos y de Instancia
+            </p>
+
+            <code>
+                class Calculadora {
+                    // Método estático
+                    static sumar(a, b) {
+                        return a + b;
+                    }
+            
+                    // Método de instancia
+                    multiplicar(a, b) {
+                        return a * b;
+                    }
+                }
+            
+                // Llamada al método estático sin crear una instancia
+                console.log(Calculadora.sumar(5, 10)); // 15
+            
+                // Crear una instancia para usar un método de instancia
+                const calculadora = new Calculadora();
+                console.log(calculadora.multiplicar(3, 4)); // 12
+            
+            </code>
+
+            <p>
+                En este ejemplo, sumar es un método estático y se accede directamente mediante Calculadora.sumar(5, 10). En cambio, multiplicar es un método de instancia y requiere crear una instancia de Calculadora antes de poder llamarlo.
+            </p>
+            
         </>
     )
 }
