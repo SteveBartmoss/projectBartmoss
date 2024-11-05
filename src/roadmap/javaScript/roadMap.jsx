@@ -299,7 +299,17 @@ export function RoadMap() {
                         Implementación de Mixins **: Uso de funciones o `Object.assign()` para mezclar métodos en un objeto o clase.
                         Ventajas y casos de uso **: Flexibilidad al agregar comportamientos sin herencia, permitiendo una "herencia múltiple" en JavaScript.
                     </p>
-                    
+
+                    <h1>Asincronía</h1>
+
+                    <h2>Conceptos</h2>
+
+                    <p>
+                        Concepto de asincronía**: Explicación de la diferencia entre código síncrono y asíncrono.
+                        Event Loop**: Comprensión básica de cómo funciona el event loop en JavaScript y su papel en la ejecución de tareas asíncronas.
+                        Callbacks**: Introducción a los callbacks como la primera técnica usada para manejar operaciones asíncronas y sus limitaciones (como el "callback hell").
+                    </p>
+
                 </DivTopicos>
             </DivArticle>
         </>
@@ -337,3 +347,71 @@ estos temas si deberian ir en el curso de js mas basico
 - **Multilínea**: Crear cadenas de varias líneas sin caracteres de escape.
 - **Expresiones complejas en plantillas**: Incluir llamadas a funciones, operaciones matemáticas y lógica simple.
 */
+
+
+### Promesas
+    - **¿Qué es una promesa ?**: Concepto de promesa como un objeto que representa la eventual finalización(o falla) de una operación asíncrona.
+- ** Estados de las promesas **: Explicación de los estados(`pending`, `fulfilled`, y`rejected`) y cómo las promesas se mueven entre ellos.
+- ** Métodos`.then()` y`.catch()` **: Uso de estos métodos para manejar resultados de éxito y errores en promesas.
+  
+#### Cadena
+    - ** Encadenamiento de promesas **: Cómo estructurar varias operaciones asíncronas en secuencia usando `.then()` para mejorar la legibilidad del código.
+- ** Propagación de errores **: Cómo manejar errores en una cadena de promesas sin romper el flujo.
+
+#### Catch y Finally
+    - ** Método`.catch()` **: Captura de errores en una cadena de promesas y cómo usarlos para manejar excepciones de forma centralizada.
+- ** Método`.finally()` **: Uso de `.finally()` para ejecutar código independientemente del resultado, como tareas de limpieza o registro.
+
+#### Métodos estáticos
+    - ** `Promise.resolve()` y`Promise.reject()` **: Métodos para crear promesas que ya están en un estado de éxito o error.
+- ** `Promise.all()`, `Promise.race()`, `Promise.any()`, `Promise.allSettled()` **: Métodos que permiten controlar y combinar múltiples promesas en paralelo.
+
+---
+
+### Paralelo, `all` y`race`
+    - ** `Promise.all()` **: Ejecutar múltiples promesas en paralelo y obtener un solo resultado si todas se cumplen o una falla.
+- ** `Promise.race()` **: Correr promesas en paralelo y obtener el primer resultado que se complete(ya sea éxito o error).
+- ** Ejemplos prácticos **: Situaciones en las que se podría usar `all` y `race` para manejar tareas concurrentes, como la carga de múltiples recursos o la espera de la respuesta más rápida.
+
+### Paralelo, `any` y`allSettled`
+    - ** `Promise.any()` **: Esperar a que cualquiera de las promesas en un conjunto se cumpla con éxito.
+- ** `Promise.allSettled()` **: Ejecutar promesas en paralelo sin importar el resultado, obteniendo información sobre todas ellas, sean éxito o error.
+- ** Usos y ejemplos **: Casos de uso en los que estas funciones son útiles, como cuando se necesitan resultados parciales o cuando se desea manejar errores individualmente.
+
+---
+
+### Argumentos
+    - ** Manejo de argumentos en promesas **: Pasar datos desde una promesa a la siguiente en una cadena de promesas.
+- ** Uso de `.then()` para encadenar datos **: Cómo se pueden transformar y transferir datos entre promesas encadenadas.
+- ** Errores comunes **: Evitar confusiones con argumentos y scope en funciones anidadas dentro de promesas.
+
+---
+
+### `async` y`await`
+    - ** Introducción a `async` y`await` **: Facilitar el manejo de promesas mediante una sintaxis más legible y estructurada.
+- ** Creación de funciones`async` **: Cómo `async` convierte una función en una que devuelve una promesa.
+- ** Uso de`await` **: Suspender la ejecución de la función hasta que la promesa se resuelva y obtener su valor.
+- ** Manejo de errores con `try/catch` en funciones`async` **: Cómo capturar errores dentro de funciones asíncronas usando bloques`try/catch`.
+  
+---
+
+### Fetch
+    - ** Introducción a`fetch` **: API moderna para hacer solicitudes HTTP en JavaScript.
+- ** Sintaxis básica **: Cómo hacer una solicitud GET con `fetch` y obtener una respuesta en formato JSON.
+- ** Métodos HTTP(GET, POST, etc.) **: Uso de `fetch` para realizar otros tipos de solicitudes, como POST, enviando datos en el cuerpo de la solicitud.
+  
+#### APIs REST
+    - ** Concepto de APIs REST **: Comprensión de cómo funcionan las APIs RESTful y cómo `fetch` permite interactuar con ellas.
+- ** Operaciones CRUD **: Ejemplos prácticos de solicitudes para crear, leer, actualizar y eliminar datos en una API REST usando`fetch`.
+  
+#### Opciones de Fetch
+    - ** Configuración avanzada de`fetch` **: Modificación de opciones de la solicitud, como los encabezados, el método y el cuerpo.
+- ** Configuración de encabezados **: Añadir encabezados de autorización o personalizar encabezados para peticiones específicas.
+- ** Otras opciones de`fetch` **: Controlar el modo(como`cors` o`no-cors`), credenciales, y otros parámetros de la solicitud.
+
+#### Abortar Fetch
+    - ** AbortController **: Cómo usar `AbortController` para cancelar una solicitud `fetch` en curso.
+- ** Abortar solicitudes **: Ejemplos de cuándo es útil abortar una solicitud, como al cambiar de página o al recibir datos incompletos.
+- ** Manejo de errores al abortar **: Cómo capturar y manejar los errores cuando una solicitud se aborta, mejorando la experiencia del usuario.
+
+---
