@@ -339,6 +339,14 @@ export function RoadMap() {
                         `Promise.all()`, `Promise.race()`, `Promise.any()`, `Promise.allSettled()` **: Métodos que permiten controlar y combinar múltiples promesas en paralelo.
                     </p>
 
+                    <h2>Paralelo, `all` y`race`</h2>
+
+                    <p>
+                        `Promise.all()` **: Ejecutar múltiples promesas en paralelo y obtener un solo resultado si todas se cumplen o una falla.
+                        Promise.race()` **: Correr promesas en paralelo y obtener el primer resultado que se complete(ya sea éxito o error).
+                        Ejemplos prácticos **: Situaciones en las que se podría usar `all` y `race` para manejar tareas concurrentes, como la carga de múltiples recursos o la espera de la respuesta más rápida.
+                    </p>
+
                 </DivTopicos>
             </DivArticle>
         </>
@@ -377,12 +385,6 @@ estos temas si deberian ir en el curso de js mas basico
 - **Expresiones complejas en plantillas**: Incluir llamadas a funciones, operaciones matemáticas y lógica simple.
 */
 
-   
-
-### Paralelo, `all` y`race`
-    - ** `Promise.all()` **: Ejecutar múltiples promesas en paralelo y obtener un solo resultado si todas se cumplen o una falla.
-- ** `Promise.race()` **: Correr promesas en paralelo y obtener el primer resultado que se complete(ya sea éxito o error).
-- ** Ejemplos prácticos **: Situaciones en las que se podría usar `all` y `race` para manejar tareas concurrentes, como la carga de múltiples recursos o la espera de la respuesta más rápida.
 
 ### Paralelo, `any` y`allSettled`
     - ** `Promise.any()` **: Esperar a que cualquiera de las promesas en un conjunto se cumpla con éxito.
