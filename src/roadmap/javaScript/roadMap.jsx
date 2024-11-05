@@ -325,6 +325,13 @@ export function RoadMap() {
                         Propagación de errores **: Cómo manejar errores en una cadena de promesas sin romper el flujo.
                     </p>
 
+                    <h2>Catch y Finally</h2>
+
+                    <p>
+                        Método`.catch()` **: Captura de errores en una cadena de promesas y cómo usarlos para manejar excepciones de forma centralizada.
+                        Método`.finally()` **: Uso de `.finally()` para ejecutar código independientemente del resultado, como tareas de limpieza o registro.
+                    </p>
+
                 </DivTopicos>
             </DivArticle>
         </>
@@ -362,11 +369,6 @@ estos temas si deberian ir en el curso de js mas basico
 - **Multilínea**: Crear cadenas de varias líneas sin caracteres de escape.
 - **Expresiones complejas en plantillas**: Incluir llamadas a funciones, operaciones matemáticas y lógica simple.
 */
-
-
-#### Catch y Finally
-    - ** Método`.catch()` **: Captura de errores en una cadena de promesas y cómo usarlos para manejar excepciones de forma centralizada.
-- ** Método`.finally()` **: Uso de `.finally()` para ejecutar código independientemente del resultado, como tareas de limpieza o registro.
 
 #### Métodos estáticos
     - ** `Promise.resolve()` y`Promise.reject()` **: Métodos para crear promesas que ya están en un estado de éxito o error.
