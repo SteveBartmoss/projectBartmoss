@@ -166,6 +166,33 @@ export function MapObjects() {
                 console.log(persona[propiedad]); // 30
             </code>
 
+            <h1>Enumeración de Propiedades en JavaScript</h1>
+
+            <p>
+                La enumeración de propiedades en un objeto es una técnica importante en JavaScript, especialmente para trabajar con estructuras de datos dinámicas o desconocidas. Los métodos disponibles (for...in, Object.keys, Object.values, y Object.entries) permiten acceder y recorrer las propiedades y valores de un objeto de maneras diferentes, cada uno con sus ventajas.
+            </p>
+
+            <h2>for...in</h2>
+
+            <p>
+            El bucle for...in itera sobre todas las propiedades enumerables de un objeto, incluidas tanto las propiedades propias como las heredadas del prototipo.
+            Este bucle es útil para obtener el nombre de cada propiedad, pero es recomendable combinarlo con hasOwnProperty() para asegurarse de que la propiedad pertenece directamente al objeto y no a su prototipo.
+            </p>
+
+            <code>
+                const persona = {nombre: "Luis", edad: 30, ocupacion: "Ingeniero" };
+                for (const propiedad in persona) {
+                    if (persona.hasOwnProperty(propiedad)) {
+                        console.log(`${propiedad}: ${persona[propiedad]}`);
+                    }
+                }
+            </code>
+
+            <p>
+                Este bucle es útil cuando necesitas iterar tanto sobre las propiedades propias como heredadas de un objeto.
+                Es especialmente relevante en objetos donde el prototipo juega un papel importante.
+            </p>
+            
         </>
     )
 }
