@@ -331,6 +331,28 @@ export function MapObjects() {
                 console.log(persona.edad); // 35 (la función modifica el objeto original)
             </code>
 
+            <h2>Cómo Evitar Efectos Colaterales: Copias de Objetos</h2>
+
+            <p>
+                Para evitar modificar el objeto original (mutación) cuando trabajas con referencias, puedes crear una copia del objeto. Existen diferentes formas de hacerlo en JavaScript:
+                Asignación mediante {...objeto} (Spread Operator): Crea una copia superficial del objeto.
+                Object.assign(): También crea una copia superficial del objeto.
+                Clonación profunda: Cuando el objeto contiene otros objetos anidados, la copia superficial no es suficiente. Para clonar profundamente, puedes utilizar métodos como structuredClone() o bibliotecas como lodash.
+            </p>
+
+            <p>
+                Copia Superficial
+            </p>
+
+            <code>
+                const original = {nombre: "Juan", edad: 40 };
+                const copia = {...original};
+
+                copia.edad = 45;
+                console.log(original.edad); // 40 (el original no se modifica)
+                console.log(copia.edad);    // 45 (la copia es independiente)
+            </code>
+
         </>
     )
 }
