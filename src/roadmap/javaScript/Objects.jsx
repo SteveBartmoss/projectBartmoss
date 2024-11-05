@@ -96,6 +96,53 @@ export function MapObjects() {
                 persona.saludar(); // "Hola, mi nombre es Ana y tengo 26 años"
             </code>
 
+            <h2>Eliminar Métodos Dinámicamente</h2>
+
+            <p>delete también elimina métodos del objeto.</p>
+
+            <code>
+                delete persona.saludar; // Elimina el método 'saludar'
+                console.log(persona.saludar); // undefined
+            </code>
+
         </>
     )
 }
+
+/*
+considerar si es bueno agregar buenas practicas
+
+### Consideraciones y Buenas Prácticas
+
+1. **Verificar la Existencia de Propiedades y Métodos**:
+   - Antes de modificar o eliminar, puedes verificar la existencia de una propiedad o método con el operador `in` o `hasOwnProperty`:
+   ```javascript
+   if ("edad" in persona) {
+       console.log("Edad existe en el objeto.");
+   }
+
+   if (persona.hasOwnProperty("saludar")) {
+       console.log("El método saludar existe.");
+   }
+   ```
+
+2. **Propiedades y Métodos Dinámicos con `Object.defineProperty`**
+   - `Object.defineProperty` permite añadir propiedades con configuraciones específicas como `writable`, `enumerable`, y `configurable`:
+   ```javascript
+   Object.defineProperty(persona, "pais", {
+       value: "España",
+       writable: true,
+       enumerable: true,
+       configurable: true
+   });
+   console.log(persona.pais); // "España"
+   ```
+
+3. **Evitar Modificaciones en Objetos Inmutables**
+   - Objetos creados con `Object.freeze` no pueden ser modificados, agregando seguridad en casos en los que no se desea cambios dinámicos.
+   ```javascript
+   const objetoInmutable = Object.freeze({ nombre: "Carlos" });
+   objetoInmutable.edad = 30; // No se añadirá 'edad'
+   console.log(objetoInmutable); // { nombre: "Carlos" }
+   ```
+*/
