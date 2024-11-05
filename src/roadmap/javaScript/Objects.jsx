@@ -221,6 +221,33 @@ export function MapObjects() {
                 Object.keys() es más seguro y específico que for...in para evitar propiedades del prototipo.
             </p>
 
+            <h2>Object.values()</h2>
+
+            <p>
+                Object.values() devuelve un array con los valores de las propiedades propias y enumerables del objeto.
+                Es ideal cuando necesitas trabajar solo con los valores sin preocuparte por las claves.
+            </p>
+
+            <code>
+                const usuario = {nombre: "Ana", edad: 25, pais: "México" };
+                const valores = Object.values(usuario);
+                console.log(valores); // ["Ana", 25, "México"]
+            </code>
+
+            <p>
+                Iteración Usando forEach
+            </p>
+
+            <code>
+                valores.forEach(valor => {
+                    console.log(valor);
+                });
+            </code>
+
+            <p>
+                Ideal para casos en los que solo necesitas los valores de las propiedades, como cuando quieres sumar valores o realizar operaciones estadísticas.
+            </p>
+
         </>
     )
 }
