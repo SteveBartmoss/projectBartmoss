@@ -705,8 +705,8 @@ export function MapObjects() {
                 // Método en el constructor
                 function JugadorConMetodo(nombre) {
                     this.nombre = nombre;
-                    this.jugar = function() {
-                        console.log(`${this.nombre} está jugando`);
+                this.jugar = function() {
+                    console.log(`${this.nombre} está jugando`);
                     };
                 }
 
@@ -732,7 +732,42 @@ export function MapObjects() {
             <p>
                 Aquí, JugadorConPrototipo es más eficiente en términos de memoria porque el método jugar está definido solo una vez en el prototipo.
             </p>
-            
+
+            <h1>Nueva sintaxis para constructores</h1>
+
+            <p>
+                Con ES6, se introdujo la palabra clave class en JavaScript como una forma de crear objetos y gestionar herencias. Aunque class es en realidad una sintaxis especial para definir funciones constructoras, hace que el código sea más limpio y legible, y organiza mejor la lógica de creación y herencia de objetos.
+            </p>
+
+            <h2>Creación de Clases con class</h2>
+
+            <p>
+                Una clase en ES6 es una plantilla para crear objetos. Dentro de una clase, puedes definir el constructor (similar al de una función constructora) y métodos que serán compartidos por todas las instancias de esa clase.
+            </p>
+
+            <p>
+                Ejemplo Básico
+            </p>
+
+            <code>
+                class Persona {
+                    constructor(nombre, edad) {
+                        this.nombre = nombre;
+                        this.edad = edad;
+                    }
+
+                    // Método de instancia
+                    saludar() {
+                        console.log(`Hola, mi nombre es ${this.nombre} y tengo ${this.edad} años.`);
+                    }
+                }
+
+                // Crear una instancia de la clase
+                const persona1 = new Persona("Ana", 30);
+                persona1.saludar(); // "Hola, mi nombre es Ana y tengo 30 años."
+
+            </code>
+
         </>
     )
 }
