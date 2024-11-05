@@ -297,6 +297,40 @@ export function MapObjects() {
                 console.log(persona); // {nombre: "Ana", edad: 31, pais: "México" }
             </code>
 
+            <h2>Paso por Referencia vs. Paso por Valor</h2>
+
+            <p>
+                En JavaScript, los tipos primitivos (números, cadenas, booleanos, null y undefined) son inmutables y se pasan por valor.
+                Los objetos y arrays son mutables y se pasan por referencia.
+                Cuando pasas un objeto a una función o lo asignas a otra variable, ambas referencias apuntan al mismo lugar en memoria. Esto significa que cualquier cambio en una referencia afecta al objeto compartido.
+            </p>
+
+            <p>
+                Referencias en Objetos
+            </p>
+
+            <code>
+                const objeto1 = {nombre: "Carlos" };
+                const objeto2 = objeto1; // Ambos apuntan al mismo objeto
+
+                objeto2.nombre = "Luis";
+                console.log(objeto1.nombre); // "Luis" (ambas variables reflejan el cambio)
+            </code>
+
+            <p>
+                Paso por Referencia en Funciones
+            </p>
+
+            <code>
+                function actualizarEdad(persona) {
+                    persona.edad = 35;
+                }
+
+                const persona = {nombre: "Lucía", edad: 28 };
+                actualizarEdad(persona);
+                console.log(persona.edad); // 35 (la función modifica el objeto original)
+            </code>
+
         </>
     )
 }
