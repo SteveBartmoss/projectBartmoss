@@ -175,15 +175,15 @@ export function MapObjects() {
             <h2>for...in</h2>
 
             <p>
-            El bucle for...in itera sobre todas las propiedades enumerables de un objeto, incluidas tanto las propiedades propias como las heredadas del prototipo.
-            Este bucle es útil para obtener el nombre de cada propiedad, pero es recomendable combinarlo con hasOwnProperty() para asegurarse de que la propiedad pertenece directamente al objeto y no a su prototipo.
+                El bucle for...in itera sobre todas las propiedades enumerables de un objeto, incluidas tanto las propiedades propias como las heredadas del prototipo.
+                Este bucle es útil para obtener el nombre de cada propiedad, pero es recomendable combinarlo con hasOwnProperty() para asegurarse de que la propiedad pertenece directamente al objeto y no a su prototipo.
             </p>
 
             <code>
                 const persona = {nombre: "Luis", edad: 30, ocupacion: "Ingeniero" };
                 for (const propiedad in persona) {
                     if (persona.hasOwnProperty(propiedad)) {
-                        console.log(`${propiedad}: ${persona[propiedad]}`);
+                    console.log(`${propiedad}: ${persona[propiedad]}`);
                     }
                 }
             </code>
@@ -256,7 +256,7 @@ export function MapObjects() {
             </p>
 
             <code>
-                const empleado = { nombre: "Carlos", rol: "Desarrollador", edad: 28 };
+                const empleado = {nombre: "Carlos", rol: "Desarrollador", edad: 28 };
                 const entradas = Object.entries(empleado);
                 console.log(entradas);
             </code>
@@ -275,6 +275,27 @@ export function MapObjects() {
                 Es una excelente opción cuando necesitas tanto las claves como los valores en una estructura fácil de manejar.
                 Útil en operaciones de mapeo y transformación de objetos.
             </p>
+
+            <h1>Mutabilidad en Objetos en JavaScript</h1>
+
+            <p>
+                En JavaScript, los objetos son mutables por naturaleza, lo cual significa que una vez que se crea un objeto, su contenido puede modificarse a lo largo del tiempo. Esto se relaciona con cómo JavaScript maneja el paso por referencia para objetos, lo que implica que diferentes variables pueden referirse al mismo objeto en memoria. Estos conceptos son cruciales para entender cómo los datos cambian y se comparten en aplicaciones JavaScript.
+            </p>
+
+            <h2>¿Qué Significa que un Objeto sea Mutable?</h2>
+
+            <p>
+                Mutabilidad implica que puedes modificar las propiedades de un objeto después de haberlo creado.
+                Las variables que contienen objetos almacenan una referencia a la ubicación en la memoria donde se guarda el objeto, no el objeto en sí.
+                Debido a esto, los cambios realizados en el objeto a través de una variable son reflejados en todas las variables que apuntan a ese mismo objeto.
+            </p>
+
+            <code>
+                const persona = {nombre: "Ana", edad: 30 };
+                persona.edad = 31; // Modificamos una propiedad existente
+                persona.pais = "México"; // Añadimos una nueva propiedad
+                console.log(persona); // {nombre: "Ana", edad: 31, pais: "México" }
+            </code>
 
         </>
     )
