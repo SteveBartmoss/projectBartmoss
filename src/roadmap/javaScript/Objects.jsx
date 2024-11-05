@@ -138,8 +138,33 @@ export function MapObjects() {
             <h2>Notación de Corchetes ([])</h2>
 
             <p>
-                a notación de corchetes es útil cuando el nombre de la propiedad es dinámico, se almacena en una variable, o no es un identificador válido.
+                La notación de corchetes es útil cuando el nombre de la propiedad es dinámico, se almacena en una variable, o no es un identificador válido.
             </p>
+
+            <code>
+                const persona = {nombre: "Luis", edad: 30 };
+                const propiedad = "nombre";
+                console.log(persona[propiedad]); // "Luis"
+            </code>
+
+            <p>
+                La notación de corchetes permite acceder a propiedades que contienen espacios, caracteres especiales o números.
+            </p>
+
+            <code>
+                const producto = {"precio-venta": 200, "nombre producto": "Laptop" };
+                console.log(producto["precio-venta"]); // 200
+                console.log(producto["nombre producto"]); // "Laptop"
+            </code>
+
+            <p>
+                La notación de corchetes permite acceder a propiedades a través de una variable. Este enfoque es útil para acceder a propiedades basadas en condiciones o entradas de usuario.
+            </p>
+
+            <code>
+                const propiedad = "edad";
+                console.log(persona[propiedad]); // 30
+            </code>
 
         </>
     )
@@ -181,4 +206,13 @@ considerar si es bueno agregar buenas practicas
    objetoInmutable.edad = 30; // No se añadirá 'edad'
    console.log(objetoInmutable); // { nombre: "Carlos" }
    ```
+
+
+   Buenas Prácticas
+
+    Usa Notación de Punto siempre que sea posible, ya que es más legible y común en JavaScript.
+    Utiliza Notación de Corchetes cuando:
+        Necesites nombres de propiedades dinámicos.
+        El nombre de la propiedad contenga caracteres especiales o espacios.
+        Las propiedades se acceden mediante variables o parámetros de funciones.
 */
