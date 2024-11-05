@@ -355,6 +355,14 @@ export function RoadMap() {
                         Usos y ejemplos **: Casos de uso en los que estas funciones son útiles, como cuando se necesitan resultados parciales o cuando se desea manejar errores individualmente.
                     </p>
 
+                    <h2>Argumentos</h2>
+
+                    <p>
+                        Manejo de argumentos en promesas **: Pasar datos desde una promesa a la siguiente en una cadena de promesas.
+                        Uso de `.then()` para encadenar datos **: Cómo se pueden transformar y transferir datos entre promesas encadenadas.
+                        Errores comunes **: Evitar confusiones con argumentos y scope en funciones anidadas dentro de promesas.
+                    </p>
+
                 </DivTopicos>
             </DivArticle>
         </>
@@ -392,13 +400,6 @@ estos temas si deberian ir en el curso de js mas basico
 - **Multilínea**: Crear cadenas de varias líneas sin caracteres de escape.
 - **Expresiones complejas en plantillas**: Incluir llamadas a funciones, operaciones matemáticas y lógica simple.
 */
-
-### Argumentos
-    - ** Manejo de argumentos en promesas **: Pasar datos desde una promesa a la siguiente en una cadena de promesas.
-- ** Uso de `.then()` para encadenar datos **: Cómo se pueden transformar y transferir datos entre promesas encadenadas.
-- ** Errores comunes **: Evitar confusiones con argumentos y scope en funciones anidadas dentro de promesas.
-
----
 
 ### `async` y`await`
     - ** Introducción a `async` y`await` **: Facilitar el manejo de promesas mediante una sintaxis más legible y estructurada.
