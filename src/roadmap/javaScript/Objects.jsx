@@ -49,6 +49,12 @@ export function MapObjects() {
                 console.log(persona); // {nombre: "Juan", ocupacion: "Desarrollador" }
             </code>
 
+            <h1>Métodos Dinámicos en JavaScript</h1>
+
+            <p>
+                Un método en JavaScript es simplemente una propiedad de un objeto que contiene una función. Puedes agregar, modificar y eliminar métodos en tiempo de ejecución de la misma forma que con las propiedades.
+            </p>
+
         </>
     )
 }
