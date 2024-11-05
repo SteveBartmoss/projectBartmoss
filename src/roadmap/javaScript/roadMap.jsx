@@ -363,6 +363,15 @@ export function RoadMap() {
                         Errores comunes **: Evitar confusiones con argumentos y scope en funciones anidadas dentro de promesas.
                     </p>
 
+                    <h2>`async` y`await`</h2>
+
+                    <p>
+                        Introducción a `async` y`await` **: Facilitar el manejo de promesas mediante una sintaxis más legible y estructurada.
+                        Creación de funciones`async` **: Cómo `async` convierte una función en una que devuelve una promesa.
+                        Uso de`await` **: Suspender la ejecución de la función hasta que la promesa se resuelva y obtener su valor.
+                        Manejo de errores con `try/catch` en funciones`async` **: Cómo capturar errores dentro de funciones asíncronas usando bloques`try/catch`.
+                    </p>
+
                 </DivTopicos>
             </DivArticle>
         </>
@@ -401,13 +410,7 @@ estos temas si deberian ir en el curso de js mas basico
 - **Expresiones complejas en plantillas**: Incluir llamadas a funciones, operaciones matemáticas y lógica simple.
 */
 
-### `async` y`await`
-    - ** Introducción a `async` y`await` **: Facilitar el manejo de promesas mediante una sintaxis más legible y estructurada.
-- ** Creación de funciones`async` **: Cómo `async` convierte una función en una que devuelve una promesa.
-- ** Uso de`await` **: Suspender la ejecución de la función hasta que la promesa se resuelva y obtener su valor.
-- ** Manejo de errores con `try/catch` en funciones`async` **: Cómo capturar errores dentro de funciones asíncronas usando bloques`try/catch`.
-  
----
+    
 
 ### Fetch
     - ** Introducción a`fetch` **: API moderna para hacer solicitudes HTTP en JavaScript.
