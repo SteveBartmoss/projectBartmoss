@@ -669,7 +669,7 @@ export function MapObjects() {
             <code>
                 function Vehiculo(marca, modelo) {
                     this.marca = marca;
-                    this.modelo = modelo;
+                this.modelo = modelo;
                 }
 
                 // Definir un método en el prototipo
@@ -685,6 +685,54 @@ export function MapObjects() {
 
             </code>
 
+            <p>
+                En este ejemplo, el método informacion es compartido entre todas las instancias de Vehiculo, lo cual es más eficiente que declarar el método dentro del constructor. Esto significa que informacion existe una sola vez en el prototipo, en lugar de duplicarse en cada instancia.
+            </p>
+
+            <h2>Ventajas de Usar Prototipos en Funciones Constructoras</h2>
+
+            <p>
+                Eficiencia de Memoria: Los métodos definidos en el prototipo se almacenan una vez, en lugar de duplicarse en cada instancia, lo que reduce el uso de memoria.
+                Consistencia: Cualquier cambio hecho a un método en el prototipo afecta a todas las instancias que heredan ese prototipo.
+                Organización: Mantiene los constructores más limpios al delegar la lógica de los métodos al prototipo.
+            </p>
+
+            <p>
+                Ejemplo de Comparación: Método en el Constructor vs. Método en el Prototipo
+            </p>
+
+            <code>
+                // Método en el constructor
+                function JugadorConMetodo(nombre) {
+                    this.nombre = nombre;
+                    this.jugar = function() {
+                        console.log(`${this.nombre} está jugando`);
+                    };
+                }
+
+                // Método en el prototipo
+                function JugadorConPrototipo(nombre) {
+                    this.nombre = nombre;
+                }
+
+                JugadorConPrototipo.prototype.jugar = function() {
+                    console.log(`${this.nombre} está jugando`);
+                };
+
+                // Crear instancias
+                const jugador1 = new JugadorConMetodo("Carlos");
+                const jugador2 = new JugadorConPrototipo("Ana");
+
+                // Comparación de métodos
+                console.log(jugador1.jugar === jugador2.jugar); // false, no comparten método
+                console.log(JugadorConPrototipo.prototype.jugar === jugador2.jugar); // true, comparten método
+
+            </code>
+
+            <p>
+                Aquí, JugadorConPrototipo es más eficiente en términos de memoria porque el método jugar está definido solo una vez en el prototipo.
+            </p>
+            
         </>
     )
 }
