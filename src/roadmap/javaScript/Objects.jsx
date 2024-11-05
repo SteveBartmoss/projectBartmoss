@@ -85,6 +85,17 @@ export function MapObjects() {
                 persona.despedirse(); // "Adiós!"
             </code>
 
+            <h2>Modificar Métodos Dinámicamente</h2>
+
+            <p>Puedes modificar un método reasignándolo a una nueva función.</p>
+
+            <code>
+                persona.saludar = function() {
+                    console.log(`Hola, mi nombre es ${this.nombre} y tengo ${this.edad} años`);
+                };
+                persona.saludar(); // "Hola, mi nombre es Ana y tengo 26 años"
+            </code>
+
         </>
     )
 }
