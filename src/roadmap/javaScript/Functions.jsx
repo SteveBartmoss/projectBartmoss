@@ -41,6 +41,33 @@ export function MapFunctions() {
             <p>
                 Aquí, la función saludar es una expresión asignada a la variable saludar. No puedes usar saludar antes de esta línea, o causará un error.
             </p>
+
+            <h2>Funciones Anónimas y Nombradas</h2>
+
+            <p>
+                Una función puede ser anónima (sin nombre) o nombrada (con un nombre). El uso depende del contexto y de si necesitas un identificador para la función.
+            </p>
+
+            <h3>Funciones Anónimas</h3>
+
+            <p>
+                Las funciones anónimas son aquellas sin un nombre, comúnmente utilizadas en expresiones de funciones o como funciones de callback (por ejemplo, en eventos o métodos de array como map, filter).
+            </p>
+
+            <code>
+                const saludar = function() {
+                    console.log("¡Hola!");
+                };
+
+                [1, 2, 3].forEach(function(elemento) {
+                    console.log(elemento);
+                });
+            </code>
+
+            <p>
+                En este caso, la función dentro de forEach es anónima y se ejecuta para cada elemento del array.
+            </p>
+
         </>
     )
 }
