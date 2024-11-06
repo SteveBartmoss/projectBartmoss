@@ -144,8 +144,8 @@ export function MapFunctions() {
             <code>
                 const persona = {
                     nombre: "Ana",
-                    saludar: function() {
-                        console.log(`Hola, soy ${this.nombre}`);
+                saludar: function() {
+                    console.log(`Hola, soy ${this.nombre}`);
                     }           
                 };
 
@@ -166,11 +166,11 @@ export function MapFunctions() {
             <code>
                 const persona = {
                     nombre: "Ana",
-                    saludar: function() {
+                saludar: function() {
                         const presentacion = () => {
-                            console.log(`Hola, soy ${this.nombre}`);
+                    console.log(`Hola, soy ${this.nombre}`);
                         };
-                        presentacion();
+                presentacion();
                     }
                 };
 
@@ -186,10 +186,10 @@ export function MapFunctions() {
             <code>
                 const persona = {
                     nombre: "Ana",
-                    saludar: function() {
-                        setTimeout(function () {
-                            console.log(`Hola, soy ${this.nombre}`);
-                        }, 1000);
+                saludar: function() {
+                    setTimeout(function () {
+                        console.log(`Hola, soy ${this.nombre}`);
+                    }, 1000);
                     }
                 };
 
@@ -197,10 +197,10 @@ export function MapFunctions() {
 
                 const personaArrow = {
                     nombre: "Ana",
-                    saludar: function() {
-                        setTimeout(() => {
-                            console.log(`Hola, soy ${this.nombre}`);
-                        }, 1000);
+                saludar: function() {
+                    setTimeout(() => {
+                        console.log(`Hola, soy ${this.nombre}`);
+                    }, 1000);
                     }
                 };
 
@@ -209,6 +209,36 @@ export function MapFunctions() {
 
             <p>
                 En el primer ejemplo, setTimeout usa una función regular, y this pierde el contexto de persona. En el segundo ejemplo, setTimeout usa una arrow function, que mantiene el contexto this de personaArrow.
+            </p>
+
+            <h2>Paso por Valor</h2>
+
+            <p>
+                El paso por valor significa que cuando pasas una copia de un valor a una variable o a una función, cualquier cambio que hagas en esa copia no afectará al valor original. Esto aplica a los tipos de datos primitivos en JavaScript, que incluyen:
+                Números (Number)
+                Cadenas de texto (String)
+                Booleanos (Boolean)
+                undefined
+                null
+                Símbolos (Symbol)
+                BigInt (BigInt)
+            </p>
+
+            <p>
+                Ejemplo de Paso por Valor
+            </p>
+
+            <code>
+                let a = 5;
+                let b = a; // `b` recibe una copia de `a`
+                b = 10;
+
+                console.log(a); // 5 (no cambia)
+                console.log(b); // 10
+            </code>
+
+            <p>
+                En este ejemplo, cuando b toma el valor de a, en realidad está tomando una copia del valor, así que al cambiar b, a permanece igual.
             </p>
 
         </>
