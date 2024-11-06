@@ -86,6 +86,49 @@ export function MapFunctions() {
                 Algunos beneficios de las funciones nombradas incluyen una mejor legibilidad y la posibilidad de ver el nombre de la función en la pila de errores en caso de problemas.
             </p>
 
+            <h3>Arrow Functions (Funciones Flecha)</h3>
+
+            <p>
+                Las arrow functions (funciones flecha) son una sintaxis más corta para definir funciones, introducida en ES6. Usan la flecha (=>) y son especialmente útiles para funciones cortas o de una sola línea.
+            </p>
+
+            <p>
+                Sintaxis de Arrow Function
+            </p>
+
+            <code>
+                const sumar = function(a, b) {
+                    return a + b;
+                };
+
+                const sumar = (a, b) => a + b;
+
+                console.log(sumar(5, 10));
+            </code>
+
+            <p>
+                En el ejemplo, la función flecha sumar toma dos parámetros (a y b) y retorna su suma. Si solo tiene una línea, el return y las llaves { } son opcionales.
+            </p>
+
+            <h3>Casos de Uso de Arrow Functions</h3>
+
+            <p>
+                Las funciones flecha son ideales para:
+                Funciones cortas y callbacks: Simplifican la sintaxis en funciones de una sola línea o en callbacks.
+                Funciones donde no se necesita this: Debido a que el contexto de this es léxico (no cambia), funcionan bien en métodos donde this debería permanecer constante.
+            </p>
+
+            <p>
+                Ejemplos con Arrow Functions
+            </p>
+
+            <code>
+                const numeros = [1, 2, 3];
+                const dobles = numeros.map(n => n * 2);
+
+                console.log(dobles); // [2, 4, 6]
+            </code>
+
         </>
     )
 }
