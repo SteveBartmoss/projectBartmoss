@@ -157,6 +157,60 @@ export function MapFunctions() {
                 Aquí this.nombre se refiere a nombre dentro de persona.
             </p>
 
+            <h3>this en Arrow Functions</h3>
+
+            <p>
+                Las arrow functions no tienen su propio this; en lugar de eso, this se hereda del contexto donde se define. Esto se llama this léxico.
+            </p>
+
+            <code>
+                const persona = {
+                    nombre: "Ana",
+                    saludar: function() {
+                        const presentacion = () => {
+                            console.log(`Hola, soy ${this.nombre}`);
+                        };
+                        presentacion();
+                    }
+                };
+
+                persona.saludar();
+            </code>
+
+            <p>
+                En este caso, this.nombre en presentacion() se refiere al this de saludar, que es el objeto persona. Esto hace que las arrow functions sean útiles en funciones anidadas donde quieres mantener el contexto this.
+            </p>
+
+            <p>Ejemplo Comparativo</p>
+
+            <code>
+                const persona = {
+                    nombre: "Ana",
+                    saludar: function() {
+                        setTimeout(function () {
+                            console.log(`Hola, soy ${this.nombre}`);
+                        }, 1000);
+                    }
+                };
+
+                persona.saludar(); // "Hola, soy undefined" (porque `this` apunta a `window`)
+
+                const personaArrow = {
+                    nombre: "Ana",
+                    saludar: function() {
+                        setTimeout(() => {
+                            console.log(`Hola, soy ${this.nombre}`);
+                        }, 1000);
+                    }
+                };
+
+                personaArrow.saludar(); // "Hola, soy Ana" (porque `this` se hereda de `personaArrow`)
+            </code>
+
+            <p>
+                En el primer ejemplo, setTimeout usa una función regular, y this pierde el contexto de persona. En el segundo ejemplo, setTimeout usa una arrow function, que mantiene el contexto this de personaArrow.
+            </p>
+
         </>
     )
 }
