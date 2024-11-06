@@ -129,6 +129,34 @@ export function MapFunctions() {
                 console.log(dobles); // [2, 4, 6]
             </code>
 
+            <h2>Contexto this</h2>
+
+            <p>
+                El contexto this representa el objeto al cual pertenece el código actual. En funciones regulares y en arrow functions, this puede comportarse de manera diferente.
+            </p>
+
+            <h3>this en Funciones Regulares</h3>
+
+            <p>
+                En funciones normales, this depende de cómo se llama la función. Si se llama dentro de un objeto, this apunta a ese objeto. Si se llama en un contexto global, this será undefined en modo estricto o el objeto window en modo no estricto.
+            </p>
+
+            <code>
+                const persona = {
+                    nombre: "Ana",
+                    saludar: function() {
+                        console.log(`Hola, soy ${this.nombre}`);
+                    }           
+                };
+
+                persona.saludar(); // Hola, soy Ana
+
+            </code>
+
+            <p>
+                Aquí this.nombre se refiere a nombre dentro de persona.
+            </p>
+
         </>
     )
 }
