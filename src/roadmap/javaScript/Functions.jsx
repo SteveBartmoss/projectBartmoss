@@ -241,6 +241,47 @@ export function MapFunctions() {
                 En este ejemplo, cuando b toma el valor de a, en realidad está tomando una copia del valor, así que al cambiar b, a permanece igual.
             </p>
 
+            <h2>Paso por Referencia</h2>
+
+            <p>
+                El paso por referencia significa que en lugar de copiar el valor, se pasa una referencia al mismo valor en memoria. Esto aplica a los tipos de datos compuestos (objetos y arrays en JavaScript), por lo que cualquier cambio en la referencia afectará a todos los lugares que usen esa referencia.
+            </p>
+
+            <p>
+                Ejemplo de Paso por Referencia
+            </p>
+
+            <code>
+                let persona = {nombre: "Ana" };
+                let otraPersona = persona; // `otraPersona` apunta a la misma referencia de `persona`
+
+                otraPersona.nombre = "Carlos";
+
+                console.log(persona.nombre); // "Carlos" (se modifica también en `persona`)
+                console.log(otraPersona.nombre); // "Carlos"
+            </code>
+
+            <p>
+                En este caso, al modificar otraPersona.nombre, también estamos cambiando persona.nombre porque ambas variables apuntan al mismo objeto en la memoria.
+            </p>
+
+            <h3>Paso por Referencia en Funciones</h3>
+
+            <p>
+                Cuando pasas un objeto o array a una función, también se pasa por referencia. Por lo tanto, cualquier cambio que realices dentro de la función afectará al objeto o array original.
+            </p>
+
+            <code>
+                function modificarPersona(p) {
+                    p.nombre = "Lucía";
+                }
+
+                let persona = {nombre: "Ana" };
+                modificarPersona(persona);
+
+                console.log(persona.nombre); // "Lucía" (modificado por la función)
+            </code>
+            
         </>
     )
 }
