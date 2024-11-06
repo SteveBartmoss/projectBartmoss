@@ -309,7 +309,7 @@ export function MapFunctions() {
             </p>
 
             <p>
-                Copias de Objetos con Object.assign o el operador spread { ...obj }:
+                Copias de Objetos con Object.assign o el operador spread {...obj}:
             </p>
 
             <code>
@@ -342,9 +342,9 @@ export function MapFunctions() {
             <code>
                 const persona = {
                     nombre: "Ana",
-                    direccion: {
-                        ciudad: "Lima",
-                        pais: "Perú"
+                direccion: {
+                    ciudad: "Lima",
+                pais: "Perú"
                     }
                 };
 
@@ -373,9 +373,13 @@ export function MapFunctions() {
 
                 console.log(claves); // ["nombre", "edad"]
             </code>
-            
-                        
 
+            <h2>Object.values: Valores de un Objeto en un Array</h2>
+
+            <p>
+                Función: Object.values(obj) devuelve un array con todos los valores de las propiedades propias del objeto.
+                Uso común: Acceder y procesar únicamente los valores de un objeto sin tener en cuenta sus claves.
+            </p>
         </>
     )
 }
