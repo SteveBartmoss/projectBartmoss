@@ -68,6 +68,24 @@ export function MapFunctions() {
                 En este caso, la función dentro de forEach es anónima y se ejecuta para cada elemento del array.
             </p>
 
+            <h3>Funciones Nombradas</h3>
+
+            <p>
+                Las funciones nombradas tienen un identificador y pueden ser útiles para depurar o reutilizar una función específica.
+            </p>
+
+            <code>
+                const saludar = function saludo() {
+                    console.log("¡Hola!");
+                };
+
+                saludar(); // ¡Hola!
+            </code>
+
+            <p>
+                Algunos beneficios de las funciones nombradas incluyen una mejor legibilidad y la posibilidad de ver el nombre de la función en la pila de errores en caso de problemas.
+            </p>
+
         </>
     )
 }
