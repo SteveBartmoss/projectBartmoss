@@ -872,6 +872,40 @@ export function MapObjects() {
                 En este ejemplo, Perro hereda de Animal. La función super(nombre) llama al constructor de Animal para inicializar nombre. La clase hija también puede sobrescribir métodos de la clase padre, como el método hacerSonido en este caso.
             </p>
 
+            <h2>Sobrescritura de Métodos y super</h2>
+
+            <p>
+                Cuando una clase hija redefine un método de la clase padre, se dice que está sobrescribiendo el método. Sin embargo, también puede llamar al método original de la clase padre utilizando super.nombreMetodo().
+            </p>
+
+            <p>
+                Ejemplo de Sobrescritura de Métodos
+            </p>
+
+            <code>
+                class Vehiculo {
+                    encender() {
+                        console.log("El vehículo está encendido.");
+                    }
+                }
+
+                class Coche extends Vehiculo {
+                    encender() {
+                    super.encender(); // Llama al método 'encender' de la clase padre
+                        console.log("El coche está listo para conducir.");
+                    }
+                }
+
+                const miCoche = new Coche();
+                miCoche.encender();
+                // "El vehículo está encendido."
+                // "El coche está listo para conducir.".
+            </code>
+
+            <p>
+                En este caso, Coche sobrescribe el método encender, pero primero llama al método encender de la clase padre con super.encender(), y luego agrega su propio comportamiento.
+            </p>
+
         </>
     )
 }
