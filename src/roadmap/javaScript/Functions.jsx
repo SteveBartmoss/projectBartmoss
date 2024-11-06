@@ -281,6 +281,81 @@ export function MapFunctions() {
 
                 console.log(persona.nombre); // "Lucía" (modificado por la función)
             </code>
+
+            <h2>Inmutabilidad</h2>
+
+            <p>
+                La inmutabilidad es el concepto de que una vez que un valor es creado, no puede ser cambiado. Esto es especialmente útil para trabajar con objetos y arrays en JavaScript, ya que, por defecto, estos tipos de datos se comportan de forma mutable.
+            </p>
+
+            <h3>Técnicas para la Inmutabilidad</h3>
+
+            <p>
+                Object.freeze(): Este método congela un objeto, lo que significa que no podrás agregar, eliminar ni modificar sus propiedades. Sin embargo, es superficial, por lo que no congela objetos anidados.
+            </p>
+
+            <code>
+                const persona = {nombre: "Ana", edad: 25 };
+                Object.freeze(persona);
+
+                persona.nombre = "Carlos"; // No hace nada, el objeto es inmutable
+                console.log(persona.nombre); // "Ana"
+            </code>
+
+            <h3>Copias para Arrays y Objetos</h3>
+
+            <p>
+                Para evitar modificar un array u objeto original, puedes crear copias antes de hacer cambios. Esto es útil para simular la inmutabilidad sin bloquear el objeto.
+            </p>
+
+            <p>
+                Copias de Objetos con Object.assign o el operador spread { ...obj }:
+            </p>
+
+            <code>
+                const persona = {nombre: "Ana", edad: 25 };
+                const copiaPersona = {...persona, edad: 30 }; // copia modificada
+
+                console.log(persona.edad); // 25 (original)
+                console.log(copiaPersona.edad); // 30 (copia con cambio)
+            </code>
+
+            <p>
+                Copias de Arrays con slice o spread [ ...arr ]:
+            </p>
+
+            <code>
+                const numeros = [1, 2, 3];
+                const copiaNumeros = [...numeros, 4]; // agrega `4` a la copia
+
+                console.log(numeros); // [1, 2, 3] (original)
+                console.log(copiaNumeros); // [1, 2, 3, 4] (copia con cambio)
+            </code>
+
+
+            <h3>Inmutabilidad Profunda</h3>
+
+            <p>
+                Para hacer inmutables los objetos con propiedades anidadas, puedes usar métodos recursivos o bibliotecas como Immutable.js. Una alternativa sencilla es recrear todo el objeto en lugar de solo modificar propiedades específicas.
+            </p>
+
+            <code>
+                const persona = {
+                    nombre: "Ana",
+                    direccion: {
+                        ciudad: "Lima",
+                        pais: "Perú"
+                    }
+                };
+
+                const personaModificada = {
+                    ...persona,
+                    direccion: {...persona.direccion, ciudad: "Cusco" }
+                };
+
+                console.log(persona.direccion.ciudad); // "Lima" (original)
+                console.log(personaModificada.direccion.ciudad); // "Cusco" (copia con cambio)
+            </code>
             
         </>
     )
