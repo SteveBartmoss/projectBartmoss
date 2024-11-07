@@ -380,6 +380,32 @@ export function MapFunctions() {
                 Función: Object.values(obj) devuelve un array con todos los valores de las propiedades propias del objeto.
                 Uso común: Acceder y procesar únicamente los valores de un objeto sin tener en cuenta sus claves.
             </p>
+
+            <p>Ejemplo</p>
+
+            <code>
+                const persona = {nombre: "Ana", edad: 25 };
+                const valores = Object.values(persona);
+
+                console.log(valores); // ["Ana", 25]
+            </code>
+
+            <h2>Object.entries: Pares [clave, valor] de un Objeto en un Array</h2>
+
+            <p>
+                Función: Object.entries(obj) devuelve un array de arrays, donde cada subarray contiene un par [clave, valor].
+                Uso común: Ideal para trabajar con ambas partes de cada propiedad de un objeto simultáneamente.
+            </p>
+
+            <p>Ejemplo</p>
+
+            <code>
+                const persona = {nombre: "Ana", edad: 25 };
+                const pares = Object.entries(persona);
+
+                console.log(pares); // [["nombre", "Ana"], ["edad", 25]]
+            </code>
+            
         </>
     )
 }
