@@ -445,6 +445,12 @@ export function MapFunctions() {
                 }
             </code>
 
+            <h2>Técnicas para Evitar Propiedades del Prototipo</h2>
+
+            <p>
+                Usar Object.keys: Solo devuelve propiedades propias del objeto, sin incluir las heredadas del prototipo.
+            </p>
+
         </>
     )
 }
