@@ -182,7 +182,7 @@ export function RoadMapJs() {
                         </p>
                     </ExtendPanel>
 
-                    <ExtendPanel title='Alcance(Scope)'>
+                    <ExtendPanel title='Alcance (Scope)'>
                         <p>
                             Ámbito global y local: Cómo y cuándo se pueden acceder las variables en distintos contextos.
                         </p>
@@ -209,14 +209,20 @@ export function RoadMapJs() {
                         </p>
                     </ExtendPanel>
 
-                    <h2>Fat Arrow Function( => )</h2>
-
-                    <p>
-                        Sintaxis básica: Introducción a la sintaxis de las arrow functions.
-                        Ventajas: Simplificación del código, especialmente en funciones cortas y de una línea.
-                        Limitaciones: Ausencia del objeto `arguments` y del propio`this`.
-                        Ámbito léxico de`this` Cómo las arrow functions no tienen su propio`this`, lo que evita problemas de alcance.
-                    </p>
+                    <ExtendPanel title='Fat Arrow Function ( => )'>
+                        <p>
+                            Sintaxis básica: Introducción a la sintaxis de las arrow functions.
+                        </p>
+                        <p>
+                            Ventajas: Simplificación del código, especialmente en funciones cortas y de una línea.
+                        </p>
+                        <p>
+                            Limitaciones: Ausencia del objeto arguments y del propio this.
+                        </p>
+                        <p>
+                            Ámbito léxico de this Cómo las arrow functions no tienen su propio this, lo que evita problemas de alcance.
+                        </p>
+                    </ExtendPanel>
 
                     <h2>Rest</h2>
 
