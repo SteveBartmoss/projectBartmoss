@@ -32,13 +32,17 @@ export function RoadMapJs() {
                         </p>
                     </ExtendPanel>
 
-                    <h2>Factory Functions</h2>
-
-                    <p>
-                        Funciones de fábrica: Crear funciones que devuelvan objetos para reutilizar la lógica de creación.
-                        Ventajas: Mejor organización y encapsulamiento en comparación con el uso directo de objetos literales.
-                        Ejemplos: Crear objetos con propiedades y métodos compartidos, sin el uso de`new`.
-                    </p>
+                    <ExtendPanel title='Factory Functions'>
+                        <p>
+                            Funciones de fábrica: Crear funciones que devuelvan objetos para reutilizar la lógica de creación.
+                        </p>
+                        <p>
+                            Ventajas: Mejor organización y encapsulamiento en comparación con el uso directo de objetos literales.
+                        </p>
+                        <p>
+                            Ejemplos: Crear objetos con propiedades y métodos compartidos, sin el uso de`new`.
+                        </p>
+                    </ExtendPanel>
 
                     <h2>Constructor Functions</h2>
 
