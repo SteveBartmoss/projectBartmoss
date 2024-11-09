@@ -182,14 +182,20 @@ export function RoadMapJs() {
                         </p>
                     </ExtendPanel>
 
-                    <h2>Alcance(Scope)</h2>
-
-                    <p>
-                        Ámbito global y local: Cómo y cuándo se pueden acceder las variables en distintos contextos.
-                        Ámbito de bloque: Uso de `let` y `const` dentro de bloques(como`if` y`for`).
-                        Ámbito de función: Cómo las funciones crean su propio contexto de alcance.
-                        Closures: Concepto de closures y cómo el alcance de las variables afecta la ejecución.
-                    </p>
+                    <ExtendPanel title='Alcance(Scope)'>
+                        <p>
+                            Ámbito global y local: Cómo y cuándo se pueden acceder las variables en distintos contextos.
+                        </p>
+                        <p>
+                            Ámbito de bloque: Uso de let y const dentro de bloques(como if y for).
+                        </p>
+                        <p>
+                            Ámbito de función: Cómo las funciones crean su propio contexto de alcance.
+                        </p>
+                        <p>
+                            Closures: Concepto de closures y cómo el alcance de las variables afecta la ejecución.
+                        </p>
+                    </ExtendPanel>
 
                     <h2>Arguments</h2>
 
