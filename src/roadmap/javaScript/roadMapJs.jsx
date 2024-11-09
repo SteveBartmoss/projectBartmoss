@@ -224,13 +224,17 @@ export function RoadMapJs() {
                         </p>
                     </ExtendPanel>
 
-                    <h2>Rest</h2>
-
-                    <p>
-                        Sintaxis de Rest(`...args`) **: Recolección de argumentos restantes en una función.
-                        Uso en funciones **: Cómo manejar múltiples argumentos de entrada de manera flexible.
-                        Distinción con`arguments` **: Diferencias entre `...args` y`arguments`, especialmente en arrow functions.
-                    </p>
+                    <ExtendPanel title='Rest'>
+                        <p>
+                            Sintaxis de Rest(`...args`): Recolección de argumentos restantes en una función.
+                        </p>
+                        <p>
+                            Uso en funciones: Cómo manejar múltiples argumentos de entrada de manera flexible.
+                        </p>
+                        <p>
+                            Distinción con arguments: Diferencias entre ...args y arguments, especialmente en arrow functions.
+                        </p>
+                    </ExtendPanel>
 
                     <h2>Parámetros predeterminados</h2>
 
