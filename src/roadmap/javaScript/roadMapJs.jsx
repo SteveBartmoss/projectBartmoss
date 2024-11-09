@@ -152,13 +152,20 @@ export function RoadMapJs() {
 
                     <h1>Funciones</h1>
 
-                    <h2>Declaración VS Expresión</h2>
+                    <ExtendPanel title='Declaración VS Expresión'>
+                        <p>
+                            Declaración de funciones: function myFunction() &#123;... &#125;, en qué casos se
+                            recomienda su uso.
+                        </p>
 
-                    <p>
-                        Declaración de funciones: function myFunction() &#123... &#125, en qué casos se recomienda su uso.
-                        Expresión de funciones: const myFunction = function () &#123... &#125, ventajas y diferencias respecto a la declaración.
-                        Diferencias clave: `Hoisting`, asignación de funciones como valores y el concepto de funciones anónimas.
-                    </p>
+                        <p>
+                            Expresión de funciones: const myFunction = function () &#123;... &#125;, ventajas y diferencias respecto a la declaración.
+                        </p>
+
+                        <p>
+                            Diferencias clave: Hoisting, asignación de funciones como valores y el concepto de funciones anónimas.
+                        </p>
+                    </ExtendPanel>
 
                     <h2> let, var, const, function</h2>
 
