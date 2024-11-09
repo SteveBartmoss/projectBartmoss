@@ -248,13 +248,17 @@ export function RoadMapJs() {
                         </p>
                     </ExtendPanel>
 
-                    <h2>Param Destructuring</h2>
-
-                    <p>
-                        Destructuración de parámetros **: Extraer propiedades directamente de objetos pasados como argumentos.
-                        Parámetros con valores predeterminados **: Destructuración combinada con valores predeterminados.
-                        Aplicación en funciones **: Cómo simplificar la obtención de propiedades de objetos y arrays dentro de funciones.
-                    </p>
+                    <ExtendPanel title='Param Destructuring'>
+                        <p>
+                            Destructuración de parámetros: Extraer propiedades directamente de objetos pasados como argumentos.
+                        </p>
+                        <p>
+                            Parámetros con valores predeterminados: Destructuración combinada con valores predeterminados.
+                        </p>
+                        <p>
+                            Aplicación en funciones: Cómo simplificar la obtención de propiedades de objetos y arrays dentro de funciones.
+                        </p>
+                    </ExtendPanel>
 
                     <h2>Getters y Setters</h2>
 
