@@ -260,13 +260,17 @@ export function RoadMapJs() {
                         </p>
                     </ExtendPanel>
 
-                    <h2>Getters y Setters</h2>
-
-                    <p>
-                        Definición de getters y setters **: Creación de funciones `get` y `set` dentro de objetos y clases.
-                        Uso en encapsulación de datos **: Control de acceso a propiedades privadas o internas.
-                        Ventajas **: Permitir lógica adicional al acceder o modificar una propiedad, y validar datos de entrada.
-                    </p>
+                    <ExtendPanel title='Getters y Setters'>
+                        <p>
+                            Definición de getters y setters: Creación de funciones get y set dentro de objetos y clases.
+                        </p>
+                        <p>
+                            Uso en encapsulación de datos **: Control de acceso a propiedades privadas o internas.
+                        </p>
+                        <p>
+                            Ventajas: Permitir lógica adicional al acceder o modificar una propiedad, y validar datos de entrada.
+                        </p>
+                    </ExtendPanel>
 
                     <h2>Try y Catch</h2>
 
