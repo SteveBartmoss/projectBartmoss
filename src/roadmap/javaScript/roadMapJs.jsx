@@ -110,22 +110,21 @@ export function RoadMapJs() {
                         </p>
                     </ExtendPanel>
 
-                    <h2></h2>
-
-                    <p>
-
-
-
-                    </p>
-
-                    <h2>Listar propiedades</h2>
-
-                    <p>
-                        Object.keys: Devuelve las claves de un objeto en un array.
-                        Object.values: Devuelve los valores de un objeto en un array.
-                        Object.entries: Devuelve un array de pares `[clave, valor]` para cada propiedad.
-                        Enumeración vs.Propiedades propias: Uso de `hasOwnProperty` y técnicas para evitar propiedades de prototipos.
-                    </p>
+                    <ExtendPanel title='Listar propiedades'>
+                        <p>
+                            Object.keys: Devuelve las claves de un objeto en un array.
+                        </p>
+                        <p>
+                            Object.values: Devuelve los valores de un objeto en un array.
+                        </p>
+                        <p>
+                            Object.entries: Devuelve un array de pares [clave, valor] para cada propiedad.
+                        </p>
+                        <p>
+                            Enumeración vs.Propiedades propias: Uso de hasOwnProperty y técnicas para evitar propiedades de 
+                            prototipos.
+                        </p>
+                    </ExtendPanel>
 
                     <h2>Clonando objetos</h2>
 
