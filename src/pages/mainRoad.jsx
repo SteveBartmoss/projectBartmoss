@@ -1,5 +1,6 @@
 import { DivSection, DivTopicos } from "../componentes/contenedores/contenedores";
-
+import { Portada } from "../componentes/portada/portada";
+import { Card, CardAccions, CardLink } from "../componentes/card/card";
 
 export function MainRoad() {
 
