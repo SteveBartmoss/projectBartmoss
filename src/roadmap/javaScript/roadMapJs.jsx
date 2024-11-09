@@ -9,6 +9,7 @@ export function RoadMapJs() {
 
             <DivArticle>
                 <DivTopicos>
+                    
                     <h1>Objetos</h1>
 
                     <h2>Dinamismo</h2>
@@ -39,9 +40,9 @@ export function RoadMapJs() {
                     <h2>Atajos Constructores</h2>
 
                     <p>
-                        Clases(ES6) **: La sintaxis de `class` y cómo es un atajo para crear funciones constructoras.
-                        Métodos estáticos y de instancia **: Cómo definir métodos que no necesitan una instancia y cómo se relacionan con la clase.
-                        Herencia **: Conceptos básicos de herencia utilizando`extends`.
+                        Clases(ES6): La sintaxis de `class` y cómo es un atajo para crear funciones constructoras.
+                        Métodos estáticos y de instancia: Cómo definir métodos que no necesitan una instancia y cómo se relacionan con la clase.
+                        Herencia: Conceptos básicos de herencia utilizando`extends`.
                     </p>
 
                     <h1>Funciones</h1>
@@ -49,43 +50,43 @@ export function RoadMapJs() {
                     <h2>Function</h2>
 
                     <p>
-                        Declaración y expresión de funciones **: Diferencias entre `function` y funciones de tipo`function expression`.
-                        Funciones anónimas y nombradas **: Cuándo usar cada tipo y las ventajas de cada una.
-                        Arrow functions **: Cómo y cuándo usar `=>` para simplificar la sintaxis.
-                        Contexto`this` **: Cómo cambia el contexto de `this` en funciones regulares vs.funciones flecha.
+                        Declaración y expresión de funciones: Diferencias entre `function` y funciones de tipo`function expression`.
+                        Funciones anónimas y nombradas: Cuándo usar cada tipo y las ventajas de cada una.
+                        Arrow functions: Cómo y cuándo usar => para simplificar la sintaxis.
+                        Contexto this: Cómo cambia el contexto de `this` en funciones regulares vs.funciones flecha.
                     </p>
 
                     <h2>Valor y referencia</h2>
 
                     <p>
-                        Paso por valor **: Cómo los tipos primitivos(números, cadenas) se pasan por valor.
-                        Paso por referencia **: Cómo los objetos, arrays y funciones se pasan por referencia, lo que afecta la mutabilidad.
-                        Inmutabilidad **: Técnicas para hacer que los datos sean inmutables, como el uso de`Object.freeze()`.
+                        Paso por valor: Cómo los tipos primitivos(números, cadenas) se pasan por valor.
+                        Paso por referencia: Cómo los objetos, arrays y funciones se pasan por referencia, lo que afecta la mutabilidad.
+                        Inmutabilidad: Técnicas para hacer que los datos sean inmutables, como el uso de`Object.freeze()`.
                     </p>
 
                     <h2>Listar propiedades</h2>
 
                     <p>
-                        `Object.keys` **: Devuelve las claves de un objeto en un array.
-                        `Object.values` **: Devuelve los valores de un objeto en un array.
-                        `Object.entries` **: Devuelve un array de pares `[clave, valor]` para cada propiedad.
-                        Enumeración vs.Propiedades propias **: Uso de `hasOwnProperty` y técnicas para evitar propiedades de prototipos.
+                        Object.keys: Devuelve las claves de un objeto en un array.
+                        Object.values: Devuelve los valores de un objeto en un array.
+                        Object.entries: Devuelve un array de pares `[clave, valor]` para cada propiedad.
+                        Enumeración vs.Propiedades propias: Uso de `hasOwnProperty` y técnicas para evitar propiedades de prototipos.
                     </p>
 
                     <h2>Clonando objetos</h2>
 
                     <p>
-                        Shallow Copy vs.Deep Copy **: Diferencias entre copia superficial(usando`Object.assign`) y profunda(con bibliotecas o JSON).
-                        Métodos de clonación **: `Object.assign()`, desestructuración, `JSON.parse(JSON.stringify())`, y bibliotecas externas.
-                        Copias inmutables **: Técnicas para crear copias de objetos para prevenir modificaciones accidentales.
+                        Shallow Copy vs.Deep Copy: Diferencias entre copia superficial(usando`Object.assign`) y profunda(con bibliotecas o JSON).
+                        Métodos de clonación: `Object.assign()`, desestructuración, `JSON.parse(JSON.stringify())`, y bibliotecas externas.
+                        Copias inmutables: Técnicas para crear copias de objetos para prevenir modificaciones accidentales.
                     </p>
 
                     <h2>Privado vs.Público</h2>
 
                     <p>
-                        Privacidad en objetos **: Uso de closures y símbolos para simular miembros privados.
-                        Accesibilidad **: Definición de propiedades públicas vs.privadas en objetos y clases.
-                        Módulos y encapsulación **: Uso de módulos para limitar el alcance de propiedades y métodos.
+                        Privacidad en objetos: Uso de closures y símbolos para simular miembros privados.
+                        Accesibilidad: Definición de propiedades públicas vs.privadas en objetos y clases.
+                        Módulos y encapsulación: Uso de módulos para limitar el alcance de propiedades y métodos.
                     </p>
 
                     <h1>Funciones</h1>
@@ -93,44 +94,44 @@ export function RoadMapJs() {
                     <h2>Declaración VS Expresión</h2>
 
                     <p>
-                        Declaración de funciones **: `function myFunction() {... }`, en qué casos se recomienda su uso.
-                        Expresión de funciones **: `const myFunction = function () {... }`, ventajas y diferencias respecto a la declaración.
-                        Diferencias clave **: `Hoisting`, asignación de funciones como valores y el concepto de funciones anónimas.
+                        Declaración de funciones: function myFunction() &#123... &#125, en qué casos se recomienda su uso.
+                        Expresión de funciones: const myFunction = function () &#123... &#125, ventajas y diferencias respecto a la declaración.
+                        Diferencias clave: `Hoisting`, asignación de funciones como valores y el concepto de funciones anónimas.
                     </p>
 
                     <h2> let, var, const, function</h2>
 
                     <p>
-                        `var` **: Declaración de variables antes de ES6, ámbito global o de función, problemas de`hoisting`.
-                        `let` **: Introducción en ES6, ámbito de bloque, diferencia con`var`.
-                        `const` **: Variables constantes, reglas de asignación y ámbito de bloque.
-                        `function` **: Uso de funciones declaradas, diferencias de alcance y `hoisting` con `let` y`const`.
+                        var: Declaración de variables antes de ES6, ámbito global o de función, problemas de`hoisting`.
+                        let: Introducción en ES6, ámbito de bloque, diferencia con`var`.
+                        const: Variables constantes, reglas de asignación y ámbito de bloque.
+                        function: Uso de funciones declaradas, diferencias de alcance y `hoisting` con `let` y`const`.
                     </p>
 
                     <h2>Alcance(Scope)</h2>
 
                     <p>
-                        Ámbito global y local **: Cómo y cuándo se pueden acceder las variables en distintos contextos.
-                        Ámbito de bloque **: Uso de `let` y `const` dentro de bloques(como`if` y`for`).
-                        Ámbito de función **: Cómo las funciones crean su propio contexto de alcance.
-                        Closures **: Concepto de closures y cómo el alcance de las variables afecta la ejecución.
+                        Ámbito global y local: Cómo y cuándo se pueden acceder las variables en distintos contextos.
+                        Ámbito de bloque: Uso de `let` y `const` dentro de bloques(como`if` y`for`).
+                        Ámbito de función: Cómo las funciones crean su propio contexto de alcance.
+                        Closures: Concepto de closures y cómo el alcance de las variables afecta la ejecución.
                     </p>
 
                     <h2>Arguments</h2>
 
                     <p>
-                        Objeto`arguments` **: Cómo acceder a todos los argumentos pasados a una función, especialmente en funciones que no especifican parámetros explícitos.
-                        Limitaciones de `arguments` en arrow functions **: Explicación de por qué `arguments` no funciona en arrow functions.
-                        Uso de`arguments.length` **: Determinar la cantidad de argumentos en una función, especialmente cuando se usan parámetros variables.
+                        Objeto arguments: Cómo acceder a todos los argumentos pasados a una función, especialmente en funciones que no especifican parámetros explícitos.
+                        Limitaciones de arguments en arrow functions: Explicación de por qué `arguments` no funciona en arrow functions.
+                        Uso de arguments.length: Determinar la cantidad de argumentos en una función, especialmente cuando se usan parámetros variables.
                     </p>
 
                     <h2>Fat Arrow Function( => )</h2>
 
                     <p>
-                        Sintaxis básica **: Introducción a la sintaxis de las arrow functions.
-                        Ventajas **: Simplificación del código, especialmente en funciones cortas y de una línea.
-                        Limitaciones **: Ausencia del objeto `arguments` y del propio`this`.
-                        Ámbito léxico de`this` **: Cómo las arrow functions no tienen su propio`this`, lo que evita problemas de alcance.
+                        Sintaxis básica: Introducción a la sintaxis de las arrow functions.
+                        Ventajas: Simplificación del código, especialmente en funciones cortas y de una línea.
+                        Limitaciones: Ausencia del objeto `arguments` y del propio`this`.
+                        Ámbito léxico de`this` Cómo las arrow functions no tienen su propio`this`, lo que evita problemas de alcance.
                     </p>
 
                     <h2>Rest</h2>
