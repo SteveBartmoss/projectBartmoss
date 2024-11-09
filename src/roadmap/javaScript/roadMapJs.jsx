@@ -299,13 +299,17 @@ export function RoadMapJs() {
                         </p>
                     </ExtendPanel>
 
-                    <h2>Contexto de`this`</h2>
-
-                    <p>
-                        Ámbito de `this` en funciones **: Cómo el contexto de `this` varía en funciones regulares, métodos y arrow functions.
-                        Uso en clases y objetos **: `this` en métodos de clase y en constructores.
-                        Ámbito léxico en arrow functions **: Cómo el `this` en una arrow function hereda el contexto del `this` exterior.
-                    </p>
+                    <ExtendPanel title='Contexto de this'>
+                        <p>
+                            Ámbito de this en funciones: Cómo el contexto de this varía en funciones regulares, métodos y arrow functions.
+                        </p>
+                        <p>
+                            Uso en clases y objetos: this en métodos de clase y en constructores.
+                        </p>
+                        <p>
+                            Ámbito léxico en arrow functions: Cómo el this en una arrow function hereda el contexto del this exterior.
+                        </p>
+                    </ExtendPanel>
 
                     <h2>Cambiando el contexto</h2>
 
