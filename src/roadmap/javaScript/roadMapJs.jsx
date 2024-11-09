@@ -167,14 +167,20 @@ export function RoadMapJs() {
                         </p>
                     </ExtendPanel>
 
-                    <h2> let, var, const, function</h2>
-
-                    <p>
-                        var: Declaración de variables antes de ES6, ámbito global o de función, problemas de`hoisting`.
-                        let: Introducción en ES6, ámbito de bloque, diferencia con`var`.
-                        const: Variables constantes, reglas de asignación y ámbito de bloque.
-                        function: Uso de funciones declaradas, diferencias de alcance y `hoisting` con `let` y`const`.
-                    </p>
+                    <ExtendPanel title='let, var, const, function'>
+                        <p>
+                            var: Declaración de variables antes de ES6, ámbito global o de función, problemas de`hoisting`.
+                        </p>
+                        <p>
+                            let: Introducción en ES6, ámbito de bloque, diferencia con var.
+                        </p>
+                        <p>
+                            const: Variables constantes, reglas de asignación y ámbito de bloque.
+                        </p>
+                        <p>
+                            function: Uso de funciones declaradas, diferencias de alcance y hoisting con let y const.
+                        </p>
+                    </ExtendPanel>
 
                     <h2>Alcance(Scope)</h2>
 
