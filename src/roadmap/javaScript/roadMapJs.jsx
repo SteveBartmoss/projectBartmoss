@@ -16,7 +16,8 @@ export function RoadMapJs() {
 
                     <ExtendPanel title='Dinamismo'>
                         <p>
-                            Propiedades y métodos dinámicos: Añadir, modificar o eliminar propiedades y métodos de un objeto en tiempo de ejecución.
+                            Propiedades y métodos dinámicos: Añadir, modificar 
+                            o eliminar propiedades y métodos de un objeto en tiempo de ejecución.
                         </p>
 
                         <p>
@@ -24,33 +25,45 @@ export function RoadMapJs() {
                         </p>
 
                         <p>
-                            Enumeración de propiedades: Cómo recorrer propiedades de un objeto (`for...in`, `Object.keys`, `Object.values`, `Object.entries`).
+                            Enumeración de propiedades: Cómo recorrer propiedades de un objeto 
+                            (for...in, Object.keys, Object.values, Object.entries).
                         </p>
 
                         <p>
-                            Mutabilidad: Cómo los objetos pueden cambiar a lo largo del tiempo y cómo funciona el paso por referencia.
+                            Mutabilidad: Cómo los objetos pueden cambiar a lo largo del tiempo y 
+                            cómo funciona el paso por referencia.
                         </p>
                     </ExtendPanel>
 
                     <ExtendPanel title='Factory Functions'>
                         <p>
-                            Funciones de fábrica: Crear funciones que devuelvan objetos para reutilizar la lógica de creación.
+                            Funciones de fábrica: Crear funciones que devuelvan objetos para 
+                            reutilizar la lógica de creación.
                         </p>
                         <p>
-                            Ventajas: Mejor organización y encapsulamiento en comparación con el uso directo de objetos literales.
+                            Ventajas: Mejor organización y encapsulamiento en comparación con 
+                            el uso directo de objetos literales.
                         </p>
                         <p>
-                            Ejemplos: Crear objetos con propiedades y métodos compartidos, sin el uso de`new`.
+                            Ejemplos: Crear objetos con propiedades y métodos compartidos, sin 
+                            el uso de new.
                         </p>
                     </ExtendPanel>
 
-                    <h2>Constructor Functions</h2>
-
-                    <p>
-                        Funciones constructoras: Uso de funciones con `new` para crear instancias de objetos.
-                        Convenciones: Nombrado con mayúscula inicial(`PascalCase`) y uso de `this` para propiedades.
-                        Prototipos: Introducción a cómo las constructor functions pueden utilizar prototipos para métodos compartidos.
-                    </p>
+                    <ExtendPanel title='Constructor Functions'>
+                        <p>
+                            Funciones constructoras: Uso de funciones con new 
+                            para crear instancias de objetos.
+                        </p>
+                        <p>
+                            Convenciones: Nombrado con mayúscula inicial(PascalCase) y uso de this 
+                            para propiedades.
+                        </p>
+                        <p>
+                            Prototipos: Introducción a cómo las constructor functions pueden utilizar 
+                            prototipos para métodos compartidos.
+                        </p>
+                    </ExtendPanel>
 
                     <h2>Atajos Constructores</h2>
 
