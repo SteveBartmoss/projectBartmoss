@@ -97,12 +97,25 @@ export function RoadMapJs() {
                         </p>
                     </ExtendPanel>
 
-                    <h2>Valor y referencia</h2>
+                    <ExtendPanel title='Valor y referencia'>
+                        <p>
+                            Paso por valor: Cómo los tipos primitivos(números, cadenas) se pasan por valor.
+                        </p>
+                        <p>
+                            Paso por referencia: Cómo los objetos, arrays y funciones se pasan por referencia, lo que afecta
+                            la mutabilidad.
+                        </p>
+                        <p>
+                            Inmutabilidad: Técnicas para hacer que los datos sean inmutables, como el uso de Object.freeze().
+                        </p>
+                    </ExtendPanel>
+
+                    <h2></h2>
 
                     <p>
-                        Paso por valor: Cómo los tipos primitivos(números, cadenas) se pasan por valor.
-                        Paso por referencia: Cómo los objetos, arrays y funciones se pasan por referencia, lo que afecta la mutabilidad.
-                        Inmutabilidad: Técnicas para hacer que los datos sean inmutables, como el uso de`Object.freeze()`.
+
+
+
                     </p>
 
                     <h2>Listar propiedades</h2>
