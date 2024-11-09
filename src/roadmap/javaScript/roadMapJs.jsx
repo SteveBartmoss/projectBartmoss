@@ -287,13 +287,17 @@ export function RoadMapJs() {
                         </p>
                     </ExtendPanel>
 
-                    <h2>`this`</h2>
-
-                    <p>
-                        Definición básica **: Explicación de `this` como referencia al contexto de ejecución actual.
-                        `this` en objetos y funciones **: Cómo cambia `this` en distintos contextos(en métodos, en funciones, y en el ámbito global).
-                        Problemas comunes **: Ejemplos donde `this` no es lo que se espera(como en funciones internas).
-                    </p>
+                    <ExtendPanel title='this'>
+                        <p>
+                            Definición básica: Explicación de this como referencia al contexto de ejecución actual.
+                        </p>
+                        <p>
+                            this en objetos y funciones: Cómo cambia this en distintos contextos(en métodos, en funciones, y en el ámbito global).
+                        </p>
+                        <p>
+                            Problemas comunes: Ejemplos donde this no es lo que se espera(como en funciones internas).
+                        </p>
+                    </ExtendPanel>
 
                     <h2>Contexto de`this`</h2>
 
