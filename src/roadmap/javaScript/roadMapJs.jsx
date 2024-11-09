@@ -1,4 +1,5 @@
 import { DivArticle, DivTopicos } from "../../componentes/contenedores/contenedores"
+import { ExtendPanel } from "../../componentes/extendpanel/ExtendPanel"
 import { Portada } from "../../componentes/portada/portada"
 
 
@@ -8,18 +9,19 @@ export function RoadMapJs() {
             <Portada imgPortada={"/Assets/steveA.png"} title={"Road map Js"} text={"Por Steve 04/11/2024"} />
 
             <DivArticle>
+                
                 <DivTopicos>
-                    
+
                     <h1>Objetos</h1>
 
-                    <h2>Dinamismo</h2>
-
-                    <p>
-                        Propiedades y métodos dinámicos: Añadir, modificar o eliminar propiedades y métodos de un objeto en tiempo de ejecución.
-                        Acceso a propiedades: Notación de punto vs. notación de corchetes.
-                        Enumeración de propiedades: Cómo recorrer propiedades de un objeto (`for...in`, `Object.keys`, `Object.values`, `Object.entries`).
-                        Mutabilidad: Cómo los objetos pueden cambiar a lo largo del tiempo y cómo funciona el paso por referencia.
-                    </p>
+                    <ExtendPanel title='Dinamismo'>
+                        <p>
+                            Propiedades y métodos dinámicos: Añadir, modificar o eliminar propiedades y métodos de un objeto en tiempo de ejecución.
+                            Acceso a propiedades: Notación de punto vs. notación de corchetes.
+                            Enumeración de propiedades: Cómo recorrer propiedades de un objeto (`for...in`, `Object.keys`, `Object.values`, `Object.entries`).
+                            Mutabilidad: Cómo los objetos pueden cambiar a lo largo del tiempo y cómo funciona el paso por referencia.
+                        </p>
+                    </ExtendPanel>
 
                     <h2>Factory Functions</h2>
 
