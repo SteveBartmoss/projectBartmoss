@@ -16,7 +16,7 @@ export function RoadMapJs() {
 
                     <ExtendPanel title='Dinamismo'>
                         <p>
-                            Propiedades y métodos dinámicos: Añadir, modificar 
+                            Propiedades y métodos dinámicos: Añadir, modificar
                             o eliminar propiedades y métodos de un objeto en tiempo de ejecución.
                         </p>
 
@@ -25,53 +25,59 @@ export function RoadMapJs() {
                         </p>
 
                         <p>
-                            Enumeración de propiedades: Cómo recorrer propiedades de un objeto 
+                            Enumeración de propiedades: Cómo recorrer propiedades de un objeto
                             (for...in, Object.keys, Object.values, Object.entries).
                         </p>
 
                         <p>
-                            Mutabilidad: Cómo los objetos pueden cambiar a lo largo del tiempo y 
+                            Mutabilidad: Cómo los objetos pueden cambiar a lo largo del tiempo y
                             cómo funciona el paso por referencia.
                         </p>
                     </ExtendPanel>
 
                     <ExtendPanel title='Factory Functions'>
                         <p>
-                            Funciones de fábrica: Crear funciones que devuelvan objetos para 
+                            Funciones de fábrica: Crear funciones que devuelvan objetos para
                             reutilizar la lógica de creación.
                         </p>
                         <p>
-                            Ventajas: Mejor organización y encapsulamiento en comparación con 
+                            Ventajas: Mejor organización y encapsulamiento en comparación con
                             el uso directo de objetos literales.
                         </p>
                         <p>
-                            Ejemplos: Crear objetos con propiedades y métodos compartidos, sin 
+                            Ejemplos: Crear objetos con propiedades y métodos compartidos, sin
                             el uso de new.
                         </p>
                     </ExtendPanel>
 
                     <ExtendPanel title='Constructor Functions'>
                         <p>
-                            Funciones constructoras: Uso de funciones con new 
+                            Funciones constructoras: Uso de funciones con new
                             para crear instancias de objetos.
                         </p>
                         <p>
-                            Convenciones: Nombrado con mayúscula inicial(PascalCase) y uso de this 
+                            Convenciones: Nombrado con mayúscula inicial(PascalCase) y uso de this
                             para propiedades.
                         </p>
                         <p>
-                            Prototipos: Introducción a cómo las constructor functions pueden utilizar 
+                            Prototipos: Introducción a cómo las constructor functions pueden utilizar
                             prototipos para métodos compartidos.
                         </p>
                     </ExtendPanel>
 
-                    <h2>Atajos Constructores</h2>
-
-                    <p>
-                        Clases(ES6): La sintaxis de `class` y cómo es un atajo para crear funciones constructoras.
-                        Métodos estáticos y de instancia: Cómo definir métodos que no necesitan una instancia y cómo se relacionan con la clase.
-                        Herencia: Conceptos básicos de herencia utilizando`extends`.
-                    </p>
+                    <ExtendPanel title='Atajos Constructores'>
+                        <p>
+                            Clases(ES6): La sintaxis de class y cómo es un atajo para crear funciones
+                            constructoras.
+                        </p>
+                        <p>
+                            Métodos estáticos y de instancia: Cómo definir métodos que no necesitan una
+                            instancia y cómo se relacionan con la clase.
+                        </p>
+                        <p>
+                            Herencia: Conceptos básicos de herencia utilizando extends.
+                        </p>
+                    </ExtendPanel>
 
                     <h1>Funciones</h1>
 
