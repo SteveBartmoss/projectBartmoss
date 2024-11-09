@@ -197,13 +197,17 @@ export function RoadMapJs() {
                         </p>
                     </ExtendPanel>
 
-                    <h2>Arguments</h2>
-
-                    <p>
-                        Objeto arguments: Cómo acceder a todos los argumentos pasados a una función, especialmente en funciones que no especifican parámetros explícitos.
-                        Limitaciones de arguments en arrow functions: Explicación de por qué `arguments` no funciona en arrow functions.
-                        Uso de arguments.length: Determinar la cantidad de argumentos en una función, especialmente cuando se usan parámetros variables.
-                    </p>
+                    <ExtendPanel title='Arguments'>
+                        <p>
+                            Objeto arguments: Cómo acceder a todos los argumentos pasados a una función, especialmente en funciones que no especifican parámetros explícitos.
+                        </p>
+                        <p>
+                            Limitaciones de arguments en arrow functions: Explicación de por qué arguments no funciona en arrow functions.
+                        </p>
+                        <p>
+                            Uso de arguments.length: Determinar la cantidad de argumentos en una función, especialmente cuando se usan parámetros variables.
+                        </p>
+                    </ExtendPanel>
 
                     <h2>Fat Arrow Function( => )</h2>
 
