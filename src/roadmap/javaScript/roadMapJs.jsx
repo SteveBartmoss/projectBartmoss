@@ -79,8 +79,6 @@ export function RoadMapJs() {
                         </p>
                     </ExtendPanel>
 
-                    <h1>Funciones</h1>
-
                     <ExtendPanel title='Function'>
                         <p>
                             Declaración y expresión de funciones: Diferencias entre function y funciones de
@@ -140,13 +138,17 @@ export function RoadMapJs() {
                         </p>
                     </ExtendPanel>
 
-                    <h2>Privado vs.Público</h2>
-
-                    <p>
-                        Privacidad en objetos: Uso de closures y símbolos para simular miembros privados.
-                        Accesibilidad: Definición de propiedades públicas vs.privadas en objetos y clases.
-                        Módulos y encapsulación: Uso de módulos para limitar el alcance de propiedades y métodos.
-                    </p>
+                    <ExtendPanel title='Privado vs.Público'>
+                        <p>
+                            Privacidad en objetos: Uso de closures y símbolos para simular miembros privados.
+                        </p>
+                        <p>
+                            Accesibilidad: Definición de propiedades públicas vs.privadas en objetos y clases.
+                        </p>
+                        <p>
+                            Módulos y encapsulación: Uso de módulos para limitar el alcance de propiedades y métodos.
+                        </p>
+                    </ExtendPanel>
 
                     <h1>Funciones</h1>
 
