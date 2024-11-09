@@ -121,18 +121,24 @@ export function RoadMapJs() {
                             Object.entries: Devuelve un array de pares [clave, valor] para cada propiedad.
                         </p>
                         <p>
-                            Enumeración vs.Propiedades propias: Uso de hasOwnProperty y técnicas para evitar propiedades de 
+                            Enumeración vs.Propiedades propias: Uso de hasOwnProperty y técnicas para evitar propiedades de
                             prototipos.
                         </p>
                     </ExtendPanel>
 
-                    <h2>Clonando objetos</h2>
-
-                    <p>
-                        Shallow Copy vs.Deep Copy: Diferencias entre copia superficial(usando`Object.assign`) y profunda(con bibliotecas o JSON).
-                        Métodos de clonación: `Object.assign()`, desestructuración, `JSON.parse(JSON.stringify())`, y bibliotecas externas.
-                        Copias inmutables: Técnicas para crear copias de objetos para prevenir modificaciones accidentales.
-                    </p>
+                    <ExtendPanel title='Clonando objetos'>
+                        <p>
+                            Shallow Copy vs.Deep Copy: Diferencias entre copia superficial(usando Object.assign)
+                            y profunda(con bibliotecas o JSON).
+                        </p>
+                        <p>
+                            Métodos de clonación: Object.assign(), desestructuración, JSON.parse(JSON.stringify()),
+                            y bibliotecas externas.
+                        </p>
+                        <p>
+                            Copias inmutables: Técnicas para crear copias de objetos para prevenir modificaciones accidentales.
+                        </p>
+                    </ExtendPanel>
 
                     <h2>Privado vs.Público</h2>
 
