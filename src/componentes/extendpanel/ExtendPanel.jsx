@@ -1,4 +1,5 @@
 import { useState } from "react";
+import './ExtendPanel.css'
 
 export function ExtendPanel({ children, title }) {
 
