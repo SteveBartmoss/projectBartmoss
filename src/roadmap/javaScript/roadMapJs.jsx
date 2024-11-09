@@ -81,14 +81,21 @@ export function RoadMapJs() {
 
                     <h1>Funciones</h1>
 
-                    <h2>Function</h2>
-
-                    <p>
-                        Declaración y expresión de funciones: Diferencias entre `function` y funciones de tipo`function expression`.
-                        Funciones anónimas y nombradas: Cuándo usar cada tipo y las ventajas de cada una.
-                        Arrow functions: Cómo y cuándo usar => para simplificar la sintaxis.
-                        Contexto this: Cómo cambia el contexto de `this` en funciones regulares vs.funciones flecha.
-                    </p>
+                    <ExtendPanel title='Function'>
+                        <p>
+                            Declaración y expresión de funciones: Diferencias entre function y funciones de
+                            tipo function expression.
+                        </p>
+                        <p>
+                            Funciones anónimas y nombradas: Cuándo usar cada tipo y las ventajas de cada una.
+                        </p>
+                        <p>
+                            Arrow functions: Cómo y cuándo usar =&gt; para simplificar la sintaxis.
+                        </p>
+                        <p>
+                            Contexto this: Cómo cambia el contexto de this en funciones regulares vs.funciones flecha.
+                        </p>
+                    </ExtendPanel>
 
                     <h2>Valor y referencia</h2>
 
