@@ -236,13 +236,17 @@ export function RoadMapJs() {
                         </p>
                     </ExtendPanel>
 
-                    <h2>Parámetros predeterminados</h2>
-
-                    <p>
-                        Parámetros con valores por defecto **: Establecer valores predeterminados para parámetros en funciones.
-                        Orden de los parámetros **: Colocar los parámetros predeterminados al final para evitar conflictos.
-                        Uso de expresiones **: Asignar un valor predeterminado basado en el valor de otros parámetros.
-                    </p>
+                    <ExtendPanel title='Parámetros predeterminados'>
+                        <p>
+                            Parámetros con valores por defecto: Establecer valores predeterminados para parámetros en funciones.
+                        </p>
+                        <p>
+                            Orden de los parámetros: Colocar los parámetros predeterminados al final para evitar conflictos.
+                        </p>
+                        <p>
+                            Uso de expresiones: Asignar un valor predeterminado basado en el valor de otros parámetros.
+                        </p>
+                    </ExtendPanel>
 
                     <h2>Param Destructuring</h2>
 
