@@ -272,14 +272,20 @@ export function RoadMapJs() {
                         </p>
                     </ExtendPanel>
 
-                    <h2>Try y Catch</h2>
-
-                    <p>
-                        Bloque`try...catch` **: Manejo de excepciones en JavaScript, estructura básica.
-                        `try...catch...finally` **: Uso de `finally` para ejecutar código independientemente de los errores.
-                        Propagación de errores **: Cómo los errores se "propagan" y pueden capturarse en niveles superiores.
-                        Manejo de errores en funciones asincrónicas **: Introducción a `async / await ` y cómo usar `try...catch` con promesas.
-                    </p>
+                    <ExtendPanel title='Try y Catch'>
+                        <p>
+                            Bloque try...catch: Manejo de excepciones en JavaScript, estructura básica.
+                        </p>
+                        <p>
+                            try...catch...finally: Uso de finally para ejecutar código independientemente de los errores.
+                        </p>
+                        <p>
+                            Propagación de errores: Cómo los errores se "propagan" y pueden capturarse en niveles superiores.
+                        </p>
+                        <p>
+                            Manejo de errores en funciones asincrónicas: Introducción a async / await y cómo usar try...catch con promesas.
+                        </p>
+                    </ExtendPanel>
 
                     <h2>`this`</h2>
 
