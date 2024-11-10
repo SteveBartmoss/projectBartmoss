@@ -340,17 +340,24 @@ export function RoadMapJs() {
                         </p>
                     </ExtendPanel>
 
+                    <ExtendPanel title='Herencia'>
+
+                        <p>
+                            Concepto de herencia en JavaScript: Entender cómo un objeto puede "heredar" propiedades y métodos de otro objeto o clase.
+                        </p>
+                        <p>
+                            Uso de Object.create(): Crear objetos heredando prototipos específicos.
+                        </p>
+
+                        <p>
+                            Clases en ES6: Cómo las clases en JavaScript implementan herencia de forma más sencilla que los prototipos.
+                        </p>
+
+                    </ExtendPanel>
+
                 </DivContent>
 
                 <DivTopicos>
-
-                    <h2>Herencia</h2>
-
-                    <p>
-                        Concepto de herencia en JavaScript **: Entender cómo un objeto puede "heredar" propiedades y métodos de otro objeto o clase.
-                        Uso de`Object.create()` **: Crear objetos heredando prototipos específicos.
-                        Clases en ES6 **: Cómo las clases en JavaScript implementan herencia de forma más sencilla que los prototipos.
-                    </p>
 
                     <h2>Prototipos</h2>
 
