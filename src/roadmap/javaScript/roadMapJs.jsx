@@ -427,17 +427,21 @@ export function RoadMapJs() {
                         </p>
                     </ExtendPanel>
 
+                    <ExtendPanel title='Method Override'>
+                        <p>
+                            Sobrescribir métodos: Cómo una subclase puede redefinir los métodos heredados de una superclase.
+                        </p>
+                        <p>
+                            Uso de super.methodName(): Llamada al método de la superclase desde la subclase para extender la funcionalidad.
+                        </p>
+                        <p>
+                            Buenas prácticas: Casos donde es recomendable sobrescribir métodos y cómo hacerlo de manera efectiva.
+                        </p>
+                    </ExtendPanel>
+
                 </DivContent>
 
                 <DivTopicos>
-
-                    <h2>Method Override</h2>
-
-                    <p>
-                        Sobrescribir métodos **: Cómo una subclase puede redefinir los métodos heredados de una superclase.
-                        Uso de`super.methodName()` **: Llamada al método de la superclase desde la subclase para extender la funcionalidad.
-                        Buenas prácticas **: Casos donde es recomendable sobrescribir métodos y cómo hacerlo de manera efectiva.
-                    </p>
 
                     <h2>Polimorfismo</h2>
 
