@@ -379,17 +379,21 @@ export function RoadMapJs() {
                         </p>
                     </ExtendPanel>
 
+                    <ExtendPanel title='Iterando Propiedades'>
+                        <p>
+                            Métodos de iteración de propiedades: for...in, Object.keys(), Object.values(), y Object.entries().
+                        </p>
+                        <p>
+                            Propiedades enumerables: Qué significa que una propiedad sea enumerable y cómo afecta la iteración.
+                        </p>
+                        <p>
+                            Distinguir propiedades propias y heredadas: Uso de hasOwnProperty() para identificar las propiedades definidas en el propio objeto versus las del prototipo.
+                        </p>
+                    </ExtendPanel>
+
                 </DivContent>
 
                 <DivTopicos>
-
-                    <h2>Iterando Propiedades</h2>
-
-                    <p>
-                        Métodos de iteración de propiedades **: `for...in`, `Object.keys()`, `Object.values()`, y`Object.entries()`.
-                        Propiedades enumerables **: Qué significa que una propiedad sea enumerable y cómo afecta la iteración.
-                        Distinguir propiedades propias y heredadas **: Uso de `hasOwnProperty()` para identificar las propiedades definidas en el propio objeto versus las del prototipo.
-                    </p>
 
                     <h2>Extendiendo Prototipos</h2>
 
