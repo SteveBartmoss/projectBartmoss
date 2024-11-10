@@ -403,17 +403,21 @@ export function RoadMapJs() {
                         </p>
                     </ExtendPanel>
 
+                    <ExtendPanel title='Implementando Herencia'>
+                        <p>
+                            Herencia prototipal: Usar prototipos para crear una relación entre objetos que permita la herencia de métodos y propiedades.
+                        </p>
+                        <p>
+                            Clases en ES6: Uso de extends y super en ES6 para implementar herencia de manera más legible y estructurada.
+                        </p>
+                        <p>
+                            Prototipos heredados: Cómo funcionan los prototipos en la herencia para compartir métodos entre subclases y superclases.
+                        </p>
+                    </ExtendPanel>
+
                 </DivContent>
 
                 <DivTopicos>
-
-                    <h2>Implementando Herencia</h2>
-
-                    <p>
-                        Herencia prototipal **: Usar prototipos para crear una relación entre objetos que permita la herencia de métodos y propiedades.
-                        Clases en ES6 **: Uso de `extends` y `super` en ES6 para implementar herencia de manera más legible y estructurada.
-                        Prototipos heredados **: Cómo funcionan los prototipos en la herencia para compartir métodos entre subclases y superclases.
-                    </p>
 
                     <h2>Constructor Padre</h2>
 
