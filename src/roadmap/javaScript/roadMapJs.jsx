@@ -439,17 +439,21 @@ export function RoadMapJs() {
                         </p>
                     </ExtendPanel>
 
+                    <ExtendPanel title='Polimorfismo'>
+                        <p>
+                            Polimorfismo en JavaScript: Capacidad de múltiples clases de compartir la misma interfaz(métodos) con implementaciones específicas.
+                        </p>
+                        <p>
+                            Uso de polimorfismo en herencia: Crear métodos comunes con comportamientos específicos en clases derivadas.
+                        </p>
+                        <p>
+                            Ventajas de polimorfismo: Ejemplos prácticos de cómo el polimorfismo facilita la expansión y mantenimiento del código.
+                        </p>
+                    </ExtendPanel>
+
                 </DivContent>
 
                 <DivTopicos>
-
-                    <h2>Polimorfismo</h2>
-
-                    <p>
-                        Polimorfismo en JavaScript **: Capacidad de múltiples clases de compartir la misma interfaz(métodos) con implementaciones específicas.
-                        Uso de polimorfismo en herencia **: Crear métodos comunes con comportamientos específicos en clases derivadas.
-                        Ventajas de polimorfismo **: Ejemplos prácticos de cómo el polimorfismo facilita la expansión y mantenimiento del código.
-                    </p>
 
                     <h2>Composición VS Herencia</h2>
 
