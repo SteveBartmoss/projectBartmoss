@@ -451,16 +451,28 @@ export function RoadMapJs() {
                         </p>
                     </ExtendPanel>
 
+                    <ExtendPanel title='Composición VS Herencia'>
+                        <p>
+                            Concepto de composición: Creación de objetos complejos a partir de componentes más simples en lugar de usar herencia.
+                        </p>
+                        <p>
+                            Diferencias entre composición y herencia: Ventajas de cada enfoque y casos de uso recomendados.
+                        </p>
+                        <p>
+                            Patrones de composición: Ejemplos como el patrón "Módulo" o la técnica "Mixin" para combinar funcionalidades.
+                        </p>
+                    </ExtendPanel>
+
                 </DivContent>
 
                 <DivTopicos>
 
-                    <h2>Composición VS Herencia</h2>
+                    <h2></h2>
 
                     <p>
-                        Concepto de composición **: Creación de objetos complejos a partir de componentes más simples en lugar de usar herencia.
-                        Diferencias entre composición y herencia **: Ventajas de cada enfoque y casos de uso recomendados.
-                        Patrones de composición **: Ejemplos como el patrón "Módulo" o la técnica "Mixin" para combinar funcionalidades.
+
+
+
                     </p>
 
                     <h2>Mixins</h2>
