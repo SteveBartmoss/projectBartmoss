@@ -67,3 +67,11 @@ export function DivTopicos({children}){
         </div>
     )
 }
+
+export function DivContent({children}){
+    return(
+        <div className="div-content">
+            {children}
+        </div>
+    )
+}
