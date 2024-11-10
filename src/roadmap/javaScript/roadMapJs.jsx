@@ -311,16 +311,18 @@ export function RoadMapJs() {
                         </p>
                     </ExtendPanel>
 
-                    <h2>Cambiando el contexto</h2>
-
-                    <p>
-                        Métodos`call`, `apply`, y`bind` **:
-                        `call` **: Cambiar el contexto de `this` pasando los argumentos uno a uno.
-                        `apply` **: Cambiar el contexto de `this` pasando los argumentos como array.
-                        `bind` **: Crear una nueva función con un contexto de `this` fijado.
-                        Usos comunes **: Ejemplos prácticos de cuándo y por qué cambiar el contexto(eventos en navegadores, herencia, etc.).
-                        Arrow functions vs.funciones normales **: Diferencias en el uso y cómo afecta el contexto de`this`.
-                    </p>
+                    <ExtendPanel title='Cambiando el contexto'>
+                        <p>
+                            Métodos call, apply, y bind: call Cambiar el contexto de this pasando los argumentos uno a uno.
+                            apply Cambiar el contexto de this pasando los argumentos como array. bind Crear una nueva función con un contexto de this fijado.
+                        </p>
+                        <p>
+                            Usos comunes: Ejemplos prácticos de cuándo y por qué cambiar el contexto(eventos en navegadores, herencia, etc.).
+                        </p>
+                        <p>
+                            Arrow functions vs.funciones normales: Diferencias en el uso y cómo afecta el contexto de this.
+                        </p>
+                    </ExtendPanel>
 
                     <h1>Prototipos</h1>
 
