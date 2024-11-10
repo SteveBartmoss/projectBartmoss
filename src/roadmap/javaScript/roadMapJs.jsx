@@ -367,17 +367,21 @@ export function RoadMapJs() {
                         </p>
                     </ExtendPanel>
 
+                    <ExtendPanel title='Prototipos VS Instancias'>
+                        <p>
+                            Diferencia entre prototipos e instancias: Qué se comparte entre instancias(métodos del prototipo) y qué es exclusivo de cada instancia(propiedades propias).
+                        </p>
+                        <p>
+                            Métodos compartidos: Ventajas de definir métodos en el prototipo en lugar de dentro de cada instancia.
+                        </p>
+                        <p>
+                            Instancias: Cómo crear instancias que contienen sus propias propiedades, pero comparten métodos con otros objetos de la misma clase / prototipo.
+                        </p>
+                    </ExtendPanel>
+
                 </DivContent>
 
                 <DivTopicos>
-
-                    <h2>Prototipos VS Instancias</h2>
-
-                    <p>
-                        Diferencia entre prototipos e instancias **: Qué se comparte entre instancias(métodos del prototipo) y qué es exclusivo de cada instancia(propiedades propias).
-                        Métodos compartidos **: Ventajas de definir métodos en el prototipo en lugar de dentro de cada instancia.
-                        Instancias **: Cómo crear instancias que contienen sus propias propiedades, pero comparten métodos con otros objetos de la misma clase / prototipo.
-                    </p>
 
                     <h2>Iterando Propiedades</h2>
 
