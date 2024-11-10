@@ -355,17 +355,21 @@ export function RoadMapJs() {
 
                     </ExtendPanel>
 
+                    <ExtendPanel title='Prototipos'>
+                        <p>
+                            Sistema de prototipos en JavaScript: Entender que cada objeto tiene una referencia interna([[Prototype]]) a otro objeto.
+                        </p>
+                        <p>
+                            Objeto prototype: Cómo funciona y se usa el prototype en funciones constructoras para definir métodos y propiedades compartidas.
+                        </p>
+                        <p>
+                            Prototypal Chain: Cadena de prototipos que permite a los objetos buscar propiedades y métodos en su prototipo si no están definidos localmente.
+                        </p>
+                    </ExtendPanel>
+
                 </DivContent>
 
                 <DivTopicos>
-
-                    <h2>Prototipos</h2>
-
-                    <p>
-                        Sistema de prototipos en JavaScript **: Entender que cada objeto tiene una referencia interna(`[[Prototype]]`) a otro objeto.
-                        Objeto`prototype` **: Cómo funciona y se usa el `prototype` en funciones constructoras para definir métodos y propiedades compartidas.
-                        Prototypal Chain **: Cadena de prototipos que permite a los objetos buscar propiedades y métodos en su prototipo si no están definidos localmente.
-                    </p>
 
                     <h2>Prototipos VS Instancias</h2>
 
