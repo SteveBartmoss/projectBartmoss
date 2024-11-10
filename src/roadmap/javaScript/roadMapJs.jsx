@@ -391,17 +391,21 @@ export function RoadMapJs() {
                         </p>
                     </ExtendPanel>
 
+                    <ExtendPanel title='Extendiendo Prototipos'>
+                        <p>
+                            Extensión de prototipos: Agregar nuevos métodos y propiedades al prototype de una función constructora.
+                        </p>
+                        <p>
+                            Extender tipos nativos: Riesgos y ventajas de modificar los prototipos de tipos nativos como Array o String.
+                        </p>
+                        <p>
+                            Compatibilidad y conflictos: Consideraciones al extender prototipos, especialmente en librerías compartidas.
+                        </p>
+                    </ExtendPanel>
+
                 </DivContent>
 
                 <DivTopicos>
-
-                    <h2>Extendiendo Prototipos</h2>
-
-                    <p>
-                        Extensión de prototipos **: Agregar nuevos métodos y propiedades al `prototype` de una función constructora.
-                        Extender tipos nativos **: Riesgos y ventajas de modificar los prototipos de tipos nativos como `Array` o`String`.
-                        Compatibilidad y conflictos **: Consideraciones al extender prototipos, especialmente en librerías compartidas.
-                    </p>
 
                     <h2>Implementando Herencia</h2>
 
