@@ -326,14 +326,20 @@ export function RoadMapJs() {
 
                     <h1>Prototipos</h1>
 
-                    <h2>4 Principios de la POO</h2>
-
-                    <p>
-                        Encapsulación **: Agrupación de datos y métodos en una estructura(como un objeto o clase) y control de su acceso.
-                        Abstracción **: Ocultación de detalles internos complejos, proporcionando una interfaz simplificada.
-                        Herencia **: Creación de nuevas estructuras(clases u objetos) que adquieren propiedades de otras.
-                        Polimorfismo **: Capacidad de los objetos para compartir la misma interfaz y responder de manera específica según su tipo.
-                    </p>
+                    <ExtendPanel title='4 Principios de la POO'>
+                        <p>
+                            Encapsulación: Agrupación de datos y métodos en una estructura(como un objeto o clase) y control de su acceso.
+                        </p>
+                        <p>
+                            Abstracción: Ocultación de detalles internos complejos, proporcionando una interfaz simplificada.
+                        </p>
+                        <p>
+                            Herencia: Creación de nuevas estructuras(clases u objetos) que adquieren propiedades de otras.
+                        </p>
+                        <p>
+                            Polimorfismo: Capacidad de los objetos para compartir la misma interfaz y responder de manera específica según su tipo.
+                        </p>
+                    </ExtendPanel>
 
                     <h2>Herencia</h2>
 
