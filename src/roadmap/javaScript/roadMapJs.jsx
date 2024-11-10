@@ -1,4 +1,4 @@
-import { DivArticle, DivTopicos } from "../../componentes/contenedores/contenedores"
+import { DivArticle, DivContent, DivTopicos } from "../../componentes/contenedores/contenedores"
 import { ExtendPanel } from "../../componentes/extendpanel/ExtendPanel"
 import { Portada } from "../../componentes/portada/portada"
 
@@ -10,8 +10,7 @@ export function RoadMapJs() {
 
             <DivArticle>
 
-                <DivTopicos>
-
+                <DivContent>
                     <h1>Objetos</h1>
 
                     <ExtendPanel title='Dinamismo'>
@@ -340,6 +339,10 @@ export function RoadMapJs() {
                             Polimorfismo: Capacidad de los objetos para compartir la misma interfaz y responder de manera específica según su tipo.
                         </p>
                     </ExtendPanel>
+
+                </DivContent>
+
+                <DivTopicos>
 
                     <h2>Herencia</h2>
 
