@@ -415,17 +415,21 @@ export function RoadMapJs() {
                         </p>
                     </ExtendPanel>
 
+                    <ExtendPanel title='Constructor Padre'>
+                        <p>
+                            Uso del constructor padre: Llamada al constructor del objeto o clase padre desde la subclase usando super.
+                        </p>
+                        <p>
+                            Configuración de propiedades heredadas: Cómo inicializar las propiedades del constructor padre en una subclase.
+                        </p>
+                        <p>
+                            Superclase y subclase: Definir y diferenciar entre una clase base(padre) y una clase derivada(hija).
+                        </p>
+                    </ExtendPanel>
+
                 </DivContent>
 
                 <DivTopicos>
-
-                    <h2>Constructor Padre</h2>
-
-                    <p>
-                        Uso del constructor padre **: Llamada al constructor del objeto o clase padre desde la subclase usando`super`.
-                        Configuración de propiedades heredadas **: Cómo inicializar las propiedades del constructor padre en una subclase.
-                        Superclase y subclase **: Definir y diferenciar entre una clase base(padre) y una clase derivada(hija).
-                    </p>
 
                     <h2>Method Override</h2>
 
