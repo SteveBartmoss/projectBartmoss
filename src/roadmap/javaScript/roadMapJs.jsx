@@ -512,23 +512,25 @@ export function RoadMapJs() {
 
                     <ExtendPanel title='Catch y Finally'>
                         <p>
-                        Método .catch(): Captura de errores en una cadena de promesas y cómo usarlos para manejar excepciones de forma centralizada.
+                            Método .catch(): Captura de errores en una cadena de promesas y cómo usarlos para manejar excepciones de forma centralizada.
                         </p>
                         <p>
-                        Método .finally(): Uso de .finally() para ejecutar código independientemente del resultado, como tareas de limpieza o registro.
+                            Método .finally(): Uso de .finally() para ejecutar código independientemente del resultado, como tareas de limpieza o registro.
+                        </p>
+                    </ExtendPanel>
+
+                    <ExtendPanel title='Métodos estáticos'>
+                        <p>
+                            Promise.resolve()  y Promise.reject(): Métodos para crear promesas que ya están en un estado de éxito o error.
+                        </p>
+                        <p>
+                            Promise.all(), Promise.race(), Promise.any(), Promise.allSettled(): Métodos que permiten controlar y combinar múltiples promesas en paralelo.
                         </p>
                     </ExtendPanel>
 
                 </DivContent>
 
                 <DivTopicos>
-
-                    <h2>Métodos estáticos</h2>
-
-                    <p>
-                        `Promise.resolve()` y`Promise.reject()` **: Métodos para crear promesas que ya están en un estado de éxito o error.
-                        `Promise.all()`, `Promise.race()`, `Promise.any()`, `Promise.allSettled()` **: Métodos que permiten controlar y combinar múltiples promesas en paralelo.
-                    </p>
 
                     <h2>Paralelo, `all` y`race`</h2>
 
