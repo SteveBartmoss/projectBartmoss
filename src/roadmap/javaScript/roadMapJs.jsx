@@ -510,16 +510,18 @@ export function RoadMapJs() {
                         </p>
                     </ExtendPanel>
 
+                    <ExtendPanel title='Catch y Finally'>
+                        <p>
+                        Método .catch(): Captura de errores en una cadena de promesas y cómo usarlos para manejar excepciones de forma centralizada.
+                        </p>
+                        <p>
+                        Método .finally(): Uso de .finally() para ejecutar código independientemente del resultado, como tareas de limpieza o registro.
+                        </p>
+                    </ExtendPanel>
+
                 </DivContent>
 
                 <DivTopicos>
-
-                    <h2>Catch y Finally</h2>
-
-                    <p>
-                        Método`.catch()` **: Captura de errores en una cadena de promesas y cómo usarlos para manejar excepciones de forma centralizada.
-                        Método`.finally()` **: Uso de `.finally()` para ejecutar código independientemente del resultado, como tareas de limpieza o registro.
-                    </p>
 
                     <h2>Métodos estáticos</h2>
 
