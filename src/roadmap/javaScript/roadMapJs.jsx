@@ -501,16 +501,18 @@ export function RoadMapJs() {
                         </p>
                     </ExtendPanel>
 
+                    <ExtendPanel title='Cadena'>
+                        <p>
+                            Encadenamiento de promesas: Cómo estructurar varias operaciones asíncronas en secuencia usando `.then()` para mejorar la legibilidad del código.
+                        </p>
+                        <p>
+                            Propagación de errores **: Cómo manejar errores en una cadena de promesas sin romper el flujo.
+                        </p>
+                    </ExtendPanel>
+
                 </DivContent>
 
                 <DivTopicos>
-
-                    <h2>Cadena</h2>
-
-                    <p>
-                        Encadenamiento de promesas **: Cómo estructurar varias operaciones asíncronas en secuencia usando `.then()` para mejorar la legibilidad del código.
-                        Propagación de errores **: Cómo manejar errores en una cadena de promesas sin romper el flujo.
-                    </p>
 
                     <h2>Catch y Finally</h2>
 
