@@ -540,17 +540,21 @@ export function RoadMapJs() {
                         </p>
                     </ExtendPanel>
 
+                    <ExtendPanel title='Paralelo, any y allSettled'>
+                        <p>
+                            Promise.any(): Esperar a que cualquiera de las promesas en un conjunto se cumpla con éxito.
+                        </p>
+                        <p>
+                            Promise.allSettled(): Ejecutar promesas en paralelo sin importar el resultado, obteniendo información sobre todas ellas, sean éxito o error.
+                        </p>
+                        <p>
+                            Usos y ejemplos **: Casos de uso en los que estas funciones son útiles, como cuando se necesitan resultados parciales o cuando se desea manejar errores individualmente.
+                        </p>
+                    </ExtendPanel>
+
                 </DivContent>
 
                 <DivTopicos>
-
-                    <h2>Paralelo, `any` y`allSettled`</h2>
-
-                    <p>
-                        `Promise.any()` **: Esperar a que cualquiera de las promesas en un conjunto se cumpla con éxito.
-                        `Promise.allSettled()` **: Ejecutar promesas en paralelo sin importar el resultado, obteniendo información sobre todas ellas, sean éxito o error.
-                        Usos y ejemplos **: Casos de uso en los que estas funciones son útiles, como cuando se necesitan resultados parciales o cuando se desea manejar errores individualmente.
-                    </p>
 
                     <h2>Argumentos</h2>
 
