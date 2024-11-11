@@ -489,16 +489,21 @@ export function RoadMapJs() {
                         </p>
                     </ExtendPanel>
 
+                    <ExtendPanel title='Promesas'>
+                        <p>
+                            ¿Qué es una promesa ?: Concepto de promesa como un objeto que representa la eventual finalización(o falla) de una operación asíncrona.
+                        </p>
+                        <p>
+                            Estados de las promesas: Explicación de los estados(pending, fulfilled, y rejected) y cómo las promesas se mueven entre ellos.
+                        </p>
+                        <p>
+                            Métodos .then() y .catch(): Uso de estos métodos para manejar resultados de éxito y errores en promesas.
+                        </p>
+                    </ExtendPanel>
+
                 </DivContent>
 
                 <DivTopicos>
-                    <h2>Promesas</h2>
-
-                    <p>
-                        ¿Qué es una promesa ?**: Concepto de promesa como un objeto que representa la eventual finalización(o falla) de una operación asíncrona.
-                        Estados de las promesas **: Explicación de los estados(`pending`, `fulfilled`, y`rejected`) y cómo las promesas se mueven entre ellos.
-                        Métodos`.then()` y`.catch()` **: Uso de estos métodos para manejar resultados de éxito y errores en promesas.
-                    </p>
 
                     <h2>Cadena</h2>
 
