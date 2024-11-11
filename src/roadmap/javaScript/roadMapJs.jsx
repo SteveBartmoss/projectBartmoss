@@ -564,18 +564,24 @@ export function RoadMapJs() {
                         </p>
                     </ExtendPanel>
 
+                    <ExtendPanel title='async y await'>
+                        <p>
+                            Introducción a async y await: Facilitar el manejo de promesas mediante una sintaxis más legible y estructurada.
+                        </p>
+                        <p>
+                            Creación de funciones async: Cómo async convierte una función en una que devuelve una promesa.
+                        </p>
+                        <p>
+                            Uso de await: Suspender la ejecución de la función hasta que la promesa se resuelva y obtener su valor.
+                        </p>
+                        <p>
+                            Manejo de errores con try/catch en funciones async: Cómo capturar errores dentro de funciones asíncronas usando bloques`try/catch`.
+                        </p>
+                    </ExtendPanel>
+
                 </DivContent>
 
                 <DivTopicos>
-
-                    <h2>`async` y`await`</h2>
-
-                    <p>
-                        Introducción a `async` y`await` **: Facilitar el manejo de promesas mediante una sintaxis más legible y estructurada.
-                        Creación de funciones`async` **: Cómo `async` convierte una función en una que devuelve una promesa.
-                        Uso de`await` **: Suspender la ejecución de la función hasta que la promesa se resuelva y obtener su valor.
-                        Manejo de errores con `try/catch` en funciones`async` **: Cómo capturar errores dentro de funciones asíncronas usando bloques`try/catch`.
-                    </p>
 
                     <h1>Fetch</h1>
 
