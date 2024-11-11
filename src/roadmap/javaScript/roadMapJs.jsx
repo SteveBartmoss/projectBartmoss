@@ -463,25 +463,21 @@ export function RoadMapJs() {
                         </p>
                     </ExtendPanel>
 
+                    <ExtendPanel title='Mixins'>
+                        <p>
+                            Concepto de Mixins: Definición de objetos o funciones que contienen métodos y propiedades para combinar en otros objetos.
+                        </p>
+                        <p>
+                            Implementación de Mixins: Uso de funciones o Object.assign() para mezclar métodos en un objeto o clase.
+                        </p>
+                        <p>
+                            Ventajas y casos de uso: Flexibilidad al agregar comportamientos sin herencia, permitiendo una "herencia múltiple" en JavaScript.
+                        </p>
+                    </ExtendPanel>
+
                 </DivContent>
 
                 <DivTopicos>
-
-                    <h2></h2>
-
-                    <p>
-
-
-
-                    </p>
-
-                    <h2>Mixins</h2>
-
-                    <p>
-                        Concepto de Mixins **: Definición de objetos o funciones que contienen métodos y propiedades para combinar en otros objetos.
-                        Implementación de Mixins **: Uso de funciones o `Object.assign()` para mezclar métodos en un objeto o clase.
-                        Ventajas y casos de uso **: Flexibilidad al agregar comportamientos sin herencia, permitiendo una "herencia múltiple" en JavaScript.
-                    </p>
 
                     <h1>Asincronía</h1>
 
