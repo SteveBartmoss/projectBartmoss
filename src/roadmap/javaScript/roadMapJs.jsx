@@ -552,17 +552,21 @@ export function RoadMapJs() {
                         </p>
                     </ExtendPanel>
 
+                    <ExtendPanel title='Argumentos'>
+                        <p>
+                            Manejo de argumentos en promesas: Pasar datos desde una promesa a la siguiente en una cadena de promesas.
+                        </p>
+                        <p>
+                            Uso de .then() para encadenar datos: Cómo se pueden transformar y transferir datos entre promesas encadenadas.
+                        </p>
+                        <p>
+                            Errores comunes: Evitar confusiones con argumentos y scope en funciones anidadas dentro de promesas.
+                        </p>
+                    </ExtendPanel>
+
                 </DivContent>
 
                 <DivTopicos>
-
-                    <h2>Argumentos</h2>
-
-                    <p>
-                        Manejo de argumentos en promesas **: Pasar datos desde una promesa a la siguiente en una cadena de promesas.
-                        Uso de `.then()` para encadenar datos **: Cómo se pueden transformar y transferir datos entre promesas encadenadas.
-                        Errores comunes **: Evitar confusiones con argumentos y scope en funciones anidadas dentro de promesas.
-                    </p>
 
                     <h2>`async` y`await`</h2>
 
