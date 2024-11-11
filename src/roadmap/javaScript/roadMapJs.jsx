@@ -528,17 +528,21 @@ export function RoadMapJs() {
                         </p>
                     </ExtendPanel>
 
+                    <ExtendPanel title='Paralelo, all y race'>
+                        <p>
+                            Promise.all(): Ejecutar múltiples promesas en paralelo y obtener un solo resultado si todas se cumplen o una falla.
+                        </p>
+                        <p>
+                            Promise.race(): Correr promesas en paralelo y obtener el primer resultado que se complete(ya sea éxito o error).
+                        </p>
+                        <p>
+                            Ejemplos prácticos: Situaciones en las que se podría usar all y race para manejar tareas concurrentes, como la carga de múltiples recursos o la espera de la respuesta más rápida.
+                        </p>
+                    </ExtendPanel>
+
                 </DivContent>
 
                 <DivTopicos>
-
-                    <h2>Paralelo, `all` y`race`</h2>
-
-                    <p>
-                        `Promise.all()` **: Ejecutar múltiples promesas en paralelo y obtener un solo resultado si todas se cumplen o una falla.
-                        Promise.race()` **: Correr promesas en paralelo y obtener el primer resultado que se complete(ya sea éxito o error).
-                        Ejemplos prácticos **: Situaciones en las que se podría usar `all` y `race` para manejar tareas concurrentes, como la carga de múltiples recursos o la espera de la respuesta más rápida.
-                    </p>
 
                     <h2>Paralelo, `any` y`allSettled`</h2>
 
