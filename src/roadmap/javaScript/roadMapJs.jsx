@@ -475,20 +475,23 @@ export function RoadMapJs() {
                         </p>
                     </ExtendPanel>
 
+                    <h1>Asincronía</h1>
+
+                    <ExtendPanel title='Conceptos'>
+                        <p>
+                            Concepto de asincronía: Explicación de la diferencia entre código síncrono y asíncrono.
+                        </p>
+                        <p>
+                            Event Loop: Comprensión básica de cómo funciona el event loop en JavaScript y su papel en la ejecución de tareas asíncronas.
+                        </p>
+                        <p>
+                            Callbacks: Introducción a los callbacks como la primera técnica usada para manejar operaciones asíncronas y sus limitaciones (como el "callback hell").
+                        </p>
+                    </ExtendPanel>
+
                 </DivContent>
 
                 <DivTopicos>
-
-                    <h1>Asincronía</h1>
-
-                    <h2>Conceptos</h2>
-
-                    <p>
-                        Concepto de asincronía**: Explicación de la diferencia entre código síncrono y asíncrono.
-                        Event Loop**: Comprensión básica de cómo funciona el event loop en JavaScript y su papel en la ejecución de tareas asíncronas.
-                        Callbacks**: Introducción a los callbacks como la primera técnica usada para manejar operaciones asíncronas y sus limitaciones (como el "callback hell").
-                    </p>
-
                     <h2>Promesas</h2>
 
                     <p>
