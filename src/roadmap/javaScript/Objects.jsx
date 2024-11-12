@@ -1,19 +1,29 @@
+import { DivArticle, DivContent } from "../../componentes/contenedores/contenedores";
+import { Portada } from "../../componentes/portada/portada";
 
 
 export function MapObjects() {
     return (
         <>
-            <h1>Propiedades dinámicas</h1>
+            <Portada imgPortada={"/Assets/steveA.png"} title={"Objects"} text={"Por Steve 04/11/2024"} />
 
-            <p>
-                En JavaScript, los objetos son dinámicos, lo que permite añadir, modificar o eliminar propiedades y métodos en cualquier momento después de la creación del objeto.
-            </p>
+            <DivArticle>
+                <DivContent>
+                    <h1>Propiedades dinámicas</h1>
 
-            <h2>Añadir propiedades dinámicamente</h2>
+                    <p>
+                        En JavaScript, los objetos son dinámicos, lo que permite añadir, modificar
+                        o eliminar propiedades y métodos en cualquier momento después de la creación del objeto.
+                    </p>
 
-            <p>
-                En JavaScript, puedes agregar propiedades a un objeto en cualquier momento, incluso después de haberlo creado.
-            </p>
+                    <h2>Añadir propiedades dinámicamente</h2>
+
+                    <p>
+                        En JavaScript, puedes agregar propiedades a un objeto en cualquier momento, incluso después de haberlo creado.
+                    </p>
+
+                </DivContent>
+            </DivArticle>
 
             <h2>Ejemplo</h2>
 
@@ -752,13 +762,13 @@ export function MapObjects() {
             <code>
                 class Persona {
                     constructor(nombre, edad) {
-                        this.nombre = nombre;
-                        this.edad = edad;
+                    this.nombre = nombre;
+                this.edad = edad;
                     }
 
-                    // Método de instancia
-                    saludar() {
-                        console.log(`Hola, mi nombre es ${this.nombre} y tengo ${this.edad} años.`);
+                // Método de instancia
+                saludar() {
+                    console.log(`Hola, mi nombre es ${this.nombre} y tengo ${this.edad} años.`);
                     }
                 }
 
@@ -797,20 +807,20 @@ export function MapObjects() {
                     static sumar(a, b) {
                         return a + b;
                     }
-            
-                    // Método de instancia
-                    multiplicar(a, b) {
+
+                // Método de instancia
+                multiplicar(a, b) {
                         return a * b;
                     }
                 }
-            
+
                 // Llamada al método estático sin crear una instancia
                 console.log(Calculadora.sumar(5, 10)); // 15
-            
+
                 // Crear una instancia para usar un método de instancia
                 const calculadora = new Calculadora();
                 console.log(calculadora.multiplicar(3, 4)); // 12
-            
+
             </code>
 
             <p>
@@ -839,23 +849,23 @@ export function MapObjects() {
                 // Clase base o padre
                 class Animal {
                     constructor(nombre) {
-                        this.nombre = nombre;
+                    this.nombre = nombre;
                     }
 
-                    hacerSonido() {
-                        console.log(`${this.nombre} hace un sonido.`);
+                hacerSonido() {
+                    console.log(`${this.nombre} hace un sonido.`);
                     }
                 }
 
                 // Clase hija que extiende de Animal
                 class Perro extends Animal {
                     constructor(nombre, raza) {
-                        super(nombre); // Llamada al constructor de la clase padre
-                        this.raza = raza;
+                    super(nombre); // Llamada al constructor de la clase padre
+                this.raza = raza;
                     }
 
-                    hacerSonido() {
-                        console.log(`${this.nombre} ladra.`);
+                hacerSonido() {
+                    console.log(`${this.nombre} ladra.`);
                     }
                 }
 
@@ -885,21 +895,21 @@ export function MapObjects() {
             <code>
                 class Vehiculo {
                     encender() {
-                        console.log("El vehículo está encendido.");
+                    console.log("El vehículo está encendido.");
                     }
                 }
 
                 class Coche extends Vehiculo {
                     encender() {
                     super.encender(); // Llama al método 'encender' de la clase padre
-                        console.log("El coche está listo para conducir.");
+                console.log("El coche está listo para conducir.");
                     }
                 }
 
                 const miCoche = new Coche();
                 miCoche.encender();
-                // "El vehículo está encendido."
-                // "El coche está listo para conducir.".
+            // "El vehículo está encendido."
+            // "El coche está listo para conducir.".
             </code>
 
             <p>
