@@ -602,17 +602,21 @@ export function RoadMapJs() {
                         </p>
                     </ExtendPanel>
 
+                    <ExtendPanel title='Opciones de Fetch'>
+                        <p>
+                        Configuración avanzada de fetch: Modificación de opciones de la solicitud, como los encabezados, el método y el cuerpo.
+                        </p>
+                        <p>
+                        Configuración de encabezados **: Añadir encabezados de autorización o personalizar encabezados para peticiones específicas.
+                        </p>
+                        <p>
+                        Otras opciones de`fetch` **: Controlar el modo(como`cors` o`no-cors`), credenciales, y otros parámetros de la solicitud.
+                        </p>
+                    </ExtendPanel>
+
                 </DivContent>
 
                 <DivTopicos>
-
-                    <h2>Opciones de Fetch</h2>
-
-                    <p>
-                        Configuración avanzada de`fetch` **: Modificación de opciones de la solicitud, como los encabezados, el método y el cuerpo.
-                        Configuración de encabezados **: Añadir encabezados de autorización o personalizar encabezados para peticiones específicas.
-                        Otras opciones de`fetch` **: Controlar el modo(como`cors` o`no-cors`), credenciales, y otros parámetros de la solicitud.
-                    </p>
 
                     <h2>Abortar Fetch</h2>
 
