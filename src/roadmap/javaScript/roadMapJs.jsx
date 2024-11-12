@@ -593,16 +593,18 @@ export function RoadMapJs() {
                         </p>
                     </ExtendPanel>
 
+                    <ExtendPanel title='APIs REST'>
+                        <p>
+                        Concepto de APIs REST: Comprensión de cómo funcionan las APIs RESTful y cómo fetch permite interactuar con ellas.
+                        </p>
+                        <p>
+                        Operaciones CRUD: Ejemplos prácticos de solicitudes para crear, leer, actualizar y eliminar datos en una API REST usando fetch.
+                        </p>
+                    </ExtendPanel>
+
                 </DivContent>
 
                 <DivTopicos>
-
-                    <h2>APIs REST</h2>
-
-                    <p>
-                        Concepto de APIs REST **: Comprensión de cómo funcionan las APIs RESTful y cómo `fetch` permite interactuar con ellas.
-                        Operaciones CRUD **: Ejemplos prácticos de solicitudes para crear, leer, actualizar y eliminar datos en una API REST usando`fetch`.
-                    </p>
 
                     <h2>Opciones de Fetch</h2>
 
