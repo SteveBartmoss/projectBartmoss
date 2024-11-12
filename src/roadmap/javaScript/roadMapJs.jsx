@@ -579,19 +579,23 @@ export function RoadMapJs() {
                         </p>
                     </ExtendPanel>
 
+                    <h1>Fetch</h1>
+
+                    <ExtendPanel title='Conceptos'>
+                        <p>
+                            Introducción a fetch: API moderna para hacer solicitudes HTTP en JavaScript.
+                        </p>
+                        <p>
+                            Sintaxis básica: Cómo hacer una solicitud GET con `fetch` y obtener una respuesta en formato JSON.
+                        </p>
+                        <p>
+                            Métodos HTTP(GET, POST, etc.): Uso de fetch para realizar otros tipos de solicitudes, como POST, enviando datos en el cuerpo de la solicitud.
+                        </p>
+                    </ExtendPanel>
+
                 </DivContent>
 
                 <DivTopicos>
-
-                    <h1>Fetch</h1>
-
-                    <h2>Conceptos</h2>
-
-                    <p>
-                        Introducción a`fetch` **: API moderna para hacer solicitudes HTTP en JavaScript.
-                        Sintaxis básica **: Cómo hacer una solicitud GET con `fetch` y obtener una respuesta en formato JSON.
-                        Métodos HTTP(GET, POST, etc.) **: Uso de `fetch` para realizar otros tipos de solicitudes, como POST, enviando datos en el cuerpo de la solicitud.
-                    </p>
 
                     <h2>APIs REST</h2>
 
