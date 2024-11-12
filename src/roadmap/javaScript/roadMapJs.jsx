@@ -595,38 +595,39 @@ export function RoadMapJs() {
 
                     <ExtendPanel title='APIs REST'>
                         <p>
-                        Concepto de APIs REST: Comprensión de cómo funcionan las APIs RESTful y cómo fetch permite interactuar con ellas.
+                            Concepto de APIs REST: Comprensión de cómo funcionan las APIs RESTful y cómo fetch permite interactuar con ellas.
                         </p>
                         <p>
-                        Operaciones CRUD: Ejemplos prácticos de solicitudes para crear, leer, actualizar y eliminar datos en una API REST usando fetch.
+                            Operaciones CRUD: Ejemplos prácticos de solicitudes para crear, leer, actualizar y eliminar datos en una API REST usando fetch.
                         </p>
                     </ExtendPanel>
 
                     <ExtendPanel title='Opciones de Fetch'>
                         <p>
-                        Configuración avanzada de fetch: Modificación de opciones de la solicitud, como los encabezados, el método y el cuerpo.
+                            Configuración avanzada de fetch: Modificación de opciones de la solicitud, como los encabezados, el método y el cuerpo.
                         </p>
                         <p>
-                        Configuración de encabezados **: Añadir encabezados de autorización o personalizar encabezados para peticiones específicas.
+                            Configuración de encabezados **: Añadir encabezados de autorización o personalizar encabezados para peticiones específicas.
                         </p>
                         <p>
-                        Otras opciones de`fetch` **: Controlar el modo(como`cors` o`no-cors`), credenciales, y otros parámetros de la solicitud.
+                            Otras opciones de`fetch` **: Controlar el modo(como`cors` o`no-cors`), credenciales, y otros parámetros de la solicitud.
+                        </p>
+                    </ExtendPanel>
+
+                    <ExtendPanel title='Abortar Fetch'>
+                        <p>
+                            AbortController: Cómo usar AbortController para cancelar una solicitud fetch en curso.
+                        </p>
+                        <p>
+                            Abortar solicitudes: Ejemplos de cuándo es útil abortar una solicitud, como al cambiar de página o al recibir datos incompletos.
+                        </p>
+                        <p>
+                            Manejo de errores al abortar: Cómo capturar y manejar los errores cuando una solicitud se aborta, mejorando la experiencia del usuario.
                         </p>
                     </ExtendPanel>
 
                 </DivContent>
 
-                <DivTopicos>
-
-                    <h2>Abortar Fetch</h2>
-
-                    <p>
-                        AbortController **: Cómo usar `AbortController` para cancelar una solicitud `fetch` en curso.
-                        Abortar solicitudes **: Ejemplos de cuándo es útil abortar una solicitud, como al cambiar de página o al recibir datos incompletos.
-                        Manejo de errores al abortar **: Cómo capturar y manejar los errores cuando una solicitud se aborta, mejorando la experiencia del usuario.
-                    </p>
-
-                </DivTopicos>
             </DivArticle>
         </>
     )
