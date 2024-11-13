@@ -35,6 +35,20 @@ export function MapPrototype(){
                 A partir de ES2022, JavaScript permite el uso de **propiedades privadas** con el símbolo `#`.
                 Las propiedades privadas solo son accesibles dentro de la clase.
             </p>
+
+            <code>
+            class Persona {
+                #edad;
+                constructor(nombre, edad) {
+                    this.nombre = nombre;
+                    this.#edad = edad;
+                }
+
+                obtenerEdad() { return this.#edad; }
+                setEdad(nuevaEdad) { if (nuevaEdad > 0) this.#edad = nuevaEdad; }
+            }
+            const persona = new Persona("Ana", 25);
+            </code>
         </>
     )
 }
@@ -50,17 +64,7 @@ export function MapPrototype(){
 
    **Ejemplo**:
    ```javascript
-   class Persona {
-       #edad;
-       constructor(nombre, edad) {
-           this.nombre = nombre;
-           this.#edad = edad;
-       }
-
-       obtenerEdad() { return this.#edad; }
-       setEdad(nuevaEdad) { if (nuevaEdad > 0) this.#edad = nuevaEdad; }
-   }
-   const persona = new Persona("Ana", 25);
+   
    ```
 
 ---
