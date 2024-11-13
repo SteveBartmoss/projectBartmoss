@@ -91,18 +91,18 @@ export function MapPrototype(){
                 console.log(cuenta.obtenerSaldo()); // Muestra 150
             </code>
 
+            <h2>Abstracción con Módulos</h2>
+
+            <p>
+                JavaScript permite encapsular detalles internos usando módulos ( export e import), ocultando así ciertas funciones o propiedades y exponiendo solo lo necesario.
+            </p>
+
         </>
     )
 }
 
 /*
 
-
-
-2. **Abstracción con Módulos**:
-   - JavaScript permite encapsular detalles internos usando módulos (`export` e `import`), ocultando así ciertas funciones o propiedades y exponiendo solo lo necesario.
-
----
 
 ### Herencia
 La herencia permite **crear nuevas clases o prototipos basados en una clase o prototipo existente**. La nueva clase o prototipo hereda las propiedades y métodos del “padre”, permitiendo reutilizar código y extender funcionalidades sin duplicación.
