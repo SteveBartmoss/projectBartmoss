@@ -97,6 +97,39 @@ export function MapPrototype(){
                 JavaScript permite encapsular detalles internos usando módulos ( export e import), ocultando así ciertas funciones o propiedades y exponiendo solo lo necesario.
             </p>
 
+            <h1>Herencia</h1>
+
+            <p>
+                La herencia permite crear nuevas clases o prototipos basados en una clase o prototipo existente. La nueva clase o prototipo hereda las propiedades y métodos del padre, permitiendo reutilizar código y extender funcionalidades sin duplicación.
+            </p>
+
+            <h2>Herencia con Clases (extends)</h2>
+
+            <p>
+            Una clase puede heredar de otra clase utilizando la palabra clave extends. Esto permite que la clase hija acceda a métodos y propiedades de la clase padre.
+            </p>
+
+            <h2>Ejemplo</h2>
+
+            <code>
+                class Animal {
+                    constructor(nombre) {
+                        this.nombre = nombre;
+                    }
+                    hacerSonido() {
+                        console.log("Este animal hace un sonido");
+                    }
+                }
+         
+                class Perro extends Animal {
+                    hacerSonido() {
+                        console.log("Guau!");
+                    }
+                }
+         
+                const miPerro = new Perro("Rex");
+                miPerro.hacerSonido();
+            </code>
         </>
     )
 }
@@ -104,32 +137,8 @@ export function MapPrototype(){
 /*
 
 
-### Herencia
-La herencia permite **crear nuevas clases o prototipos basados en una clase o prototipo existente**. La nueva clase o prototipo hereda las propiedades y métodos del “padre”, permitiendo reutilizar código y extender funcionalidades sin duplicación.
+### 
 
-1. **Herencia con Clases (`extends`)**:
-   - Una clase puede heredar de otra clase utilizando la palabra clave `extends`. Esto permite que la clase “hija” acceda a métodos y propiedades de la clase “padre”.
-
-   **Ejemplo**:
-   ```javascript
-   class Animal {
-       constructor(nombre) {
-           this.nombre = nombre;
-       }
-       hacerSonido() {
-           console.log("Este animal hace un sonido");
-       }
-   }
-
-   class Perro extends Animal {
-       hacerSonido() {
-           console.log("Guau!"); // Sobreescritura del método
-       }
-   }
-
-   const miPerro = new Perro("Rex");
-   miPerro.hacerSonido(); // "Guau!"
-   ```
 
 2. **Beneficios de la Herencia**:
    - Permite **reutilizar código** y facilita la extensión de clases con funcionalidad adicional o más específica.
