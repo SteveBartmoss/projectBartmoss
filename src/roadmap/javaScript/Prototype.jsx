@@ -37,18 +37,60 @@ export function MapPrototype(){
             </p>
 
             <code>
-            class Persona {
-                #edad;
-                constructor(nombre, edad) {
-                    this.nombre = nombre;
-                    this.#edad = edad;
+                class Persona {
+                    #edad;
+                    constructor(nombre, edad) {
+                        this.nombre = nombre;
+                        this.#edad = edad;
+                    }
+
+                    obtenerEdad() { return this.#edad; }
+                    setEdad(nuevaEdad) { if (nuevaEdad > 0) this.#edad = nuevaEdad; }
+                }
+                const persona = new Persona("Ana", 25);
+            </code>
+
+            <h1>Abstracción</h1>
+
+            <p>
+                La abstracción es una técnica para **ocultar detalles complejos** y exponer solo las funcionalidades esenciales de un objeto o clase, proporcionando una interfaz simplificada. Esto permite que el usuario del objeto solo necesite entender cómo interactuar con él, sin preocuparse por su implementación interna.
+            </p>
+
+            <h2>Abstracción en una Clase</h2>
+
+            <p>
+                Imagina una clase que representa una cuenta bancaria, donde los métodos públicos permiten interactuar con la cuenta sin conocer los detalles de cómo se administran los fondos internamente.
+            </p>
+
+            <h2>Ejemplo</h2>
+
+            <code>
+            class CuentaBancaria {
+                #saldo;
+
+                constructor(saldoInicial) {
+                    this.#saldo = saldoInicial;
                 }
 
-                obtenerEdad() { return this.#edad; }
-                setEdad(nuevaEdad) { if (nuevaEdad > 0) this.#edad = nuevaEdad; }
+                depositar(monto) {
+                    this.#saldo += monto;
+                }
+
+                retirar(monto) {
+                    if (monto <= this.#saldo) this.#saldo -= monto;
+                    else console.log("Fondos insuficientes");
+                }
+
+                obtenerSaldo() {
+                    return this.#saldo;
+                }
             }
-            const persona = new Persona("Ana", 25);
+
+                const cuenta = new CuentaBancaria(100);
+                cuenta.depositar(50); // Abstracción: el usuario no necesita conocer los detalles de la implementación de depósito
+                console.log(cuenta.obtenerSaldo()); // Muestra 150
             </code>
+
         </>
     )
 }
@@ -56,52 +98,6 @@ export function MapPrototype(){
 /*
 
 
-
-1. **
-
-2. 
-   
-
-   **Ejemplo**:
-   ```javascript
-   
-   ```
-
----
-
-### Abstracción
-La abstracción es una técnica para **ocultar detalles complejos** y exponer solo las funcionalidades esenciales de un objeto o clase, proporcionando una interfaz simplificada. Esto permite que el usuario del objeto solo necesite entender cómo interactuar con él, sin preocuparse por su implementación interna.
-
-1. **Ejemplo de Abstracción en una Clase**:
-   - Imagina una clase que representa una cuenta bancaria, donde los métodos públicos permiten interactuar con la cuenta sin conocer los detalles de cómo se administran los fondos internamente.
-
-   **Ejemplo**:
-   ```javascript
-   class CuentaBancaria {
-       #saldo; // Propiedad privada
-
-       constructor(saldoInicial) {
-           this.#saldo = saldoInicial;
-       }
-
-       depositar(monto) {
-           this.#saldo += monto;
-       }
-
-       retirar(monto) {
-           if (monto <= this.#saldo) this.#saldo -= monto;
-           else console.log("Fondos insuficientes");
-       }
-
-       obtenerSaldo() {
-           return this.#saldo;
-       }
-   }
-
-   const cuenta = new CuentaBancaria(100);
-   cuenta.depositar(50); // Abstracción: el usuario no necesita conocer los detalles de la implementación de depósito
-   console.log(cuenta.obtenerSaldo()); // Muestra 150
-   ```
 
 2. **Abstracción con Módulos**:
    - JavaScript permite encapsular detalles internos usando módulos (`export` e `import`), ocultando así ciertas funciones o propiedades y exponiendo solo lo necesario.
