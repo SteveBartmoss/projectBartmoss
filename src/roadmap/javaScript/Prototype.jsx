@@ -257,6 +257,32 @@ export function MapPrototype(){
                 });
                 console.log(gato.sonido);
             </code>
+
+            <h1>Clases en ES6</h1>
+
+            <p>
+                Con ES6, JavaScript introdujo una sintaxis más sencilla y familiar para implementar herencia a través de las clases. Aunque JavaScript sigue usando el sistema basado en prototipos bajo el capó, la sintaxis de clases facilita la creación y el mantenimiento de estructuras de herencia.
+            </p>
+
+            <h2>Declaración de una Clase</h2>
+
+            <p>
+                Una clase en JavaScript define una plantilla de objeto, permitiendo encapsular propiedades y métodos.
+                Las clases pueden tener un método `constructor` para inicializar propiedades y definir métodos de instancia y estáticos.
+            </p>
+
+            <code>
+                class Animal {
+                    constructor(nombre) {
+                        this.nombre = nombre;
+                    }
+
+                    hacerSonido() {
+                        console.log("Sonido genérico");
+                    }
+                }
+            </code>
+
         </>
     )
 }
@@ -283,26 +309,8 @@ Claro, aquí tienes un desglose detallado para estos conceptos sobre herencia en
 
 ---
 
-### Clases en ES6
+### 
 
-Con ES6, JavaScript introdujo una sintaxis más sencilla y familiar para implementar herencia a través de las **clases**. Aunque JavaScript sigue usando el sistema basado en prototipos bajo el capó, la sintaxis de clases facilita la creación y el mantenimiento de estructuras de herencia.
-
-1. **Declaración de una Clase**:
-   - Una clase en JavaScript define una plantilla de objeto, permitiendo encapsular propiedades y métodos.
-   - Las clases pueden tener un método `constructor` para inicializar propiedades y definir métodos de instancia y estáticos.
-
-   **Ejemplo**:
-   ```javascript
-   class Animal {
-       constructor(nombre) {
-           this.nombre = nombre;
-       }
-
-       hacerSonido() {
-           console.log("Sonido genérico");
-       }
-   }
-   ```
 
 2. **Herencia con `extends`**:
    - Usando la palabra clave `extends`, una clase puede heredar de otra clase, lo que permite que la clase hija acceda a los métodos y propiedades de la clase padre.
