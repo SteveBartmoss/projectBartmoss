@@ -340,6 +340,36 @@ export function MapPrototype(){
             
                 console.log(Utilidades.convertirAMayusculas("hola")); // "HOLA"
             </code>
+
+            <h1>Sistema de Prototipos en JavaScript</h1>
+
+            <p>
+                JavaScript utiliza un sistema de prototipos para implementar herencia, lo que permite que los objetos compartan propiedades y métodos sin necesidad de clases en el sentido tradicional. Cada objeto tiene una referencia interna llamada `[[Prototype]]` que apunta a otro objeto, denominado su **prototipo**. A través de este sistema, JavaScript crea una cadena de prototipos (prototype chain) que permite a los objetos heredar propiedades y métodos de otros objetos.
+            </p>
+
+            <h2>Referencia Prototype</h2>
+
+            <p>
+                La referencia Prototype de un objeto no es accesible directamente, pero se puede observar mediante la propiedad proto o usando métodos como Object.getPrototypeOf().
+                Cuando intentas acceder a una propiedad o método de un objeto, JavaScript primero la busca en el propio objeto. Si no la encuentra, busca en el prototipo del objeto, y sigue subiendo en la cadena de prototipos hasta llegar al prototipo raíz, Object.prototype.
+            </p>
+
+            <code>
+                const animal = {
+                    tipo: "animal",
+                    hacerSonido() {
+                        console.log("Este animal hace un sonido.");
+                    }
+                };
+            
+                const perro = Object.create(animal);
+                console.log(perro.tipo);
+                perro.hacerSonido();
+            </code>
+
+            <p>
+                En este ejemplo, `perro` tiene acceso a las propiedades y métodos de animal gracias a la referencia Prototype.
+            </p>
         </>
     )
 }
@@ -387,31 +417,7 @@ Claro, aquí tienes una explicación detallada de estos conceptos relacionados c
 
 ---
 
-### Sistema de Prototipos en JavaScript
-
-JavaScript utiliza un sistema de prototipos para implementar herencia, lo que permite que los objetos compartan propiedades y métodos sin necesidad de clases en el sentido tradicional. Cada objeto tiene una referencia interna llamada `[[Prototype]]` que apunta a otro objeto, denominado su **prototipo**. A través de este sistema, JavaScript crea una cadena de prototipos (prototype chain) que permite a los objetos heredar propiedades y métodos de otros objetos.
-
-1. **Referencia `[[Prototype]]`**:
-   - La referencia `[[Prototype]]` de un objeto no es accesible directamente, pero se puede observar mediante la propiedad `__proto__` o usando métodos como `Object.getPrototypeOf()`.
-   - Cuando intentas acceder a una propiedad o método de un objeto, JavaScript primero la busca en el propio objeto. Si no la encuentra, busca en el prototipo del objeto, y sigue subiendo en la cadena de prototipos hasta llegar al prototipo raíz, `Object.prototype`.
-
-   **Ejemplo de Prototipo Básico**:
-   ```javascript
-   const animal = {
-       tipo: "animal",
-       hacerSonido() {
-           console.log("Este animal hace un sonido.");
-       }
-   };
-
-   const perro = Object.create(animal);
-   console.log(perro.tipo); // "animal"
-   perro.hacerSonido();      // "Este animal hace un sonido."
-   ```
-
-   En este ejemplo, `perro` tiene acceso a las propiedades y métodos de `animal` gracias a la referencia `[[Prototype]]`.
-
----
+### 
 
 ### Objeto `prototype` en Funciones Constructoras
 
