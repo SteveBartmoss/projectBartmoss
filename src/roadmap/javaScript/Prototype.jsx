@@ -191,6 +191,23 @@ export function MapPrototype(){
             <p>
                 La herencia es un principio de la programación orientada a objetos que permite que un objeto o clase herede propiedades y métodos de otro objeto o clase. En JavaScript, esto se implementa principalmente a través de prototipos y, desde ES6, mediante clases. La herencia permite reutilizar y extender el código, lo cual es especialmente útil para crear estructuras jerárquicas de objetos.
             </p>
+
+            <h2>Prototipos</h2>
+
+            <p>
+                JavaScript utiliza un sistema basado en prototipos, donde cada objeto puede tener un objeto “prototipo” del cual hereda propiedades y métodos.
+                Cuando accedemos a una propiedad o método de un objeto, JavaScript busca en el propio objeto; si no lo encuentra, sigue la cadena de prototipos (prototype chain) hasta encontrarlo o llegar a `null`.
+            </p>
+
+            <code>
+                const animal = {
+                    hacerSonido() {
+                        console.log("Este animal hace un sonido");
+                    }
+                };
+                const perro = Object.create(animal); // perro hereda de animal
+                perro.hacerSonido(); // "Este animal hace un sonido"
+            </code>
         </>
     )
 }
@@ -221,20 +238,13 @@ Claro, aquí tienes un desglose detallado para estos conceptos sobre herencia en
 
 
 
-1. **Prototipos**:
-   - JavaScript utiliza un sistema basado en prototipos, donde cada objeto puede tener un objeto “prototipo” del cual hereda propiedades y métodos.
-   - Cuando accedemos a una propiedad o método de un objeto, JavaScript busca en el propio objeto; si no lo encuentra, sigue la cadena de prototipos (prototype chain) hasta encontrarlo o llegar a `null`.
+1. ****:
 
    **Ejemplo de Herencia Prototípica**:
    ```javascript
-   const animal = {
-       hacerSonido() {
-           console.log("Este animal hace un sonido");
-       }
-   };
+   
 
-   const perro = Object.create(animal); // perro hereda de animal
-   perro.hacerSonido(); // "Este animal hace un sonido"
+   
    ```
 
 2. **Cadena de Prototipos (Prototype Chain)**:
