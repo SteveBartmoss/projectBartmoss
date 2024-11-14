@@ -185,6 +185,12 @@ export function MapPrototype(){
                 Permite trabajar con objetos de diferentes tipos de forma uniforme, **sin conocer sus implementaciones exactas**.
                 Facilita la extensión de código y permite intercambiar componentes sin modificar el código principal.
             </p>
+
+            <h1>Concepto de Herencia en JavaScript</h1>
+
+            <p>
+                La herencia es un principio de la programación orientada a objetos que permite que un objeto o clase herede propiedades y métodos de otro objeto o clase. En JavaScript, esto se implementa principalmente a través de prototipos y, desde ES6, mediante clases. La herencia permite reutilizar y extender el código, lo cual es especialmente útil para crear estructuras jerárquicas de objetos.
+            </p>
         </>
     )
 }
@@ -211,9 +217,9 @@ Claro, aquí tienes un desglose detallado para estos conceptos sobre herencia en
 
 ---
 
-### Concepto de Herencia en JavaScript
+### 
 
-La **herencia** es un principio de la programación orientada a objetos que permite que un objeto o clase "herede" propiedades y métodos de otro objeto o clase. En JavaScript, esto se implementa principalmente a través de **prototipos** y, desde ES6, mediante **clases**. La herencia permite reutilizar y extender el código, lo cual es especialmente útil para crear estructuras jerárquicas de objetos.
+
 
 1. **Prototipos**:
    - JavaScript utiliza un sistema basado en prototipos, donde cada objeto puede tener un objeto “prototipo” del cual hereda propiedades y métodos.
