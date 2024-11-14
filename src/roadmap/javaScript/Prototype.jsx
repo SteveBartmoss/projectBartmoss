@@ -324,6 +324,22 @@ export function MapPrototype(){
                 console.log(miGato.color);
                 miGato.hacerSonido();
             </code>
+
+            <h2>Métodos Estáticos</h2>
+
+            <p>
+                Los métodos estáticos son definidos en la clase y no en las instancias de la clase. Estos métodos se utilizan para funcionalidades generales que no requieren una instancia.
+            </p>
+
+            <code>
+                class Utilidades {
+                    static convertirAMayusculas(texto) {
+                        return texto.toUpperCase();
+                    }
+                }
+            
+                console.log(Utilidades.convertirAMayusculas("hola")); // "HOLA"
+            </code>
         </>
     )
 }
@@ -351,20 +367,6 @@ Claro, aquí tienes un desglose detallado para estos conceptos sobre herencia en
 ---
 
 ### 
-
-4. **Métodos Estáticos**:
-   - Los métodos estáticos son definidos en la clase y no en las instancias de la clase. Estos métodos se utilizan para funcionalidades generales que no requieren una instancia.
-
-   **Ejemplo**:
-   ```javascript
-   class Utilidades {
-       static convertirAMayusculas(texto) {
-           return texto.toUpperCase();
-       }
-   }
-
-   console.log(Utilidades.convertirAMayusculas("hola")); // "HOLA"
-   ```
 
 ---
 
