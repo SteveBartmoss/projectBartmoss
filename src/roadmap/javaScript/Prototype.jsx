@@ -446,7 +446,31 @@ export function MapPrototype(){
                 miCoche no tiene el método moverse, pero lo encuentra en vehiculo, que está en la cadena de prototipos de miCoche.
                 La cadena es miCoche -> coche -> vehiculo -> Object.prototype.
             </p>
+
+            <h2>Uso de Object.getPrototypeOf() y Object.setPrototypeOf()</h2>
             
+            <p>
+                Object.getPrototypeOf(obj) permite obtener el prototipo de un objeto.
+                Object.setPrototypeOf(obj, proto) permite establecer manualmente el prototipo de un objeto, aunque no es una práctica recomendada por temas de rendimiento.
+            </p>
+
+            <code>
+                console.log(Object.getPrototypeOf(miCoche) === coche); // true
+            </code>
+
+            <h2>Sobrescritura en la Cadena de Prototipos</h2>
+
+            <p>
+                Si defines una propiedad en un objeto que existe en su prototipo, el motor de JavaScript utilizará la propiedad local, ignorando la versión en el prototipo. Esto permite a los objetos “sobrescribir” métodos o propiedades heredados.
+            </p>
+
+            <code>
+                miCoche.moverse = function() {
+                    console.log("El coche se mueve rápido");
+                };
+                miCoche.moverse(); // "El coche se mueve rápido"
+            </code>
+
         </>
     )
 }
@@ -494,30 +518,6 @@ Claro, aquí tienes una explicación detallada de estos conceptos relacionados c
 
 ---
 
-### 
-
-2. **Uso de `Object.getPrototypeOf()` y `Object.setPrototypeOf()`**:
-   - `Object.getPrototypeOf(obj)` permite obtener el prototipo de un objeto.
-   - `Object.setPrototypeOf(obj, proto)` permite establecer manualmente el prototipo de un objeto, aunque no es una práctica recomendada por temas de rendimiento.
-
-   **Ejemplo**:
-   ```javascript
-   console.log(Object.getPrototypeOf(miCoche) === coche); // true
-   ```
-
-3. **Sobrescritura en la Cadena de Prototipos**:
-   - Si defines una propiedad en un objeto que existe en su prototipo, el motor de JavaScript utilizará la propiedad local, ignorando la versión en el prototipo. Esto permite a los objetos “sobrescribir” métodos o propiedades heredados.
-
-   **Ejemplo de Sobrescritura**:
-   ```javascript
-   miCoche.moverse = function() {
-       console.log("El coche se mueve rápido");
-   };
-   miCoche.moverse(); // "El coche se mueve rápido"
-   ```
-
----
-
 ### Resumen
 
 | Concepto                   | Descripción                                                                                                                                                                |
@@ -527,5 +527,7 @@ Claro, aquí tienes una explicación detallada de estos conceptos relacionados c
 | **Cadena de Prototipos**         | Serie de enlaces entre objetos prototipos que permite buscar propiedades y métodos a través de múltiples niveles de herencia, desde el objeto hasta `Object.prototype`. |
 
 Este sistema de prototipos es fundamental para entender cómo funciona la herencia en JavaScript, facilitando el uso compartido de código y la creación de objetos de forma eficiente.
+
+
 
 */
