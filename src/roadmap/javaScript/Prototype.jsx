@@ -216,6 +216,28 @@ export function MapPrototype(){
                 La herencia prototípica es más flexible que la herencia de clases, ya que podemos cambiar el prototipo de un objeto en tiempo de ejecución.
             </p>
 
+            <h1>Uso de Object.create()</h1>
+
+            <p>
+                El método Object.create(proto) crea un nuevo objeto que hereda directamente de proto, es decir, el nuevo objeto utiliza el objeto `proto` como su prototipo. Esto permite crear una relación de herencia sin usar clases o funciones constructoras.
+            </p>
+
+            <h2>Crear un Objeto Heredando de Otro</h2>
+
+            <p>
+                Object.create() es útil para crear objetos basados en un prototipo específico. De esta manera, el objeto creado hereda todas las propiedades y métodos del prototipo dado.
+            </p>
+
+            <code>
+                const vehiculo = {
+                    mover() {
+                        console.log("El vehículo se mueve");
+                    }
+                };
+            
+                const bicicleta = Object.create(vehiculo);
+                bicicleta.mover();
+            </code>
             
         </>
     )
@@ -245,40 +267,6 @@ Claro, aquí tienes un desglose detallado para estos conceptos sobre herencia en
 
 ### 
 
-
-
-1. ****:
-
-   **Ejemplo de Herencia Prototípica**:
-   ```javascript
-   
-
-   
-   ```
-
-2. ****:
-   
-
----
-
-### Uso de `Object.create()`
-
-El método `Object.create(proto)` crea un nuevo objeto que hereda directamente de `proto`, es decir, el nuevo objeto utiliza el objeto `proto` como su prototipo. Esto permite crear una relación de herencia sin usar clases o funciones constructoras.
-
-1. **Crear un Objeto Heredando de Otro**:
-   - `Object.create()` es útil para crear objetos basados en un prototipo específico. De esta manera, el objeto creado hereda todas las propiedades y métodos del prototipo dado.
-
-   **Ejemplo**:
-   ```javascript
-   const vehiculo = {
-       mover() {
-           console.log("El vehículo se mueve");
-       }
-   };
-
-   const bicicleta = Object.create(vehiculo);
-   bicicleta.mover(); // "El vehículo se mueve"
-   ```
 
 2. **Herencia Prototípica Sin Constructor**:
    - Podemos usar `Object.create()` para crear una cadena de prototipos sin necesidad de constructores, lo cual es útil cuando solo se necesitan objetos sin lógica compleja de inicialización.
