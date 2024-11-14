@@ -407,6 +407,12 @@ export function MapPrototype(){
                 En este ejemplo, saludar está en el prototipo Persona.prototype, por lo que se comparte entre todas las instancias de Persona. Esto es eficiente y permite que todas las instancias puedan acceder al mismo método.
             </p>
 
+            <h2>Modificando el Prototipo</h2>
+
+            <p>
+                Puedes añadir o modificar propiedades y métodos en el prototipo de una función constructora en cualquier momento. Esto afecta a todas las instancias ya creadas y a las que se crearán en el futuro.
+            </p>
+
         </>
     )
 }
@@ -451,15 +457,6 @@ Claro, aquí tienes un desglose detallado para estos conceptos sobre herencia en
 Estas características proporcionan una forma de estructurar el código de manera modular y reutilizable, permitiendo crear jerarquías de objetos y facilitando la reutilización de propiedades y métodos entre clases y objetos.
 
 Claro, aquí tienes una explicación detallada de estos conceptos relacionados con el sistema de prototipos en JavaScript:
-
----
-
-### 
-
-### 
-
-2. **Modificando el Prototipo**:
-   - Puedes añadir o modificar propiedades y métodos en el prototipo de una función constructora en cualquier momento. Esto afecta a todas las instancias ya creadas y a las que se crearán en el futuro.
 
 ---
 
