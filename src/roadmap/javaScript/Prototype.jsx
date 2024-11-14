@@ -419,6 +419,34 @@ export function MapPrototype(){
                 La cadena de prototipos es la secuencia de prototipos que JavaScript sigue cuando busca una propiedad o método en un objeto. Si el objeto no tiene la propiedad solicitada, la búsqueda continúa en su prototipo, y así sucesivamente, hasta llegar a Object.prototype. Si la propiedad no se encuentra en ninguna parte de la cadena, JavaScript devuelve undefined.
             </p>
 
+            <h2>Búsqueda en la Cadena de Prototipos</h2>
+
+            <p>
+                La cadena de prototipos permite que los objetos hereden propiedades y métodos de otros objetos sin duplicar esas propiedades y métodos en cada instancia.
+                La cadena termina en Object.prototype, que es el prototipo base de todos los objetos en JavaScript y define métodos generales como toString(), valueOf(), etc.
+            </p>
+
+            <code>
+                const vehiculo = {
+                    moverse() {
+                        console.log("El vehículo se mueve");
+                    }
+                };
+
+                const coche = Object.create(vehiculo);
+                coche.tipo = "Automóvil";
+
+                const miCoche = Object.create(coche);
+                console.log(miCoche.tipo); // "Automóvil"
+                miCoche.moverse();         // "El vehículo se mueve"
+            </code>
+
+            <p>
+                En este caso:
+                miCoche no tiene el método moverse, pero lo encuentra en vehiculo, que está en la cadena de prototipos de miCoche.
+                La cadena es miCoche -> coche -> vehiculo -> Object.prototype.
+            </p>
+            
         </>
     )
 }
@@ -467,32 +495,6 @@ Claro, aquí tienes una explicación detallada de estos conceptos relacionados c
 ---
 
 ### 
-
-
-
-1. **Búsqueda en la Cadena de Prototipos**:
-   - La cadena de prototipos permite que los objetos "hereden" propiedades y métodos de otros objetos sin duplicar esas propiedades y métodos en cada instancia.
-   - La cadena termina en `Object.prototype`, que es el prototipo base de todos los objetos en JavaScript y define métodos generales como `toString()`, `valueOf()`, etc.
-
-   **Ejemplo de Cadena de Prototipos**:
-   ```javascript
-   const vehiculo = {
-       moverse() {
-           console.log("El vehículo se mueve");
-       }
-   };
-
-   const coche = Object.create(vehiculo);
-   coche.tipo = "Automóvil";
-
-   const miCoche = Object.create(coche);
-   console.log(miCoche.tipo); // "Automóvil"
-   miCoche.moverse();         // "El vehículo se mueve"
-   ```
-
-   En este caso:
-   - `miCoche` no tiene el método `moverse`, pero lo encuentra en `vehiculo`, que está en la cadena de prototipos de `miCoche`.
-   - La cadena es `miCoche -> coche -> vehiculo -> Object.prototype`.
 
 2. **Uso de `Object.getPrototypeOf()` y `Object.setPrototypeOf()`**:
    - `Object.getPrototypeOf(obj)` permite obtener el prototipo de un objeto.
