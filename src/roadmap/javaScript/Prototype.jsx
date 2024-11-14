@@ -208,6 +208,15 @@ export function MapPrototype(){
                 const perro = Object.create(animal); // perro hereda de animal
                 perro.hacerSonido(); // "Este animal hace un sonido"
             </code>
+
+            <h2>Cadena de Prototipos (Prototype Chain)</h2>
+
+            <p>
+                Esta cadena permite que los objetos puedan acceder a propiedades y métodos definidos en prototipos superiores, siguiendo un camino hasta el prototipo raíz (`Object.prototype`).
+                La herencia prototípica es más flexible que la herencia de clases, ya que podemos cambiar el prototipo de un objeto en tiempo de ejecución.
+            </p>
+
+            
         </>
     )
 }
@@ -247,9 +256,8 @@ Claro, aquí tienes un desglose detallado para estos conceptos sobre herencia en
    
    ```
 
-2. **Cadena de Prototipos (Prototype Chain)**:
-   - Esta cadena permite que los objetos puedan acceder a propiedades y métodos definidos en prototipos superiores, siguiendo un camino hasta el prototipo raíz (`Object.prototype`).
-   - La herencia prototípica es más flexible que la herencia de clases, ya que podemos cambiar el prototipo de un objeto en tiempo de ejecución.
+2. ****:
+   
 
 ---
 
