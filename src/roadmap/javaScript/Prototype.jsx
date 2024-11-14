@@ -368,8 +368,45 @@ export function MapPrototype(){
             </code>
 
             <p>
-                En este ejemplo, `perro` tiene acceso a las propiedades y métodos de animal gracias a la referencia Prototype.
+                En este ejemplo, perro tiene acceso a las propiedades y métodos de animal gracias a la referencia Prototype.
             </p>
+
+            <h1>Objeto prototype en Funciones Constructoras</h1>
+
+            <p>
+                En JavaScript, las funciones constructoras son una manera de crear múltiples instancias de un tipo de objeto. Las funciones constructoras utilizan la propiedad `prototype` para definir métodos y propiedades que serán compartidos entre todas las instancias de ese tipo.
+            </p>
+
+            <h2>Cómo Funciona prototype</h2>
+
+            <p>
+                Cuando defines una función constructora, JavaScript asocia automáticamente un objeto prototype a la función. Cualquier método o propiedad agregado a prototype se compartirá entre todas las instancias creadas con esa función constructora.
+                Esto permite que las instancias no tengan copias individuales de los métodos, lo que ahorra memoria.
+            </p>
+
+            <h2>Ejemplo de Función Constructora con prototype</h2>
+
+            <code>
+                function Persona(nombre) {
+                    this.nombre = nombre;
+                }
+
+                // Agregamos un método al prototipo de Persona
+                Persona.prototype.saludar = function() {
+                    console.log(`Hola, soy ${this.nombre}`);
+                };
+
+                const persona1 = new Persona("Juan");
+                const persona2 = new Persona("Ana");
+
+                persona1.saludar(); // "Hola, soy Juan"
+                persona2.saludar(); // "Hola, soy Ana"
+            </code>
+
+            <p>
+                En este ejemplo, saludar está en el prototipo Persona.prototype, por lo que se comparte entre todas las instancias de Persona. Esto es eficiente y permite que todas las instancias puedan acceder al mismo método.
+            </p>
+
         </>
     )
 }
@@ -419,33 +456,7 @@ Claro, aquí tienes una explicación detallada de estos conceptos relacionados c
 
 ### 
 
-### Objeto `prototype` en Funciones Constructoras
-
-En JavaScript, las **funciones constructoras** son una manera de crear múltiples instancias de un tipo de objeto. Las funciones constructoras utilizan la propiedad `prototype` para definir métodos y propiedades que serán compartidos entre todas las instancias de ese tipo.
-
-1. **Cómo Funciona `prototype`**:
-   - Cuando defines una función constructora, JavaScript asocia automáticamente un objeto `prototype` a la función. Cualquier método o propiedad agregado a `prototype` se compartirá entre todas las instancias creadas con esa función constructora.
-   - Esto permite que las instancias no tengan copias individuales de los métodos, lo que ahorra memoria.
-
-   **Ejemplo de Función Constructora con `prototype`**:
-   ```javascript
-   function Persona(nombre) {
-       this.nombre = nombre;
-   }
-
-   // Agregamos un método al prototipo de Persona
-   Persona.prototype.saludar = function() {
-       console.log(`Hola, soy ${this.nombre}`);
-   };
-
-   const persona1 = new Persona("Juan");
-   const persona2 = new Persona("Ana");
-
-   persona1.saludar(); // "Hola, soy Juan"
-   persona2.saludar(); // "Hola, soy Ana"
-   ```
-
-   En este ejemplo, `saludar` está en el prototipo `Persona.prototype`, por lo que se comparte entre todas las instancias de `Persona`. Esto es eficiente y permite que todas las instancias puedan acceder al mismo método.
+### 
 
 2. **Modificando el Prototipo**:
    - Puedes añadir o modificar propiedades y métodos en el prototipo de una función constructora en cualquier momento. Esto afecta a todas las instancias ya creadas y a las que se crearán en el futuro.
