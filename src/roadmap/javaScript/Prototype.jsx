@@ -130,21 +130,19 @@ export function MapPrototype(){
                 const miPerro = new Perro("Rex");
                 miPerro.hacerSonido();
             </code>
+
+            <h2>Beneficios de la Herencia</h2>
+
+            <p>
+                Permite reutilizar código y facilita la extensión de clases con funcionalidad adicional o más específica.
+                Soporta el principio de DRY (Don't Repeat Yourself), ya que evita la duplicación de código.
+            </p>
         </>
     )
 }
 
 /*
 
-
-### 
-
-
-2. **Beneficios de la Herencia**:
-   - Permite **reutilizar código** y facilita la extensión de clases con funcionalidad adicional o más específica.
-   - Soporta el principio de **"DRY" (Don't Repeat Yourself)**, ya que evita la duplicación de código.
-
----
 
 ### Polimorfismo
 El polimorfismo es la capacidad de **usar un mismo método o interfaz** en diferentes clases, de modo que los objetos respondan a la misma llamada de manera específica según su tipo.
