@@ -413,6 +413,12 @@ export function MapPrototype(){
                 Puedes añadir o modificar propiedades y métodos en el prototipo de una función constructora en cualquier momento. Esto afecta a todas las instancias ya creadas y a las que se crearán en el futuro.
             </p>
 
+            <h1>Cadena de Prototipos (Prototypal Chain)</h1>
+
+            <p>
+                La cadena de prototipos es la secuencia de prototipos que JavaScript sigue cuando busca una propiedad o método en un objeto. Si el objeto no tiene la propiedad solicitada, la búsqueda continúa en su prototipo, y así sucesivamente, hasta llegar a Object.prototype. Si la propiedad no se encuentra en ninguna parte de la cadena, JavaScript devuelve undefined.
+            </p>
+
         </>
     )
 }
@@ -460,9 +466,9 @@ Claro, aquí tienes una explicación detallada de estos conceptos relacionados c
 
 ---
 
-### Cadena de Prototipos (Prototypal Chain)
+### 
 
-La **cadena de prototipos** es la secuencia de prototipos que JavaScript sigue cuando busca una propiedad o método en un objeto. Si el objeto no tiene la propiedad solicitada, la búsqueda continúa en su prototipo, y así sucesivamente, hasta llegar a `Object.prototype`. Si la propiedad no se encuentra en ninguna parte de la cadena, JavaScript devuelve `undefined`.
+
 
 1. **Búsqueda en la Cadena de Prototipos**:
    - La cadena de prototipos permite que los objetos "hereden" propiedades y métodos de otros objetos sin duplicar esas propiedades y métodos en cada instancia.
