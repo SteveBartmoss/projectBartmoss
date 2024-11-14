@@ -137,43 +137,47 @@ export function MapPrototype(){
                 Permite reutilizar código y facilita la extensión de clases con funcionalidad adicional o más específica.
                 Soporta el principio de DRY (Don't Repeat Yourself), ya que evita la duplicación de código.
             </p>
+
+            <h1>Polimorfismo</h1>
+
+            <p>
+                El polimorfismo es la capacidad de **usar un mismo método o interfaz** en diferentes clases, de modo que los objetos respondan a la misma llamada de manera específica según su tipo.
+            </p>
+
+            <h2>Polimorfismo con Sobreescritura de Métodos</h2>
+
+            <p>
+                Como en el ejemplo anterior, una clase hija puede sobreescribir métodos de la clase padre para proveer su propia implementación.
+            </p>
+
+            <code>
+                class Animal {
+                    hacerSonido() {
+                        console.log("Sonido genérico");
+                    }
+                }
+
+                class Gato extends Animal {
+                    hacerSonido() {
+                        console.log("Miau");
+                    }
+                }
+
+                class Perro extends Animal {
+                    hacerSonido() {
+                        console.log("Guau");
+                    }
+                }
+
+                const animales = [new Gato(), new Perro(), new Animal()];
+                animales.forEach(animal => animal.hacerSonido()); 
+            </code>
         </>
     )
 }
 
 /*
 
-
-### Polimorfismo
-El polimorfismo es la capacidad de **usar un mismo método o interfaz** en diferentes clases, de modo que los objetos respondan a la misma llamada de manera específica según su tipo.
-
-1. **Polimorfismo con Sobreescritura de Métodos**:
-   - Como en el ejemplo anterior, una clase “hija” puede **sobreescribir** métodos de la clase “padre” para proveer su propia implementación.
-
-   **Ejemplo**:
-   ```javascript
-   class Animal {
-       hacerSonido() {
-           console.log("Sonido genérico");
-       }
-   }
-
-   class Gato extends Animal {
-       hacerSonido() {
-           console.log("Miau");
-       }
-   }
-
-   class Perro extends Animal {
-       hacerSonido() {
-           console.log("Guau");
-       }
-   }
-
-   const animales = [new Gato(), new Perro(), new Animal()];
-   animales.forEach(animal => animal.hacerSonido()); 
-   // "Miau", "Guau", "Sonido genérico"
-   ```
 
 2. **Polimorfismo en JavaScript con Interfaces Implícitas**:
    - JavaScript no tiene interfaces explícitas como en otros lenguajes, pero podemos simular el polimorfismo al crear objetos o clases que implementen métodos comunes.
