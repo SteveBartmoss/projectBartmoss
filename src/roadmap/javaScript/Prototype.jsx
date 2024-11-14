@@ -301,6 +301,29 @@ export function MapPrototype(){
                 miPerro.hacerSonido();
             </code>
 
+            <h2>Super Constructor (super)</h2>
+
+            <p>
+                En la clase hija, el método constructor puede usar super() para llamar al constructor de la clase padre. Esto es necesario para inicializar propiedades heredadas antes de agregar propiedades propias de la clase hija.
+            </p>
+
+            <code>
+                class Gato extends Animal {
+                    constructor(nombre, color) {
+                        super(nombre); // Llama al constructor de la clase padre
+                        this.color = color; // Propiedad específica de Gato
+                    }
+            
+                    hacerSonido() {
+                        console.log("Miau");
+                    }
+                }
+            
+                const miGato = new Gato("Felix", "negro");
+                console.log(miGato.nombre);
+                console.log(miGato.color);
+                miGato.hacerSonido();
+            </code>
         </>
     )
 }
@@ -328,28 +351,6 @@ Claro, aquí tienes un desglose detallado para estos conceptos sobre herencia en
 ---
 
 ### 
-
-3. **Super Constructor (`super`)**:
-   - En la clase hija, el método `constructor` puede usar `super()` para llamar al constructor de la clase padre. Esto es necesario para inicializar propiedades heredadas antes de agregar propiedades propias de la clase hija.
-
-   **Ejemplo**:
-   ```javascript
-   class Gato extends Animal {
-       constructor(nombre, color) {
-           super(nombre); // Llama al constructor de la clase padre
-           this.color = color; // Propiedad específica de Gato
-       }
-
-       hacerSonido() {
-           console.log("Miau");
-       }
-   }
-
-   const miGato = new Gato("Felix", "negro");
-   console.log(miGato.nombre); // "Felix"
-   console.log(miGato.color);  // "negro"
-   miGato.hacerSonido();       // "Miau"
-   ```
 
 4. **Métodos Estáticos**:
    - Los métodos estáticos son definidos en la clase y no en las instancias de la clase. Estos métodos se utilizan para funcionalidades generales que no requieren una instancia.
