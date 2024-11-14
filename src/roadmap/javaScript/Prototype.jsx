@@ -172,19 +172,27 @@ export function MapPrototype(){
                 const animales = [new Gato(), new Perro(), new Animal()];
                 animales.forEach(animal => animal.hacerSonido()); 
             </code>
+
+            <h2>Polimorfismo en JavaScript con Interfaces Implícitas</h2>
+
+            <p>
+                JavaScript no tiene interfaces explícitas como en otros lenguajes, pero podemos simular el polimorfismo al crear objetos o clases que implementen métodos comunes.
+            </p>
+
+            <h2>Ventajas del Polimorfismo</h2>
+
+            <p>
+                Permite trabajar con objetos de diferentes tipos de forma uniforme, **sin conocer sus implementaciones exactas**.
+                Facilita la extensión de código y permite intercambiar componentes sin modificar el código principal.
+            </p>
         </>
     )
 }
 
 /*
 
-
-2. **Polimorfismo en JavaScript con Interfaces Implícitas**:
-   - JavaScript no tiene interfaces explícitas como en otros lenguajes, pero podemos simular el polimorfismo al crear objetos o clases que implementen métodos comunes.
-
-3. **Ventajas del Polimorfismo**:
-   - Permite trabajar con objetos de diferentes tipos de forma uniforme, **sin conocer sus implementaciones exactas**.
-   - Facilita la extensión de código y permite intercambiar componentes sin modificar el código principal.
+3. ****:
+   
 
 ---
 
