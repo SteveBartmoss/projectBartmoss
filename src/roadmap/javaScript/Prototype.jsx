@@ -283,6 +283,24 @@ export function MapPrototype(){
                 }
             </code>
 
+            <h2>Herencia con extends</h2>
+
+            <p>
+                Usando la palabra clave extends, una clase puede heredar de otra clase, lo que permite que la clase hija acceda a los métodos y propiedades de la clase padre.
+                La clase hija puede sobrescribir métodos de la clase padre e implementar nuevos métodos propios.
+            </p>
+
+            <code>
+                class Perro extends Animal {
+                    hacerSonido() {
+                        console.log("Guau");
+                    }
+                }
+            
+                const miPerro = new Perro("Rex");
+                miPerro.hacerSonido();
+            </code>
+
         </>
     )
 }
@@ -310,23 +328,6 @@ Claro, aquí tienes un desglose detallado para estos conceptos sobre herencia en
 ---
 
 ### 
-
-
-2. **Herencia con `extends`**:
-   - Usando la palabra clave `extends`, una clase puede heredar de otra clase, lo que permite que la clase hija acceda a los métodos y propiedades de la clase padre.
-   - La clase hija puede sobrescribir métodos de la clase padre e implementar nuevos métodos propios.
-
-   **Ejemplo**:
-   ```javascript
-   class Perro extends Animal {
-       hacerSonido() {
-           console.log("Guau");
-       }
-   }
-
-   const miPerro = new Perro("Rex");
-   miPerro.hacerSonido(); // "Guau"
-   ```
 
 3. **Super Constructor (`super`)**:
    - En la clase hija, el método `constructor` puede usar `super()` para llamar al constructor de la clase padre. Esto es necesario para inicializar propiedades heredadas antes de agregar propiedades propias de la clase hija.
