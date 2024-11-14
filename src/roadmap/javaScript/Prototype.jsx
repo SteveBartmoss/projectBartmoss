@@ -238,7 +238,25 @@ export function MapPrototype(){
                 const bicicleta = Object.create(vehiculo);
                 bicicleta.mover();
             </code>
-            
+
+            <h2>Herencia Prototípica Sin Constructor</h2>
+
+            <p>
+                Podemos usar Object.create() para crear una cadena de prototipos sin necesidad de constructores, lo cual es útil cuando solo se necesitan objetos sin lógica compleja de inicialización.
+            </p>
+
+            <h2>Añadir Propiedades a los Objetos Creados</h2>
+
+            <p>
+                Además de crear el objeto, podemos pasar un segundo parámetro a Object.create() para definir propiedades propias específicas para el objeto recién creado.
+            </p>
+
+            <code>
+                const gato = Object.create(animal, {
+                    sonido: { value: "Miau" }
+                });
+                console.log(gato.sonido);
+            </code>
         </>
     )
 }
@@ -262,25 +280,6 @@ export function MapPrototype(){
 Estos cuatro principios trabajan juntos para crear sistemas orientados a objetos organizados y escalables, facilitando el desarrollo y mantenimiento de aplicaciones complejas.
 
 Claro, aquí tienes un desglose detallado para estos conceptos sobre herencia en JavaScript.
-
----
-
-### 
-
-
-2. **Herencia Prototípica Sin Constructor**:
-   - Podemos usar `Object.create()` para crear una cadena de prototipos sin necesidad de constructores, lo cual es útil cuando solo se necesitan objetos sin lógica compleja de inicialización.
-
-3. **Añadir Propiedades a los Objetos Creados**:
-   - Además de crear el objeto, podemos pasar un segundo parámetro a `Object.create()` para definir propiedades propias específicas para el objeto recién creado.
-
-   **Ejemplo**:
-   ```javascript
-   const gato = Object.create(animal, {
-       sonido: { value: "Miau" }
-   });
-   console.log(gato.sonido); // "Miau"
-   ```
 
 ---
 
