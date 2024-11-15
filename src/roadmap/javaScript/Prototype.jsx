@@ -735,7 +735,14 @@ export function MapPrototype(){
 
                 console.log(ArrayUtils.first([1, 2, 3])); 
             </code>
-            
+
+            <h1>Herencia prototipal</h1>
+
+            <h2>¿Qué es la herencia prototipal?</h2>
+
+            <p>
+                Es un mecanismo en JavaScript donde los objetos pueden heredar propiedades y métodos de otros objetos a través de la cadena de prototipos.
+            </p>
         </>
     )
 }
@@ -806,24 +813,10 @@ Este enfoque facilita la organización del código y permite que JavaScript impl
 
 ---
 
-### 
+### ****
+
+1. ****  
    
-
-4. **:**
-   
-
-   **Ejemplo con una clase utilitaria:**
-   ```javascript
-   
-   ``` 
-
-Con estas prácticas, puedes comprender cómo extender prototipos y tomar decisiones informadas al utilizarlos en proyectos.
-
-
-### **Herencia prototipal: Usar prototipos para crear una relación entre objetos que permita la herencia de métodos y propiedades**
-
-1. **¿Qué es la herencia prototipal?**  
-   Es un mecanismo en JavaScript donde los objetos pueden heredar propiedades y métodos de otros objetos a través de la cadena de prototipos.
 
 2. **Crear herencia prototipal con `Object.create`:**  
    Este método permite crear un objeto que hereda directamente de otro.
