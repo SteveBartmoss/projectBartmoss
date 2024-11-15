@@ -713,6 +713,13 @@ export function MapPrototype(){
                 }
             </code>
 
+            <h2>Uso en entornos compartidos</h2>
+
+            <p>
+                Restringir modificaciones de prototipos a entornos controlados.
+                Asegurarse de documentar las modificaciones para evitar problemas en equipos o con bibliotecas.
+            </p>
+            
         </>
     )
 }
@@ -784,10 +791,7 @@ Este enfoque facilita la organización del código y permite que JavaScript impl
 ---
 
 ### 
-
-3. **Uso en entornos compartidos:**
-   - Restringir modificaciones de prototipos a entornos controlados.
-   - Asegurarse de documentar las modificaciones para evitar problemas en equipos o con bibliotecas.
+   
 
 4. **Alternativas modernas:**
    - Usar clases o funciones utilitarias para encapsular lógica sin modificar prototipos globales.
