@@ -680,6 +680,15 @@ export function MapPrototype(){
                 Impacto global: Las modificaciones afectan a todo el entorno, lo que puede generar errores difíciles de depurar.
             </p>
 
+            <h1>Compatibilidad y conflictos</h1>
+
+            <h2>Problemas comunes</h2>
+
+            <p>
+                Colisiones: Dos bibliotecas diferentes podrían intentar agregar un método al mismo prototipo con el mismo nombre pero con comportamientos diferentes.
+                Incompatibilidad: Si un método modificado o agregado no se comporta como los usuarios esperan, puede romper la funcionalidad de otros scripts.
+            </p>
+
         </>
     )
 }
@@ -750,11 +759,7 @@ Este enfoque facilita la organización del código y permite que JavaScript impl
 
 ---
 
-### **Compatibilidad y conflictos: Consideraciones al extender prototipos, especialmente en librerías compartidas**
-
-1. **Problemas comunes:**
-   - **Colisiones:** Dos bibliotecas diferentes podrían intentar agregar un método al mismo prototipo con el mismo nombre pero con comportamientos diferentes.
-   - **Incompatibilidad:** Si un método modificado o agregado no se comporta como los usuarios esperan, puede romper la funcionalidad de otros scripts.
+### 
 
 2. **Evitar conflictos:**
    - Utilizar nombres únicos o prefijos para métodos personalizados:
