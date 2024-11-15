@@ -492,6 +492,31 @@ export function MapPrototype(){
                 Cada instancia tiene acceso a los métodos del prototipo, pero también puede definir sus propios métodos o sobrescribir los métodos heredados si es necesario.
             </p>
 
+            <h2>Ejemplo de Prototipo e Instancia</h2>
+
+            <code>
+                function Persona(nombre, edad) {
+                    this.nombre = nombre;
+                    this.edad = edad;
+                }
+                
+                Persona.prototype.saludar = function() {
+                    console.log(`Hola, soy ${this.nombre}`);
+                };
+                
+                const juan = new Persona("Juan", 25);
+                const ana = new Persona("Ana", 30);
+                
+                juan.saludar();
+                ana.saludar();
+            </code>
+
+            <p>
+                En este ejemplo:
+                nombre y edad son propiedades propias de cada instancia (juan, ana), y cada instancia tiene su propio valor de estas propiedades.
+                saludar es un método compartido definido en el prototipo Persona.prototype, por lo que todas las instancias de Persona (como juan y ana) pueden usar el mismo método sin crear una copia en cada instancia.
+            </p>
+
         </>
     )
 }
@@ -555,33 +580,8 @@ Claro, aquí tienes una explicación detallada sobre las diferencias entre proto
 
 ---
 
-### 
 
 
-2. ****:
-   
-
-**Ejemplo de Prototipo e Instancia**:
-```javascript
-function Persona(nombre, edad) {
-    this.nombre = nombre; // Propiedad propia, exclusiva de cada instancia
-    this.edad = edad;     // Propiedad propia, exclusiva de cada instancia
-}
-
-Persona.prototype.saludar = function() {
-    console.log(`Hola, soy ${this.nombre}`);
-};
-
-const juan = new Persona("Juan", 25);
-const ana = new Persona("Ana", 30);
-
-juan.saludar(); // "Hola, soy Juan"
-ana.saludar();  // "Hola, soy Ana"
-```
-
-En este ejemplo:
-- `nombre` y `edad` son **propiedades propias** de cada instancia (`juan`, `ana`), y cada instancia tiene su propio valor de estas propiedades.
-- `saludar` es un **método compartido** definido en el prototipo `Persona.prototype`, por lo que todas las instancias de `Persona` (como `juan` y `ana`) pueden usar el mismo método sin crear una copia en cada instancia.
 
 ---
 
