@@ -567,6 +567,18 @@ export function MapPrototype(){
                 Si necesitas actualizar el método mostrarDetalles, puedes hacerlo directamente en el prototipo y todas las instancias verán el cambio automáticamente.
             </p>
 
+            <h1>Instancias</h1>
+
+            <p>
+                Cuando creas una instancia con una función constructora o clase, esa instancia tiene propiedades únicas (definidas en el constructor), pero también hereda los métodos y propiedades del prototipo. Esto permite que cada instancia mantenga sus propios datos mientras usa métodos compartidos de manera eficiente.
+            </p>
+
+            <h2>Creación de Instancias</h2>
+
+            <p>
+                Puedes crear instancias usando `new` con una función constructora o usando la sintaxis de clases en ES6. En ambos casos, las propiedades exclusivas se definen en el constructor, mientras que los métodos compartidos se definen en el prototipo.
+            </p>
+
         </>
     )
 }
@@ -630,12 +642,12 @@ Claro, aquí tienes una explicación detallada sobre las diferencias entre proto
 
 ---
 
-### Instancias: Creación de Instancias con Propiedades Propias y Métodos Compartidos
+### 
 
-Cuando creas una instancia con una función constructora o clase, esa instancia tiene propiedades únicas (definidas en el constructor), pero también hereda los métodos y propiedades del prototipo. Esto permite que cada instancia mantenga sus propios datos mientras usa métodos compartidos de manera eficiente.
 
-1. **Creación de Instancias**:
-   - Puedes crear instancias usando `new` con una función constructora o usando la sintaxis de clases en ES6. En ambos casos, las propiedades exclusivas se definen en el constructor, mientras que los métodos compartidos se definen en el prototipo.
+
+1. ****:
+   
 
 2. **Propiedades Propias vs. Métodos Compartidos**:
    - Las propiedades exclusivas de cada instancia permiten que cada objeto tenga su propio estado (por ejemplo, un nombre, una edad, o una posición específica).
