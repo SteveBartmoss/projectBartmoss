@@ -817,6 +817,19 @@ export function MapPrototype(){
                 myDog.bark(); // Rex says Woof! (propio de Dog)
             </code>
 
+            <h2>extends y super</h2>
+
+            <p>
+                extends: Define que una clase hereda de otra.
+                super: Llama al constructor o métodos de la clase padre.
+            </p>
+
+            <h2>Ventajas de las clases</h2>
+
+            <p>
+                Más legibles y estructuradas.
+                Mejor compatibilidad con otras herramientas y librerías modernas.
+            </p>
 
         </>
     )
@@ -887,15 +900,7 @@ Este enfoque facilita la organización del código y permite que JavaScript impl
    ```
 ---
 
-###
-
-3. **`extends` y `super`:**
-   - `extends`: Define que una clase hereda de otra.
-   - `super`: Llama al constructor o métodos de la clase padre.
-
-4. **Ventajas de las clases:**
-   - Más legibles y estructuradas.
-   - Mejor compatibilidad con otras herramientas y librerías modernas.
+### 
 
 ---
 
