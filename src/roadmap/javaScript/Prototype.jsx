@@ -775,6 +775,14 @@ export function MapPrototype(){
                 Permite compartir métodos y propiedades entre objetos.
                 Ahorra memoria porque los métodos compartidos se almacenan en el prototipo.
             </p>
+
+            <h2>Consideraciones</h2>
+
+            <p>
+                Las propiedades heredadas no se copian, sino que se acceden a través de la cadena de prototipos.
+                Cambiar una propiedad en el prototipo afecta a todos los objetos que lo heredan.
+            </p>
+            
         </>
     )
 }
@@ -842,16 +850,6 @@ Este enfoque facilita la organización del código y permite que JavaScript impl
    const first = (arr) => arr[0];
    console.log(first([1, 2, 3])); // 1
    ```
-
----
-
-### ****
- 
-
-4. **Consideraciones:**
-   - Las propiedades heredadas no se copian, sino que se acceden a través de la cadena de prototipos.
-   - Cambiar una propiedad en el prototipo afecta a todos los objetos que lo heredan.
-
 ---
 
 ### **Clases en ES6: Uso de `extends` y `super` para implementar herencia**
