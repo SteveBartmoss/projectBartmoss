@@ -586,6 +586,33 @@ export function MapPrototype(){
                 Los métodos en el prototipo proporcionan funcionalidad común para todas las instancias, evitando duplicar código.
             </p>
 
+            <h2>Ejemplo con Clases</h2>
+
+            <code>
+                class Animal {
+                    constructor(tipo, nombre) {
+                        this.tipo = tipo;
+                        this.nombre = nombre;
+                    }
+
+                    presentarse() {
+                        console.log(`Soy un ${this.tipo} llamado ${this.nombre}`);
+                    }
+                }
+
+                const perro = new Animal("Perro", "Rex");
+                const gato = new Animal("Gato", "Miau");
+
+                perro.presentarse();
+                gato.presentarse();
+            </code>
+
+            <p> 
+                En este ejemplo:
+                tipo y nombre son propiedades propias, únicas para cada instancia (perro y gato).
+                presentarse es un método en el prototipo (Animal.prototype), compartido por todas las instancias de Animal.
+            </p>
+
         </>
     )
 }
@@ -646,42 +673,6 @@ Este sistema de prototipos es fundamental para entender cómo funciona la herenc
 
 
 Claro, aquí tienes una explicación detallada sobre las diferencias entre prototipos e instancias en JavaScript, junto con los conceptos de métodos compartidos y la creación de instancias:
-
----
-
-### 
-
-
-
-1. ****:
-   
-
-2. ****:
-   
-**Ejemplo con Clases**:
-```javascript
-class Animal {
-    constructor(tipo, nombre) {
-        this.tipo = tipo; // Propiedad exclusiva de la instancia
-        this.nombre = nombre; // Propiedad exclusiva de la instancia
-    }
-
-    // Método compartido entre todas las instancias de Animal
-    presentarse() {
-        console.log(`Soy un ${this.tipo} llamado ${this.nombre}`);
-    }
-}
-
-const perro = new Animal("Perro", "Rex");
-const gato = new Animal("Gato", "Miau");
-
-perro.presentarse(); // "Soy un Perro llamado Rex"
-gato.presentarse();  // "Soy un Gato llamado Miau"
-```
-
-En este ejemplo:
-- `tipo` y `nombre` son propiedades propias, únicas para cada instancia (`perro` y `gato`).
-- `presentarse` es un método en el prototipo (`Animal.prototype`), compartido por todas las instancias de `Animal`.
 
 ---
 
