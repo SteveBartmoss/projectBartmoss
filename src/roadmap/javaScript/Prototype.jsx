@@ -613,6 +613,14 @@ export function MapPrototype(){
                 presentarse es un método en el prototipo (Animal.prototype), compartido por todas las instancias de Animal.
             </p>
 
+            <h1>Extensión de prototipos</h1>
+
+            <p>
+                La extensión de prototipos consiste en agregar métodos o propiedades al prototipo de una función constructora para que todas las instancias de esa función compartan dichos métodos o propiedades.
+            </p>
+
+            <h2>Cómo extender un prototipo</h2>
+
         </>
     )
 }
@@ -635,14 +643,6 @@ export function MapPrototype(){
 
 Estos cuatro principios trabajan juntos para crear sistemas orientados a objetos organizados y escalables, facilitando el desarrollo y mantenimiento de aplicaciones complejas.
 
-Claro, aquí tienes un desglose detallado para estos conceptos sobre herencia en JavaScript.
-
----
-
-### 
-
----
-
 ### Resumen
 
 | Concepto                  | Descripción                                                                                                                                                 |
@@ -656,9 +656,6 @@ Claro, aquí tienes un desglose detallado para estos conceptos sobre herencia en
 
 Estas características proporcionan una forma de estructurar el código de manera modular y reutilizable, permitiendo crear jerarquías de objetos y facilitando la reutilización de propiedades y métodos entre clases y objetos.
 
-Claro, aquí tienes una explicación detallada de estos conceptos relacionados con el sistema de prototipos en JavaScript:
-
----
 
 ### Resumen
 
@@ -669,10 +666,6 @@ Claro, aquí tienes una explicación detallada de estos conceptos relacionados c
 | **Cadena de Prototipos**         | Serie de enlaces entre objetos prototipos que permite buscar propiedades y métodos a través de múltiples niveles de herencia, desde el objeto hasta `Object.prototype`. |
 
 Este sistema de prototipos es fundamental para entender cómo funciona la herencia en JavaScript, facilitando el uso compartido de código y la creación de objetos de forma eficiente.
-
-
-
-Claro, aquí tienes una explicación detallada sobre las diferencias entre prototipos e instancias en JavaScript, junto con los conceptos de métodos compartidos y la creación de instancias:
 
 ---
 
@@ -688,12 +681,7 @@ Claro, aquí tienes una explicación detallada sobre las diferencias entre proto
 Este enfoque facilita la organización del código y permite que JavaScript implemente herencia de una manera eficiente y flexible.
 
 
-### **Extensión de prototipos: Agregar nuevos métodos y propiedades al prototype de una función constructora**
-
-1. **¿Qué es la extensión de prototipos?**  
-   La extensión de prototipos consiste en agregar métodos o propiedades al prototipo de una función constructora para que todas las instancias de esa función compartan dichos métodos o propiedades.
-
-2. **Cómo extender un prototipo:**
+2. ****
    ```javascript
    function Person(name) {
        this.name = name;
