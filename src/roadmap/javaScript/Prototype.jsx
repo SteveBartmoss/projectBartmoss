@@ -689,6 +689,30 @@ export function MapPrototype(){
                 Incompatibilidad: Si un método modificado o agregado no se comporta como los usuarios esperan, puede romper la funcionalidad de otros scripts.
             </p>
 
+            <h2>Evitar conflictos</h2>
+
+            <p>
+                Utilizar nombres únicos o prefijos para métodos personalizados:
+            </p>
+
+            <code>
+                 Array.prototype.myCustomFirst = function() {
+                    return this[0];
+                };
+            </code>
+
+            <p>
+                Verificar si el método ya existe antes de agregarlo:
+            </p>
+
+            <code>
+                if (!Array.prototype.first) {
+                    Array.prototype.first = function() {
+                        return this[0];
+                    };
+                }
+            </code>
+
         </>
     )
 }
@@ -760,23 +784,6 @@ Este enfoque facilita la organización del código y permite que JavaScript impl
 ---
 
 ### 
-
-2. **Evitar conflictos:**
-   - Utilizar nombres únicos o prefijos para métodos personalizados:
-     ```javascript
-     Array.prototype.myCustomFirst = function() {
-         return this[0];
-     };
-     ```
-
-   - Verificar si el método ya existe antes de agregarlo:
-     ```javascript
-     if (!Array.prototype.first) {
-         Array.prototype.first = function() {
-             return this[0];
-         };
-     }
-     ```
 
 3. **Uso en entornos compartidos:**
    - Restringir modificaciones de prototipos a entornos controlados.
