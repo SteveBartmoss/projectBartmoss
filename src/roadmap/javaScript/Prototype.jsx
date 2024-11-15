@@ -743,6 +743,31 @@ export function MapPrototype(){
             <p>
                 Es un mecanismo en JavaScript donde los objetos pueden heredar propiedades y métodos de otros objetos a través de la cadena de prototipos.
             </p>
+
+            <h2>Crear herencia prototipal con Object.create</h2>
+
+            <p>
+                Este método permite crear un objeto que hereda directamente de otro.
+            </p>
+
+            <code>
+                const animal = {
+                    eat: function() {
+                        console.log("Eating...");
+                    },
+                    sleep: function() {
+                        console.log("Sleeping...");
+                    }
+                };
+            
+                const dog = Object.create(animal);
+                dog.bark = function() {
+                    console.log("Woof!");
+                };
+            
+                dog.eat();
+                dog.bark();
+            </code>
         </>
     )
 }
@@ -814,30 +839,6 @@ Este enfoque facilita la organización del código y permite que JavaScript impl
 ---
 
 ### ****
-
-1. ****  
-   
-
-2. **Crear herencia prototipal con `Object.create`:**  
-   Este método permite crear un objeto que hereda directamente de otro.
-   ```javascript
-   const animal = {
-       eat: function() {
-           console.log("Eating...");
-       },
-       sleep: function() {
-           console.log("Sleeping...");
-       }
-   };
-
-   const dog = Object.create(animal);
-   dog.bark = function() {
-       console.log("Woof!");
-   };
-
-   dog.eat(); // Eating... (heredado de animal)
-   dog.bark(); // Woof! (propio de dog)
-   ```
 
 3. **Ventajas:**
    - Permite compartir métodos y propiedades entre objetos.
