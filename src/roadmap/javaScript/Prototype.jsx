@@ -831,6 +831,16 @@ export function MapPrototype(){
                 Mejor compatibilidad con otras herramientas y librerías modernas.
             </p>
 
+            <h1>Prototipos heredados</h1>
+
+            <h2>Cadena de prototipos en herencia</h2>
+
+            <p>
+                En JavaScript, las clases y objetos están conectados a través de una cadena de prototipos. Al buscar una propiedad o método:
+                Primero se verifica en el objeto actual.
+                Si no se encuentra, se busca en el prototipo padre.
+            </p>
+
         </>
     )
 }
@@ -901,15 +911,6 @@ Este enfoque facilita la organización del código y permite que JavaScript impl
 ---
 
 ### 
-
----
-
-### **Prototipos heredados: Cómo funcionan en la herencia para compartir métodos entre subclases y superclases**
-
-1. **Cadena de prototipos en herencia:**
-   En JavaScript, las clases y objetos están conectados a través de una cadena de prototipos. Al buscar una propiedad o método:
-   - Primero se verifica en el objeto actual.
-   - Si no se encuentra, se busca en el prototipo padre.
 
 2. **Ejemplo de prototipos en herencia:**
    ```javascript
