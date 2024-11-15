@@ -719,6 +719,22 @@ export function MapPrototype(){
                 Restringir modificaciones de prototipos a entornos controlados.
                 Asegurarse de documentar las modificaciones para evitar problemas en equipos o con bibliotecas.
             </p>
+
+            <h2>Alternativas modernas</h2>
+
+            <p>
+                Usar clases o funciones utilitarias para encapsular lógica sin modificar prototipos globales.
+            </p>
+
+            <code>
+                class ArrayUtils {
+                    static first(arr) {
+                        return arr[0];
+                    }
+                }
+
+                console.log(ArrayUtils.first([1, 2, 3])); 
+            </code>
             
         </>
     )
@@ -793,18 +809,12 @@ Este enfoque facilita la organización del código y permite que JavaScript impl
 ### 
    
 
-4. **Alternativas modernas:**
-   - Usar clases o funciones utilitarias para encapsular lógica sin modificar prototipos globales.
+4. **:**
+   
 
    **Ejemplo con una clase utilitaria:**
    ```javascript
-   class ArrayUtils {
-       static first(arr) {
-           return arr[0];
-       }
-   }
-
-   console.log(ArrayUtils.first([1, 2, 3])); // 1
+   
    ``` 
 
 Con estas prácticas, puedes comprender cómo extender prototipos y tomar decisiones informadas al utilizarlos en proyectos.
