@@ -484,6 +484,14 @@ export function MapPrototype(){
                 Los métodos y propiedades definidas en el prototipo son **compartidos** entre todas las instancias, lo cual ahorra memoria, ya que no se crean múltiples copias del mismo método o propiedad en cada instancia.
             </p>
 
+            <h2>Instancias</h2>
+
+            <p>
+                Una instancia es un objeto creado con una función constructora o clase.
+                Las propiedades propias de cada instancia (definidas en el constructor) son exclusivas de esa instancia y no se comparten.
+                Cada instancia tiene acceso a los métodos del prototipo, pero también puede definir sus propios métodos o sobrescribir los métodos heredados si es necesario.
+            </p>
+
         </>
     )
 }
@@ -550,10 +558,8 @@ Claro, aquí tienes una explicación detallada sobre las diferencias entre proto
 ### 
 
 
-2. **Instancias**:
-   - Una instancia es un objeto creado con una función constructora o clase.
-   - Las **propiedades propias** de cada instancia (definidas en el constructor) son exclusivas de esa instancia y no se comparten.
-   - Cada instancia tiene acceso a los métodos del prototipo, pero también puede definir sus propios métodos o sobrescribir los métodos heredados si es necesario.
+2. ****:
+   
 
 **Ejemplo de Prototipo e Instancia**:
 ```javascript
@@ -775,5 +781,138 @@ Este enfoque facilita la organización del código y permite que JavaScript impl
    ``` 
 
 Con estas prácticas, puedes comprender cómo extender prototipos y tomar decisiones informadas al utilizarlos en proyectos.
+
+
+### **Herencia prototipal: Usar prototipos para crear una relación entre objetos que permita la herencia de métodos y propiedades**
+
+1. **¿Qué es la herencia prototipal?**  
+   Es un mecanismo en JavaScript donde los objetos pueden heredar propiedades y métodos de otros objetos a través de la cadena de prototipos.
+
+2. **Crear herencia prototipal con `Object.create`:**  
+   Este método permite crear un objeto que hereda directamente de otro.
+   ```javascript
+   const animal = {
+       eat: function() {
+           console.log("Eating...");
+       },
+       sleep: function() {
+           console.log("Sleeping...");
+       }
+   };
+
+   const dog = Object.create(animal);
+   dog.bark = function() {
+       console.log("Woof!");
+   };
+
+   dog.eat(); // Eating... (heredado de animal)
+   dog.bark(); // Woof! (propio de dog)
+   ```
+
+3. **Ventajas:**
+   - Permite compartir métodos y propiedades entre objetos.
+   - Ahorra memoria porque los métodos compartidos se almacenan en el prototipo.
+
+4. **Consideraciones:**
+   - Las propiedades heredadas no se copian, sino que se acceden a través de la cadena de prototipos.
+   - Cambiar una propiedad en el prototipo afecta a todos los objetos que lo heredan.
+
+---
+
+### **Clases en ES6: Uso de `extends` y `super` para implementar herencia**
+
+1. **Clases y herencia en ES6:**  
+   Las clases proporcionan una sintaxis más estructurada para trabajar con la herencia.
+
+2. **Ejemplo básico con `extends` y `super`:**
+   ```javascript
+   class Animal {
+       constructor(name) {
+           this.name = name;
+       }
+
+       eat() {
+           console.log(`${this.name} is eating.`);
+       }
+   }
+
+   class Dog extends Animal {
+       constructor(name, breed) {
+           super(name); // Llama al constructor de la clase base
+           this.breed = breed;
+       }
+
+       bark() {
+           console.log(`${this.name} says Woof!`);
+       }
+   }
+
+   const myDog = new Dog("Rex", "Labrador");
+   myDog.eat(); // Rex is eating. (heredado de Animal)
+   myDog.bark(); // Rex says Woof! (propio de Dog)
+   ```
+
+3. **`extends` y `super`:**
+   - `extends`: Define que una clase hereda de otra.
+   - `super`: Llama al constructor o métodos de la clase padre.
+
+4. **Ventajas de las clases:**
+   - Más legibles y estructuradas.
+   - Mejor compatibilidad con otras herramientas y librerías modernas.
+
+---
+
+### **Prototipos heredados: Cómo funcionan en la herencia para compartir métodos entre subclases y superclases**
+
+1. **Cadena de prototipos en herencia:**
+   En JavaScript, las clases y objetos están conectados a través de una cadena de prototipos. Al buscar una propiedad o método:
+   - Primero se verifica en el objeto actual.
+   - Si no se encuentra, se busca en el prototipo padre.
+
+2. **Ejemplo de prototipos en herencia:**
+   ```javascript
+   function Animal(name) {
+       this.name = name;
+   }
+
+   Animal.prototype.eat = function() {
+       console.log(`${this.name} is eating.`);
+   };
+
+   function Dog(name, breed) {
+       Animal.call(this, name); // Heredar propiedades
+       this.breed = breed;
+   }
+
+   Dog.prototype = Object.create(Animal.prototype); // Heredar métodos
+   Dog.prototype.constructor = Dog; // Restaurar constructor
+   Dog.prototype.bark = function() {
+       console.log(`${this.name} says Woof!`);
+   };
+
+   const myDog = new Dog("Buddy", "Golden Retriever");
+   myDog.eat(); // Buddy is eating.
+   myDog.bark(); // Buddy says Woof!
+   ```
+
+3. **Cómo se conectan los prototipos:**
+   - `Dog.prototype` hereda de `Animal.prototype`.
+   - Métodos como `eat` están disponibles en todos los objetos `Dog` porque se encuentran en la cadena de prototipos.
+
+4. **Clases vs prototipos:**  
+   - Las clases en ES6 son una capa sintáctica sobre los prototipos.
+   - Aunque internamente usan prototipos, las clases hacen que la herencia sea más intuitiva y legible.
+
+---
+
+### **Resumen:**
+
+| Tema                  | Descripción                                                                 |
+|-----------------------|-----------------------------------------------------------------------------|
+| **Herencia prototipal** | Usar prototipos para compartir métodos y propiedades entre objetos.        |
+| **Clases en ES6**      | Sintaxis moderna para implementar herencia con `extends` y `super`.         |
+| **Prototipos heredados** | Los métodos se buscan en la cadena de prototipos, conectando subclases y superclases. |
+
+Estos conceptos permiten implementar herencia de forma flexible, aprovechando las características únicas de JavaScript.
 
 */
