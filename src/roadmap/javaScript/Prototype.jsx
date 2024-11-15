@@ -782,7 +782,42 @@ export function MapPrototype(){
                 Las propiedades heredadas no se copian, sino que se acceden a través de la cadena de prototipos.
                 Cambiar una propiedad en el prototipo afecta a todos los objetos que lo heredan.
             </p>
-            
+
+
+            <h1>Clases en ES6</h1>
+
+            <p>
+                Las clases proporcionan una sintaxis más estructurada para trabajar con la herencia.
+            </p>
+
+            <code>
+                class Animal {
+                    constructor(name) {
+                        this.name = name;
+                    }
+
+                    eat() {
+                        console.log(`${this.name} is eating.`);
+                    }
+                }
+
+                class Dog extends Animal {
+                    constructor(name, breed) {
+                        super(name); // Llama al constructor de la clase base
+                        this.breed = breed;
+                    }
+
+                    bark() {
+                        console.log(`${this.name} says Woof!`);
+                    }
+                }
+
+                const myDog = new Dog("Rex", "Labrador");
+                myDog.eat(); // Rex is eating. (heredado de Animal)
+                myDog.bark(); // Rex says Woof! (propio de Dog)
+            </code>
+
+
         </>
     )
 }
@@ -852,38 +887,7 @@ Este enfoque facilita la organización del código y permite que JavaScript impl
    ```
 ---
 
-### **Clases en ES6: Uso de `extends` y `super` para implementar herencia**
-
-1. **Clases y herencia en ES6:**  
-   Las clases proporcionan una sintaxis más estructurada para trabajar con la herencia.
-
-2. **Ejemplo básico con `extends` y `super`:**
-   ```javascript
-   class Animal {
-       constructor(name) {
-           this.name = name;
-       }
-
-       eat() {
-           console.log(`${this.name} is eating.`);
-       }
-   }
-
-   class Dog extends Animal {
-       constructor(name, breed) {
-           super(name); // Llama al constructor de la clase base
-           this.breed = breed;
-       }
-
-       bark() {
-           console.log(`${this.name} says Woof!`);
-       }
-   }
-
-   const myDog = new Dog("Rex", "Labrador");
-   myDog.eat(); // Rex is eating. (heredado de Animal)
-   myDog.bark(); // Rex says Woof! (propio de Dog)
-   ```
+###
 
 3. **`extends` y `super`:**
    - `extends`: Define que una clase hereda de otra.
