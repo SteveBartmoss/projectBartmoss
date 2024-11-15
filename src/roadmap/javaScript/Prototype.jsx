@@ -579,6 +579,13 @@ export function MapPrototype(){
                 Puedes crear instancias usando `new` con una función constructora o usando la sintaxis de clases en ES6. En ambos casos, las propiedades exclusivas se definen en el constructor, mientras que los métodos compartidos se definen en el prototipo.
             </p>
 
+            <h2>Propiedades Propias vs. Métodos Compartidos</h2>
+
+            <p>
+                Las propiedades exclusivas de cada instancia permiten que cada objeto tenga su propio estado (por ejemplo, un nombre, una edad, o una posición específica).
+                Los métodos en el prototipo proporcionan funcionalidad común para todas las instancias, evitando duplicar código.
+            </p>
+
         </>
     )
 }
@@ -649,10 +656,8 @@ Claro, aquí tienes una explicación detallada sobre las diferencias entre proto
 1. ****:
    
 
-2. **Propiedades Propias vs. Métodos Compartidos**:
-   - Las propiedades exclusivas de cada instancia permiten que cada objeto tenga su propio estado (por ejemplo, un nombre, una edad, o una posición específica).
-   - Los métodos en el prototipo proporcionan funcionalidad común para todas las instancias, evitando duplicar código.
-
+2. ****:
+   
 **Ejemplo con Clases**:
 ```javascript
 class Animal {
