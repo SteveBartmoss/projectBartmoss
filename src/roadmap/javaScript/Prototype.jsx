@@ -768,6 +768,13 @@ export function MapPrototype(){
                 dog.eat();
                 dog.bark();
             </code>
+
+            <h2>Ventajas<h2/>
+
+            <p>
+                Permite compartir métodos y propiedades entre objetos.
+                Ahorra memoria porque los métodos compartidos se almacenan en el prototipo.
+            </p>
         </>
     )
 }
@@ -839,10 +846,7 @@ Este enfoque facilita la organización del código y permite que JavaScript impl
 ---
 
 ### ****
-
-3. **Ventajas:**
-   - Permite compartir métodos y propiedades entre objetos.
-   - Ahorra memoria porque los métodos compartidos se almacenan en el prototipo.
+ 
 
 4. **Consideraciones:**
    - Las propiedades heredadas no se copian, sino que se acceden a través de la cadena de prototipos.
