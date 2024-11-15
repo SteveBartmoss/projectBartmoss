@@ -517,6 +517,56 @@ export function MapPrototype(){
                 saludar es un método compartido definido en el prototipo Persona.prototype, por lo que todas las instancias de Persona (como juan y ana) pueden usar el mismo método sin crear una copia en cada instancia.
             </p>
 
+            <h1>Métodos Compartidos: Ventajas de Definir Métodos en el Prototipo</h1>
+
+            <p>
+                Cuando defines métodos en el prototipo en lugar de dentro del constructor o de cada instancia, obtienes varias ventajas:
+            </p>
+
+            <h2>Eficiencia de Memoria</h2>
+
+            <p>
+                Los métodos definidos en el prototipo existen solo una vez en la memoria, y todas las instancias comparten el mismo método. Esto es mucho más eficiente que tener una copia del método en cada instancia.
+            </p>
+
+            <h2>Facilidad de Actualización</h2>
+
+            <p>
+                Si actualizas un método en el prototipo, todas las instancias que comparten ese prototipo automáticamente ven el cambio, lo cual es útil para mantener el código más fácil de actualizar y menos propenso a errores.
+            </p>
+
+            <h2>Separación de Propiedades y Métodos</h2>
+
+            <p>
+                Colocar propiedades en la instancia y métodos en el prototipo mantiene una separación lógica entre los datos de una instancia y las acciones que puede realizar, haciendo el código más legible y organizado.
+            </p>
+
+            <h2>Ejemplo de Método Compartido</h2>
+
+            <code>
+                function Coche(marca, modelo) {
+                    this.marca = marca;
+                    this.modelo = modelo;
+                }
+
+                // Método compartido en el prototipo
+                Coche.prototype.mostrarDetalles = function() {
+                    console.log(`Marca: ${this.marca}, Modelo: ${this.modelo}`);
+                };
+
+                const coche1 = new Coche("Toyota", "Corolla");
+                const coche2 = new Coche("Honda", "Civic");
+
+                coche1.mostrarDetalles();
+                coche2.mostrarDetalles();
+            </code>
+
+            <p>
+                En este caso:
+                mostrarDetalles está en el prototipo, por lo que solo se define una vez en la memoria y es accesible para todas las instancias (coche1 y coche2).
+                Si necesitas actualizar el método mostrarDetalles, puedes hacerlo directamente en el prototipo y todas las instancias verán el cambio automáticamente.
+            </p>
+
         </>
     )
 }
@@ -577,49 +627,6 @@ Este sistema de prototipos es fundamental para entender cómo funciona la herenc
 
 
 Claro, aquí tienes una explicación detallada sobre las diferencias entre prototipos e instancias en JavaScript, junto con los conceptos de métodos compartidos y la creación de instancias:
-
----
-
-
-
-
----
-
-### Métodos Compartidos: Ventajas de Definir Métodos en el Prototipo
-
-Cuando defines métodos en el prototipo en lugar de dentro del constructor o de cada instancia, obtienes varias ventajas:
-
-1. **Eficiencia de Memoria**:
-   - Los métodos definidos en el prototipo existen solo una vez en la memoria, y todas las instancias comparten el mismo método. Esto es mucho más eficiente que tener una copia del método en cada instancia.
-
-2. **Facilidad de Actualización**:
-   - Si actualizas un método en el prototipo, todas las instancias que comparten ese prototipo automáticamente ven el cambio, lo cual es útil para mantener el código más fácil de actualizar y menos propenso a errores.
-
-3. **Separación de Propiedades y Métodos**:
-   - Colocar propiedades en la instancia y métodos en el prototipo mantiene una separación lógica entre los datos de una instancia y las acciones que puede realizar, haciendo el código más legible y organizado.
-
-**Ejemplo de Método Compartido**:
-```javascript
-function Coche(marca, modelo) {
-    this.marca = marca;
-    this.modelo = modelo;
-}
-
-// Método compartido en el prototipo
-Coche.prototype.mostrarDetalles = function() {
-    console.log(`Marca: ${this.marca}, Modelo: ${this.modelo}`);
-};
-
-const coche1 = new Coche("Toyota", "Corolla");
-const coche2 = new Coche("Honda", "Civic");
-
-coche1.mostrarDetalles(); // "Marca: Toyota, Modelo: Corolla"
-coche2.mostrarDetalles(); // "Marca: Honda, Modelo: Civic"
-```
-
-En este caso:
-- `mostrarDetalles` está en el prototipo, por lo que solo se define una vez en la memoria y es accesible para todas las instancias (`coche1` y `coche2`).
-- Si necesitas actualizar el método `mostrarDetalles`, puedes hacerlo directamente en el prototipo y todas las instancias verán el cambio automáticamente.
 
 ---
 
