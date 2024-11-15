@@ -665,14 +665,18 @@ export function MapPrototype(){
                 console.log(numbers.first());
             </code>
 
+            <h2>Ventajas</h2>
+
+            <p>
+                Reutilización: Permite crear utilidades útiles y reutilizables para todos los objetos de un tipo.
+                Consistencia: Una vez definido, el método está disponible globalmente.
+            </p>
+
         </>
     )
 }
 
 /*
-
-3. ****:
-   
 
 ---
 
@@ -725,10 +729,6 @@ Este sistema de prototipos es fundamental para entender cómo funciona la herenc
 Este enfoque facilita la organización del código y permite que JavaScript implemente herencia de una manera eficiente y flexible.
 
 ---
-
-2. **Ventajas:**
-   - **Reutilización:** Permite crear utilidades útiles y reutilizables para todos los objetos de un tipo.
-   - **Consistencia:** Una vez definido, el método está disponible globalmente.
 
 3. **Riesgos:**
    - **Conflictos:** Si otras bibliotecas o scripts también modifican el prototipo, puede haber colisiones.
