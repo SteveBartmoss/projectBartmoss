@@ -672,6 +672,14 @@ export function MapPrototype(){
                 Consistencia: Una vez definido, el método está disponible globalmente.
             </p>
 
+            <h2>Riesgos</h2>
+
+            <p>
+                Conflictos: Si otras bibliotecas o scripts también modifican el prototipo, puede haber colisiones.
+                Compatibilidad: Los navegadores modernos o futuras actualizaciones de JavaScript podrían implementar un método con el mismo nombre, causando comportamientos inesperados.
+                Impacto global: Las modificaciones afectan a todo el entorno, lo que puede generar errores difíciles de depurar.
+            </p>
+
         </>
     )
 }
@@ -729,11 +737,6 @@ Este sistema de prototipos es fundamental para entender cómo funciona la herenc
 Este enfoque facilita la organización del código y permite que JavaScript implemente herencia de una manera eficiente y flexible.
 
 ---
-
-3. **Riesgos:**
-   - **Conflictos:** Si otras bibliotecas o scripts también modifican el prototipo, puede haber colisiones.
-   - **Compatibilidad:** Los navegadores modernos o futuras actualizaciones de JavaScript podrían implementar un método con el mismo nombre, causando comportamientos inesperados.
-   - **Impacto global:** Las modificaciones afectan a todo el entorno, lo que puede generar errores difíciles de depurar.
 
 4. **Mejor práctica:**
    - Evitar modificar prototipos de tipos nativos en la mayoría de los casos.
