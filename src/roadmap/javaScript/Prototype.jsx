@@ -621,6 +621,19 @@ export function MapPrototype(){
 
             <h2>Cómo extender un prototipo</h2>
 
+            <code>
+                function Person(name) {
+                    this.name = name;
+                }
+
+                Person.prototype.greet = function() {
+                    return `Hello, my name is ${this.name}`;
+                };
+            
+                const person1 = new Person("Alice");
+                console.log(person1.greet());
+            </code>
+
         </>
     )
 }
@@ -680,21 +693,6 @@ Este sistema de prototipos es fundamental para entender cómo funciona la herenc
 
 Este enfoque facilita la organización del código y permite que JavaScript implemente herencia de una manera eficiente y flexible.
 
-
-2. ****
-   ```javascript
-   function Person(name) {
-       this.name = name;
-   }
-
-   // Agregar un método al prototipo
-   Person.prototype.greet = function() {
-       return `Hello, my name is ${this.name}`;
-   };
-
-   const person1 = new Person("Alice");
-   console.log(person1.greet()); // Hello, my name is Alice
-   ```
 
 3. **Ventajas:**
    - **Eficiencia:** Los métodos agregados al prototipo no se duplican en cada instancia, ahorrando memoria.
