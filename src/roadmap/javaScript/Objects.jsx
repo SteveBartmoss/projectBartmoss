@@ -332,21 +332,20 @@ export function MapObjects() {
             </p>
 
             <code>
-            &#123; &gt; &#125;
-                function actualizarEdad(persona) {
-                    persona.edad = 35;
-                }
+                function actualizarEdad(persona) &#123;
+                    persona.edad = 35
+                &#125;
 
-                const persona = {nombre: "Lucía", edad: 28 };
-                actualizarEdad(persona);
-                console.log(persona.edad); // 35 (la función modifica el objeto original)
+                const persona = &#123;nombre: "Lucía", edad: 28 &#125;
+                actualizarEdad(persona)
+                console.log(persona.edad) // 35 (la función modifica el objeto original)
             </code>
 
             <h2>Cómo Evitar Efectos Colaterales: Copias de Objetos</h2>
 
             <p>
                 Para evitar modificar el objeto original (mutación) cuando trabajas con referencias, puedes crear una copia del objeto. Existen diferentes formas de hacerlo en JavaScript:
-                Asignación mediante {...objeto} (Spread Operator): Crea una copia superficial del objeto.
+                Asignación mediante &#123;...objeto&#125; (Spread Operator): Crea una copia superficial del objeto.
                 Object.assign(): También crea una copia superficial del objeto.
                 Clonación profunda: Cuando el objeto contiene otros objetos anidados, la copia superficial no es suficiente. Para clonar profundamente, puedes utilizar métodos como structuredClone() o bibliotecas como lodash.
             </p>
@@ -356,12 +355,12 @@ export function MapObjects() {
             </p>
 
             <code>
-                const original = {nombre: "Juan", edad: 40 };
-                const copia = {...original};
+                const original = &#123;nombre: "Juan", edad: 40 &#125;
+                const copia = &#123;...original&#125;
 
-                copia.edad = 45;
-                console.log(original.edad); // 40 (el original no se modifica)
-                console.log(copia.edad);    // 45 (la copia es independiente)
+                copia.edad = 45
+                console.log(original.edad) // 40 (el original no se modifica)
+                console.log(copia.edad)    // 45 (la copia es independiente)
             </code>
 
             <h2>Copia Superficial vs. Copia Profunda</h2>
@@ -383,15 +382,15 @@ export function MapObjects() {
             </p>
 
             <code>
-                const persona = {
+                const persona = &#123;
                     nombre: "Ana",
-                direccion: {ciudad: "Lima", pais: "Perú" }
-                };
+                direccion: &#123;ciudad: "Lima", pais: "Perú" &#125;
+                &#125;
 
-                const copiaSuperficial = {...persona};
-                copiaSuperficial.direccion.ciudad = "Cusco";
+                const copiaSuperficial = &#123;...persona&#125;
+                copiaSuperficial.direccion.ciudad = "Cusco"
 
-                console.log(persona.direccion.ciudad); // "Cusco" (la ciudad cambia en ambas referencias)
+                console.log(persona.direccion.ciudad) // "Cusco" (la ciudad cambia en ambas referencias)
             </code>
 
             <p>
@@ -399,15 +398,15 @@ export function MapObjects() {
             </p>
 
             <code>
-                const persona = {
+                const persona = &#123;
                     nombre: "Ana",
-                direccion: {ciudad: "Lima", pais: "Perú" }
-                };
+                direccion: &#123;ciudad: "Lima", pais: "Perú" &#125;
+                &#125;
 
-                const copiaProfunda = structuredClone(persona);
-                copiaProfunda.direccion.ciudad = "Cusco";
+                const copiaProfunda = structuredClone(persona)
+                copiaProfunda.direccion.ciudad = "Cusco"
 
-                console.log(persona.direccion.ciudad); // "Lima" (el original no se ve afectado)
+                console.log(persona.direccion.ciudad) // "Lima" (el original no se ve afectado)
 
             </code>
 
@@ -423,12 +422,12 @@ export function MapObjects() {
             </p>
 
             <code>
-                const [persona, setPersona] = useState({nombre: "Pedro", edad: 25 });
+                const [persona, setPersona] = useState(&#123;nombre: "Pedro", edad: 25 &#125;);
 
-                function actualizarEdad() {
+                function actualizarEdad() &#123;
                     // Usamos una copia para evitar mutación directa
-                    setPersona(prevPersona => ({ ...prevPersona, edad: prevPersona.edad + 1 }));
-                }
+                    setPersona(prevPersona =&gt; (&#123; ...prevPersona, edad: prevPersona.edad + 1 &#125;));
+                &#125;
 
             </code>
 
@@ -451,21 +450,21 @@ export function MapObjects() {
             </p>
 
             <code>
-                function crearPersona(nombre, edad) {
-                    return {
-                    nombre: nombre,
-                edad: edad,
-                saludar: function() {
-                    console.log(`Hola, mi nombre es ${this.nombre} y tengo ${this.edad} años.`);
-                        }
-                    };
-                }
+                function crearPersona(nombre, edad) &#123;
+                    return &#123;
+                        nombre: nombre,
+                        edad: edad,
+                        saludar: function() &#125;
+                            console.log(`Hola, mi nombre es $&#123;this.nombre&#125; y tengo $&#123;this.edad&#125; años.`)
+                        &#125;
+                    &#125;
+                &#125;
 
-                const persona1 = crearPersona("Ana", 30);
-                const persona2 = crearPersona("Luis", 25);
+                const persona1 = crearPersona("Ana", 30)
+                const persona2 = crearPersona("Luis", 25)
 
-                persona1.saludar(); // "Hola, mi nombre es Ana y tengo 30 años."
-                persona2.saludar(); // "Hola, mi nombre es Luis y tengo 25 años."
+                persona1.saludar() // "Hola, mi nombre es Ana y tengo 30 años."
+                persona2.saludar() // "Hola, mi nombre es Luis y tengo 25 años."
 
             </code>
 
@@ -482,15 +481,16 @@ export function MapObjects() {
             </p>
 
             <code>
-                function crearVehiculo(tipo, marca) {
-                    return {
-                    tipo: tipo,
-                marca: marca,
-                moverse: function() {
-                    console.log(`El ${this.marca} se está moviendo.`);
-                        }
-                    };
-                }
+            &#123; &gt; &#125;
+                function crearVehiculo(tipo, marca) &#123;
+                    return &#123;
+                        tipo: tipo,
+                        marca: marca,
+                        moverse: function() &#123;
+                            console.log(`El $&#123;this.marca&#125; se está moviendo.`);
+                        &#125;
+                    &#125;
+                &#125;
 
                 const coche = crearVehiculo("coche", "Toyota");
                 const moto = crearVehiculo("moto", "Yamaha");
@@ -814,7 +814,7 @@ export function MapObjects() {
                         return a * b;
                     }
                 }
-
+                &#123; &gt; &#125;
                 // Llamada al método estático sin crear una instancia
                 console.log(Calculadora.sumar(5, 10)); // 15
 
