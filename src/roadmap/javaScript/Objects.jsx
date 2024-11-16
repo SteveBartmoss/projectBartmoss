@@ -142,24 +142,20 @@ export function MapObjects() {
                         console.log(objeto.nombre completo)
                     </code>
 
+                    <h2>Notación de Corchetes ([])</h2>
+
+                    <p>
+                        La notación de corchetes es útil cuando el nombre de la propiedad es dinámico, se almacena en una variable, o no es un identificador válido.
+                    </p>
+
+                    <code>
+                        const persona = &#123;nombre: "Luis", edad: 30 &#125;
+                        const propiedad = "nombre"
+                        console.log(persona[propiedad]) // "Luis"
+                    </code>
+
                 </DivContent>
             </DivArticle>
-
-
-
-
-
-            <h2>Notación de Corchetes ([])</h2>
-
-            <p>
-                La notación de corchetes es útil cuando el nombre de la propiedad es dinámico, se almacena en una variable, o no es un identificador válido.
-            </p>
-
-            <code>
-                const persona = &#123;nombre: "Luis", edad: 30 &#125;
-                const propiedad = "nombre"
-                console.log(persona[propiedad]) // "Luis"
-            </code>
 
             <p>
                 La notación de corchetes permite acceder a propiedades que contienen espacios, caracteres especiales o números.
