@@ -27,11 +27,11 @@ export function MapObjects() {
 
             <h2>Ejemplo</h2>
 
-            <code>
-                const persona = {nombre: "Juan" };
+            <p>
+                const persona = &#123; nombre: "Juan" &#125;
                 persona.edad = 30; // Añadiendo la propiedad 'edad' en tiempo de ejecución
-                console.log(persona); // {nombre: "Juan", edad: 30 }
-            </code>
+                console.log(persona); // nombre: "Juan", edad: 30 
+            </p>
 
             <p>
                 También se puede añadir una propiedad usando corchetes [], lo cual es útil cuando el nombre de la propiedad está almacenado en una variable:
@@ -50,7 +50,7 @@ export function MapObjects() {
 
             <code>
                 persona.edad = 31; // Cambia el valor de la propiedad 'edad'
-                console.log(persona); // {nombre: "Juan", edad: 31, ocupacion: "Desarrollador" }
+                console.log(persona); // nombre: "Juan", edad: 31, ocupacion: "Desarrollador" 
             </code>
 
             <h2>Eliminar propiedades dinámicamente</h2>
@@ -61,7 +61,7 @@ export function MapObjects() {
 
             <code>
                 delete persona.edad; // Elimina la propiedad 'edad'
-                console.log(persona); // {nombre: "Juan", ocupacion: "Desarrollador" }
+                console.log(persona); // nombre: "Juan", ocupacion: "Desarrollador"
             </code>
 
             <h1>Métodos Dinámicos en JavaScript</h1>
@@ -77,10 +77,10 @@ export function MapObjects() {
             </p>
 
             <code>
-                persona.saludar = function() {
-                    console.log(`Hola, soy ${this.nombre}`);
-                };
-                persona.saludar(); // "Hola, soy Ana"
+                persona.saludar = function() &#123;
+                    console.log(`Hola, soy $&#123;this.nombre&#125;`)
+                &#125;
+                persona.saludar() // "Hola, soy Ana"
             </code>
 
             <p>
@@ -88,11 +88,11 @@ export function MapObjects() {
             </p>
 
             <code>
-                const metodo = "despedirse";
-                persona[metodo] = function() {
-                    console.log("Adiós!");
-                };
-                persona.despedirse(); // "Adiós!"
+                const metodo = "despedirse"
+                persona[metodo] = function() &#123;
+                    console.log("Adiós!")
+                &#125;
+                persona.despedirse() // "Adiós!"
             </code>
 
             <h2>Modificar Métodos Dinámicamente</h2>
@@ -100,10 +100,10 @@ export function MapObjects() {
             <p>Puedes modificar un método reasignándolo a una nueva función.</p>
 
             <code>
-                persona.saludar = function() {
-                    console.log(`Hola, mi nombre es ${this.nombre} y tengo ${this.edad} años`);
-                };
-                persona.saludar(); // "Hola, mi nombre es Ana y tengo 26 años"
+                persona.saludar = function() &#123;
+                    console.log(`Hola, mi nombre es $&#123;this.nombre&#125; y tengo $&#123;this.edad&#125; años`)
+                    &#125;
+                persona.saludar() // "Hola, mi nombre es Ana y tengo 26 años"
             </code>
 
             <h2>Eliminar Métodos Dinámicamente</h2>
@@ -111,8 +111,8 @@ export function MapObjects() {
             <p>delete también elimina métodos del objeto.</p>
 
             <code>
-                delete persona.saludar; // Elimina el método 'saludar'
-                console.log(persona.saludar); // undefined
+                delete persona.saludar // Elimina el método 'saludar'
+                console.log(persona.saludar) // undefined
             </code>
 
             <h1>Acceso a Propiedades en JavaScript</h1>
@@ -129,9 +129,9 @@ export function MapObjects() {
             </p>
 
             <code>
-                const persona = {nombre: "Luis", edad: 30 };
-                console.log(persona.nombre); // "Luis"
-                console.log(persona.edad); // 30
+                const persona = &#123;nombre: "Luis", edad: 30 &#125;
+                console.log(persona.nombre) // "Luis"
+                console.log(persona.edad) // 30
             </code>
 
             <p>
@@ -141,8 +141,8 @@ export function MapObjects() {
             </p>
 
             <code>
-                const objeto = {"nombre completo": "Luis Pérez" };
-                console.log(objeto.nombre completo);
+                const objeto = &#123;"nombre completo": "Luis Pérez" &#125;
+                console.log(objeto.nombre completo)
             </code>
 
             <h2>Notación de Corchetes ([])</h2>
@@ -152,9 +152,9 @@ export function MapObjects() {
             </p>
 
             <code>
-                const persona = {nombre: "Luis", edad: 30 };
-                const propiedad = "nombre";
-                console.log(persona[propiedad]); // "Luis"
+                const persona = &#123;nombre: "Luis", edad: 30 &#125;
+                const propiedad = "nombre"
+                console.log(persona[propiedad]) // "Luis"
             </code>
 
             <p>
@@ -162,9 +162,9 @@ export function MapObjects() {
             </p>
 
             <code>
-                const producto = {"precio-venta": 200, "nombre producto": "Laptop" };
-                console.log(producto["precio-venta"]); // 200
-                console.log(producto["nombre producto"]); // "Laptop"
+                const producto = &#123;"precio-venta": 200, "nombre producto": "Laptop" &#125;
+                console.log(producto["precio-venta"]) // 200
+                console.log(producto["nombre producto"]) // "Laptop"
             </code>
 
             <p>
@@ -172,8 +172,8 @@ export function MapObjects() {
             </p>
 
             <code>
-                const propiedad = "edad";
-                console.log(persona[propiedad]); // 30
+                const propiedad = "edad"
+                console.log(persona[propiedad]) // 30
             </code>
 
             <h1>Enumeración de Propiedades en JavaScript</h1>
@@ -190,12 +190,12 @@ export function MapObjects() {
             </p>
 
             <code>
-                const persona = {nombre: "Luis", edad: 30, ocupacion: "Ingeniero" };
-                for (const propiedad in persona) {
-                    if (persona.hasOwnProperty(propiedad)) {
-                    console.log(`${propiedad}: ${persona[propiedad]}`);
-                    }
-                }
+                const persona = &#123;nombre: "Luis", edad: 30, ocupacion: "Ingeniero" &#125;
+                for (const propiedad in persona) &#123;
+                    if (persona.hasOwnProperty(propiedad)) &#123;
+                    console.log(`$&#123;propiedad&#125;: $&#123;persona[propiedad]&#125;`)
+                    &#125;
+                &#125;
             </code>
 
             <p>
@@ -211,9 +211,9 @@ export function MapObjects() {
             </p>
 
             <code>
-                const producto = {nombre: "Laptop", precio: 1500, disponible: true };
-                const propiedades = Object.keys(producto);
-                console.log(propiedades); // ["nombre", "precio", "disponible"]
+                const producto = &#123;nombre: "Laptop", precio: 1500, disponible: true &#125;
+                const propiedades = Object.keys(producto)
+                console.log(propiedades) // ["nombre", "precio", "disponible"]
             </code>
 
             <p>
@@ -221,9 +221,9 @@ export function MapObjects() {
             </p>
 
             <code>
-                propiedades.forEach(propiedad => {
-                    console.log(`${propiedad}: ${producto[propiedad]}`);
-                });
+                propiedades.forEach(propiedad =&gt; &#123;
+                    console.log(`$&#123;propiedad&#125;: $&#123;producto[propiedad]&#125;`);
+                &#125;)
             </code>
 
             <p>
@@ -239,7 +239,7 @@ export function MapObjects() {
             </p>
 
             <code>
-                const usuario = {nombre: "Ana", edad: 25, pais: "México" };
+                const usuario = &#123;nombre: "Ana", edad: 25, pais: "México" &#125;
                 const valores = Object.values(usuario);
                 console.log(valores); // ["Ana", 25, "México"]
             </code>
@@ -249,9 +249,9 @@ export function MapObjects() {
             </p>
 
             <code>
-                valores.forEach(valor => {
-                    console.log(valor);
-                });
+                valores.forEach(valor =&gt; &#123;
+                    console.log(valor)
+                &#125;)
             </code>
 
             <p>
@@ -266,9 +266,9 @@ export function MapObjects() {
             </p>
 
             <code>
-                const empleado = {nombre: "Carlos", rol: "Desarrollador", edad: 28 };
-                const entradas = Object.entries(empleado);
-                console.log(entradas);
+                const empleado = &#123;nombre: "Carlos", rol: "Desarrollador", edad: 28 &#125;
+                const entradas = Object.entries(empleado)
+                console.log(entradas)
             </code>
 
             <p>
@@ -276,9 +276,9 @@ export function MapObjects() {
             </p>
 
             <code>
-                entradas.forEach(([clave, valor]) => {
-                    console.log(`${clave}: ${valor}`);
-                });
+                entradas.forEach(([clave, valor]) =&gt; &#123;
+                    console.log(`$&#123;clave&#125;: $&#123;valor&#125;`);
+                &#125;);
             </code>
 
             <p>
@@ -301,10 +301,10 @@ export function MapObjects() {
             </p>
 
             <code>
-                const persona = {nombre: "Ana", edad: 30 };
-                persona.edad = 31; // Modificamos una propiedad existente
-                persona.pais = "México"; // Añadimos una nueva propiedad
-                console.log(persona); // {nombre: "Ana", edad: 31, pais: "México" }
+                const persona = &#123;nombre: "Ana", edad: 30 &#125;
+                persona.edad = 31 // Modificamos una propiedad existente
+                persona.pais = "México" // Añadimos una nueva propiedad
+                console.log(persona) // nombre: "Ana", edad: 31, pais: "México" 
             </code>
 
             <h2>Paso por Referencia vs. Paso por Valor</h2>
@@ -320,11 +320,11 @@ export function MapObjects() {
             </p>
 
             <code>
-                const objeto1 = {nombre: "Carlos" };
-                const objeto2 = objeto1; // Ambos apuntan al mismo objeto
+                const objeto1 = &#123;nombre: "Carlos" &#125;
+                const objeto2 = objeto1 // Ambos apuntan al mismo objeto
 
-                objeto2.nombre = "Luis";
-                console.log(objeto1.nombre); // "Luis" (ambas variables reflejan el cambio)
+                objeto2.nombre = "Luis"
+                console.log(objeto1.nombre) // "Luis" (ambas variables reflejan el cambio)
             </code>
 
             <p>
@@ -332,6 +332,7 @@ export function MapObjects() {
             </p>
 
             <code>
+            &#123; &gt; &#125;
                 function actualizarEdad(persona) {
                     persona.edad = 35;
                 }
