@@ -80,24 +80,26 @@ export function MapObjects() {
                         persona.saludar() // "Hola, soy Ana"
                     </code>
 
+                    <p>
+                        También se puede añadir un metodo usando corchetes [], esto es útil cuando el nombre del método está almacenado en una variable.
+                    </p>
+
+                    <code>
+                        const metodo = "despedirse"
+                        persona[metodo] = function() &#123;
+                        console.log("Adiós!")
+                        &#125;
+                        persona.despedirse() // "Adiós!"
+                    </code>
+
+                    <h2>Modificar Métodos Dinámicamente</h2>
+
+                    <p>Puedes modificar un método reasignándolo a una nueva función.</p>
+
                 </DivContent>
             </DivArticle>
 
-            <p>
-                También se puede añadir un metodo usando corchetes [], esto es útil cuando el nombre del método está almacenado en una variable.
-            </p>
 
-            <code>
-                const metodo = "despedirse"
-                persona[metodo] = function() &#123;
-                console.log("Adiós!")
-                &#125;
-                persona.despedirse() // "Adiós!"
-            </code>
-
-            <h2>Modificar Métodos Dinámicamente</h2>
-
-            <p>Puedes modificar un método reasignándolo a una nueva función.</p>
 
             <code>
                 persona.saludar = function() &#123;
