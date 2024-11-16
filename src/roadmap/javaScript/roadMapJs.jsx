@@ -3,6 +3,7 @@ import { Btn } from "../../componentes/btn/Btn"
 import { DivArticle, DivCol, DivContent, DivRow, DivTopicos } from "../../componentes/contenedores/contenedores"
 import { ExtendPanel } from "../../componentes/extendpanel/ExtendPanel"
 import { Portada } from "../../componentes/portada/portada"
+import { CardLink } from "../../componentes/card/card"
 
 
 export function RoadMapJs() {
@@ -10,7 +11,8 @@ export function RoadMapJs() {
     const navigate = useNavigate();
 
     const handleNavigate=(url)=>{
-        navigate(url)
+        console.log('prueba')
+        //navigate(url)
     }
 
     return (
@@ -44,7 +46,7 @@ export function RoadMapJs() {
 
                         <DivRow>
                             <DivCol>
-                                <Btn evento={handleNavigate('objects')}>Ir al post</Btn>
+                                <CardLink url={'objects'} text={'Ir al articulo'} />
                             </DivCol>
                         </DivRow>
                     </ExtendPanel>
