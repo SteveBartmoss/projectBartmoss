@@ -125,25 +125,29 @@ export function MapObjects() {
                         Se utiliza cuando el nombre de la propiedad es un identificador válido de JavaScript (no contiene espacios, guiones, ni empieza con un número).
                     </p>
 
+                    <code>
+                        const persona = &#123;nombre: "Luis", edad: 30 &#125;
+                        console.log(persona.nombre) // "Luis"
+                        console.log(persona.edad) // 30
+                    </code>
+
+                    <p>
+                        No se puede usar la notación de punto si el nombre de la propiedad:
+                        Contiene caracteres especiales (por ejemplo, persona["nombre completo"] no funciona con persona.nombre completo).
+                        Es un número o comienza con un número (persona.123 no es válido).
+                    </p>
+
+                    <code>
+                        const objeto = &#123;"nombre completo": "Luis Pérez" &#125;
+                        console.log(objeto.nombre completo)
+                    </code>
+
                 </DivContent>
             </DivArticle>
 
-            <code>
-                const persona = &#123;nombre: "Luis", edad: 30 &#125;
-                console.log(persona.nombre) // "Luis"
-                console.log(persona.edad) // 30
-            </code>
 
-            <p>
-                No se puede usar la notación de punto si el nombre de la propiedad:
-                Contiene caracteres especiales (por ejemplo, persona["nombre completo"] no funciona con persona.nombre completo).
-                Es un número o comienza con un número (persona.123 no es válido).
-            </p>
 
-            <code>
-                const objeto = &#123;"nombre completo": "Luis Pérez" &#125;
-                console.log(objeto.nombre completo)
-            </code>
+
 
             <h2>Notación de Corchetes ([])</h2>
 
