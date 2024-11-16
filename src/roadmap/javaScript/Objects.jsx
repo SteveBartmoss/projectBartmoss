@@ -22,25 +22,31 @@ export function MapObjects() {
                         En JavaScript, puedes agregar propiedades a un objeto en cualquier momento, incluso después de haberlo creado.
                     </p>
 
+                    <h2>Ejemplo</h2>
+
+                    <p>
+                        const persona = &#123; nombre: "Juan" &#125;
+                        persona.edad = 30; // Añadiendo la propiedad 'edad' en tiempo de ejecución
+                        console.log(persona); // nombre: "Juan", edad: 30
+                    </p>
+
+                    <p>
+                        También se puede añadir una propiedad usando corchetes [], lo cual es útil cuando el nombre de la propiedad está almacenado en una variable:
+                    </p>
+
+                    <code>
+                        const key = "ocupacion";
+                        persona[key] = "Desarrollador";
+                    </code>
+
                 </DivContent>
             </DivArticle>
 
-            <h2>Ejemplo</h2>
 
-            <p>
-                const persona = &#123; nombre: "Juan" &#125;
-                persona.edad = 30; // Añadiendo la propiedad 'edad' en tiempo de ejecución
-                console.log(persona); // nombre: "Juan", edad: 30 
-            </p>
 
-            <p>
-                También se puede añadir una propiedad usando corchetes [], lo cual es útil cuando el nombre de la propiedad está almacenado en una variable:
-            </p>
 
-            <code>
-                const key = "ocupacion";
-                persona[key] = "Desarrollador";
-            </code>
+
+
 
             <h2>Modificar propiedades dinámicamente</h2>
 
@@ -50,7 +56,7 @@ export function MapObjects() {
 
             <code>
                 persona.edad = 31; // Cambia el valor de la propiedad 'edad'
-                console.log(persona); // nombre: "Juan", edad: 31, ocupacion: "Desarrollador" 
+                console.log(persona); // nombre: "Juan", edad: 31, ocupacion: "Desarrollador"
             </code>
 
             <h2>Eliminar propiedades dinámicamente</h2>
@@ -78,7 +84,7 @@ export function MapObjects() {
 
             <code>
                 persona.saludar = function() &#123;
-                    console.log(`Hola, soy $&#123;this.nombre&#125;`)
+                console.log(`Hola, soy $&#123;this.nombre&#125;`)
                 &#125;
                 persona.saludar() // "Hola, soy Ana"
             </code>
@@ -90,7 +96,7 @@ export function MapObjects() {
             <code>
                 const metodo = "despedirse"
                 persona[metodo] = function() &#123;
-                    console.log("Adiós!")
+                console.log("Adiós!")
                 &#125;
                 persona.despedirse() // "Adiós!"
             </code>
@@ -101,8 +107,8 @@ export function MapObjects() {
 
             <code>
                 persona.saludar = function() &#123;
-                    console.log(`Hola, mi nombre es $&#123;this.nombre&#125; y tengo $&#123;this.edad&#125; años`)
-                    &#125;
+                console.log(`Hola, mi nombre es $&#123;this.nombre&#125; y tengo $&#123;this.edad&#125; años`)
+                &#125;
                 persona.saludar() // "Hola, mi nombre es Ana y tengo 26 años"
             </code>
 
@@ -192,9 +198,9 @@ export function MapObjects() {
             <code>
                 const persona = &#123;nombre: "Luis", edad: 30, ocupacion: "Ingeniero" &#125;
                 for (const propiedad in persona) &#123;
-                    if (persona.hasOwnProperty(propiedad)) &#123;
-                    console.log(`$&#123;propiedad&#125;: $&#123;persona[propiedad]&#125;`)
-                    &#125;
+                if (persona.hasOwnProperty(propiedad)) &#123;
+                console.log(`$&#123;propiedad&#125;: $&#123;persona[propiedad]&#125;`)
+                &#125;
                 &#125;
             </code>
 
@@ -222,7 +228,7 @@ export function MapObjects() {
 
             <code>
                 propiedades.forEach(propiedad =&gt; &#123;
-                    console.log(`$&#123;propiedad&#125;: $&#123;producto[propiedad]&#125;`);
+                console.log(`$&#123;propiedad&#125;: $&#123;producto[propiedad]&#125;`);
                 &#125;)
             </code>
 
@@ -250,7 +256,7 @@ export function MapObjects() {
 
             <code>
                 valores.forEach(valor =&gt; &#123;
-                    console.log(valor)
+                console.log(valor)
                 &#125;)
             </code>
 
@@ -277,7 +283,7 @@ export function MapObjects() {
 
             <code>
                 entradas.forEach(([clave, valor]) =&gt; &#123;
-                    console.log(`$&#123;clave&#125;: $&#123;valor&#125;`);
+                console.log(`$&#123;clave&#125;: $&#123;valor&#125;`);
                 &#125;);
             </code>
 
@@ -304,7 +310,7 @@ export function MapObjects() {
                 const persona = &#123;nombre: "Ana", edad: 30 &#125;
                 persona.edad = 31 // Modificamos una propiedad existente
                 persona.pais = "México" // Añadimos una nueva propiedad
-                console.log(persona) // nombre: "Ana", edad: 31, pais: "México" 
+                console.log(persona) // nombre: "Ana", edad: 31, pais: "México"
             </code>
 
             <h2>Paso por Referencia vs. Paso por Valor</h2>
@@ -333,7 +339,7 @@ export function MapObjects() {
 
             <code>
                 function actualizarEdad(persona) &#123;
-                    persona.edad = 35
+                persona.edad = 35
                 &#125;
 
                 const persona = &#123;nombre: "Lucía", edad: 28 &#125;
@@ -383,7 +389,7 @@ export function MapObjects() {
 
             <code>
                 const persona = &#123;
-                    nombre: "Ana",
+                nombre: "Ana",
                 direccion: &#123;ciudad: "Lima", pais: "Perú" &#125;
                 &#125;
 
@@ -399,7 +405,7 @@ export function MapObjects() {
 
             <code>
                 const persona = &#123;
-                    nombre: "Ana",
+                nombre: "Ana",
                 direccion: &#123;ciudad: "Lima", pais: "Perú" &#125;
                 &#125;
 
@@ -425,8 +431,8 @@ export function MapObjects() {
                 const [persona, setPersona] = useState(&#123;nombre: "Pedro", edad: 25 &#125;);
 
                 function actualizarEdad() &#123;
-                    // Usamos una copia para evitar mutación directa
-                    setPersona(prevPersona =&gt; (&#123; ...prevPersona, edad: prevPersona.edad + 1 &#125;));
+                // Usamos una copia para evitar mutación directa
+                setPersona(prevPersona =&gt; (&#123; ...prevPersona, edad: prevPersona.edad + 1 &#125;));
                 &#125;
 
             </code>
@@ -451,13 +457,13 @@ export function MapObjects() {
 
             <code>
                 function crearPersona(nombre, edad) &#123;
-                    return &#123;
-                        nombre: nombre,
-                        edad: edad,
-                        saludar: function() &#125;
-                            console.log(`Hola, mi nombre es $&#123;this.nombre&#125; y tengo $&#123;this.edad&#125; años.`)
-                        &#125;
-                    &#125;
+                return &#123;
+                nombre: nombre,
+                edad: edad,
+                saludar: function() &#125;
+                console.log(`Hola, mi nombre es $&#123;this.nombre&#125; y tengo $&#123;this.edad&#125; años.`)
+                &#125;
+                &#125;
                 &#125;
 
                 const persona1 = crearPersona("Ana", 30)
@@ -481,15 +487,15 @@ export function MapObjects() {
             </p>
 
             <code>
-            &#123; &gt; &#125;
+                &#123; &gt; &#125;
                 function crearVehiculo(tipo, marca) &#123;
-                    return &#123;
-                        tipo: tipo,
-                        marca: marca,
-                        moverse: function() &#123;
-                            console.log(`El $&#123;this.marca&#125; se está moviendo.`);
-                        &#125;
-                    &#125;
+                return &#123;
+                tipo: tipo,
+                marca: marca,
+                moverse: function() &#123;
+                console.log(`El $&#123;this.marca&#125; se está moviendo.`);
+                &#125;
+                &#125;
                 &#125;
 
                 const coche = crearVehiculo("coche", "Toyota");
@@ -510,7 +516,14 @@ export function MapObjects() {
                 Ejemplo con Parámetros
             </p>
 
-            <code>
+        </>
+    )
+}
+
+/* 
+contenido sin limpiar 
+
+<code>
                 function crearLibro(titulo, autor) {
                 return {
                     titulo: titulo,
@@ -529,7 +542,7 @@ export function MapObjects() {
 
             </code>
 
-            <h2>Encapsulamiento y Estado Privado</h2>
+<h2>Encapsulamiento y Estado Privado</h2>
 
             <p>
                 Las funciones de fábrica pueden utilizar cierres (closures) para crear propiedades o métodos que sean privados y no accesibles desde fuera del objeto. Esto permite un mayor control sobre el estado interno del objeto.
@@ -561,7 +574,7 @@ export function MapObjects() {
 
             </code>
 
-            <h2>Comparación con Funciones Constructoras</h2>
+<h2>Comparación con Funciones Constructoras</h2>
 
             <p>
                 Las funciones de fábrica y las funciones constructoras son dos enfoques diferentes para crear objetos en JavaScript:
@@ -587,7 +600,7 @@ export function MapObjects() {
 
             </code>
 
-            <h1>Funciones Constructoras</h1>
+<h1>Funciones Constructoras</h1>
 
             <p>
                 Las funciones constructoras son una forma de crear objetos en JavaScript mediante el uso del operador new. Cuando llamamos a una función con new, JavaScript automáticamente crea un nuevo objeto, asigna ese objeto a this dentro de la función, y lo devuelve al final de la ejecución. Esto permite crear múltiples instancias de objetos con propiedades y métodos definidos.
@@ -602,7 +615,7 @@ export function MapObjects() {
                 Utiliza this para asignar propiedades y métodos a la nueva instancia.
             </p>
 
-            <p>
+<p>
                 Ejemplo Básico
             </p>
 
@@ -623,7 +636,7 @@ export function MapObjects() {
                 persona2.saludar(); // "Hola, mi nombre es Luis y tengo 25 años."
             </code>
 
-            <p>
+<p>
                 En este ejemplo, persona1 y persona2 son dos instancias de la función constructora Persona, cada una con sus propios valores de nombre y edad.
             </p>
 
@@ -643,7 +656,7 @@ export function MapObjects() {
                 Ejemplo de Convención PascalCase
             </p>
 
-            <code>
+<code>
                 function Animal(tipo, sonido) {
                     this.tipo = tipo;
                 this.sonido = sonido;
@@ -661,7 +674,7 @@ export function MapObjects() {
 
             </code>
 
-            <h2>Prototipos en Funciones Constructoras</h2>
+<h2>Prototipos en Funciones Constructoras</h2>
 
             <p>
                 Los prototipos permiten a las funciones constructoras compartir métodos entre todas sus instancias, lo que ahorra memoria y facilita la administración del código. Cuando se define un método en el prototipo de una función constructora, todas las instancias de esa función pueden acceder al método a través de su prototipo.
@@ -677,7 +690,7 @@ export function MapObjects() {
                 Ejemplo: Uso de Prototipos para Métodos Compartidos
             </p>
 
-            <code>
+<code>
                 function Vehiculo(marca, modelo) {
                     this.marca = marca;
                 this.modelo = modelo;
@@ -696,7 +709,7 @@ export function MapObjects() {
 
             </code>
 
-            <p>
+<p>
                 En este ejemplo, el método informacion es compartido entre todas las instancias de Vehiculo, lo cual es más eficiente que declarar el método dentro del constructor. Esto significa que informacion existe una sola vez en el prototipo, en lugar de duplicarse en cada instancia.
             </p>
 
@@ -712,7 +725,7 @@ export function MapObjects() {
                 Ejemplo de Comparación: Método en el Constructor vs. Método en el Prototipo
             </p>
 
-            <code>
+<code>
                 // Método en el constructor
                 function JugadorConMetodo(nombre) {
                     this.nombre = nombre;
@@ -752,7 +765,7 @@ export function MapObjects() {
 
             <h2>Creación de Clases con class</h2>
 
-            <p>
+<p>
                 Una clase en ES6 es una plantilla para crear objetos. Dentro de una clase, puedes definir el constructor (similar al de una función constructora) y métodos que serán compartidos por todas las instancias de esa clase.
             </p>
 
@@ -779,7 +792,7 @@ export function MapObjects() {
 
             </code>
 
-            <p>
+<p>
                 En este ejemplo, Persona es una clase con un constructor que inicializa las propiedades nombre y edad, y un método saludar que puede ser usado por cada instancia.
             </p>
 
@@ -802,7 +815,7 @@ export function MapObjects() {
                 Ejemplo de Métodos Estáticos y de Instancia
             </p>
 
-            <code>
+<code>
                 class Calculadora {
                     // Método estático
                     static sumar(a, b) {
@@ -828,7 +841,7 @@ export function MapObjects() {
                 En este ejemplo, sumar es un método estático y se accede directamente mediante Calculadora.sumar(5, 10). En cambio, multiplicar es un método de instancia y requiere crear una instancia de Calculadora antes de poder llamarlo.
             </p>
 
-            <h2>Herencia con Clases</h2>
+ <h2>Herencia con Clases</h2>
 
             <p>
                 La herencia es un concepto clave en la programación orientada a objetos, y en ES6 se implementa mediante la palabra clave extends. Con extends, una clase puede heredar propiedades y métodos de otra, lo que permite crear una estructura de clases más específica y reutilizar código.
@@ -846,7 +859,7 @@ export function MapObjects() {
                 Ejemplo de Herencia
             </p>
 
-            <code>
+<code>
                 // Clase base o padre
                 class Animal {
                     constructor(nombre) {
@@ -879,7 +892,7 @@ export function MapObjects() {
 
             </code>
 
-            <p>
+<p>
                 En este ejemplo, Perro hereda de Animal. La función super(nombre) llama al constructor de Animal para inicializar nombre. La clase hija también puede sobrescribir métodos de la clase padre, como el método hacerSonido en este caso.
             </p>
 
@@ -893,7 +906,7 @@ export function MapObjects() {
                 Ejemplo de Sobrescritura de Métodos
             </p>
 
-            <code>
+<code>
                 class Vehiculo {
                     encender() {
                     console.log("El vehículo está encendido.");
@@ -917,9 +930,7 @@ export function MapObjects() {
                 En este caso, Coche sobrescribe el método encender, pero primero llama al método encender de la clase padre con super.encender(), y luego agrega su propio comportamiento.
             </p>
 
-        </>
-    )
-}
+*/
 
 /*
 considerar si es bueno agregar buenas practicas
