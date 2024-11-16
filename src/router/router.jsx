@@ -24,6 +24,7 @@ import { Vimgg } from "../docu/vimgg";
 import { BasicLinux } from "../docu/BasicLinux";
 import { MainRoad } from "../pages/mainRoad";
 import { RoadMapJs } from "../roadmap/javaScript/roadMapJs";
+import { MapObjects } from "../roadmap/javaScript/Objects";
 
 
 export function RouterBlog(){
@@ -57,6 +58,8 @@ export function RouterBlog(){
                 <Route path="portfolio/findgif" element={<FindGif />} />
 
                 <Route path="roadmap/javascript" element={<RoadMapJs />}/>
+
+                <Route path="roadmap/javascript/objects" element={<MapObjects />} />
             </Routes>
             <Footer />
         </BrowserRouter>
