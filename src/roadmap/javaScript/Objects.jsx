@@ -154,41 +154,42 @@ export function MapObjects() {
                         console.log(persona[propiedad]) // "Luis"
                     </code>
 
+                    <p>
+                        La notación de corchetes permite acceder a propiedades que contienen espacios, caracteres especiales o números.
+                    </p>
+
+                    <code>
+                        const producto = &#123;"precio-venta": 200, "nombre producto": "Laptop" &#125;
+                        console.log(producto["precio-venta"]) // 200
+                        console.log(producto["nombre producto"]) // "Laptop"
+                    </code>
+
+                    <p>
+                        La notación de corchetes permite acceder a propiedades a través de una variable. Este enfoque es útil para acceder a propiedades basadas en condiciones o entradas de usuario.
+                    </p>
+
+
+                    <code>
+                        const propiedad = "edad"
+                        console.log(persona[propiedad]) // 30
+                    </code>
+
+                    <h1>Enumeración de Propiedades en JavaScript</h1>
+
+                    <p>
+                        La enumeración de propiedades en un objeto es una técnica importante en JavaScript, especialmente para trabajar con estructuras de datos dinámicas o desconocidas. Los métodos disponibles (for...in, Object.keys, Object.values, y Object.entries) permiten acceder y recorrer las propiedades y valores de un objeto de maneras diferentes, cada uno con sus ventajas.
+                    </p>
+
+                    <h2>for...in</h2>
+
+                    <p>
+                        El bucle for...in itera sobre todas las propiedades enumerables de un objeto, incluidas tanto las propiedades propias como las heredadas del prototipo.
+                        Este bucle es útil para obtener el nombre de cada propiedad, pero es recomendable combinarlo con hasOwnProperty() para asegurarse de que la propiedad pertenece directamente al objeto y no a su prototipo.
+                    </p>
+
                 </DivContent>
             </DivArticle>
-
-            <p>
-                La notación de corchetes permite acceder a propiedades que contienen espacios, caracteres especiales o números.
-            </p>
-
-            <code>
-                const producto = &#123;"precio-venta": 200, "nombre producto": "Laptop" &#125;
-                console.log(producto["precio-venta"]) // 200
-                console.log(producto["nombre producto"]) // "Laptop"
-            </code>
-
-            <p>
-                La notación de corchetes permite acceder a propiedades a través de una variable. Este enfoque es útil para acceder a propiedades basadas en condiciones o entradas de usuario.
-            </p>
-
-            <code>
-                const propiedad = "edad"
-                console.log(persona[propiedad]) // 30
-            </code>
-
-            <h1>Enumeración de Propiedades en JavaScript</h1>
-
-            <p>
-                La enumeración de propiedades en un objeto es una técnica importante en JavaScript, especialmente para trabajar con estructuras de datos dinámicas o desconocidas. Los métodos disponibles (for...in, Object.keys, Object.values, y Object.entries) permiten acceder y recorrer las propiedades y valores de un objeto de maneras diferentes, cada uno con sus ventajas.
-            </p>
-
-            <h2>for...in</h2>
-
-            <p>
-                El bucle for...in itera sobre todas las propiedades enumerables de un objeto, incluidas tanto las propiedades propias como las heredadas del prototipo.
-                Este bucle es útil para obtener el nombre de cada propiedad, pero es recomendable combinarlo con hasOwnProperty() para asegurarse de que la propiedad pertenece directamente al objeto y no a su prototipo.
-            </p>
-
+            
             <code>
                 const persona = &#123;nombre: "Luis", edad: 30, ocupacion: "Ingeniero" &#125;
                 for (const propiedad in persona) &#123;
