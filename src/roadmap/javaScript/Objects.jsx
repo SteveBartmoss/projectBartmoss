@@ -67,23 +67,21 @@ export function MapObjects() {
                         Un método en JavaScript es simplemente una propiedad de un objeto que contiene una función. Puedes agregar, modificar y eliminar métodos en tiempo de ejecución de la misma forma que con las propiedades.
                     </p>
 
+                    <h2>Añadir Métodos Dinámicamente</h2>
+
+                    <p>
+                        Puedes añadir un método asignando una función a una propiedad del objeto.
+                    </p>
+
+                    <code>
+                        persona.saludar = function() &#123;
+                        console.log(`Hola, soy $&#123;this.nombre&#125;`)
+                        &#125;
+                        persona.saludar() // "Hola, soy Ana"
+                    </code>
+
                 </DivContent>
             </DivArticle>
-
-
-
-            <h2>Añadir Métodos Dinámicamente</h2>
-
-            <p>
-                Puedes añadir un método asignando una función a una propiedad del objeto.
-            </p>
-
-            <code>
-                persona.saludar = function() &#123;
-                console.log(`Hola, soy $&#123;this.nombre&#125;`)
-                &#125;
-                persona.saludar() // "Hola, soy Ana"
-            </code>
 
             <p>
                 También se puede añadir un metodo usando corchetes [], esto es útil cuando el nombre del método está almacenado en una variable.
