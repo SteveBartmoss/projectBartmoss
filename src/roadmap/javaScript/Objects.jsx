@@ -112,22 +112,21 @@ export function MapObjects() {
                         console.log(persona.saludar) // undefined
                     </code>
 
+                    <h1>Acceso a Propiedades en JavaScript</h1>
+
+                    <p>
+                        JavaScript permite acceder a las propiedades de un objeto utilizando dos tipos de notación: notación de punto y notación de corchetes. Ambas formas permiten leer, añadir, modificar o eliminar propiedades, pero tienen diferentes usos y limitaciones.
+                    </p>
+
+                    <h2>Notación de Punto (.)</h2>
+
+                    <p>
+                        Es la forma más común y directa de acceder a las propiedades de un objeto.
+                        Se utiliza cuando el nombre de la propiedad es un identificador válido de JavaScript (no contiene espacios, guiones, ni empieza con un número).
+                    </p>
 
                 </DivContent>
             </DivArticle>
-
-            <h1>Acceso a Propiedades en JavaScript</h1>
-
-            <p>
-                JavaScript permite acceder a las propiedades de un objeto utilizando dos tipos de notación: notación de punto y notación de corchetes. Ambas formas permiten leer, añadir, modificar o eliminar propiedades, pero tienen diferentes usos y limitaciones.
-            </p>
-
-            <h2>Notación de Punto (.)</h2>
-
-            <p>
-                Es la forma más común y directa de acceder a las propiedades de un objeto.
-                Se utiliza cuando el nombre de la propiedad es un identificador válido de JavaScript (no contiene espacios, guiones, ni empieza con un número).
-            </p>
 
             <code>
                 const persona = &#123;nombre: "Luis", edad: 30 &#125;
