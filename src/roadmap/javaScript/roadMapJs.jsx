@@ -1,9 +1,18 @@
-import { DivArticle, DivContent, DivTopicos } from "../../componentes/contenedores/contenedores"
+import { useNavigate } from "react-router-dom"
+import { Btn } from "../../componentes/btn/Btn"
+import { DivArticle, DivCol, DivContent, DivRow, DivTopicos } from "../../componentes/contenedores/contenedores"
 import { ExtendPanel } from "../../componentes/extendpanel/ExtendPanel"
 import { Portada } from "../../componentes/portada/portada"
 
 
 export function RoadMapJs() {
+
+    const navigate = useNavigate();
+
+    const handleNavigate=(url)=>{
+        navigate(url)
+    }
+
     return (
         <>
             <Portada imgPortada={"/Assets/steveA.png"} title={"Road map Js"} text={"Por Steve 04/11/2024"} />
@@ -32,6 +41,12 @@ export function RoadMapJs() {
                             Mutabilidad: Cómo los objetos pueden cambiar a lo largo del tiempo y
                             cómo funciona el paso por referencia.
                         </p>
+
+                        <DivRow>
+                            <DivCol>
+                                <Btn evento={handleNavigate('objects')}>Ir al post</Btn>
+                            </DivCol>
+                        </DivRow>
                     </ExtendPanel>
 
                     <ExtendPanel title='Factory Functions'>
