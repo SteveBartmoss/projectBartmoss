@@ -106,6 +106,11 @@ export function RoadMapJs() {
                         <p>
                             Herencia: Conceptos básicos de herencia utilizando extends.
                         </p>
+                        <DivRow>
+                            <DivCol>
+                            <AnchorLink url={'objects'} text={'Ir al articulo'} />
+                            </DivCol>
+                        </DivRow>
                     </ExtendPanel>
 
                     <ExtendPanel title='Function'>
