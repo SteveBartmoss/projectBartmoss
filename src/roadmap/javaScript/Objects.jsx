@@ -429,6 +429,24 @@ export function MapObjects() {
 
                     </code>
 
+                    <h1>Funciones de Fábrica en JavaScript</h1>
+
+                    <p>
+                        Las funciones de fábrica son un patrón de diseño en JavaScript que permite crear objetos de manera flexible y reutilizable. A diferencia de las funciones constructores, las funciones de fábrica no requieren el uso del operador new y son ideales para crear múltiples instancias de un objeto con una lógica común.
+                    </p>
+
+                    <h2>¿Qué es una Función de Fábrica?</h2>
+
+                    <p>
+                        Una función de fábrica es una función que devuelve un nuevo objeto cada vez que es invocada.
+                        Permiten encapsular la lógica de creación de objetos y pueden incluir propiedades y métodos.
+                        Se utilizan comúnmente para crear objetos similares sin necesidad de definir una clase o utilizar el operador new.
+                    </p>
+
+                    <p>
+                        Ejemplo Básico de una Función de Fábrica
+                    </p>
+
                 </DivContent>
             </DivArticle>
 
@@ -438,23 +456,7 @@ export function MapObjects() {
 
 
 
-            <h1>Funciones de Fábrica en JavaScript</h1>
 
-            <p>
-                Las funciones de fábrica son un patrón de diseño en JavaScript que permite crear objetos de manera flexible y reutilizable. A diferencia de las funciones constructores, las funciones de fábrica no requieren el uso del operador new y son ideales para crear múltiples instancias de un objeto con una lógica común.
-            </p>
-
-            <h2>¿Qué es una Función de Fábrica?</h2>
-
-            <p>
-                Una función de fábrica es una función que devuelve un nuevo objeto cada vez que es invocada.
-                Permiten encapsular la lógica de creación de objetos y pueden incluir propiedades y métodos.
-                Se utilizan comúnmente para crear objetos similares sin necesidad de definir una clase o utilizar el operador new.
-            </p>
-
-            <p>
-                Ejemplo Básico de una Función de Fábrica
-            </p>
 
             <code>
                 function crearPersona(nombre, edad) &#123;
