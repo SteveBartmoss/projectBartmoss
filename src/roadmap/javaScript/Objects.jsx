@@ -465,6 +465,38 @@ export function MapObjects() {
                         persona2.saludar() // "Hola, mi nombre es Luis y tengo 25 años."
                     </code>
 
+                    <h2>Ventajas de Usar Funciones de Fábrica</h2>
+
+                    <p>
+                        Reutilización de Código: Permiten evitar la duplicación de código al encapsular la lógica de creación.
+                        Flexibilidad: Puedes modificar la función de fábrica para que genere diferentes tipos de objetos o incluya lógica adicional.
+                        Manejo de Estado: Cada instancia creada por la función de fábrica puede tener su propio estado interno, permitiendo la encapsulación.
+                    </p>
+
+                    <p>
+                        Ejemplo de Flexibilidad
+                    </p>
+
+                    <code>
+                        &#123; &gt; &#125;
+                        function crearVehiculo(tipo, marca) &#123;
+                        return &#123;
+                        tipo: tipo,
+                        marca: marca,
+                        moverse: function() &#123;
+                        console.log(`El $&#123;this.marca&#125; se está moviendo.`);
+                        &#125;
+                        &#125;
+                        &#125;
+
+                        const coche = crearVehiculo("coche", "Toyota");
+                        const moto = crearVehiculo("moto", "Yamaha");
+
+                        coche.moverse(); // "El Toyota se está moviendo."
+                        moto.moverse();  // "El Yamaha se está moviendo."
+
+                    </code>
+
                 </DivContent>
             </DivArticle>
 
@@ -478,37 +510,7 @@ export function MapObjects() {
 
 
 
-            <h2>Ventajas de Usar Funciones de Fábrica</h2>
 
-            <p>
-                Reutilización de Código: Permiten evitar la duplicación de código al encapsular la lógica de creación.
-                Flexibilidad: Puedes modificar la función de fábrica para que genere diferentes tipos de objetos o incluya lógica adicional.
-                Manejo de Estado: Cada instancia creada por la función de fábrica puede tener su propio estado interno, permitiendo la encapsulación.
-            </p>
-
-            <p>
-                Ejemplo de Flexibilidad
-            </p>
-
-            <code>
-                &#123; &gt; &#125;
-                function crearVehiculo(tipo, marca) &#123;
-                return &#123;
-                tipo: tipo,
-                marca: marca,
-                moverse: function() &#123;
-                console.log(`El $&#123;this.marca&#125; se está moviendo.`);
-                &#125;
-                &#125;
-                &#125;
-
-                const coche = crearVehiculo("coche", "Toyota");
-                const moto = crearVehiculo("moto", "Yamaha");
-
-                coche.moverse(); // "El Toyota se está moviendo."
-                moto.moverse();  // "El Yamaha se está moviendo."
-
-            </code>
 
             <h2>Parámetros y Personalización</h2>
 
