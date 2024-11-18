@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import './AnchorLink.css';
 
 export function AnchorLink({url,text,isBlank=false}){
     return isBlank ? (
