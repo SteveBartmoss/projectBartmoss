@@ -361,22 +361,24 @@ export function MapObjects() {
                         console.log(copia.edad)    // 45 (la copia es independiente)
                     </code>
 
+                    <h2>Copia Superficial vs. Copia Profunda</h2>
+
+                    <p>
+                        Copia Superficial
+                        Solo copia el primer nivel de propiedades del objeto. Si el objeto contiene referencias a otros objetos, estas referencias se copian como tal (no el contenido).
+                        Esto puede llevar a efectos colaterales si el objeto original contiene objetos anidados.
+                    </p>
+
+                    <p>
+                        Copia Profunda
+                        Copia todos los niveles de anidación, creando un duplicado completo y desvinculado del objeto original.
+                        En JavaScript, la clonación profunda se puede lograr con funciones recursivas, structuredClone(), o librerías especializadas.
+                    </p>
+
                 </DivContent>
             </DivArticle>
 
-            <h2>Copia Superficial vs. Copia Profunda</h2>
 
-            <p>
-                Copia Superficial
-                Solo copia el primer nivel de propiedades del objeto. Si el objeto contiene referencias a otros objetos, estas referencias se copian como tal (no el contenido).
-                Esto puede llevar a efectos colaterales si el objeto original contiene objetos anidados.
-            </p>
-
-            <p>
-                Copia Profunda
-                Copia todos los niveles de anidación, creando un duplicado completo y desvinculado del objeto original.
-                En JavaScript, la clonación profunda se puede lograr con funciones recursivas, structuredClone(), o librerías especializadas.
-            </p>
 
             <p>
                 Problema de la Copia Superficial
