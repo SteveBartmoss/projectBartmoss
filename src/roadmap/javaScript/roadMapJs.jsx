@@ -86,6 +86,12 @@ export function RoadMapJs() {
                             Prototipos: Introducción a cómo las constructor functions pueden utilizar
                             prototipos para métodos compartidos.
                         </p>
+
+                        <DivRow>
+                            <DivCol>
+                            <AnchorLink url={'objects'} text={'Ir al articulo'} />
+                            </DivCol>
+                        </DivRow>
                     </ExtendPanel>
 
                     <ExtendPanel title='Atajos Constructores'>
