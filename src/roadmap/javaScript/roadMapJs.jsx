@@ -188,6 +188,12 @@ export function RoadMapJs() {
                         <p>
                             Copias inmutables: Técnicas para crear copias de objetos para prevenir modificaciones accidentales.
                         </p>
+
+                        <DivRow>
+                            <DivCol>
+                            <AnchorLink url={'objects'} text={'Ir al articulo'} />
+                            </DivCol>
+                        </DivRow>
                     </ExtendPanel>
 
                     <ExtendPanel title='Privado vs.Público'>
