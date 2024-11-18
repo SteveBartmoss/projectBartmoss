@@ -242,24 +242,26 @@ export function MapObjects() {
                         console.log(valores); // ["Ana", 25, "México"]
                     </code>
 
+                    <p>
+                        Iteración Usando forEach
+                    </p>
+
+                    <code>
+                        valores.forEach(valor =&gt; &#123;
+                        console.log(valor)
+                        &#125;)
+                    </code>
+
+                    <p>
+                        Ideal para casos en los que solo necesitas los valores de las propiedades, como cuando quieres sumar valores o realizar operaciones estadísticas.
+                    </p>
+
                 </DivContent>
             </DivArticle>
 
 
 
-            <p>
-                Iteración Usando forEach
-            </p>
 
-            <code>
-                valores.forEach(valor =&gt; &#123;
-                console.log(valor)
-                &#125;)
-            </code>
-
-            <p>
-                Ideal para casos en los que solo necesitas los valores de las propiedades, como cuando quieres sumar valores o realizar operaciones estadísticas.
-            </p>
 
             <h2>Object.entries()</h2>
 
