@@ -348,23 +348,21 @@ export function MapObjects() {
                         Clonación profunda: Cuando el objeto contiene otros objetos anidados, la copia superficial no es suficiente. Para clonar profundamente, puedes utilizar métodos como structuredClone() o bibliotecas como lodash.
                     </p>
 
+                    <p>
+                        Copia Superficial
+                    </p>
+
+                    <code>
+                        const original = &#123;nombre: "Juan", edad: 40 &#125;
+                        const copia = &#123;...original&#125;
+
+                        copia.edad = 45
+                        console.log(original.edad) // 40 (el original no se modifica)
+                        console.log(copia.edad)    // 45 (la copia es independiente)
+                    </code>
+
                 </DivContent>
             </DivArticle>
-
-
-
-            <p>
-                Copia Superficial
-            </p>
-
-            <code>
-                const original = &#123;nombre: "Juan", edad: 40 &#125;
-                const copia = &#123;...original&#125;
-
-                copia.edad = 45
-                console.log(original.edad) // 40 (el original no se modifica)
-                console.log(copia.edad)    // 45 (la copia es independiente)
-            </code>
 
             <h2>Copia Superficial vs. Copia Profunda</h2>
 
