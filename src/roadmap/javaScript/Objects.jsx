@@ -497,30 +497,18 @@ export function MapObjects() {
 
                     </code>
 
+                    <h2>Parámetros y Personalización</h2>
+
+                    <p>
+                        Las funciones de fábrica pueden aceptar parámetros para personalizar los objetos que crean. Esto permite que el comportamiento de los objetos se ajuste a las necesidades específicas.
+                    </p>
+
+                    <p>
+                        Ejemplo con Parámetros
+                    </p>
+
                 </DivContent>
             </DivArticle>
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <h2>Parámetros y Personalización</h2>
-
-            <p>
-                Las funciones de fábrica pueden aceptar parámetros para personalizar los objetos que crean. Esto permite que el comportamiento de los objetos se ajuste a las necesidades específicas.
-            </p>
-
-            <p>
-                Ejemplo con Parámetros
-            </p>
 
         </>
     )
