@@ -329,28 +329,29 @@ export function MapObjects() {
                         Paso por Referencia en Funciones
                     </p>
 
+                    <code>
+                        function actualizarEdad(persona) &#123;
+                        persona.edad = 35
+                        &#125;
+
+                        const persona = &#123;nombre: "Lucía", edad: 28 &#125;
+                        actualizarEdad(persona)
+                        console.log(persona.edad) // 35 (la función modifica el objeto original)
+                    </code>
+
+                    <h2>Cómo Evitar Efectos Colaterales: Copias de Objetos</h2>
+
+                    <p>
+                        Para evitar modificar el objeto original (mutación) cuando trabajas con referencias, puedes crear una copia del objeto. Existen diferentes formas de hacerlo en JavaScript:
+                        Asignación mediante &#123;...objeto&#125; (Spread Operator): Crea una copia superficial del objeto.
+                        Object.assign(): También crea una copia superficial del objeto.
+                        Clonación profunda: Cuando el objeto contiene otros objetos anidados, la copia superficial no es suficiente. Para clonar profundamente, puedes utilizar métodos como structuredClone() o bibliotecas como lodash.
+                    </p>
 
                 </DivContent>
             </DivArticle>
-            
-            <code>
-                function actualizarEdad(persona) &#123;
-                persona.edad = 35
-                &#125;
 
-                const persona = &#123;nombre: "Lucía", edad: 28 &#125;
-                actualizarEdad(persona)
-                console.log(persona.edad) // 35 (la función modifica el objeto original)
-            </code>
 
-            <h2>Cómo Evitar Efectos Colaterales: Copias de Objetos</h2>
-
-            <p>
-                Para evitar modificar el objeto original (mutación) cuando trabajas con referencias, puedes crear una copia del objeto. Existen diferentes formas de hacerlo en JavaScript:
-                Asignación mediante &#123;...objeto&#125; (Spread Operator): Crea una copia superficial del objeto.
-                Object.assign(): También crea una copia superficial del objeto.
-                Clonación profunda: Cuando el objeto contiene otros objetos anidados, la copia superficial no es suficiente. Para clonar profundamente, puedes utilizar métodos como structuredClone() o bibliotecas como lodash.
-            </p>
 
             <p>
                 Copia Superficial
