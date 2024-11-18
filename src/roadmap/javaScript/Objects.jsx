@@ -447,6 +447,24 @@ export function MapObjects() {
                         Ejemplo Básico de una Función de Fábrica
                     </p>
 
+                    <code>
+                        function crearPersona(nombre, edad) &#123;
+                        return &#123;
+                        nombre: nombre,
+                        edad: edad,
+                        saludar: function() &#125;
+                        console.log(`Hola, mi nombre es $&#123;this.nombre&#125; y tengo $&#123;this.edad&#125; años.`)
+                        &#125;
+                        &#125;
+                        &#125;
+
+                        const persona1 = crearPersona("Ana", 30)
+                        const persona2 = crearPersona("Luis", 25)
+
+                        persona1.saludar() // "Hola, mi nombre es Ana y tengo 30 años."
+                        persona2.saludar() // "Hola, mi nombre es Luis y tengo 25 años."
+                    </code>
+
                 </DivContent>
             </DivArticle>
 
@@ -458,24 +476,7 @@ export function MapObjects() {
 
 
 
-            <code>
-                function crearPersona(nombre, edad) &#123;
-                return &#123;
-                nombre: nombre,
-                edad: edad,
-                saludar: function() &#125;
-                console.log(`Hola, mi nombre es $&#123;this.nombre&#125; y tengo $&#123;this.edad&#125; años.`)
-                &#125;
-                &#125;
-                &#125;
 
-                const persona1 = crearPersona("Ana", 30)
-                const persona2 = crearPersona("Luis", 25)
-
-                persona1.saludar() // "Hola, mi nombre es Ana y tengo 30 años."
-                persona2.saludar() // "Hola, mi nombre es Luis y tengo 25 años."
-
-            </code>
 
             <h2>Ventajas de Usar Funciones de Fábrica</h2>
 
