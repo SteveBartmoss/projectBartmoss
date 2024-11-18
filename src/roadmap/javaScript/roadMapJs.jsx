@@ -4,6 +4,7 @@ import { DivArticle, DivCol, DivContent, DivRow, DivTopicos } from "../../compon
 import { ExtendPanel } from "../../componentes/extendpanel/ExtendPanel"
 import { Portada } from "../../componentes/portada/portada"
 import { CardLink } from "../../componentes/card/card"
+import { AnchorLink } from "../../componentes/anchorlink/AnchorLink"
 
 
 export function RoadMapJs() {
@@ -64,6 +65,12 @@ export function RoadMapJs() {
                             Ejemplos: Crear objetos con propiedades y métodos compartidos, sin
                             el uso de new.
                         </p>
+
+                        <DivRow>
+                            <DivCol>
+                                <AnchorLink url={'objects'} text={'Ir al articulo'} />
+                            </DivCol>
+                        </DivRow>
                     </ExtendPanel>
 
                     <ExtendPanel title='Constructor Functions'>
