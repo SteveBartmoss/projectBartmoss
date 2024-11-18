@@ -408,6 +408,27 @@ export function MapObjects() {
 
                     </code>
 
+                    <h2>Aplicaciones Prácticas de la Mutabilidad</h2>
+
+                    <p>
+                        Gestión de Estado en Aplicaciones: En frameworks como React, se suele evitar la mutabilidad directa de los estados (usar copias) para prevenir efectos colaterales y facilitar la depuración.
+                        Patrones de Diseño: En patrones como el Estado Inmutable o Data-First, la mutabilidad controlada es fundamental para mantener datos consistentes.
+                    </p>
+
+                    <p>
+                        Ejemplo en React (Evitar Mutación Directa del Estado)
+                    </p>
+
+                    <code>
+                        const [persona, setPersona] = useState(&#123;nombre: "Pedro", edad: 25 &#125;);
+
+                        function actualizarEdad() &#123;
+                        // Usamos una copia para evitar mutación directa
+                        setPersona(prevPersona =&gt; (&#123; ...prevPersona, edad: prevPersona.edad + 1 &#125;));
+                        &#125;
+
+                    </code>
+
                 </DivContent>
             </DivArticle>
 
@@ -415,26 +436,7 @@ export function MapObjects() {
 
 
 
-            <h2>Aplicaciones Prácticas de la Mutabilidad</h2>
 
-            <p>
-                Gestión de Estado en Aplicaciones: En frameworks como React, se suele evitar la mutabilidad directa de los estados (usar copias) para prevenir efectos colaterales y facilitar la depuración.
-                Patrones de Diseño: En patrones como el Estado Inmutable o Data-First, la mutabilidad controlada es fundamental para mantener datos consistentes.
-            </p>
-
-            <p>
-                Ejemplo en React (Evitar Mutación Directa del Estado)
-            </p>
-
-            <code>
-                const [persona, setPersona] = useState(&#123;nombre: "Pedro", edad: 25 &#125;);
-
-                function actualizarEdad() &#123;
-                // Usamos una copia para evitar mutación directa
-                setPersona(prevPersona =&gt; (&#123; ...prevPersona, edad: prevPersona.edad + 1 &#125;));
-                &#125;
-
-            </code>
 
             <h1>Funciones de Fábrica en JavaScript</h1>
 
