@@ -298,25 +298,23 @@ export function MapObjects() {
                         Debido a esto, los cambios realizados en el objeto a través de una variable son reflejados en todas las variables que apuntan a ese mismo objeto.
                     </p>
 
+                    <code>
+                        const persona = &#123;nombre: "Ana", edad: 30 &#125;
+                        persona.edad = 31 // Modificamos una propiedad existente
+                        persona.pais = "México" // Añadimos una nueva propiedad
+                        console.log(persona) // nombre: "Ana", edad: 31, pais: "México"
+                    </code>
+
+                    <h2>Paso por Referencia vs. Paso por Valor</h2>
+
+                    <p>
+                        En JavaScript, los tipos primitivos (números, cadenas, booleanos, null y undefined) son inmutables y se pasan por valor.
+                        Los objetos y arrays son mutables y se pasan por referencia.
+                        Cuando pasas un objeto a una función o lo asignas a otra variable, ambas referencias apuntan al mismo lugar en memoria. Esto significa que cualquier cambio en una referencia afecta al objeto compartido.
+                    </p>
+
                 </DivContent>
             </DivArticle>
-
-
-
-            <code>
-                const persona = &#123;nombre: "Ana", edad: 30 &#125;
-                persona.edad = 31 // Modificamos una propiedad existente
-                persona.pais = "México" // Añadimos una nueva propiedad
-                console.log(persona) // nombre: "Ana", edad: 31, pais: "México"
-            </code>
-
-            <h2>Paso por Referencia vs. Paso por Valor</h2>
-
-            <p>
-                En JavaScript, los tipos primitivos (números, cadenas, booleanos, null y undefined) son inmutables y se pasan por valor.
-                Los objetos y arrays son mutables y se pasan por referencia.
-                Cuando pasas un objeto a una función o lo asignas a otra variable, ambas referencias apuntan al mismo lugar en memoria. Esto significa que cualquier cambio en una referencia afecta al objeto compartido.
-            </p>
 
             <p>
                 Referencias en Objetos
