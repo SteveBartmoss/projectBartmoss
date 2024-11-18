@@ -168,6 +168,12 @@ export function RoadMapJs() {
                             Enumeración vs.Propiedades propias: Uso de hasOwnProperty y técnicas para evitar propiedades de
                             prototipos.
                         </p>
+
+                        <DivRow>
+                            <DivCol>
+                            <AnchorLink url={'objects'} text={'Ir al articulo'} />
+                            </DivCol>
+                        </DivRow>
                     </ExtendPanel>
 
                     <ExtendPanel title='Clonando objetos'>
