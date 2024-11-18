@@ -127,6 +127,12 @@ export function RoadMapJs() {
                         <p>
                             Contexto this: Cómo cambia el contexto de this en funciones regulares vs.funciones flecha.
                         </p>
+
+                        <DivRow>
+                            <DivCol>
+                            <AnchorLink url={'objects'} text={'Ir al articulo'} />
+                            </DivCol>
+                        </DivRow>
                     </ExtendPanel>
 
                     <ExtendPanel title='Valor y referencia'>
