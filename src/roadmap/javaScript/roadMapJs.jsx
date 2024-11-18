@@ -146,6 +146,12 @@ export function RoadMapJs() {
                         <p>
                             Inmutabilidad: Técnicas para hacer que los datos sean inmutables, como el uso de Object.freeze().
                         </p>
+
+                        <DivRow>
+                            <DivCol>
+                            <AnchorLink url={'objects'} text={'Ir al articulo'} />
+                            </DivCol>
+                        </DivRow>
                     </ExtendPanel>
 
                     <ExtendPanel title='Listar propiedades'>
