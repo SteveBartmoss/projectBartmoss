@@ -206,6 +206,12 @@ export function RoadMapJs() {
                         <p>
                             Módulos y encapsulación: Uso de módulos para limitar el alcance de propiedades y métodos.
                         </p>
+
+                        <DivRow>
+                            <DivCol>
+                            <AnchorLink url={'objects'} text={'Ir al articulo'} />
+                            </DivCol>
+                        </DivRow>
                     </ExtendPanel>
 
                     <h1>Funciones</h1>
