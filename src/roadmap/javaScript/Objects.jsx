@@ -214,24 +214,24 @@ export function MapObjects() {
                         console.log(propiedades) // ["nombre", "precio", "disponible"]
                     </code>
 
+                    <p>
+                        Iteración Usando forEach
+                    </p>
+
+                    <code>
+                        propiedades.forEach(propiedad =&gt; &#123;
+                        console.log(`$&#123;propiedad&#125;: $&#123;producto[propiedad]&#125;`);
+                        &#125;)
+                    </code>
+
+                    <p>
+                        Es útil para obtener una lista de todas las claves del objeto, especialmente si no necesitas iterar sobre propiedades heredadas.
+                        Object.keys() es más seguro y específico que for...in para evitar propiedades del prototipo.
+                    </p>
+
                 </DivContent>
             </DivArticle>
-
-            <p>
-                Iteración Usando forEach
-            </p>
-
-            <code>
-                propiedades.forEach(propiedad =&gt; &#123;
-                console.log(`$&#123;propiedad&#125;: $&#123;producto[propiedad]&#125;`);
-                &#125;)
-            </code>
-
-            <p>
-                Es útil para obtener una lista de todas las claves del objeto, especialmente si no necesitas iterar sobre propiedades heredadas.
-                Object.keys() es más seguro y específico que for...in para evitar propiedades del prototipo.
-            </p>
-
+            
             <h2>Object.values()</h2>
 
             <p>
