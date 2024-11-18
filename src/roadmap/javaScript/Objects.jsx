@@ -201,24 +201,21 @@ export function MapObjects() {
                         Es especialmente relevante en objetos donde el prototipo juega un papel importante.
                     </p>
 
+                    <h2>Object.keys()</h2>
+
+                    <p>
+                        Object.keys() devuelve un array con los nombres (claves) de las propiedades propias y enumerables de un objeto, excluyendo las heredadas.
+                        El método es ideal cuando solo necesitas las claves sin preocuparte por las propiedades del prototipo.
+                    </p>
+
+                    <code>
+                        const producto = &#123;nombre: "Laptop", precio: 1500, disponible: true &#125;
+                        const propiedades = Object.keys(producto)
+                        console.log(propiedades) // ["nombre", "precio", "disponible"]
+                    </code>
 
                 </DivContent>
             </DivArticle>
-
-
-
-            <h2>Object.keys()</h2>
-
-            <p>
-                Object.keys() devuelve un array con los nombres (claves) de las propiedades propias y enumerables de un objeto, excluyendo las heredadas.
-                El método es ideal cuando solo necesitas las claves sin preocuparte por las propiedades del prototipo.
-            </p>
-
-            <code>
-                const producto = &#123;nombre: "Laptop", precio: 1500, disponible: true &#125;
-                const propiedades = Object.keys(producto)
-                console.log(propiedades) // ["nombre", "precio", "disponible"]
-            </code>
 
             <p>
                 Iteración Usando forEach
