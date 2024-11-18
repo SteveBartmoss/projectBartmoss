@@ -269,23 +269,23 @@ export function MapObjects() {
                         console.log(entradas)
                     </code>
 
+                    <p>
+                        Recorriendo con forEach
+                    </p>
+
+                    <code>
+                        entradas.forEach(([clave, valor]) =&gt; &#123;
+                        console.log(`$&#123;clave&#125;: $&#123;valor&#125;`);
+                        &#125;);
+                    </code>
+
+                    <p>
+                        Es una excelente opción cuando necesitas tanto las claves como los valores en una estructura fácil de manejar.
+                        Útil en operaciones de mapeo y transformación de objetos.
+                    </p>
+
                 </DivContent>
             </DivArticle>
-
-            <p>
-                Recorriendo con forEach
-            </p>
-
-            <code>
-                entradas.forEach(([clave, valor]) =&gt; &#123;
-                console.log(`$&#123;clave&#125;: $&#123;valor&#125;`);
-                &#125;);
-            </code>
-
-            <p>
-                Es una excelente opción cuando necesitas tanto las claves como los valores en una estructura fácil de manejar.
-                Útil en operaciones de mapeo y transformación de objetos.
-            </p>
 
             <h1>Mutabilidad en Objetos en JavaScript</h1>
 
