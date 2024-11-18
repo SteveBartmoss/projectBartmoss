@@ -391,6 +391,22 @@ export function MapObjects() {
                         console.log(persona.direccion.ciudad) // "Cusco" (la ciudad cambia en ambas referencias)
                     </code>
 
+                    <p>
+                        Clonación Profunda con structuredClone()
+                    </p>
+
+                    <code>
+                        const persona = &#123;
+                        nombre: "Ana",
+                        direccion: &#123;ciudad: "Lima", pais: "Perú" &#125;
+                        &#125;
+
+                        const copiaProfunda = structuredClone(persona)
+                        copiaProfunda.direccion.ciudad = "Cusco"
+
+                        console.log(persona.direccion.ciudad) // "Lima" (el original no se ve afectado)
+
+                    </code>
 
                 </DivContent>
             </DivArticle>
@@ -398,22 +414,6 @@ export function MapObjects() {
 
 
 
-            <p>
-                Clonación Profunda con structuredClone()
-            </p>
-
-            <code>
-                const persona = &#123;
-                nombre: "Ana",
-                direccion: &#123;ciudad: "Lima", pais: "Perú" &#125;
-                &#125;
-
-                const copiaProfunda = structuredClone(persona)
-                copiaProfunda.direccion.ciudad = "Cusco"
-
-                console.log(persona.direccion.ciudad) // "Lima" (el original no se ve afectado)
-
-            </code>
 
             <h2>Aplicaciones Prácticas de la Mutabilidad</h2>
 
