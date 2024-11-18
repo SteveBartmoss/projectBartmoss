@@ -375,26 +375,28 @@ export function MapObjects() {
                         En JavaScript, la clonación profunda se puede lograr con funciones recursivas, structuredClone(), o librerías especializadas.
                     </p>
 
+                    <p>
+                        Problema de la Copia Superficial
+                    </p>
+
+                    <code>
+                        const persona = &#123;
+                        nombre: "Ana",
+                        direccion: &#123;ciudad: "Lima", pais: "Perú" &#125;
+                        &#125;
+
+                        const copiaSuperficial = &#123;...persona&#125;
+                        copiaSuperficial.direccion.ciudad = "Cusco"
+
+                        console.log(persona.direccion.ciudad) // "Cusco" (la ciudad cambia en ambas referencias)
+                    </code>
+
+
                 </DivContent>
             </DivArticle>
 
 
 
-            <p>
-                Problema de la Copia Superficial
-            </p>
-
-            <code>
-                const persona = &#123;
-                nombre: "Ana",
-                direccion: &#123;ciudad: "Lima", pais: "Perú" &#125;
-                &#125;
-
-                const copiaSuperficial = &#123;...persona&#125;
-                copiaSuperficial.direccion.ciudad = "Cusco"
-
-                console.log(persona.direccion.ciudad) // "Cusco" (la ciudad cambia en ambas referencias)
-            </code>
 
             <p>
                 Clonación Profunda con structuredClone()
