@@ -313,25 +313,26 @@ export function MapObjects() {
                         Cuando pasas un objeto a una función o lo asignas a otra variable, ambas referencias apuntan al mismo lugar en memoria. Esto significa que cualquier cambio en una referencia afecta al objeto compartido.
                     </p>
 
+                    <p>
+                        Referencias en Objetos
+                    </p>
+
+                    <code>
+                        const objeto1 = &#123;nombre: "Carlos" &#125;
+                        const objeto2 = objeto1 // Ambos apuntan al mismo objeto
+
+                        objeto2.nombre = "Luis"
+                        console.log(objeto1.nombre) // "Luis" (ambas variables reflejan el cambio)
+                    </code>
+
+                    <p>
+                        Paso por Referencia en Funciones
+                    </p>
+
+
                 </DivContent>
             </DivArticle>
-
-            <p>
-                Referencias en Objetos
-            </p>
-
-            <code>
-                const objeto1 = &#123;nombre: "Carlos" &#125;
-                const objeto2 = objeto1 // Ambos apuntan al mismo objeto
-
-                objeto2.nombre = "Luis"
-                console.log(objeto1.nombre) // "Luis" (ambas variables reflejan el cambio)
-            </code>
-
-            <p>
-                Paso por Referencia en Funciones
-            </p>
-
+            
             <code>
                 function actualizarEdad(persona) &#123;
                 persona.edad = 35
