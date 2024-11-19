@@ -233,21 +233,19 @@ export function MapFunctions() {
                         Ejemplo de Paso por Valor
                     </p>
 
+                    <code>
+                        let a = 5
+                        let b = a
+                        b = 10
+
+                        console.log(a)
+                        console.log(b)
+                    </code>
+
                 </DivContent>
             </DivArticle>
 
             &#123; &gt; &#125;
-            
-            
-
-            <code>
-                let a = 5;
-                let b = a; // `b` recibe una copia de `a`
-                b = 10;
-
-                console.log(a); // 5 (no cambia)
-                console.log(b); // 10
-            </code>
 
             <p>
                 En este ejemplo, cuando b toma el valor de a, en realidad está tomando una copia del valor, así que al cambiar b, a permanece igual.
