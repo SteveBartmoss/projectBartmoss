@@ -182,16 +182,16 @@ export function MapFunctions() {
                         persona.saludar()
                     </code>
 
+                    <p>
+                        En este caso, this.nombre en presentacion() se refiere al this de saludar, que es el objeto persona. Esto hace que las arrow functions sean útiles en funciones anidadas donde quieres mantener el contexto this.
+                    </p>
+
+                    <p>Ejemplo Comparativo</p>
+
                 </DivContent>
             </DivArticle>
 
             &#123; &gt; &#125;
-            
-            <p>
-                En este caso, this.nombre en presentacion() se refiere al this de saludar, que es el objeto persona. Esto hace que las arrow functions sean útiles en funciones anidadas donde quieres mantener el contexto this.
-            </p>
-
-            <p>Ejemplo Comparativo</p>
 
             <code>
                 const persona = {
