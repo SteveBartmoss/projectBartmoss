@@ -25,22 +25,21 @@ export function MapFunctions() {
                         &#125;
                         saludar()
                     </code>
-                    
+
+                    <p>
+                        En este ejemplo, puedes llamar a saludar() incluso antes de su definición debido al hoisting.
+                    </p>
+
+                    <h3>Expresión de Función</h3>
+
+                    <p>
+                        Una expresión de función es cuando una función se asigna a una variable. A diferencia de las declaraciones, las expresiones de función no son levantadas, lo que significa que solo puedes usarlas después de que hayan sido definidas.
+                    </p>
+
                 </DivContent>
             </DivArticle>
 
             &#123; &gt; &#125;
-
-
-            <p>
-                En este ejemplo, puedes llamar a saludar() incluso antes de su definición debido al hoisting.
-            </p>
-
-            <h3>Expresión de Función</h3>
-
-            <p>
-                Una expresión de función es cuando una función se asigna a una variable. A diferencia de las declaraciones, las expresiones de función no son levantadas, lo que significa que solo puedes usarlas después de que hayan sido definidas.
-            </p>
 
             <code>
                 const saludar = function() {
