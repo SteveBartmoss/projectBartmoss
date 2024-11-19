@@ -102,22 +102,20 @@ export function MapFunctions() {
                         Sintaxis de Arrow Function
                     </p>
 
+                    <code>
+                        const sumar = function(a, b) &#123;
+                            return a + b
+                        &#125;;
+
+                        const sumar = (a, b) =&gt; a + b
+
+                        console.log(sumar(5, 10))
+                    </code>
+
                 </DivContent>
             </DivArticle>
 
             &#123; &gt; &#125;
-
-
-
-            <code>
-                const sumar = function(a, b) {
-                    return a + b;
-                };
-
-                const sumar = (a, b) => a + b;
-
-                console.log(sumar(5, 10));
-            </code>
 
             <p>
                 En el ejemplo, la función flecha sumar toma dos parámetros (a y b) y retorna su suma. Si solo tiene una línea, el return y las llaves { } son opcionales.
