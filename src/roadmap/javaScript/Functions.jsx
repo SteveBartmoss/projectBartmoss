@@ -256,21 +256,21 @@ export function MapFunctions() {
                         Ejemplo de Paso por Referencia
                     </p>
 
+                    <code>
+                        let persona = &#123;nombre: "Ana" &#125;
+                        let otraPersona = persona
+
+                        otraPersona.nombre = "Carlos"
+
+                        console.log(persona.nombre)
+                        console.log(otraPersona.nombre)
+                    </code>
+
                 </DivContent>
             </DivArticle>
 
             &#123; &gt; &#125;
             
-            <code>
-                let persona = {nombre: "Ana" };
-                let otraPersona = persona; // `otraPersona` apunta a la misma referencia de `persona`
-
-                otraPersona.nombre = "Carlos";
-
-                console.log(persona.nombre); // "Carlos" (se modifica también en `persona`)
-                console.log(otraPersona.nombre); // "Carlos"
-            </code>
-
             <p>
                 En este caso, al modificar otraPersona.nombre, también estamos cambiando persona.nombre porque ambas variables apuntan al mismo objeto en la memoria.
             </p>
