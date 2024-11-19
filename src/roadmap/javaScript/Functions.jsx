@@ -128,20 +128,18 @@ export function MapFunctions() {
                         Ejemplos con Arrow Functions
                     </p>
 
+                    <code>
+                        const numeros = [1, 2, 3]
+                        const dobles = numeros.map(n =&gt; n * 2)
+
+                        console.log(dobles)
+                    </code>
+
                 </DivContent>
             </DivArticle>
 
             &#123; &gt; &#125;
-
             
-
-            <code>
-                const numeros = [1, 2, 3];
-                const dobles = numeros.map(n => n * 2);
-
-                console.log(dobles); // [2, 4, 6]
-            </code>
-
             <h2>Contexto this</h2>
 
             <p>
