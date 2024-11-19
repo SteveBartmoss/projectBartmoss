@@ -21,7 +21,7 @@ export function MapFunctions() {
 
                     <code>
                         function saludar() &#123;
-                            console.log("¡Hola!")
+                        console.log("¡Hola!")
                         &#125;
                         saludar()
                     </code>
@@ -36,18 +36,20 @@ export function MapFunctions() {
                         Una expresión de función es cuando una función se asigna a una variable. A diferencia de las declaraciones, las expresiones de función no son levantadas, lo que significa que solo puedes usarlas después de que hayan sido definidas.
                     </p>
 
+                    <code>
+                        const saludar = function() &#123;
+                            console.log("¡Hola!")
+                        &#125;
+
+                        saludar()
+                    </code>
+
                 </DivContent>
             </DivArticle>
 
             &#123; &gt; &#125;
 
-            <code>
-                const saludar = function() {
-                    console.log("¡Hola!");
-                };
 
-                saludar();
-            </code>
 
             <p>
                 Aquí, la función saludar es una expresión asignada a la variable saludar. No puedes usar saludar antes de esta línea, o causará un error.
