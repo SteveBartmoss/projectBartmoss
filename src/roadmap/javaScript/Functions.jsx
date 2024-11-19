@@ -80,21 +80,18 @@ export function MapFunctions() {
                         Las funciones nombradas tienen un identificador y pueden ser útiles para depurar o reutilizar una función específica.
                     </p>
 
+                    <code>
+                        const saludar = function saludo() &#123;
+                            console.log("¡Hola!")
+                        &#125;
+
+                        saludar()
+                    </code>
+
                 </DivContent>
             </DivArticle>
 
             &#123; &gt; &#125;
-
-
-
-
-            <code>
-                const saludar = function saludo() {
-                    console.log("¡Hola!");
-                };
-
-                saludar(); // ¡Hola!
-            </code>
 
             <p>
                 Algunos beneficios de las funciones nombradas incluyen una mejor legibilidad y la posibilidad de ver el nombre de la función en la pila de errores en caso de problemas.
