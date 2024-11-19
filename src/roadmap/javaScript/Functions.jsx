@@ -1,17 +1,26 @@
+import { DivArticle, DivContent } from "../../componentes/contenedores/contenedores";
+import { Portada } from "../../componentes/portada/portada";
 
 
 export function MapFunctions() {
     return (
         <>
-            <h1>Funciones</h1>
+            <Portada imgPortada={"/Assets/steveA.png"} title={"Objects"} text={"Por Steve 04/11/2024"} />
 
-            <h2>Declaración y Expresión de Funciones</h2>
+            <DivArticle>
+                <DivContent>
+                    <h1>Funciones</h1>
 
-            <h3>Declaración de Funciones</h3>
+                    <h2>Declaración y Expresión de Funciones</h2>
 
-            <p>
-                Una declaración de función es cuando defines una función con la palabra clave function, seguida del nombre de la función. Las funciones declaradas están sujetas a hoisting (se "levantan" al principio de su contexto), por lo que puedes llamarlas incluso antes de la línea donde están definidas en el código.
-            </p>
+                    <h3>Declaración de Funciones</h3>
+
+                    <p>
+                        Una declaración de función es cuando defines una función con la palabra clave function, seguida del nombre de la función. Las funciones declaradas están sujetas a hoisting (se "levantan" al principio de su contexto), por lo que puedes llamarlas incluso antes de la línea donde están definidas en el código.
+                    </p>
+                </DivContent>
+            </DivArticle>
+
 
             <code>
                 function saludar() {
@@ -440,7 +449,7 @@ export function MapFunctions() {
 
                 for (let clave in persona) {
                     if (persona.hasOwnProperty(clave)) {
-                        console.log(`${clave}: ${persona[clave]}`);
+                    console.log(`${clave}: ${persona[clave]}`);
                     }
                 }
             </code>
@@ -464,7 +473,7 @@ export function MapFunctions() {
             <code>
                 Object.entries(persona).forEach(([clave, valor]) => {
                     if (persona.hasOwnProperty(clave)) {
-                        console.log(`${clave}: ${valor}`);
+                    console.log(`${clave}: ${valor}`);
                     }
                 });
             </code>
@@ -476,7 +485,7 @@ export function MapFunctions() {
             <code>
                 for (let clave in persona) {
                     if (persona.hasOwnProperty(clave)) {
-                        console.log(`${clave}: ${persona[clave]}`);
+                    console.log(`${clave}: ${persona[clave]}`);
                     }
                 }
             </code>
