@@ -188,35 +188,35 @@ export function MapFunctions() {
 
                     <p>Ejemplo Comparativo</p>
 
+                    <code>
+                        const persona = &#123;
+                            nombre: "Ana",
+                            saludar: function() &#123;
+                                setTimeout(function () &#123;
+                                    console.log(`Hola, soy $&#123;this.nombre&#125;`)
+                                &#125;, 1000)
+                            &#125;
+                        &#125;
+
+                        persona.saludar()
+
+                        const personaArrow = &#123;
+                            nombre: "Ana",
+                            saludar: function() &#123;
+                                setTimeout(() =&gt; &#123;
+                                    console.log(`Hola, soy $&#123;this.nombre&#125;`)
+                                &#125;, 1000)
+                            &#125;
+                        &#125;
+
+                        personaArrow.saludar()
+                    </code>
+
                 </DivContent>
             </DivArticle>
 
             &#123; &gt; &#125;
-
-            <code>
-                const persona = {
-                    nombre: "Ana",
-                saludar: function() {
-                    setTimeout(function () {
-                        console.log(`Hola, soy ${this.nombre}`);
-                    }, 1000);
-                    }
-                };
-
-                persona.saludar(); // "Hola, soy undefined" (porque `this` apunta a `window`)
-
-                const personaArrow = {
-                    nombre: "Ana",
-                saludar: function() {
-                    setTimeout(() => {
-                        console.log(`Hola, soy ${this.nombre}`);
-                    }, 1000);
-                    }
-                };
-
-                personaArrow.saludar(); // "Hola, soy Ana" (porque `this` se hereda de `personaArrow`)
-            </code>
-
+            
             <p>
                 En el primer ejemplo, setTimeout usa una función regular, y this pierde el contexto de persona. En el segundo ejemplo, setTimeout usa una arrow function, que mantiene el contexto this de personaArrow.
             </p>
