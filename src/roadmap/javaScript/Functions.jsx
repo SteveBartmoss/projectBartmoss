@@ -158,20 +158,20 @@ export function MapFunctions() {
                         persona.saludar()
                     </code>
 
+                    <p>
+                        Aquí this.nombre se refiere a nombre dentro de persona.
+                    </p>
+
+                    <h3>this en Arrow Functions</h3>
+
+                    <p>
+                        Las arrow functions no tienen su propio this; en lugar de eso, this se hereda del contexto donde se define. Esto se llama this léxico.
+                    </p>
+
                 </DivContent>
             </DivArticle>
 
             &#123; &gt; &#125;
-
-            <p>
-                Aquí this.nombre se refiere a nombre dentro de persona.
-            </p>
-
-            <h3>this en Arrow Functions</h3>
-
-            <p>
-                Las arrow functions no tienen su propio this; en lugar de eso, this se hereda del contexto donde se define. Esto se llama this léxico.
-            </p>
 
             <code>
                 const persona = {
