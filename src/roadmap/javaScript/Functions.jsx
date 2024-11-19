@@ -112,26 +112,28 @@ export function MapFunctions() {
                         console.log(sumar(5, 10))
                     </code>
 
+                    <p>
+                        En el ejemplo, la función flecha sumar toma dos parámetros (a y b) y retorna su suma. Si solo tiene una línea, el return y las llaves { } son opcionales.
+                    </p>
+
+                    <h3>Casos de Uso de Arrow Functions</h3>
+
+                    <p>
+                        Las funciones flecha son ideales para:
+                        Funciones cortas y callbacks: Simplifican la sintaxis en funciones de una sola línea o en callbacks.
+                        Funciones donde no se necesita this: Debido a que el contexto de this es léxico (no cambia), funcionan bien en métodos donde this debería permanecer constante.
+                    </p>
+
+                    <p>
+                        Ejemplos con Arrow Functions
+                    </p>
+
                 </DivContent>
             </DivArticle>
 
             &#123; &gt; &#125;
 
-            <p>
-                En el ejemplo, la función flecha sumar toma dos parámetros (a y b) y retorna su suma. Si solo tiene una línea, el return y las llaves { } son opcionales.
-            </p>
-
-            <h3>Casos de Uso de Arrow Functions</h3>
-
-            <p>
-                Las funciones flecha son ideales para:
-                Funciones cortas y callbacks: Simplifican la sintaxis en funciones de una sola línea o en callbacks.
-                Funciones donde no se necesita this: Debido a que el contexto de this es léxico (no cambia), funcionan bien en métodos donde this debería permanecer constante.
-            </p>
-
-            <p>
-                Ejemplos con Arrow Functions
-            </p>
+            
 
             <code>
                 const numeros = [1, 2, 3];
