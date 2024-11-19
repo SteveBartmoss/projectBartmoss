@@ -147,22 +147,21 @@ export function MapFunctions() {
                         En funciones normales, this depende de cómo se llama la función. Si se llama dentro de un objeto, this apunta a ese objeto. Si se llama en un contexto global, this será undefined en modo estricto o el objeto window en modo no estricto.
                     </p>
 
+                    <code>
+                        const persona = &#123;
+                            nombre: "Ana",
+                                saludar: function() &#123;
+                                console.log(`Hola, soy $&#123;this.nombre&#125;`)
+                            &#125;           
+                        &#125;
+
+                        persona.saludar()
+                    </code>
+
                 </DivContent>
             </DivArticle>
 
             &#123; &gt; &#125;
-            
-            <code>
-                const persona = {
-                    nombre: "Ana",
-                saludar: function() {
-                    console.log(`Hola, soy ${this.nombre}`);
-                    }           
-                };
-
-                persona.saludar(); // Hola, soy Ana
-
-            </code>
 
             <p>
                 Aquí this.nombre se refiere a nombre dentro de persona.
