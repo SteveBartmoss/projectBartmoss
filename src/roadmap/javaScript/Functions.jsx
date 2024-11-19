@@ -266,21 +266,21 @@ export function MapFunctions() {
                         console.log(otraPersona.nombre)
                     </code>
 
+                    <p>
+                        En este caso, al modificar otraPersona.nombre, también estamos cambiando persona.nombre porque ambas variables apuntan al mismo objeto en la memoria.
+                    </p>
+
+                    <h3>Paso por Referencia en Funciones</h3>
+
+                    <p>
+                        Cuando pasas un objeto o array a una función, también se pasa por referencia. Por lo tanto, cualquier cambio que realices dentro de la función afectará al objeto o array original.
+                    </p>
+
                 </DivContent>
             </DivArticle>
 
             &#123; &gt; &#125;
             
-            <p>
-                En este caso, al modificar otraPersona.nombre, también estamos cambiando persona.nombre porque ambas variables apuntan al mismo objeto en la memoria.
-            </p>
-
-            <h3>Paso por Referencia en Funciones</h3>
-
-            <p>
-                Cuando pasas un objeto o array a una función, también se pasa por referencia. Por lo tanto, cualquier cambio que realices dentro de la función afectará al objeto o array original.
-            </p>
-
             <code>
                 function modificarPersona(p) {
                     p.nombre = "Lucía";
