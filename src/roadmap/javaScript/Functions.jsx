@@ -95,7 +95,7 @@ export function MapFunctions() {
                     <h3>Arrow Functions (Funciones Flecha)</h3>
 
                     <p>
-                        Las arrow functions (funciones flecha) son una sintaxis más corta para definir funciones, introducida en ES6. Usan la flecha (=>) y son especialmente útiles para funciones cortas o de una sola línea.
+                        Las arrow functions (funciones flecha) son una sintaxis más corta para definir funciones, introducida en ES6. Usan la flecha (=&gt;) y son especialmente útiles para funciones cortas o de una sola línea.
                     </p>
 
                     <p>
@@ -168,25 +168,25 @@ export function MapFunctions() {
                         Las arrow functions no tienen su propio this; en lugar de eso, this se hereda del contexto donde se define. Esto se llama this léxico.
                     </p>
 
+                    <code>
+                        const persona = &#123;
+                            nombre: "Ana",
+                            saludar: function() &#123;
+                                const presentacion = () =&gt; &#123;
+                                    console.log(`Hola, soy $&#123;this.nombre&#125;`)
+                                &#125;
+                                presentacion()
+                            &#125;
+                        &#125;
+
+                        persona.saludar()
+                    </code>
+
                 </DivContent>
             </DivArticle>
 
             &#123; &gt; &#125;
-
-            <code>
-                const persona = {
-                    nombre: "Ana",
-                saludar: function() {
-                        const presentacion = () => {
-                    console.log(`Hola, soy ${this.nombre}`);
-                        };
-                presentacion();
-                    }
-                };
-
-                persona.saludar();
-            </code>
-
+            
             <p>
                 En este caso, this.nombre en presentacion() se refiere al this de saludar, que es el objeto persona. Esto hace que las arrow functions sean útiles en funciones anidadas donde quieres mantener el contexto this.
             </p>
