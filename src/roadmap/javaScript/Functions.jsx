@@ -325,23 +325,22 @@ export function MapFunctions() {
                         console.log(copiaPersona.edad)
                     </code>
 
+                    <p>
+                        Copias de Arrays con slice o spread [ ...arr ]:
+                    </p>
+
+                    <code>
+                        const numeros = [1, 2, 3]
+                        const copiaNumeros = [...numeros, 4]
+
+                        console.log(numeros)
+                        console.log(copiaNumeros)
+                    </code>
+
                 </DivContent>
             </DivArticle>
 
             &#123; &gt; &#125;
-
-            <p>
-                Copias de Arrays con slice o spread [ ...arr ]:
-            </p>
-
-            <code>
-                const numeros = [1, 2, 3];
-                const copiaNumeros = [...numeros, 4]; // agrega `4` a la copia
-
-                console.log(numeros); // [1, 2, 3] (original)
-                console.log(copiaNumeros); // [1, 2, 3, 4] (copia con cambio)
-            </code>
-
 
             <h3>Inmutabilidad Profunda</h3>
 
