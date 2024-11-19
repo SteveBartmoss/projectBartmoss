@@ -135,23 +135,23 @@ export function MapFunctions() {
                         console.log(dobles)
                     </code>
 
+                    <h2>Contexto this</h2>
+
+                    <p>
+                        El contexto this representa el objeto al cual pertenece el código actual. En funciones regulares y en arrow functions, this puede comportarse de manera diferente.
+                    </p>
+
+                    <h3>this en Funciones Regulares</h3>
+
+                    <p>
+                        En funciones normales, this depende de cómo se llama la función. Si se llama dentro de un objeto, this apunta a ese objeto. Si se llama en un contexto global, this será undefined en modo estricto o el objeto window en modo no estricto.
+                    </p>
+
                 </DivContent>
             </DivArticle>
 
             &#123; &gt; &#125;
             
-            <h2>Contexto this</h2>
-
-            <p>
-                El contexto this representa el objeto al cual pertenece el código actual. En funciones regulares y en arrow functions, this puede comportarse de manera diferente.
-            </p>
-
-            <h3>this en Funciones Regulares</h3>
-
-            <p>
-                En funciones normales, this depende de cómo se llama la función. Si se llama dentro de un objeto, this apunta a ese objeto. Si se llama en un contexto global, this será undefined en modo estricto o el objeto window en modo no estricto.
-            </p>
-
             <code>
                 const persona = {
                     nombre: "Ana",
