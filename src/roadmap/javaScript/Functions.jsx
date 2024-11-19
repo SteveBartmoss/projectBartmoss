@@ -60,20 +60,21 @@ export function MapFunctions() {
                         Las funciones anónimas son aquellas sin un nombre, comúnmente utilizadas en expresiones de funciones o como funciones de callback (por ejemplo, en eventos o métodos de array como map, filter).
                     </p>
 
+                    <code>
+                        const saludar = function() &#123;
+                            console.log("¡Hola!")
+                        &#125;
+
+                        [1, 2, 3].forEach(function(elemento) &#123;
+                            console.log(elemento)
+                        &#125;)
+                    </code>
+
                 </DivContent>
             </DivArticle>
 
             &#123; &gt; &#125;
-            
-            <code>
-                const saludar = function() {
-                    console.log("¡Hola!");
-                };
 
-                [1, 2, 3].forEach(function(elemento) {
-                    console.log(elemento);
-                });
-            </code>
 
             <p>
                 En este caso, la función dentro de forEach es anónima y se ejecuta para cada elemento del array.
