@@ -62,13 +62,23 @@ export function MapFunctions() {
 
                     <code>
                         const saludar = function() &#123;
-                            console.log("¡Hola!")
+                        console.log("¡Hola!")
                         &#125;
 
                         [1, 2, 3].forEach(function(elemento) &#123;
-                            console.log(elemento)
+                        console.log(elemento)
                         &#125;)
                     </code>
+
+                    <p>
+                        En este caso, la función dentro de forEach es anónima y se ejecuta para cada elemento del array.
+                    </p>
+
+                    <h3>Funciones Nombradas</h3>
+
+                    <p>
+                        Las funciones nombradas tienen un identificador y pueden ser útiles para depurar o reutilizar una función específica.
+                    </p>
 
                 </DivContent>
             </DivArticle>
@@ -76,15 +86,7 @@ export function MapFunctions() {
             &#123; &gt; &#125;
 
 
-            <p>
-                En este caso, la función dentro de forEach es anónima y se ejecuta para cada elemento del array.
-            </p>
 
-            <h3>Funciones Nombradas</h3>
-
-            <p>
-                Las funciones nombradas tienen un identificador y pueden ser útiles para depurar o reutilizar una función específica.
-            </p>
 
             <code>
                 const saludar = function saludo() {
