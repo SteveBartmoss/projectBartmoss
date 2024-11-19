@@ -317,18 +317,18 @@ export function MapFunctions() {
                         Copias de Objetos con Object.assign o el operador spread {...obj}:
                     </p>
 
+                    <code>
+                        const persona = &#123;nombre: "Ana", edad: 25 &#123;
+                        const copiaPersona = &#123;...persona, edad: 30 &#123;
+
+                        console.log(persona.edad)
+                        console.log(copiaPersona.edad)
+                    </code>
+
                 </DivContent>
             </DivArticle>
 
             &#123; &gt; &#125;
-
-            <code>
-                const persona = {nombre: "Ana", edad: 25 };
-                const copiaPersona = {...persona, edad: 30 }; // copia modificada
-
-                console.log(persona.edad); // 25 (original)
-                console.log(copiaPersona.edad); // 30 (copia con cambio)
-            </code>
 
             <p>
                 Copias de Arrays con slice o spread [ ...arr ]:
