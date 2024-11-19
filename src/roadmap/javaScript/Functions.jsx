@@ -287,23 +287,24 @@ export function MapFunctions() {
                         console.log(persona.nombre)
                     </code>
 
+                    <h2>Inmutabilidad</h2>
+
+                    <p>
+                        La inmutabilidad es el concepto de que una vez que un valor es creado, no puede ser cambiado. Esto es especialmente útil para trabajar con objetos y arrays en JavaScript, ya que, por defecto, estos tipos de datos se comportan de forma mutable.
+                    </p>
+
+                    <h3>Técnicas para la Inmutabilidad</h3>
+
+                    <p>
+                        Object.freeze(): Este método congela un objeto, lo que significa que no podrás agregar, eliminar ni modificar sus propiedades. Sin embargo, es superficial, por lo que no congela objetos anidados.
+                    </p>
+
                 </DivContent>
             </DivArticle>
 
             &#123; &gt; &#125;
 
-            <h2>Inmutabilidad</h2>
-
-            <p>
-                La inmutabilidad es el concepto de que una vez que un valor es creado, no puede ser cambiado. Esto es especialmente útil para trabajar con objetos y arrays en JavaScript, ya que, por defecto, estos tipos de datos se comportan de forma mutable.
-            </p>
-
-            <h3>Técnicas para la Inmutabilidad</h3>
-
-            <p>
-                Object.freeze(): Este método congela un objeto, lo que significa que no podrás agregar, eliminar ni modificar sus propiedades. Sin embargo, es superficial, por lo que no congela objetos anidados.
-            </p>
-
+            
             <code>
                 const persona = {nombre: "Ana", edad: 25 };
                 Object.freeze(persona);
