@@ -18,16 +18,19 @@ export function MapFunctions() {
                     <p>
                         Una declaración de función es cuando defines una función con la palabra clave function, seguida del nombre de la función. Las funciones declaradas están sujetas a hoisting (se "levantan" al principio de su contexto), por lo que puedes llamarlas incluso antes de la línea donde están definidas en el código.
                     </p>
+
+                    <code>
+                        function saludar() &#123;
+                            console.log("¡Hola!")
+                        &#125;
+                        saludar()
+                    </code>
+                    
                 </DivContent>
             </DivArticle>
 
+            &#123; &gt; &#125;
 
-            <code>
-                function saludar() {
-                    console.log("¡Hola!");
-                }
-                saludar();
-            </code>
 
             <p>
                 En este ejemplo, puedes llamar a saludar() incluso antes de su definición debido al hoisting.
