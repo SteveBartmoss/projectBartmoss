@@ -299,29 +299,28 @@ export function MapFunctions() {
                         Object.freeze(): Este método congela un objeto, lo que significa que no podrás agregar, eliminar ni modificar sus propiedades. Sin embargo, es superficial, por lo que no congela objetos anidados.
                     </p>
 
+                    <code>
+                        const persona = &#123;nombre: "Ana", edad: 25 &#125;
+                        Object.freeze(persona)
+
+                        persona.nombre = "Carlos"
+                        console.log(persona.nombre)
+                    </code>
+
+                    <h3>Copias para Arrays y Objetos</h3>
+
+                    <p>
+                        Para evitar modificar un array u objeto original, puedes crear copias antes de hacer cambios. Esto es útil para simular la inmutabilidad sin bloquear el objeto.
+                    </p>
+
+                    <p>
+                        Copias de Objetos con Object.assign o el operador spread {...obj}:
+                    </p>
+
                 </DivContent>
             </DivArticle>
 
             &#123; &gt; &#125;
-
-            
-            <code>
-                const persona = {nombre: "Ana", edad: 25 };
-                Object.freeze(persona);
-
-                persona.nombre = "Carlos"; // No hace nada, el objeto es inmutable
-                console.log(persona.nombre); // "Ana"
-            </code>
-
-            <h3>Copias para Arrays y Objetos</h3>
-
-            <p>
-                Para evitar modificar un array u objeto original, puedes crear copias antes de hacer cambios. Esto es útil para simular la inmutabilidad sin bloquear el objeto.
-            </p>
-
-            <p>
-                Copias de Objetos con Object.assign o el operador spread {...obj}:
-            </p>
 
             <code>
                 const persona = {nombre: "Ana", edad: 25 };
