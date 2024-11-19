@@ -337,16 +337,16 @@ export function MapFunctions() {
                         console.log(copiaNumeros)
                     </code>
 
+                    <h3>Inmutabilidad Profunda</h3>
+
+                    <p>
+                        Para hacer inmutables los objetos con propiedades anidadas, puedes usar métodos recursivos o bibliotecas como Immutable.js. Una alternativa sencilla es recrear todo el objeto en lugar de solo modificar propiedades específicas.
+                    </p>
+
                 </DivContent>
             </DivArticle>
 
             &#123; &gt; &#125;
-
-            <h3>Inmutabilidad Profunda</h3>
-
-            <p>
-                Para hacer inmutables los objetos con propiedades anidadas, puedes usar métodos recursivos o bibliotecas como Immutable.js. Una alternativa sencilla es recrear todo el objeto en lugar de solo modificar propiedades específicas.
-            </p>
 
             <code>
                 const persona = {
