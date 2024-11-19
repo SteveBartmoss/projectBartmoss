@@ -212,31 +212,33 @@ export function MapFunctions() {
                         personaArrow.saludar()
                     </code>
 
+                    <p>
+                        En el primer ejemplo, setTimeout usa una función regular, y this pierde el contexto de persona. En el segundo ejemplo, setTimeout usa una arrow function, que mantiene el contexto this de personaArrow.
+                    </p>
+
+                    <h2>Paso por Valor</h2>
+
+                    <p>
+                        El paso por valor significa que cuando pasas una copia de un valor a una variable o a una función, cualquier cambio que hagas en esa copia no afectará al valor original. Esto aplica a los tipos de datos primitivos en JavaScript, que incluyen:
+                        Números (Number)
+                        Cadenas de texto (String)
+                        Booleanos (Boolean)
+                        undefined
+                        null
+                        Símbolos (Symbol)
+                        BigInt (BigInt)
+                    </p>
+
+                    <p>
+                        Ejemplo de Paso por Valor
+                    </p>
+
                 </DivContent>
             </DivArticle>
 
             &#123; &gt; &#125;
             
-            <p>
-                En el primer ejemplo, setTimeout usa una función regular, y this pierde el contexto de persona. En el segundo ejemplo, setTimeout usa una arrow function, que mantiene el contexto this de personaArrow.
-            </p>
-
-            <h2>Paso por Valor</h2>
-
-            <p>
-                El paso por valor significa que cuando pasas una copia de un valor a una variable o a una función, cualquier cambio que hagas en esa copia no afectará al valor original. Esto aplica a los tipos de datos primitivos en JavaScript, que incluyen:
-                Números (Number)
-                Cadenas de texto (String)
-                Booleanos (Boolean)
-                undefined
-                null
-                Símbolos (Symbol)
-                BigInt (BigInt)
-            </p>
-
-            <p>
-                Ejemplo de Paso por Valor
-            </p>
+            
 
             <code>
                 let a = 5;
