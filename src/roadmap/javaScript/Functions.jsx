@@ -394,20 +394,21 @@ export function MapFunctions() {
                         console.log(valores)
                     </code>
 
+                    <h2>Object.entries: Pares [clave, valor] de un Objeto en un Array</h2>
+
+                    <p>
+                        Función: Object.entries(obj) devuelve un array de arrays, donde cada subarray contiene un par [clave, valor].
+                        Uso común: Ideal para trabajar con ambas partes de cada propiedad de un objeto simultáneamente.
+                    </p>
+
+                    <p>Ejemplo</p>
+                    
                 </DivContent>
             </DivArticle>
 
             &#123; &gt; &#125;
+
             
-            <h2>Object.entries: Pares [clave, valor] de un Objeto en un Array</h2>
-
-            <p>
-                Función: Object.entries(obj) devuelve un array de arrays, donde cada subarray contiene un par [clave, valor].
-                Uso común: Ideal para trabajar con ambas partes de cada propiedad de un objeto simultáneamente.
-            </p>
-
-            <p>Ejemplo</p>
-
             <code>
                 const persona = {nombre: "Ana", edad: 25 };
                 const pares = Object.entries(persona);
