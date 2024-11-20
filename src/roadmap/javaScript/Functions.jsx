@@ -361,20 +361,20 @@ export function MapFunctions() {
                         console.log(personaModificada.direccion.ciudad)
                     </code>
 
+                    <h2>Object.keys: Claves de un Objeto en un Array</h2>
+
+                    <p>
+                        Función: Object.keys(obj) devuelve un array con todas las claves propias de un objeto.
+                        Uso común: Enumerar o verificar las propiedades de un objeto.
+                        Limitación: No devuelve propiedades heredadas de prototipos, solo las propiedades propias del objeto.
+                    </p>
+
+                    <p>Ejemplo</p>
+
                 </DivContent>
             </DivArticle>
 
             &#123; &gt; &#125;
-
-            <h2>Object.keys: Claves de un Objeto en un Array</h2>
-
-            <p>
-                Función: Object.keys(obj) devuelve un array con todas las claves propias de un objeto.
-                Uso común: Enumerar o verificar las propiedades de un objeto.
-                Limitación: No devuelve propiedades heredadas de prototipos, solo las propiedades propias del objeto.
-            </p>
-
-            <p>Ejemplo</p>
 
             <code>
                 const persona = {nombre: "Ana", edad: 25 };
