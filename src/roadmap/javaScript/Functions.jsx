@@ -387,20 +387,18 @@ export function MapFunctions() {
 
                     <p>Ejemplo</p>
 
+                    <code>
+                        const persona = &#123;nombre: "Ana", edad: 25 &#125;
+                        const valores = Object.values(persona)
+
+                        console.log(valores)
+                    </code>
+
                 </DivContent>
             </DivArticle>
 
             &#123; &gt; &#125;
-
-
-
-            <code>
-                const persona = {nombre: "Ana", edad: 25 };
-                const valores = Object.values(persona);
-
-                console.log(valores); // ["Ana", 25]
-            </code>
-
+            
             <h2>Object.entries: Pares [clave, valor] de un Objeto en un Array</h2>
 
             <p>
