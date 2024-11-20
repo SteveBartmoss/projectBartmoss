@@ -104,7 +104,7 @@ export function MapFunctions() {
 
                     <code>
                         const sumar = function(a, b) &#123;
-                            return a + b
+                        return a + b
                         &#125;;
 
                         const sumar = (a, b) =&gt; a + b
@@ -149,10 +149,10 @@ export function MapFunctions() {
 
                     <code>
                         const persona = &#123;
-                            nombre: "Ana",
-                                saludar: function() &#123;
-                                console.log(`Hola, soy $&#123;this.nombre&#125;`)
-                            &#125;           
+                        nombre: "Ana",
+                        saludar: function() &#123;
+                        console.log(`Hola, soy $&#123;this.nombre&#125;`)
+                        &#125;
                         &#125;
 
                         persona.saludar()
@@ -170,13 +170,13 @@ export function MapFunctions() {
 
                     <code>
                         const persona = &#123;
-                            nombre: "Ana",
-                            saludar: function() &#123;
-                                const presentacion = () =&gt; &#123;
-                                    console.log(`Hola, soy $&#123;this.nombre&#125;`)
-                                &#125;
-                                presentacion()
-                            &#125;
+                        nombre: "Ana",
+                        saludar: function() &#123;
+                        const presentacion = () =&gt; &#123;
+                        console.log(`Hola, soy $&#123;this.nombre&#125;`)
+                        &#125;
+                        presentacion()
+                        &#125;
                         &#125;
 
                         persona.saludar()
@@ -190,23 +190,23 @@ export function MapFunctions() {
 
                     <code>
                         const persona = &#123;
-                            nombre: "Ana",
-                            saludar: function() &#123;
-                                setTimeout(function () &#123;
-                                    console.log(`Hola, soy $&#123;this.nombre&#125;`)
-                                &#125;, 1000)
-                            &#125;
+                        nombre: "Ana",
+                        saludar: function() &#123;
+                        setTimeout(function () &#123;
+                        console.log(`Hola, soy $&#123;this.nombre&#125;`)
+                        &#125;, 1000)
+                        &#125;
                         &#125;
 
                         persona.saludar()
 
                         const personaArrow = &#123;
-                            nombre: "Ana",
-                            saludar: function() &#123;
-                                setTimeout(() =&gt; &#123;
-                                    console.log(`Hola, soy $&#123;this.nombre&#125;`)
-                                &#125;, 1000)
-                            &#125;
+                        nombre: "Ana",
+                        saludar: function() &#123;
+                        setTimeout(() =&gt; &#123;
+                        console.log(`Hola, soy $&#123;this.nombre&#125;`)
+                        &#125;, 1000)
+                        &#125;
                         &#125;
 
                         personaArrow.saludar()
@@ -278,7 +278,7 @@ export function MapFunctions() {
 
                     <code>
                         function modificarPersona(p) &#123;
-                            p.nombre = "Lucía"
+                        p.nombre = "Lucía"
                         &#125;
 
                         let persona =  &#123;nombre: "Ana" &#125;
@@ -345,16 +345,16 @@ export function MapFunctions() {
 
                     <code>
                         const persona = &#123;
-                            nombre: "Ana",
-                            direccion: &#123;
-                                ciudad: "Lima",
-                                pais: "Perú"
-                            &#125;
+                        nombre: "Ana",
+                        direccion: &#123;
+                        ciudad: "Lima",
+                        pais: "Perú"
+                        &#125;
                         &#125;
 
                         const personaModificada = &#123;
-                            ...persona,
-                            direccion: &#123;...persona.direccion, ciudad: "Cusco" &#125;
+                        ...persona,
+                        direccion: &#123;...persona.direccion, ciudad: "Cusco" &#125;
                         &#125;
 
                         console.log(persona.direccion.ciudad)
@@ -378,19 +378,21 @@ export function MapFunctions() {
                         console.log(claves)
                     </code>
 
+                    <h2>Object.values: Valores de un Objeto en un Array</h2>
+
+                    <p>
+                        Función: Object.values(obj) devuelve un array con todos los valores de las propiedades propias del objeto.
+                        Uso común: Acceder y procesar únicamente los valores de un objeto sin tener en cuenta sus claves.
+                    </p>
+
+                    <p>Ejemplo</p>
+
                 </DivContent>
             </DivArticle>
 
             &#123; &gt; &#125;
 
-            <h2>Object.values: Valores de un Objeto en un Array</h2>
 
-            <p>
-                Función: Object.values(obj) devuelve un array con todos los valores de las propiedades propias del objeto.
-                Uso común: Acceder y procesar únicamente los valores de un objeto sin tener en cuenta sus claves.
-            </p>
-
-            <p>Ejemplo</p>
 
             <code>
                 const persona = {nombre: "Ana", edad: 25 };
