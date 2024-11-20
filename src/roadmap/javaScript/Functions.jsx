@@ -371,17 +371,17 @@ export function MapFunctions() {
 
                     <p>Ejemplo</p>
 
+                    <code>
+                        const persona = &#123;nombre: "Ana", edad: 25 &#125;
+                        const claves = Object.keys(persona)
+
+                        console.log(claves)
+                    </code>
+
                 </DivContent>
             </DivArticle>
 
             &#123; &gt; &#125;
-
-            <code>
-                const persona = {nombre: "Ana", edad: 25 };
-                const claves = Object.keys(persona);
-
-                console.log(claves); // ["nombre", "edad"]
-            </code>
 
             <h2>Object.values: Valores de un Objeto en un Array</h2>
 
