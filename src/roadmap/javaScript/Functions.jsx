@@ -402,19 +402,21 @@ export function MapFunctions() {
                     </p>
 
                     <p>Ejemplo</p>
-                    
+
+                    <code>
+                        const persona = &#123;nombre: "Ana", edad: 25 &#125;
+                        const pares = Object.entries(persona)
+
+                        console.log(pares)
+                    </code>
+
                 </DivContent>
             </DivArticle>
 
             &#123; &gt; &#125;
 
             
-            <code>
-                const persona = {nombre: "Ana", edad: 25 };
-                const pares = Object.entries(persona);
-
-                console.log(pares); // [["nombre", "Ana"], ["edad", 25]]
-            </code>
+            
 
             <h2>Enumeración vs. Propiedades Propias: hasOwnProperty y Técnicas para Evitar Propiedades de Prototipos</h2>
 
