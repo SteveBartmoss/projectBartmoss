@@ -343,28 +343,28 @@ export function MapFunctions() {
                         Para hacer inmutables los objetos con propiedades anidadas, puedes usar métodos recursivos o bibliotecas como Immutable.js. Una alternativa sencilla es recrear todo el objeto en lugar de solo modificar propiedades específicas.
                     </p>
 
+                    <code>
+                        const persona = &#123;
+                            nombre: "Ana",
+                            direccion: &#123;
+                                ciudad: "Lima",
+                                pais: "Perú"
+                            &#125;
+                        &#125;
+
+                        const personaModificada = &#123;
+                            ...persona,
+                            direccion: &#123;...persona.direccion, ciudad: "Cusco" &#125;
+                        &#125;
+
+                        console.log(persona.direccion.ciudad)
+                        console.log(personaModificada.direccion.ciudad)
+                    </code>
+
                 </DivContent>
             </DivArticle>
 
             &#123; &gt; &#125;
-
-            <code>
-                const persona = {
-                    nombre: "Ana",
-                direccion: {
-                    ciudad: "Lima",
-                pais: "Perú"
-                    }
-                };
-
-                const personaModificada = {
-                    ...persona,
-                    direccion: {...persona.direccion, ciudad: "Cusco" }
-                };
-
-                console.log(persona.direccion.ciudad); // "Lima" (original)
-                console.log(personaModificada.direccion.ciudad); // "Cusco" (copia con cambio)
-            </code>
 
             <h2>Object.keys: Claves de un Objeto en un Array</h2>
 
