@@ -439,20 +439,20 @@ export function MapFunctions() {
 
                     <p>Ejemplo de hasOwnProperty</p>
 
+                    <code>
+                        const persona = &#123;nombre: "Ana", edad: 25 &#125;
+
+                        for (let clave in persona) &#123;
+                            if (persona.hasOwnProperty(clave)) &#123;
+                                    console.log(`$&#123;clave&#125;: $&#123;persona[clave]&#125;`)
+                            &#125;
+                        &#125;
+                    </code>
+
                 </DivContent>
             </DivArticle>
 
             &#123; &gt; &#125;
-
-            <code>
-                const persona = {nombre: "Ana", edad: 25 };
-
-                for (let clave in persona) {
-                    if (persona.hasOwnProperty(clave)) {
-                    console.log(`${clave}: ${persona[clave]}`);
-                    }
-                }
-            </code>
 
             <h2>Técnicas para Evitar Propiedades del Prototipo</h2>
 
