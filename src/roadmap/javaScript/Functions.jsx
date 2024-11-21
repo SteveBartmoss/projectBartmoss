@@ -413,36 +413,36 @@ export function MapFunctions() {
                     <h2>Enumeración vs. Propiedades Propias: hasOwnProperty y Técnicas para Evitar Propiedades de Prototipos</h2>
 
                     <p>
-                Cuando se trabaja con objetos, puede ser necesario distinguir entre las propiedades que pertenecen al objeto directamente (propiedades propias) y las heredadas del prototipo. Esto es crucial, especialmente al iterar sobre las propiedades de un objeto, para evitar procesar propiedades que no forman parte del objeto en sí.
-            </p>
+                        Cuando se trabaja con objetos, puede ser necesario distinguir entre las propiedades que pertenecen al objeto directamente (propiedades propias) y las heredadas del prototipo. Esto es crucial, especialmente al iterar sobre las propiedades de un objeto, para evitar procesar propiedades que no forman parte del objeto en sí.
+                    </p>
 
-            <h3>Propiedades Propias</h3>
+                    <h3>Propiedades Propias</h3>
 
-            <p>
-                Son las propiedades directamente definidas en el objeto.
-                No incluyen propiedades heredadas del prototipo del objeto.
-            </p>
+                    <p>
+                        Son las propiedades directamente definidas en el objeto.
+                        No incluyen propiedades heredadas del prototipo del objeto.
+                    </p>
+
+                    <h3>Propiedades del Prototipo</h3>
+
+                    <p>
+                        Son las propiedades y métodos que se heredan de la cadena de prototipos.
+                        Ejemplo: toString() y valueOf() son métodos heredados del prototipo de Object.
+                    </p>
+
+                    <h3>hasOwnProperty</h3>
+
+                    <p>
+                        Función: obj.hasOwnProperty(propiedad) devuelve true si la propiedad especificada es propia del objeto y false si es heredada.
+                        Uso común: Filtrar propiedades propias en un bucle for...in para evitar las propiedades heredadas.
+                    </p>
+
+                    <p>Ejemplo de hasOwnProperty</p>
 
                 </DivContent>
             </DivArticle>
 
             &#123; &gt; &#125;
-            
-            <h3>Propiedades del Prototipo</h3>
-
-            <p>
-                Son las propiedades y métodos que se heredan de la cadena de prototipos.
-                Ejemplo: toString() y valueOf() son métodos heredados del prototipo de Object.
-            </p>
-
-            <h3>hasOwnProperty</h3>
-
-            <p>
-                Función: obj.hasOwnProperty(propiedad) devuelve true si la propiedad especificada es propia del objeto y false si es heredada.
-                Uso común: Filtrar propiedades propias en un bucle for...in para evitar las propiedades heredadas.
-            </p>
-
-            <p>Ejemplo de hasOwnProperty</p>
 
             <code>
                 const persona = {nombre: "Ana", edad: 25 };
