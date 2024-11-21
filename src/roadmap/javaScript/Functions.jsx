@@ -449,16 +449,18 @@ export function MapFunctions() {
                         &#125;
                     </code>
 
+                    <h2>Técnicas para Evitar Propiedades del Prototipo</h2>
+
+                    <p>
+                        Usar Object.keys: Solo devuelve propiedades propias del objeto, sin incluir las heredadas del prototipo.
+                    </p>
+                    
                 </DivContent>
             </DivArticle>
 
             &#123; &gt; &#125;
 
-            <h2>Técnicas para Evitar Propiedades del Prototipo</h2>
-
-            <p>
-                Usar Object.keys: Solo devuelve propiedades propias del objeto, sin incluir las heredadas del prototipo.
-            </p>
+            
 
             <code>
                 Object.keys(persona).forEach((clave) => {
