@@ -410,17 +410,9 @@ export function MapFunctions() {
                         console.log(pares)
                     </code>
 
-                </DivContent>
-            </DivArticle>
+                    <h2>Enumeración vs. Propiedades Propias: hasOwnProperty y Técnicas para Evitar Propiedades de Prototipos</h2>
 
-            &#123; &gt; &#125;
-
-            
-            
-
-            <h2>Enumeración vs. Propiedades Propias: hasOwnProperty y Técnicas para Evitar Propiedades de Prototipos</h2>
-
-            <p>
+                    <p>
                 Cuando se trabaja con objetos, puede ser necesario distinguir entre las propiedades que pertenecen al objeto directamente (propiedades propias) y las heredadas del prototipo. Esto es crucial, especialmente al iterar sobre las propiedades de un objeto, para evitar procesar propiedades que no forman parte del objeto en sí.
             </p>
 
@@ -431,6 +423,11 @@ export function MapFunctions() {
                 No incluyen propiedades heredadas del prototipo del objeto.
             </p>
 
+                </DivContent>
+            </DivArticle>
+
+            &#123; &gt; &#125;
+            
             <h3>Propiedades del Prototipo</h3>
 
             <p>
