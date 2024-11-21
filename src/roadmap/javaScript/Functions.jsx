@@ -454,23 +454,23 @@ export function MapFunctions() {
                     <p>
                         Usar Object.keys: Solo devuelve propiedades propias del objeto, sin incluir las heredadas del prototipo.
                     </p>
-                    
+
+                    <code>
+                        Object.keys(persona).forEach((clave) =&gt; &#123;
+                            console.log(`$&#123;clave&#125;: $&#123;persona[clave]&#125;`);
+                        &#125;);
+                    </code>
+
+                    <p>
+                        Combinar Object.entries con hasOwnProperty: Aunque Object.entries solo devuelve propiedades propias, es una técnica útil si necesitas verificaciones adicionales en objetos complejos.
+                    </p>
+
                 </DivContent>
             </DivArticle>
 
             &#123; &gt; &#125;
 
             
-
-            <code>
-                Object.keys(persona).forEach((clave) => {
-                    console.log(`${clave}: ${persona[clave]}`);
-                });
-            </code>
-
-            <p>
-                Combinar Object.entries con hasOwnProperty: Aunque Object.entries solo devuelve propiedades propias, es una técnica útil si necesitas verificaciones adicionales en objetos complejos.
-            </p>
 
             <code>
                 Object.entries(persona).forEach(([clave, valor]) => {
