@@ -465,20 +465,18 @@ export function MapFunctions() {
                         Combinar Object.entries con hasOwnProperty: Aunque Object.entries solo devuelve propiedades propias, es una técnica útil si necesitas verificaciones adicionales en objetos complejos.
                     </p>
 
+                    <code>
+                        Object.entries(persona).forEach(([clave, valor]) =&gt; &#123;
+                            if (persona.hasOwnProperty(clave)) &#123;
+                                    console.log(`$&#123;clave&#125;: $&#123;valor&#125;`)
+                            &#125;
+                        &#125;)
+                    </code>
+
                 </DivContent>
             </DivArticle>
 
             &#123; &gt; &#125;
-
-            
-
-            <code>
-                Object.entries(persona).forEach(([clave, valor]) => {
-                    if (persona.hasOwnProperty(clave)) {
-                    console.log(`${clave}: ${valor}`);
-                    }
-                });
-            </code>
 
             <p>
                 Usar for...in solo con hasOwnProperty: Si usas for...in sin hasOwnProperty, se incluirán las propiedades heredadas.
