@@ -510,25 +510,27 @@ export function MapFunctions() {
 
                     </code>
 
+                    <p>
+                        Aquí, cambiar la ciudad en copiaSuperficial también cambia la ciudad en original, debido a la referencia compartida.
+                    </p>
+
+                    <h3>Copia Profunda (Deep Copy):</h3>
+
+                    <p>
+                        Una copia profunda crea una duplicación completa del objeto y de todos sus elementos anidados, sin referencias compartidas.
+                        Con una copia profunda, las modificaciones a elementos anidados en la copia no afectarán el objeto original.
+                    </p>
+
+                    <p>
+                        Ejemplo de Deep Copy usando JSON.parse(JSON.stringify()):
+                    </p>
+
                 </DivContent>
             </DivArticle>
 
             &#123; &gt; &#125;
 
-            <p>
-                Aquí, cambiar la ciudad en copiaSuperficial también cambia la ciudad en original, debido a la referencia compartida.
-            </p>
-
-            <h3>Copia Profunda (Deep Copy):</h3>
-
-            <p>
-                Una copia profunda crea una duplicación completa del objeto y de todos sus elementos anidados, sin referencias compartidas.
-                Con una copia profunda, las modificaciones a elementos anidados en la copia no afectarán el objeto original.
-            </p>
-
-            <p>
-                Ejemplo de Deep Copy usando JSON.parse(JSON.stringify()):
-            </p>
+            
 
             <code>
                 const original = {nombre: "Ana", direccion: {ciudad: "Madrid" } };
