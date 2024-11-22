@@ -557,6 +557,18 @@ export function MapObjects() {
 
                     </code>
 
+                    <h2>Comparación con Funciones Constructoras</h2>
+
+                    <p>
+                        Las funciones de fábrica y las funciones constructoras son dos enfoques diferentes para crear objetos en JavaScript:
+                        Funciones de Fábrica: No requieren el uso del operador new. Son más simples y adecuadas para la creación de objetos simples o cuando se necesita una lógica de creación muy específica.
+                        Funciones Constructoras: Requieren el uso del operador new y permiten crear instancias de un objeto más complejo. A menudo se utilizan junto con prototipos para compartir métodos entre instancias.
+                    </p>
+
+                    <p>
+                        Ejemplo de Función Constructora
+                    </p>
+
                     &#123; &gt; &#125;
 
                 </DivContent>
@@ -568,21 +580,6 @@ export function MapObjects() {
 
 /* 
 contenido sin limpiar 
-
-
-            
-
-<h2>Comparación con Funciones Constructoras</h2>
-
-            <p>
-                Las funciones de fábrica y las funciones constructoras son dos enfoques diferentes para crear objetos en JavaScript:
-                Funciones de Fábrica: No requieren el uso del operador new. Son más simples y adecuadas para la creación de objetos simples o cuando se necesita una lógica de creación muy específica.
-                Funciones Constructoras: Requieren el uso del operador new y permiten crear instancias de un objeto más complejo. A menudo se utilizan junto con prototipos para compartir métodos entre instancias.
-            </p>
-
-            <p>
-                Ejemplo de Función Constructora
-            </p>
 
             <code>
                 function Persona(nombre, edad) {
