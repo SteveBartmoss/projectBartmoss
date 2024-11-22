@@ -525,22 +525,20 @@ export function MapFunctions() {
                         Ejemplo de Deep Copy usando JSON.parse(JSON.stringify()):
                     </p>
 
+                    <code>
+                        const original = &#123;nombre: "Ana", direccion: &#123;ciudad: "Madrid" &#125; &#125;
+                        const copiaProfunda = JSON.parse(JSON.stringify(original));
+
+                        copiaProfunda.direccion.ciudad = "Barcelona";
+
+                        console.log(original); // &#123;nombre: "Ana", direccion: &#123;ciudad: "Madrid" &#125; &#125;
+                    </code>
+
                 </DivContent>
             </DivArticle>
 
             &#123; &gt; &#125;
-
             
-
-            <code>
-                const original = {nombre: "Ana", direccion: {ciudad: "Madrid" } };
-                const copiaProfunda = JSON.parse(JSON.stringify(original));
-
-                copiaProfunda.direccion.ciudad = "Barcelona";
-
-                console.log(original); // {nombre: "Ana", direccion: {ciudad: "Madrid" } }
-            </code>
-
             <p>
                 En este caso, el objeto original no se ve afectado por los cambios en copiaProfunda.
             </p>
