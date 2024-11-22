@@ -485,25 +485,25 @@ export function MapFunctions() {
                         &#125;
                     </code>
 
+                    <h2>Shallow Copy (Copia Superficial) vs. Deep Copy (Copia Profunda)</h2>
+
+                    <h3>Copia Superficial (Shallow Copy):</h3>
+
+                    <p>
+                        En una copia superficial, solo se copian las referencias de los objetos o arrays anidados.
+                        Esto significa que los elementos internos (como objetos dentro de un objeto) siguen apuntando a las mismas referencias en la memoria.
+                        Si modificas una propiedad de un objeto anidado en la copia superficial, el cambio afectará también al objeto original.
+                    </p>
+
+                    <p>
+                        Ejemplo de Shallow Copy usando Object.assign:
+                    </p>
+
                 </DivContent>
             </DivArticle>
 
             &#123; &gt; &#125;
             
-            <h2>Shallow Copy (Copia Superficial) vs. Deep Copy (Copia Profunda)</h2>
-
-            <h3>Copia Superficial (Shallow Copy):</h3>
-
-            <p>
-                En una copia superficial, solo se copian las referencias de los objetos o arrays anidados.
-                Esto significa que los elementos internos (como objetos dentro de un objeto) siguen apuntando a las mismas referencias en la memoria.
-                Si modificas una propiedad de un objeto anidado en la copia superficial, el cambio afectará también al objeto original.
-            </p>
-
-            <p>
-                Ejemplo de Shallow Copy usando Object.assign:
-            </p>
-
             <code>
                 const original = {nombre: "Ana", direccion: {ciudad: "Madrid" } };
                 const copiaSuperficial = Object.assign({ }, original);
