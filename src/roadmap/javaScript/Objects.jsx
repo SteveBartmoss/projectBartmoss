@@ -756,6 +756,25 @@ export function MapObjects() {
                         Ejemplo Básico
                     </p>
 
+                    <code>
+                        class Persona &#123;
+                            constructor(nombre, edad) &#123;
+                                this.nombre = nombre;
+                                this.edad = edad;
+                            &#125;
+
+                        // Método de instancia
+                            saludar() &#123;
+                                console.log(`Hola, mi nombre es $&#123;this.nombre&#125; y tengo $&#123;this.edad&#125; años.`);
+                            &#125;
+                        &#125;
+
+                        // Crear una instancia de la clase
+                        const persona1 = new Persona("Ana", 30);
+                        persona1.saludar(); // "Hola, mi nombre es Ana y tengo 30 años."
+
+                    </code>
+
                     &#123; &gt; &#125;
 
                 </DivContent>
@@ -768,25 +787,7 @@ export function MapObjects() {
 /* 
 contenido sin limpiar 
 
-            <code>
-                class Persona {
-                    constructor(nombre, edad) {
-                    this.nombre = nombre;
-                this.edad = edad;
-                    }
-
-                // Método de instancia
-                saludar() {
-                    console.log(`Hola, mi nombre es ${this.nombre} y tengo ${this.edad} años.`);
-                    }
-                }
-
-                // Crear una instancia de la clase
-                const persona1 = new Persona("Ana", 30);
-                persona1.saludar(); // "Hola, mi nombre es Ana y tengo 30 años."
-
-            </code>
-
+            
 <p>
                 En este ejemplo, Persona es una clase con un constructor que inicializa las propiedades nombre y edad, y un método saludar que puede ser usado por cada instancia.
             </p>
