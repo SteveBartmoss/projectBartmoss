@@ -638,6 +638,25 @@ export function MapObjects() {
                         Ejemplo de Convención PascalCase
                     </p>
 
+                    <code>
+
+                        function Animal(tipo, sonido) &#123;
+                            this.tipo = tipo;
+                            this.sonido = sonido;
+
+                            this.hacerSonido = function() &#123;
+                                console.log(`El $&#123;this.tipo&#125; hace $&#123;this.sonido&#125;`);
+                            &#125;
+                        &#125;
+
+                        const perro = new Animal("perro", "guau");
+                        const gato = new Animal("gato", "miau");
+
+                        perro.hacerSonido(); // "El perro hace guau"
+                        gato.hacerSonido(); // "El gato hace miau"
+
+                    </code>
+
                     &#123; &gt; &#125;
 
                 </DivContent>
@@ -650,23 +669,7 @@ export function MapObjects() {
 /* 
 contenido sin limpiar 
 
-<code>
-                function Animal(tipo, sonido) {
-                    this.tipo = tipo;
-                this.sonido = sonido;
 
-                this.hacerSonido = function() {
-                    console.log(`El ${this.tipo} hace ${this.sonido}`);
-                    };
-                }
-
-                const perro = new Animal("perro", "guau");
-                const gato = new Animal("gato", "miau");
-
-                perro.hacerSonido(); // "El perro hace guau"
-                gato.hacerSonido(); // "El gato hace miau"
-
-            </code>
 
 <h2>Prototipos en Funciones Constructoras</h2>
 
