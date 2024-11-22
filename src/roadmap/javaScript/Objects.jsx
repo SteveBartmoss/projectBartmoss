@@ -657,6 +657,22 @@ export function MapObjects() {
 
                     </code>
 
+                    <h2>Prototipos en Funciones Constructoras</h2>
+
+                    <p>
+                        Los prototipos permiten a las funciones constructoras compartir métodos entre todas sus instancias, lo que ahorra memoria y facilita la administración del código. Cuando se define un método en el prototipo de una función constructora, todas las instancias de esa función pueden acceder al método a través de su prototipo.
+                    </p>
+
+                    <h3>Introducción a Prototipos</h3>
+
+                    <p>
+                        Cada función en JavaScript tiene una propiedad llamada prototype. Podemos añadir métodos y propiedades al prototype de una función constructora para que todas las instancias compartan estos métodos, en lugar de definirlos directamente en cada instancia.
+                    </p>
+
+                    <p>
+                        Ejemplo: Uso de Prototipos para Métodos Compartidos
+                    </p>
+
                     &#123; &gt; &#125;
 
                 </DivContent>
@@ -671,21 +687,7 @@ contenido sin limpiar
 
 
 
-<h2>Prototipos en Funciones Constructoras</h2>
 
-            <p>
-                Los prototipos permiten a las funciones constructoras compartir métodos entre todas sus instancias, lo que ahorra memoria y facilita la administración del código. Cuando se define un método en el prototipo de una función constructora, todas las instancias de esa función pueden acceder al método a través de su prototipo.
-            </p>
-
-            <h3>Introducción a Prototipos</h3>
-
-            <p>
-                Cada función en JavaScript tiene una propiedad llamada prototype. Podemos añadir métodos y propiedades al prototype de una función constructora para que todas las instancias compartan estos métodos, en lugar de definirlos directamente en cada instancia.
-            </p>
-
-            <p>
-                Ejemplo: Uso de Prototipos para Métodos Compartidos
-            </p>
 
 <code>
                 function Vehiculo(marca, modelo) {
