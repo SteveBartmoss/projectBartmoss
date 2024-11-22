@@ -692,6 +692,22 @@ export function MapObjects() {
 
                     </code>
 
+                    <p>
+                        En este ejemplo, el método informacion es compartido entre todas las instancias de Vehiculo, lo cual es más eficiente que declarar el método dentro del constructor. Esto significa que informacion existe una sola vez en el prototipo, en lugar de duplicarse en cada instancia.
+                    </p>
+
+                    <h2>Ventajas de Usar Prototipos en Funciones Constructoras</h2>
+
+                    <p>
+                        Eficiencia de Memoria: Los métodos definidos en el prototipo se almacenan una vez, en lugar de duplicarse en cada instancia, lo que reduce el uso de memoria.
+                        Consistencia: Cualquier cambio hecho a un método en el prototipo afecta a todas las instancias que heredan ese prototipo.
+                        Organización: Mantiene los constructores más limpios al delegar la lógica de los métodos al prototipo.
+                    </p>
+
+                    <p>
+                        Ejemplo de Comparación: Método en el Constructor vs. Método en el Prototipo
+                    </p>
+
                     &#123; &gt; &#125;
 
                 </DivContent>
@@ -710,21 +726,7 @@ contenido sin limpiar
 
 
 
-<p>
-                En este ejemplo, el método informacion es compartido entre todas las instancias de Vehiculo, lo cual es más eficiente que declarar el método dentro del constructor. Esto significa que informacion existe una sola vez en el prototipo, en lugar de duplicarse en cada instancia.
-            </p>
 
-            <h2>Ventajas de Usar Prototipos en Funciones Constructoras</h2>
-
-            <p>
-                Eficiencia de Memoria: Los métodos definidos en el prototipo se almacenan una vez, en lugar de duplicarse en cada instancia, lo que reduce el uso de memoria.
-                Consistencia: Cualquier cambio hecho a un método en el prototipo afecta a todas las instancias que heredan ese prototipo.
-                Organización: Mantiene los constructores más limpios al delegar la lógica de los métodos al prototipo.
-            </p>
-
-            <p>
-                Ejemplo de Comparación: Método en el Constructor vs. Método en el Prototipo
-            </p>
 
 <code>
                 // Método en el constructor
