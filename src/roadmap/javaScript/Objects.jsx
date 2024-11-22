@@ -673,6 +673,25 @@ export function MapObjects() {
                         Ejemplo: Uso de Prototipos para Métodos Compartidos
                     </p>
 
+                    <code>
+                        function Vehiculo(marca, modelo) &#123;
+                            this.marca = marca;
+                            this.modelo = modelo;
+                        &#125;
+
+                        // Definir un método en el prototipo
+                        Vehiculo.prototype.informacion = function() &#123;
+                            console.log(`Vehículo: $&#123;this.marca&#125; $&#123;this.modelo&#125;`);
+                        &#125;
+
+                        const coche1 = new Vehiculo("Toyota", "Corolla");
+                        const coche2 = new Vehiculo("Ford", "Focus");
+
+                        coche1.informacion(); // "Vehículo: Toyota Corolla"
+                        coche2.informacion(); // "Vehículo: Ford Focus"
+
+                    </code>
+
                     &#123; &gt; &#125;
 
                 </DivContent>
@@ -689,24 +708,7 @@ contenido sin limpiar
 
 
 
-<code>
-                function Vehiculo(marca, modelo) {
-                    this.marca = marca;
-                this.modelo = modelo;
-                }
 
-                // Definir un método en el prototipo
-                Vehiculo.prototype.informacion = function() {
-                    console.log(`Vehículo: ${this.marca} ${this.modelo}`);
-                };
-
-                const coche1 = new Vehiculo("Toyota", "Corolla");
-                const coche2 = new Vehiculo("Ford", "Focus");
-
-                coche1.informacion(); // "Vehículo: Toyota Corolla"
-                coche2.informacion(); // "Vehículo: Ford Focus"
-
-            </code>
 
 <p>
                 En este ejemplo, el método informacion es compartido entre todas las instancias de Vehiculo, lo cual es más eficiente que declarar el método dentro del constructor. Esto significa que informacion existe una sola vez en el prototipo, en lugar de duplicarse en cada instancia.
