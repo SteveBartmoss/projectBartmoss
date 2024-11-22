@@ -582,6 +582,21 @@ export function MapObjects() {
                         persona3.saludar(); // "Hola, mi nombre es Carlos y tengo 40 años."
                     </code>
 
+                    <h1>Funciones Constructoras</h1>
+
+                    <p>
+                        Las funciones constructoras son una forma de crear objetos en JavaScript mediante el uso del operador new. Cuando llamamos a una función con new, JavaScript automáticamente crea un nuevo objeto, asigna ese objeto a this dentro de la función, y lo devuelve al final de la ejecución. Esto permite crear múltiples instancias de objetos con propiedades y métodos definidos.
+                    </p>
+
+                    <h2>Creación de una Función Constructora</h2>
+
+                    <p>
+                        Para crear una función constructora:
+                        Define una función cuyo nombre comienza en mayúscula (PascalCase) como convención.
+                        Usa el operador new al invocarla para crear una nueva instancia de objeto.
+                        Utiliza this para asignar propiedades y métodos a la nueva instancia.
+                    </p>
+
                     &#123; &gt; &#125;
 
                 </DivContent>
@@ -593,23 +608,6 @@ export function MapObjects() {
 
 /* 
 contenido sin limpiar 
-
-            
-
-<h1>Funciones Constructoras</h1>
-
-            <p>
-                Las funciones constructoras son una forma de crear objetos en JavaScript mediante el uso del operador new. Cuando llamamos a una función con new, JavaScript automáticamente crea un nuevo objeto, asigna ese objeto a this dentro de la función, y lo devuelve al final de la ejecución. Esto permite crear múltiples instancias de objetos con propiedades y métodos definidos.
-            </p>
-
-            <h2>Creación de una Función Constructora</h2>
-
-            <p>
-                Para crear una función constructora:
-                Define una función cuyo nombre comienza en mayúscula (PascalCase) como convención.
-                Usa el operador new al invocarla para crear una nueva instancia de objeto.
-                Utiliza this para asignar propiedades y métodos a la nueva instancia.
-            </p>
 
 <p>
                 Ejemplo Básico
