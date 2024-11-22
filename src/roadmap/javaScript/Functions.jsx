@@ -534,14 +534,13 @@ export function MapFunctions() {
                         console.log(original); // &#123;nombre: "Ana", direccion: &#123;ciudad: "Madrid" &#125; &#125;
                     </code>
 
+                    <p>
+                        En este caso, el objeto original no se ve afectado por los cambios en copiaProfunda.
+                    </p>
+
                 </DivContent>
             </DivArticle>
-
-            &#123; &gt; &#125;
             
-            <p>
-                En este caso, el objeto original no se ve afectado por los cambios en copiaProfunda.
-            </p>
         </>
     )
 }
