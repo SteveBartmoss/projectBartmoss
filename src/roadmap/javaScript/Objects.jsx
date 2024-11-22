@@ -736,6 +736,26 @@ export function MapObjects() {
 
                     </code>
 
+                    <p>
+                        Aquí, JugadorConPrototipo es más eficiente en términos de memoria porque el método jugar está definido solo una vez en el prototipo.
+                    </p>
+
+                    <h1>Nueva sintaxis para constructores</h1>
+
+                    <p>
+                        Con ES6, se introdujo la palabra clave class en JavaScript como una forma de crear objetos y gestionar herencias. Aunque class es en realidad una sintaxis especial para definir funciones constructoras, hace que el código sea más limpio y legible, y organiza mejor la lógica de creación y herencia de objetos.
+                    </p>
+
+                    <h2>Creación de Clases con class</h2>
+
+                    <p>
+                        Una clase en ES6 es una plantilla para crear objetos. Dentro de una clase, puedes definir el constructor (similar al de una función constructora) y métodos que serán compartidos por todas las instancias de esa clase.
+                    </p>
+
+                    <p>
+                        Ejemplo Básico
+                    </p>
+
                     &#123; &gt; &#125;
 
                 </DivContent>
@@ -747,26 +767,6 @@ export function MapObjects() {
 
 /* 
 contenido sin limpiar 
-
-            <p>
-                Aquí, JugadorConPrototipo es más eficiente en términos de memoria porque el método jugar está definido solo una vez en el prototipo.
-            </p>
-
-            <h1>Nueva sintaxis para constructores</h1>
-
-            <p>
-                Con ES6, se introdujo la palabra clave class en JavaScript como una forma de crear objetos y gestionar herencias. Aunque class es en realidad una sintaxis especial para definir funciones constructoras, hace que el código sea más limpio y legible, y organiza mejor la lógica de creación y herencia de objetos.
-            </p>
-
-            <h2>Creación de Clases con class</h2>
-
-<p>
-                Una clase en ES6 es una plantilla para crear objetos. Dentro de una clase, puedes definir el constructor (similar al de una función constructora) y métodos que serán compartidos por todas las instancias de esa clase.
-            </p>
-
-            <p>
-                Ejemplo Básico
-            </p>
 
             <code>
                 class Persona {
