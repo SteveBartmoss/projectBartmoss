@@ -499,21 +499,21 @@ export function MapFunctions() {
                         Ejemplo de Shallow Copy usando Object.assign:
                     </p>
 
+                    <code>
+                        const original = &#123;nombre: "Ana", direccion: &#123;ciudad: "Madrid" &#125; &#125;
+                        const copiaSuperficial = Object.assign(&#123; &#125;, original);
+
+                        copiaSuperficial.nombre = "Luis";
+                        copiaSuperficial.direccion.ciudad = "Barcelona";
+
+                        console.log(original); // &#123;nombre: "Ana", direccion: &#123;ciudad: "Barcelona" &#125; &#125;
+
+                    </code>
+
                 </DivContent>
             </DivArticle>
 
             &#123; &gt; &#125;
-            
-            <code>
-                const original = {nombre: "Ana", direccion: {ciudad: "Madrid" } };
-                const copiaSuperficial = Object.assign({ }, original);
-
-                copiaSuperficial.nombre = "Luis";
-                copiaSuperficial.direccion.ciudad = "Barcelona";
-
-                console.log(original); // {nombre: "Ana", direccion: {ciudad: "Barcelona" } }
-
-            </code>
 
             <p>
                 Aquí, cambiar la ciudad en copiaSuperficial también cambia la ciudad en original, debido a la referencia compartida.
