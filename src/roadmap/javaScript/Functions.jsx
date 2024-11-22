@@ -473,24 +473,23 @@ export function MapFunctions() {
                         &#125;)
                     </code>
 
+                    <p>
+                        Usar for...in solo con hasOwnProperty: Si usas for...in sin hasOwnProperty, se incluirán las propiedades heredadas.
+                    </p>
+
+                    <code>
+                        for (let clave in persona) &#123;
+                            if (persona.hasOwnProperty(clave)) &#123;
+                                    console.log(`$&#123;clave&#125;: $&#123;persona[clave]&#125;`)
+                            &#125;
+                        &#125;
+                    </code>
+
                 </DivContent>
             </DivArticle>
 
             &#123; &gt; &#125;
-
-            <p>
-                Usar for...in solo con hasOwnProperty: Si usas for...in sin hasOwnProperty, se incluirán las propiedades heredadas.
-            </p>
-
-            <code>
-                for (let clave in persona) {
-                    if (persona.hasOwnProperty(clave)) {
-                    console.log(`${clave}: ${persona[clave]}`);
-                    }
-                }
-            </code>
-
-
+            
             <h2>Shallow Copy (Copia Superficial) vs. Deep Copy (Copia Profunda)</h2>
 
             <h3>Copia Superficial (Shallow Copy):</h3>
