@@ -537,17 +537,17 @@ export function MapObjects() {
 
                     <code>
                         function crearContador() &#123;
-                            let conteo = 0; // Estado privado
+                        let conteo = 0; // Estado privado
 
-                            return &#123;
-                                incrementar: function() &#123;
-                                conteo++;
-                                console.log(`Contador: $&#123;conteo&#125;`);
-                            &#125;,
-                            obtenerConteo: function() &#123;
-                                    return conteo;
-                                &#125;
-                            &#125;
+                        return &#123;
+                        incrementar: function() &#123;
+                        conteo++;
+                        console.log(`Contador: $&#123;conteo&#125;`);
+                        &#125;,
+                        obtenerConteo: function() &#123;
+                        return conteo;
+                        &#125;
+                        &#125;
                         &#125;
 
                         const contador = crearContador();
@@ -571,11 +571,11 @@ export function MapObjects() {
 
                     <code>
                         function Persona(nombre, edad) &#123;
-                            this.nombre = nombre;
+                        this.nombre = nombre;
                         this.edad = edad;
                         this.saludar = function() &#123;
-                            console.log(`Hola, mi nombre es $&#123;this.nombre&#125; y tengo $&#123;this.edad&#125; años.`);
-                            &#125;
+                        console.log(`Hola, mi nombre es $&#123;this.nombre&#125; y tengo $&#123;this.edad&#125; años.`);
+                        &#125;
                         &#125;
 
                         const persona3 = new Persona("Carlos", 40);
@@ -603,12 +603,12 @@ export function MapObjects() {
 
                     <code>
                         function Persona(nombre, edad) &#123;
-                            this.nombre = nombre; // 'this' se refiere a la nueva instancia creada
-                            this.edad = edad;
+                        this.nombre = nombre; // 'this' se refiere a la nueva instancia creada
+                        this.edad = edad;
 
-                            this.saludar = function() &#123;
-                                console.log(`Hola, mi nombre es $&#123;this.nombre&#125; y tengo $&#123;this.edad&#125; años.`);
-                            &#125;;
+                        this.saludar = function() &#123;
+                        console.log(`Hola, mi nombre es $&#123;this.nombre&#125; y tengo $&#123;this.edad&#125; años.`);
+                        &#125;;
                         &#125;
 
                         const persona1 = new Persona("Ana", 30);
@@ -641,12 +641,12 @@ export function MapObjects() {
                     <code>
 
                         function Animal(tipo, sonido) &#123;
-                            this.tipo = tipo;
-                            this.sonido = sonido;
+                        this.tipo = tipo;
+                        this.sonido = sonido;
 
-                            this.hacerSonido = function() &#123;
-                                console.log(`El $&#123;this.tipo&#125; hace $&#123;this.sonido&#125;`);
-                            &#125;
+                        this.hacerSonido = function() &#123;
+                        console.log(`El $&#123;this.tipo&#125; hace $&#123;this.sonido&#125;`);
+                        &#125;
                         &#125;
 
                         const perro = new Animal("perro", "guau");
@@ -675,13 +675,13 @@ export function MapObjects() {
 
                     <code>
                         function Vehiculo(marca, modelo) &#123;
-                            this.marca = marca;
-                            this.modelo = modelo;
+                        this.marca = marca;
+                        this.modelo = modelo;
                         &#125;
 
                         // Definir un método en el prototipo
                         Vehiculo.prototype.informacion = function() &#123;
-                            console.log(`Vehículo: $&#123;this.marca&#125; $&#123;this.modelo&#125;`);
+                        console.log(`Vehículo: $&#123;this.marca&#125; $&#123;this.modelo&#125;`);
                         &#125;
 
                         const coche1 = new Vehiculo("Toyota", "Corolla");
@@ -710,21 +710,21 @@ export function MapObjects() {
 
                     <code>
                         // Método en el constructor
-                                function JugadorConMetodo(nombre) &#123;
-                                    this.nombre = nombre;
-                                    this.jugar = function() &#123;
-                                        console.log(`$&#123;this.nombre&#125; está jugando`);
-                                    &#125;
-                                &#125;
+                        function JugadorConMetodo(nombre) &#123;
+                        this.nombre = nombre;
+                        this.jugar = function() &#123;
+                        console.log(`$&#123;this.nombre&#125; está jugando`);
+                        &#125;
+                        &#125;
 
-                                // Método en el prototipo
-                                function JugadorConPrototipo(nombre) &#123;
-                                    this.nombre = nombre;
-                                &#125;
+                        // Método en el prototipo
+                        function JugadorConPrototipo(nombre) &#123;
+                        this.nombre = nombre;
+                        &#125;
 
-                                JugadorConPrototipo.prototype.jugar = function() &#123;
-                                    console.log(`$&#123;this.nombre&#125; está jugando`);
-                                &#125;
+                        JugadorConPrototipo.prototype.jugar = function() &#123;
+                        console.log(`$&#123;this.nombre&#125; está jugando`);
+                        &#125;
 
                         // Crear instancias
                         const jugador1 = new JugadorConMetodo("Carlos");
@@ -758,15 +758,15 @@ export function MapObjects() {
 
                     <code>
                         class Persona &#123;
-                            constructor(nombre, edad) &#123;
-                                this.nombre = nombre;
-                                this.edad = edad;
-                            &#125;
+                        constructor(nombre, edad) &#123;
+                        this.nombre = nombre;
+                        this.edad = edad;
+                        &#125;
 
                         // Método de instancia
-                            saludar() &#123;
-                                console.log(`Hola, mi nombre es $&#123;this.nombre&#125; y tengo $&#123;this.edad&#125; años.`);
-                            &#125;
+                        saludar() &#123;
+                        console.log(`Hola, mi nombre es $&#123;this.nombre&#125; y tengo $&#123;this.edad&#125; años.`);
+                        &#125;
                         &#125;
 
                         // Crear una instancia de la clase
@@ -774,6 +774,29 @@ export function MapObjects() {
                         persona1.saludar(); // "Hola, mi nombre es Ana y tengo 30 años."
 
                     </code>
+
+                    <p>
+                        En este ejemplo, Persona es una clase con un constructor que inicializa las propiedades nombre y edad, y un método saludar que puede ser usado por cada instancia.
+                    </p>
+
+                    <h2>Métodos de Instancia y Métodos Estáticos</h2>
+
+                    <p>
+                        Dentro de una clase, podemos definir:
+
+                        Métodos de instancia: Estos métodos solo se pueden llamar en instancias de la clase (por ejemplo, persona1.saludar()).
+                        Métodos estáticos: Métodos que pertenecen a la clase en sí misma, en lugar de a las instancias. Se definen usando la palabra clave static y se llaman directamente en la clase, sin necesidad de crear una instancia.
+                    </p>
+
+                    <h2>Definición y Uso de Métodos Estáticos</h2>
+
+                    <p>
+                        Los métodos estáticos son útiles para funciones relacionadas con la clase pero que no dependen de ninguna instancia en particular, como utilidades o métodos auxiliares.
+                    </p>
+
+                    <p>
+                        Ejemplo de Métodos Estáticos y de Instancia
+                    </p>
 
                     &#123; &gt; &#125;
 
@@ -788,28 +811,7 @@ export function MapObjects() {
 contenido sin limpiar 
 
             
-<p>
-                En este ejemplo, Persona es una clase con un constructor que inicializa las propiedades nombre y edad, y un método saludar que puede ser usado por cada instancia.
-            </p>
 
-            <h2>Métodos de Instancia y Métodos Estáticos</h2>
-
-            <p>
-                Dentro de una clase, podemos definir:
-
-                Métodos de instancia: Estos métodos solo se pueden llamar en instancias de la clase (por ejemplo, persona1.saludar()).
-                Métodos estáticos: Métodos que pertenecen a la clase en sí misma, en lugar de a las instancias. Se definen usando la palabra clave static y se llaman directamente en la clase, sin necesidad de crear una instancia.
-            </p>
-
-            <h2>Definición y Uso de Métodos Estáticos</h2>
-
-            <p>
-                Los métodos estáticos son útiles para funciones relacionadas con la clase pero que no dependen de ninguna instancia en particular, como utilidades o métodos auxiliares.
-            </p>
-
-            <p>
-                Ejemplo de Métodos Estáticos y de Instancia
-            </p>
 
 <code>
                 class Calculadora {
