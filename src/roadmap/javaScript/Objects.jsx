@@ -909,8 +909,10 @@ export function MapObjects() {
                         // "El coche está listo para conducir.".
                     </code>
 
-                    &#123; &gt; &#125;
-
+                    <p>
+                        En este caso, Coche sobrescribe el método encender, pero primero llama al método encender de la clase padre con super.encender(), y luego agrega su propio comportamiento.
+                    </p>
+                    
                 </DivContent>
             </DivArticle>
 
@@ -921,13 +923,7 @@ export function MapObjects() {
 /* 
 contenido sin limpiar 
 
-
-
-
-
-            <p>
-                En este caso, Coche sobrescribe el método encender, pero primero llama al método encender de la clase padre con super.encender(), y luego agrega su propio comportamiento.
-            </p>
+&#123; &gt; &#125;
 
 */
 
