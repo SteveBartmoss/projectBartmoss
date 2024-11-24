@@ -800,8 +800,8 @@ export function MapObjects() {
 
                     <code>
                         class Calculadora &#123;
-                            // Método estático
-                            static sumar(a, b) &#123;
+                        // Método estático
+                        static sumar(a, b) &#123;
                         return a + b;
                         &#125;
 
@@ -820,6 +820,24 @@ export function MapObjects() {
 
                     </code>
 
+                    <p>
+                        En este ejemplo, sumar es un método estático y se accede directamente mediante Calculadora.sumar(5, 10). En cambio, multiplicar es un método de instancia y requiere crear una instancia de Calculadora antes de poder llamarlo.
+                    </p>
+
+                    <h2>Herencia con Clases</h2>
+
+                    <p>
+                        La herencia es un concepto clave en la programación orientada a objetos, y en ES6 se implementa mediante la palabra clave extends. Con extends, una clase puede heredar propiedades y métodos de otra, lo que permite crear una estructura de clases más específica y reutilizar código.
+                    </p>
+
+                    <p>
+                        Para crear una clase que herede de otra:
+
+                        Define una clase Padre con las propiedades y métodos básicos.
+                        Usa extends para crear una clase Hija que herede de Padre.
+                        Si necesitas un constructor en la clase hija, usa super() para llamar al constructor de la clase padre.
+                    </p>
+
                     &#123; &gt; &#125;
 
                 </DivContent>
@@ -837,23 +855,7 @@ contenido sin limpiar
 
 
 
-            <p>
-                En este ejemplo, sumar es un método estático y se accede directamente mediante Calculadora.sumar(5, 10). En cambio, multiplicar es un método de instancia y requiere crear una instancia de Calculadora antes de poder llamarlo.
-            </p>
-
- <h2>Herencia con Clases</h2>
-
-            <p>
-                La herencia es un concepto clave en la programación orientada a objetos, y en ES6 se implementa mediante la palabra clave extends. Con extends, una clase puede heredar propiedades y métodos de otra, lo que permite crear una estructura de clases más específica y reutilizar código.
-            </p>
-
-            <p>
-                Para crear una clase que herede de otra:
-
-                Define una clase Padre con las propiedades y métodos básicos.
-                Usa extends para crear una clase Hija que herede de Padre.
-                Si necesitas un constructor en la clase hija, usa super() para llamar al constructor de la clase padre.
-            </p>
+            
 
             <p>
                 Ejemplo de Herencia
