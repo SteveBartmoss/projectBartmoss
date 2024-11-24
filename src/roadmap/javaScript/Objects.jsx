@@ -838,6 +838,43 @@ export function MapObjects() {
                         Si necesitas un constructor en la clase hija, usa super() para llamar al constructor de la clase padre.
                     </p>
 
+                    <p>
+                        Ejemplo de Herencia
+                    </p>
+
+                    <code>
+                // Clase base o padre
+                        class Animal &#123;
+                                constructor(nombre) &#123;
+                                this.nombre = nombre;
+                            &#125;
+
+                            hacerSonido() &#123;
+                                console.log(`$&#123;this.nombre&#125; hace un sonido.`);
+                            &#125;
+                        &#125;
+
+                        // Clase hija que extiende de Animal
+                        class Perro extends Animal &#123;
+                            constructor(nombre, raza) &#123;
+                                super(nombre); // Llamada al constructor de la clase padre
+                                this.raza = raza;
+                            &#125;
+
+                            hacerSonido() &#123;
+                                console.log(`$&#123;this.nombre&#125; ladra.`);
+                            &#125;
+                        &#125;
+
+                        const animal = new Animal("Gato");
+                        animal.hacerSonido(); // "Gato hace un sonido."
+
+                        const perro = new Perro("Firulais", "Labrador");
+                        perro.hacerSonido(); // "Firulais ladra."
+                        console.log(perro.raza); // "Labrador"
+
+                    </code>
+
                     &#123; &gt; &#125;
 
                 </DivContent>
@@ -849,50 +886,6 @@ export function MapObjects() {
 
 /* 
 contenido sin limpiar 
-
-            
-
-
-
-
-            
-
-            <p>
-                Ejemplo de Herencia
-            </p>
-
-<code>
-                // Clase base o padre
-                class Animal {
-                    constructor(nombre) {
-                    this.nombre = nombre;
-                    }
-
-                hacerSonido() {
-                    console.log(`${this.nombre} hace un sonido.`);
-                    }
-                }
-
-                // Clase hija que extiende de Animal
-                class Perro extends Animal {
-                    constructor(nombre, raza) {
-                    super(nombre); // Llamada al constructor de la clase padre
-                this.raza = raza;
-                    }
-
-                hacerSonido() {
-                    console.log(`${this.nombre} ladra.`);
-                    }
-                }
-
-                const animal = new Animal("Gato");
-                animal.hacerSonido(); // "Gato hace un sonido."
-
-                const perro = new Perro("Firulais", "Labrador");
-                perro.hacerSonido(); // "Firulais ladra."
-                console.log(perro.raza); // "Labrador"
-
-            </code>
 
 <p>
                 En este ejemplo, Perro hereda de Animal. La función super(nombre) llama al constructor de Animal para inicializar nombre. La clase hija también puede sobrescribir métodos de la clase padre, como el método hacerSonido en este caso.
