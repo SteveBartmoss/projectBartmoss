@@ -7,7 +7,7 @@ export function Footer() {
             <a>Contacto</a>
             <a>Youtube</a>
             <a>Discord</a>
-            <a rel="noopener noreferrer" target="_blank" href='https://github.com/SteveBartmoss' >GitHub</a>
+            <a className='footer-link-dark' rel="noopener noreferrer" target="_blank" href='https://github.com/SteveBartmoss' >GitHub</a>
         </div>
     )
 }
