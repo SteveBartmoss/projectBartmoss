@@ -291,6 +291,8 @@ export function MapObjects() {
                         Útil en operaciones de mapeo y transformación de objetos.
                     </p>
 
+                    <Divider />
+
                     <h1>Mutabilidad en Objetos en JavaScript</h1>
 
                     <p>
