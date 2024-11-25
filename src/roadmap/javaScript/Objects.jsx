@@ -751,6 +751,8 @@ export function MapObjects() {
                         Aquí, JugadorConPrototipo es más eficiente en términos de memoria porque el método jugar está definido solo una vez en el prototipo.
                     </p>
 
+                    <Divider />
+
                     <h1>Nueva sintaxis para constructores</h1>
 
                     <p>
