@@ -438,6 +438,8 @@ export function MapObjects() {
 
                     </code>
 
+                    <Divider />
+
                     <h1>Funciones de Fábrica en JavaScript</h1>
 
                     <p>
