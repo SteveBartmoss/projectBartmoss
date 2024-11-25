@@ -1,4 +1,5 @@
 import { DivArticle, DivContent } from "../../componentes/contenedores/contenedores";
+import { Divider } from "../../componentes/divider/Divider";
 import { Portada } from "../../componentes/portada/portada";
 
 
@@ -60,6 +61,8 @@ export function MapObjects() {
                         delete persona.edad; // Elimina la propiedad 'edad'
                         console.log(persona); // nombre: "Juan", ocupacion: "Desarrollador"
                     </code>
+
+                    <Divider />
 
                     <h1>Métodos Dinámicos en JavaScript</h1>
 
