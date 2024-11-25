@@ -179,6 +179,8 @@ export function MapObjects() {
                         console.log(persona[propiedad]) // 30
                     </code>
 
+                    <Divider />
+
                     <h1>Enumeración de Propiedades en JavaScript</h1>
 
                     <p>
