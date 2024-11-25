@@ -1085,4 +1085,122 @@ Estos conceptos permiten implementar herencia de forma flexible, aprovechando la
 
 Estos conceptos permiten estructurar el código en JavaScript de manera más clara y reutilizable, aprovechando al máximo la herencia y la encapsulación.
 
+### **Sobrescribir métodos: Cómo una subclase puede redefinir los métodos heredados de una superclase**
+
+1. **¿Qué significa sobrescribir un método?**  
+   Una subclase redefine un método de la superclase para proporcionar una implementación personalizada, reemplazando el comportamiento original.
+
+2. **Ejemplo básico:**
+   ```javascript
+   class Animal {
+       speak() {
+           console.log("The animal makes a sound.");
+       }
+   }
+
+   class Dog extends Animal {
+       speak() {
+           console.log("The dog barks.");
+       }
+   }
+
+   const myDog = new Dog();
+   myDog.speak(); // The dog barks.
+   ```
+
+3. **Características clave:**
+   - La subclase puede reemplazar completamente el método de la superclase.
+   - Si el método no se sobrescribe, se utiliza el método heredado.
+
+---
+
+### **Uso de `super.methodName()`: Llamada al método de la superclase desde la subclase para extender la funcionalidad**
+
+1. **¿Qué es `super.methodName()`?**  
+   - Permite llamar al método de la superclase dentro de la subclase.
+   - Se usa para extender el comportamiento original sin reemplazarlo por completo.
+
+2. **Ejemplo práctico:**
+   ```javascript
+   class Animal {
+       speak() {
+           console.log("The animal makes a sound.");
+       }
+   }
+
+   class Dog extends Animal {
+       speak() {
+           super.speak(); // Llama al método de la superclase
+           console.log("The dog barks.");
+       }
+   }
+
+   const myDog = new Dog();
+   myDog.speak();
+   // Output:
+   // The animal makes a sound.
+   // The dog barks.
+   ```
+
+3. **Ventajas:**
+   - Combina la lógica original con la personalizada.
+   - Útil cuando se quiere mantener parte del comportamiento base.
+
+---
+
+### **Buenas prácticas: Casos donde es recomendable sobrescribir métodos y cómo hacerlo de manera efectiva**
+
+1. **Cuándo sobrescribir métodos:**
+   - **Cuando necesitas personalización:** Ajustar un comportamiento heredado para satisfacer las necesidades específicas de la subclase.
+   - **Cuando necesitas extender funcionalidad:** Agregar lógica adicional manteniendo el comportamiento original (usando `super.methodName()`).
+   - **Cuando la superclase define un método genérico:** Personalizar la implementación para una subclase específica.
+
+2. **Cómo sobrescribir métodos de manera efectiva:**
+   - **Usa `super` cuando sea necesario:** Aprovecha la lógica base de la superclase en lugar de duplicarla.
+   - **Mantén un enfoque claro:** Sobrescribe solo cuando haya una razón clara para hacerlo.
+   - **Documenta los cambios:** Explica por qué el método fue sobrescrito, especialmente si afecta la lógica heredada.
+
+3. **Ejemplo de buenas prácticas:**
+   ```javascript
+   class Employee {
+       constructor(name) {
+           this.name = name;
+       }
+
+       work() {
+           console.log(`${this.name} is working.`);
+       }
+   }
+
+   class Developer extends Employee {
+       work() {
+           super.work(); // Reutiliza el comportamiento base
+           console.log(`${this.name} is writing code.`);
+       }
+   }
+
+   const dev = new Developer("Alice");
+   dev.work();
+   // Output:
+   // Alice is working.
+   // Alice is writing code.
+   ```
+
+4. **Errores comunes al sobrescribir métodos:**
+   - Olvidar llamar a `super.methodName()` cuando es necesario.
+   - Sobrescribir métodos innecesariamente, creando redundancia.
+   - Alterar el comportamiento de la superclase de forma inesperada, causando problemas en otras subclases.
+
+---
+
+### **Resumen:**
+
+| Tema                          | Descripción                                                                                 |
+|-------------------------------|---------------------------------------------------------------------------------------------|
+| **Sobrescribir métodos**      | Redefinir un método heredado en una subclase para proporcionar una implementación personalizada. |
+| **Uso de `super.methodName()`** | Llama al método de la superclase desde la subclase para reutilizar o extender la funcionalidad. |
+| **Buenas prácticas**          | Sobrescribe solo cuando sea necesario, usa `super` sabiamente y documenta los cambios realizados. |
+
+Estos conceptos son esenciales para aprovechar la herencia en JavaScript y escribir código que sea reutilizable y fácil de mantener.
+
 */
