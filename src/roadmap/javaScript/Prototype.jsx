@@ -1203,4 +1203,143 @@ Estos conceptos permiten estructurar el código en JavaScript de manera más cla
 
 Estos conceptos son esenciales para aprovechar la herencia en JavaScript y escribir código que sea reutilizable y fácil de mantener.
 
+### **Polimorfismo en JavaScript: Capacidad de múltiples clases de compartir la misma interfaz (métodos) con implementaciones específicas**
+
+1. **¿Qué es el polimorfismo?**  
+   Es un principio de la programación orientada a objetos que permite a diferentes clases implementar métodos con el mismo nombre pero comportamientos específicos.
+
+2. **Ejemplo básico:**
+   ```javascript
+   class Animal {
+       speak() {
+           console.log("The animal makes a sound.");
+       }
+   }
+
+   class Dog extends Animal {
+       speak() {
+           console.log("The dog barks.");
+       }
+   }
+
+   class Cat extends Animal {
+       speak() {
+           console.log("The cat meows.");
+       }
+   }
+
+   const animals = [new Dog(), new Cat(), new Animal()];
+
+   animals.forEach(animal => {
+       animal.speak();
+   });
+   // Output:
+   // The dog barks.
+   // The cat meows.
+   // The animal makes a sound.
+   ```
+
+   En este ejemplo, el método `speak` es común para todas las clases, pero cada una lo implementa de forma diferente.
+
+---
+
+### **Uso de polimorfismo en herencia: Crear métodos comunes con comportamientos específicos en clases derivadas**
+
+1. **Comportamientos personalizados mediante sobrescritura:**  
+   Las clases hijas pueden sobrescribir un método heredado para implementar un comportamiento específico.
+
+2. **Ejemplo práctico con herencia:**
+   ```javascript
+   class Shape {
+       getArea() {
+           throw new Error("Method 'getArea()' must be implemented.");
+       }
+   }
+
+   class Circle extends Shape {
+       constructor(radius) {
+           super();
+           this.radius = radius;
+       }
+
+       getArea() {
+           return Math.PI * this.radius ** 2;
+       }
+   }
+
+   class Rectangle extends Shape {
+       constructor(width, height) {
+           super();
+           this.width = width;
+           this.height = height;
+       }
+
+       getArea() {
+           return this.width * this.height;
+       }
+   }
+
+   const shapes = [new Circle(5), new Rectangle(4, 6)];
+
+   shapes.forEach(shape => {
+       console.log(`Area: ${shape.getArea()}`);
+   });
+   // Output:
+   // Area: 78.53981633974483
+   // Area: 24
+   ```
+
+   Aquí, `getArea` es un método común con implementaciones específicas en cada clase hija.
+
+---
+
+### **Ventajas de polimorfismo: Ejemplos prácticos de cómo el polimorfismo facilita la expansión y mantenimiento del código**
+
+1. **Facilita la extensibilidad:**  
+   Puedes agregar nuevas clases que implementen métodos comunes sin alterar el código existente.  
+
+   Ejemplo:
+   ```javascript
+   class Triangle extends Shape {
+       constructor(base, height) {
+           super();
+           this.base = base;
+           this.height = height;
+       }
+
+       getArea() {
+           return (this.base * this.height) / 2;
+       }
+   }
+
+   const shapes = [new Circle(5), new Rectangle(4, 6), new Triangle(3, 4)];
+
+   shapes.forEach(shape => {
+       console.log(`Area: ${shape.getArea()}`);
+   });
+   // Output:
+   // Area: 78.53981633974483
+   // Area: 24
+   // Area: 6
+   ```
+
+2. **Reduce el acoplamiento:**  
+   Al trabajar con clases base e interfaces comunes, puedes procesar múltiples tipos de objetos sin conocer su implementación específica.
+
+3. **Mejora la mantenibilidad:**  
+   - Los cambios en una clase específica no afectan a otras.  
+   - Los métodos de la clase base proporcionan un punto central para manejar el comportamiento común.
+
+---
+
+### **Resumen:**
+
+| Tema                          | Descripción                                                                                     |
+|-------------------------------|-------------------------------------------------------------------------------------------------|
+| **Polimorfismo**              | Permite que diferentes clases compartan una interfaz común con implementaciones específicas.   |
+| **Uso en herencia**           | Clases derivadas sobrescriben métodos comunes para comportamientos personalizados.             |
+| **Ventajas**                  | - Facilita la expansión del código. <br> - Reduce el acoplamiento. <br> - Mejora la mantenibilidad. |
+
+El polimorfismo es un pilar fundamental para escribir código reutilizable, flexible y orientado a objetos. Es especialmente útil al trabajar con colecciones heterogéneas de objetos que comparten métodos comunes.
+
 */
