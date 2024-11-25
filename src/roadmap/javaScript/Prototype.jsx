@@ -958,4 +958,131 @@ Este enfoque facilita la organización del código y permite que JavaScript impl
 
 Estos conceptos permiten implementar herencia de forma flexible, aprovechando las características únicas de JavaScript.
 
+### **Uso del constructor padre: Llamada al constructor del objeto o clase padre desde la subclase usando `super`**
+
+1. **¿Qué es el constructor padre?**  
+   Es el constructor definido en la clase base (o padre), responsable de inicializar las propiedades comunes a todas las instancias, incluyendo las subclases.
+
+2. **¿Qué hace `super`?**  
+   - Es una función especial que llama al constructor de la clase padre desde una subclase.
+   - Debe llamarse antes de usar `this` en el constructor de una subclase.
+
+3. **Ejemplo básico:**
+   ```javascript
+   class Animal {
+       constructor(name) {
+           this.name = name;
+       }
+   }
+
+   class Dog extends Animal {
+       constructor(name, breed) {
+           super(name); // Llama al constructor de Animal
+           this.breed = breed; // Inicializa propiedades específicas de Dog
+       }
+   }
+
+   const myDog = new Dog("Rex", "Labrador");
+   console.log(myDog.name); // Rex
+   console.log(myDog.breed); // Labrador
+   ```
+
+4. **Ventajas de `super`:**
+   - Permite inicializar propiedades comunes sin duplicar lógica.
+   - Facilita la reutilización del código de la clase base.
+
+---
+
+### **Configuración de propiedades heredadas: Cómo inicializar las propiedades del constructor padre en una subclase**
+
+1. **Herencia de propiedades:**
+   - Las subclases heredan las propiedades definidas en el constructor padre.
+   - Estas propiedades deben configurarse llamando al constructor del padre con `super`.
+
+2. **Ejemplo práctico:**
+   ```javascript
+   class Vehicle {
+       constructor(brand, wheels) {
+           this.brand = brand;
+           this.wheels = wheels;
+       }
+   }
+
+   class Car extends Vehicle {
+       constructor(brand, wheels, model) {
+           super(brand, wheels); // Inicializa propiedades de Vehicle
+           this.model = model; // Inicializa propiedad específica de Car
+       }
+   }
+
+   const myCar = new Car("Toyota", 4, "Corolla");
+   console.log(myCar.brand); // Toyota (heredada de Vehicle)
+   console.log(myCar.wheels); // 4 (heredada de Vehicle)
+   console.log(myCar.model); // Corolla (propiedad de Car)
+   ```
+
+3. **Consideraciones:**
+   - Si la subclase no tiene un constructor explícito, JavaScript llama automáticamente al constructor del padre.
+   - Las subclases pueden agregar propiedades adicionales sin interferir con las heredadas.
+
+---
+
+### **Superclase y subclase: Definir y diferenciar entre una clase base (padre) y una clase derivada (hija)**
+
+1. **Superclase:**
+   - Es la clase padre que contiene la lógica y propiedades comunes que otras clases pueden heredar.
+   - Se define como cualquier clase estándar.
+
+   **Ejemplo:**
+   ```javascript
+   class Animal {
+       constructor(name) {
+           this.name = name;
+       }
+
+       speak() {
+           console.log(`${this.name} makes a sound.`);
+       }
+   }
+   ```
+
+2. **Subclase:**
+   - Es una clase hija que extiende la funcionalidad de la clase padre.
+   - Se define con la palabra clave `extends`.
+
+   **Ejemplo:**
+   ```javascript
+   class Dog extends Animal {
+       speak() {
+           console.log(`${this.name} barks.`);
+       }
+   }
+
+   const myDog = new Dog("Buddy");
+   myDog.speak(); // Buddy barks.
+   ```
+
+3. **Diferencias clave:**
+   | **Superclase**           | **Subclase**                    |
+   |--------------------------|---------------------------------|
+   | Define las propiedades y métodos básicos. | Hereda y expande las propiedades y métodos. |
+   | No requiere `extends`.                   | Necesita usar `extends` para heredar.       |
+   | Se enfoca en lo general.                 | Agrega lógica específica a lo heredado.     |
+
+4. **Relación entre superclase y subclase:**
+   - Las subclases tienen acceso a los métodos de la superclase.
+   - Las subclases pueden sobrescribir métodos heredados para proporcionar implementaciones específicas.
+
+---
+
+### **Resumen:**
+
+| Tema                           | Descripción                                                                                            |
+|--------------------------------|--------------------------------------------------------------------------------------------------------|
+| **Uso del constructor padre**  | `super` permite llamar al constructor de la superclase para inicializar propiedades heredadas.         |
+| **Configuración de propiedades heredadas** | Las propiedades del constructor padre se pueden inicializar y complementar en la subclase.           |
+| **Superclase y subclase**      | La superclase define lógica general, mientras que la subclase hereda y personaliza esta lógica.        |
+
+Estos conceptos permiten estructurar el código en JavaScript de manera más clara y reutilizable, aprovechando al máximo la herencia y la encapsulación.
+
 */
