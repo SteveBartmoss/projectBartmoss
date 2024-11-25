@@ -115,6 +115,8 @@ export function MapObjects() {
                         console.log(persona.saludar) // undefined
                     </code>
 
+                    <Divider />
+
                     <h1>Acceso a Propiedades en JavaScript</h1>
 
                     <p>
