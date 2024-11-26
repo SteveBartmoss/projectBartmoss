@@ -1342,4 +1342,137 @@ Estos conceptos son esenciales para aprovechar la herencia en JavaScript y escri
 
 El polimorfismo es un pilar fundamental para escribir código reutilizable, flexible y orientado a objetos. Es especialmente útil al trabajar con colecciones heterogéneas de objetos que comparten métodos comunes.
 
+### **Concepto de composición: Creación de objetos complejos a partir de componentes más simples en lugar de usar herencia**
+
+1. **¿Qué es la composición?**  
+   Es un enfoque en el que un objeto se construye combinando varias pequeñas funcionalidades o comportamientos (componentes) en lugar de extender una clase o heredar propiedades/métodos.
+
+2. **Ejemplo básico de composición:**
+   ```javascript
+   const canFly = {
+       fly() {
+           console.log(`${this.name} is flying!`);
+       }
+   };
+
+   const canSwim = {
+       swim() {
+           console.log(`${this.name} is swimming!`);
+       }
+   };
+
+   const canWalk = {
+       walk() {
+           console.log(`${this.name} is walking!`);
+       }
+   };
+
+   function createBird(name) {
+       const bird = { name };
+       return Object.assign(bird, canFly, canWalk);
+   }
+
+   function createFish(name) {
+       const fish = { name };
+       return Object.assign(fish, canSwim);
+   }
+
+   const duck = createBird("Duck");
+   duck.fly(); // Output: Duck is flying!
+   duck.walk(); // Output: Duck is walking!
+
+   const goldfish = createFish("Goldfish");
+   goldfish.swim(); // Output: Goldfish is swimming!
+   ```
+
+   En este ejemplo, los comportamientos `canFly`, `canSwim` y `canWalk` son componentes reutilizables que se combinan para crear objetos.
+
+---
+
+### **Diferencias entre composición y herencia: Ventajas de cada enfoque y casos de uso recomendados**
+
+| **Aspecto**                | **Composición**                                                                                         | **Herencia**                                                                                       |
+|----------------------------|-------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
+| **Definición**              | Combinar múltiples componentes para formar un objeto.                                                | Extender una clase base para crear subclases.                                                  |
+| **Acoplamiento**            | Bajo acoplamiento: los componentes pueden ser independientes y reutilizables.                        | Alto acoplamiento: las subclases dependen de la clase base.                                     |
+| **Flexibilidad**            | Muy flexible: puedes combinar diferentes funcionalidades según sea necesario.                        | Menos flexible: las subclases heredan todo, incluso lo que no necesitan.                       |
+| **Mantenibilidad**          | Fácil de mantener: cambios en un componente no afectan directamente a otros.                         | Difícil de mantener si la jerarquía crece o la clase base cambia significativamente.           |
+| **Casos de uso**            | Cuando necesitas mezclar o combinar comportamientos. Ejemplo: un pato que puede volar y nadar.       | Cuando hay una relación "es un/a". Ejemplo: un gato es un mamífero.                            |
+| **Ventajas clave**          | - Reutilización de componentes. <br> - Evita la herencia múltiple.                                   | - Clara relación jerárquica. <br> - Lógica común centralizada en la clase base.               |
+
+---
+
+### **Patrones de composición: Ejemplos**
+
+1. **Patrón Módulo:**  
+   Estructura que agrupa funcionalidad relacionada en módulos reutilizables.
+
+   ```javascript
+   const mathUtils = {
+       add(a, b) {
+           return a + b;
+       },
+       multiply(a, b) {
+           return a * b;
+       }
+   };
+
+   console.log(mathUtils.add(2, 3)); // Output: 5
+   console.log(mathUtils.multiply(2, 3)); // Output: 6
+   ```
+
+2. **Técnica Mixin:**  
+   Combinar funcionalidades en un objeto o clase sin necesidad de herencia.
+
+   ```javascript
+   const withLogger = {
+       log(message) {
+           console.log(`[LOG]: ${message}`);
+       }
+   };
+
+   const createUser = (name) => {
+       const user = { name };
+       return Object.assign(user, withLogger);
+   };
+
+   const user = createUser("Marco");
+   user.log("User created successfully."); // Output: [LOG]: User created successfully.
+   ```
+
+3. **Composición con clases (ES6):**
+   Puedes usar clases para combinar funcionalidades de una manera más estructurada.
+
+   ```javascript
+   class Vehicle {
+       constructor(name) {
+           this.name = name;
+       }
+   }
+
+   const withHorn = (Base) =>
+       class extends Base {
+           honk() {
+               console.log(`${this.name} is honking!`);
+           }
+       };
+
+   class Car extends withHorn(Vehicle) {}
+
+   const myCar = new Car("Toyota");
+   myCar.honk(); // Output: Toyota is honking!
+   ```
+
+---
+
+### **Resumen**
+
+| **Concepto**                | **Descripción**                                                                                     |
+|-----------------------------|-----------------------------------------------------------------------------------------------------|
+| **Composición**             | Crear objetos combinando componentes simples.                                                       |
+| **Herencia vs. Composición**| Composición es más flexible y reutilizable, mientras que la herencia es adecuada para relaciones "es un/a". |
+| **Patrones comunes**        | - **Módulos:** Agrupan funcionalidades relacionadas. <br> - **Mixin:** Combina funcionalidades en un objeto. |
+
+La composición es ideal para proyectos donde los objetos necesitan comportamientos variados y no encajan en jerarquías estrictas. Evita el exceso de acoplamiento y fomenta la reutilización de código.
+
 */
