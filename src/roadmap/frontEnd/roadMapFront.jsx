@@ -68,6 +68,14 @@ export function roadMapFront(){
                             Uso para acceder a nodos del DOM.
                             Mantener valores persistentes entre renders sin causar re-renderizaciones.
                         </p>
+
+                        <p>
+                            useMemo
+                            Memorizar cálculos costosos.
+                            Comparación con `useEffect` para optimización de rendimiento.
+                            Ejemplos prácticos en tablas y listas grandes.
+                        </p>
+
                     </ExtendPanel>
                     
                 </DivContent>
@@ -104,10 +112,7 @@ Aquí tienes un **temario completo sobre los Hooks de React**, organizado por ni
 
    
 
-   ### 3.3 `useMemo`
-   - Memorizar cálculos costosos.
-   - Comparación con `useEffect` para optimización de rendimiento.
-   - Ejemplos prácticos en tablas y listas grandes.
+   
 
    ### 3.4 `useCallback`
    - Memorizar funciones para evitar re-renderizaciones innecesarias.
