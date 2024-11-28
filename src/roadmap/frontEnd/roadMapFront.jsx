@@ -120,6 +120,15 @@ export function roadMapFront(){
                             Testing de componentes con Hooks
                         </p>
 
+                        <p>
+                            Buenas Prácticas y Errores Comunes
+                            Evitar dependencias incorrectas en useEffect.
+                            Manejo adecuado del estado inicial en useState y useReducer.
+                            No abusar de useRef para manejar estados.
+                            Nombrar Hooks personalizados de manera significativa.
+                            Cómo depurar componentes que usan Hooks.
+                        </p>
+
                     </ExtendPanel>
 
                 </DivContent>
