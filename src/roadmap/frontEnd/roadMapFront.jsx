@@ -112,6 +112,14 @@ export function roadMapFront(){
                             Reutilización y separación lógica en componentes grandes.
                         </p>
 
+                        <p>
+                            Patrones Avanzados con Hooks
+                            Optimización de rendimiento
+                            Combinación de Hooks
+                            Gestión de estados globales
+                            Testing de componentes con Hooks
+                        </p>
+
                     </ExtendPanel>
 
                 </DivContent>
