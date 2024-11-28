@@ -13,7 +13,7 @@ export function roadMapFront(){
                 <DivContent>
                     <h1>React</h1>
 
-                    <ExtendPanel title='Hooks'>
+                    <ExtendPanel title='Hooks Basicos'>
                         <p>
                             Introducción a los Hooks
                             ¿Qué son los Hooks?
@@ -52,6 +52,17 @@ export function roadMapFront(){
                         </p>
 
                     </ExtendPanel>
+
+                    <ExtendPanel title='Hooks Adicionales'>
+                        <p>
+                            useReducer
+                            Introducción al patrón de reducer.
+                            Comparación entre `useReducer` y `useState`.
+                            Uso con estados complejos.
+                            Reducer con acciones asíncronas.
+                        </p>
+                    </ExtendPanel>
+                    
                 </DivContent>
             </DivArticle>
         </>
@@ -82,11 +93,7 @@ Aquí tienes un **temario completo sobre los Hooks de React**, organizado por ni
 ---
 
 ## **3. Hooks Adicionales**
-   ### 3.1 `useReducer`
-   - Introducción al patrón de reducer.
-   - Comparación entre `useReducer` y `useState`.
-   - Uso con estados complejos.
-   - Reducer con acciones asíncronas.
+   
 
    ### 3.2 `useRef`
    - Referencias mutables y no mutables.
