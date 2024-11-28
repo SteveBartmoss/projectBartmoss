@@ -61,6 +61,13 @@ export function roadMapFront(){
                             Uso con estados complejos.
                             Reducer con acciones asíncronas.
                         </p>
+
+                        <p>
+                            useRef
+                            Referencias mutables y no mutables.
+                            Uso para acceder a nodos del DOM.
+                            Mantener valores persistentes entre renders sin causar re-renderizaciones.
+                        </p>
                     </ExtendPanel>
                     
                 </DivContent>
@@ -95,10 +102,7 @@ Aquí tienes un **temario completo sobre los Hooks de React**, organizado por ni
 ## **3. Hooks Adicionales**
    
 
-   ### 3.2 `useRef`
-   - Referencias mutables y no mutables.
-   - Uso para acceder a nodos del DOM.
-   - Mantener valores persistentes entre renders sin causar re-renderizaciones.
+   
 
    ### 3.3 `useMemo`
    - Memorizar cálculos costosos.
