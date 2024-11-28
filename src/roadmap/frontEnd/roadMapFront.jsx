@@ -29,6 +29,14 @@ export function roadMapFront(){
                             Inicialización perezosa del estado.
                         </p>
 
+                        <p>
+                            useEffect
+                            Efectos secundarios en componentes funcionales.
+                            Dependencias y cómo optimizar las ejecuciones.
+                            Limpieza de efectos.
+                            Comparación entre `componentDidMount`, `componentDidUpdate` y `componentWillUnmount`.
+                        </p>
+
                     </ExtendPanel>
                 </DivContent>
             </DivArticle>
@@ -52,11 +60,8 @@ Aquí tienes un **temario completo sobre los Hooks de React**, organizado por ni
    ### 2.1 ``
    - 
 
-   ### 2.2 `useEffect`
-   - Efectos secundarios en componentes funcionales.
-   - Dependencias y cómo optimizar las ejecuciones.
-   - Limpieza de efectos.
-   - Comparación entre `componentDidMount`, `componentDidUpdate` y `componentWillUnmount`.
+   ### 2.2 ``
+   
 
    ### 2.3 `useContext`
    - Consumir un contexto en componentes funcionales.
