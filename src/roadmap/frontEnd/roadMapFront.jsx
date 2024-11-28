@@ -102,7 +102,18 @@ export function roadMapFront(){
 
 
                     </ExtendPanel>
-                    
+
+                    <ExtendPanel title='Hooks Personalizados'>
+
+                        <p>
+                            ¿Qué son los Hooks personalizados?
+                            Creación de un Hook personalizado.
+                            Casos de uso comunes
+                            Reutilización y separación lógica en componentes grandes.
+                        </p>
+
+                    </ExtendPanel>
+
                 </DivContent>
             </DivArticle>
         </>
@@ -136,14 +147,8 @@ Aquí tienes un **temario completo sobre los Hooks de React**, organizado por ni
 
 ---
 
-## **4. Hooks Personalizados**
-   - ¿Qué son los Hooks personalizados?
-   - Creación de un Hook personalizado.
-   - Casos de uso comunes:
-     - Manejo de formularios.
-     - Fetching de datos.
-     - Manejo de eventos globales como el tamaño de la ventana o la posición del ratón.
-   - Reutilización y separación lógica en componentes grandes.
+## **4. **
+  
 
 ---
 
