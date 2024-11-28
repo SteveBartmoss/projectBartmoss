@@ -37,6 +37,14 @@ export function roadMapFront(){
                             Comparación entre `componentDidMount`, `componentDidUpdate` y `componentWillUnmount`.
                         </p>
 
+                        <p>
+                            useEffect
+                            Efectos secundarios en componentes funcionales.
+                            Dependencias y cómo optimizar las ejecuciones.
+                            Limpieza de efectos.
+                            Comparación entre `componentDidMount`, `componentDidUpdate` y `componentWillUnmount`.
+                        </p>
+                        
                     </ExtendPanel>
                 </DivContent>
             </DivArticle>
