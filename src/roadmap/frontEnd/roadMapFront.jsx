@@ -76,6 +76,24 @@ export function roadMapFront(){
                             Ejemplos prácticos en tablas y listas grandes.
                         </p>
 
+                        <p>
+                            useCallback
+                            Memorizar funciones para evitar re-renderizaciones innecesarias.
+                            Uso combinado con `React.memo`.
+                        </p>
+
+                        <p>
+                            useCallback
+                            Memorizar funciones para evitar re-renderizaciones innecesarias.
+                            Uso combinado con `React.memo`.
+                        </p>
+
+                        <p>
+                            useLayoutEffect
+                            Diferencias entre useEffect y useLayoutEffect.
+                            Casos de uso (medir elementos del DOM antes de que se rendericen en pantalla).
+                        </p>
+
                     </ExtendPanel>
                     
                 </DivContent>
@@ -108,19 +126,8 @@ Aquí tienes un **temario completo sobre los Hooks de React**, organizado por ni
 ---
 
 ## **3. Hooks Adicionales**
-   
 
    
-
-   
-
-   ### 3.4 `useCallback`
-   - Memorizar funciones para evitar re-renderizaciones innecesarias.
-   - Uso combinado con `React.memo`.
-
-   ### 3.5 `useLayoutEffect`
-   - Diferencias entre `useEffect` y `useLayoutEffect`.
-   - Casos de uso (medir elementos del DOM antes de que se rendericen en pantalla).
 
    ### 3.6 `useImperativeHandle`
    - Uso con `React.forwardRef`.
