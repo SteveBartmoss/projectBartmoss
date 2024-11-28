@@ -44,7 +44,13 @@ export function roadMapFront(){
                             Limpieza de efectos.
                             Comparación entre `componentDidMount`, `componentDidUpdate` y `componentWillUnmount`.
                         </p>
-                        
+
+                        <p>
+                            useContext
+                            Consumir un contexto en componentes funcionales.
+                            Comparación entre `useContext` y el componente `Context.Consumer`.
+                        </p>
+
                     </ExtendPanel>
                 </DivContent>
             </DivArticle>
@@ -71,9 +77,7 @@ Aquí tienes un **temario completo sobre los Hooks de React**, organizado por ni
    ### 2.2 ``
    
 
-   ### 2.3 `useContext`
-   - Consumir un contexto en componentes funcionales.
-   - Comparación entre `useContext` y el componente `Context.Consumer`.
+   ### 2.3 ``
 
 ---
 
