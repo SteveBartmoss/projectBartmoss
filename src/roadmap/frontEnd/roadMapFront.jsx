@@ -14,6 +14,20 @@ export function roadMapFront(){
                     <h1>React</h1>
 
                     <ExtendPanel title='Hooks'>
+                        <p>
+                            Introducción a los Hooks
+                            ¿Qué son los Hooks?
+                            Beneficios de usar Hooks en lugar de componentes de clase.
+                            Reglas de los Hooks
+                        </p>
+
+                        <p>
+                            useState
+                            Declarar y usar estados locales.
+                            Actualización del estado.
+                            Manejo de estados complejos (objetos y arrays).
+                            Inicialización perezosa del estado.
+                        </p>
 
                     </ExtendPanel>
                 </DivContent>
@@ -26,22 +40,17 @@ export function roadMapFront(){
 Aquí tienes un **temario completo sobre los Hooks de React**, organizado por nivel de dificultad y funcionalidad. Este temario cubre los conceptos esenciales y avanzados para trabajar eficientemente con Hooks:
 
 ---
-
-## **1. Introducción a los Hooks**
-   - ¿Qué son los Hooks?
-   - Beneficios de usar Hooks en lugar de componentes de clase.
-   - Reglas de los Hooks:
+   - 
+   - 
+   - 
      - Solo se llaman en el nivel superior.
      - Solo se llaman desde funciones de React.
 
 ---
 
 ## **2. Hooks Básicos**
-   ### 2.1 `useState`
-   - Declarar y usar estados locales.
-   - Actualización del estado.
-   - Manejo de estados complejos (objetos y arrays).
-   - Inicialización perezosa del estado.
+   ### 2.1 ``
+   - 
 
    ### 2.2 `useEffect`
    - Efectos secundarios en componentes funcionales.
