@@ -94,6 +94,13 @@ export function roadMapFront(){
                             Casos de uso (medir elementos del DOM antes de que se rendericen en pantalla).
                         </p>
 
+                        <p>
+                            useImperativeHandle
+                            Uso con React.forwardRef.
+                            Control de la exposición de referencias externas.
+                        </p>
+
+
                     </ExtendPanel>
                     
                 </DivContent>
@@ -126,12 +133,6 @@ Aquí tienes un **temario completo sobre los Hooks de React**, organizado por ni
 ---
 
 ## **3. Hooks Adicionales**
-
-   
-
-   ### 3.6 `useImperativeHandle`
-   - Uso con `React.forwardRef`.
-   - Control de la exposición de referencias externas.
 
 ---
 
