@@ -103,6 +103,14 @@ export function FirstStepRedux() {
                         &#123; &gt; &#125;
                     </p>
 
+                    <p>
+                        En este caso se implemento el provider antes del 
+                        componente App, asi podemos imaginar que nuestro 
+                        store es el la etiqueta que encapsula toda la aplicacion 
+                        y de esta forma podemos acceder a la informacion desde cualquier 
+                        parte de la aplicacion
+                    </p>
+
                 </DivContent>
             </DivArticle>
         </>
