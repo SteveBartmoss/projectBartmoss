@@ -32,6 +32,24 @@ export function FirstStepRedux() {
                     <p>
                         npm install @reduxjs/toolkit react-redux
                     </p>
+
+                    <h2>Configurar el Store</h2>
+
+                    <p>
+                        Ahora que se tiene instalado redux toolkit, debemos configurar 
+                        es store que sera el lugar donde almacenaremos todos los estados 
+                        que queremos usar en nuestro proyecto.
+                    </p>
+
+                    <p>
+                        Para esto podemos seguir la estructura que nos ofrece la 
+                        documentacion de reduxtoolkit
+                    </p>
+
+                    <p>
+                        src/app/store.js
+                    </p>
+                    
                 </DivContent>
             </DivArticle>
         </>
