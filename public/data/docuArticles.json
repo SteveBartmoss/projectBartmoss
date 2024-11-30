@@ -70,5 +70,11 @@
     "descripcion": "Con este post podras empezar a usar vim sin morrir en el intento",
     "url": "vimgg",
     "topico": ["vim"]
+  },
+  {
+    "titulo": "Primeros Pasos Redux",
+    "descripcion": "Con este post podras empezar a usar redux de una forma rapida",
+    "url": "primeroredux",
+    "topico": ["React","Redux"]
   }
 ]
