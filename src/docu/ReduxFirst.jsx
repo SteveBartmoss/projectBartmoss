@@ -1,3 +1,4 @@
+import { CodeSpace } from "../componentes/codeSpace/CodeSpace";
 import { DivArticle, DivContent, DivSection } from "../componentes/contenedores/contenedores";
 import { Portada } from "../componentes/portada/portada";
 
@@ -32,6 +33,8 @@ export function FirstStepRedux() {
                     <p>
                         npm install @reduxjs/toolkit react-redux
                     </p>
+
+                    <CodeSpace title={'Comando instalar reduxtoolkit'} rawCode={'npm install @reduxjs/toolkit react-redux'} />
 
                     <h2>Configurar el Store</h2>
 
