@@ -61,6 +61,8 @@ export function FirstStepRedux() {
                             reducer: &#123; &#125;
                         &#125;)
 
+                        export default store
+
                         &#123; &gt; &#125;
                     </p>
 
@@ -70,6 +72,8 @@ export function FirstStepRedux() {
                         como un disco duro, dentro de el podemos almacenar lo que queremos y 
                         tambien podemos recuperar la informacion desde el mismo
                     </p>
+
+                    <h2></h2>
 
                 </DivContent>
             </DivArticle>
