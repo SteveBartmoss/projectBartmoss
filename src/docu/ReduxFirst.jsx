@@ -57,17 +57,6 @@ export function FirstStepRedux() {
                         El archivo store.js deberia tener la siguiente configuracion basica
                     </p>
 
-                    <p>
-                        import &#123; configureStore &#125; from '@reduxjs/toolkit'
-
-                        export const store=configureStore(&#123;
-                            reducer: &#123; &#125;
-                        &#125;)
-
-                        export default store
-
-                    </p>
-
                     <CodeSpace title={'store.js'} 
                         rawCode={`import {configureStore} from '@reduxjs/toolkit'
                         export const store=configureStore({
@@ -94,23 +83,20 @@ export function FirstStepRedux() {
                         como si se trata de una gran etiquta
                     </p>
 
-                    <p>
-                        import React from 'react'
-                        import ReactDOM from 'react-dom'
-                        import './index.css'
-                        import App from './App'
-                        import &#123; store &#125; from './app/store'
-                        import &#123; Provider &#125;
+                    <CodeSpace title={'index.js'} 
+                        rawCode={`import React from 'react'
+                            import ReactDOM from 'react-dom'
+                            import './index.css'
+                            import App from './App'
+                            import {store} from './app/store'
+                            import {Provider} from 'react-redux'
 
-                        ReactDOM.render(
-                            &lt;Provider store=&#123; store &#125; &gt;
-                                &lt;App /&gt;
-                            &lt;/Provider&gt;,
-                            document.getElementById('root')
-                        )
-
-                        &#123; &gt; &#125;
-                    </p>
+                            ReactDOM.render(
+                                <Provider store={store}>
+                                    <App />
+                                </Provider>,
+                                document.getElementById('root')
+                            )`} />
 
                     <p>
                         En este caso se implemento el provider antes del 
