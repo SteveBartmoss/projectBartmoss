@@ -63,7 +63,6 @@ export function FirstStepRedux() {
 
                         export default store
 
-                        &#123; &gt; &#125;
                     </p>
 
                     <p>
@@ -73,7 +72,36 @@ export function FirstStepRedux() {
                         tambien podemos recuperar la informacion desde el mismo
                     </p>
 
-                    <h2></h2>
+                    <h2>Proveer el estado global</h2>
+
+                    <p>
+                        Ahora que tenemos creado nuestro almacenamiento global definido, debemos 
+                        conectarlo a nuestra aplicacion para poder usarlo en cualquier parte, 
+                        podemos pensar en esto como conectar el disco duro a nuestra placa madre
+                    </p>
+
+                    <p>
+                        Para lograr esto debemos usar un provider que cubrira toda nuestra aplicacion 
+                        como si se trata de una gran etiquta
+                    </p>
+
+                    <p>
+                        import React from 'react'
+                        import ReactDOM from 'react-dom'
+                        import './index.css'
+                        import App from './App'
+                        import &#123; store &#125; from './app/store'
+                        import &#123; Provider &#125;
+
+                        ReactDOM.render(
+                            &lt;Provider store=&#123; store &#125; &gt;
+                                &lt;App /&gt;
+                            &lt;/Provider&gt;,
+                            document.getElementById('root')
+                        )
+
+                        &#123; &gt; &#125;
+                    </p>
 
                 </DivContent>
             </DivArticle>
