@@ -68,6 +68,12 @@ export function FirstStepRedux() {
 
                     </p>
 
+                    <CodeSpace title={'store.js'} 
+                        rawCode={`import {configureStore} from '@reduxjs/toolkit'
+                        export const store=configureStore({
+                        reducer: {}
+                        })`} />
+
                     <p>
                         Dentro de este estore almacenameremos un objeto gigante, que es donde 
                         mantendremos los estados de nuestra aplacacion, pensemos en en el store 
