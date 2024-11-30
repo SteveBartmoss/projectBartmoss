@@ -1,9 +1,19 @@
-.anchor-link {
+.anchor-link-dark {
     text-decoration: none;
     color: white;
     font-family: "Poppins";
     font-weight: 400;
     background-color: #149eca;
+    padding: .3rem;
+    border-radius: .5rem;
+}
+
+.anchor-link-ligth {
+    text-decoration: none;
+    color: white;
+    font-family: "Poppins";
+    font-weight: 400;
+    background-color: #384B55;
     padding: .3rem;
     border-radius: .5rem;
 }
