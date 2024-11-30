@@ -1,7 +1,11 @@
-
+.code-container{
+    border-radius: .5rem;
+}
 
 .code-space{
     background: #16181d;
+    border-bottom-left-radius: .5rem;
+    border-bottom-right-radius: .5rem;
 }
 
 .code-space p{
@@ -11,6 +15,8 @@
 
 .code-space-title{
     background: rgb(35, 39, 47);
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
 }
 
 .code-space-title h1{
