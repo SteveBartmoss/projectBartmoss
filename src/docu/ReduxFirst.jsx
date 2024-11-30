@@ -49,7 +49,28 @@ export function FirstStepRedux() {
                     <p>
                         src/app/store.js
                     </p>
-                    
+
+                    <p>
+                        El archivo store.js deberia tener la siguiente configuracion basica
+                    </p>
+
+                    <p>
+                        import &#123; configureStore &#125; from '@reduxjs/toolkit'
+
+                        export const store=configureStore(&#123;
+                            reducer: &#123; &#125;
+                        &#125;)
+
+                        &#123; &gt; &#125;
+                    </p>
+
+                    <p>
+                        Dentro de este estore almacenameremos un objeto gigante, que es donde 
+                        mantendremos los estados de nuestra aplacacion, pensemos en en el store 
+                        como un disco duro, dentro de el podemos almacenar lo que queremos y 
+                        tambien podemos recuperar la informacion desde el mismo
+                    </p>
+
                 </DivContent>
             </DivArticle>
         </>
