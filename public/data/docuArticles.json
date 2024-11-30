@@ -75,6 +75,6 @@
     "titulo": "Primeros Pasos Redux",
     "descripcion": "Con este post podras empezar a usar redux de una forma rapida",
     "url": "primeroredux",
-    "topico": ["React","Redux"]
+    "topico": ["React"]
   }
 ]
