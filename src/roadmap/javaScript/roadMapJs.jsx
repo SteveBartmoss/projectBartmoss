@@ -26,22 +26,30 @@ export function RoadMapJs() {
                     <h1>Objetos</h1>
 
                     <ExtendPanel title='Dinamismo'>
-                        <p>
-                            Propiedades y métodos dinámicos: Añadir, modificar
-                            o eliminar propiedades y métodos de un objeto en tiempo de ejecución.
-                        </p>
+
+                        <h3>Propiedades y métodos dinámicos</h3>
 
                         <p>
-                            Acceso a propiedades: Notación de punto vs. notación de corchetes.
+                            Añadir, modificar o eliminar propiedades y métodos de un objeto en tiempo de ejecución.
                         </p>
 
+                        <h3>Acceso a propiedades</h3>
+
                         <p>
-                            Enumeración de propiedades: Cómo recorrer propiedades de un objeto
+                            Notación de punto vs. notación de corchetes.
+                        </p>
+
+                        <h3>Enumeración de propiedades</h3>
+
+                        <p>
+                            Cómo recorrer propiedades de un objeto
                             (for...in, Object.keys, Object.values, Object.entries).
                         </p>
 
+                        <h3>Mutabilidad</h3>
+                        
                         <p>
-                            Mutabilidad: Cómo los objetos pueden cambiar a lo largo del tiempo y
+                            Cómo los objetos pueden cambiar a lo largo del tiempo y
                             cómo funciona el paso por referencia.
                         </p>
 
