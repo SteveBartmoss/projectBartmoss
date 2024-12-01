@@ -159,6 +159,33 @@ export function FirstStepRedux() {
                         veremo la version simplificada como la siguiente
                     </p>
 
+                    <CodeSpace title={'counterSlice.js'} 
+                        rawCode={`import { createSlice } from '@reduxjs/toolkit'
+
+                            const initialValue = {
+                                value: 0,
+                            }
+
+                            export const counterSlice = createSlice({
+                            name: 'counter',
+                            initialState: initialValue,
+                            reducers: {
+
+                                },
+                            })
+
+                            export default counterSlice.reducer`} />
+
+                    <p>
+                        En esta version simplificada podemos ver como se compone 
+                        un slice, que basicamente es el estado que queremos almacenar que debe tener 
+                        ciertas caracteristicas como el nombre, que sera la forma en la que nos referimos 
+                        al almacenamiento, podemos pensar en este nombre como el campo de un objeto ya 
+                        que para ingresar a una propiedad de un objeto hacemos lo siguiente object.field 
+                        de esta misma forma tendremo que acceder a nuestro estado usando el nombre que colocamos 
+                        en el slice.
+                    </p>
+
                 </DivContent>
             </DivArticle>
         </>
