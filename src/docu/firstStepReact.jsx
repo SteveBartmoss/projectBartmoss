@@ -6,8 +6,8 @@ export function FirstStepReact() {
     return (
         <>
             <Portada imgPortada={"/Assets/steveA.png"} title={"Primeros pasos en react"} text={"Por Steve 21/07/2024"} />
-            <DivSection>
-                <DivArticle>
+            <DivArticle>
+                <DivContent>
                     <p>
                         La librería de React es una gran herramienta para crear
                         sitios web y aplicaciones de una manera simple y rápida.
@@ -21,6 +21,11 @@ export function FirstStepReact() {
                         Para poder desarrollar aplicaciones en react es necesario
                         tener los siguientes elementos
                     </p>
+                </DivContent>
+            </DivArticle>
+            <DivSection>
+                <DivArticle>
+
                     <p>
                         Node.js <br />
                         Editor de codigo <br />
@@ -355,24 +360,24 @@ export function FirstStepReact() {
                     </p>
 
                     <code>
-                        import React from 'react'; <br/>
-                        import ReactDOM from 'react-dom/client'; <br/>
-                        import './index.css'; <br/>
-                        import App from './App'; <br/>
-                        import reportWebVitals from './reportWebVitals'; <br/>
+                        import React from 'react'; <br />
+                        import ReactDOM from 'react-dom/client'; <br />
+                        import './index.css'; <br />
+                        import App from './App'; <br />
+                        import reportWebVitals from './reportWebVitals'; <br />
 
-                        const root = ReactDOM.createRoot(document.getElementById('root')); <br/>
-                        root.render( <br/>
-                        &lt;React.StrictMode&gt; <br/>
-                            &lt;App /&gt; <br/>
-                        &lt;/React.StrictMode&gt; <br/>
-                        ); <br/>
+                        const root = ReactDOM.createRoot(document.getElementById('root')); <br />
+                        root.render( <br />
+                        &lt;React.StrictMode&gt; <br />
+                        &lt;App /&gt; <br />
+                        &lt;/React.StrictMode&gt; <br />
+                        ); <br />
 
-                        
-                        reportWebVitals(); <br/>
+
+                        reportWebVitals(); <br />
                     </code>
 
-                    
+
                 </DivArticle>
             </DivSection>
         </>
