@@ -251,6 +251,31 @@ export function FirstStepRedux() {
                         notar algunas cosas interesantes asi que es mejor implementar de una manera facil nuestro estado
                     </p>
 
+                    <CodeSpace title={"App.js"} rawCode={`import logo from './logo.svg';
+                                import './App.css';
+                                import { useSelector } from 'react-redux';
+
+                                function App() {
+                                
+                                    const count = useSelector((state)=> state.counter.value)
+
+                                    return (
+                                        <div className="App">
+                                        <h1>Contador</h1>
+                                        <p>{count}</p>
+                                        </div>
+                                    );
+                                }
+
+                                export default App;
+                        `} />
+
+                    <p>
+                        Con esto podemos ver nuestro contador global en la aplicacion 
+                        incial de react que simplemente limpiamos e imprimimos el 
+                        estado para poder verlo en pantalla
+                    </p>
+
                 </DivContent>
             </DivArticle>
         </>
