@@ -243,6 +243,14 @@ export function FirstStepRedux() {
                         carpetas que componente la informacion que se almacena en un disco duro.
                     </p>
 
+                    <h2>Agregar el estado global a componentes de react</h2>
+
+                    <p>
+                        Antes de crear las funciones que iran en el reducer de nuestro slice es 
+                        importante que usemos nuestro estado global en la aplicacion para poder 
+                        notar algunas cosas interesantes asi que es mejor implementar de una manera facil nuestro estado
+                    </p>
+
                 </DivContent>
             </DivArticle>
         </>
