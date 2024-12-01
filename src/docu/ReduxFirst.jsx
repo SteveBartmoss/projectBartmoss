@@ -116,6 +116,49 @@ export function FirstStepRedux() {
                         podemos tener la informacion que queremos mantener de manera global
                     </p>
 
+                    <p>
+                        Para crear un slice usaremo la siguiente ruta
+                    </p>
+
+                    <CodeSpace title={'counterSlice.js'} rawCode={'src/features/counter/counterSlice.js'} />
+
+                    <p>
+                        La estructura del archivo slice es la siguiente:             
+                    </p>
+
+                    <CodeSpace title={'counterSlice.js'} 
+                        rawCode={`import { createSlice } from '@reduxjs/toolkit'
+
+                            const initialState = {
+                            value: 0,
+                            }
+
+                            export const counterSlice = createSlice({
+                            name: 'counter',
+                            initialState,
+                            reducers: {
+                                    increment: (state) => {
+                                        state.value += 1
+                                    },
+                                    decrement: (state) => {
+                                        state.value -= 1
+                                    },
+                                    incrementByAmount: (state, action) => {
+                                        state.value += action.payload
+                                    },
+                                },
+                            })
+
+
+                            export const { increment, decrement, incrementByAmount } = counterSlice.actions
+
+                            export default counterSlice.reducer`} />
+                        
+                    <p>
+                        En este archivo existen muchas cosas que permiten manipular el estado pero por ahora solo 
+                        veremo la version simplificada como la siguiente
+                    </p>
+
                 </DivContent>
             </DivArticle>
         </>
