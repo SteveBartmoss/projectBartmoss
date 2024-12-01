@@ -200,6 +200,17 @@ export function FirstStepRedux() {
                         esta es la informacion inicial de nuestra aplicacion 
                     </p>
 
+                    <h3>reducers</h3>
+
+                    <p>
+                        Esta es la parte interesante del slice ya que aqui declararemos las 
+                        funciones que interactuan con el estado que declaramos dentro del slice, 
+                        podemos pensar en estad funciones como los metodos de una clase ya que generalmente 
+                        las clases cuentan con sus metodos geter y setter que permiten obtener o modificar 
+                        propiedades o un objeto, de esta misma forma tendremos que declarar las funciones que 
+                        permitan modificar el estado que estamos manejando
+                    </p>
+
                 </DivContent>
             </DivArticle>
         </>
