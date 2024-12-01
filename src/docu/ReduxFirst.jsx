@@ -179,11 +179,25 @@ export function FirstStepRedux() {
                     <p>
                         En esta version simplificada podemos ver como se compone 
                         un slice, que basicamente es el estado que queremos almacenar que debe tener 
-                        ciertas caracteristicas como el nombre, que sera la forma en la que nos referimos 
+                        ciertas caracteristicas como las siguientes:
+                    </p>
+
+                    <h3>name</h3>
+
+                    <p>
+                        Sera la forma en la que nos referimos 
                         al almacenamiento, podemos pensar en este nombre como el campo de un objeto ya 
                         que para ingresar a una propiedad de un objeto hacemos lo siguiente object.field 
                         de esta misma forma tendremo que acceder a nuestro estado usando el nombre que colocamos 
                         en el slice.
+                    </p>
+
+                    <h3>initialState</h3>
+
+                    <p>
+                        Este sera el estado que mantendremos en la aplicacion de manera global, en 
+                        el ejemplo se describe como una constante la cual es asignada asi que 
+                        esta es la informacion inicial de nuestra aplicacion 
                     </p>
 
                 </DivContent>
