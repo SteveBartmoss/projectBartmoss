@@ -211,6 +211,19 @@ export function FirstStepRedux() {
                         permitan modificar el estado que estamos manejando
                     </p>
 
+                    <p>
+                        En el ejemplo simplificado aun no se han declarado estas funciones pero por 
+                        ahora solo mantengamos la idea de que en los reducers deben ir las funciones 
+                        que modificaran el estado de nuestra aplicacion
+                    </p>
+
+                    <h2>Agregar el slice al store</h2>
+
+                    <p>
+                        Cuando tenemos configurado nuestro slice podemos agregarlo al store 
+                        para poder implementarlo en nuestro almacenamiento
+                    </p>
+
                 </DivContent>
             </DivArticle>
         </>
