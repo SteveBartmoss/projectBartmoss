@@ -276,6 +276,23 @@ export function FirstStepRedux() {
                         estado para poder verlo en pantalla
                     </p>
 
+                    <h3>useSelector</h3>
+
+                    <p>
+                        Esta funcion permite que accedamos a nuestro almacenamiento 
+                        global y podamos tener acceso a nuestro slice counter, esto nos 
+                        permite poder leer el valor y mostrarlo en pantalla o 
+                        hacer algo mas con el como por ejemlo listar en caso de que sea 
+                        un arreglo o mostrar informacion de un perfil de usuario
+                    </p>
+
+                    <p>
+                        Al igual que antes podemos pensar en el useSelector como la funcion 
+                        get de una clase, la cual nos permite obtener una propiedad de un objeto 
+                        y trabajar con el asi que el useSelector se puede considera como 
+                        un metodo get para obtener informacion de nuestro store
+                    </p>
+
                 </DivContent>
             </DivArticle>
         </>
