@@ -106,6 +106,16 @@ export function FirstStepRedux() {
                         parte de la aplicacion
                     </p>
 
+                    <h2>Crear un Slice</h2>
+
+                    <p>
+                        Un slice es una parte chica donde almacenamos determinada 
+                        informacion, con esto podemos imaginar que el store es el disco 
+                        duro de la pagina y los slice serian las carpetas o incluso las particiones 
+                        ya que el store provee y almacena los slice pero en los slice es donde 
+                        podemos tener la informacion que queremos mantener de manera global
+                    </p>
+
                 </DivContent>
             </DivArticle>
         </>
