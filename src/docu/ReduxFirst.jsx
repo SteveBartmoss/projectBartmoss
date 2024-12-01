@@ -224,6 +224,25 @@ export function FirstStepRedux() {
                         para poder implementarlo en nuestro almacenamiento
                     </p>
 
+                    <CodeSpace title={'store.js'} 
+                        rawCode={`import { configureStore } from '@reduxjs/toolkit'
+                            import counterReducer from '../features/counter/counterSlice'
+
+                            export const store = configureStore({
+                                reducer: {
+                                    counter: counterReducer,
+                                },
+                            })`} />
+
+                    <p>
+                        Ahora hemos agregado a nuestro store el slice que creamos, tenemos que importarlo 
+                        desde el archivo en que se creo y despues agregarlo al reducer del store y aqui es donde 
+                        se puede papreciar mejor la forma en que trabaja un store. Si bien tenemos configurado el 
+                        almacenamiento global que es el store pero dentro del el tenemos los slice que serian las 
+                        partes mas chicas en donde se almacena cierta informacion, de esta forma los slice son las 
+                        carpetas que componente la informacion que se almacena en un disco duro.
+                    </p>
+
                 </DivContent>
             </DivArticle>
         </>
