@@ -212,11 +212,6 @@ export function FirstStepReact() {
                         Dentro de la carpeta que creo el comando de react podremos ver la siguiente estructura de ficheros
                     </p>
 
-                </DivContent>
-            </DivArticle>
-            <DivSection>
-                <DivArticle>
-                    
                     <p>
                         public <br />
                         src <br />
@@ -240,6 +235,11 @@ export function FirstStepReact() {
 
                     <h2>index.html</h2>
 
+                </DivContent>
+            </DivArticle>
+            <DivSection>
+                <DivArticle>
+                    
                     <p>
                         El archivo index.html en la carpeta public es la plantilla HTML principal de tu aplicación.
                         Durante el proceso de construcción, CRA inyecta automáticamente los bundles de JavaScript y CSS en este archivo.
