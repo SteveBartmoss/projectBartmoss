@@ -262,15 +262,6 @@ export function FirstStepReact() {
 
                     <h2>Imágenes y Medios</h2>
 
-                </DivContent>
-            </DivArticle>
-            <DivSection>
-                <DivArticle>
-                    
-                    <p>
-
-                    </p>
-
                     <p>
                         Cualquier imagen, fuente o archivo multimedia que coloques en la carpeta public estará disponible en la raíz de tu aplicación. Por ejemplo, un archivo public/logo.png estará disponible en https://tusitio.com/logo.png.
                     </p>
@@ -294,6 +285,17 @@ export function FirstStepReact() {
                         Aquí es donde defines tus componentes de React, tanto funcionales como de clase.
                         Los componentes pueden estar organizados en subcarpetas para mantener el proyecto limpio y estructurado.
                     </p>
+
+                </DivContent>
+            </DivArticle>
+            <DivSection>
+                <DivArticle>
+
+                    <p>
+
+                    </p>
+
+                    
 
                     <h3>Almacenar Estilos y Archivos CSS/SCSS</h3>
 
