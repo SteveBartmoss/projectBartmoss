@@ -71,16 +71,6 @@ export function FkAndIndex() {
                         se utiliza de forma eficiente los indices o las llaves foraneas.
                     </p>
 
-                </DivContent>
-            </DivArticle>
-
-            <DivSection>
-                <DivArticle>
-
-                    
-
-                    
-
                     <p>
                         En el caso de no tener una llave foranea que relacione las tablas se puede mejorar el tiempo de
                         la consulta si hacemos indices los campos que estan siendo utilizados por la sentencia join
@@ -111,6 +101,12 @@ export function FkAndIndex() {
                         B-Tree (Árbol-B): El tipo de índice más común, adecuado para una amplia gama de consultas.
                         Hash: Adecuado para búsquedas de igualdad, como = y IN. No es eficiente para búsquedas de rango.
                     </p>
+
+                </DivContent>
+            </DivArticle>
+
+            <DivSection>
+                <DivArticle>    
 
                     <h2>Ventajas de los índices</h2>
 
