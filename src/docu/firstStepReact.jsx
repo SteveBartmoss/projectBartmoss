@@ -56,12 +56,6 @@ export function FirstStepReact() {
                         de Node. Esta herramienta es muy útil, ya que permite administrar
                         diferentes versiones de Node sin tener que mover tantos archivos.
                     </p>
-                </DivContent>
-            </DivArticle>
-            <DivSection>
-                <DivArticle>
-
-                    
 
                     <p>
                         Para instalar NVM se puede usar el siguiente codigo en
@@ -83,6 +77,11 @@ export function FirstStepReact() {
                         con el siguiente comando:
                     </p>
 
+                </DivContent>
+            </DivArticle>
+            <DivSection>
+                <DivArticle>
+                    
                     <code>
                         nvm --version
                     </code>
