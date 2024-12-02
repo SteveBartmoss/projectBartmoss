@@ -188,11 +188,6 @@ export function FirstStepReact() {
                         kebab case por ejemplo proyecto-prueba
                     </p>
 
-                </DivContent>
-            </DivArticle>
-            <DivSection>
-                <DivArticle>
-
                     <p>
                         Una vez que el comando ese ejecute correctamente habra una carpeta con el nombre que
                         pasamos al comando y entonces podemos entrar a la carpeta del proyecto y levantar
@@ -217,6 +212,11 @@ export function FirstStepReact() {
                         Dentro de la carpeta que creo el comando de react podremos ver la siguiente estructura de ficheros
                     </p>
 
+                </DivContent>
+            </DivArticle>
+            <DivSection>
+                <DivArticle>
+                    
                     <p>
                         public <br />
                         src <br />
