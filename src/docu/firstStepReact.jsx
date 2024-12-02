@@ -1,5 +1,6 @@
 import { DivArticle, DivSection, DivContent } from "../componentes/contenedores/contenedores";
 import { Portada } from "../componentes/portada/portada";
+import { CodeSpace } from "../componentes/codeSpace/CodeSpace";
 
 
 export function FirstStepReact() {
@@ -351,23 +352,21 @@ export function FirstStepReact() {
                         create react app suele tener la siguiente estructura
                     </p>
 
-                    <code>
-                        import React from 'react'; <br />
-                        import ReactDOM from 'react-dom/client'; <br />
-                        import './index.css'; <br />
-                        import App from './App'; <br />
-                        import reportWebVitals from './reportWebVitals'; <br />
+                    <CodeSpace title={'index.js'} rawCode={`import React from 'react';
+                        import ReactDOM from 'react-dom/client';
+                        import './index.css';
+                        import App from './App';
+                        import reportWebVitals from './reportWebVitals';
 
-                        const root = ReactDOM.createRoot(document.getElementById('root')); <br />
-                        root.render( <br />
-                        &lt;React.StrictMode&gt; <br />
-                        &lt;App /&gt; <br />
-                        &lt;/React.StrictMode&gt; <br />
-                        ); <br />
+                        const root = ReactDOM.createRoot(document.getElementById('root'));
+                        root.render(
+                        <React.StrictMode>
+                        <App />
+                        </React.StrictMode>
+                        );
 
 
-                        reportWebVitals(); <br />
-                    </code>
+                        reportWebVitals();`} />
 
                 </DivContent>
             </DivArticle>
