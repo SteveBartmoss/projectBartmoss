@@ -306,15 +306,6 @@ export function FirstStepReact() {
                         También contiene otros archivos de configuración como App.js o App.tsx que definen la estructura base de la aplicación.
                     </p>
 
-                </DivContent>
-            </DivArticle>
-            <DivSection>
-                <DivArticle>
-
-                    <p>
-
-                    </p>
-
                     <h1>Directorio node_modules</h1>
 
                     <p>
@@ -342,6 +333,17 @@ export function FirstStepReact() {
                     <p>
                         npm y Yarn intentan optimizar la instalación de paquetes para evitar duplicados siempre que sea posible. Sin embargo, puede haber múltiples versiones de una misma biblioteca si diferentes dependencias requieren diferentes versiones.
                     </p>
+
+                </DivContent>
+            </DivArticle>
+            <DivSection>
+                <DivArticle>
+
+                    <p>
+
+                    </p>
+
+                    
 
                     <h3>No Debe Versionarse</h3>
 
