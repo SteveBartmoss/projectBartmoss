@@ -362,6 +362,16 @@ export function FirstStepReact() {
 
                         reportWebVitals();`} />
 
+                    <p>
+                        Este archivo suele contener la entrada inicial 
+                        de la libreria de react asi que no es recomendable que 
+                        se modifique ya que se puede simplemente cambiar el contenido 
+                        del archivo App.js para poder poner nuestros componentes 
+                        personalizados
+                    </p>
+
+                    <h2>App.js</h2>
+
                 </DivContent>
             </DivArticle>
         </>
