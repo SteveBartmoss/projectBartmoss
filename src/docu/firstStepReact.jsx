@@ -334,17 +334,6 @@ export function FirstStepReact() {
                         npm y Yarn intentan optimizar la instalación de paquetes para evitar duplicados siempre que sea posible. Sin embargo, puede haber múltiples versiones de una misma biblioteca si diferentes dependencias requieren diferentes versiones.
                     </p>
 
-                </DivContent>
-            </DivArticle>
-            <DivSection>
-                <DivArticle>
-
-                    <p>
-
-                    </p>
-
-                    
-
                     <h3>No Debe Versionarse</h3>
 
                     <p>
@@ -361,6 +350,19 @@ export function FirstStepReact() {
                         la funcion main de c o java, por lo general al crear una aplicacion con el comando
                         create react app suele tener la siguiente estructura
                     </p>
+
+                </DivContent>
+            </DivArticle>
+            <DivSection>
+                <DivArticle>
+
+                    <p>
+
+                    </p>
+
+                    
+
+                    
 
                     <code>
                         import React from 'react'; <br />
