@@ -235,11 +235,6 @@ export function FirstStepReact() {
 
                     <h2>index.html</h2>
 
-                </DivContent>
-            </DivArticle>
-            <DivSection>
-                <DivArticle>
-                    
                     <p>
                         El archivo index.html en la carpeta public es la plantilla HTML principal de tu aplicación.
                         Durante el proceso de construcción, CRA inyecta automáticamente los bundles de JavaScript y CSS en este archivo.
@@ -267,6 +262,11 @@ export function FirstStepReact() {
 
                     <h2>Imágenes y Medios</h2>
 
+                </DivContent>
+            </DivArticle>
+            <DivSection>
+                <DivArticle>
+                    
                     <p>
 
                     </p>
