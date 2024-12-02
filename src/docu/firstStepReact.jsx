@@ -351,19 +351,6 @@ export function FirstStepReact() {
                         create react app suele tener la siguiente estructura
                     </p>
 
-                </DivContent>
-            </DivArticle>
-            <DivSection>
-                <DivArticle>
-
-                    <p>
-
-                    </p>
-
-                    
-
-                    
-
                     <code>
                         import React from 'react'; <br />
                         import ReactDOM from 'react-dom/client'; <br />
@@ -382,9 +369,8 @@ export function FirstStepReact() {
                         reportWebVitals(); <br />
                     </code>
 
-
-                </DivArticle>
-            </DivSection>
+                </DivContent>
+            </DivArticle>
         </>
     )
 }
