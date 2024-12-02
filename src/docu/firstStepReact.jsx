@@ -1,4 +1,4 @@
-import { DivArticle, DivSection,DivContent } from "../componentes/contenedores/contenedores";
+import { DivArticle, DivSection, DivContent } from "../componentes/contenedores/contenedores";
 import { Portada } from "../componentes/portada/portada";
 
 
@@ -118,14 +118,6 @@ export function FirstStepReact() {
                     <code>
                         nvm ls
                     </code>
-                </DivContent>
-            </DivArticle>
-            <DivSection>
-                <DivArticle>
-
-                    
-
-                    
 
                     <h3>Instalando Nodesource</h3>
 
@@ -149,6 +141,11 @@ export function FirstStepReact() {
                     <code>
                         sudo apt-get install -y nodejs
                     </code>
+
+                </DivContent>
+            </DivArticle>
+            <DivSection>
+                <DivArticle>
 
                     <h1>Editor de codigo</h1>
 
