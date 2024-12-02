@@ -90,12 +90,6 @@ export function FirstStepReact() {
                     <code>
                         nvm install 14.4.0
                     </code>
-                </DivContent>
-            </DivArticle>
-            <DivSection>
-                <DivArticle>
-
-                    
 
                     <p>
                         Con esto, tenemos instalada la versión 14.4.0 de Node.js. Este
@@ -124,6 +118,14 @@ export function FirstStepReact() {
                     <code>
                         nvm ls
                     </code>
+                </DivContent>
+            </DivArticle>
+            <DivSection>
+                <DivArticle>
+
+                    
+
+                    
 
                     <h3>Instalando Nodesource</h3>
 
