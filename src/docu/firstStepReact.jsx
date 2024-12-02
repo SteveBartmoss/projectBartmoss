@@ -286,17 +286,6 @@ export function FirstStepReact() {
                         Los componentes pueden estar organizados en subcarpetas para mantener el proyecto limpio y estructurado.
                     </p>
 
-                </DivContent>
-            </DivArticle>
-            <DivSection>
-                <DivArticle>
-
-                    <p>
-
-                    </p>
-
-                    
-
                     <h3>Almacenar Estilos y Archivos CSS/SCSS</h3>
 
                     <p>
@@ -315,6 +304,15 @@ export function FirstStepReact() {
                     <p>
                         Contiene el punto de entrada de la aplicación, generalmente index.js o index.tsx, donde ReactDOM.render se llama para montar la aplicación en el DOM.
                         También contiene otros archivos de configuración como App.js o App.tsx que definen la estructura base de la aplicación.
+                    </p>
+
+                </DivContent>
+            </DivArticle>
+            <DivSection>
+                <DivArticle>
+
+                    <p>
+
                     </p>
 
                     <h1>Directorio node_modules</h1>
