@@ -21,10 +21,6 @@ export function FirstStepReact() {
                         Para poder desarrollar aplicaciones en react es necesario
                         tener los siguientes elementos
                     </p>
-                </DivContent>
-            </DivArticle>
-            <DivSection>
-                <DivArticle>
 
                     <p>
                         Node.js <br />
@@ -42,7 +38,11 @@ export function FirstStepReact() {
                         oficial de Node.js y seleccionar la versión del instalador
                         que necesitamos.
                     </p>
-
+                </DivContent>
+            </DivArticle>
+            <DivSection>
+                <DivArticle>
+                    
                     <a id="linkto" href="https://nodejs.org/en/download/prebuilt-installer" rel="noreferrer" target="_blank">Sitio de Node</a>
 
                     <h2>Linux</h2>
