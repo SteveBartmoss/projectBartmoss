@@ -38,11 +38,7 @@ export function FirstStepReact() {
                         oficial de Node.js y seleccionar la versión del instalador
                         que necesitamos.
                     </p>
-                </DivContent>
-            </DivArticle>
-            <DivSection>
-                <DivArticle>
-                    
+
                     <a id="linkto" href="https://nodejs.org/en/download/prebuilt-installer" rel="noreferrer" target="_blank">Sitio de Node</a>
 
                     <h2>Linux</h2>
@@ -60,6 +56,12 @@ export function FirstStepReact() {
                         de Node. Esta herramienta es muy útil, ya que permite administrar
                         diferentes versiones de Node sin tener que mover tantos archivos.
                     </p>
+                </DivContent>
+            </DivArticle>
+            <DivSection>
+                <DivArticle>
+
+                    
 
                     <p>
                         Para instalar NVM se puede usar el siguiente codigo en
