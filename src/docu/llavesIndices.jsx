@@ -102,12 +102,6 @@ export function FkAndIndex() {
                         Hash: Adecuado para búsquedas de igualdad, como = y IN. No es eficiente para búsquedas de rango.
                     </p>
 
-                </DivContent>
-            </DivArticle>
-
-            <DivSection>
-                <DivArticle>    
-
                     <h2>Ventajas de los índices</h2>
 
                     <p>
@@ -126,6 +120,14 @@ export function FkAndIndex() {
                         a las filas relevantes.
                     </p>
 
+
+                </DivContent>
+            </DivArticle>
+
+            <DivSection>
+                <DivArticle>    
+
+                    
                     <h2>Desventajas de los índices</h2>
 
                     <p>
