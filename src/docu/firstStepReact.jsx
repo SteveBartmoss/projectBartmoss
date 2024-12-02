@@ -77,11 +77,6 @@ export function FirstStepReact() {
                         con el siguiente comando:
                     </p>
 
-                </DivContent>
-            </DivArticle>
-            <DivSection>
-                <DivArticle>
-                    
                     <code>
                         nvm --version
                     </code>
@@ -95,6 +90,12 @@ export function FirstStepReact() {
                     <code>
                         nvm install 14.4.0
                     </code>
+                </DivContent>
+            </DivArticle>
+            <DivSection>
+                <DivArticle>
+
+                    
 
                     <p>
                         Con esto, tenemos instalada la versión 14.4.0 de Node.js. Este
