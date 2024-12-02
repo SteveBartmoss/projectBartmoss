@@ -43,14 +43,6 @@ export function FkAndIndex() {
                         Este índice permite que la base de datos localice rápidamente las filas relacionadas en la tabla referenciada.
                         Los índices aceleran las búsquedas y las uniones (joins) porque reducen el número de filas que la base de datos necesita escanear.
                     </p>
-                    
-                </DivContent>
-            </DivArticle>
-
-            <DivSection>
-                <DivArticle>
-
-                    
 
                     <p>
                         Integridad referencial: Las llaves foráneas garantizan que los valores en una columna de una
@@ -78,6 +70,16 @@ export function FkAndIndex() {
                         sentencias join, el rendimiento puede ser tan considerable como bajar una consulta de minutos a segundos si
                         se utiliza de forma eficiente los indices o las llaves foraneas.
                     </p>
+
+                </DivContent>
+            </DivArticle>
+
+            <DivSection>
+                <DivArticle>
+
+                    
+
+                    
 
                     <p>
                         En el caso de no tener una llave foranea que relacione las tablas se puede mejorar el tiempo de
