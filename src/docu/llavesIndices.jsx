@@ -120,14 +120,6 @@ export function FkAndIndex() {
                         a las filas relevantes.
                     </p>
 
-
-                </DivContent>
-            </DivArticle>
-
-            <DivSection>
-                <DivArticle>    
-
-                    
                     <h2>Desventajas de los índices</h2>
 
                     <p>
@@ -163,9 +155,10 @@ export function FkAndIndex() {
                         problemas de rendimiento.
                     </p>
 
-                </DivArticle>
-            </DivSection>
 
+                </DivContent>
+            </DivArticle>
+            
         </>
     )
 }
