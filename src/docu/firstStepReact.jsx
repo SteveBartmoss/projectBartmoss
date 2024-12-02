@@ -142,11 +142,6 @@ export function FirstStepReact() {
                         sudo apt-get install -y nodejs
                     </code>
 
-                </DivContent>
-            </DivArticle>
-            <DivSection>
-                <DivArticle>
-
                     <h1>Editor de codigo</h1>
 
                     <p>
@@ -168,6 +163,13 @@ export function FirstStepReact() {
                         empezar con nuestra primera aplicacion de
                         react
                     </p>
+
+                </DivContent>
+            </DivArticle>
+            <DivSection>
+                <DivArticle>
+
+                    
 
                     <h2>Comando create-react-app</h2>
 
