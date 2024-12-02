@@ -24,11 +24,6 @@ export function FkAndIndex() {
                         las tablas. Su única respuesta era que las claves foráneas son necesarias
                         porque forman la relación, pero fuera de eso, no había más explicación.
                     </p>
-                </DivContent>
-            </DivArticle>
-
-            <DivSection>
-                <DivArticle>
 
                     <p>
                         Resulta que existe una mejor explicación que simplemente formar una relación:
@@ -48,6 +43,14 @@ export function FkAndIndex() {
                         Este índice permite que la base de datos localice rápidamente las filas relacionadas en la tabla referenciada.
                         Los índices aceleran las búsquedas y las uniones (joins) porque reducen el número de filas que la base de datos necesita escanear.
                     </p>
+                    
+                </DivContent>
+            </DivArticle>
+
+            <DivSection>
+                <DivArticle>
+
+                    
 
                     <p>
                         Integridad referencial: Las llaves foráneas garantizan que los valores en una columna de una
