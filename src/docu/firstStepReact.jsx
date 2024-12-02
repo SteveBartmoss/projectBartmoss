@@ -164,13 +164,6 @@ export function FirstStepReact() {
                         react
                     </p>
 
-                </DivContent>
-            </DivArticle>
-            <DivSection>
-                <DivArticle>
-
-                    
-
                     <h2>Comando create-react-app</h2>
 
                     <p>
@@ -194,6 +187,11 @@ export function FirstStepReact() {
                         esto se debe a la forma en que trabaja el script y solo admite nombres en minusculas o con
                         kebab case por ejemplo proyecto-prueba
                     </p>
+
+                </DivContent>
+            </DivArticle>
+            <DivSection>
+                <DivArticle>
 
                     <p>
                         Una vez que el comando ese ejecute correctamente habra una carpeta con el nombre que
