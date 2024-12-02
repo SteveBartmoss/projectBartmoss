@@ -95,19 +95,40 @@ export function FkAndIndex() {
 
                     <h2>Tipos de indices</h2>
 
-                    <p>
-                        Índice simple: Un índice basado en una sola columna.
-                        Índice compuesto: Un índice basado en múltiples columnas.
-                    </p>
+                    <h3>Índice simple</h3>
 
                     <p>
-                        Índice único: Asegura que todos los valores en la columna indexada sean distintos.
-                        Índice no único: Permite valores duplicados en la columna indexada.
+                        Un índice basado en una sola columna.
                     </p>
 
+                    <h3>Índice compuesto</h3>
+
                     <p>
-                        B-Tree (Árbol-B): El tipo de índice más común, adecuado para una amplia gama de consultas.
-                        Hash: Adecuado para búsquedas de igualdad, como = y IN. No es eficiente para búsquedas de rango.
+                        Un índice basado en múltiples columnas.
+                    </p>
+
+                    <h3>Índice único</h3>
+
+                    <p>
+                        Asegura que todos los valores en la columna indexada sean distintos.
+                    </p>
+
+                    <h3>Índice no único</h3>
+
+                    <p>
+                        Permite valores duplicados en la columna indexada.
+                    </p>
+
+                    <h3>B-Tree (Árbol-B)</h3>
+
+                    <p>
+                        El tipo de índice más común, adecuado para una amplia gama de consultas.
+                    </p>
+
+                    <h3>Hash</h3>
+
+                    <p>
+                        Adecuado para búsquedas de igualdad, como = y IN. No es eficiente para búsquedas de rango.
                     </p>
 
                     <h2>Ventajas de los índices</h2>
@@ -166,7 +187,7 @@ export function FkAndIndex() {
 
                 </DivContent>
             </DivArticle>
-            
+
         </>
     )
 }
