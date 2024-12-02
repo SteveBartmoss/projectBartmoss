@@ -1,4 +1,4 @@
-import { DivArticle, DivSection } from "../componentes/contenedores/contenedores";
+import { DivArticle, DivContent, DivSection } from "../componentes/contenedores/contenedores";
 import { Portada } from "../componentes/portada/portada";
 
 
@@ -7,8 +7,8 @@ export function FkAndIndex() {
         <>
             <Portada imgPortada={"/Assets/steveA.png"} title={"Llaves e Indices sql"} text={"Por Steve 17/08/2024"} />
 
-            <DivSection>
-                <DivArticle>
+            <DivArticle>
+                <DivContent>
                     <h1>Llaves foraneas e Indices en sql</h1>
 
                     <p>
@@ -24,6 +24,11 @@ export function FkAndIndex() {
                         las tablas. Su única respuesta era que las claves foráneas son necesarias
                         porque forman la relación, pero fuera de eso, no había más explicación.
                     </p>
+                </DivContent>
+            </DivArticle>
+
+            <DivSection>
+                <DivArticle>
 
                     <p>
                         Resulta que existe una mejor explicación que simplemente formar una relación:
@@ -157,7 +162,7 @@ export function FkAndIndex() {
 
                 </DivArticle>
             </DivSection>
-            
+
         </>
     )
 }
