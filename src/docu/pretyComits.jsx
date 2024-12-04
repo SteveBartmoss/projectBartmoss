@@ -71,38 +71,51 @@ export function PretyCommits() {
           <h3>feat</h3>
 
           <p>
-            Introducción de una nueva funcionalidad. Ejemplo: feat: add user authentication
+            Introducción de una nueva funcionalidad. 
           </p>
+
+          <CodeSpace title={'Ejemplo'} rawCode={`feat: add user authentication`} />
 
           <h3>fix</h3>
 
           <p>
-            Corrección de un bug. Ejemplo: fix: resolve issue with user login
+            Corrección de un bug.
           </p>
+
+          <CodeSpace title={'Ejemplo'} rawCode={`fix: resolve issue with user login`} />
 
           <h3>docs</h3>
 
           <p>
-            Cambios en la documentación. Ejemplo: docs: update API documentation for login endpoint
+            Cambios en la documentación.  
           </p>
+
+          <CodeSpace title={'Ejemplo'} rawCode={`docs: update API documentation for login endpoint`} />
 
           <h3>style</h3>
 
           <p>
-            Cambios que no afectan la lógica del código, solo el formato (espacios, comas, etc.). Ejemplo: style: format code with prettier
+            Cambios que no afectan la lógica del código, solo el formato (espacios, comas, etc.).
           </p>
+
+          <CodeSpace title={'Ejemplo'} rawCode={`style: format code with prettier`} />
 
           <h3>refactor</h3>
 
           <p>
-            Cambio en el código que no añade funcionalidad nueva ni corrige un error. Ejemplo: refactor: optimize authentication flow
+            Cambio en el código que no añade funcionalidad nueva ni corrige un error.
           </p>
+
+          <CodeSpace title={'Ejemplo'} rawCode={`refactor: optimize authentication flow`} />
 
           <h3>test</h3>
 
           <p>
-            Añadir o modificar pruebas. Ejemplo: test: add unit tests for login service
+            Añadir o modificar pruebas.
           </p>
+
+          <CodeSpace title={'Ejemplo'} rawCode={`test: add unit tests for login service`} />
+
 
           <h3>chore</h3>
 
