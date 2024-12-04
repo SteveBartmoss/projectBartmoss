@@ -1,4 +1,4 @@
-import { DivArticle, DivSection } from "../componentes/contenedores/contenedores"
+import { DivArticle, DivContent, DivSection } from "../componentes/contenedores/contenedores"
 import { Lista } from "../componentes/lista/Lista"
 import { Portada } from "../componentes/portada/portada"
 
@@ -16,8 +16,8 @@ export function PretyCommits() {
     <>
       <Portada imgPortada={"/Assets/steveA.png"} title={"Prety Commits"} text={"Por Steve 21/08/2024"} />
 
-      <DivSection>
-        <DivArticle>
+      <DivArticle>
+        <DivContent>
 
           <h1>Mejorar tus commits</h1>
 
@@ -135,7 +135,6 @@ export function PretyCommits() {
             Ejemplo: feat(auth): add JWT token verification
           </p>
 
-
           <p>
             Descripción:
             La descripción debe ser breve, clara y en tiempo presente.
@@ -164,8 +163,11 @@ export function PretyCommits() {
           <p>
             Conventional Commits proporciona una manera estándar y estructurada de redactar mensajes de commit, lo que facilita la colaboración, el mantenimiento del código, y la automatización de procesos. Al seguir estas reglas, puedes asegurarte de que los commits sean claros, concisos y útiles para cualquier persona que trabaje en el proyecto.
           </p>
-        </DivArticle>
-      </DivSection>
+
+
+        </DivContent>
+      </DivArticle>
+      
     </>
   )
 }
