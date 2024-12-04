@@ -8,6 +8,11 @@ export function CodeSpace({title,rawCode=""}){
         return slices
     }
 
+    const tokenCode=(codeLine)=>{
+        let tokens=codeLine.split(' ')
+        return tokens
+    }
+
     useEffect(()=>{
         console.log(sliceCode())
     },[])
