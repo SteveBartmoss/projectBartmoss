@@ -1,4 +1,4 @@
-import { DivArticle, DivSection } from "../componentes/contenedores/contenedores";
+import { DivArticle, DivContent, DivSection } from "../componentes/contenedores/contenedores";
 import { Portada } from "../componentes/portada/portada";
 
 
@@ -6,8 +6,10 @@ export function BasicLinux() {
     return (
         <>
             <Portada imgPortada={"/Assets/steveA.png"} title={"Comandos basicos de linux"} text={"Por Steve 28/10/2024"} />
-            <DivSection>
-                <DivArticle>
+
+            <DivArticle>
+                <DivContent>
+                    
                     <p>
                         La mejor forma de usar Linux es mediante comandos y a
                         continuación se muestran algunos de los más escenciales
@@ -138,9 +140,10 @@ export function BasicLinux() {
                         Estos comandos te permitirán realizar acciones básicas en un sistema linux al menos cuando empiezas por primera vez con
                         un sistema operativo de Linux.
                     </p>
-                    
-                </DivArticle>
-            </DivSection>
+
+
+                </DivContent>
+            </DivArticle>
         </>
     )
 }
