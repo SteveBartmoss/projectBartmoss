@@ -1,3 +1,4 @@
+import { CodeSpace } from "../componentes/codeSpace/CodeSpace";
 import { DivArticle, DivContent, DivSection } from "../componentes/contenedores/contenedores"
 import { Lista } from "../componentes/lista/Lista"
 import { Portada } from "../componentes/portada/portada"
@@ -55,15 +56,13 @@ export function PretyCommits() {
           <h3>Formato Básico:</h3>
 
           <p>
-            Cada commit debe seguir el siguiente formato: <br />
-
-            &lt;type&gt; [optional scope]: &lt;description&gt; <br />
-
-            [optional body] <br />
-
-            [optional footer(s)] <br />
-
+            Cada commit debe seguir el siguiente formato:
           </p>
+
+          <CodeSpace title={"Formato basico"} rawCode={`<type> [optional scope]: <description> 
+          [optional body]
+          [optional footer(s)]`} />
+
 
           <Lista elementos={listaTipos} />
 
@@ -167,7 +166,7 @@ export function PretyCommits() {
 
         </DivContent>
       </DivArticle>
-      
+
     </>
   )
 }
