@@ -116,42 +116,51 @@ export function PretyCommits() {
 
           <CodeSpace title={'Ejemplo'} rawCode={`test: add unit tests for login service`} />
 
-
           <h3>chore</h3>
 
           <p>
-            Actualización de tareas de construcción, configuración de herramientas, etc. Ejemplo: chore: update dependencies
+            Actualización de tareas de construcción, configuración de herramientas, etc.
           </p>
+
+          <CodeSpace title={'Ejemplo'} rawCode={`chore: update dependencies`} />
 
           <h3>perf</h3>
 
           <p>
-            Mejoras en el rendimiento. Ejemplo: perf: improve database query performance
+            Mejoras en el rendimiento.
           </p>
+
+          <CodeSpace title={'Ejemplo'} rawCode={`perf: improve database query performance`} />
 
           <h3>build</h3>
 
           <p>
-            Cambios que afectan el sistema de construcción o dependencias externas. Ejemplo: build: update webpack to version 5
+            Cambios que afectan el sistema de construcción o dependencias externas.
           </p>
+
+          <CodeSpace title={'Ejemplo'} rawCode={`build: update webpack to version 5`} />
 
           <h3>ci</h3>
 
           <p>
-            Cambios en la configuración de integración continua. Ejemplo: ci: update GitHub Actions workflow
+            Cambios en la configuración de integración continua.
           </p>
+
+          <CodeSpace title={'Ejemplo'} rawCode={`ci: update GitHub Actions workflow`} />
 
           <p>
             Uso del Scope:
             scope es opcional, pero útil para indicar qué parte del proyecto se vio afectada.
-            Ejemplo: feat(auth): add JWT token verification
           </p>
+
+          <CodeSpace title={'Ejemplo'} rawCode={`feat(auth): add JWT token verification`} />
 
           <p>
             Descripción:
             La descripción debe ser breve, clara y en tiempo presente.
-            Ejemplo: fix: correct validation logic in login form
           </p>
+
+          <CodeSpace title={'Ejemplo'} rawCode={`fix: correct validation logic in login form`} />
 
           <p>
             Cuerpo del Commit (Opcional):
