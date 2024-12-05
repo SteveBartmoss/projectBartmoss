@@ -1,4 +1,4 @@
-import { DivArticle, DivSection } from "../componentes/contenedores/contenedores";
+import { DivArticle, DivContent, DivSection } from "../componentes/contenedores/contenedores";
 import { Portada } from "../componentes/portada/portada";
 
 
@@ -7,9 +7,8 @@ export function Vimgg() {
         <>
             <Portada imgPortada={"/Assets/steveA.png"} title={"Vimgg guia para mostales"} text={"Por Steve 03/11/2024"} />
 
-            <DivSection>
-                <DivArticle>
-
+            <DivArticle>
+                <DivContent>
                     <p>
                         Empezar a utilizar vim no es un camino facil
                         pero aprender nuevas cosas resulta interesante y ademas te puede dar
@@ -42,20 +41,10 @@ export function Vimgg() {
                         En estos casos es donde aprender una herramienta como vim puede ser de
                         de ayuda.
                     </p>
+                </DivContent>
+            </DivArticle>
 
-                </DivArticle>
-            </DivSection>
             <p>
-
-
-
-
-
-
-
-
-
-
 
                 ¿Que es vim?
 
@@ -130,12 +119,12 @@ export function Vimgg() {
                 de direccion o las letras h,j,k o l, la razon de usar las teclas h,j,k,l es porque
                 las personas que usan mecanografia pueden usar estas teclas una formas eficiente.
 
-                Cuando estamos en un modo, por ejemplo en el modo insertar podemos salir de este y cualquier 
-                otro modo si pulsamos la tecla esc (escape) de esta forma saldremos de cualquier modo en el que 
-                no encontramos, esto lo podemos confirmar al ver que que en la esquina inferior izquierda ya no 
+                Cuando estamos en un modo, por ejemplo en el modo insertar podemos salir de este y cualquier
+                otro modo si pulsamos la tecla esc (escape) de esta forma saldremos de cualquier modo en el que
+                no encontramos, esto lo podemos confirmar al ver que que en la esquina inferior izquierda ya no
                 aparece ningun texto.
 
-                
+
             </p>
         </>
     )
