@@ -5,6 +5,11 @@ export function SteveTimeLine() {
     return (
         <div>
 
+            <TimeItem fecha="08/11/2024" autor="Steve"
+                texto="Bueno eso si fue un mes interesante, 
+                pero bueno volvemos a la normalidad, faltan 19 dias 
+                para navidad" />
+
             <TimeItem fecha="08/11/2024" autor="Steve" 
                 texto="De nuevo viernes, trabajo todo el dia 
                 y entonces despierto"
