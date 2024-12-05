@@ -46,11 +46,6 @@ export function VsCodeHack() {
             o hacia abajo
           </p>
 
-        </DivContent>
-      </DivArticle>
-      <DivSection>
-        <DivArticle>
-
           <h2>alt + flecha izquierda/flecha derecha</h2>
 
           <p>
@@ -92,8 +87,8 @@ export function VsCodeHack() {
             las lineas de codigo.
           </p>
 
-        </DivArticle>
-      </DivSection>
+        </DivContent>
+      </DivArticle>
     </>
   )
 }
