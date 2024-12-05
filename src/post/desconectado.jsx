@@ -1,4 +1,4 @@
-import { DivArticle, DivSection } from "../componentes/contenedores/contenedores";
+import { DivArticle, DivContent, DivSection } from "../componentes/contenedores/contenedores";
 import { Portada } from "../componentes/portada/portada";
 
 export function DesconectadoLife() {
@@ -6,8 +6,9 @@ export function DesconectadoLife() {
   return (
     <>
       <Portada imgPortada={"/Assets/steveA.png"} title={"Vida Desconectado"} text={"Por Steve 16/08/2024"} />
-      <DivSection>
-        <DivArticle>
+
+      <DivArticle>
+        <DivContent>
           <p>
             Hace un par de años dejé las redes sociales, o al menos
             la mayoría, ya que si consideramos YouTube y WhatsApp como
@@ -108,8 +109,8 @@ export function DesconectadoLife() {
             ni un discurso de gurú; simplemente quería compartir mi experiencia dejando las redes sociales por un tiempo.
           </p>
 
-        </DivArticle>
-      </DivSection>
+        </DivContent>
+      </DivArticle>
     </>
   )
 }
