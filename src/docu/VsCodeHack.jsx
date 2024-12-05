@@ -1,4 +1,4 @@
-import { DivArticle, DivSection } from "../componentes/contenedores/contenedores"
+import { DivArticle, DivContent, DivSection } from "../componentes/contenedores/contenedores"
 import { Portada } from "../componentes/portada/portada"
 
 export function VsCodeHack() {
@@ -6,14 +6,13 @@ export function VsCodeHack() {
     <>
       <Portada imgPortada={"/Assets/steveA.png"} title={"Comandos de VsCode"} text={"Por Steve 06/09/2024"} />
 
-      <DivSection>
-        <DivArticle>
-
+      <DivArticle>
+        <DivContent>
           <h1>Comandos utiles de VsCode</h1>
 
           <p>
-            Si usas vsCode, entonces estos atajos te pueden servir para 
-            mejorar tu productividad o simplemente trabajar de manera mas 
+            Si usas vsCode, entonces estos atajos te pueden servir para
+            mejorar tu productividad o simplemente trabajar de manera mas
             comoda
           </p>
 
@@ -43,40 +42,45 @@ export function VsCodeHack() {
           <h2>alt + flecha abajo/flecha arriba</h2>
 
           <p>
-            permite mover una linea de texto hacia arriba 
+            permite mover una linea de texto hacia arriba
             o hacia abajo
           </p>
+
+        </DivContent>
+      </DivArticle>
+      <DivSection>
+        <DivArticle>
 
           <h2>alt + flecha izquierda/flecha derecha</h2>
 
           <p>
-            permite movernos horizontalmente 
+            permite movernos horizontalmente
             entre palabras lo cual es mas rapido que saltar espacio por espacio
           </p>
-          
+
           <h2>alt + shift + flecha izquierda/flecha derecha</h2>
 
           <p>
-            seleccionara las palabras que vamos recoriendo lo cual es util si 
+            seleccionara las palabras que vamos recoriendo lo cual es util si
             queremos hacar un copiado o correccion de una palabra
           </p>
 
           <h2>ctrl + d</h2>
 
           <p>
-            Si tenemos seleccionada una palara y esta se repite en el documento se puede 
+            Si tenemos seleccionada una palara y esta se repite en el documento se puede
             seleccionar otra instancia mas de la palabra usando este comando
           </p>
 
           <h2>ctrl + a </h2>
 
           <p>
-            permite seleccionar todo el texto de una archivo muy util para borrar su contenido 
+            permite seleccionar todo el texto de una archivo muy util para borrar su contenido
             o copiarlo a algun otro lado
           </p>
 
           <h2>alt + click izquiera</h2>
-          
+
           <p>
             permite insertar un nuevo cursor en la linea en que hicimos click
           </p>
@@ -84,10 +88,10 @@ export function VsCodeHack() {
           <h2>alt + [ / ] </h2>
 
           <p>
-            Permite identar las lineas de codigo o quitar la identacion de 
+            Permite identar las lineas de codigo o quitar la identacion de
             las lineas de codigo.
           </p>
-          
+
         </DivArticle>
       </DivSection>
     </>
