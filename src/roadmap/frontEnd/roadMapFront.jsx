@@ -132,8 +132,44 @@ export function roadMapFront(){
                     </ExtendPanel>
 
                     <h1>Tailwind</h1>
+                    
 
+                    <h1>Axios</h1>
 
+                    <ExtendPanel title='Conceptos básicos'>
+                      <p>
+                        Realizar solicitudes **GET**, **POST**, **PUT**, **DELETE**.
+                      </p>
+                      <p>
+                        Sintaxis básica de Axios:
+                      </p>
+                      <p>
+                        Manejo de **Promesas** y **async/await**.
+                      </p>
+                    </ExtendPanel>
+
+                    <ExtendPanel title='Configuración de solicitudes'>
+                      <p>
+                        Configuración global mediante `axios.defaults`.
+                      </p>
+                      <p>
+                        Configuración por solicitud
+                        Definir encabezados (`headers`).
+                        Especificar parámetros de consulta (`params`).
+                        Definir tiempo de espera (`timeout`).
+                      </p>
+                    </ExtendPanel>
+
+                    <ExtendPanel title='Interacción con APIs'>
+                      <p>
+                        Enviar datos en el cuerpo de la solicitud:
+                        JSON (`application/json`).
+                        Formularios (`application/x-www-form-urlencoded` y `multipart/form-data`).
+                      </p>
+                      <p>
+                        Trabajar con rutas dinámicas y plantillas de URL.
+                      </p>
+                    </ExtendPanel>
 
                 </DivContent>
             </DivArticle>
@@ -318,27 +354,13 @@ Para configurar y obtener una **ruta de Tailwind CSS** en un proyecto, debes ten
    - Comparación de Axios con `fetch`.
 
 #### 2. **Conceptos básicos**
-   - Realizar solicitudes **GET**, **POST**, **PUT**, **DELETE**.
-   - Sintaxis básica de Axios:
-     ```javascript
-     axios.get('https://api.example.com/data')
-       .then(response => console.log(response.data))
-       .catch(error => console.error(error));
-     ```
-   - Manejo de **Promesas** y **async/await**.
+  
 
 #### 3. **Configuración de solicitudes**
-   - Configuración global mediante `axios.defaults`.
-   - Configuración por solicitud:
-     - Definir encabezados (`headers`).
-     - Especificar parámetros de consulta (`params`).
-     - Definir tiempo de espera (`timeout`).
+   
 
-#### 4. **Interacción con APIs**
-   - Enviar datos en el cuerpo de la solicitud:
-     - JSON (`application/json`).
-     - Formularios (`application/x-www-form-urlencoded` y `multipart/form-data`).
-   - Trabajar con rutas dinámicas y plantillas de URL.
+#### 4. ****
+   
 
 #### 5. **Manejo de respuestas**
    - Propiedades de la respuesta de Axios (`response.data`, `response.status`, `response.headers`).
