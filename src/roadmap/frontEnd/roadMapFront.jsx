@@ -205,6 +205,15 @@ export function roadMapFront(){
                       </p>
                     </ExtendPanel>
 
+                    <ExtendPanel title={'Cancelación de solicitudes'}>
+                      <p>
+                        Uso de `CancelToken` para cancelar solicitudes.
+                      </p>
+                      <p>
+                        Implementar un botón de cancelación en aplicaciones prácticas.
+                      </p>
+                    </ExtendPanel>
+
                 </DivContent>
             </DivArticle>
         </>
@@ -406,8 +415,6 @@ Para configurar y obtener una **ruta de Tailwind CSS** en un proyecto, debes ten
    
 
 #### 8. **Cancelación de solicitudes**
-   - Uso de `CancelToken` para cancelar solicitudes.
-   - Implementar un botón de cancelación en aplicaciones prácticas.
 
 #### 9. **Manejo de autenticación**
    - Autenticación con tokens JWT:
