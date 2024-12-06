@@ -254,6 +254,15 @@ export function roadMapFront(){
                       </p>
                     </ExtendPanel>
 
+                    <ExtendPanel title={'Pruebas con Axios'}>
+                      <p>
+                        Simulación de solicitudes en pruebas unitarias con librerías como `Jest` y `msw`.
+                      </p>
+                      <p>
+                        Mocking de solicitudes HTTP.
+                      </p>
+                    </ExtendPanel>
+                    
                 </DivContent>
             </DivArticle>
         </>
