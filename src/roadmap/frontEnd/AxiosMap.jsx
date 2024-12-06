@@ -1,3 +1,4 @@
+import { CodeSpace } from "../../componentes/codeSpace/CodeSpace";
 import { DivArticle, DivContent } from "../../componentes/contenedores/contenedores";
 import { Portada } from "../../componentes/portada/portada";
 
@@ -9,7 +10,38 @@ export function AxiosMap(){
 
             <DivArticle>
                 <DivContent>
-                    <h1></h1>
+                    <h1>Realizar solicitudes GET, POST, PUT, DELETE</h1>
+
+                    <h2>Solicitudes GET</h2>
+
+                    <p>
+                        Se utiliza para obtener datos del servidor.
+                    </p>
+
+                    <CodeSpace title={'Ejemplo'} rawCode={`import axios from 'axios';
+
+                        axios.get('https://api.example.com/users')
+                            .then(response => {
+                                console.log('Datos recibidos:', response.data);
+                            })
+                            .catch(error => {
+                                console.error('Error en la solicitud GET:', error);
+                            });`} /> 
+                    <p>
+                        Usando async/await
+                    </p>
+
+                    <CodeSpace title={"Ejemplo"} rawCode={`const fetchData = async () => {
+                            try {
+                                const response = await axios.get('https://api.example.com/users');
+                                console.log('Datos recibidos:', response.data);
+                            } catch (error) {
+                                console.error('Error en la solicitud GET:', error);
+                            }
+                        };
+                        
+                        fetchData();`} />
+                        
                 </DivContent>
             </DivArticle>
         </>
@@ -28,35 +60,14 @@ Axios es una biblioteca basada en Promesas para realizar solicitudes HTTP desde 
 
 ---
 
-## **Realizar solicitudes GET, POST, PUT, DELETE**
+## ****
 
-### **1. Solicitudes GET**
-Se utiliza para obtener datos del servidor.
+### **1. **
 
+
+#### :
 ```javascript
-import axios from 'axios';
 
-axios.get('https://api.example.com/users')
-  .then(response => {
-    console.log('Datos recibidos:', response.data);
-  })
-  .catch(error => {
-    console.error('Error en la solicitud GET:', error);
-  });
-```
-
-#### Usando `async/await`:
-```javascript
-const fetchData = async () => {
-  try {
-    const response = await axios.get('https://api.example.com/users');
-    console.log('Datos recibidos:', response.data);
-  } catch (error) {
-    console.error('Error en la solicitud GET:', error);
-  }
-};
-
-fetchData();
 ```
 
 ---
