@@ -240,6 +240,20 @@ export function roadMapFront(){
                       </p>
                     </ExtendPanel>
 
+                    <ExtendPanel title={'Integración con frameworks y librerías'}>
+                      <p>
+                        Uso de Axios en React:
+                        Integración con hooks (`useEffect`, `useState`).
+                      </p>
+                      <p>
+                        Uso de Axios en Vue.js:
+                        Integración global con `Vue.prototype.$http`.
+                      </p>
+                      <p>
+                        Uso de Axios en Node.js para servidores.
+                      </p>
+                    </ExtendPanel>
+
                 </DivContent>
             </DivArticle>
         </>
@@ -448,11 +462,7 @@ Para configurar y obtener una **ruta de Tailwind CSS** en un proyecto, debes ten
 #### 10. **Buenas prácticas**
 
 #### 11. **Integración con frameworks y librerías**
-   - Uso de Axios en React:
-     - Integración con hooks (`useEffect`, `useState`).
-   - Uso de Axios en Vue.js:
-     - Integración global con `Vue.prototype.$http`.
-   - Uso de Axios en Node.js para servidores.
+   
 
 #### 12. **Pruebas con Axios**
    - Simulación de solicitudes en pruebas unitarias con librerías como `Jest` y `msw`.
