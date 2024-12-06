@@ -262,7 +262,19 @@ export function roadMapFront(){
                         Mocking de solicitudes HTTP.
                       </p>
                     </ExtendPanel>
-                    
+
+                    <ExtendPanel title={'Casos prácticos'}>
+                      <p>
+                        Crear un cliente HTTP para una API REST.
+                      </p>
+                      <p>
+                        Integrar Axios con una aplicación de React o Vue.js.
+                      </p>
+                      <p>
+                        Construir una barra de progreso para solicitudes grandes usando eventos (`onUploadProgress`, `onDownloadProgress`).
+                      </p>
+                    </ExtendPanel>
+
                 </DivContent>
             </DivArticle>
         </>
@@ -474,13 +486,9 @@ Para configurar y obtener una **ruta de Tailwind CSS** en un proyecto, debes ten
    
 
 #### 12. **Pruebas con Axios**
-   - Simulación de solicitudes en pruebas unitarias con librerías como `Jest` y `msw`.
-   - Mocking de solicitudes HTTP.
+   
 
 #### 13. **Casos prácticos**
-   - Crear un cliente HTTP para una API REST.
-   - Integrar Axios con una aplicación de React o Vue.js.
-   - Construir una barra de progreso para solicitudes grandes usando eventos (`onUploadProgress`, `onDownloadProgress`).
 
 ---
 
