@@ -224,6 +224,22 @@ export function roadMapFront(){
                       </p>
                     </ExtendPanel>
 
+                    <ExtendPanel title={'Buenas prácticas'}>
+                      <p>
+                        Crear instancias personalizadas de Axios:
+                        Configurar una base URL.
+                        Configurar instancias para diferentes servicios.
+                      </p>
+                      <p>
+                        Manejo eficiente de errores:
+                        Retries automáticos en caso de error.
+                        Configurar un límite de tiempo para las solicitudes.
+                      </p>
+                      <p>
+                        Estructura recomendada para manejar servicios HTTP.
+                      </p>
+                    </ExtendPanel>
+
                 </DivContent>
             </DivArticle>
         </>
@@ -430,13 +446,6 @@ Para configurar y obtener una **ruta de Tailwind CSS** en un proyecto, debes ten
    
 
 #### 10. **Buenas prácticas**
-   - Crear instancias personalizadas de Axios:
-     - Configurar una base URL.
-     - Configurar instancias para diferentes servicios.
-   - Manejo eficiente de errores:
-     - Retries automáticos en caso de error.
-     - Configurar un límite de tiempo para las solicitudes.
-   - Estructura recomendada para manejar servicios HTTP.
 
 #### 11. **Integración con frameworks y librerías**
    - Uso de Axios en React:
