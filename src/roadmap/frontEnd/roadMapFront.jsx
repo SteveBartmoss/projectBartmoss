@@ -214,6 +214,16 @@ export function roadMapFront(){
                       </p>
                     </ExtendPanel>
 
+                    <ExtendPanel title={'Manejo de autenticación'}>
+                      <p>
+                        Autenticación con tokens JWT:
+                        Adjuntar tokens en el encabezado `Authorization`.
+                      </p>
+                      <p>
+                        Uso de cookies para sesiones.
+                      </p>
+                    </ExtendPanel>
+
                 </DivContent>
             </DivArticle>
         </>
@@ -417,9 +427,7 @@ Para configurar y obtener una **ruta de Tailwind CSS** en un proyecto, debes ten
 #### 8. **Cancelación de solicitudes**
 
 #### 9. **Manejo de autenticación**
-   - Autenticación con tokens JWT:
-     - Adjuntar tokens en el encabezado `Authorization`.
-   - Uso de cookies para sesiones.
+   
 
 #### 10. **Buenas prácticas**
    - Crear instancias personalizadas de Axios:
