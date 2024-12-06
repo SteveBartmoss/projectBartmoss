@@ -171,6 +171,17 @@ export function roadMapFront(){
                       </p>
                     </ExtendPanel>
 
+                    <ExtendPanel title={'Manejo de respuestas'}>
+                      <p>
+                        Propiedades de la respuesta de Axios (`response.data`, `response.status`, `response.headers`).
+                      </p>
+                      <p>
+                        Manejo de errores:
+                        Tipos de errores (`400`, `404`, `500`).
+                        Estructura del objeto de error (`error.response`, `error.message`).
+                      </p>
+                    </ExtendPanel>
+
                 </DivContent>
             </DivArticle>
         </>
@@ -363,10 +374,7 @@ Para configurar y obtener una **ruta de Tailwind CSS** en un proyecto, debes ten
    
 
 #### 5. **Manejo de respuestas**
-   - Propiedades de la respuesta de Axios (`response.data`, `response.status`, `response.headers`).
-   - Manejo de errores:
-     - Tipos de errores (`400`, `404`, `500`).
-     - Estructura del objeto de error (`error.response`, `error.message`).
+   
 
 #### 6. **Interceptors (Interceptores)**
    - ¿Qué son los interceptores?
