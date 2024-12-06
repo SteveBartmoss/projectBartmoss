@@ -196,6 +196,15 @@ export function roadMapFront(){
                       </p>
                     </ExtendPanel>
 
+                    <ExtendPanel title={'Solicitudes concurrentes'}>
+                      <p>
+                        Uso de `axios.all` para realizar solicitudes paralelas.
+                      </p>
+                      <p>
+                        Combinar múltiples respuestas con `axios.spread`.
+                      </p>
+                    </ExtendPanel>
+
                 </DivContent>
             </DivArticle>
         </>
@@ -394,8 +403,7 @@ Para configurar y obtener una **ruta de Tailwind CSS** en un proyecto, debes ten
    
 
 #### 7. **Solicitudes concurrentes**
-   - Uso de `axios.all` para realizar solicitudes paralelas.
-   - Combinar múltiples respuestas con `axios.spread`.
+   
 
 #### 8. **Cancelación de solicitudes**
    - Uso de `CancelToken` para cancelar solicitudes.
