@@ -182,6 +182,20 @@ export function roadMapFront(){
                       </p>
                     </ExtendPanel>
 
+                    <ExtendPanel title={'Interceptors (Interceptores)'}>
+                      <p>
+                        ¿Qué son los interceptores?
+                      </p>
+                      <p>
+                        Configurar interceptores de **solicitudes**:
+                        Añadir tokens de autenticación.
+                      </p>
+                      <p>
+                        Configurar interceptores de **respuestas**:
+                        Manejo global de errores (e.g., redirección en caso de `401 Unauthorized`).
+                      </p>
+                    </ExtendPanel>
+
                 </DivContent>
             </DivArticle>
         </>
@@ -377,11 +391,7 @@ Para configurar y obtener una **ruta de Tailwind CSS** en un proyecto, debes ten
    
 
 #### 6. **Interceptors (Interceptores)**
-   - ¿Qué son los interceptores?
-   - Configurar interceptores de **solicitudes**:
-     - Añadir tokens de autenticación.
-   - Configurar interceptores de **respuestas**:
-     - Manejo global de errores (e.g., redirección en caso de `401 Unauthorized`).
+   
 
 #### 7. **Solicitudes concurrentes**
    - Uso de `axios.all` para realizar solicitudes paralelas.
