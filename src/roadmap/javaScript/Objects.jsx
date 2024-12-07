@@ -139,31 +139,24 @@ export function MapObjects() {
                         La notación de corchetes es útil cuando el nombre de la propiedad es dinámico, se almacena en una variable, o no es un identificador válido.
                     </p>
 
-                    <code>
-                        const persona = &#123;nombre: "Luis", edad: 30 &#125;
+                    <CodeSpace title={"Ejemplo"} rawCode={`const persona = {nombre: "Luis", edad: 30 }
                         const propiedad = "nombre"
-                        console.log(persona[propiedad]) // "Luis"
-                    </code>
+                        console.log(persona[propiedad]) // "Luis"`} />
 
                     <p>
                         La notación de corchetes permite acceder a propiedades que contienen espacios, caracteres especiales o números.
                     </p>
 
-                    <code>
-                        const producto = &#123;"precio-venta": 200, "nombre producto": "Laptop" &#125;
+                    <CodeSpace title={"Ejemplo"} rawCode={`const producto = {"precio-venta": 200, "nombre producto": "Laptop" }
                         console.log(producto["precio-venta"]) // 200
-                        console.log(producto["nombre producto"]) // "Laptop"
-                    </code>
+                        console.log(producto["nombre producto"]) // "Laptop"`} />
 
                     <p>
                         La notación de corchetes permite acceder a propiedades a través de una variable. Este enfoque es útil para acceder a propiedades basadas en condiciones o entradas de usuario.
                     </p>
 
-
-                    <code>
-                        const propiedad = "edad"
-                        console.log(persona[propiedad]) // 30
-                    </code>
+                    <CodeSpace title={"Ejemplo"} rawCode={`const propiedad = "edad"
+                        console.log(persona[propiedad]) // 30`} />
 
                     <Divider />
 
