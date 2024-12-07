@@ -1,4 +1,4 @@
-import { DivArticle } from "../componentes/contenedores/contenedores"
+import { DivArticle, DivContent } from "../componentes/contenedores/contenedores"
 import { Portada } from "../componentes/portada/portada"
 
 export function HookContext() {
@@ -7,8 +7,7 @@ export function HookContext() {
             <Portada imgPortada={"/Assets/steveA.png"} title={"El hook Context en react"} text={"Por Steve 21/07/2024"} />
 
             <DivArticle>
-                <DivArticle>
-                    
+                <DivContent>
                     <p>
                         Si has trabajado con react entonces sabras
                         que mantener el estado en los componentes
@@ -90,7 +89,7 @@ export function HookContext() {
                         es especialmente útil para datos que deben ser accesibles globalmente, como el tema (claro/oscuro),
                         el usuario autenticado, o la configuración de la aplicación.
                     </p>
-                </DivArticle>
+                </DivContent>
             </DivArticle>
 
         </>
