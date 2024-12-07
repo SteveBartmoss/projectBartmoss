@@ -74,24 +74,20 @@ export function MapObjects() {
                         Puedes añadir un método asignando una función a una propiedad del objeto.
                     </p>
 
-                    <code>
-                        persona.saludar = function() &#123;
-                        console.log(`Hola, soy $&#123;this.nombre&#125;`)
-                        &#125;
-                        persona.saludar() // "Hola, soy Ana"
-                    </code>
+                    <CodeSpace title={"Ejemplo"} rawCode={`persona.saludar = function() {
+                        console.log('Hola, soy $ {this.nombre}')
+                        }
+                        persona.saludar() // "Hola, soy Ana"`}/>
 
                     <p>
                         También se puede añadir un metodo usando corchetes [], esto es útil cuando el nombre del método está almacenado en una variable.
                     </p>
 
-                    <code>
-                        const metodo = "despedirse"
-                        persona[metodo] = function() &#123;
-                        console.log("Adiós!")
-                        &#125;
-                        persona.despedirse() // "Adiós!"
-                    </code>
+                    <CodeSpace title={"Ejemplo"} rawCode={`const metodo = "despedirse"
+                        persona[metodo] = function() {
+                            console.log("Adiós!")
+                        }
+                        persona.despedirse() // "Adiós!"`} />
 
                     <h2>Modificar Métodos Dinámicamente</h2>
 
