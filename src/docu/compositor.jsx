@@ -1,4 +1,4 @@
-import { DivArticle, DivSection } from "../componentes/contenedores/contenedores"
+import { DivArticle, DivContent, DivSection } from "../componentes/contenedores/contenedores"
 import { Portada } from "../componentes/portada/portada"
 
 export function Compositor() {
@@ -6,8 +6,8 @@ export function Compositor() {
             <>
                   <Portada imgPortada={"/Assets/steveA.png"} title={"Ques compose?"} text={"Por Steve 23/08/2024"} />
 
-                  <DivSection>
-                        <DivArticle>
+                  <DivArticle>
+                        <DivContent>
                               <p>
                                     Cuando inicias un desarrollo en una pila de tecnologia
                                     que involucra el lenguaje php entonces es posible que
@@ -85,9 +85,8 @@ export function Compositor() {
                               <p>
                                     Composer es una herramienta esencial para cualquier proyecto PHP moderno. Facilita la gestión de dependencias, asegurando que todas las bibliotecas necesarias estén disponibles y funcionando correctamente en tu proyecto, mientras automatiza tareas tediosas como el autoloading de clases. Es ampliamente utilizado en la comunidad PHP y ha transformado la forma en que los desarrolladores manejan sus proyectos.
                               </p>
-
-                        </DivArticle>
-                  </DivSection>
+                        </DivContent>
+                  </DivArticle>
             </>
       )
 }
