@@ -438,6 +438,14 @@ export function FirstStepRedux() {
                     type: "task/deleteTask,
                     }`} />
 
+                    <p>
+                        Con el ejemplo anterior podemos ver porque llamamos la propiedad payload, ya que 
+                        ahi es donde se almacena el nuevo valor que se usara para actualizar el estado 
+                        de la aplicacion, esto es debido a la forma en que trabaja la libreria y por eso 
+                        debemos usar el payload que si bien no se utiliza en este ejemplo es una buena idea 
+                        mencionar como funciona
+                    </p>
+
                 </DivContent>
             </DivArticle>
         </>
