@@ -395,6 +395,24 @@ export function FirstStepRedux() {
                         que la libreria trabaja esto lo podemos ver en el siguiente ejemplo:
                     </p>
 
+                    <CodeSpace title={"Ejemplo"} 
+                        rawCode={` state = state.filter(element => element.id !== action.payload)`} />
+
+                    <p>
+                        Esto no funciona ya que al hace la asignacion state =, estamos rompiedo la convencion 
+                        que usa la libreria de no reasignar valores ya que esto le asigna un nuevo valor al 
+                        state y eso no esta permitido, lo que podemos hacer es regrear un nuevo estado para 
+                        que la libreria tome esto como una actualizacion del estado.
+                    </p>
+
+                    <CodeSpace title={"Ejemplo"} 
+                        rawCode={` return state.filter(element => element.id !== action.payload)`} />
+
+                    <p>
+                        En este nuevo codigo le estamos indicando a la libreria que necesitamos un nuevo estado 
+                        para que se actualice ya que la asignacion directa no la podemos hacer directamente
+                    </p>
+
                 </DivContent>
             </DivArticle>
         </>
