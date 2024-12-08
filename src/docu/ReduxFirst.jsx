@@ -371,6 +371,30 @@ export function FirstStepRedux() {
                         reflejada en el cambio.
                     </p>
 
+                    <h3>state</h3>
+
+                    <p>
+                        Este es el estado actual de la aplicacion, en el caso del contardor se 
+                        trata del valor 0, por lo cual debemos operar con esta variable para 
+                        poder modificar el estado de la aplicacion pero en este caso hay algo interesante 
+                        aqui
+                    </p>
+
+                    <p>
+                        Cuando trabajamos con la libreria de react no podemos hacer una modificacion directa 
+                        en el estado, ya que por ejemplo no podemos declarar una constante y luego 
+                        usarla ya que para eso necesitamos usar el hook use state pues react no 
+                        es realmente reactivo como lo puede ser svelt o vue, esto se debe a como esta 
+                        contruida la libreria y por eso debemos usar el hook useState y su funcion para 
+                        actualizar el valor del estado.
+                    </p>
+
+                    <p>
+                        En el caso de redux pasa algo similar y es que reduxtoolkit puede mutar directamente 
+                        los estados pero no puede hacer asignaciones directas para el estado por la forma en 
+                        que la libreria trabaja esto lo podemos ver en el siguiente ejemplo:
+                    </p>
+
                 </DivContent>
             </DivArticle>
         </>
