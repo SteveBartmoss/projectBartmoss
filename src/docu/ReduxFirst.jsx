@@ -340,6 +340,31 @@ export function FirstStepRedux() {
                         del estado por lo que el archivo del slice quedaria algo asi:
                     </p>
 
+                    <CodeSpace title={'counterSlice.js'} 
+                        rawCode={`import { createSlice } from '@reduxjs/toolkit'
+
+                            const initialValue = {
+                                value: 0,
+                            }
+
+                            export const counterSlice = createSlice({
+                                name: 'counter',
+                                initialState: initialValue,
+                                reducers: {
+                                        increment: (state,action)=>{
+                                            state.value += 1
+                                        },
+                                        decrement: (state,action)=>{
+                                            state.value -=1
+                                        },
+                                    },
+                            })
+                            
+                            export const {increment,decrement,} = counterSlice.actions
+                            export default counterSlice.reducer`} />
+
+                        
+
                 </DivContent>
             </DivArticle>
         </>
