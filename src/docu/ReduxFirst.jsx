@@ -293,6 +293,8 @@ export function FirstStepRedux() {
                         un metodo get para obtener informacion de nuestro store
                     </p>
 
+                    <h2>Metodos para modificar el estado</h2>
+
                 </DivContent>
             </DivArticle>
         </>
