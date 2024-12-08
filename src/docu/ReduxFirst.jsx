@@ -295,6 +295,51 @@ export function FirstStepRedux() {
 
                     <h2>Metodos para modificar el estado</h2>
 
+                    <p>
+                        Ahora que tenemos el estado global en el proyecto podemos hacer 
+                        que el numero de la pagina incremente o se redusca mediante el uso 
+                        de dos botones lo cuales pondremos en nuestra pagina principal
+                    </p>
+
+                    <CodeSpace title={"App.js"} rawCode={`import logo from './logo.svg';
+                                import './App.css';
+                                import { useSelector } from 'react-redux';
+
+                                function App() {
+                                
+                                    const count = useSelector((state)=> state.counter.value)
+
+                                    return (
+                                        <div className="App">
+                                        <h1>Contador</h1>
+                                        <p>{count}</p>
+                                        <button>Increment</button>
+                                        <button>Decrement</butto>
+                                        </div>
+                                    );
+                                }
+
+                                export default App;
+                        `} />
+
+                    <p>
+                        Con esto tenemos los dos botones para incrementar 
+                        el contador pero ahora debemos crear los metodos para 
+                        modificar el valor de estado, el campo del slice llamado 
+                        reducers sera donde declararemos las funciones encargadas 
+                        de modificar el estado de nuestra aplicacion
+                    </p>
+
+                    <h3>reducers</h3>
+
+                    <p>
+                        Dentro del objeto que regresamos en nuestro archivo slice 
+                        tenemos un campo que nos permite definir los metodos que 
+                        usaremos para modificar la informacion del estado que almacena, 
+                        en este caso queremos incrementar o reducir el contador 
+                        del estado por lo que el archivo del slice quedaria algo asi:
+                    </p>
+
                 </DivContent>
             </DivArticle>
         </>
