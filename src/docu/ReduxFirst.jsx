@@ -363,7 +363,13 @@ export function FirstStepRedux() {
                             export const {increment,decrement,} = counterSlice.actions
                             export default counterSlice.reducer`} />
 
-                        
+                    <p>
+                        Con esta modificacion podemos ver que hay cosas interesantes, como 
+                        por ejemplo los valores que reciben las dos funciones que vemos state y action,
+                        estos valores son la clave para manejar nuestro estado ya que uno representa 
+                        el estado actual y el otro representa la nueva informacion que queremos ver 
+                        reflejada en el cambio.
+                    </p>
 
                 </DivContent>
             </DivArticle>
