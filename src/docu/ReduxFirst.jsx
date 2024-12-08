@@ -411,7 +411,32 @@ export function FirstStepRedux() {
                     <p>
                         En este nuevo codigo le estamos indicando a la libreria que necesitamos un nuevo estado 
                         para que se actualice ya que la asignacion directa no la podemos hacer directamente
+                        otros ejemplo de que podemos hacer con el estado son los siguientes:
                     </p>
+
+                    <CodeSpace title={"Ejemplo"} 
+                        rawCode={`state.push(action.payload)`} />
+
+                    <p>
+                        En este caso estamos mutando directamente el estado pero eso realmente 
+                        no importa porque la libreria maneja este tipo de operaciones de manera corecta.
+                        En el caso del contador pasa algo interesante y es que pareciera que estamos 
+                        haciendo una redireccion directamente pero la libreria no la toma como eso si 
+                        no como una mutacion del estado que estamos usando y por eso lo permite
+                    </p>
+
+                    <h3>action</h3>
+
+                    <p>
+                        Este es el parametro para que recibimos para actualizar el valor del estado y tambien 
+                        tiene algo interesante y es que si nos fijamos ne los ejemplos anteriores usamos 
+                        la propiedad paylod y es que el parametro tiene la siguiente forma: 
+                    </p>
+
+                    <CodeSpace title={"Ejemplo"} rawCode={`{
+                    payload: '2',
+                    type: "task/deleteTask,
+                    }`} />
 
                 </DivContent>
             </DivArticle>
