@@ -10,11 +10,12 @@ export function CodeSpace({title,rawCode=""}){
 
     const tokenCode=(codeLine)=>{
         let tokens=codeLine.split(' ')
+        console.log(tokens)
         return tokens
     }
 
     useEffect(()=>{
-        console.log(sliceCode())
+        //console.log(sliceCode())
     },[])
 
     return(
@@ -26,8 +27,12 @@ export function CodeSpace({title,rawCode=""}){
                 {
                     sliceCode().map( lineCode => 
                         <p>
-                            {lineCode}
-                        </p>
+                            {
+                                tokenCode(lineCode).map(token =>
+                                    <span>{token} </span>
+                                )
+                            }
+                        </p> 
                     )
                 }
             </div>
