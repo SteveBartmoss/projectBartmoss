@@ -246,21 +246,17 @@ export function MapObjects() {
                         Es útil para obtener tanto la clave como el valor en una estructura de datos que facilita la iteración.
                     </p>
 
-                    <code>
-                        const empleado = &#123;nombre: "Carlos", rol: "Desarrollador", edad: 28 &#125;
+                    <CodeSpace title={"Ejemplo"} rawCode={`const empleado = { nombre: "Carlos", rol: "Desarrollador", edad: 28 }
                         const entradas = Object.entries(empleado)
-                        console.log(entradas)
-                    </code>
+                        console.log(entradas)`} />
 
                     <p>
                         Recorriendo con forEach
                     </p>
 
-                    <code>
-                        entradas.forEach(([clave, valor]) =&gt; &#123;
-                        console.log(`$&#123;clave&#125;: $&#123;valor&#125;`);
-                        &#125;);
-                    </code>
+                    <CodeSpace title={"Ejemplo"} rawCode={`entradas.forEach(([clave, valor]) => {
+                        console.log('$ {clave}: $ {valor}');
+                        });`} />
 
                     <p>
                         Es una excelente opción cuando necesitas tanto las claves como los valores en una estructura fácil de manejar.
