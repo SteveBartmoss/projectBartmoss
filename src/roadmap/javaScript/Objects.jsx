@@ -179,7 +179,7 @@ export function MapObjects() {
                             console.log('$ {123;propiedad}: $ {persona[propiedad]} ')
                         }
                         }`} />
-                        
+
                     <p>
                         Este bucle es útil cuando necesitas iterar tanto sobre las propiedades propias como heredadas de un objeto.
                         Es especialmente relevante en objetos donde el prototipo juega un papel importante.
@@ -230,11 +230,10 @@ export function MapObjects() {
                         Iteración Usando forEach
                     </p>
 
-                    <code>
-                        valores.forEach(valor =&gt; &#123;
+                    <CodeSpace title={"Ejemplo"} rawCode={`valores.forEach(valor => {
                         console.log(valor)
-                        &#125;)
-                    </code>
+                    })`} />
+
 
                     <p>
                         Ideal para casos en los que solo necesitas los valores de las propiedades, como cuando quieres sumar valores o realizar operaciones estadísticas.
