@@ -302,23 +302,17 @@ export function MapObjects() {
                         objeto2.nombre = "Luis"
                         console.log(objeto1.nombre) // "Luis" (ambas variables reflejan el cambio)`} />
 
-                    <code>
-                        
-                    </code>
-
                     <p>
                         Paso por Referencia en Funciones
                     </p>
 
-                    <code>
-                        function actualizarEdad(persona) &#123;
-                        persona.edad = 35
-                        &#125;
+                    <CodeSpace title={"Ejemplo"} rawCode={`function actualizarEdad(persona) {
+                            persona.edad = 35
+                        }
 
                         const persona = &#123;nombre: "Lucía", edad: 28 &#125;
                         actualizarEdad(persona)
-                        console.log(persona.edad) // 35 (la función modifica el objeto original)
-                    </code>
+                        console.log(persona.edad) // 35 (la función modifica el objeto original)`} />
 
                     <h2>Cómo Evitar Efectos Colaterales: Copias de Objetos</h2>
 
