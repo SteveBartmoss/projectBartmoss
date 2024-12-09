@@ -296,12 +296,14 @@ export function MapObjects() {
                         Referencias en Objetos
                     </p>
 
-                    <code>
-                        const objeto1 = &#123;nombre: "Carlos" &#125;
+                    <CodeSpace title={"Ejemplo"} rawCode={`const objeto1 = { nombre: "Carlos" &#125;
                         const objeto2 = objeto1 // Ambos apuntan al mismo objeto
 
                         objeto2.nombre = "Luis"
-                        console.log(objeto1.nombre) // "Luis" (ambas variables reflejan el cambio)
+                        console.log(objeto1.nombre) // "Luis" (ambas variables reflejan el cambio)`} />
+
+                    <code>
+                        
                     </code>
 
                     <p>
