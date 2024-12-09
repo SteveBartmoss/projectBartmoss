@@ -173,15 +173,13 @@ export function MapObjects() {
                         Este bucle es útil para obtener el nombre de cada propiedad, pero es recomendable combinarlo con hasOwnProperty() para asegurarse de que la propiedad pertenece directamente al objeto y no a su prototipo.
                     </p>
 
-                    <code>
-                        const persona = &#123;nombre: "Luis", edad: 30, ocupacion: "Ingeniero" &#125;
-                        for (const propiedad in persona) &#123;
-                        if (persona.hasOwnProperty(propiedad)) &#123;
-                        console.log(`$&#123;propiedad&#125;: $&#123;persona[propiedad]&#125;`)
-                        &#125;
-                        &#125;
-                    </code>
-
+                    <CodeSpace title={"Ejemplo"} rawCode={` const persona = { nombre: "Luis", edad: 30, ocupacion: "Ingeniero" }
+                        for (const propiedad in persona) {
+                        if (persona.hasOwnProperty(propiedad)) {
+                            console.log('$ {123;propiedad}: $ {persona[propiedad]} ')
+                        }
+                        }`} />
+                        
                     <p>
                         Este bucle es útil cuando necesitas iterar tanto sobre las propiedades propias como heredadas de un objeto.
                         Es especialmente relevante en objetos donde el prototipo juega un papel importante.
