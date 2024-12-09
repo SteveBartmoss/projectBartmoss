@@ -279,12 +279,10 @@ export function MapObjects() {
                         Debido a esto, los cambios realizados en el objeto a través de una variable son reflejados en todas las variables que apuntan a ese mismo objeto.
                     </p>
 
-                    <code>
-                        const persona = &#123;nombre: "Ana", edad: 30 &#125;
+                    <CodeSpace title={"Ejemplo"} rawCode={`const persona = { nombre: "Ana", edad: 30 }
                         persona.edad = 31 // Modificamos una propiedad existente
                         persona.pais = "México" // Añadimos una nueva propiedad
-                        console.log(persona) // nombre: "Ana", edad: 31, pais: "México"
-                    </code>
+                        console.log(persona) // nombre: "Ana", edad: 31, pais: "México"`} />
 
                     <h2>Paso por Referencia vs. Paso por Valor</h2>
 
