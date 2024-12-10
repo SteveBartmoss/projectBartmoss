@@ -387,15 +387,12 @@ export function MapObjects() {
                         Ejemplo en React (Evitar Mutación Directa del Estado)
                     </p>
 
-                    <code>
-                        const [persona, setPersona] = useState(&#123;nombre: "Pedro", edad: 25 &#125;);
+                    <CodeSpace title={"Ejemplo"} rawCode={`const [persona, setPersona] = useState({nombre: "Pedro", edad: 25 });
 
-                        function actualizarEdad() &#123;
+                        function actualizarEdad() {
                         // Usamos una copia para evitar mutación directa
-                        setPersona(prevPersona =&gt; (&#123; ...prevPersona, edad: prevPersona.edad + 1 &#125;));
-                        &#125;
-
-                    </code>
+                        setPersona(prevPersona => ({ ...prevPersona, edad: prevPersona.edad + 1 }));
+                        }`} />
 
                     <Divider />
 
