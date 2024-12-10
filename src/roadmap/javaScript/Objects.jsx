@@ -352,17 +352,15 @@ export function MapObjects() {
                         Problema de la Copia Superficial
                     </p>
 
-                    <code>
-                        const persona = &#123;
-                        nombre: "Ana",
-                        direccion: &#123;ciudad: "Lima", pais: "Perú" &#125;
-                        &#125;
+                    <CodeSpace title={"Ejemplo"} rawCode={`const persona = {
+                            nombre: "Ana",
+                            direccion: { ciudad: "Lima", pais: "Perú" }
+                        }
 
-                        const copiaSuperficial = &#123;...persona&#125;
+                        const copiaSuperficial = {...persona}
                         copiaSuperficial.direccion.ciudad = "Cusco"
 
-                        console.log(persona.direccion.ciudad) // "Cusco" (la ciudad cambia en ambas referencias)
-                    </code>
+                        console.log(persona.direccion.ciudad) // "Cusco" (la ciudad cambia en ambas referencias)`} />
 
                     <p>
                         Clonación Profunda con structuredClone()
