@@ -366,18 +366,15 @@ export function MapObjects() {
                         Clonación Profunda con structuredClone()
                     </p>
 
-                    <code>
-                        const persona = &#123;
-                        nombre: "Ana",
-                        direccion: &#123;ciudad: "Lima", pais: "Perú" &#125;
-                        &#125;
+                    <CodeSpace title={"Ejemplo"} rawCode={`const persona = {
+                            nombre: "Ana",
+                            direccion: {ciudad: "Lima", pais: "Perú" }
+                        }
 
                         const copiaProfunda = structuredClone(persona)
                         copiaProfunda.direccion.ciudad = "Cusco"
 
-                        console.log(persona.direccion.ciudad) // "Lima" (el original no se ve afectado)
-
-                    </code>
+                        console.log(persona.direccion.ciudad) // "Lima" (el original no se ve afectado)`} />
 
                     <h2>Aplicaciones Prácticas de la Mutabilidad</h2>
 
