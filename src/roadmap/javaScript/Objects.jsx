@@ -296,7 +296,7 @@ export function MapObjects() {
                         Referencias en Objetos
                     </p>
 
-                    <CodeSpace title={"Ejemplo"} rawCode={`const objeto1 = { nombre: "Carlos" &#125;
+                    <CodeSpace title={"Ejemplo"} rawCode={`const objeto1 = { nombre: "Carlos" }
                         const objeto2 = objeto1 // Ambos apuntan al mismo objeto
 
                         objeto2.nombre = "Luis"
@@ -310,7 +310,7 @@ export function MapObjects() {
                             persona.edad = 35
                         }
 
-                        const persona = &#123;nombre: "Lucía", edad: 28 &#125;
+                        const persona = { nombre: "Lucía", edad: 28 }
                         actualizarEdad(persona)
                         console.log(persona.edad) // 35 (la función modifica el objeto original)`} />
 
@@ -327,14 +327,12 @@ export function MapObjects() {
                         Copia Superficial
                     </p>
 
-                    <code>
-                        const original = &#123;nombre: "Juan", edad: 40 &#125;
-                        const copia = &#123;...original&#125;
+                    <CodeSpace title={"Ejemplo"} rawCode={`const original = { nombre: "Juan", edad: 40 }
+                        const copia = { ...original }
 
                         copia.edad = 45
                         console.log(original.edad) // 40 (el original no se modifica)
-                        console.log(copia.edad)    // 45 (la copia es independiente)
-                    </code>
+                        console.log(copia.edad)    // 45 (la copia es independiente)`} />
 
                     <h2>Copia Superficial vs. Copia Profunda</h2>
 
