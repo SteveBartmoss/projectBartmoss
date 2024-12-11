@@ -525,18 +525,16 @@ export function MapObjects() {
                         Ejemplo de Función Constructora
                     </p>
 
-                    <code>
-                        function Persona(nombre, edad) &#123;
-                        this.nombre = nombre;
-                        this.edad = edad;
-                        this.saludar = function() &#123;
-                        console.log(`Hola, mi nombre es $&#123;this.nombre&#125; y tengo $&#123;this.edad&#125; años.`);
-                        &#125;
-                        &#125;
+                    <CodeSpace title={"Ejemplo"} rawCode={`function Persona(nombre, edad) {
+                            this.nombre = nombre;
+                            this.edad = edad;
+                            this.saludar = function() {
+                                console.log('Hola, mi nombre es $ {this.nombre} y tengo $ {this.edad} años.');
+                            }
+                        }
 
                         const persona3 = new Persona("Carlos", 40);
-                        persona3.saludar(); // "Hola, mi nombre es Carlos y tengo 40 años."
-                    </code>
+                        persona3.saludar(); // "Hola, mi nombre es Carlos y tengo 40 años."`} />
 
                     <h1>Funciones Constructoras</h1>
 
