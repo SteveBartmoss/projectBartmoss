@@ -5,7 +5,13 @@ export function SteveTimeLine() {
     return (
         <div>
 
-            <TimeItem fecha="08/11/2024" autor="Steve"
+            <TimneItem fecha="11/12/2024" autor="Steve"
+                texto="Hay un niño en Venezuela que creció como cualquiera
+                    Jugando en calles y aceras sin mucha preocupación
+                    Es fácil para los niños, que de cualquier forma juegan
+                    Sin pensar que el mundo afuera fue creado pa'l león" />
+
+            <TimeItem fecha="05/12/2024" autor="Steve"
                 texto="Bueno eso si fue un mes interesante, 
                 pero bueno volvemos a la normalidad, faltan 19 dias 
                 para navidad" />
