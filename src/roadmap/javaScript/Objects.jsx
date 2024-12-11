@@ -442,24 +442,21 @@ export function MapObjects() {
                         Ejemplo de Flexibilidad
                     </p>
 
-                    <code>
-                        function crearVehiculo(tipo, marca) &#123;
-                        return &#123;
-                        tipo: tipo,
-                        marca: marca,
-                        moverse: function() &#123;
-                        console.log(`El $&#123;this.marca&#125; se está moviendo.`);
-                        &#125;
-                        &#125;
-                        &#125;
+                    <CodeSpace title={"Ejemplo"} rawCode={`function crearVehiculo(tipo, marca) {
+                            return {
+                                tipo: tipo,
+                                marca: marca,
+                                moverse: function() {
+                                    console.log( 'El $ {this.marca} se está moviendo.');
+                                }
+                            }
+                        }
 
                         const coche = crearVehiculo("coche", "Toyota");
                         const moto = crearVehiculo("moto", "Yamaha");
 
                         coche.moverse(); // "El Toyota se está moviendo."
-                        moto.moverse();  // "El Yamaha se está moviendo."
-
-                    </code>
+                        moto.moverse();  // "El Yamaha se está moviendo."`} />
 
                     <h2>Parámetros y Personalización</h2>
 
