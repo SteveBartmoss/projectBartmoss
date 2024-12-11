@@ -468,24 +468,21 @@ export function MapObjects() {
                         Ejemplo con Parámetros
                     </p>
 
-                    <code>
-                        function crearLibro(titulo, autor) &#123;
-                        return &#123;
-                        titulo: titulo,
-                        autor: autor,
-                        leer: function() &#123;
-                        console.log(`Leyendo $&#123;this.titulo&#125; de $&#123;this.autor&#125;.`);
-                        &#125;
-                        &#125;
-                        &#125;
+                    <CodeSpace title={"Ejemplo"} rawCode={`function crearLibro(titulo, autor) {
+                            return {
+                                titulo: titulo,
+                                autor: autor,
+                                leer: function() {
+                                console.log('Leyendo $ {this.titulo&#125; de $ {this.autor}.');
+                                }
+                            }
+                        }
 
                         const libro1 = crearLibro("1984", "George Orwell");
                         const libro2 = crearLibro("Cien años de soledad", "Gabriel García Márquez");
 
                         libro1.leer(); // "Leyendo 1984 de George Orwell."
-                        libro2.leer(); // "Leyendo Cien años de soledad de Gabriel García Márquez."
-
-                    </code>
+                        libro2.leer(); // "Leyendo Cien años de soledad de Gabriel García Márquez."`} />
 
                     <h2>Encapsulamiento y Estado Privado</h2>
 
