@@ -555,22 +555,20 @@ export function MapObjects() {
                         Ejemplo Básico
                     </p>
 
-                    <code>
-                        function Persona(nombre, edad) &#123;
-                        this.nombre = nombre; // 'this' se refiere a la nueva instancia creada
-                        this.edad = edad;
+                    <CodeSpace title={"Ejemplo"} rawCode={`function Persona(nombre, edad) {
+                            this.nombre = nombre; // 'this' se refiere a la nueva instancia creada
+                            this.edad = edad;
 
-                        this.saludar = function() &#123;
-                        console.log(`Hola, mi nombre es $&#123;this.nombre&#125; y tengo $&#123;this.edad&#125; años.`);
-                        &#125;;
-                        &#125;
+                            this.saludar = function() {
+                                console.log('Hola, mi nombre es $ {this.nombre} y tengo $ {this.edad} años.');
+                            }
+                        }
 
                         const persona1 = new Persona("Ana", 30);
                         const persona2 = new Persona("Luis", 25);
 
                         persona1.saludar(); // "Hola, mi nombre es Ana y tengo 30 años."
-                        persona2.saludar(); // "Hola, mi nombre es Luis y tengo 25 años."
-                    </code>
+                        persona2.saludar(); // "Hola, mi nombre es Luis y tengo 25 años."`} />
 
                     <p>
                         En este ejemplo, persona1 y persona2 son dos instancias de la función constructora Persona, cada una con sus propios valores de nombre y edad.
