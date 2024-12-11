@@ -494,27 +494,24 @@ export function MapObjects() {
                         Ejemplo de Estado Privado
                     </p>
 
-                    <code>
-                        function crearContador() &#123;
-                        let conteo = 0; // Estado privado
+                    <CodeSpace title={"Ejemplo"} rawCode={`function crearContador() {
+                            let conteo = 0; // Estado privado
 
-                        return &#123;
-                        incrementar: function() &#123;
-                        conteo++;
-                        console.log(`Contador: $&#123;conteo&#125;`);
-                        &#125;,
-                        obtenerConteo: function() &#123;
-                        return conteo;
-                        &#125;
-                        &#125;
-                        &#125;
+                            return {
+                                incrementar: function() {
+                                    conteo++;
+                                    console.log('Contador: $ {conteo});
+                                },
+                                obtenerConteo: function() {
+                                    return conteo;
+                                }
+                            }
+                        }
 
                         const contador = crearContador();
                         contador.incrementar(); // "Contador: 1"
                         contador.incrementar(); // "Contador: 2"
-                        console.log(contador.obtenerConteo()); // 2
-
-                    </code>
+                        console.log(contador.obtenerConteo()); // 2`} />
 
                     <h2>Comparación con Funciones Constructoras</h2>
 
