@@ -654,23 +654,22 @@ export function MapObjects() {
                         Ejemplo de Comparación: Método en el Constructor vs. Método en el Prototipo
                     </p>
 
-                    <code>
-                        // Método en el constructor
-                        function JugadorConMetodo(nombre) &#123;
+                    <CodeSpace title={"Ejemplo"} rawCode={`// Método en el constructor
+                        function JugadorConMetodo(nombre) {
                         this.nombre = nombre;
-                        this.jugar = function() &#123;
-                        console.log(`$&#123;this.nombre&#125; está jugando`);
-                        &#125;
-                        &#125;
+                            this.jugar = function() {
+                            console.log('$ {this.nombre} está jugando');
+                            }
+                        }
 
                         // Método en el prototipo
-                        function JugadorConPrototipo(nombre) &#123;
+                        function JugadorConPrototipo(nombre) {
                         this.nombre = nombre;
-                        &#125;
+                        }
 
-                        JugadorConPrototipo.prototype.jugar = function() &#123;
-                        console.log(`$&#123;this.nombre&#125; está jugando`);
-                        &#125;
+                        JugadorConPrototipo.prototype.jugar = function() {
+                        console.log('$ {this.nombre} está jugando');
+                        }
 
                         // Crear instancias
                         const jugador1 = new JugadorConMetodo("Carlos");
@@ -678,9 +677,7 @@ export function MapObjects() {
 
                         // Comparación de métodos
                         console.log(jugador1.jugar === jugador2.jugar); // false, no comparten método
-                        console.log(JugadorConPrototipo.prototype.jugar === jugador2.jugar); // true, comparten método
-
-                    </code>
+                        console.log(JugadorConPrototipo.prototype.jugar === jugador2.jugar); // true, comparten método`} />
 
                     <p>
                         Aquí, JugadorConPrototipo es más eficiente en términos de memoria porque el método jugar está definido solo una vez en el prototipo.
