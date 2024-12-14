@@ -10,7 +10,7 @@ export function SteveTimeLine() {
                 llego :(
             " />
 
-            <TimneItem fecha="11/12/2024" autor="Steve"
+            <TimeItem fecha="11/12/2024" autor="Steve"
                 texto="Hay un niño en Venezuela que creció como cualquiera
                     Jugando en calles y aceras sin mucha preocupación
                     Es fácil para los niños, que de cualquier forma juegan
