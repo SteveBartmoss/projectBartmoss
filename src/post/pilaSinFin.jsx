@@ -1,11 +1,16 @@
-import { DivArticle, DivSection } from "../componentes/contenedores/contenedores"
+import { DivArticle, DivContent, DivSection } from "../componentes/contenedores/contenedores"
 import { Portada } from "../componentes/portada/portada"
 
 export function PilaSinFin() {
   return (
     <>
-      <Portada imgPortada={"/Assets/steveA.png"} title={"Vida Desconectado"} text={"Por Steve 22/08/2024"} />
+      <Portada imgPortada={"/Assets/steveA.png"} title={"Pila sin fin"} text={"Por Steve 22/08/2024"} />
 
+      <DivArticle>
+        <DivContent>
+
+        </DivContent>
+      </DivArticle>
       <DivSection>
         <DivArticle>
           
