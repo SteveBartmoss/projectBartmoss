@@ -24,3 +24,15 @@
     padding: .5rem;
     margin: 0 1rem;
 }
+
+.reserved-word{
+    color: #E57474;
+}
+
+.symbol{
+    color: #8CCF7E;
+}
+
+.comun-word{
+    color: #67B0E8;
+}
