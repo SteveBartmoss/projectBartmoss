@@ -58,10 +58,10 @@ export function FirstStepRedux() {
                     </p>
 
                     <CodeSpace title={'store.js'} 
-                        rawCode={`import {configureStore} from '@reduxjs/toolkit'
-                        export const store=configureStore({
-                        reducer: {}
-                        })`} />
+                        rawCode={`import { configureStore } from '@reduxjs/toolkit'
+                        export const store = configureStore ( {
+                        reducer: { }
+                        } )`} />
 
                     <p>
                         Dentro de este estore almacenameremos un objeto gigante, que es donde 
@@ -88,13 +88,13 @@ export function FirstStepRedux() {
                             import ReactDOM from 'react-dom'
                             import './index.css'
                             import App from './App'
-                            import {store} from './app/store'
-                            import {Provider} from 'react-redux'
+                            import { store } from './app/store'
+                            import { Provider } from 'react-redux'
 
                             ReactDOM.render(
-                                <Provider store={store}>
-                                    <App />
-                                </Provider>,
+                                < Provider store = { store } >
+                                    < App />
+                                </ Provider > ,
                                 document.getElementById('root')
                             )`} />
 
