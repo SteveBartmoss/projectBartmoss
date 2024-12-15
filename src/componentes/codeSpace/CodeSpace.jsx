@@ -11,7 +11,7 @@ export function CodeSpace({title,rawCode=""}){
 
     const tokenCode=(codeLine)=>{
         let tokens=codeLine.split(' ')
-        console.log(tokens)
+        //console.log(tokens)
         return tokens
     }
 
