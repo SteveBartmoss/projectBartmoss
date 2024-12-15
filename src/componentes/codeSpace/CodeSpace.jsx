@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import './CodeSpace.css';
+import { clasificateToken } from './gogh';
 
 export function CodeSpace({title,rawCode=""}){
 
@@ -29,7 +30,7 @@ export function CodeSpace({title,rawCode=""}){
                         <p>
                             {
                                 tokenCode(lineCode).map(token =>
-                                    <span>{token} </span>
+                                    <span className={clasificateToken(token)}>{token} </span>
                                 )
                             }
                         </p> 
