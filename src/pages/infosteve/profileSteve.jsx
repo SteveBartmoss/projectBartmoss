@@ -1,7 +1,9 @@
+import { useState } from "react";
 import { Card, CardAccions, CardLink } from "../../componentes/card/card";
 import { Chip } from "../../componentes/chips/chip";
 import { DivCol, DivRow } from "../../componentes/contenedores/contenedores";
 import { ProgresBar } from "../../componentes/progresbar/ProgresBar";
+import { Btn } from "../../componentes/btn/Btn";
 
 
 export function ProfileSteve() {
@@ -35,6 +37,16 @@ export function ProfileSteve() {
             label: "Mocha Editor"
         }
     ]
+
+    const [openBooks, setOpenBooks] = useState(false)
+
+    const openDetailsBooks = () => {
+        setOpenBooks(true)
+    }
+
+    const closeDetailsBooks = () => {
+        setOpenBooks(false)
+    }
 
     return (
         <div>
@@ -92,6 +104,8 @@ export function ProfileSteve() {
                             <h1>Lista de espera de libros</h1>
 
                             <p>5</p>
+
+                            <Btn evento={() => openDetailsBooks()} variant='' color={'principal'}>Detalles</Btn>
                         </Card>
                     </DivCol>
 
