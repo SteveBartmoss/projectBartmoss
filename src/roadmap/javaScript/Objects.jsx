@@ -773,38 +773,35 @@ export function MapObjects() {
                         Ejemplo de Herencia
                     </p>
 
-                    <code>
-                // Clase base o padre
-                        class Animal &#123;
-                                constructor(nombre) &#123;
+                    <CodeSpace title={"Ejemplo"} rawCode={`// Clase base o padre
+                        class Animal {
+                            constructor(nombre) {
                                 this.nombre = nombre;
-                            &#125;
+                            }
 
-                            hacerSonido() &#123;
-                                console.log(`$&#123;this.nombre&#125; hace un sonido.`);
-                            &#125;
-                        &#125;
+                            hacerSonido() {
+                                console.log('$ {this.nombre} hace un sonido.');
+                            }
+                        }
 
                         // Clase hija que extiende de Animal
-                        class Perro extends Animal &#123;
-                            constructor(nombre, raza) &#123;
+                        class Perro extends Animal {
+                            constructor(nombre, raza) {
                                 super(nombre); // Llamada al constructor de la clase padre
                                 this.raza = raza;
-                            &#125;
+                            }
 
                             hacerSonido() &#123;
-                                console.log(`$&#123;this.nombre&#125; ladra.`);
+                                console.log('$ {this.nombre} ladra.');
                             &#125;
-                        &#125;
+                        }
 
                         const animal = new Animal("Gato");
                         animal.hacerSonido(); // "Gato hace un sonido."
 
                         const perro = new Perro("Firulais", "Labrador");
                         perro.hacerSonido(); // "Firulais ladra."
-                        console.log(perro.raza); // "Labrador"
-
-                    </code>
+                        console.log(perro.raza); // "Labrador"`} />
 
                     <p>
                         En este ejemplo, Perro hereda de Animal. La función super(nombre) llama al constructor de Animal para inicializar nombre. La clase hija también puede sobrescribir métodos de la clase padre, como el método hacerSonido en este caso.
