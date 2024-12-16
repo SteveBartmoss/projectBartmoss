@@ -214,7 +214,7 @@ export function MapObjects() {
                         Es ideal cuando necesitas trabajar solo con los valores sin preocuparte por las claves.
                     </p>
 
-                    <CodeSpace title={"Ejemplo"} rawCode={`const usuario = &#123;nombre: "Ana", edad: 25, pais: "México" &#125;
+                    <CodeSpace title={"Ejemplo"} rawCode={`const usuario = { nombre: "Ana", edad: 25, pais: "México" }
                         const valores = Object.values(usuario);
                         console.log(valores); // ["Ana", 25, "México"]`} />
 
