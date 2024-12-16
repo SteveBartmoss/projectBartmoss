@@ -693,7 +693,7 @@ export function MapObjects() {
                         Ejemplo Básico
                     </p>
 
-                    <CodeSpace title={"Ejemplo"} rawCode={`class Persona &#123;
+                    <CodeSpace title={"Ejemplo"} rawCode={`class Persona {
                         constructor(nombre, edad) {
                             this.nombre = nombre;
                             this.edad = edad;
@@ -733,27 +733,23 @@ export function MapObjects() {
                         Ejemplo de Métodos Estáticos y de Instancia
                     </p>
 
-                    <code>
-                        class Calculadora &#123;
-                        // Método estático
-                        static sumar(a, b) &#123;
-                        return a + b;
-                        &#125;
+                    <CodeSpace title={"Ejemplo"} rawCode={`class Calculadora {
+                            // Método estático
+                            static sumar(a, b) {
+                                return a + b;
+                            }
 
-                        // Método de instancia
-                        multiplicar(a, b) &#123;
-                        return a * b;
-                        &#125;
-                        &#125;
-                        &#123; &gt; &#125;
+                            // Método de instancia
+                            multiplicar(a, b) {
+                                return a * b;
+                            }
+                        }
                         // Llamada al método estático sin crear una instancia
                         console.log(Calculadora.sumar(5, 10)); // 15
 
                         // Crear una instancia para usar un método de instancia
                         const calculadora = new Calculadora();
-                        console.log(calculadora.multiplicar(3, 4)); // 12
-
-                    </code>
+                        console.log(calculadora.multiplicar(3, 4)); // 12`} />
 
                     <p>
                         En este ejemplo, sumar es un método estático y se accede directamente mediante Calculadora.sumar(5, 10). En cambio, multiplicar es un método de instancia y requiere crear una instancia de Calculadora antes de poder llamarlo.
