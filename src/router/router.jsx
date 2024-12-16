@@ -26,6 +26,7 @@ import { MainRoad } from "../pages/mainRoad";
 import { RoadMapJs } from "../roadmap/javaScript/roadMapJs";
 import { MapObjects } from "../roadmap/javaScript/Objects";
 import { FirstStepRedux } from "../docu/ReduxFirst";
+import { RoadMapFront } from "../roadmap/frontEnd/roadMapFront";
 
 
 export function RouterBlog(){
@@ -62,6 +63,8 @@ export function RouterBlog(){
                 <Route path="roadmap/javascript" element={<RoadMapJs />}/>
 
                 <Route path="roadmap/javascript/objects" element={<MapObjects />} />
+
+                <Route path="roadmap/frontend" element={<RoadMapFront />} />
             </Routes>
             <Footer />
         </BrowserRouter>
