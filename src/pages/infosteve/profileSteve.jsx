@@ -77,6 +77,22 @@ export function ProfileSteve() {
                                 )
                             }
                         </Card>
+
+                        <Card>
+                            <h1>Libros leidos</h1>
+
+                            <p>
+                                33
+                            </p>
+
+                            <h1>Libros en proceso</h1>
+
+                            <p>6</p>
+
+                            <h1>Lista de espera de libros</h1>
+
+                            <p>5</p>
+                        </Card>
                     </DivCol>
 
                     <DivCol>
