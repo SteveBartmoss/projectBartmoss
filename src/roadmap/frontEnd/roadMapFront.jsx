@@ -3,11 +3,11 @@ import { ExtendPanel } from "../../componentes/extendpanel/ExtendPanel";
 import { Portada } from "../../componentes/portada/portada";
 
 
-export function roadMapFront(){ 
+export function RoadMapFront(){ 
 
     return (
         <>
-            <Portada mgPortada={"/Assets/steveA.png"} title={"Road map FrontEnd"} text={"Por Steve 28/11/2024"} />
+            <Portada imgPortada={"/Assets/steveA.png"} title={"Road map FrontEnd"} text={"Por Steve 28/11/2024"} />
 
             <DivArticle>
                 <DivContent>
