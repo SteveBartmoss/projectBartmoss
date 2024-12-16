@@ -4,6 +4,7 @@ import { Chip } from "../../componentes/chips/chip";
 import { DivCol, DivRow } from "../../componentes/contenedores/contenedores";
 import { ProgresBar } from "../../componentes/progresbar/ProgresBar";
 import { Btn } from "../../componentes/btn/Btn";
+import { Modal } from "../../componentes/modal/Modal";
 
 
 export function ProfileSteve() {
@@ -177,6 +178,14 @@ export function ProfileSteve() {
                         </Card>
                     </DivCol>
                 </DivRow>
+
+                <Modal estado={openBooks} close={closeDetailsBooks}>
+                    <Card>
+                        <h1>Libros leidos</h1>
+                        
+                        <Btn evento={() => closeDetailsBooks()} variant='' color={'error'}>Cerrar</Btn>
+                    </Card>
+                </Modal>
             </DivCol>
         </div>
     )
