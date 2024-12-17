@@ -6,9 +6,10 @@ export function DockerBasic() {
     <>
       <Portada imgPortada={"/Assets/steveA.png"} title={"Empezar con Docker"} text={"Por Steve 30/08/2024"} />
 
-      <DivSection>
-        <DivArticle>
-          <p>
+      <DivArticle>
+        <DivSection>
+
+        <p>
             Como desarrollador es bueno utilizar herramientas que faciliten el trabajo
             y una de estas herramientas es docker, que nos permitira configurar
             ambientes de desarrollo y despliegue del mismo de una forma rapida
@@ -88,8 +89,8 @@ export function DockerBasic() {
             Volatilidad: Un contenedor es efímero por naturaleza. Esto significa que, si se elimina un contenedor, todo lo que estaba en él se pierde a menos que se haya configurado almacenamiento persistente o se hayan guardado los datos en un volumen.
           </p>
 
-        </DivArticle>
-      </DivSection>
+        </DivSection>
+      </DivArticle>
     </>
   )
 }
