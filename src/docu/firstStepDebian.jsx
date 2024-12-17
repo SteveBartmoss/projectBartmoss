@@ -1,4 +1,4 @@
-import { DivArticle, DivSection } from "../componentes/contenedores/contenedores"
+import { DivArticle, DivSection, DivContent } from "../componentes/contenedores/contenedores"
 import { Portada } from "../componentes/portada/portada"
 
 
@@ -7,8 +7,8 @@ export function FirstStepDebian() {
     <>
       <Portada imgPortada={"/Assets/steveA.png"} title={"Mejorar debian"} text={"Por Steve 27/08/2024"} />
 
-      <DivSection>
-        <DivArticle>
+      <DivArticle>
+        <DivContent>
           <p>
             Cuando instalas la distribucion de debian
             hay ciertas cosas que se deben hacer para
@@ -98,8 +98,10 @@ export function FirstStepDebian() {
           <p>
             sudo apt install gnome-shell-extension-prefs
           </p>
-        </DivArticle>
-      </DivSection>
+
+        </DivContent>
+      </DivArticle>
+      
     </>
   )
 }
