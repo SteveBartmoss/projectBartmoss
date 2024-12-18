@@ -1,4 +1,4 @@
-import { DivArticle, DivSection } from "../componentes/contenedores/contenedores"
+import { DivArticle, DivSection, DivContent } from "../componentes/contenedores/contenedores"
 import { Portada } from "../componentes/portada/portada"
 
 export function WhatIsGit() {
@@ -6,9 +6,8 @@ export function WhatIsGit() {
     <>
       <Portada imgPortada={"/Assets/steveA.png"} title={"El hook Context en react"} text={"Por Steve 03/09/2024"} />
 
-      <DivSection>
-        <DivArticle>
-          
+      <DivArticle>
+        <DivContent>
           <p>
             Git es un sistema de control de versiones distribuido que permite a múltiples desarrolladores trabajar en un proyecto de manera colaborativa. Fue creado por Linus Torvalds en 2005, inicialmente para gestionar el desarrollo del kernel de Linux. Git es especialmente útil en proyectos de desarrollo de software porque permite:
           </p>
@@ -33,8 +32,8 @@ export function WhatIsGit() {
             Para instalar git en un sistema windows debemos ir al siguiente enlace:
           </p>
 
-        </DivArticle>
-      </DivSection>
+        </DivContent>
+      </DivArticle>
     </>
   )
 }
