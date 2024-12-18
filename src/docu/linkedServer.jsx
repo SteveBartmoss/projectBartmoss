@@ -1,4 +1,4 @@
-import { DivArticle, DivSection } from "../componentes/contenedores/contenedores";
+import { DivArticle, DivSection, DivContent } from "../componentes/contenedores/contenedores";
 import { Portada } from "../componentes/portada/portada";
 
 
@@ -7,8 +7,8 @@ export function LinkedServer() {
     <>
       <Portada imgPortada={"/Assets/steveA.png"} title={"El hook Context en react"} text={"Por Steve 05/09/2024"} />
 
-      <DivSection>
-        <DivArticle>
+      <DivArticle>
+        <DivContent>
           <p>
             Cuando configuras un Linked Server, estás creando una conexión persistente entre el servidor SQL y otro servidor o base de datos. Esto te permite ejecutar consultas que cruzan servidores, como si los datos estuvieran en el mismo servidor.
           </p>
@@ -41,8 +41,9 @@ export function LinkedServer() {
 
             Interactuar con bases de datos heterogéneas (por ejemplo, SQL Server a MySQL o SQL Server a Oracle).
           </p>
-        </DivArticle>
-      </DivSection>
+
+        </DivContent>
+      </DivArticle>
     </>
   )
 }
