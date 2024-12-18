@@ -1,11 +1,12 @@
-import { DivArticle, DivSection } from "../componentes/contenedores/contenedores"
+import { DivArticle, DivSection, DivContent } from "../componentes/contenedores/contenedores"
 
 
 export function JsFunctionsOne() {
   return (
     <>
-      <DivSection>
-        <DivArticle>
+      <DivArticle>
+        <DivContent>
+          
           <p>
             Cuando trabajas en programacion web te
             toparas con el lenguaje JavaScript y estas
@@ -43,13 +44,13 @@ export function JsFunctionsOne() {
 
           <p>
             find
-            Esat funcion es muy util para buscar un elemento dentro de un array, 
-            de esta forma podemos obtener el objeto o valor que cumple con la 
+            Esat funcion es muy util para buscar un elemento dentro de un array,
+            de esta forma podemos obtener el objeto o valor que cumple con la
             condicion que se pasa como parametro
           </p>
 
-        </DivArticle>
-      </DivSection>
+        </DivContent>
+      </DivArticle>
     </>
   )
 }
