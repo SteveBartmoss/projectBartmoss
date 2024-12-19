@@ -46,6 +46,14 @@ export function HttpCode(){
                     </p>
 
                     <Divider />
+
+                    <h1>101</h1>
+
+                    <p>
+                        El código de respuesta 101 Switching Protocols en el protocolo HTTP es un código de estado que indica 
+                        que el servidor acepta cambiar el protocolo de comunicación a uno solicitado por el cliente. Se utiliza 
+                        principalmente para actualizar la conexión a un protocolo diferente, como en el caso del WebSocket.
+                    </p>
                     
                 </DivContent>
             </DivArticle>
@@ -157,7 +165,12 @@ app.listen(3000, () => {
 
 El uso del código `100 Continue` ayuda a mejorar la eficiencia en escenarios donde el tamaño del cuerpo de la solicitud es significativo.
 
-El código de respuesta **101 Switching Protocols** en el protocolo HTTP es un código de estado que indica que el servidor acepta cambiar el protocolo de comunicación a uno solicitado por el cliente. Se utiliza principalmente para actualizar la conexión a un protocolo diferente, como en el caso del **WebSocket**.
+termina el contenido de codigo 100
+-----
+
+codigo 101
+
+
 
 ---
 
