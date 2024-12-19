@@ -1,8 +1,10 @@
+import { Portada } from "../componentes/portada/portada"
 
 
 export function HttpCode(){
     return(
         <>
+            <Portada imgPortada={"/Assets/steveA.png"} title={"Codigos de respuesta"} text={"Por Steve 03/09/2024"} />
         </>
     )
 }
@@ -118,5 +120,200 @@ app.listen(3000, () => {
 3. **Manejo de errores:** Si el servidor no puede procesar la solicitud (por ejemplo, debido a un encabezado inválido), puede responder con otro código (como `417 Expectation Failed`) antes de que el cliente envíe el cuerpo.
 
 El uso del código `100 Continue` ayuda a mejorar la eficiencia en escenarios donde el tamaño del cuerpo de la solicitud es significativo.
+
+El código de respuesta **101 Switching Protocols** en el protocolo HTTP es un código de estado que indica que el servidor acepta cambiar el protocolo de comunicación a uno solicitado por el cliente. Se utiliza principalmente para actualizar la conexión a un protocolo diferente, como en el caso del **WebSocket**.
+
+---
+
+## Características Principales
+
+1. **Propósito:** Notificar al cliente que el servidor ha aceptado cambiar el protocolo a uno diferente especificado en el encabezado `Upgrade` de la solicitud.
+2. **Casos de Uso Común:**  
+   - Actualización de HTTP/1.1 a **WebSocket**.
+   - Cambios a otros protocolos como HTTP/2 o HTTP/3.
+3. **Requisitos:**  
+   - El cliente incluye un encabezado `Upgrade` especificando el protocolo al que desea cambiar.
+   - El servidor responde con un encabezado `Upgrade` confirmando el cambio.
+
+---
+
+## Flujo de Comunicación
+
+1. El cliente envía una solicitud con el encabezado `Upgrade` indicando el protocolo deseado.
+2. Si el servidor acepta, responde con el código **101 Switching Protocols**.
+3. A partir de este momento, la conexión utiliza el nuevo protocolo.
+
+---
+
+## Ejemplo en Código
+
+### Ejemplo de Solicitud del Cliente
+
+```http
+GET /chat HTTP/1.1
+Host: example.com
+Connection: Upgrade
+Upgrade: websocket
+```
+
+### Respuesta del Servidor
+
+```http
+HTTP/1.1 101 Switching Protocols
+Connection: Upgrade
+Upgrade: websocket
+```
+
+Después de esta respuesta, la conexión cambiará a WebSocket y podrá intercambiar mensajes según ese protocolo.
+
+---
+
+### Implementación en WebSocket (Node.js)
+
+#### Servidor
+
+```javascript
+const http = require('http');
+const WebSocket = require('ws');
+
+const server = http.createServer((req, res) => {
+    res.writeHead(426, { 'Content-Type': 'text/plain' });
+    res.end('Upgrade required');
+});
+
+const wss = new WebSocket.Server({ server });
+
+wss.on('connection', (ws) => {
+    console.log('Client connected via WebSocket');
+    ws.on('message', (message) => {
+        console.log(`Received message: ${message}`);
+        ws.send('Message received');
+    });
+});
+
+server.listen(8080, () => {
+    console.log('Server listening on http://localhost:8080');
+});
+```
+
+#### Cliente
+
+```javascript
+const WebSocket = require('ws');
+
+const ws = new WebSocket('ws://localhost:8080');
+
+ws.on('open', () => {
+    console.log('Connected to WebSocket server');
+    ws.send('Hello, server!');
+});
+
+ws.on('message', (message) => {
+    console.log(`Received: ${message}`);
+});
+```
+
+---
+
+## Notas Importantes
+
+1. **Uso Limitado:** El código `101 Switching Protocols` solo se usa cuando hay un cambio real en el protocolo. De lo contrario, no es necesario.
+2. **Encabezado Obligatorio:** La solicitud debe incluir los encabezados `Upgrade` y `Connection` para que el servidor considere la actualización.
+3. **Seguridad:** Antes de aceptar un cambio de protocolo, el servidor debe asegurarse de que sea seguro y compatible.
+
+Este código de estado es esencial para la interoperabilidad entre protocolos y se usa principalmente en aplicaciones modernas como WebSockets para proporcionar comunicación en tiempo real.
+
+El código de respuesta **102 Processing** es parte del protocolo HTTP/1.1 y está definido en la especificación [RFC 2518](https://www.rfc-editor.org/rfc/rfc2518), que introduce extensiones para el protocolo HTTP en el contexto de Web Distributed Authoring and Versioning (WebDAV).
+
+---
+
+## Propósito del Código 102 Processing
+
+Este código de estado indica que el servidor ha recibido y está procesando la solicitud, pero necesita más tiempo para completarla. 
+
+### Usos Comunes
+- **WebDAV:** Se utiliza en operaciones complejas de WebDAV, como cuando se ejecutan múltiples operaciones en recursos (por ejemplo, copiar o mover un árbol de directorios).
+- **Evitar Timeouts:** Responde al cliente que el servidor aún está trabajando en la solicitud, para evitar que el cliente asuma que la conexión se ha perdido.
+
+---
+
+## Características Principales
+1. **Indicación de Progreso:** Sirve como una señal al cliente de que la solicitud no ha sido olvidada.
+2. **No Finaliza la Solicitud:** La respuesta `102 Processing` no es una respuesta final. La operación sigue en curso.
+3. **Uso Limitado:** Normalmente utilizado en contextos específicos (como WebDAV) y no en solicitudes HTTP estándar.
+
+---
+
+## Ejemplo de Flujo
+
+1. El cliente envía una solicitud compleja, como una operación WebDAV que afecta a múltiples recursos.
+2. El servidor responde con `102 Processing` para informar al cliente que la solicitud está en curso.
+3. El servidor luego envía una respuesta final (por ejemplo, `200 OK`) cuando completa la operación.
+
+---
+
+## Ejemplo en Código
+
+### Ejemplo de Solicitud del Cliente (WebDAV)
+
+```http
+MOVE /documents/folderA/ HTTP/1.1
+Host: example.com
+Destination: http://example.com/documents/folderB/
+```
+
+### Respuesta del Servidor
+
+#### Respuesta Inicial (Progreso)
+
+```http
+HTTP/1.1 102 Processing
+```
+
+#### Respuesta Final (Éxito)
+
+```http
+HTTP/1.1 201 Created
+```
+
+---
+
+## Implementación en Node.js
+
+Aunque `102 Processing` no es común en aplicaciones estándar, puedes simular su uso en un servidor Node.js:
+
+```javascript
+const http = require('http');
+
+const server = http.createServer((req, res) => {
+    if (req.method === 'MOVE') {
+        // Simular una operación larga
+        res.writeHead(102, { 'Content-Type': 'text/plain' });
+        res.write('Processing...');
+        
+        setTimeout(() => {
+            res.writeHead(201, { 'Content-Type': 'text/plain' });
+            res.end('Move operation completed');
+        }, 5000); // Simula 5 segundos de procesamiento
+    } else {
+        res.writeHead(404, { 'Content-Type': 'text/plain' });
+        res.end('Not Found');
+    }
+});
+
+server.listen(8080, () => {
+    console.log('Server running on http://localhost:8080');
+});
+```
+
+---
+
+## Notas Importantes
+
+1. **Contexto Limitado:** El código 102 es principalmente para WebDAV y no suele usarse en aplicaciones web estándar.
+2. **Compatibilidad:** Algunos clientes y navegadores pueden no manejar adecuadamente este código de estado.
+3. **Tiempo de Proceso:** Si el servidor no espera un procesamiento prolongado, no necesita usar este código.
+
+Este código es una herramienta útil en casos específicos donde las operaciones pueden tardar mucho tiempo, brindando una mejor experiencia al cliente al mantenerlo informado.
 
 */
