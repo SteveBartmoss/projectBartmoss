@@ -1,18 +1,41 @@
 import { Portada } from "../componentes/portada/portada"
-
+import { DivArticle, DivContent } from "../../componentes/contenedores/contenedores";
 
 export function HttpCode(){
     return(
         <>
             <Portada imgPortada={"/Assets/steveA.png"} title={"Codigos de respuesta"} text={"Por Steve 03/09/2024"} />
+
+            <DivArticle>
+                <DivContent>
+                    <h1>100</h1>
+
+                    <p>
+                        El código de respuesta 100 Continue en el protocolo HTTP es un código de estado informativo. 
+                        Indica que el servidor ha recibido los encabezados iniciales de la solicitud del cliente y que 
+                        el cliente puede continuar enviando el cuerpo de la solicitud (por ejemplo, el contenido de un 
+                        archivo grande que se está cargando).
+                    </p>
+
+                    <p>
+                        Este código se usa principalmente en situaciones donde el cliente envía una solicitud 
+                        con cuerpo (como una solicitud `POST` o `PUT`) y utiliza el encabezado Expect: 100-continue. 
+                        Este encabezado indica que el cliente desea verificar si el servidor está dispuesto a procesar 
+                        la solicitud antes de enviar el cuerpo completo. Si el servidor responde con 100 Continue, 
+                        el cliente envía el cuerpo de la solicitud.
+                    </p>
+                    
+                </DivContent>
+            </DivArticle>
         </>
     )
 }
 
 /*
-El código de respuesta **100 Continue** en el protocolo HTTP es un código de estado informativo. Indica que el servidor ha recibido los encabezados iniciales de la solicitud del cliente y que el cliente puede continuar enviando el cuerpo de la solicitud (por ejemplo, el contenido de un archivo grande que se está cargando).
 
-Este código se usa principalmente en situaciones donde el cliente envía una solicitud **con cuerpo** (como una solicitud `POST` o `PUT`) y utiliza el encabezado `Expect: 100-continue`. Este encabezado indica que el cliente desea verificar si el servidor está dispuesto a procesar la solicitud antes de enviar el cuerpo completo. Si el servidor responde con `100 Continue`, el cliente envía el cuerpo de la solicitud.
+
+
+
 
 ---
 
