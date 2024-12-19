@@ -54,6 +54,25 @@ export function HttpCode(){
                         que el servidor acepta cambiar el protocolo de comunicación a uno solicitado por el cliente. Se utiliza 
                         principalmente para actualizar la conexión a un protocolo diferente, como en el caso del WebSocket.
                     </p>
+
+                    <h2>Características Principales</h2>
+
+                    <p>
+                        Propósito: Notificar al cliente que el servidor ha aceptado cambiar el protocolo a uno diferente 
+                        especificado en el encabezado `Upgrade` de la solicitud.
+                    </p>
+
+                    <p>
+                        Casos de Uso Común:**  
+                        - Actualización de HTTP/1.1 a **WebSocket**.
+                        - Cambios a otros protocolos como HTTP/2 o HTTP/3.
+                    </p>
+
+                    <p>
+                        Requisitos:  
+                        - El cliente incluye un encabezado `Upgrade` especificando el protocolo al que desea cambiar.
+                        - El servidor responde con un encabezado `Upgrade` confirmando el cambio.
+                    </p>
                     
                 </DivContent>
             </DivArticle>
@@ -174,15 +193,9 @@ codigo 101
 
 ---
 
-## Características Principales
+## 
 
-1. **Propósito:** Notificar al cliente que el servidor ha aceptado cambiar el protocolo a uno diferente especificado en el encabezado `Upgrade` de la solicitud.
-2. **Casos de Uso Común:**  
-   - Actualización de HTTP/1.1 a **WebSocket**.
-   - Cambios a otros protocolos como HTTP/2 o HTTP/3.
-3. **Requisitos:**  
-   - El cliente incluye un encabezado `Upgrade` especificando el protocolo al que desea cambiar.
-   - El servidor responde con un encabezado `Upgrade` confirmando el cambio.
+
 
 ---
 
