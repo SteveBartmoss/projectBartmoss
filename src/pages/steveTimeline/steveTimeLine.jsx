@@ -5,6 +5,11 @@ export function SteveTimeLine() {
     return (
         <div>
 
+            <TimeItem fecha="19/12/2024" autor="Steve" texto="
+                Hay un chamo en Venezuela que poco a poco comprende
+                Que la vida es diferente y que pudiera ser mejor
+            " />
+
             <TimeItem fecha="11/12/2024" autor="Steve" texto="
                 Jajaja ahora si el frio esta potente, el invierno 
                 llego :(
