@@ -24,7 +24,26 @@ export function HttpCode(){
                         la solicitud antes de enviar el cuerpo completo. Si el servidor responde con 100 Continue, 
                         el cliente envía el cuerpo de la solicitud.
                     </p>
-                    
+
+                    <h2>Características Principales</h2>
+
+                    <p>
+                        Propósito: Optimizar el flujo de datos entre cliente y servidor, evitando enviar cuerpos grandes 
+                        si el servidor no puede manejar la solicitud.
+                    </p>
+
+                    <p>
+                        Cuando se usa: Se usa típicamente en solicitudes que incluyen el encabezado Expect: 100-continue.
+                    </p>
+
+                    <p>
+                        Flujo de comunicación:
+                        El cliente envía una solicitud inicial con encabezados y el encabezado Expect: 100-continue.
+                        El servidor responde con 100 Continue si todo está en orden.
+                        El cliente envía el cuerpo de la solicitud.
+                        El servidor responde con un código final (como 200 OK o 400 Bad Request).
+                    </p>
+
                 </DivContent>
             </DivArticle>
         </>
@@ -39,15 +58,6 @@ export function HttpCode(){
 
 ---
 
-## Características Principales
-
-1. **Propósito:** Optimizar el flujo de datos entre cliente y servidor, evitando enviar cuerpos grandes si el servidor no puede manejar la solicitud.
-2. **Cuando se usa:** Se usa típicamente en solicitudes que incluyen el encabezado `Expect: 100-continue`.
-3. **Flujo de comunicación:**
-   - El cliente envía una solicitud inicial con encabezados y el encabezado `Expect: 100-continue`.
-   - El servidor responde con `100 Continue` si todo está en orden.
-   - El cliente envía el cuerpo de la solicitud.
-   - El servidor responde con un código final (como `200 OK` o `400 Bad Request`).
 
 ---
 
