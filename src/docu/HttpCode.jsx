@@ -73,6 +73,16 @@ export function HttpCode(){
                         - El cliente incluye un encabezado `Upgrade` especificando el protocolo al que desea cambiar.
                         - El servidor responde con un encabezado `Upgrade` confirmando el cambio.
                     </p>
+
+                    <Divider />
+
+                    <h1>102</h1>
+
+                    <p>
+                        El código de respuesta 102 Processing es parte del protocolo HTTP/1.1 y está definido en la 
+                        especificación RFC 2518 (https://www.rfc-editor.org/rfc/rfc2518), que introduce extensiones 
+                        para el protocolo HTTP en el contexto de Web Distributed Authoring and Versioning (WebDAV).
+                    </p>
                     
                 </DivContent>
             </DivArticle>
@@ -284,6 +294,9 @@ ws.on('message', (message) => {
 3. **Seguridad:** Antes de aceptar un cambio de protocolo, el servidor debe asegurarse de que sea seguro y compatible.
 
 Este código de estado es esencial para la interoperabilidad entre protocolos y se usa principalmente en aplicaciones modernas como WebSockets para proporcionar comunicación en tiempo real.
+
+
+--- codigo 102
 
 El código de respuesta **102 Processing** es parte del protocolo HTTP/1.1 y está definido en la especificación [RFC 2518](https://www.rfc-editor.org/rfc/rfc2518), que introduce extensiones para el protocolo HTTP en el contexto de Web Distributed Authoring and Versioning (WebDAV).
 
