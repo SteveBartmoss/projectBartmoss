@@ -20,7 +20,7 @@ export function HttpCode(){
 
                     <p>
                         Este código se usa principalmente en situaciones donde el cliente envía una solicitud 
-                        con cuerpo (como una solicitud `POST` o `PUT`) y utiliza el encabezado Expect: 100-continue. 
+                        con cuerpo (como una solicitud POST o PUT) y utiliza el encabezado Expect: 100-continue. 
                         Este encabezado indica que el cliente desea verificar si el servidor está dispuesto a procesar 
                         la solicitud antes de enviar el cuerpo completo. Si el servidor responde con 100 Continue, 
                         el cliente envía el cuerpo de la solicitud.
@@ -59,19 +59,19 @@ export function HttpCode(){
 
                     <p>
                         Propósito: Notificar al cliente que el servidor ha aceptado cambiar el protocolo a uno diferente 
-                        especificado en el encabezado `Upgrade` de la solicitud.
+                        especificado en el encabezado Upgrade de la solicitud.
                     </p>
 
                     <p>
-                        Casos de Uso Común:**  
-                        - Actualización de HTTP/1.1 a **WebSocket**.
-                        - Cambios a otros protocolos como HTTP/2 o HTTP/3.
+                        Casos de Uso Común:  
+                        Actualización de HTTP/1.1 a WebSocket.
+                        Cambios a otros protocolos como HTTP/2 o HTTP/3.
                     </p>
 
                     <p>
                         Requisitos:  
-                        - El cliente incluye un encabezado `Upgrade` especificando el protocolo al que desea cambiar.
-                        - El servidor responde con un encabezado `Upgrade` confirmando el cambio.
+                        El cliente incluye un encabezado `Upgrade` especificando el protocolo al que desea cambiar.
+                        El servidor responde con un encabezado `Upgrade` confirmando el cambio.
                     </p>
 
                     <Divider />
