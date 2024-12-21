@@ -105,7 +105,7 @@ export function HttpCode(){
                         No Finaliza la Solicitud: La respuesta `102 Processing` no es una respuesta final. La operación sigue en curso.
                         Uso Limitado: Normalmente utilizado en contextos específicos (como WebDAV) y no en solicitudes HTTP estándar.
                     </p>
-                    
+
                 </DivContent>
             </DivArticle>
         </>
@@ -412,5 +412,75 @@ server.listen(8080, () => {
 3. **Tiempo de Proceso:** Si el servidor no espera un procesamiento prolongado, no necesita usar este código.
 
 Este código es una herramienta útil en casos específicos donde las operaciones pueden tardar mucho tiempo, brindando una mejor experiencia al cliente al mantenerlo informado.
+
+-- codigo 103
+
+El código de estado **103 Early Hints** en el protocolo HTTP es una respuesta provisional que permite a los servidores sugerir recursos vinculados antes de enviar la respuesta final. Esto ayuda a mejorar el rendimiento al permitir que los navegadores comiencen a precargar recursos importantes (como archivos CSS, JavaScript o imágenes) antes de que se reciba la respuesta completa.
+
+---
+
+### **Explicación**
+1. **Propósito**:
+   - Reduce el tiempo de carga de la página web.
+   - Permite a los clientes obtener una "pista temprana" sobre recursos críticos que probablemente necesitarán para procesar la solicitud completa.
+
+2. **Contexto de Uso**:
+   - Se utiliza principalmente con encabezados como `Link` para indicar los recursos que el navegador puede cargar anticipadamente.
+   - Común en aplicaciones que implementan HTTP/2 o HTTP/3, ya que estas versiones del protocolo soportan bien la multiplexación.
+
+3. **Flujo de Trabajo**:
+   - El servidor responde inicialmente con un código `103 Early Hints`, incluyendo encabezados que apuntan a recursos necesarios.
+   - Luego, el servidor envía la respuesta completa con el estado final, como `200 OK`.
+
+---
+
+### **Ejemplo Práctico**
+**Solicitud HTTP del cliente**:
+```http
+GET /index.html HTTP/1.1
+Host: example.com
+```
+
+**Respuesta del servidor**:
+```http
+HTTP/1.1 103 Early Hints
+Link: </styles.css>; rel=preload; as=style
+Link: </script.js>; rel=preload; as=script
+```
+
+**Respuesta final**:
+```http
+HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <script src="/script.js"></script>
+</body>
+</html>
+```
+
+### **Explicación del Ejemplo**
+1. El servidor envía primero una respuesta `103 Early Hints` con encabezados `Link` que indican al navegador que comience a cargar `styles.css` y `script.js`.
+2. Mientras el navegador precarga esos recursos, el servidor prepara y envía la respuesta completa con un código `200 OK` y el contenido HTML.
+3. El navegador ya tiene los recursos críticos (CSS y JS) listos antes de renderizar la página, lo que mejora el tiempo de carga.
+
+---
+
+### **Ventajas del Código 103**
+- **Rendimiento**: Reduce la latencia percibida al permitir que los navegadores predescarguen recursos importantes.
+- **Optimización**: Ideal para aplicaciones web de alta carga que manejan muchos recursos críticos.
+
+### **Soporte y Consideraciones**
+- Algunos navegadores modernos ya soportan el código `103`, pero su adopción aún no es universal.
+- Debe usarse junto con protocolos que admitan conexiones rápidas y paralelas, como HTTP/2.
+
+---
+
+El código `103 Early Hints` es una herramienta poderosa para optimizar tiempos de carga y mejorar la experiencia del usuario en la web.
 
 */
