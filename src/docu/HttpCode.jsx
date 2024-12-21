@@ -83,6 +83,28 @@ export function HttpCode(){
                         especificación RFC 2518 (https://www.rfc-editor.org/rfc/rfc2518), que introduce extensiones 
                         para el protocolo HTTP en el contexto de Web Distributed Authoring and Versioning (WebDAV).
                     </p>
+
+                    <h2>Propósito del Código 102 Processing</h2>
+
+                    <p>
+                        Este código de estado indica que el servidor ha recibido y está procesando la solicitud, pero 
+                        necesita más tiempo para completarla.
+                    </p>
+
+                    <h2>Usos Comunes</h2>
+
+                    <p>
+                        WebDAV: Se utiliza en operaciones complejas de WebDAV, como cuando se ejecutan múltiples operaciones en recursos (por ejemplo, copiar o mover un árbol de directorios).
+                        Evitar Timeouts: Responde al cliente que el servidor aún está trabajando en la solicitud, para evitar que el cliente asuma que la conexión se ha perdido.
+                    </p>
+
+                    <h2>Características Principales</h2>
+
+                    <p>
+                        Indicación de Progreso: Sirve como una señal al cliente de que la solicitud no ha sido olvidada.
+                        No Finaliza la Solicitud: La respuesta `102 Processing` no es una respuesta final. La operación sigue en curso.
+                        Uso Limitado: Normalmente utilizado en contextos específicos (como WebDAV) y no en solicitudes HTTP estándar.
+                    </p>
                     
                 </DivContent>
             </DivArticle>
