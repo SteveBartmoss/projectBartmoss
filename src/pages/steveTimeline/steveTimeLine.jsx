@@ -5,6 +5,11 @@ export function SteveTimeLine() {
     return (
         <div>
 
+            <TimeItem fecha="23/12/2024" autor="Steve" text="
+                Un poeta en Venezuela canta con la frente arriba
+                Lo que la razón le diga y lo que dicte el corazón" 
+            />
+
             <TimeItem fecha="22/12/2024" autor="Steve" text="
                 Hay un tipo en Venezuela que, aunque digan lo que digan
                 Es real como cualquiera que sienta rencor y amor" 
