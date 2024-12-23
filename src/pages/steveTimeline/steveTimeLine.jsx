@@ -5,6 +5,11 @@ export function SteveTimeLine() {
     return (
         <div>
 
+            <TimeItem fecha="22/12/2024" autor="Steve" text="
+                Hay un tipo en Venezuela que, aunque digan lo que digan
+                Es real como cualquiera que sienta rencor y amor" 
+            />
+
             <TimeItem fecha="20/12/2024" autor="Steve" texto="
                 Hay un tipo en Venezuela que quiere morir tranquilo
                 Planea meterse un tiro en un banquillo'e callejón" 
