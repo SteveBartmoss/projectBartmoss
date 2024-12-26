@@ -5,7 +5,11 @@ export function SteveTimeLine() {
     return (
         <div>
 
-            <TimeItem fecha="23/12/2024" autor="Steve" text="
+            <TimeItem fecha="25/12/2024" autor="Steve" text="
+                Bueno, hoy fue un buen dia" 
+            />
+
+            <TimeItem fecha="24/12/2024" autor="Steve" text="
                 Si cada caracter del codigo de un software costara, 
                 quizas los clientes lo pensarian dos veces antes de 
                 pedir tantas cosas XD" 
