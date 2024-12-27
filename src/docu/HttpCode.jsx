@@ -483,4 +483,85 @@ Content-Type: text/html
 
 El código `103 Early Hints` es una herramienta poderosa para optimizar tiempos de carga y mejorar la experiencia del usuario en la web.
 
+
+codigo 200
+
+### Código de Respuesta HTTP 200: "OK"
+
+#### **Descripción**
+El código HTTP `200 OK` indica que la solicitud del cliente se procesó correctamente en el servidor y que la respuesta contiene el resultado esperado. Este código se utiliza en la mayoría de las respuestas exitosas, como en solicitudes `GET` o `POST`.
+
+- En una solicitud `GET`, un código `200 OK` significa que el recurso solicitado fue encontrado y se devuelve en el cuerpo de la respuesta.
+- En una solicitud `POST`, significa que la operación se completó correctamente y se proporciona una respuesta con el estado o los datos resultantes.
+
+---
+
+#### **Ejemplo 1: Respuesta a una solicitud GET**
+
+##### **Solicitud**
+El cliente solicita un recurso, como la información de un usuario:
+```http
+GET /users/123 HTTP/1.1
+Host: example.com
+```
+
+##### **Respuesta**
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 56
+
+{
+  "id": 123,
+  "name": "John Doe",
+  "email": "john.doe@example.com"
+}
+```
+
+En este caso, el código `200 OK` confirma que el recurso del usuario con ID `123` fue encontrado y su información se devuelve en formato JSON.
+
+---
+
+#### **Ejemplo 2: Respuesta a una solicitud POST**
+
+##### **Solicitud**
+El cliente envía datos para crear un nuevo usuario:
+```http
+POST /users HTTP/1.1
+Host: example.com
+Content-Type: application/json
+
+{
+  "name": "Jane Doe",
+  "email": "jane.doe@example.com"
+}
+```
+
+##### **Respuesta**
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 44
+
+{
+  "id": 124,
+  "message": "User created successfully"
+}
+```
+
+Aquí, el código `200 OK` confirma que el usuario fue creado correctamente. La respuesta incluye un mensaje de confirmación y el ID del nuevo usuario.
+
+---
+
+#### **Explicación**
+
+- **Es estándar en respuestas exitosas**: El código `200` se utiliza para indicar que todo está bien y que el servidor pudo procesar la solicitud.
+- **Contenido del cuerpo**: Dependiendo de la operación, el cuerpo de la respuesta puede contener datos (como en `GET`) o un mensaje de confirmación (como en `POST`).
+
+---
+
+#### **Consideraciones**
+- **No siempre es necesario un cuerpo de respuesta**: Aunque es común incluir información en el cuerpo, no siempre es obligatorio. Por ejemplo, en una solicitud `DELETE` exitosa, el cuerpo podría estar vacío.
+- **Consistencia**: El uso del código `200` ayuda a los clientes a comprender rápidamente que la operación fue exitosa sin necesidad de analizar en detalle el cuerpo de la respuesta.
+
 */
