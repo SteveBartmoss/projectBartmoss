@@ -5,32 +5,32 @@ export function SteveTimeLine() {
     return (
         <div>
 
-            <TimeItem fecha="27/12/2024" autor="Steve" text="
+            <TimeItem fecha="27/12/2024" autor="Steve" texto="
                 Maldito sea el hombre que confía en otro hombre
                 Gran verdad en esa frase se esconde"
             />
 
-            <TimeItem fecha="26/12/2024" autor="Steve" text="
+            <TimeItem fecha="26/12/2024" autor="Steve" texto="
                 Supongo que se termino vientos de invierno no ?
                 Deberia seguir sueño de primavera ?" 
             />
 
-            <TimeItem fecha="25/12/2024" autor="Steve" text="
+            <TimeItem fecha="25/12/2024" autor="Steve" texto="
                 Bueno, hoy fue un buen dia" 
             />
 
-            <TimeItem fecha="24/12/2024" autor="Steve" text="
+            <TimeItem fecha="24/12/2024" autor="Steve" texto="
                 Si cada caracter del codigo de un software costara, 
                 quizas los clientes lo pensarian dos veces antes de 
                 pedir tantas cosas XD" 
             />
 
-            <TimeItem fecha="23/12/2024" autor="Steve" text="
+            <TimeItem fecha="23/12/2024" autor="Steve" texto="
                 Un poeta en Venezuela canta con la frente arriba
                 Lo que la razón le diga y lo que dicte el corazón" 
             />
 
-            <TimeItem fecha="22/12/2024" autor="Steve" text="
+            <TimeItem fecha="22/12/2024" autor="Steve" texto="
                 Hay un tipo en Venezuela que, aunque digan lo que digan
                 Es real como cualquiera que sienta rencor y amor" 
             />
