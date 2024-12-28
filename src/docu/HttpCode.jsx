@@ -1,6 +1,7 @@
+import { DivArticle, DivContent } from "../componentes/contenedores/contenedores"
+import { Divider } from "../componentes/divider/Divider"
 import { Portada } from "../componentes/portada/portada"
-import { DivArticle, DivContent } from "../../componentes/contenedores/contenedores";
-import { Divider } from "../../componentes/divider/Divider";
+
 
 export function HttpCode(){
     return(
