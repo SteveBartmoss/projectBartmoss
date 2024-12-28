@@ -50,16 +50,19 @@ export function ProfileSteve() {
     }
 
     return (
-        <div>
-            <Card>
-                <h1>Acerca de steve</h1>
-                <p>
-                    Programador web fan de los temas cyberpunk,
-                    sobre programacion, tecnologia y videojuegos.
-                    Con la idea de poder compartir con otas personas
-                    el conocimiento sobre programacion que posee
-                </p>
-            </Card>
+        <>
+            <DivCol>
+                <Card>
+                    <h1>Acerca de steve</h1>
+                    <p>
+                        Programador web fan de los temas cyberpunk,
+                        sobre programacion, tecnologia y videojuegos.
+                        Con la idea de poder compartir con otas personas
+                        el conocimiento sobre programacion que posee
+                    </p>
+                </Card>
+            </DivCol>
+
             <DivCol>
                 <DivRow>
                     <DivCol>
@@ -182,11 +185,11 @@ export function ProfileSteve() {
                 <Modal estado={openBooks} close={closeDetailsBooks}>
                     <Card>
                         <h1>Libros leidos</h1>
-                        
+
                         <Btn evento={() => closeDetailsBooks()} variant='' color={'error'}>Cerrar</Btn>
                     </Card>
                 </Modal>
             </DivCol>
-        </div>
+        </>
     )
 }
