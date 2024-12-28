@@ -1,4 +1,4 @@
-import { DivArticle, DivSection, DivContent } from "../componentes/contenedores/contenedores"
+import { DivArticle, DivContent } from "../componentes/contenedores/contenedores"
 import { Portada } from "../componentes/portada/portada"
 
 
