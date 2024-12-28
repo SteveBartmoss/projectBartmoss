@@ -9,9 +9,9 @@ export function Footer() {
     return (
         <div className="div-footer">
             <a className={isDarkTheme ? 'footer-link-ligth' : 'footer-link-dark' } rel="noopener noreferrer" target="_blank" href='https://uisteve.netlify.app/'>Power by UiSteve</a>
-            <a>Contacto</a>
+            <a className={isDarkTheme ? 'footer-link-ligth' : 'footer-link-dark' } href="mailto:stevechanvitas@gmail.com">Contacto</a>
             <a className={isDarkTheme ? 'footer-link-ligth' : 'footer-link-dark' } rel="noopener noreferrer" target="_blank" href='https://www.youtube.com/@stevechambitas2782'>Youtube</a>
-            <a>Discord</a>
+            <a className={isDarkTheme ? 'footer-link-ligth' : 'footer-link-dark' } rel="noopener noreferrer" target="_blank" href="https://discord.gg/QTdVBq5Q9r">Discord</a>
             <a className={isDarkTheme ? 'footer-link-ligth' : 'footer-link-dark' } rel="noopener noreferrer" target="_blank" href='https://github.com/SteveBartmoss' >GitHub</a>
         </div>
     )
