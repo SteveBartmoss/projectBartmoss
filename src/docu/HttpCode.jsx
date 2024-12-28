@@ -123,8 +123,37 @@ export function HttpCode() {
                     </p>
 
                     <p>
-                        En una solicitud POST, significa que la operación se completó correctamente y se proporciona una 
+                        En una solicitud POST, significa que la operación se completó correctamente y se proporciona una
                         respuesta con el estado o los datos resultantes.
+                    </p>
+
+                    <h1>Características Principales</h1>
+
+                    <h3>Estándar en respuestas exitosas</h3>
+
+                    <p>
+                        El código 200 se utiliza para indicar que todo está bien y que el servidor pudo procesar la solicitud.
+                    </p>
+
+                    <h3>Contenido del cuerpo</h3>
+
+                    <p>
+                        Dependiendo de la operación, el cuerpo de la respuesta puede contener datos (como en GET) o un mensaje de
+                        confirmación (como en POST).
+                    </p>
+
+                    <h3>No siempre es necesario un cuerpo de respuesta</h3>
+                    <p>
+                        Aunque es común incluir información en el cuerpo, no siempre es obligatorio. Por ejemplo, en una solicitud 
+                        DELETE exitosa, el cuerpo podría estar vacío.
+
+                    </p>
+
+                    <h3>Consistencia</h3>
+
+                    <p>
+                        El uso del código 200 ayuda a los clientes a comprender rápidamente que la operación fue exitosa sin necesidad 
+                        de analizar en detalle el cuerpo de la respuesta.
                     </p>
 
                 </DivContent>
@@ -237,16 +266,6 @@ termina el contenido de codigo 100
 -----
 
 codigo 101
-
-
-
----
-
-## 
-
-
-
----
 
 ## Flujo de Comunicación
 
@@ -562,15 +581,5 @@ Aquí, el código `200 OK` confirma que el usuario fue creado correctamente. La 
 
 ---
 
-#### **Explicación**
-
-- **Es estándar en respuestas exitosas**: El código `200` se utiliza para indicar que todo está bien y que el servidor pudo procesar la solicitud.
-- **Contenido del cuerpo**: Dependiendo de la operación, el cuerpo de la respuesta puede contener datos (como en `GET`) o un mensaje de confirmación (como en `POST`).
-
----
-
-#### **Consideraciones**
-- **No siempre es necesario un cuerpo de respuesta**: Aunque es común incluir información en el cuerpo, no siempre es obligatorio. Por ejemplo, en una solicitud `DELETE` exitosa, el cuerpo podría estar vacío.
-- **Consistencia**: El uso del código `200` ayuda a los clientes a comprender rápidamente que la operación fue exitosa sin necesidad de analizar en detalle el cuerpo de la respuesta.
 
 */
