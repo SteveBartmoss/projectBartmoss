@@ -27,6 +27,7 @@ import { RoadMapJs } from "../roadmap/javaScript/roadMapJs";
 import { MapObjects } from "../roadmap/javaScript/Objects";
 import { FirstStepRedux } from "../docu/ReduxFirst";
 import { RoadMapFront } from "../roadmap/frontEnd/roadMapFront";
+import { HttpCode } from "../docu/HttpCode";
 
 
 export function RouterBlog(){
@@ -51,6 +52,7 @@ export function RouterBlog(){
                 <Route path="docu/basiclinux" element={<BasicLinux />} />
                 <Route path="docu/vimgg" element={<Vimgg />} />
                 <Route path="docu/primeroredux" element={<FirstStepRedux />} />
+                <Route path="docu/httpcodes" element={<HttpCode />} />
 
                 <Route path="steve/desconectado" element={<DesconectadoLife />} />
                 <Route path="steve/pilasinfin" element={<PilaSinFin />} />
