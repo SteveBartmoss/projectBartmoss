@@ -3,8 +3,8 @@ import { Divider } from "../componentes/divider/Divider"
 import { Portada } from "../componentes/portada/portada"
 
 
-export function HttpCode(){
-    return(
+export function HttpCode() {
+    return (
         <>
             <Portada imgPortada={"/Assets/steveA.png"} title={"Codigos de respuesta"} text={"Por Steve 03/09/2024"} />
 
@@ -13,24 +13,24 @@ export function HttpCode(){
                     <h1>100</h1>
 
                     <p>
-                        El código de respuesta 100 Continue en el protocolo HTTP es un código de estado informativo. 
-                        Indica que el servidor ha recibido los encabezados iniciales de la solicitud del cliente y que 
-                        el cliente puede continuar enviando el cuerpo de la solicitud (por ejemplo, el contenido de un 
+                        El código de respuesta 100 Continue en el protocolo HTTP es un código de estado informativo.
+                        Indica que el servidor ha recibido los encabezados iniciales de la solicitud del cliente y que
+                        el cliente puede continuar enviando el cuerpo de la solicitud (por ejemplo, el contenido de un
                         archivo grande que se está cargando).
                     </p>
 
                     <p>
-                        Este código se usa principalmente en situaciones donde el cliente envía una solicitud 
-                        con cuerpo (como una solicitud POST o PUT) y utiliza el encabezado Expect: 100-continue. 
-                        Este encabezado indica que el cliente desea verificar si el servidor está dispuesto a procesar 
-                        la solicitud antes de enviar el cuerpo completo. Si el servidor responde con 100 Continue, 
+                        Este código se usa principalmente en situaciones donde el cliente envía una solicitud
+                        con cuerpo (como una solicitud POST o PUT) y utiliza el encabezado Expect: 100-continue.
+                        Este encabezado indica que el cliente desea verificar si el servidor está dispuesto a procesar
+                        la solicitud antes de enviar el cuerpo completo. Si el servidor responde con 100 Continue,
                         el cliente envía el cuerpo de la solicitud.
                     </p>
 
                     <h2>Características Principales</h2>
 
                     <p>
-                        Propósito: Optimizar el flujo de datos entre cliente y servidor, evitando enviar cuerpos grandes 
+                        Propósito: Optimizar el flujo de datos entre cliente y servidor, evitando enviar cuerpos grandes
                         si el servidor no puede manejar la solicitud.
                     </p>
 
@@ -51,26 +51,26 @@ export function HttpCode(){
                     <h1>101</h1>
 
                     <p>
-                        El código de respuesta 101 Switching Protocols en el protocolo HTTP es un código de estado que indica 
-                        que el servidor acepta cambiar el protocolo de comunicación a uno solicitado por el cliente. Se utiliza 
+                        El código de respuesta 101 Switching Protocols en el protocolo HTTP es un código de estado que indica
+                        que el servidor acepta cambiar el protocolo de comunicación a uno solicitado por el cliente. Se utiliza
                         principalmente para actualizar la conexión a un protocolo diferente, como en el caso del WebSocket.
                     </p>
 
                     <h2>Características Principales</h2>
 
                     <p>
-                        Propósito: Notificar al cliente que el servidor ha aceptado cambiar el protocolo a uno diferente 
+                        Propósito: Notificar al cliente que el servidor ha aceptado cambiar el protocolo a uno diferente
                         especificado en el encabezado Upgrade de la solicitud.
                     </p>
 
                     <p>
-                        Casos de Uso Común:  
+                        Casos de Uso Común:
                         Actualización de HTTP/1.1 a WebSocket.
                         Cambios a otros protocolos como HTTP/2 o HTTP/3.
                     </p>
 
                     <p>
-                        Requisitos:  
+                        Requisitos:
                         El cliente incluye un encabezado `Upgrade` especificando el protocolo al que desea cambiar.
                         El servidor responde con un encabezado `Upgrade` confirmando el cambio.
                     </p>
@@ -80,15 +80,15 @@ export function HttpCode(){
                     <h1>102</h1>
 
                     <p>
-                        El código de respuesta 102 Processing es parte del protocolo HTTP/1.1 y está definido en la 
-                        especificación RFC 2518 (https://www.rfc-editor.org/rfc/rfc2518), que introduce extensiones 
+                        El código de respuesta 102 Processing es parte del protocolo HTTP/1.1 y está definido en la
+                        especificación RFC 2518 (https://www.rfc-editor.org/rfc/rfc2518), que introduce extensiones
                         para el protocolo HTTP en el contexto de Web Distributed Authoring and Versioning (WebDAV).
                     </p>
 
                     <h2>Propósito del Código 102 Processing</h2>
 
                     <p>
-                        Este código de estado indica que el servidor ha recibido y está procesando la solicitud, pero 
+                        Este código de estado indica que el servidor ha recibido y está procesando la solicitud, pero
                         necesita más tiempo para completarla.
                     </p>
 
@@ -107,6 +107,26 @@ export function HttpCode(){
                         Uso Limitado: Normalmente utilizado en contextos específicos (como WebDAV) y no en solicitudes HTTP estándar.
                     </p>
 
+                    <Divider />
+
+                    <h1>200</h1>
+
+                    <p>
+                        El código HTTP 200 OK indica que la solicitud del cliente se procesó correctamente en el servidor y
+                        que la respuesta contiene el resultado esperado. Este código se utiliza en la mayoría de las respuestas
+                        exitosas, como en solicitudes GET o POST.
+                    </p>
+
+                    <p>
+                        En una solicitud GET, un código 200 OK significa que el recurso solicitado fue encontrado y se devuelve
+                        en el cuerpo de la respuesta.
+                    </p>
+
+                    <p>
+                        En una solicitud POST, significa que la operación se completó correctamente y se proporciona una 
+                        respuesta con el estado o los datos resultantes.
+                    </p>
+
                 </DivContent>
             </DivArticle>
         </>
@@ -114,10 +134,6 @@ export function HttpCode(){
 }
 
 /*
-
-
-
-
 
 ---
 
@@ -487,15 +503,7 @@ El código `103 Early Hints` es una herramienta poderosa para optimizar tiempos 
 
 codigo 200
 
-### Código de Respuesta HTTP 200: "OK"
 
-#### **Descripción**
-El código HTTP `200 OK` indica que la solicitud del cliente se procesó correctamente en el servidor y que la respuesta contiene el resultado esperado. Este código se utiliza en la mayoría de las respuestas exitosas, como en solicitudes `GET` o `POST`.
-
-- En una solicitud `GET`, un código `200 OK` significa que el recurso solicitado fue encontrado y se devuelve en el cuerpo de la respuesta.
-- En una solicitud `POST`, significa que la operación se completó correctamente y se proporciona una respuesta con el estado o los datos resultantes.
-
----
 
 #### **Ejemplo 1: Respuesta a una solicitud GET**
 
