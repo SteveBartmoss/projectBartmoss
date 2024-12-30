@@ -36,3 +36,15 @@
 .comun-word{
     color: #67B0E8;
 }
+
+.variable-word{
+    color: #67B0E8;
+}
+
+.operator-set{
+    color: #8CCF7E;
+}
+
+.operator-access{
+    color: #9DA9A0;
+}
