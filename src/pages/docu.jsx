@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Card, CardAccions, CardLink } from "../componentes/card/card";
 import { Chip } from "../componentes/chips/chip";
-import { DivCol, DivRow, DivSection, DivTopicos } from "../componentes/contenedores/contenedores";
+import { DivSection, DivTopicos } from "../componentes/contenedores/contenedores";
 import { Portada } from "../componentes/portada/portada";
 import { useApp } from "../context/contextApp";
 import { TextField } from "../componentes/textField/TextField";
