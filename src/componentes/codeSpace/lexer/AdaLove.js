@@ -9,7 +9,7 @@ export function processCode(code){
     let listTokens=[]
 
     //console.log(code)
-    console.log('longitud',code.length)
+    //console.log('longitud',code.length)
 
     for(let ite=0; ite<=code.length; ite++){
 
