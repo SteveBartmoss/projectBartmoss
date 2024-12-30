@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import './CodeSpace.css';
 import { clasificateToken } from './gogh';
+import { processCode } from './saramago';
 
 export function CodeSpace({title,rawCode=""}){
 
@@ -16,6 +17,9 @@ export function CodeSpace({title,rawCode=""}){
     }
 
     useEffect(()=>{
+        //console.log(processCode('const persona = { nombre: "Juan" }'))
+        //console.log(processCode(':+=/!-*'))
+        console.log(processCode(rawCode))
         //console.log(sliceCode())
     },[])
 
