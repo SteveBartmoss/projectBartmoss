@@ -6,6 +6,11 @@ export function SteveTimeLine() {
         <div>
 
             <TimeItem fecha="27/12/2024" autor="Steve" texto="
+                Bueno ahi va otro año, al menos en este no habia 
+                pandemia"
+            />
+
+            <TimeItem fecha="27/12/2024" autor="Steve" texto="
                 Maldito sea el hombre que confía en otro hombre
                 Gran verdad en esa frase se esconde"
             />
