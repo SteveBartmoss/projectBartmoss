@@ -7,7 +7,7 @@ export function PostSteve() {
         <div>
             <DivSection>
                 <DivTopicos>
-                    <Card>
+                    <Card size={30}>
                         <h1>Estado Desconectado</h1>
                         <p>
                             Dejar la redes fue algo interesante
@@ -19,7 +19,7 @@ export function PostSteve() {
                         </CardAccions>
                     </Card>
 
-                    <Card>
+                    <Card size={30}>
                         <h1>Pila sin fin</h1>
                         <p>
                             La tecnologia parese no tener 
@@ -31,7 +31,7 @@ export function PostSteve() {
                         </CardAccions>
                     </Card>
 
-                    <Card>
+                    <Card size={30}>
                         <h1>Pimp my Terminal</h1>
                         <p>
                             Trabajar en una terminal no te obliga 
@@ -42,7 +42,7 @@ export function PostSteve() {
                         </CardAccions>
                     </Card>
 
-                    <Card>
+                    <Card size={30}>
                         <h1>Haslo tu mismo</h1>
                         <p>
                             No te agrada un programa, entonces haslo 
