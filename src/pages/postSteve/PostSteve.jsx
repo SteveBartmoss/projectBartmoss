@@ -1,5 +1,5 @@
 import { Card, CardAccions, CardLink } from "../../componentes/card/card";
-import { DivSection, DivTopicos } from "../../componentes/contenedores/contenedores";
+import { DivSection } from "../../componentes/contenedores/contenedores";
 
 
 export function PostSteve() {
