@@ -40,7 +40,7 @@ export function processCode(code){
             }
             if(!letters.test(code[ite+1])){
                 listTokens.push({
-                    typeToken: 'letters',
+                    typeToken: 'Letters',
                     character: swap
                 })
                 swap=''
