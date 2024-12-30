@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import './CodeSpace.css';
-import { clasificateToken } from './gogh';
-import { processCode } from './saramago';
+import { decorateToken } from './decorator/picaso';
+import { processCode } from './lexer/AdaLove';
 
 export function CodeSpaceV2({title,rawCode=""}){
 
@@ -30,14 +30,10 @@ export function CodeSpaceV2({title,rawCode=""}){
             </div>
             <div className="code-space">
                 {
-                    sliceCode().map( lineCode => 
+                    processCode(rawCode).map(token =>
                         <p>
-                            {
-                                tokenCode(lineCode).map(token =>
-                                    <span className={clasificateToken(token)}>{token} </span>
-                                )
-                            }
-                        </p> 
+                            <span className={decorateToken(token)}>{token.character}</span>
+                        </p>
                     )
                 }
             </div>
