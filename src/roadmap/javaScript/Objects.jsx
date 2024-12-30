@@ -1,4 +1,5 @@
 import { CodeSpace } from "../../componentes/codeSpace/CodeSpace";
+import { CodeSpaceV2 } from "../../componentes/codeSpace/CodeSpaceV2";
 import { DivArticle, DivContent } from "../../componentes/contenedores/contenedores";
 import { Divider } from "../../componentes/divider/Divider";
 import { Portada } from "../../componentes/portada/portada";
@@ -28,6 +29,11 @@ export function MapObjects() {
                         rawCode={`const persona = { nombre: "Juan" } 
                         persona.edad = 30; // Añadiendo la propiedad 'edad' en tiempo de ejecución
                         console.log(persona); // nombre: "Juan", edad: 30`} />
+
+                    <CodeSpaceV2 title={'V2'} 
+                        rawCode={`const persona = { nombre: "Juan" } 
+                            persona.edad = 30; // Añadiendo la propiedad 'edad' en tiempo de ejecución
+                            console.log(persona); // nombre: "Juan", edad: 30`} />
 
                     <p>
                         También se puede añadir una propiedad usando corchetes [], lo cual es útil cuando el nombre de la propiedad está almacenado en una variable:
