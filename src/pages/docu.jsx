@@ -57,7 +57,7 @@ export function Docu() {
                     {
                         dataDocu && Array.isArray(dataDocu) ? (
                             dataDocu.map((item, index) =>
-                                <Card key={index}>
+                                <Card size={30} key={index}>
                                     <h1>{item.titulo}</h1>
                                     <p>{item.descripcion}</p>
                                     {
