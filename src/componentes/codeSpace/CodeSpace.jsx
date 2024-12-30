@@ -19,7 +19,7 @@ export function CodeSpace({title,rawCode=""}){
     useEffect(()=>{
         //console.log(processCode('const persona = { nombre: "Juan" }'))
         //console.log(processCode(':+=/!-*'))
-        console.log(processCode(rawCode))
+        //console.log(processCode(rawCode))
         //console.log(sliceCode())
     },[])
 
