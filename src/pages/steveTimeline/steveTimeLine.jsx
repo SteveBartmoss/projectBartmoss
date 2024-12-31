@@ -5,7 +5,12 @@ export function SteveTimeLine() {
     return (
         <div>
 
-            <TimeItem fecha="27/12/2024" autor="Steve" texto="
+            <TimeItem fecha="29/12/2024" autor="Steve" texto="
+                Que loco, el ultimo time line del 2024, ni siquiera 
+                pense que esto pudiera llegar mas lejos de unos meses"
+            />
+
+            <TimeItem fecha="29/12/2024" autor="Steve" texto="
                 Bueno ahi va otro año, al menos en este no habia 
                 pandemia"
             />
