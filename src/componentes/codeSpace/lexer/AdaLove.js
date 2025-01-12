@@ -2,6 +2,7 @@ const operators=/([+=\-*/!])/
 const operatorsSet=/([\{\}\[\]\(\)])/ 
 const letters=/([aA-zZ])/;
 const operatorsAccess=/([:\.])/
+const numbers=/([0-9])/
 
 export function processCode(code){
 
@@ -33,11 +34,18 @@ export function processCode(code){
                 character: char
             })
         }
+        if(numbers.test(char)){
+            swap+=char
+            if(!numbers.test(code[ite+1])){
+                listTokens.push({
+                    typeToken: 'Numbers',
+                    character: swap
+                })
+                swap=''
+            }
+        }
         if(letters.test(char)){
             swap+=char
-            if (ite<code.length){
-
-            }
             if(!letters.test(code[ite+1])){
                 listTokens.push({
                     typeToken: 'Letters',
