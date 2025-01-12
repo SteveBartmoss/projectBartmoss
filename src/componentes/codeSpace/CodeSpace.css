@@ -38,7 +38,7 @@
 }
 
 .variable-word{
-    color: #67B0E8;
+    color: #C061CB;
 }
 
 .operator-set{
@@ -51,4 +51,8 @@
 
 .number-word{
     color: #E69875;
+}
+
+.object-word{
+    color: #E5C76B;
 }
