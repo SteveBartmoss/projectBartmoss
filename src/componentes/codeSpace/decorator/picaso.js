@@ -2,6 +2,7 @@
 const reservedWords=['let','const','function','import','export','default','return', 'from']
 
 export function decorateToken(token){
+    
     if(reservedWords.includes(token.character)){
         return 'reserved-word'
     }
@@ -16,5 +17,8 @@ export function decorateToken(token){
     }
     if(token.typeToken === 'Numbers'){
         return 'number-word'
+    }
+    if(token.typeToken === 'Objeto'){
+        return 'object-word'
     }
 }
