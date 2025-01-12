@@ -62,7 +62,7 @@
     flex-direction: row;
 }
 
-.div-grow{
+.div-grow {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -84,7 +84,7 @@
     margin: auto;
 }
 
-.div-content{
+.div-content {
     width: 90%;
     margin: auto;
 }
@@ -118,7 +118,14 @@
     font-size: 1.3rem;
 }
 
-@media (min-width: 360px) and (max-width: 430px){
+.div-full {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 360px) and (max-width: 430px) {
     .div-main-dark {
         background-color: #282c34;
         color: #9DA9A0;
@@ -127,27 +134,27 @@
         height: 100vh;
         overflow-y: scroll;
     }
-    
+
     .div-main-dark::-webkit-scrollbar {
         width: 5px;
     }
-    
+
     .div-main-dark::-webkit-scrollbar-track {
         background-color: rgba(49, 49, 49, 0.2);
     }
-    
+
     .div-main-dark::-webkit-scrollbar-thumb {
         background-color: #61dafb;
         border-radius: 20px;
     }
-    
+
     .div-main-dark #linkto {
         color: #149eca;
         text-decoration: none;
         font-size: 1.2rem;
         font-weight: 700;
     }
-    
+
     /*estilos para colores claros*/
     .div-main-light {
         background-color: #9DA9A0;
@@ -157,77 +164,77 @@
         height: 100vh;
         overflow-y: scroll;
     }
-    
+
     .div-main-light::-webkit-scrollbar {
         width: 5px;
     }
-    
+
     .div-main-light::-webkit-scrollbar-track {
         background-color: rgba(49, 49, 49, 0.2);
     }
-    
+
     .div-main-light::-webkit-scrollbar-thumb {
         background-color: #384B55;
         border-radius: 20px;
     }
-    
+
     .div-main-light #linkto {
         color: #384B55;
         text-decoration: none;
         font-size: 1.2rem;
         font-weight: 700;
     }
-    
+
     .div-row {
         display: flex;
         flex-direction: row;
     }
-    
-    .div-grow{
+
+    .div-grow {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
     }
-    
+
     .div-col {
         display: flex;
         flex-direction: column;
     }
-    
+
     .div-section {
         width: 90%;
         min-height: 100vh;
         margin: auto;
     }
-    
+
     .div-topicos {
         width: 100%;
         margin: auto;
     }
-    
+
     .div-article {
         width: 90%;
         margin: auto;
         padding: 1rem;
     }
-    
+
     .div-article h1 {
         font-size: 3rem;
     }
-    
+
     .div-article h2 {
         font-size: 2.2rem;
     }
-    
+
     .div-article h3 {
         font-size: 1.8rem;
         font-weight: 600;
     }
-    
+
     .div-article p {
         font-size: 1.5rem;
     }
-    
+
     .div-article code {
         font-size: 1.3rem;
     }
