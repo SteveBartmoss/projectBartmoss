@@ -14,4 +14,7 @@ export function decorateToken(token){
     if(token.typeToken === 'OperatorAccess'){
         return 'operator-access'
     }
+    if(token.typeToken === 'Numbers'){
+        return 'number-word'
+    }
 }
