@@ -1,163 +1,193 @@
-import { DivArticle, DivContent } from "../componentes/contenedores/contenedores"
+import { DivArticle, DivCol, DivContent, DivRow } from "../componentes/contenedores/contenedores"
 import { Divider } from "../componentes/divider/Divider"
 import { Portada } from "../componentes/portada/portada"
+import { TreeMap } from "../componentes/treeMap/TreeMap"
 
 
 export function HttpCode() {
+
+    const pageMap = [
+        {
+            titulo: '100',
+            id: 'code100',
+        },
+        {
+            titulo: '101',
+            id: 'code101',
+        },
+        {
+            titulo: '102',
+            id: 'code102',
+        },
+        {
+            titulo: '200',
+            id: 'code200',
+        }
+    ]
+
     return (
         <>
             <Portada imgPortada={"/Assets/steveA.png"} title={"Codigos de respuesta"} text={"Por Steve 03/09/2024"} />
 
-            <DivArticle>
-                <DivContent>
-                    <h1>100</h1>
+            <DivRow>
+                <DivCol>
+                    <TreeMap titulo={'Mapa del sitio'} elementos={pageMap} />
+                </DivCol>
 
-                    <p>
-                        El código de respuesta 100 Continue en el protocolo HTTP es un código de estado informativo.
-                        Indica que el servidor ha recibido los encabezados iniciales de la solicitud del cliente y que
-                        el cliente puede continuar enviando el cuerpo de la solicitud (por ejemplo, el contenido de un
-                        archivo grande que se está cargando).
-                    </p>
+                <DivCol>
+                    <DivArticle>
+                        <DivContent>
+                            <h1 id="code100">100</h1>
 
-                    <p>
-                        Este código se usa principalmente en situaciones donde el cliente envía una solicitud
-                        con cuerpo (como una solicitud POST o PUT) y utiliza el encabezado Expect: 100-continue.
-                        Este encabezado indica que el cliente desea verificar si el servidor está dispuesto a procesar
-                        la solicitud antes de enviar el cuerpo completo. Si el servidor responde con 100 Continue,
-                        el cliente envía el cuerpo de la solicitud.
-                    </p>
+                            <p>
+                                El código de respuesta 100 Continue en el protocolo HTTP es un código de estado informativo.
+                                Indica que el servidor ha recibido los encabezados iniciales de la solicitud del cliente y que
+                                el cliente puede continuar enviando el cuerpo de la solicitud (por ejemplo, el contenido de un
+                                archivo grande que se está cargando).
+                            </p>
 
-                    <h2>Características Principales</h2>
+                            <p>
+                                Este código se usa principalmente en situaciones donde el cliente envía una solicitud
+                                con cuerpo (como una solicitud POST o PUT) y utiliza el encabezado Expect: 100-continue.
+                                Este encabezado indica que el cliente desea verificar si el servidor está dispuesto a procesar
+                                la solicitud antes de enviar el cuerpo completo. Si el servidor responde con 100 Continue,
+                                el cliente envía el cuerpo de la solicitud.
+                            </p>
 
-                    <p>
-                        Propósito: Optimizar el flujo de datos entre cliente y servidor, evitando enviar cuerpos grandes
-                        si el servidor no puede manejar la solicitud.
-                    </p>
+                            <h2>Características Principales</h2>
 
-                    <p>
-                        Cuando se usa: Se usa típicamente en solicitudes que incluyen el encabezado Expect: 100-continue.
-                    </p>
+                            <p>
+                                Propósito: Optimizar el flujo de datos entre cliente y servidor, evitando enviar cuerpos grandes
+                                si el servidor no puede manejar la solicitud.
+                            </p>
 
-                    <p>
-                        Flujo de comunicación:
-                        El cliente envía una solicitud inicial con encabezados y el encabezado Expect: 100-continue.
-                        El servidor responde con 100 Continue si todo está en orden.
-                        El cliente envía el cuerpo de la solicitud.
-                        El servidor responde con un código final (como 200 OK o 400 Bad Request).
-                    </p>
+                            <p>
+                                Cuando se usa: Se usa típicamente en solicitudes que incluyen el encabezado Expect: 100-continue.
+                            </p>
 
-                    <Divider />
+                            <p>
+                                Flujo de comunicación:
+                                El cliente envía una solicitud inicial con encabezados y el encabezado Expect: 100-continue.
+                                El servidor responde con 100 Continue si todo está en orden.
+                                El cliente envía el cuerpo de la solicitud.
+                                El servidor responde con un código final (como 200 OK o 400 Bad Request).
+                            </p>
 
-                    <h1>101</h1>
+                            <Divider />
 
-                    <p>
-                        El código de respuesta 101 Switching Protocols en el protocolo HTTP es un código de estado que indica
-                        que el servidor acepta cambiar el protocolo de comunicación a uno solicitado por el cliente. Se utiliza
-                        principalmente para actualizar la conexión a un protocolo diferente, como en el caso del WebSocket.
-                    </p>
+                            <h1 id="code101">101</h1>
 
-                    <h2>Características Principales</h2>
+                            <p>
+                                El código de respuesta 101 Switching Protocols en el protocolo HTTP es un código de estado que indica
+                                que el servidor acepta cambiar el protocolo de comunicación a uno solicitado por el cliente. Se utiliza
+                                principalmente para actualizar la conexión a un protocolo diferente, como en el caso del WebSocket.
+                            </p>
 
-                    <p>
-                        Propósito: Notificar al cliente que el servidor ha aceptado cambiar el protocolo a uno diferente
-                        especificado en el encabezado Upgrade de la solicitud.
-                    </p>
+                            <h2>Características Principales</h2>
 
-                    <p>
-                        Casos de Uso Común:
-                        Actualización de HTTP/1.1 a WebSocket.
-                        Cambios a otros protocolos como HTTP/2 o HTTP/3.
-                    </p>
+                            <p>
+                                Propósito: Notificar al cliente que el servidor ha aceptado cambiar el protocolo a uno diferente
+                                especificado en el encabezado Upgrade de la solicitud.
+                            </p>
 
-                    <p>
-                        Requisitos:
-                        El cliente incluye un encabezado `Upgrade` especificando el protocolo al que desea cambiar.
-                        El servidor responde con un encabezado `Upgrade` confirmando el cambio.
-                    </p>
+                            <p>
+                                Casos de Uso Común:
+                                Actualización de HTTP/1.1 a WebSocket.
+                                Cambios a otros protocolos como HTTP/2 o HTTP/3.
+                            </p>
 
-                    <Divider />
+                            <p>
+                                Requisitos:
+                                El cliente incluye un encabezado `Upgrade` especificando el protocolo al que desea cambiar.
+                                El servidor responde con un encabezado `Upgrade` confirmando el cambio.
+                            </p>
 
-                    <h1>102</h1>
+                            <Divider />
 
-                    <p>
-                        El código de respuesta 102 Processing es parte del protocolo HTTP/1.1 y está definido en la
-                        especificación RFC 2518 (https://www.rfc-editor.org/rfc/rfc2518), que introduce extensiones
-                        para el protocolo HTTP en el contexto de Web Distributed Authoring and Versioning (WebDAV).
-                    </p>
+                            <h1 id="code102">102</h1>
 
-                    <h2>Propósito del Código 102 Processing</h2>
+                            <p>
+                                El código de respuesta 102 Processing es parte del protocolo HTTP/1.1 y está definido en la
+                                especificación RFC 2518 (https://www.rfc-editor.org/rfc/rfc2518), que introduce extensiones
+                                para el protocolo HTTP en el contexto de Web Distributed Authoring and Versioning (WebDAV).
+                            </p>
 
-                    <p>
-                        Este código de estado indica que el servidor ha recibido y está procesando la solicitud, pero
-                        necesita más tiempo para completarla.
-                    </p>
+                            <h2>Propósito del Código 102 Processing</h2>
 
-                    <h2>Usos Comunes</h2>
+                            <p>
+                                Este código de estado indica que el servidor ha recibido y está procesando la solicitud, pero
+                                necesita más tiempo para completarla.
+                            </p>
 
-                    <p>
-                        WebDAV: Se utiliza en operaciones complejas de WebDAV, como cuando se ejecutan múltiples operaciones en recursos (por ejemplo, copiar o mover un árbol de directorios).
-                        Evitar Timeouts: Responde al cliente que el servidor aún está trabajando en la solicitud, para evitar que el cliente asuma que la conexión se ha perdido.
-                    </p>
+                            <h2>Usos Comunes</h2>
 
-                    <h2>Características Principales</h2>
+                            <p>
+                                WebDAV: Se utiliza en operaciones complejas de WebDAV, como cuando se ejecutan múltiples operaciones en recursos (por ejemplo, copiar o mover un árbol de directorios).
+                                Evitar Timeouts: Responde al cliente que el servidor aún está trabajando en la solicitud, para evitar que el cliente asuma que la conexión se ha perdido.
+                            </p>
 
-                    <p>
-                        Indicación de Progreso: Sirve como una señal al cliente de que la solicitud no ha sido olvidada.
-                        No Finaliza la Solicitud: La respuesta `102 Processing` no es una respuesta final. La operación sigue en curso.
-                        Uso Limitado: Normalmente utilizado en contextos específicos (como WebDAV) y no en solicitudes HTTP estándar.
-                    </p>
+                            <h2>Características Principales</h2>
 
-                    <Divider />
+                            <p>
+                                Indicación de Progreso: Sirve como una señal al cliente de que la solicitud no ha sido olvidada.
+                                No Finaliza la Solicitud: La respuesta `102 Processing` no es una respuesta final. La operación sigue en curso.
+                                Uso Limitado: Normalmente utilizado en contextos específicos (como WebDAV) y no en solicitudes HTTP estándar.
+                            </p>
 
-                    <h1>200</h1>
+                            <Divider />
 
-                    <p>
-                        El código HTTP 200 OK indica que la solicitud del cliente se procesó correctamente en el servidor y
-                        que la respuesta contiene el resultado esperado. Este código se utiliza en la mayoría de las respuestas
-                        exitosas, como en solicitudes GET o POST.
-                    </p>
+                            <h1 id="code200">200</h1>
 
-                    <p>
-                        En una solicitud GET, un código 200 OK significa que el recurso solicitado fue encontrado y se devuelve
-                        en el cuerpo de la respuesta.
-                    </p>
+                            <p>
+                                El código HTTP 200 OK indica que la solicitud del cliente se procesó correctamente en el servidor y
+                                que la respuesta contiene el resultado esperado. Este código se utiliza en la mayoría de las respuestas
+                                exitosas, como en solicitudes GET o POST.
+                            </p>
 
-                    <p>
-                        En una solicitud POST, significa que la operación se completó correctamente y se proporciona una
-                        respuesta con el estado o los datos resultantes.
-                    </p>
+                            <p>
+                                En una solicitud GET, un código 200 OK significa que el recurso solicitado fue encontrado y se devuelve
+                                en el cuerpo de la respuesta.
+                            </p>
 
-                    <h1>Características Principales</h1>
+                            <p>
+                                En una solicitud POST, significa que la operación se completó correctamente y se proporciona una
+                                respuesta con el estado o los datos resultantes.
+                            </p>
 
-                    <h3>Estándar en respuestas exitosas</h3>
+                            <h1>Características Principales</h1>
 
-                    <p>
-                        El código 200 se utiliza para indicar que todo está bien y que el servidor pudo procesar la solicitud.
-                    </p>
+                            <h3>Estándar en respuestas exitosas</h3>
 
-                    <h3>Contenido del cuerpo</h3>
+                            <p>
+                                El código 200 se utiliza para indicar que todo está bien y que el servidor pudo procesar la solicitud.
+                            </p>
 
-                    <p>
-                        Dependiendo de la operación, el cuerpo de la respuesta puede contener datos (como en GET) o un mensaje de
-                        confirmación (como en POST).
-                    </p>
+                            <h3>Contenido del cuerpo</h3>
 
-                    <h3>No siempre es necesario un cuerpo de respuesta</h3>
-                    <p>
-                        Aunque es común incluir información en el cuerpo, no siempre es obligatorio. Por ejemplo, en una solicitud 
-                        DELETE exitosa, el cuerpo podría estar vacío.
+                            <p>
+                                Dependiendo de la operación, el cuerpo de la respuesta puede contener datos (como en GET) o un mensaje de
+                                confirmación (como en POST).
+                            </p>
 
-                    </p>
+                            <h3>No siempre es necesario un cuerpo de respuesta</h3>
+                            <p>
+                                Aunque es común incluir información en el cuerpo, no siempre es obligatorio. Por ejemplo, en una solicitud
+                                DELETE exitosa, el cuerpo podría estar vacío.
 
-                    <h3>Consistencia</h3>
+                            </p>
 
-                    <p>
-                        El uso del código 200 ayuda a los clientes a comprender rápidamente que la operación fue exitosa sin necesidad 
-                        de analizar en detalle el cuerpo de la respuesta.
-                    </p>
+                            <h3>Consistencia</h3>
 
-                </DivContent>
-            </DivArticle>
+                            <p>
+                                El uso del código 200 ayuda a los clientes a comprender rápidamente que la operación fue exitosa sin necesidad
+                                de analizar en detalle el cuerpo de la respuesta.
+                            </p>
+
+                        </DivContent>
+                    </DivArticle>
+                </DivCol>
+            </DivRow>
+
         </>
     )
 }
