@@ -56,3 +56,23 @@ export function processCode(code){
 
     return listTokens
 }
+
+export function sliceCode(code){
+    let rowsCode=[]
+    let swap=''
+
+    for(let ite=0; ite<=code.length; ite++){
+
+        const char = code[ite];
+
+        if(char==='\n'){
+            rowsCode.push(swap)
+            swap=''
+        }
+        else{
+            swap+=char
+        }
+    }
+
+    return rowsCode
+}
