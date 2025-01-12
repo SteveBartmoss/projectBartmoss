@@ -1,14 +1,24 @@
 import { useEffect, useState } from 'react';
 import './CodeSpace.css';
 import { decorateToken } from './decorator/picaso';
-import { processCode } from './lexer/AdaLove';
+import { processCode, sliceCode } from './lexer/AdaLove';
 
 export function CodeSpaceV2({title,rawCode=""}){
 
+    /*
     const sliceCode=()=>{
         let slices=rawCode.split('\n')
         return slices
     }
+
+    processCode(rawCode).map(token =>
+                        <p>
+                            <span className={decorateToken(token)}>{token.character}</span>
+                        </p>
+                    )
+
+
+    */
 
     const tokenCode=(codeLine)=>{
         let tokens=codeLine.split(' ')
@@ -19,8 +29,9 @@ export function CodeSpaceV2({title,rawCode=""}){
     useEffect(()=>{
         //console.log(processCode('const persona = { nombre: "Juan" }'))
         //console.log(processCode(':+=/!-*'))
-        console.log(processCode(rawCode))
+        //console.log(processCode(rawCode))
         //console.log(sliceCode())
+        console.log(sliceCode(rawCode))
     },[])
 
     return(
@@ -30,9 +41,13 @@ export function CodeSpaceV2({title,rawCode=""}){
             </div>
             <div className="code-space">
                 {
-                    processCode(rawCode).map(token =>
+                    sliceCode(rawCode).map(lineCode =>
                         <p>
-                            <span className={decorateToken(token)}>{token.character}</span>
+                            {
+                                processCode(lineCode).map(token =>
+                                    <span className={decorateToken(token)}>{token.character} </span>
+                                )
+                            }
                         </p>
                     )
                 }
