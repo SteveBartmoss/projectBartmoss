@@ -46,6 +46,13 @@ export function processCode(code){
         }
         if(letters.test(char)){
             swap+=char
+            if(code[ite+1]==='.'){
+                listTokens.push({
+                    typeToken: 'Objeto',
+                    character: swap
+                })
+                swap=''
+            }
             if(!letters.test(code[ite+1])){
                 listTokens.push({
                     typeToken: 'Letters',
