@@ -75,3 +75,11 @@ export function DivContent({children}){
         </div>
     )
 }
+
+export function DivFull({children}){
+    return(
+        <div className="div-full">
+            {children}
+        </div>
+    );
+}
