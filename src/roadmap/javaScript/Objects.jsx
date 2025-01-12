@@ -49,9 +49,7 @@ export function MapObjects() {
                         console.log(persona); // nombre: "Juan", edad: 30`} />
 
                             <CodeSpaceV2 title={'V2'}
-                                rawCode={`const persona = { nombre: "Juan" } 
-                            persona.edad = 30; // Añadiendo la propiedad 'edad' en tiempo de ejecución
-                            console.log(persona); // nombre: "Juan", edad: 30`} />
+                                rawCode={`const persona = { nombre: "Juan" }\n persona.edad = 30; // Añadiendo la propiedad 'edad' en tiempo de ejecucion \n console.log(persona); // nombre: "Juan", edad: 30 \n`} />
 
                             <p>
                                 También se puede añadir una propiedad usando corchetes [], lo cual es útil cuando el nombre de la propiedad está almacenado en una variable:
