@@ -9,6 +9,34 @@ import { AnchorLink } from "../../componentes/anchorlink/AnchorLink"
 
 export function RoadMapJs() {
 
+    /*
+    resolver implementacion de la pagina
+    const pageMap = [
+                {
+                    titulo: 'Objetos',
+                    id: 'objectos',
+                },
+                {
+                    titulo: 'Funciones',
+                    id: 'funciones',
+                },
+                {
+                    titulo: 'Prototipos',
+                    id: 'prototipos',
+                },
+                {
+                    titulo: 'Asincronía',
+                    id: 'asincronía',
+                },
+                {
+                    titulo: 'Fetch',
+                    id: 'fetch',
+                },
+            ]
+    
+            <TreeMap titulo={'Contenido de la pagina'} elementos={pageMap} />
+    */
+
     const navigate = useNavigate();
 
     const handleNavigate=(url)=>{
