@@ -8,6 +8,7 @@ export function processCode(code){
 
     let swap=""
     let listTokens=[]
+    let comentState=false
 
     //console.log(code)
     //console.log('longitud',code.length)
@@ -16,6 +17,24 @@ export function processCode(code){
 
         const char = code[ite];
 
+        if(comentState){
+            if(char==='#'){
+                console.log(swap)
+                listTokens.push({
+                    typeToken: 'Coment',
+                    character: swap
+                })
+                swap=''
+                comentState=false
+            }
+            swap+=char
+            continue
+        }
+        if(char==='/'&&code[ite+1]==='/'){
+            swap+=char
+            comentState=true
+            continue
+        }
         if(operators.test(char)){
             listTokens.push({
                 typeToken: 'Operator',
@@ -61,6 +80,7 @@ export function processCode(code){
                 swap=''
             }
         }
+        
         /*
         listTokens.push({
             typeToken: 'unknow',
