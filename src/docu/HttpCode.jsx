@@ -611,5 +611,72 @@ Aquí, el código `200 OK` confirma que el usuario fue creado correctamente. La 
 
 ---
 
+codigo 201
+
+### **Código de Respuesta HTTP 201: Created**
+
+#### **Descripción**
+El código de estado `201 Created` indica que una solicitud HTTP ha sido procesada con éxito y ha resultado en la creación de un nuevo recurso. La ubicación del recurso recién creado generalmente se proporciona en el encabezado `Location` de la respuesta.
+
+#### **Características Clave**:
+1. **Método Usual**: Generalmente asociado con solicitudes `POST` o `PUT`.
+2. **Encabezado `Location`**: Especifica la URL del recurso recién creado.
+3. **Cuerpo de la Respuesta**: Puede incluir una representación del recurso creado, aunque no es obligatorio.
+
+---
+
+### **Ejemplo**
+Supongamos que una aplicación tiene una API para registrar nuevos usuarios:
+
+#### **Solicitud:**
+```http
+POST /users HTTP/1.1
+Host: example.com
+Content-Type: application/json
+
+{
+  "username": "marco123",
+  "email": "marco@example.com",
+  "password": "securepassword123"
+}
+```
+
+#### **Respuesta:**
+```http
+HTTP/1.1 201 Created
+Location: https://example.com/users/12345
+Content-Type: application/json
+
+{
+  "id": 12345,
+  "username": "marco123",
+  "email": "marco@example.com",
+  "created_at": "2025-01-12T10:00:00Z"
+}
+```
+
+---
+
+### **Caso de Uso**
+El código `201 Created` se utiliza en situaciones donde:
+
+1. **Creación de Recursos Únicos**:
+   - Un recurso único se genera como resultado de una solicitud, como un nuevo registro de usuario, la creación de un producto, o una entrada en un blog.
+   - **Ejemplo**: Registrar un nuevo cliente en una base de datos.
+
+2. **Indicación de la Ubicación del Recurso**:
+   - Es útil cuando el cliente necesita saber la URL del recurso creado para realizar operaciones posteriores (como leer, actualizar o eliminar).
+   - **Ejemplo**: Crear una nueva orden en un sistema de compras y devolver la URL de esa orden.
+
+3. **Representación del Recurso en la Respuesta**:
+   - Se puede incluir información adicional sobre el recurso recién creado para que el cliente no tenga que hacer otra solicitud para obtener los detalles.
+   - **Ejemplo**: Crear un archivo en un servicio de almacenamiento en la nube y devolver los metadatos del archivo.
+
+---
+
+### **Beneficios de Usar 201 Created**
+- Mejora la claridad de las respuestas HTTP al cliente.
+- Simplifica la interacción con APIs RESTful al proporcionar directamente la ubicación del recurso creado.
+- Fomenta el cumplimiento de los estándares HTTP, lo que ayuda en la interoperabilidad entre sistemas.
 
 */
