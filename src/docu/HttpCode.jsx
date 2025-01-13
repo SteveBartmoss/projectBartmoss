@@ -214,6 +214,24 @@ export function HttpCode() {
                             <p>
                                 Puede incluir una representación del recurso creado, aunque no es obligatorio.
                             </p>
+
+                            <h2>Usos Comunes</h2>
+
+                            <p>
+                                Creación de Recursos Únicos: Un recurso único se genera como resultado de una solicitud, como un nuevo registro de usuario, 
+                                la creación de un producto, o una entrada en un blog. Ejemplo: Registrar un nuevo cliente en una base de datos.
+                            </p>
+
+                            <p>
+                                Indicación de la Ubicación del Recurso: Es útil cuando el cliente necesita saber la URL del recurso creado para realizar operaciones 
+                                posteriores (como leer, actualizar o eliminar). Ejemplo: Crear una nueva orden en un sistema de compras y devolver la URL de esa orden.
+                            </p>
+
+                            <p>
+                                Representación del Recurso en la Respuesta: Se puede incluir información adicional sobre el recurso recién creado para que 
+                                el cliente no tenga que hacer otra solicitud para obtener los detalles. Ejemplo: Crear un archivo en un servicio de 
+                                almacenamiento en la nube y devolver los metadatos del archivo.
+                            </p>
                             
                         </DivContent>
                     </DivArticle>
@@ -678,21 +696,6 @@ Content-Type: application/json
 ```
 
 ---
-
-### **Caso de Uso**
-El código `201 Created` se utiliza en situaciones donde:
-
-1. **Creación de Recursos Únicos**:
-   - Un recurso único se genera como resultado de una solicitud, como un nuevo registro de usuario, la creación de un producto, o una entrada en un blog.
-   - **Ejemplo**: Registrar un nuevo cliente en una base de datos.
-
-2. **Indicación de la Ubicación del Recurso**:
-   - Es útil cuando el cliente necesita saber la URL del recurso creado para realizar operaciones posteriores (como leer, actualizar o eliminar).
-   - **Ejemplo**: Crear una nueva orden en un sistema de compras y devolver la URL de esa orden.
-
-3. **Representación del Recurso en la Respuesta**:
-   - Se puede incluir información adicional sobre el recurso recién creado para que el cliente no tenga que hacer otra solicitud para obtener los detalles.
-   - **Ejemplo**: Crear un archivo en un servicio de almacenamiento en la nube y devolver los metadatos del archivo.
 
 ---
 
