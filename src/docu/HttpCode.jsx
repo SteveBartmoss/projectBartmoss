@@ -679,4 +679,75 @@ El código `201 Created` se utiliza en situaciones donde:
 - Simplifica la interacción con APIs RESTful al proporcionar directamente la ubicación del recurso creado.
 - Fomenta el cumplimiento de los estándares HTTP, lo que ayuda en la interoperabilidad entre sistemas.
 
+--
+
+-- codigo 202
+
+### **Código de Respuesta HTTP 202: Accepted**
+
+#### **Descripción**
+El código de estado `202 Accepted` indica que el servidor ha recibido y aceptado la solicitud para ser procesada, pero el procesamiento aún no se ha completado. Este código no garantiza que el procesamiento de la solicitud vaya a finalizar con éxito; solo informa que se ha aceptado para su ejecución en el futuro.
+
+#### **Características Clave**:
+1. **Procesamiento Asíncrono**: Utilizado comúnmente cuando la solicitud requiere un procesamiento que no puede completarse inmediatamente.
+2. **Respuesta Informativa**: Generalmente, no incluye el resultado final del procesamiento, sino una confirmación de aceptación.
+3. **Métodos Usuales**: Se puede asociar con `POST`, `PUT`, o incluso `DELETE`, dependiendo del contexto.
+
+---
+
+### **Ejemplo**
+Supongamos que una aplicación tiene una API que inicia un proceso de generación de reportes.
+
+#### **Solicitud:**
+```http
+POST /reports HTTP/1.1
+Host: example.com
+Content-Type: application/json
+
+{
+  "report_type": "sales",
+  "date_range": "2024-01-01_to_2024-12-31"
+}
+```
+
+#### **Respuesta:**
+```http
+HTTP/1.1 202 Accepted
+Content-Type: application/json
+
+{
+  "status": "Processing",
+  "report_id": "67890",
+  "message": "Your report is being generated. You will be notified when it's ready."
+}
+```
+
+---
+
+### **Caso de Uso**
+El código `202 Accepted` es útil en situaciones donde:
+
+1. **Procesamiento Largo o Diferido**:
+   - Cuando la operación solicitada requiere tiempo significativo para completarse, como la generación de informes, análisis de datos, o procesamiento en lotes.
+   - **Ejemplo**: Enviar un archivo para análisis antivirus o conversión de formato.
+
+2. **Procesos Asíncronos**:
+   - Cuando el servidor delega la tarea a otro sistema o cola de procesamiento, y el resultado final estará disponible más tarde.
+   - **Ejemplo**: Iniciar un despliegue en un sistema CI/CD o una tarea de impresión.
+
+3. **Feedback al Cliente sin Bloqueo**:
+   - Se usa para notificar al cliente que la solicitud ha sido aceptada y procesada, pero sin bloquearlo hasta que el resultado esté listo.
+   - **Ejemplo**: Un sistema de correo masivo que confirma la recepción de una solicitud de envío sin esperar a que todos los correos sean entregados.
+
+---
+
+### **Beneficios de Usar 202 Accepted**
+- Mejora la experiencia del usuario en aplicaciones con operaciones de larga duración, al proporcionar una respuesta rápida en lugar de hacer que el cliente espere.
+- Permite diseñar APIs más escalables al delegar tareas complejas a sistemas secundarios o colas de trabajo.
+- Proporciona una base clara para manejar procesos asíncronos, permitiendo al cliente saber que su solicitud está en curso.
+
+--- 
+
+Ambos códigos (`201 Created` y `202 Accepted`) son útiles en APIs RESTful, pero se utilizan en contextos diferentes según el propósito de la solicitud y la naturaleza del procesamiento del recurso.
+
 */
