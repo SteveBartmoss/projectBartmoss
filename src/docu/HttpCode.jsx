@@ -22,7 +22,11 @@ export function HttpCode() {
         {
             titulo: '200',
             id: 'code200',
-        }
+        },
+        {
+            titulo: '201',
+            id: 'code201',
+        },
     ]
 
     return (
@@ -183,6 +187,34 @@ export function HttpCode() {
                                 de analizar en detalle el cuerpo de la respuesta.
                             </p>
 
+                            <h1 id="code201">201</h1>
+
+                            <p>
+                                El código de estado `201 Created` indica que una solicitud HTTP ha sido procesada con éxito y ha resultado en la 
+                                creación de un nuevo recurso. La ubicación del recurso recién creado generalmente se proporciona en el encabezado 
+                                `Location` de la respuesta.
+                            </p>
+
+                            <h1>Características Principales</h1>
+
+                            <h3>Método Usual</h3>
+
+                            <p>
+                                Generalmente asociado con solicitudes `POST` o `PUT`.
+                            </p>
+
+                            <h3>Encabezado Location</h3>
+
+                            <p>
+                                Especifica la URL del recurso recién creado.
+                            </p>
+
+                            <h3>Cuerpo de la Respuesta</h3>
+
+                            <p>
+                                Puede incluir una representación del recurso creado, aunque no es obligatorio.
+                            </p>
+                            
                         </DivContent>
                     </DivArticle>
                 </DivCol>
@@ -611,17 +643,7 @@ Aquí, el código `200 OK` confirma que el usuario fue creado correctamente. La 
 
 ---
 
-codigo 201
-
-### **Código de Respuesta HTTP 201: Created**
-
-#### **Descripción**
-El código de estado `201 Created` indica que una solicitud HTTP ha sido procesada con éxito y ha resultado en la creación de un nuevo recurso. La ubicación del recurso recién creado generalmente se proporciona en el encabezado `Location` de la respuesta.
-
-#### **Características Clave**:
-1. **Método Usual**: Generalmente asociado con solicitudes `POST` o `PUT`.
-2. **Encabezado `Location`**: Especifica la URL del recurso recién creado.
-3. **Cuerpo de la Respuesta**: Puede incluir una representación del recurso creado, aunque no es obligatorio.
+--codigo 201
 
 ---
 
