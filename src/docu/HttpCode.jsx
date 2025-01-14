@@ -874,4 +874,69 @@ Aunque su uso es raro, el código `203` tiene aplicaciones específicas en siste
 
 ----
 
+--- codigo 204
+
+### **Código de Respuesta HTTP 204: No Content**
+
+#### **Descripción**
+El código de estado `204 No Content` indica que el servidor ha procesado con éxito la solicitud, pero no necesita devolver un cuerpo de respuesta. Se usa cuando no hay contenido que proporcionar al cliente, pero se confirma que la operación solicitada se completó correctamente.
+
+#### **Características Clave**:
+1. **Sin Contenido en el Cuerpo**: La respuesta incluye solo los encabezados HTTP.
+2. **Mantiene el Estado del Cliente**: Ideal cuando el cliente no necesita recargar su interfaz o cambiar su estado como resultado de la respuesta.
+3. **Métodos Usuales**: Frecuentemente usado con `DELETE`, `PUT`, o acciones que actualizan datos sin necesidad de retroalimentación al cliente.
+
+---
+
+### **Ejemplo**
+Supongamos que una API permite a los usuarios actualizar su configuración, pero no devuelve datos adicionales después de la actualización.
+
+#### **Solicitud:**
+```http
+PUT /api/user/settings HTTP/1.1
+Host: example.com
+Content-Type: application/json
+
+{
+  "notifications": "enabled",
+  "theme": "dark"
+}
+```
+
+#### **Respuesta:**
+```http
+HTTP/1.1 204 No Content
+```
+
+En este caso, la configuración se actualizó correctamente, pero no hay necesidad de enviar datos adicionales al cliente.
+
+---
+
+### **Caso de Uso**
+El código `204 No Content` es útil en escenarios donde:
+
+1. **Confirmación Sin Contenido**:
+   - Se necesita confirmar que la acción fue exitosa sin enviar datos adicionales.
+   - **Ejemplo**: Confirmar que se eliminó un recurso con éxito tras un `DELETE`.
+
+2. **Optimización de Respuestas**:
+   - Reducir la cantidad de datos transferidos al cliente cuando no es necesario enviar contenido.
+   - **Ejemplo**: Al guardar automáticamente un borrador sin cambiar la interfaz del cliente.
+
+3. **Mantener la Experiencia del Usuario**:
+   - Permitir que el cliente permanezca en la misma página o estado sin realizar actualizaciones visibles.
+   - **Ejemplo**: Una solicitud AJAX que actualiza un estado en el backend sin modificar la UI.
+
+---
+
+### **Beneficios de Usar 204 No Content**
+- Reduce el tráfico de red al evitar enviar contenido innecesario.
+- Mejora la experiencia del usuario al no recargar la interfaz sin necesidad.
+- Proporciona una manera clara y eficiente de indicar éxito sin información adicional.
+
+---
+
+El código `204` es una excelente opción para operaciones rápidas y silenciosas que confirman el éxito de una acción sin sobrecargar la comunicación entre cliente y servidor. Su uso puede mejorar la eficiencia de las APIs y la experiencia de los usuarios en aplicaciones modernas.
+
+
 */
