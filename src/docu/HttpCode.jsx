@@ -20,6 +20,10 @@ export function HttpCode() {
             id: 'code102',
         },
         {
+            titulo: '103',
+            id: 'code103',
+        },
+        {
             titulo: '200',
             id: 'code200',
         },
@@ -139,6 +143,36 @@ export function HttpCode() {
                             </p>
 
                             <Divider />
+
+                            <h1 id="code103">103</h1>
+
+                            <p>
+                                El código de estado 103 Early Hints en el protocolo HTTP es una respuesta provisional que permite a los 
+                                servidores sugerir recursos vinculados antes de enviar la respuesta final. Esto ayuda a mejorar el rendimiento 
+                                al permitir que los navegadores comiencen a precargar recursos importantes (como archivos CSS, JavaScript o imágenes) 
+                                antes de que se reciba la respuesta completa.
+                            </p>
+
+                            <h2>Propósito</h2>
+
+                            <p>
+                                Reduce el tiempo de carga de la página web. 
+                                Permite a los clientes obtener una "pista temprana" sobre recursos críticos que probablemente necesitarán para procesar la solicitud completa.
+                            </p>
+
+                            <h2>Usos Comunes</h2>
+
+                            <p>
+                                Se utiliza principalmente con encabezados como `Link` para indicar los recursos que el navegador puede cargar anticipadamente. 
+                                Común en aplicaciones que implementan HTTP/2 o HTTP/3, ya que estas versiones del protocolo soportan bien la multiplexación.
+                            </p>
+
+                            <h2>Flujo de Trabajo</h2>
+
+                            <p>
+                                El servidor responde inicialmente con un código `103 Early Hints`, incluyendo encabezados que apuntan a recursos necesarios.
+                                Luego, el servidor envía la respuesta completa con el estado final, como `200 OK`.
+                            </p>
 
                             <h1 id="code200">200</h1>
 
@@ -531,22 +565,11 @@ Este código es una herramienta útil en casos específicos donde las operacione
 
 -- codigo 103
 
-El código de estado **103 Early Hints** en el protocolo HTTP es una respuesta provisional que permite a los servidores sugerir recursos vinculados antes de enviar la respuesta final. Esto ayuda a mejorar el rendimiento al permitir que los navegadores comiencen a precargar recursos importantes (como archivos CSS, JavaScript o imágenes) antes de que se reciba la respuesta completa.
+
 
 ---
 
-### **Explicación**
-1. **Propósito**:
-   - Reduce el tiempo de carga de la página web.
-   - Permite a los clientes obtener una "pista temprana" sobre recursos críticos que probablemente necesitarán para procesar la solicitud completa.
 
-2. **Contexto de Uso**:
-   - Se utiliza principalmente con encabezados como `Link` para indicar los recursos que el navegador puede cargar anticipadamente.
-   - Común en aplicaciones que implementan HTTP/2 o HTTP/3, ya que estas versiones del protocolo soportan bien la multiplexación.
-
-3. **Flujo de Trabajo**:
-   - El servidor responde inicialmente con un código `103 Early Hints`, incluyendo encabezados que apuntan a recursos necesarios.
-   - Luego, el servidor envía la respuesta completa con el estado final, como `200 OK`.
 
 ---
 
