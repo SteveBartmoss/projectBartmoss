@@ -803,4 +803,75 @@ El código `202 Accepted` es útil en situaciones donde:
 
 Ambos códigos (`201 Created` y `202 Accepted`) son útiles en APIs RESTful, pero se utilizan en contextos diferentes según el propósito de la solicitud y la naturaleza del procesamiento del recurso.
 
+codio 203
+
+### **Código de Respuesta HTTP 203: Non-Authoritative Information**
+
+#### **Descripción**
+El código de estado `203 Non-Authoritative Information` indica que la solicitud se ha procesado con éxito, pero la respuesta no contiene información del servidor de origen. En cambio, la información de la respuesta puede haber sido modificada por un servidor intermedio, como un proxy o una caché. 
+
+Este código se utiliza principalmente en escenarios donde el servidor intermedio devuelve datos que no provienen directamente de la fuente original o han sido transformados.
+
+#### **Características Clave**:
+1. **No Original**: La información devuelta puede no coincidir con la del servidor de origen.
+2. **Uso Raro**: Su uso en APIs modernas es inusual, pero puede ser relevante en configuraciones específicas.
+3. **Método Usual**: Frecuentemente asociado con solicitudes `GET`.
+
+---
+
+### **Ejemplo**
+Supongamos que un cliente realiza una solicitud a un proxy para obtener información de un recurso.
+
+#### **Solicitud:**
+```http
+GET /api/products/123 HTTP/1.1
+Host: example.com
+```
+
+#### **Respuesta (desde el proxy):**
+```http
+HTTP/1.1 203 Non-Authoritative Information
+Content-Type: application/json
+
+{
+  "id": 123,
+  "name": "Laptop",
+  "price": 999.99,
+  "currency": "USD",
+  "note": "Price converted by proxy; original currency was EUR."
+}
+```
+
+En este caso, el proxy devolvió una versión modificada de la respuesta original al convertir la moneda de euros a dólares estadounidenses.
+
+---
+
+### **Caso de Uso**
+El código `203 Non-Authoritative Information` es útil en escenarios donde:
+
+1. **Intervención de un Proxy o Intermediario**:
+   - Se utiliza cuando un servidor intermedio modifica los datos antes de enviarlos al cliente.
+   - **Ejemplo**: Un proxy que traduce datos de un idioma a otro.
+
+2. **Cachés Modificadas**:
+   - Cuando un servidor caché devuelve una respuesta ajustada en lugar de la respuesta original del servidor.
+   - **Ejemplo**: Una CDN que transforma imágenes o ajusta contenido para adaptarse al dispositivo del cliente.
+
+3. **Transformación de Datos**:
+   - Cuando se aplican transformaciones, como normalización de datos o ajustes de formato, antes de enviar la respuesta.
+   - **Ejemplo**: Un servidor que estandariza las unidades de medida (p. ej., convierte de metros a pies).
+
+---
+
+### **Beneficios de Usar 203 Non-Authoritative Information**
+- Proporciona claridad al cliente sobre la fuente y precisión de los datos.
+- Ayuda en sistemas distribuidos a diferenciar entre datos originales y transformados.
+- Facilita el manejo de respuestas ajustadas o procesadas por intermediarios, sin atribuirlas directamente al servidor de origen.
+
+---
+
+Aunque su uso es raro, el código `203` tiene aplicaciones específicas en sistemas con servidores intermediarios que manipulan o transforman datos. En la mayoría de los casos, los códigos como `200 OK` o `304 Not Modified` son suficientes para representar el estado de una respuesta.
+
+----
+
 */
