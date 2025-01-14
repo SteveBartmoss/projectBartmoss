@@ -174,6 +174,24 @@ export function HttpCode() {
                                 Luego, el servidor envía la respuesta completa con el estado final, como `200 OK`.
                             </p>
 
+                            <h2>Ventajas</h2>
+
+                            <p>
+                                Rendimiento: Reduce la latencia percibida al permitir que los navegadores predescarguen recursos importantes.
+                                Optimización: Ideal para aplicaciones web de alta carga que manejan muchos recursos críticos.
+                            </p>
+
+                            <h2>Soporte y Consideraciones</h2>
+
+                            <p>
+                                Algunos navegadores modernos ya soportan el código `103`, pero su adopción aún no es universal.
+                                Debe usarse junto con protocolos que admitan conexiones rápidas y paralelas, como HTTP/2.
+                            </p>
+
+                            <p>
+                                El código `103 Early Hints` es una herramienta poderosa para optimizar tiempos de carga y mejorar la experiencia del usuario en la web.
+                            </p>
+
                             <h1 id="code200">200</h1>
 
                             <p>
@@ -609,19 +627,6 @@ Content-Type: text/html
 3. El navegador ya tiene los recursos críticos (CSS y JS) listos antes de renderizar la página, lo que mejora el tiempo de carga.
 
 ---
-
-### **Ventajas del Código 103**
-- **Rendimiento**: Reduce la latencia percibida al permitir que los navegadores predescarguen recursos importantes.
-- **Optimización**: Ideal para aplicaciones web de alta carga que manejan muchos recursos críticos.
-
-### **Soporte y Consideraciones**
-- Algunos navegadores modernos ya soportan el código `103`, pero su adopción aún no es universal.
-- Debe usarse junto con protocolos que admitan conexiones rápidas y paralelas, como HTTP/2.
-
----
-
-El código `103 Early Hints` es una herramienta poderosa para optimizar tiempos de carga y mejorar la experiencia del usuario en la web.
-
 
 codigo 200
 
