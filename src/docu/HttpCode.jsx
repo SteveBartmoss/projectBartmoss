@@ -300,7 +300,7 @@ export function HttpCode() {
                             <h1 id="code202">202</h1>
 
                             <p>
-                                El código de estado `202 Accepted` indica que el servidor ha recibido y aceptado la solicitud para ser procesada, 
+                                El código de estado 202 Accepted indica que el servidor ha recibido y aceptado la solicitud para ser procesada, 
                                 pero el procesamiento aún no se ha completado. Este código no garantiza que el procesamiento de la solicitud vaya a 
                                 finalizar con éxito; solo informa que se ha aceptado para su ejecución en el futuro.
                             </p>
@@ -311,6 +311,18 @@ export function HttpCode() {
                                 Procesamiento Asíncrono: Utilizado comúnmente cuando la solicitud requiere un procesamiento que no puede completarse inmediatamente.
                                 Respuesta Informativa: Generalmente, no incluye el resultado final del procesamiento, sino una confirmación de aceptación.
                                 Métodos Usuales: Se puede asociar con POST, PUT, o incluso DELETE, dependiendo del contexto.
+                            </p>
+
+                            <h2>Usos Comunes</h2>
+
+                            <p>
+                                Procesamiento Largo o Diferido: Cuando la operación solicitada requiere tiempo significativo para completarse, como la 
+                                generación de informes, análisis de datos, o procesamiento en lotes. Ejemplo: Enviar un archivo para análisis antivirus o conversión de formato.
+                                Procesos Asíncronos: Cuando el servidor delega la tarea a otro sistema o cola de procesamiento, y el resultado final estará disponible más tarde. 
+                                Ejemplo: Iniciar un despliegue en un sistema CI/CD o una tarea de impresión.
+                                Feedback al Cliente sin Bloqueo: Se usa para notificar al cliente que la solicitud ha sido aceptada y procesada, pero sin 
+                                bloquearlo hasta que el resultado esté listo. Ejemplo: Un sistema de correo masivo que confirma la recepción de una solicitud 
+                                de envío sin esperar a que todos los correos sean entregados.
                             </p>
                             
                         </DivContent>
@@ -794,20 +806,7 @@ Content-Type: application/json
 
 ---
 
-### **Caso de Uso**
-El código `202 Accepted` es útil en situaciones donde:
 
-1. **Procesamiento Largo o Diferido**:
-   - Cuando la operación solicitada requiere tiempo significativo para completarse, como la generación de informes, análisis de datos, o procesamiento en lotes.
-   - **Ejemplo**: Enviar un archivo para análisis antivirus o conversión de formato.
-
-2. **Procesos Asíncronos**:
-   - Cuando el servidor delega la tarea a otro sistema o cola de procesamiento, y el resultado final estará disponible más tarde.
-   - **Ejemplo**: Iniciar un despliegue en un sistema CI/CD o una tarea de impresión.
-
-3. **Feedback al Cliente sin Bloqueo**:
-   - Se usa para notificar al cliente que la solicitud ha sido aceptada y procesada, pero sin bloquearlo hasta que el resultado esté listo.
-   - **Ejemplo**: Un sistema de correo masivo que confirma la recepción de una solicitud de envío sin esperar a que todos los correos sean entregados.
 
 ---
 
