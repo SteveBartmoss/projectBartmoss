@@ -4,6 +4,13 @@ import { TimeItem } from "../../componentes/timeItem/timeItem";
 export function SteveTimeLine() {
     return (
         <div>
+            
+
+            <TimeItem fecha="15/01/2025" autor="Steve" texto="
+                Como cuando tú recuerdas una historia que no debe ser contada
+                Pero escuchas una voz que te dice: cántala 
+                Te exige: por favor, nárrale a tus semejantes"
+            />
 
             <TimeItem fecha="14/01/2025" autor="Steve" texto="
                 Y hoy la fui a visitar, caminando entre lápidas
