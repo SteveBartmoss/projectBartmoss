@@ -31,6 +31,10 @@ export function HttpCode() {
             titulo: '201',
             id: 'code201',
         },
+        {
+            tiutlo: '202',
+            id: 'code202',
+        }
     ]
 
     return (
@@ -291,7 +295,24 @@ export function HttpCode() {
                                 Mejora la claridad de las respuestas HTTP al cliente.
                                 Simplifica la interacción con APIs RESTful al proporcionar directamente la ubicación del recurso creado.
                                 Fomenta el cumplimiento de los estándares HTTP, lo que ayuda en la interoperabilidad entre sistemas.
-                            </p>                            
+                            </p>  
+
+                            <h1 id="code202">202</h1>
+
+                            <p>
+                                El código de estado `202 Accepted` indica que el servidor ha recibido y aceptado la solicitud para ser procesada, 
+                                pero el procesamiento aún no se ha completado. Este código no garantiza que el procesamiento de la solicitud vaya a 
+                                finalizar con éxito; solo informa que se ha aceptado para su ejecución en el futuro.
+                            </p>
+
+                            <h2>Características Clave</h2>
+
+                            <p>
+                                Procesamiento Asíncrono: Utilizado comúnmente cuando la solicitud requiere un procesamiento que no puede completarse inmediatamente.
+                                Respuesta Informativa: Generalmente, no incluye el resultado final del procesamiento, sino una confirmación de aceptación.
+                                Métodos Usuales: Se puede asociar con POST, PUT, o incluso DELETE, dependiendo del contexto.
+                            </p>
+                            
                         </DivContent>
                     </DivArticle>
                 </DivCol>
@@ -740,13 +761,7 @@ Content-Type: application/json
 
 ### **Código de Respuesta HTTP 202: Accepted**
 
-#### **Descripción**
-El código de estado `202 Accepted` indica que el servidor ha recibido y aceptado la solicitud para ser procesada, pero el procesamiento aún no se ha completado. Este código no garantiza que el procesamiento de la solicitud vaya a finalizar con éxito; solo informa que se ha aceptado para su ejecución en el futuro.
 
-#### **Características Clave**:
-1. **Procesamiento Asíncrono**: Utilizado comúnmente cuando la solicitud requiere un procesamiento que no puede completarse inmediatamente.
-2. **Respuesta Informativa**: Generalmente, no incluye el resultado final del procesamiento, sino una confirmación de aceptación.
-3. **Métodos Usuales**: Se puede asociar con `POST`, `PUT`, o incluso `DELETE`, dependiendo del contexto.
 
 ---
 
