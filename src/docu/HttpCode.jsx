@@ -284,7 +284,14 @@ export function HttpCode() {
                                 el cliente no tenga que hacer otra solicitud para obtener los detalles. Ejemplo: Crear un archivo en un servicio de 
                                 almacenamiento en la nube y devolver los metadatos del archivo.
                             </p>
-                            
+
+                            <h2>Ventajas</h2>
+
+                            <p>
+                                Mejora la claridad de las respuestas HTTP al cliente.
+                                Simplifica la interacción con APIs RESTful al proporcionar directamente la ubicación del recurso creado.
+                                Fomenta el cumplimiento de los estándares HTTP, lo que ayuda en la interoperabilidad entre sistemas.
+                            </p>                            
                         </DivContent>
                     </DivArticle>
                 </DivCol>
@@ -726,11 +733,6 @@ Content-Type: application/json
 ---
 
 ---
-
-### **Beneficios de Usar 201 Created**
-- Mejora la claridad de las respuestas HTTP al cliente.
-- Simplifica la interacción con APIs RESTful al proporcionar directamente la ubicación del recurso creado.
-- Fomenta el cumplimiento de los estándares HTTP, lo que ayuda en la interoperabilidad entre sistemas.
 
 --
 
