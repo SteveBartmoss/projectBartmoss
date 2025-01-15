@@ -954,5 +954,72 @@ El código `204 No Content` es útil en escenarios donde:
 
 El código `204` es una excelente opción para operaciones rápidas y silenciosas que confirman el éxito de una acción sin sobrecargar la comunicación entre cliente y servidor. Su uso puede mejorar la eficiencia de las APIs y la experiencia de los usuarios en aplicaciones modernas.
 
+-- codigo 205
+
+### **Código de Respuesta HTTP 205: Reset Content**
+
+#### **Descripción**
+El código de estado `205 Reset Content` indica que el servidor ha procesado con éxito la solicitud, pero además solicita al cliente que reinicie o actualice su estado, como limpiar formularios o restablecer vistas en la interfaz de usuario. A diferencia del código `204`, que no exige ninguna acción del cliente, el `205` indica explícitamente que el cliente debe realizar un reinicio.
+
+#### **Características Clave**:
+1. **Sin Cuerpo de Respuesta**: Similar al código `204`, no incluye contenido en el cuerpo.
+2. **Acción Requerida por el Cliente**: Se utiliza cuando el cliente debe realizar un restablecimiento visual o funcional.
+3. **Métodos Usuales**: A menudo asociado con solicitudes como `POST`, `PUT` o `DELETE`.
+
+---
+
+### **Ejemplo**
+Un formulario en una aplicación web permite a los usuarios enviar comentarios. Una vez enviado, el servidor solicita al cliente que limpie el formulario para permitir otro comentario.
+
+#### **Solicitud:**
+```http
+POST /api/feedback HTTP/1.1
+Host: example.com
+Content-Type: application/json
+
+{
+  "message": "Great service!",
+  "rating": 5
+}
+```
+
+#### **Respuesta:**
+```http
+HTTP/1.1 205 Reset Content
+```
+
+En este caso, el servidor ha recibido el comentario con éxito y solicita al cliente que restablezca el formulario (por ejemplo, limpiando los campos de texto).
+
+---
+
+### **Caso de Uso**
+El código `205 Reset Content` es útil en escenarios donde:
+
+1. **Reinicio de Formularios o Interfaces**:
+   - Después de que se envíe un formulario, el servidor puede solicitar que el cliente lo limpie.
+   - **Ejemplo**: Un formulario de registro que debe restablecerse tras enviarse con éxito.
+
+2. **Restablecimiento de Estado Visual**:
+   - Cuando el servidor desea que el cliente elimine datos visualizados temporalmente.
+   - **Ejemplo**: Restablecer una vista de filtro o búsqueda después de aplicar cambios.
+
+3. **Preparación para Nuevas Interacciones**:
+   - Ideal para aplicaciones interactivas donde el cliente debe estar listo para la siguiente acción.
+   - **Ejemplo**: Un sistema de encuestas que debe reiniciar la vista tras enviar una respuesta.
+
+---
+
+### **Beneficios de Usar 205 Reset Content**
+- Proporciona una manera estandarizada de instruir al cliente para que actualice su estado.
+- Mejora la experiencia del usuario al limpiar automáticamente vistas o formularios sin necesidad de intervención manual.
+- Reduce la complejidad del cliente al delegar la responsabilidad del reinicio al servidor.
+
+---
+
+### **Diferencias con 204 No Content**
+- **`204 No Content`**: Indica éxito sin contenido adicional, pero no requiere ninguna acción del cliente.
+- **`205 Reset Content`**: Indica éxito y además solicita explícitamente al cliente que reinicie o actualice su estado.
+
+El uso de `205 Reset Content` es ideal para aplicaciones donde el cliente necesita orientación clara para restablecer su interfaz o estado después de una operación exitosa.
 
 */
