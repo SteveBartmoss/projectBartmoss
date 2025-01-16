@@ -1032,4 +1032,73 @@ El código `205 Reset Content` es útil en escenarios donde:
 
 El uso de `205 Reset Content` es ideal para aplicaciones donde el cliente necesita orientación clara para restablecer su interfaz o estado después de una operación exitosa.
 
+
+-- 206
+
+### **Código de Respuesta HTTP 206: Partial Content**
+
+#### **Descripción**
+El código de estado `206 Partial Content` indica que el servidor ha procesado exitosamente una solicitud parcial de un recurso. Esto sucede cuando el cliente utiliza el encabezado `Range` para pedir una parte específica del recurso, como una sección de un archivo grande.
+
+#### **Características Clave**:
+1. **Respuestas Parciales**: Se envía solo la parte solicitada del recurso, no el contenido completo.
+2. **Encabezado `Content-Range`**: El servidor incluye este encabezado en la respuesta para indicar el rango del recurso que se está devolviendo.
+3. **Optimización de Recursos**: Es útil para descargar archivos grandes, transmitir videos, o retomar descargas interrumpidas.
+
+---
+
+### **Ejemplo**
+Supongamos que el cliente está descargando un archivo grande y solicita un rango específico de bytes del archivo.
+
+#### **Solicitud:**
+```http
+GET /large-file.zip HTTP/1.1
+Host: example.com
+Range: bytes=0-1023
+```
+
+#### **Respuesta:**
+```http
+HTTP/1.1 206 Partial Content
+Content-Range: bytes 0-1023/1048576
+Content-Type: application/zip
+
+(binary data of the first 1024 bytes)
+```
+
+En este caso, el cliente ha solicitado los primeros 1024 bytes de un archivo de 1 MB, y el servidor ha proporcionado exactamente esa parte.
+
+---
+
+### **Caso de Uso**
+El código `206 Partial Content` es útil en escenarios como:
+
+1. **Transmisión de Videos o Audios**:
+   - Los reproductores multimedia solicitan rangos específicos de un archivo para transmitir solo las partes necesarias en un momento dado.
+   - **Ejemplo**: Un usuario que avanza rápidamente a la mitad de un video.
+
+2. **Descargas Interrumpidas**:
+   - Permite retomar descargas desde el punto donde se detuvieron, en lugar de reiniciarlas desde el principio.
+   - **Ejemplo**: Un gestor de descargas que solicita el resto de un archivo tras una desconexión.
+
+3. **Optimización de Ancho de Banda**:
+   - Reduce el tráfico de red enviando solo las partes necesarias de un recurso.
+   - **Ejemplo**: Una aplicación que carga imágenes o documentos en partes mientras el usuario las visualiza.
+
+---
+
+### **Beneficios de Usar 206 Partial Content**
+- Mejora la experiencia del usuario al permitir descargas y transmisiones más flexibles.
+- Ahorra ancho de banda al limitar la cantidad de datos transferidos a lo necesario.
+- Facilita el manejo de archivos grandes en entornos con conexiones inestables.
+
+---
+
+### **Encabezados Importantes en una Respuesta 206**
+- **`Content-Range`**: Especifica el rango del recurso devuelto (por ejemplo, `bytes 0-1023/1048576`).
+- **`Content-Length`**: Indica el tamaño de la porción devuelta.
+- **`Accept-Ranges`**: En una solicitud previa, el servidor puede indicar si soporta rangos con este encabezado (por ejemplo, `bytes`).
+
+El código `206 Partial Content` es esencial para servicios que manejan recursos grandes y buscan eficiencia y flexibilidad en la entrega de contenido al cliente.
+
 */
