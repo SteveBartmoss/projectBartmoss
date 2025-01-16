@@ -34,6 +34,10 @@ export function HttpCode() {
         {
             tiutlo: '202',
             id: 'code202',
+        },
+        {
+            titulo: '203',
+            id: 'code103',
         }
     ]
 
@@ -337,6 +341,15 @@ export function HttpCode() {
                                 Ambos códigos (201 Created y 202 Accepted) son útiles en APIs RESTful, pero se utilizan en contextos diferentes según el 
                                 propósito de la solicitud y la naturaleza del procesamiento del recurso.
                             </p>
+
+                            <h1 id="code103">203</h1>
+
+                            <p>
+                                El código de estado `203 Non-Authoritative Information` indica que la solicitud se ha procesado con éxito, pero la respuesta no contiene información del servidor de origen. En cambio, la información de la respuesta puede haber sido modificada por un servidor intermedio, como un proxy o una caché.
+
+                                Este código se utiliza principalmente en escenarios donde el servidor intermedio devuelve datos que no provienen directamente de la fuente original o han sido transformados.
+                            </p>
+                            
 
                         </DivContent>
                     </DivArticle>
@@ -833,10 +846,7 @@ codio 203
 
 ### **Código de Respuesta HTTP 203: Non-Authoritative Information**
 
-#### **Descripción**
-El código de estado `203 Non-Authoritative Information` indica que la solicitud se ha procesado con éxito, pero la respuesta no contiene información del servidor de origen. En cambio, la información de la respuesta puede haber sido modificada por un servidor intermedio, como un proxy o una caché. 
 
-Este código se utiliza principalmente en escenarios donde el servidor intermedio devuelve datos que no provienen directamente de la fuente original o han sido transformados.
 
 #### **Características Clave**:
 1. **No Original**: La información devuelta puede no coincidir con la del servidor de origen.
