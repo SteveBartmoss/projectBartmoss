@@ -6,6 +6,14 @@ export function SteveTimeLine() {
         <div>
             
 
+            <TimeItem fecha="16/01/2025" autor="Steve" texto="
+                La razón de lo que soy, la historia que se repite en muchas vidas
+                Pero que no todos pueden
+                Expresar con tu don
+                Y es por eso que tú debes servir de conexión"
+            />
+            
+
             <TimeItem fecha="15/01/2025" autor="Steve" texto="
                 Como cuando tú recuerdas una historia que no debe ser contada
                 Pero escuchas una voz que te dice: cántala 
