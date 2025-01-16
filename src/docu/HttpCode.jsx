@@ -324,7 +324,15 @@ export function HttpCode() {
                                 bloquearlo hasta que el resultado esté listo. Ejemplo: Un sistema de correo masivo que confirma la recepción de una solicitud 
                                 de envío sin esperar a que todos los correos sean entregados.
                             </p>
-                            
+
+                            <h2>Ventajas</h2>
+
+                            <p>
+                                Mejora la experiencia del usuario en aplicaciones con operaciones de larga duración, al proporcionar una respuesta rápida en lugar de 
+                                hacer que el cliente espere. Permite diseñar APIs más escalables al delegar tareas complejas a sistemas secundarios o colas de trabajo.
+                                Proporciona una base clara para manejar procesos asíncronos, permitiendo al cliente saber que su solicitud está en curso.
+                            </p>
+
                         </DivContent>
                     </DivArticle>
                 </DivCol>
@@ -810,10 +818,7 @@ Content-Type: application/json
 
 ---
 
-### **Beneficios de Usar 202 Accepted**
-- Mejora la experiencia del usuario en aplicaciones con operaciones de larga duración, al proporcionar una respuesta rápida en lugar de hacer que el cliente espere.
-- Permite diseñar APIs más escalables al delegar tareas complejas a sistemas secundarios o colas de trabajo.
-- Proporciona una base clara para manejar procesos asíncronos, permitiendo al cliente saber que su solicitud está en curso.
+
 
 --- 
 
