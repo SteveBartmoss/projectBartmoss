@@ -333,6 +333,11 @@ export function HttpCode() {
                                 Proporciona una base clara para manejar procesos asíncronos, permitiendo al cliente saber que su solicitud está en curso.
                             </p>
 
+                            <p>
+                                Ambos códigos (201 Created y 202 Accepted) son útiles en APIs RESTful, pero se utilizan en contextos diferentes según el 
+                                propósito de la solicitud y la naturaleza del procesamiento del recurso.
+                            </p>
+
                         </DivContent>
                     </DivArticle>
                 </DivCol>
@@ -822,7 +827,7 @@ Content-Type: application/json
 
 --- 
 
-Ambos códigos (`201 Created` y `202 Accepted`) son útiles en APIs RESTful, pero se utilizan en contextos diferentes según el propósito de la solicitud y la naturaleza del procesamiento del recurso.
+
 
 codio 203
 
