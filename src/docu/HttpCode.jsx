@@ -1199,4 +1199,93 @@ El código `207 Multi-Status` se utiliza principalmente en contextos WebDAV, don
 
 El uso de `207 Multi-Status` es crucial en aplicaciones avanzadas que gestionan múltiples recursos en servidores compatibles con WebDAV, mejorando la comunicación entre cliente y servidor.
 
+--codigo 208
+
+### **Código de Respuesta HTTP 208: Already Reported**
+
+#### **Descripción**
+El código de estado `208 Already Reported` se utiliza en el contexto del protocolo [WebDAV](https://en.wikipedia.org/wiki/WebDAV). Indica que los miembros de un recurso vinculado ya se han enumerado en una respuesta anterior, y no se repiten nuevamente en la respuesta actual para evitar redundancia.
+
+Este código se usa principalmente en respuestas a solicitudes `PROPFIND` con una profundidad mayor que `0`, donde se enumeran múltiples recursos. Al devolver `208`, el servidor informa que ciertos recursos ya se describieron previamente y no necesitan repetirse.
+
+---
+
+### **Características Clave**
+1. **Evita Duplicados**: Reduce el tamaño de las respuestas al no repetir información sobre recursos que ya se han informado.
+2. **Usos en WebDAV**: Exclusivo para operaciones WebDAV como `PROPFIND`, donde se listan propiedades o recursos jerárquicos.
+3. **Optimización**: Minimiza la sobrecarga de red al evitar datos redundantes.
+
+---
+
+### **Ejemplo**
+Supongamos que un cliente realiza una solicitud `PROPFIND` para obtener las propiedades de un directorio y todos sus subdirectorios.
+
+#### **Solicitud:**
+```http
+PROPFIND /folder1/ HTTP/1.1
+Host: example.com
+Depth: 1
+```
+
+#### **Respuesta:**
+```http
+HTTP/1.1 207 Multi-Status
+Content-Type: application/xml; charset="utf-8"
+
+<?xml version="1.0" encoding="utf-8"?>
+<multistatus xmlns="DAV:">
+  <response>
+    <href>/folder1/</href>
+    <propstat>
+      <prop>
+        <displayname>folder1</displayname>
+      </prop>
+      <status>HTTP/1.1 200 OK</status>
+    </propstat>
+  </response>
+  <response>
+    <href>/folder1/subfolder/</href>
+    <propstat>
+      <prop>
+        <displayname>subfolder</displayname>
+      </prop>
+      <status>HTTP/1.1 208 Already Reported</status>
+    </propstat>
+  </response>
+</multistatus>
+```
+
+En este caso:
+- El directorio principal (`/folder1/`) se describe normalmente.
+- El subdirectorio (`/folder1/subfolder/`) ya se informó previamente en una operación anterior y no se vuelve a detallar.
+
+---
+
+### **Caso de Uso**
+El código `208 Already Reported` es útil en los siguientes escenarios:
+
+1. **Gestión de Árboles de Directorios**:
+   - Cuando se enumeran recursos jerárquicos, evita la repetición de información sobre subdirectorios o archivos ya reportados.
+
+2. **Optimización en Consultas WebDAV**:
+   - Reduce la cantidad de datos enviados en respuestas `PROPFIND` o similares, optimizando el uso de red y procesamiento.
+
+3. **Sincronización de Recursos**:
+   - Facilita la sincronización de estructuras complejas de archivos o propiedades, indicando al cliente qué recursos ya se han procesado.
+
+---
+
+### **Beneficios de Usar 208 Already Reported**
+- **Eficiencia**: Evita duplicar datos en respuestas, ahorrando ancho de banda y tiempo de procesamiento.
+- **Claridad**: Informa explícitamente que un recurso ya ha sido reportado en la misma transacción.
+- **Reducción de Redundancia**: Especialmente útil en estructuras jerárquicas o recursos enlazados.
+
+---
+
+### **Consideraciones**
+- **Formato XML**: Al igual que otros códigos de WebDAV, el cliente debe procesar respuestas en formato XML.
+- **Específico de WebDAV**: No es relevante para aplicaciones fuera del contexto de WebDAV.
+
+El código `208 Already Reported` mejora la eficiencia de las operaciones en sistemas que gestionan múltiples recursos jerárquicos, asegurando que los clientes solo reciban la información necesaria sin redundancias innecesarias.
+
 */
