@@ -369,6 +369,14 @@ export function HttpCode() {
                                 Ejemplo: Un servidor que estandariza las unidades de medida (p. ej., convierte de metros a pies).
                             </p>
 
+                            <h2>Ventajas</h2>
+
+                            <p>
+                                Proporciona claridad al cliente sobre la fuente y precisión de los datos.
+                                Ayuda en sistemas distribuidos a diferenciar entre datos originales y transformados.
+                                Facilita el manejo de respuestas ajustadas o procesadas por intermediarios, sin atribuirlas directamente al servidor de origen.
+                            </p>
+
                         </DivContent>
                     </DivArticle>
                 </DivCol>
@@ -898,11 +906,6 @@ En este caso, el proxy devolvió una versión modificada de la respuesta origina
 ---
 
 ---
-
-### **Beneficios de Usar 203 Non-Authoritative Information**
-- Proporciona claridad al cliente sobre la fuente y precisión de los datos.
-- Ayuda en sistemas distribuidos a diferenciar entre datos originales y transformados.
-- Facilita el manejo de respuestas ajustadas o procesadas por intermediarios, sin atribuirlas directamente al servidor de origen.
 
 ---
 
