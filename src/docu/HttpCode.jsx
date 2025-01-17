@@ -349,7 +349,15 @@ export function HttpCode() {
 
                                 Este código se utiliza principalmente en escenarios donde el servidor intermedio devuelve datos que no provienen directamente de la fuente original o han sido transformados.
                             </p>
-                            
+
+                            <h1>Características Principales</h1>
+
+                            <p>
+                                No Original: La información devuelta puede no coincidir con la del servidor de origen.
+                                Uso Raro: Su uso en APIs modernas es inusual, pero puede ser relevante en configuraciones específicas.
+                                Método Usual: Frecuentemente asociado con solicitudes `GET`.
+                            </p>
+
 
                         </DivContent>
                     </DivArticle>
@@ -848,10 +856,7 @@ codio 203
 
 
 
-#### **Características Clave**:
-1. **No Original**: La información devuelta puede no coincidir con la del servidor de origen.
-2. **Uso Raro**: Su uso en APIs modernas es inusual, pero puede ser relevante en configuraciones específicas.
-3. **Método Usual**: Frecuentemente asociado con solicitudes `GET`.
+
 
 ---
 
