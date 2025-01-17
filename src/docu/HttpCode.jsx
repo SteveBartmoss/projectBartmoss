@@ -350,7 +350,7 @@ export function HttpCode() {
                                 Este código se utiliza principalmente en escenarios donde el servidor intermedio devuelve datos que no provienen directamente de la fuente original o han sido transformados.
                             </p>
 
-                            <h1>Características Principales</h1>
+                            <h2>Características Principales</h2>
 
                             <p>
                                 No Original: La información devuelta puede no coincidir con la del servidor de origen.
@@ -358,6 +358,16 @@ export function HttpCode() {
                                 Método Usual: Frecuentemente asociado con solicitudes `GET`.
                             </p>
 
+                            <h2>Usos Comunes</h2>
+
+                            <p>
+                                Intervención de un Proxy o Intermediario: Se utiliza cuando un servidor intermedio modifica los datos antes de enviarlos al cliente.
+                                Ejemplo: Un proxy que traduce datos de un idioma a otro.
+                                Cachés Modificadas: Cuando un servidor caché devuelve una respuesta ajustada en lugar de la respuesta original del servidor.
+                                Ejemplo: Una CDN que transforma imágenes o ajusta contenido para adaptarse al dispositivo del cliente.
+                                Transformación de Datos: Cuando se aplican transformaciones, como normalización de datos o ajustes de formato, antes de enviar la respuesta.
+                                Ejemplo: Un servidor que estandariza las unidades de medida (p. ej., convierte de metros a pies).
+                            </p>
 
                         </DivContent>
                     </DivArticle>
@@ -886,21 +896,6 @@ Content-Type: application/json
 En este caso, el proxy devolvió una versión modificada de la respuesta original al convertir la moneda de euros a dólares estadounidenses.
 
 ---
-
-### **Caso de Uso**
-El código `203 Non-Authoritative Information` es útil en escenarios donde:
-
-1. **Intervención de un Proxy o Intermediario**:
-   - Se utiliza cuando un servidor intermedio modifica los datos antes de enviarlos al cliente.
-   - **Ejemplo**: Un proxy que traduce datos de un idioma a otro.
-
-2. **Cachés Modificadas**:
-   - Cuando un servidor caché devuelve una respuesta ajustada en lugar de la respuesta original del servidor.
-   - **Ejemplo**: Una CDN que transforma imágenes o ajusta contenido para adaptarse al dispositivo del cliente.
-
-3. **Transformación de Datos**:
-   - Cuando se aplican transformaciones, como normalización de datos o ajustes de formato, antes de enviar la respuesta.
-   - **Ejemplo**: Un servidor que estandariza las unidades de medida (p. ej., convierte de metros a pies).
 
 ---
 
