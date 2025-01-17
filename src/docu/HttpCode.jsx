@@ -1111,4 +1111,92 @@ El código `206 Partial Content` es útil en escenarios como:
 
 El código `206 Partial Content` es esencial para servicios que manejan recursos grandes y buscan eficiencia y flexibilidad en la entrega de contenido al cliente.
 
+
+-- codigo 207
+
+### **Código de Respuesta HTTP 207: Multi-Status**
+
+#### **Descripción**
+El código de estado `207 Multi-Status` es una respuesta específica del protocolo [WebDAV](https://en.wikipedia.org/wiki/WebDAV) (extensión de HTTP) que indica que la solicitud ha sido procesada y que el cuerpo de la respuesta contiene múltiples códigos de estado. Es útil cuando una operación afecta a varios recursos, y el servidor necesita proporcionar información detallada sobre el éxito o el error para cada uno de ellos.
+
+La respuesta se entrega en un formato XML que describe el resultado de cada operación.
+
+---
+
+### **Características Clave**
+1. **Múltiples Resultados**: Permite que el servidor informe sobre el éxito o error de varias operaciones en una sola respuesta.
+2. **Formato XML**: La respuesta incluye un documento XML con detalles de los recursos afectados y sus códigos de estado individuales.
+3. **Usos Exclusivos de WebDAV**: Generalmente se utiliza en aplicaciones que implementan el protocolo WebDAV para manejar operaciones en recursos como archivos o carpetas.
+
+---
+
+### **Ejemplo**
+Supongamos que un cliente envía una solicitud WebDAV para copiar múltiples archivos en un servidor, y algunos de ellos tienen éxito mientras que otros fallan.
+
+#### **Solicitud:**
+```http
+COPY /folder1/ HTTP/1.1
+Host: example.com
+Destination: /folder2/
+```
+
+#### **Respuesta:**
+```http
+HTTP/1.1 207 Multi-Status
+Content-Type: application/xml; charset="utf-8"
+
+<?xml version="1.0" encoding="utf-8"?>
+<multistatus xmlns="DAV:">
+  <response>
+    <href>/folder2/file1.txt</href>
+    <status>HTTP/1.1 201 Created</status>
+  </response>
+  <response>
+    <href>/folder2/file2.txt</href>
+    <status>HTTP/1.1 403 Forbidden</status>
+  </response>
+  <response>
+    <href>/folder2/file3.txt</href>
+    <status>HTTP/1.1 204 No Content</status>
+  </response>
+</multistatus>
+```
+
+En este caso:
+- `file1.txt` fue copiado con éxito (`201 Created`).
+- `file2.txt` falló debido a permisos insuficientes (`403 Forbidden`).
+- `file3.txt` ya existía y no se realizó ninguna acción (`204 No Content`).
+
+---
+
+### **Caso de Uso**
+El código `207 Multi-Status` se utiliza principalmente en contextos WebDAV, donde las operaciones afectan múltiples recursos. Algunos casos comunes incluyen:
+
+1. **Gestión de Archivos en Servidores**:
+   - Operaciones como copiar, mover o eliminar varios archivos o carpetas.
+   - **Ejemplo**: Un cliente WebDAV que sincroniza un directorio completo con un servidor.
+
+2. **Sincronización de Recursos**:
+   - Informar sobre cambios o conflictos en múltiples recursos durante la sincronización.
+   - **Ejemplo**: Una aplicación de respaldo en la nube que verifica el estado de múltiples archivos.
+
+3. **Operaciones en Lote**:
+   - Permite ejecutar y obtener resultados para varias operaciones en una sola solicitud.
+   - **Ejemplo**: Actualización masiva de propiedades o metadatos de recursos en un servidor.
+
+---
+
+### **Beneficios de Usar 207 Multi-Status**
+- **Eficiencia**: Reduce el número de solicitudes necesarias para manejar múltiples recursos.
+- **Detalles Individuales**: Permite al cliente conocer el estado de cada recurso afectado.
+- **Flexibilidad**: Ideal para sistemas complejos que gestionan varios recursos simultáneamente.
+
+---
+
+### **Consideraciones**
+- **Formato XML**: El cliente debe estar preparado para analizar una respuesta en XML.
+- **Específico de WebDAV**: Este código no es común fuera de aplicaciones que implementan WebDAV.
+
+El uso de `207 Multi-Status` es crucial en aplicaciones avanzadas que gestionan múltiples recursos en servidores compatibles con WebDAV, mejorando la comunicación entre cliente y servidor.
+
 */
