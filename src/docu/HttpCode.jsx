@@ -32,7 +32,7 @@ export function HttpCode() {
             id: 'code201',
         },
         {
-            tiutlo: '202',
+            titulo: '202',
             id: 'code202',
         },
         {
