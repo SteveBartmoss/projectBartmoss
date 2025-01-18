@@ -155,23 +155,23 @@ export function HttpCode() {
                             <h1 id="code103">103</h1>
 
                             <p>
-                                El código de estado 103 Early Hints en el protocolo HTTP es una respuesta provisional que permite a los 
-                                servidores sugerir recursos vinculados antes de enviar la respuesta final. Esto ayuda a mejorar el rendimiento 
-                                al permitir que los navegadores comiencen a precargar recursos importantes (como archivos CSS, JavaScript o imágenes) 
+                                El código de estado 103 Early Hints en el protocolo HTTP es una respuesta provisional que permite a los
+                                servidores sugerir recursos vinculados antes de enviar la respuesta final. Esto ayuda a mejorar el rendimiento
+                                al permitir que los navegadores comiencen a precargar recursos importantes (como archivos CSS, JavaScript o imágenes)
                                 antes de que se reciba la respuesta completa.
                             </p>
 
                             <h2>Propósito</h2>
 
                             <p>
-                                Reduce el tiempo de carga de la página web. 
+                                Reduce el tiempo de carga de la página web.
                                 Permite a los clientes obtener una "pista temprana" sobre recursos críticos que probablemente necesitarán para procesar la solicitud completa.
                             </p>
 
                             <h2>Usos Comunes</h2>
 
                             <p>
-                                Se utiliza principalmente con encabezados como `Link` para indicar los recursos que el navegador puede cargar anticipadamente. 
+                                Se utiliza principalmente con encabezados como `Link` para indicar los recursos que el navegador puede cargar anticipadamente.
                                 Común en aplicaciones que implementan HTTP/2 o HTTP/3, ya que estas versiones del protocolo soportan bien la multiplexación.
                             </p>
 
@@ -254,8 +254,8 @@ export function HttpCode() {
                             <h1 id="code201">201</h1>
 
                             <p>
-                                El código de estado `201 Created` indica que una solicitud HTTP ha sido procesada con éxito y ha resultado en la 
-                                creación de un nuevo recurso. La ubicación del recurso recién creado generalmente se proporciona en el encabezado 
+                                El código de estado `201 Created` indica que una solicitud HTTP ha sido procesada con éxito y ha resultado en la
+                                creación de un nuevo recurso. La ubicación del recurso recién creado generalmente se proporciona en el encabezado
                                 `Location` de la respuesta.
                             </p>
 
@@ -282,18 +282,18 @@ export function HttpCode() {
                             <h2>Usos Comunes</h2>
 
                             <p>
-                                Creación de Recursos Únicos: Un recurso único se genera como resultado de una solicitud, como un nuevo registro de usuario, 
+                                Creación de Recursos Únicos: Un recurso único se genera como resultado de una solicitud, como un nuevo registro de usuario,
                                 la creación de un producto, o una entrada en un blog. Ejemplo: Registrar un nuevo cliente en una base de datos.
                             </p>
 
                             <p>
-                                Indicación de la Ubicación del Recurso: Es útil cuando el cliente necesita saber la URL del recurso creado para realizar operaciones 
+                                Indicación de la Ubicación del Recurso: Es útil cuando el cliente necesita saber la URL del recurso creado para realizar operaciones
                                 posteriores (como leer, actualizar o eliminar). Ejemplo: Crear una nueva orden en un sistema de compras y devolver la URL de esa orden.
                             </p>
 
                             <p>
-                                Representación del Recurso en la Respuesta: Se puede incluir información adicional sobre el recurso recién creado para que 
-                                el cliente no tenga que hacer otra solicitud para obtener los detalles. Ejemplo: Crear un archivo en un servicio de 
+                                Representación del Recurso en la Respuesta: Se puede incluir información adicional sobre el recurso recién creado para que
+                                el cliente no tenga que hacer otra solicitud para obtener los detalles. Ejemplo: Crear un archivo en un servicio de
                                 almacenamiento en la nube y devolver los metadatos del archivo.
                             </p>
 
@@ -303,15 +303,15 @@ export function HttpCode() {
                                 Mejora la claridad de las respuestas HTTP al cliente.
                                 Simplifica la interacción con APIs RESTful al proporcionar directamente la ubicación del recurso creado.
                                 Fomenta el cumplimiento de los estándares HTTP, lo que ayuda en la interoperabilidad entre sistemas.
-                            </p>  
+                            </p>
 
                             <Divider />
 
                             <h1 id="code202">202</h1>
 
                             <p>
-                                El código de estado 202 Accepted indica que el servidor ha recibido y aceptado la solicitud para ser procesada, 
-                                pero el procesamiento aún no se ha completado. Este código no garantiza que el procesamiento de la solicitud vaya a 
+                                El código de estado 202 Accepted indica que el servidor ha recibido y aceptado la solicitud para ser procesada,
+                                pero el procesamiento aún no se ha completado. Este código no garantiza que el procesamiento de la solicitud vaya a
                                 finalizar con éxito; solo informa que se ha aceptado para su ejecución en el futuro.
                             </p>
 
@@ -326,25 +326,25 @@ export function HttpCode() {
                             <h2>Usos Comunes</h2>
 
                             <p>
-                                Procesamiento Largo o Diferido: Cuando la operación solicitada requiere tiempo significativo para completarse, como la 
+                                Procesamiento Largo o Diferido: Cuando la operación solicitada requiere tiempo significativo para completarse, como la
                                 generación de informes, análisis de datos, o procesamiento en lotes. Ejemplo: Enviar un archivo para análisis antivirus o conversión de formato.
-                                Procesos Asíncronos: Cuando el servidor delega la tarea a otro sistema o cola de procesamiento, y el resultado final estará disponible más tarde. 
+                                Procesos Asíncronos: Cuando el servidor delega la tarea a otro sistema o cola de procesamiento, y el resultado final estará disponible más tarde.
                                 Ejemplo: Iniciar un despliegue en un sistema CI/CD o una tarea de impresión.
-                                Feedback al Cliente sin Bloqueo: Se usa para notificar al cliente que la solicitud ha sido aceptada y procesada, pero sin 
-                                bloquearlo hasta que el resultado esté listo. Ejemplo: Un sistema de correo masivo que confirma la recepción de una solicitud 
+                                Feedback al Cliente sin Bloqueo: Se usa para notificar al cliente que la solicitud ha sido aceptada y procesada, pero sin
+                                bloquearlo hasta que el resultado esté listo. Ejemplo: Un sistema de correo masivo que confirma la recepción de una solicitud
                                 de envío sin esperar a que todos los correos sean entregados.
                             </p>
 
                             <h2>Ventajas</h2>
 
                             <p>
-                                Mejora la experiencia del usuario en aplicaciones con operaciones de larga duración, al proporcionar una respuesta rápida en lugar de 
+                                Mejora la experiencia del usuario en aplicaciones con operaciones de larga duración, al proporcionar una respuesta rápida en lugar de
                                 hacer que el cliente espere. Permite diseñar APIs más escalables al delegar tareas complejas a sistemas secundarios o colas de trabajo.
                                 Proporciona una base clara para manejar procesos asíncronos, permitiendo al cliente saber que su solicitud está en curso.
                             </p>
 
                             <p>
-                                Ambos códigos (201 Created y 202 Accepted) son útiles en APIs RESTful, pero se utilizan en contextos diferentes según el 
+                                Ambos códigos (201 Created y 202 Accepted) son útiles en APIs RESTful, pero se utilizan en contextos diferentes según el
                                 propósito de la solicitud y la naturaleza del procesamiento del recurso.
                             </p>
 
@@ -383,6 +383,12 @@ export function HttpCode() {
                                 Proporciona claridad al cliente sobre la fuente y precisión de los datos.
                                 Ayuda en sistemas distribuidos a diferenciar entre datos originales y transformados.
                                 Facilita el manejo de respuestas ajustadas o procesadas por intermediarios, sin atribuirlas directamente al servidor de origen.
+                            </p>
+
+                            <p>
+                                Aunque su uso es raro, el código `203` tiene aplicaciones específicas en sistemas con servidores 
+                                intermediarios que manipulan o transforman datos. En la mayoría de los casos, los códigos como 
+                                `200 OK` o `304 Not Modified` son suficientes para representar el estado de una respuesta.
                             </p>
 
                         </DivContent>
@@ -917,7 +923,7 @@ En este caso, el proxy devolvió una versión modificada de la respuesta origina
 
 ---
 
-Aunque su uso es raro, el código `203` tiene aplicaciones específicas en sistemas con servidores intermediarios que manipulan o transforman datos. En la mayoría de los casos, los códigos como `200 OK` o `304 Not Modified` son suficientes para representar el estado de una respuesta.
+
 
 ----
 
