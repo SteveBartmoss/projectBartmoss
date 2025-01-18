@@ -37,7 +37,7 @@ export function HttpCode() {
         },
         {
             titulo: '203',
-            id: 'code103',
+            id: 'code203',
         }
     ]
 
@@ -342,7 +342,7 @@ export function HttpCode() {
                                 propósito de la solicitud y la naturaleza del procesamiento del recurso.
                             </p>
 
-                            <h1 id="code103">203</h1>
+                            <h1 id="code203">203</h1>
 
                             <p>
                                 El código de estado `203 Non-Authoritative Information` indica que la solicitud se ha procesado con éxito, pero la respuesta no contiene información del servidor de origen. En cambio, la información de la respuesta puede haber sido modificada por un servidor intermedio, como un proxy o una caché.
