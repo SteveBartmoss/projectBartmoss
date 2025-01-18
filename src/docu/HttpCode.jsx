@@ -200,6 +200,8 @@ export function HttpCode() {
                                 El código `103 Early Hints` es una herramienta poderosa para optimizar tiempos de carga y mejorar la experiencia del usuario en la web.
                             </p>
 
+                            <Divider />
+
                             <h1 id="code200">200</h1>
 
                             <p>
@@ -246,6 +248,8 @@ export function HttpCode() {
                                 El uso del código 200 ayuda a los clientes a comprender rápidamente que la operación fue exitosa sin necesidad
                                 de analizar en detalle el cuerpo de la respuesta.
                             </p>
+
+                            <Divider />
 
                             <h1 id="code201">201</h1>
 
@@ -301,6 +305,8 @@ export function HttpCode() {
                                 Fomenta el cumplimiento de los estándares HTTP, lo que ayuda en la interoperabilidad entre sistemas.
                             </p>  
 
+                            <Divider />
+
                             <h1 id="code202">202</h1>
 
                             <p>
@@ -341,6 +347,8 @@ export function HttpCode() {
                                 Ambos códigos (201 Created y 202 Accepted) son útiles en APIs RESTful, pero se utilizan en contextos diferentes según el 
                                 propósito de la solicitud y la naturaleza del procesamiento del recurso.
                             </p>
+
+                            <Divider />
 
                             <h1 id="code203">203</h1>
 
