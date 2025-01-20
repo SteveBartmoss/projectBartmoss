@@ -400,11 +400,17 @@ export function HttpCode() {
                             <h1 id="code204">204</h1>
 
                             <p>
-                            El código de estado 204 No Content indica que el servidor ha procesado con éxito la solicitud, pero no necesita devolver un cuerpo 
-                            de respuesta. Se usa cuando no hay contenido que proporcionar al cliente, pero se confirma que la operación solicitada se completó correctamente.
+                                El código de estado 204 No Content indica que el servidor ha procesado con éxito la solicitud, pero no necesita devolver un cuerpo 
+                                de respuesta. Se usa cuando no hay contenido que proporcionar al cliente, pero se confirma que la operación solicitada se completó correctamente.
                             </p>
 
+                            <h2>Características Principales</h2>
 
+                            <p>
+                                Sin Contenido en el Cuerpo: La respuesta incluye solo los encabezados HTTP.
+                                Mantiene el Estado del Cliente: Ideal cuando el cliente no necesita recargar su interfaz o cambiar su estado como resultado de la respuesta.
+                                Métodos Usuales: Frecuentemente usado con `DELETE`, `PUT`, o acciones que actualizan datos sin necesidad de retroalimentación al cliente.
+                            </p>
 
                         </DivContent>
                     </DivArticle>
@@ -945,12 +951,6 @@ En este caso, el proxy devolvió una versión modificada de la respuesta origina
 --- codigo 204
 
 ### **Código de Respuesta HTTP 204: No Content**
-
-
-#### **Características Clave**:
-1. **Sin Contenido en el Cuerpo**: La respuesta incluye solo los encabezados HTTP.
-2. **Mantiene el Estado del Cliente**: Ideal cuando el cliente no necesita recargar su interfaz o cambiar su estado como resultado de la respuesta.
-3. **Métodos Usuales**: Frecuentemente usado con `DELETE`, `PUT`, o acciones que actualizan datos sin necesidad de retroalimentación al cliente.
 
 ---
 
