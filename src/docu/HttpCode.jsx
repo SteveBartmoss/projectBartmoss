@@ -393,6 +393,15 @@ export function HttpCode() {
 
                             <Divider />
 
+                            <h1 id="code204">204</h1>
+
+                            <p>
+                            El código de estado 204 No Content indica que el servidor ha procesado con éxito la solicitud, pero no necesita devolver un cuerpo 
+                            de respuesta. Se usa cuando no hay contenido que proporcionar al cliente, pero se confirma que la operación solicitada se completó correctamente.
+                            </p>
+
+
+
                         </DivContent>
                     </DivArticle>
                 </DivCol>
@@ -933,8 +942,6 @@ En este caso, el proxy devolvió una versión modificada de la respuesta origina
 
 ### **Código de Respuesta HTTP 204: No Content**
 
-#### **Descripción**
-El código de estado `204 No Content` indica que el servidor ha procesado con éxito la solicitud, pero no necesita devolver un cuerpo de respuesta. Se usa cuando no hay contenido que proporcionar al cliente, pero se confirma que la operación solicitada se completó correctamente.
 
 #### **Características Clave**:
 1. **Sin Contenido en el Cuerpo**: La respuesta incluye solo los encabezados HTTP.
