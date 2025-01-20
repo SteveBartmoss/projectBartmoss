@@ -38,6 +38,10 @@ export function HttpCode() {
         {
             titulo: '203',
             id: 'code203',
+        },
+        {
+            titulo: '204',
+            id: 'code204',
         }
     ]
 
