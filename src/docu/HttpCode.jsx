@@ -1318,4 +1318,80 @@ El código `208 Already Reported` es útil en los siguientes escenarios:
 
 El código `208 Already Reported` mejora la eficiencia de las operaciones en sistemas que gestionan múltiples recursos jerárquicos, asegurando que los clientes solo reciban la información necesaria sin redundancias innecesarias.
 
+
+--- codigo 226
+
+### **Código de Respuesta HTTP 226: IM Used**
+
+#### **Descripción**
+El código de estado HTTP **226 IM Used** se utiliza para indicar que el servidor ha cumplido con una solicitud GET para un recurso y que la respuesta se generó utilizando una o más manipulaciones de contenido (deltas). Esto permite enviar únicamente las diferencias entre una versión previa del recurso y la versión actual, en lugar de transferir todo el recurso completo.
+
+Este código es definido en la [RFC 3229](https://datatracker.ietf.org/doc/html/rfc3229) como parte del protocolo **HTTP Delta Encoding**. Es particularmente útil en situaciones donde un cliente ya posee una versión del recurso y solo necesita recibir actualizaciones incrementales.
+
+---
+
+### **Características Clave**
+1. **Reducción del Tamaño de la Respuesta**: Solo se envían los cambios entre dos versiones del recurso, lo que optimiza el uso del ancho de banda.
+2. **Cabecera `IM`**: El servidor utiliza esta cabecera en la respuesta para indicar qué manipulaciones específicas se aplicaron.
+3. **Usos Avanzados**: Común en sistemas donde se sincronizan datos frecuentemente, como aplicaciones de colaboración en tiempo real o sincronización de archivos.
+
+---
+
+### **Ejemplo**
+#### **Escenario**
+Un cliente ha descargado previamente una versión de un archivo JSON y solicita solo las actualizaciones desde la última versión que tiene.
+
+#### **Solicitud**
+```http
+GET /data/resource HTTP/1.1
+Host: example.com
+A-IM: delta
+If-None-Match: "v1"
+```
+
+- **`A-IM: delta`**: Solicita al servidor una codificación delta.
+- **`If-None-Match: "v1"`**: Indica que el cliente tiene la versión etiquetada como `"v1"`.
+
+#### **Respuesta**
+```http
+HTTP/1.1 226 IM Used
+Content-Type: application/json
+ETag: "v2"
+IM: delta
+
+{
+  "updatedField": "newValue"
+}
+```
+
+- **`IM: delta`**: Indica que se usó una codificación delta para generar la respuesta.
+- **`ETag: "v2"`**: Proporciona una nueva etiqueta de versión para la actualización.
+
+---
+
+### **Caso de Uso**
+#### **Sincronización de Datos**
+El código `226 IM Used` es útil en escenarios donde un cliente mantiene una copia local de los datos y necesita sincronizar los cambios de manera eficiente:
+1. **Aplicaciones de Colaboración**:
+   - Herramientas como Google Docs o plataformas colaborativas donde múltiples usuarios editan el mismo documento.
+2. **Transferencia de Archivos**:
+   - Sincronización incremental de datos en aplicaciones como Dropbox o sistemas de control de versiones.
+3. **APIs y Servicios Web**:
+   - APIs que proporcionan datos actualizados sin necesidad de retransmitir toda la información.
+
+---
+
+### **Ventajas del Código 226**
+- **Eficiencia**: Reduce el tamaño de las respuestas HTTP, mejorando el rendimiento.
+- **Ahorro de Ancho de Banda**: Ideal para aplicaciones con recursos grandes o redes de baja velocidad.
+- **Sincronización Rápida**: Facilita mantener datos actualizados en tiempo real.
+
+---
+
+### **Consideraciones**
+- **Compatibilidad**: El cliente y el servidor deben admitir manipulaciones delta y el encabezado `A-IM`.
+- **Casos Limitados**: Este código no es ampliamente utilizado fuera de aplicaciones específicas, como sincronización incremental.
+
+El código HTTP `226 IM Used` es una herramienta poderosa para mejorar la eficiencia en la transferencia de datos, especialmente en sistemas que manejan versiones de recursos o sincronización incremental.
+
 */
