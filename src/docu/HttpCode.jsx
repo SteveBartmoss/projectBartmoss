@@ -391,6 +391,8 @@ export function HttpCode() {
                                 `200 OK` o `304 Not Modified` son suficientes para representar el estado de una respuesta.
                             </p>
 
+                            <Divider />
+
                         </DivContent>
                     </DivArticle>
                 </DivCol>
