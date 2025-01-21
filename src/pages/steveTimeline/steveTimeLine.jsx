@@ -5,7 +5,14 @@ export function SteveTimeLine() {
     return (
         <div>
 
-            <TimeItem fecha="18/01/2025" autor="Steve" texto="
+            <TimeItem fecha="21/01/2025" autor="Steve" texto="
+               Riendo se pasa el tiempo, jugando olvidas el hambre
+                Hasta que vas comprendiendo la difícil situación
+                Cuando ves un niño afuera jugando con su Nintendo
+                Viendo cómo sus dos padres son como en televisión"
+            />
+
+            <TimeItem fecha="20/01/2025" autor="Steve" texto="
                Hay un niño en Venezuela que creció como cualquiera
                 Jugando en calles y aceras sin mucha preocupación
                 Es fácil para los niños, que de cualquier forma juegan
