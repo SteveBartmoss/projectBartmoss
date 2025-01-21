@@ -426,6 +426,13 @@ export function HttpCode() {
                                 Ejemplo: Una solicitud AJAX que actualiza un estado en el backend sin modificar la UI.
                             </p>
 
+                            <h2>Ventajas</h2>
+
+                            <p>
+                                Reduce el tráfico de red al evitar enviar contenido innecesario.
+                                Mejora la experiencia del usuario al no recargar la interfaz sin necesidad.
+                                Proporciona una manera clara y eficiente de indicar éxito sin información adicional.
+                            </p>
 
                         </DivContent>
                     </DivArticle>
@@ -995,10 +1002,7 @@ En este caso, la configuración se actualizó correctamente, pero no hay necesid
 
 ---
 
-### **Beneficios de Usar 204 No Content**
-- Reduce el tráfico de red al evitar enviar contenido innecesario.
-- Mejora la experiencia del usuario al no recargar la interfaz sin necesidad.
-- Proporciona una manera clara y eficiente de indicar éxito sin información adicional.
+
 
 ---
 
