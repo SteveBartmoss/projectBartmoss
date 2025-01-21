@@ -434,6 +434,10 @@ export function HttpCode() {
                                 Proporciona una manera clara y eficiente de indicar éxito sin información adicional.
                             </p>
 
+                            <p>
+                                El código 204 es una excelente opción para operaciones rápidas y silenciosas que confirman el éxito de una acción sin sobrecargar la comunicación entre cliente y servidor. Su uso puede mejorar la eficiencia de las APIs y la experiencia de los usuarios en aplicaciones modernas.
+                            </p>
+
                         </DivContent>
                     </DivArticle>
                 </DivCol>
@@ -1002,11 +1006,6 @@ En este caso, la configuración se actualizó correctamente, pero no hay necesid
 
 ---
 
-
-
----
-
-El código `204` es una excelente opción para operaciones rápidas y silenciosas que confirman el éxito de una acción sin sobrecargar la comunicación entre cliente y servidor. Su uso puede mejorar la eficiencia de las APIs y la experiencia de los usuarios en aplicaciones modernas.
 
 -- codigo 205
 
