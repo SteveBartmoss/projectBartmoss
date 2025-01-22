@@ -6,6 +6,13 @@ export function SteveTimeLine() {
         <div>
 
             <TimeItem fecha="21/01/2025" autor="Steve" texto="
+               No pelean, se abrazan, tiempo con el niño pasan
+                Comunicación enlazan, se dicen frases de amor
+                Hay un chamo en Venezuela que poco a poco comprende
+                Que la vida es diferente y que pudiera ser mejor"
+            />
+
+            <TimeItem fecha="21/01/2025" autor="Steve" texto="
                Riendo se pasa el tiempo, jugando olvidas el hambre
                 Hasta que vas comprendiendo la difícil situación
                 Cuando ves un niño afuera jugando con su Nintendo
