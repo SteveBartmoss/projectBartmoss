@@ -5,14 +5,15 @@ export function SteveTimeLine() {
     return (
         <div>
 
-            <TimeItem fecha="21/01/2025" autor="Steve" texto="
-               No pelean, se abrazan, tiempo con el niño pasan
-                Comunicación enlazan, se dicen frases de amor
-                Hay un chamo en Venezuela que poco a poco comprende
-                Que la vida es diferente y que pudiera ser mejor"
+            <TimeItem fecha="23/01/2025" autor="Steve" texto="
+               El niño que ya crecido, por caprichos del destino
+                Recorrió muchos caminos, vive sólo con rencor
+                Nada sueña, ni dormido, no confía ni en sus amigos
+                Porque sabe que el camino fue creado pa'l león
+                "
             />
 
-            <TimeItem fecha="21/01/2025" autor="Steve" texto="
+            <TimeItem fecha="22/01/2025" autor="Steve" texto="
                Riendo se pasa el tiempo, jugando olvidas el hambre
                 Hasta que vas comprendiendo la difícil situación
                 Cuando ves un niño afuera jugando con su Nintendo
