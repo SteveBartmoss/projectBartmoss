@@ -186,6 +186,16 @@ export function ProfileSteve() {
                     <Card>
                         <h1>Libros leidos</h1>
 
+                        <p>Dune, El imperio final, Ready player one, Yo robot</p>
+
+                        <h1>Libros  que estoy leyendo</h1>
+
+                        <p>El camino de los reyes, La riada</p>
+
+                        <h1>Libros que quiero leer</h1>
+
+                        <p>Hijos de dune, El aliento de los dioses</p>
+
                         <Btn evento={() => closeDetailsBooks()} variant='' color={'error'}>Cerrar</Btn>
                     </Card>
                 </Modal>
