@@ -9,6 +9,7 @@ export function processCode(code){
     let swap=""
     let listTokens=[]
     let comentState=false
+    let stringState=false
 
     //console.log(code)
     //console.log('longitud',code.length)
@@ -17,9 +18,26 @@ export function processCode(code){
 
         const char = code[ite];
 
-        if(comentState){
+        if(stringState && !comentState){
+            if(char==='"'){
+                swap+=char
+                listTokens.push({
+                    typeToken: 'String',
+                    character: swap
+                })
+                swap=''
+                stringState=false
+            }
+            swap+=char
+            continue
+        }
+        if(char==='"'){
+            swap+=char
+            stringState=true
+            continue
+        }
+        if(comentState && !stringState){
             if(char==='#'){
-                console.log(swap)
                 listTokens.push({
                     typeToken: 'Coment',
                     character: swap
