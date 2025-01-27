@@ -27,7 +27,16 @@ export function Trabajo1(){
                     </p>
 
                     <p>
-                        Si bien no suelo buscar tanto 
+                        Si bien no suelo buscar tanto la solucion o implementacion de lo que me pide, si suelo buscar 
+                        la documentacion o algun ejemplo de como se trabaja con una nueva tecnologia. Y es que muchas veces 
+                        tengo que usar tecnologoias que no nunca habia usado o que no habia tenido necesidad asi que 
+                        tengo que buscar como se usa o una guia que me permita hacer lo que me piden en el trabajo.
+                    </p>
+
+                    <p>
+                        Si bien entiendo que la razon por la que los maestros no te dejen buscar las soluciones o informacion 
+                        para resolver problemas, ya que si no aprendemos a resolver estos problemas no aprendes las cosas basicas de programacion
+                        lo cual es algo que sera muy util despues
                     </p>
                 </DivContent>
             </DivArticle>
