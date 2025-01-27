@@ -24,4 +24,7 @@ export function decorateToken(token){
     if(token.typeToken === 'Coment'){
         return 'coment-word'
     }
+    if(token.typeToken === 'String'){
+        return 'string-word'
+    }
 }
