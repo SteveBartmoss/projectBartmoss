@@ -43,12 +43,7 @@ export function MapObjects() {
                                 En JavaScript, puedes agregar propiedades a un objeto en cualquier momento, incluso después de haberlo creado.
                             </p>
 
-                            <CodeSpace title={'Ejemplo'}
-                                rawCode={`const persona = { nombre: "Juan" } 
-                        persona.edad = 30; // Añadiendo la propiedad 'edad' en tiempo de ejecución
-                        console.log(persona); // nombre: "Juan", edad: 30`} />
-
-                            <CodeSpaceV2 title={'V2'}
+                            <CodeSpaceV2 title={'Ejemplo'}
                                 rawCode={`const persona = { nombre: "Juan" }\n persona.edad = 30; //Añadiendo la propiedad 'edad' en tiempo de ejecucion# \n console.log(persona); //nombre: 'Juan', edad: 30# \n`} />
 
                             <p>
