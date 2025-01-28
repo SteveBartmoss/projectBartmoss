@@ -31,7 +31,8 @@ export function CodeSpaceV2({title,rawCode=""}){
         //console.log(processCode(':+=/!-*'))
         //console.log(processCode(rawCode))
         //console.log(sliceCode())
-        console.log(sliceCode(rawCode))
+        //console.log(sliceCode(rawCode))
+        //console.log(processCode(rawCode))
     },[])
 
     return(
