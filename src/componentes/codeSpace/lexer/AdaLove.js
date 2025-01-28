@@ -11,12 +11,13 @@ export function processCode(code){
     let comentState=false
     let stringState=false
 
-    //console.log(code)
+    console.log(code)
     //console.log('longitud',code.length)
 
     for(let ite=0; ite<=code.length; ite++){
 
         const char = code[ite];
+        console.log('Character',char)
 
         if(stringState && !comentState){
             if(char==='"'){
@@ -54,18 +55,30 @@ export function processCode(code){
             continue
         }
         if(operators.test(char)){
+            if (swap) {
+                listTokens.push({ typeToken: "Letters", character: swap });
+                swap = "";
+            }
             listTokens.push({
                 typeToken: 'Operator',
                 character: char
             })
         }
         if(operatorsSet.test(char)){
+            if (swap) {
+                listTokens.push({ typeToken: "Letters", character: swap });
+                swap = "";
+            }
             listTokens.push({
                 typeToken: 'OperatorSet',
                 character: code[ite]
             })
         }
         if(operatorsAccess.test(char)){
+            if (swap) {
+                listTokens.push({ typeToken: "Letters", character: swap });
+                swap = "";
+            }
             listTokens.push({
                 typeToken: 'OperatorAccess',
                 character: char
@@ -106,6 +119,8 @@ export function processCode(code){
         })
         */
     }
+
+    console.log(listTokens)
 
     return listTokens
 }
