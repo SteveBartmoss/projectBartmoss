@@ -42,6 +42,10 @@ export function HttpCode() {
         {
             titulo: '204',
             id: 'code204',
+        },
+        {
+            titulo: '205',
+            id: 'code205',
         }
     ]
 
@@ -436,6 +440,23 @@ export function HttpCode() {
 
                             <p>
                                 El código 204 es una excelente opción para operaciones rápidas y silenciosas que confirman el éxito de una acción sin sobrecargar la comunicación entre cliente y servidor. Su uso puede mejorar la eficiencia de las APIs y la experiencia de los usuarios en aplicaciones modernas.
+                            </p>
+
+                            <h1 id="code205">205</h1>
+
+                            <p>
+                                El código de estado 205 Reset Content indica que el servidor ha procesado con éxito la solicitud, 
+                                pero además solicita al cliente que reinicie o actualice su estado, como limpiar formularios o restablecer 
+                                vistas en la interfaz de usuario. A diferencia del código 204, que no exige ninguna acción del cliente, el 
+                                205 indica explícitamente que el cliente debe realizar un reinicio.
+                            </p>
+
+                            <h2>Características Principales</h2>
+
+                            <p>
+                                Sin Cuerpo de Respuesta: Similar al código `204`, no incluye contenido en el cuerpo.
+                                Acción Requerida por el Cliente: Se utiliza cuando el cliente debe realizar un restablecimiento visual o funcional.
+                                Métodos Usuales: A menudo asociado con solicitudes como `POST`, `PUT` o `DELETE`.
                             </p>
 
                         </DivContent>
@@ -1011,13 +1032,7 @@ En este caso, la configuración se actualizó correctamente, pero no hay necesid
 
 ### **Código de Respuesta HTTP 205: Reset Content**
 
-#### **Descripción**
-El código de estado `205 Reset Content` indica que el servidor ha procesado con éxito la solicitud, pero además solicita al cliente que reinicie o actualice su estado, como limpiar formularios o restablecer vistas en la interfaz de usuario. A diferencia del código `204`, que no exige ninguna acción del cliente, el `205` indica explícitamente que el cliente debe realizar un reinicio.
 
-#### **Características Clave**:
-1. **Sin Cuerpo de Respuesta**: Similar al código `204`, no incluye contenido en el cuerpo.
-2. **Acción Requerida por el Cliente**: Se utiliza cuando el cliente debe realizar un restablecimiento visual o funcional.
-3. **Métodos Usuales**: A menudo asociado con solicitudes como `POST`, `PUT` o `DELETE`.
 
 ---
 
