@@ -1414,4 +1414,73 @@ El código `226 IM Used` es útil en escenarios donde un cliente mantiene una co
 
 El código HTTP `226 IM Used` es una herramienta poderosa para mejorar la eficiencia en la transferencia de datos, especialmente en sistemas que manejan versiones de recursos o sincronización incremental.
 
+--- codigo 300
+
+### **Código de Respuesta HTTP 300: Multiple Choices**
+
+#### **Descripción**
+El código de estado HTTP **300 Multiple Choices** indica que el recurso solicitado tiene múltiples representaciones posibles y el cliente debe elegir una. Esta respuesta se usa cuando hay varias opciones disponibles para un mismo recurso, y el servidor proporciona información sobre esas opciones para que el cliente seleccione la más adecuada.
+
+Este código se encuentra definido en la [RFC 9110, Sección 15.4.1](https://datatracker.ietf.org/doc/html/rfc9110#section-15.4.1) y generalmente se utiliza en situaciones donde un recurso tiene múltiples formatos, idiomas o versiones.
+
+---
+
+### **Características Clave**
+1. **Múltiples Opciones Disponibles**: El recurso solicitado tiene más de una representación posible.
+2. **Selección por Parte del Cliente**: El cliente puede elegir cuál opción prefiere, ya sea manualmente o mediante cabeceras como `Accept-Language` o `Accept`.
+3. **Ubicación en la Respuesta**: Se proporciona una lista de URLs alternativas en el cuerpo de la respuesta o en la cabecera `Location`.
+4. **No Obligatorio Redirigir**: A diferencia de otros códigos de redirección (301, 302), el cliente no está obligado a seguir una URL específica.
+
+---
+
+### **Ejemplo**
+#### **Escenario**
+Un usuario solicita un documento, pero el servidor tiene el recurso disponible en varios formatos (`PDF`, `HTML`, `TXT`).
+
+#### **Solicitud**
+```http
+GET /document HTTP/1.1
+Host: example.com
+Accept: application/pdf
+```
+
+#### **Respuesta**
+```http
+HTTP/1.1 300 Multiple Choices
+Content-Type: application/json
+
+{
+  "message": "Este recurso tiene múltiples representaciones, seleccione una:",
+  "options": [
+    { "format": "HTML", "url": "https://example.com/document.html" },
+    { "format": "PDF", "url": "https://example.com/document.pdf" },
+    { "format": "TXT", "url": "https://example.com/document.txt" }
+  ]
+}
+```
+En este caso, el servidor informa al cliente que existen varias versiones del documento, y el cliente puede elegir la más adecuada.
+
+---
+
+### **Caso de Uso**
+#### **Selección de Formatos o Idiomas**
+1. **Sitios Multilingües**:
+   - Un sitio web con contenido disponible en varios idiomas podría usar `300 Multiple Choices` para sugerir diferentes versiones según la configuración del navegador del usuario.
+2. **Diferentes Formatos de Archivo**:
+   - Cuando un archivo está disponible en múltiples formatos (`JSON`, `XML`, `CSV`), el cliente puede elegir la mejor opción.
+3. **Versiones de un API**:
+   - Un API REST que admite varias versiones (`v1`, `v2`) puede devolver un `300` cuando un cliente no especifica la versión deseada.
+
+---
+
+### **Ventajas y Consideraciones**
+✔ **Flexible**: Permite a los clientes seleccionar la mejor representación del recurso.  
+✔ **Útil en Servicios REST**: Facilita la entrega de contenido en múltiples formatos.  
+❌ **Poca Implementación en la Práctica**: La mayoría de los servicios prefieren redirigir automáticamente (`301`, `302`) en lugar de requerir interacción del cliente.  
+❌ **No Soportado por Algunos Navegadores**: Algunos navegadores pueden no manejar adecuadamente el código `300` y simplemente mostrar una página en blanco.  
+
+El código `300 Multiple Choices` es útil cuando un recurso tiene múltiples representaciones, pero su uso no es común en la web moderna debido a que los servidores suelen redirigir automáticamente a una opción predeterminada.
+
+----
+
 */
