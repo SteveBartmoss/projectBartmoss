@@ -5,6 +5,17 @@ export function SteveTimeLine() {
     return (
         <div>
 
+            <TimeItem fecha="30/01/2025" autor="Steve" texto="
+                El niño es adolescente, vive solo con su padre
+                Porque su madre se ha ido, dicen, que a un mundo mejor
+                Su padre trabaja fuerte, pero, mientras está ausente
+                La calle, que está caliente, le sirve como tutor
+                Debe madurar temprano, supo que murió su hermano
+                Y, aunque no le han preguntado, le causó un grave dolor
+                Hay un hombre en Venezuela que poco a poco comprende
+                Que la vida es diferente y que pudiera ser mejor
+            "/>
+
             <TimeItem fecha="29/01/2025" autor="Steve" texto="
                 Y con una coraza va, va, va
                 Y todo blanco y negro ve, ve, ve
