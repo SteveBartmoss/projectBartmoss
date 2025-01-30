@@ -459,6 +459,22 @@ export function HttpCode() {
                                 Métodos Usuales: A menudo asociado con solicitudes como `POST`, `PUT` o `DELETE`.
                             </p>
 
+                            <h2>Usos Comunes</h2>
+
+                            <p>
+                                Reinicio de Formularios o Interfaces:
+                                Después de que se envíe un formulario, el servidor puede solicitar que el cliente lo limpie.
+                                Ejemplo: Un formulario de registro que debe restablecerse tras enviarse con éxito.
+
+                                Restablecimiento de Estado Visual:
+                                Cuando el servidor desea que el cliente elimine datos visualizados temporalmente.
+                                Ejemplo: Restablecer una vista de filtro o búsqueda después de aplicar cambios.
+
+                                Preparación para Nuevas Interacciones:
+                                Ideal para aplicaciones interactivas donde el cliente debe estar listo para la siguiente acción.
+                                Ejemplo: Un sistema de encuestas que debe reiniciar la vista tras enviar una respuesta.
+                            </p>
+
                         </DivContent>
                     </DivArticle>
                 </DivCol>
@@ -1060,20 +1076,6 @@ En este caso, el servidor ha recibido el comentario con éxito y solicita al cli
 
 ---
 
-### **Caso de Uso**
-El código `205 Reset Content` es útil en escenarios donde:
-
-1. **Reinicio de Formularios o Interfaces**:
-   - Después de que se envíe un formulario, el servidor puede solicitar que el cliente lo limpie.
-   - **Ejemplo**: Un formulario de registro que debe restablecerse tras enviarse con éxito.
-
-2. **Restablecimiento de Estado Visual**:
-   - Cuando el servidor desea que el cliente elimine datos visualizados temporalmente.
-   - **Ejemplo**: Restablecer una vista de filtro o búsqueda después de aplicar cambios.
-
-3. **Preparación para Nuevas Interacciones**:
-   - Ideal para aplicaciones interactivas donde el cliente debe estar listo para la siguiente acción.
-   - **Ejemplo**: Un sistema de encuestas que debe reiniciar la vista tras enviar una respuesta.
 
 ---
 
