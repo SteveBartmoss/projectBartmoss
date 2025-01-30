@@ -72,11 +72,12 @@ export function ProfileSteve() {
                                 <Chip color={"principal"}>React</Chip>
                                 <Chip color={"warning"}>JavaScript</Chip>
                                 <Chip color={"success"}>Linux</Chip>
+                                <Chip color={"principal"}>Vue</Chip>
                             </DivRow>
                         </Card>
                         <Card>
                             <h1>Stats</h1>
-                            <p>Horas de programacion: 960 </p>
+                            <p>Horas de programacion: 1135 </p>
                         </Card>
                         <Card>
                             <h1>Manejador de Versiones</h1>
