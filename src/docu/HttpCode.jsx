@@ -475,6 +475,14 @@ export function HttpCode() {
                                 Ejemplo: Un sistema de encuestas que debe reiniciar la vista tras enviar una respuesta.
                             </p>
 
+                            <h2>Ventajas</h2>
+
+                            <p>
+                                Proporciona una manera estandarizada de instruir al cliente para que actualice su estado.
+                                Mejora la experiencia del usuario al limpiar automáticamente vistas o formularios sin necesidad de intervención manual.
+                                Reduce la complejidad del cliente al delegar la responsabilidad del reinicio al servidor.
+                            </p>
+
                         </DivContent>
                     </DivArticle>
                 </DivCol>
@@ -1079,10 +1087,7 @@ En este caso, el servidor ha recibido el comentario con éxito y solicita al cli
 
 ---
 
-### **Beneficios de Usar 205 Reset Content**
-- Proporciona una manera estandarizada de instruir al cliente para que actualice su estado.
-- Mejora la experiencia del usuario al limpiar automáticamente vistas o formularios sin necesidad de intervención manual.
-- Reduce la complejidad del cliente al delegar la responsabilidad del reinicio al servidor.
+
 
 ---
 
