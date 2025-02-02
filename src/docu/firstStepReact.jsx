@@ -19,6 +19,14 @@ export function FirstStepReact() {
             titulo: 'Editor de Codigo',
             id: 'codeEditor',
         },
+        {
+            titulo: 'Crear un proyecto con react',
+            id: 'makeProject'
+        },
+        {
+            titulo: 'Estructura de directorios',
+            id: 'dirStructure'
+        }
     ]
     return (
         <>
@@ -173,7 +181,7 @@ export function FirstStepReact() {
                                 cualquier otro que sea de tu agrado
                             </p>
 
-                            <h1>Crea un proyecto nuevo con react</h1>
+                            <h1 id="makeProject">Crea un proyecto nuevo con react</h1>
 
                             <p>
                                 Ahora que tenemos instalado el ambiente podemos
@@ -223,7 +231,7 @@ export function FirstStepReact() {
                                 nativa lo cual es util cuando estas desarrollando una aplicación multi plataforma
                             </p>
 
-                            <h1>Estructura de directorios</h1>
+                            <h1 id="dirStructure">Estructura de directorios</h1>
 
                             <p>
                                 Dentro de la carpeta que creo el comando de react podremos ver la siguiente estructura de ficheros
