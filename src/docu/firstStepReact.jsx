@@ -2,6 +2,7 @@ import { DivArticle, DivSection, DivContent, DivRow, DivCol } from "../component
 import { Portada } from "../componentes/portada/portada";
 import { CodeSpace } from "../componentes/codeSpace/CodeSpace";
 import { TreeMap } from "../componentes/treeMap/TreeMap";
+import { CodeSpaceV2 } from "../componentes/codeSpace/CodeSpaceV2";
 
 
 export function FirstStepReact() {
@@ -401,6 +402,15 @@ export function FirstStepReact() {
                             </p>
 
                             <h2>App.js</h2>
+
+                            <p>
+                                Es un componente funcional de React que define la estructura y el contenido 
+                                de la interfaz de usuario (UI). Generalmente, es el componente raíz que se 
+                                renderiza dentro del DOM (Document Object Model) de la página web.
+                            </p>
+
+                            <CodeSpaceV2 title={'App.js'} 
+                                rawCode={`import React from 'react';\n import './App.css';\n function App() {\n return (\n <div className="App">\n <header className="App-header">\n <h1>¡Hola, React!</h1>\n <p>Bienvenido a tu nueva aplicación creada con Create React App.</p>\n </header>\n </div>\n );\n }\n export default App;\n `} />
 
                         </DivContent>
                     </DivArticle>
