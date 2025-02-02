@@ -42,6 +42,10 @@ export function HttpCode() {
         {
             titulo: '204',
             id: 'code204',
+        },
+        {
+            titulo: '205',
+            id: 'code205',
         }
     ]
 
@@ -436,6 +440,47 @@ export function HttpCode() {
 
                             <p>
                                 El código 204 es una excelente opción para operaciones rápidas y silenciosas que confirman el éxito de una acción sin sobrecargar la comunicación entre cliente y servidor. Su uso puede mejorar la eficiencia de las APIs y la experiencia de los usuarios en aplicaciones modernas.
+                            </p>
+
+                            <h1 id="code205">205</h1>
+
+                            <p>
+                                El código de estado 205 Reset Content indica que el servidor ha procesado con éxito la solicitud, 
+                                pero además solicita al cliente que reinicie o actualice su estado, como limpiar formularios o restablecer 
+                                vistas en la interfaz de usuario. A diferencia del código 204, que no exige ninguna acción del cliente, el 
+                                205 indica explícitamente que el cliente debe realizar un reinicio.
+                            </p>
+
+                            <h2>Características Principales</h2>
+
+                            <p>
+                                Sin Cuerpo de Respuesta: Similar al código `204`, no incluye contenido en el cuerpo.
+                                Acción Requerida por el Cliente: Se utiliza cuando el cliente debe realizar un restablecimiento visual o funcional.
+                                Métodos Usuales: A menudo asociado con solicitudes como `POST`, `PUT` o `DELETE`.
+                            </p>
+
+                            <h2>Usos Comunes</h2>
+
+                            <p>
+                                Reinicio de Formularios o Interfaces:
+                                Después de que se envíe un formulario, el servidor puede solicitar que el cliente lo limpie.
+                                Ejemplo: Un formulario de registro que debe restablecerse tras enviarse con éxito.
+
+                                Restablecimiento de Estado Visual:
+                                Cuando el servidor desea que el cliente elimine datos visualizados temporalmente.
+                                Ejemplo: Restablecer una vista de filtro o búsqueda después de aplicar cambios.
+
+                                Preparación para Nuevas Interacciones:
+                                Ideal para aplicaciones interactivas donde el cliente debe estar listo para la siguiente acción.
+                                Ejemplo: Un sistema de encuestas que debe reiniciar la vista tras enviar una respuesta.
+                            </p>
+
+                            <h2>Ventajas</h2>
+
+                            <p>
+                                Proporciona una manera estandarizada de instruir al cliente para que actualice su estado.
+                                Mejora la experiencia del usuario al limpiar automáticamente vistas o formularios sin necesidad de intervención manual.
+                                Reduce la complejidad del cliente al delegar la responsabilidad del reinicio al servidor.
                             </p>
 
                         </DivContent>
@@ -1011,13 +1056,7 @@ En este caso, la configuración se actualizó correctamente, pero no hay necesid
 
 ### **Código de Respuesta HTTP 205: Reset Content**
 
-#### **Descripción**
-El código de estado `205 Reset Content` indica que el servidor ha procesado con éxito la solicitud, pero además solicita al cliente que reinicie o actualice su estado, como limpiar formularios o restablecer vistas en la interfaz de usuario. A diferencia del código `204`, que no exige ninguna acción del cliente, el `205` indica explícitamente que el cliente debe realizar un reinicio.
 
-#### **Características Clave**:
-1. **Sin Cuerpo de Respuesta**: Similar al código `204`, no incluye contenido en el cuerpo.
-2. **Acción Requerida por el Cliente**: Se utiliza cuando el cliente debe realizar un restablecimiento visual o funcional.
-3. **Métodos Usuales**: A menudo asociado con solicitudes como `POST`, `PUT` o `DELETE`.
 
 ---
 
@@ -1045,27 +1084,10 @@ En este caso, el servidor ha recibido el comentario con éxito y solicita al cli
 
 ---
 
-### **Caso de Uso**
-El código `205 Reset Content` es útil en escenarios donde:
-
-1. **Reinicio de Formularios o Interfaces**:
-   - Después de que se envíe un formulario, el servidor puede solicitar que el cliente lo limpie.
-   - **Ejemplo**: Un formulario de registro que debe restablecerse tras enviarse con éxito.
-
-2. **Restablecimiento de Estado Visual**:
-   - Cuando el servidor desea que el cliente elimine datos visualizados temporalmente.
-   - **Ejemplo**: Restablecer una vista de filtro o búsqueda después de aplicar cambios.
-
-3. **Preparación para Nuevas Interacciones**:
-   - Ideal para aplicaciones interactivas donde el cliente debe estar listo para la siguiente acción.
-   - **Ejemplo**: Un sistema de encuestas que debe reiniciar la vista tras enviar una respuesta.
 
 ---
 
-### **Beneficios de Usar 205 Reset Content**
-- Proporciona una manera estandarizada de instruir al cliente para que actualice su estado.
-- Mejora la experiencia del usuario al limpiar automáticamente vistas o formularios sin necesidad de intervención manual.
-- Reduce la complejidad del cliente al delegar la responsabilidad del reinicio al servidor.
+
 
 ---
 
@@ -1396,5 +1418,74 @@ El código `226 IM Used` es útil en escenarios donde un cliente mantiene una co
 - **Casos Limitados**: Este código no es ampliamente utilizado fuera de aplicaciones específicas, como sincronización incremental.
 
 El código HTTP `226 IM Used` es una herramienta poderosa para mejorar la eficiencia en la transferencia de datos, especialmente en sistemas que manejan versiones de recursos o sincronización incremental.
+
+--- codigo 300
+
+### **Código de Respuesta HTTP 300: Multiple Choices**
+
+#### **Descripción**
+El código de estado HTTP **300 Multiple Choices** indica que el recurso solicitado tiene múltiples representaciones posibles y el cliente debe elegir una. Esta respuesta se usa cuando hay varias opciones disponibles para un mismo recurso, y el servidor proporciona información sobre esas opciones para que el cliente seleccione la más adecuada.
+
+Este código se encuentra definido en la [RFC 9110, Sección 15.4.1](https://datatracker.ietf.org/doc/html/rfc9110#section-15.4.1) y generalmente se utiliza en situaciones donde un recurso tiene múltiples formatos, idiomas o versiones.
+
+---
+
+### **Características Clave**
+1. **Múltiples Opciones Disponibles**: El recurso solicitado tiene más de una representación posible.
+2. **Selección por Parte del Cliente**: El cliente puede elegir cuál opción prefiere, ya sea manualmente o mediante cabeceras como `Accept-Language` o `Accept`.
+3. **Ubicación en la Respuesta**: Se proporciona una lista de URLs alternativas en el cuerpo de la respuesta o en la cabecera `Location`.
+4. **No Obligatorio Redirigir**: A diferencia de otros códigos de redirección (301, 302), el cliente no está obligado a seguir una URL específica.
+
+---
+
+### **Ejemplo**
+#### **Escenario**
+Un usuario solicita un documento, pero el servidor tiene el recurso disponible en varios formatos (`PDF`, `HTML`, `TXT`).
+
+#### **Solicitud**
+```http
+GET /document HTTP/1.1
+Host: example.com
+Accept: application/pdf
+```
+
+#### **Respuesta**
+```http
+HTTP/1.1 300 Multiple Choices
+Content-Type: application/json
+
+{
+  "message": "Este recurso tiene múltiples representaciones, seleccione una:",
+  "options": [
+    { "format": "HTML", "url": "https://example.com/document.html" },
+    { "format": "PDF", "url": "https://example.com/document.pdf" },
+    { "format": "TXT", "url": "https://example.com/document.txt" }
+  ]
+}
+```
+En este caso, el servidor informa al cliente que existen varias versiones del documento, y el cliente puede elegir la más adecuada.
+
+---
+
+### **Caso de Uso**
+#### **Selección de Formatos o Idiomas**
+1. **Sitios Multilingües**:
+   - Un sitio web con contenido disponible en varios idiomas podría usar `300 Multiple Choices` para sugerir diferentes versiones según la configuración del navegador del usuario.
+2. **Diferentes Formatos de Archivo**:
+   - Cuando un archivo está disponible en múltiples formatos (`JSON`, `XML`, `CSV`), el cliente puede elegir la mejor opción.
+3. **Versiones de un API**:
+   - Un API REST que admite varias versiones (`v1`, `v2`) puede devolver un `300` cuando un cliente no especifica la versión deseada.
+
+---
+
+### **Ventajas y Consideraciones**
+✔ **Flexible**: Permite a los clientes seleccionar la mejor representación del recurso.  
+✔ **Útil en Servicios REST**: Facilita la entrega de contenido en múltiples formatos.  
+❌ **Poca Implementación en la Práctica**: La mayoría de los servicios prefieren redirigir automáticamente (`301`, `302`) en lugar de requerir interacción del cliente.  
+❌ **No Soportado por Algunos Navegadores**: Algunos navegadores pueden no manejar adecuadamente el código `300` y simplemente mostrar una página en blanco.  
+
+El código `300 Multiple Choices` es útil cuando un recurso tiene múltiples representaciones, pero su uso no es común en la web moderna debido a que los servidores suelen redirigir automáticamente a una opción predeterminada.
+
+----
 
 */
