@@ -3,6 +3,7 @@ const operatorsSet=/([\{\}\[\]\(\)])/
 const letters=/([aA-zZ])/;
 const operatorsAccess=/([:\.])/
 const numbers=/([0-9])/
+const operetorsIntervals=/([<>])/
 
 export function processCode(code){
 
@@ -10,32 +11,15 @@ export function processCode(code){
     let listTokens=[]
     let comentState=false
     let stringState=false
-    let labelState=false
 
-    console.log(code)
+    //console.log(code)
     //console.log('longitud',code.length)
 
     for(let ite=0; ite<=code.length; ite++){
 
         const char = code[ite];
-        console.log('Character',char)
+        //console.log('Character',char)
 
-        if(labelState && !comentState && !stringState){
-            if(char=='>'){
-                swap+=char
-                listTokens.push({
-                    typeToken: 'Label',
-                    character: swap
-                })
-                swap=''
-                labelState=false
-            }
-        }
-        if(char==='<' && letters.test(code[ite+1])){
-            swap+=char
-            labelState=true
-            continue
-        }
         if(stringState && !comentState){
             if(char==='"'){
                 swap+=char
@@ -98,6 +82,16 @@ export function processCode(code){
             }
             listTokens.push({
                 typeToken: 'OperatorAccess',
+                character: char
+            })
+        }
+        if(operetorsIntervals.test(char)){
+            if(swap){
+                listTokens.push({typeToken: "Letters", character: swap})
+                swap=""
+            }
+            listTokens.push({
+                typeToken: 'OperatorInterval',
                 character: char
             })
         }
