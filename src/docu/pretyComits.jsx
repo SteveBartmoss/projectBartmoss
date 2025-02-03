@@ -35,6 +35,30 @@ export function PretyCommits() {
       titulo: 'style', 
       id: 'style',
     },
+    {
+      titulo: 'refactor', 
+      id: 'refactor',
+    },
+    {
+      titulo: 'test', 
+      id: 'test',
+    },
+    {
+      titulo: 'chore', 
+      id: 'chore',
+    },
+    {
+      titulo: 'perf', 
+      id: 'perf',
+    },
+    {
+      titulo: 'build', 
+      id: 'build',
+    },
+    {
+      titulo: 'ci', 
+      id: 'ci',
+    }
   ]
 
   return (
@@ -130,7 +154,7 @@ export function PretyCommits() {
 
               <CodeSpace title={'Ejemplo'} rawCode={`style: format code with prettier`} />
 
-              <h3>refactor</h3>
+              <h3 id="refactor">refactor</h3>
 
               <p>
                 Cambio en el código que no añade funcionalidad nueva ni corrige un error.
@@ -138,7 +162,7 @@ export function PretyCommits() {
 
               <CodeSpace title={'Ejemplo'} rawCode={`refactor: optimize authentication flow`} />
 
-              <h3>test</h3>
+              <h3 id="test">test</h3>
 
               <p>
                 Añadir o modificar pruebas.
@@ -146,7 +170,7 @@ export function PretyCommits() {
 
               <CodeSpace title={'Ejemplo'} rawCode={`test: add unit tests for login service`} />
 
-              <h3>chore</h3>
+              <h3 id="chore">chore</h3>
 
               <p>
                 Actualización de tareas de construcción, configuración de herramientas, etc.
@@ -154,7 +178,7 @@ export function PretyCommits() {
 
               <CodeSpace title={'Ejemplo'} rawCode={`chore: update dependencies`} />
 
-              <h3>perf</h3>
+              <h3 id='perf'>perf</h3>
 
               <p>
                 Mejoras en el rendimiento.
@@ -162,7 +186,7 @@ export function PretyCommits() {
 
               <CodeSpace title={'Ejemplo'} rawCode={`perf: improve database query performance`} />
 
-              <h3>build</h3>
+              <h3 id="build">build</h3>
 
               <p>
                 Cambios que afectan el sistema de construcción o dependencias externas.
@@ -170,7 +194,7 @@ export function PretyCommits() {
 
               <CodeSpace title={'Ejemplo'} rawCode={`build: update webpack to version 5`} />
 
-              <h3>ci</h3>
+              <h3 id="ci">ci</h3>
 
               <p>
                 Cambios en la configuración de integración continua.
