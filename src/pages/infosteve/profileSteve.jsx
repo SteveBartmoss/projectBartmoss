@@ -60,6 +60,12 @@ export function ProfileSteve() {
                         Con la idea de poder compartir con otas personas
                         el conocimiento sobre programacion que posee
                     </p>
+                    <h1>Post escritos por humanos</h1>
+                    <p>
+                        Los post que estan publicados en esta pagina son 
+                        revisados por humanos y no se trata de una pagina 
+                        que aporta para  la teoria del internet muerto
+                    </p>
                 </Card>
             </DivCol>
 
