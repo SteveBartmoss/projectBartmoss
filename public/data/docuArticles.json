@@ -76,5 +76,11 @@
     "descripcion": "Con este post podras empezar a usar redux de una forma rapida",
     "url": "primeroredux",
     "topico": ["React"]
+  },
+  {
+    "titulo": "Codigos HTTP",
+    "descripcion": "Con este post puedes entender los diferentes codigos de respuesta HTTP",
+    "url": "httpcodes",
+    "topico": ["HTTP"]
   }
 ]
