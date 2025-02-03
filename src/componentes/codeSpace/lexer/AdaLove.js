@@ -10,6 +10,7 @@ export function processCode(code){
     let listTokens=[]
     let comentState=false
     let stringState=false
+    let labelState=false
 
     console.log(code)
     //console.log('longitud',code.length)
@@ -19,6 +20,22 @@ export function processCode(code){
         const char = code[ite];
         console.log('Character',char)
 
+        if(labelState && !comentState && !stringState){
+            if(char=='>'){
+                swap+=char
+                listTokens.push({
+                    typeToken: 'Label',
+                    character: swap
+                })
+                swap=''
+                labelState=false
+            }
+        }
+        if(char==='<' && letters.test(code[ite+1])){
+            swap+=char
+            labelState=true
+            continue
+        }
         if(stringState && !comentState){
             if(char==='"'){
                 swap+=char
