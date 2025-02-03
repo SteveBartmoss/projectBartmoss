@@ -442,6 +442,8 @@ export function HttpCode() {
                                 El código 204 es una excelente opción para operaciones rápidas y silenciosas que confirman el éxito de una acción sin sobrecargar la comunicación entre cliente y servidor. Su uso puede mejorar la eficiencia de las APIs y la experiencia de los usuarios en aplicaciones modernas.
                             </p>
 
+                            <Divider />
+
                             <h1 id="code205">205</h1>
 
                             <p>
