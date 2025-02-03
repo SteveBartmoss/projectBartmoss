@@ -25,6 +25,9 @@
     margin: 0 1rem;
 }
 
+.label-word{
+    color: #ff45be;
+}
 .reserved-word{
     color: #E57474;
 }
