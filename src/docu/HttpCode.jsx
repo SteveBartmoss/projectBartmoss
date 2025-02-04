@@ -496,53 +496,6 @@ export function HttpCode() {
 
 /*
 
-
--- codigo 205
-
-### **Código de Respuesta HTTP 205: Reset Content**
-
-
-
----
-
-### **Ejemplo**
-Un formulario en una aplicación web permite a los usuarios enviar comentarios. Una vez enviado, el servidor solicita al cliente que limpie el formulario para permitir otro comentario.
-
-#### **Solicitud:**
-```http
-POST /api/feedback HTTP/1.1
-Host: example.com
-Content-Type: application/json
-
-{
-  "message": "Great service!",
-  "rating": 5
-}
-```
-
-#### **Respuesta:**
-```http
-HTTP/1.1 205 Reset Content
-```
-
-En este caso, el servidor ha recibido el comentario con éxito y solicita al cliente que restablezca el formulario (por ejemplo, limpiando los campos de texto).
-
----
-
-
----
-
-
-
----
-
-### **Diferencias con 204 No Content**
-- **`204 No Content`**: Indica éxito sin contenido adicional, pero no requiere ninguna acción del cliente.
-- **`205 Reset Content`**: Indica éxito y además solicita explícitamente al cliente que reinicie o actualice su estado.
-
-El uso de `205 Reset Content` es ideal para aplicaciones donde el cliente necesita orientación clara para restablecer su interfaz o estado después de una operación exitosa.
-
-
 -- 206
 
 ### **Código de Respuesta HTTP 206: Partial Content**
