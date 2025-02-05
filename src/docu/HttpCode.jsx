@@ -496,39 +496,6 @@ export function HttpCode() {
 
 /*
 
---- codigo 204
-
-### **Código de Respuesta HTTP 204: No Content**
-
----
-
-### **Ejemplo**
-Supongamos que una API permite a los usuarios actualizar su configuración, pero no devuelve datos adicionales después de la actualización.
-
-#### **Solicitud:**
-```http
-PUT /api/user/settings HTTP/1.1
-Host: example.com
-Content-Type: application/json
-
-{
-  "notifications": "enabled",
-  "theme": "dark"
-}
-```
-
-#### **Respuesta:**
-```http
-HTTP/1.1 204 No Content
-```
-
-En este caso, la configuración se actualizó correctamente, pero no hay necesidad de enviar datos adicionales al cliente.
-
----
-
----
-
-
 -- codigo 205
 
 ### **Código de Respuesta HTTP 205: Reset Content**
