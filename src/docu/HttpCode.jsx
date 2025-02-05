@@ -485,6 +485,17 @@ export function HttpCode() {
                                 Reduce la complejidad del cliente al delegar la responsabilidad del reinicio al servidor.
                             </p>
 
+                            <h2>Diferencias con 204 No Content</h2>
+
+                            <p>
+                                204 No Content: Indica éxito sin contenido adicional, pero no requiere ninguna acción del cliente.
+                                205 Reset Content: Indica éxito y además solicita explícitamente al cliente que reinicie o actualice su estado.
+                            </p>
+
+                            <p>
+                                El uso de 205 Reset Content es ideal para aplicaciones donde el cliente necesita orientación clara para restablecer su interfaz o estado después de una operación exitosa.
+                            </p>
+
                         </DivContent>
                     </DivArticle>
                 </DivCol>
@@ -534,13 +545,6 @@ En este caso, el servidor ha recibido el comentario con éxito y solicita al cli
 
 
 ---
-
-### **Diferencias con 204 No Content**
-- **`204 No Content`**: Indica éxito sin contenido adicional, pero no requiere ninguna acción del cliente.
-- **`205 Reset Content`**: Indica éxito y además solicita explícitamente al cliente que reinicie o actualice su estado.
-
-El uso de `205 Reset Content` es ideal para aplicaciones donde el cliente necesita orientación clara para restablecer su interfaz o estado después de una operación exitosa.
-
 
 -- 206
 
