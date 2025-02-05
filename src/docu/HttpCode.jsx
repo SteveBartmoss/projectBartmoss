@@ -899,4 +899,65 @@ El código `300 Multiple Choices` es útil cuando un recurso tiene múltiples re
 
 ----
 
+--- codigo 301
+
+### 🔹 **Código de respuesta HTTP 301 - Moved Permanently**  
+
+#### 📌 **Descripción**  
+El código de estado **301 Moved Permanently** indica que un recurso ha sido trasladado de forma **permanente** a una nueva URL. Cualquier solicitud futura debe dirigirse a esta nueva ubicación. Los navegadores y motores de búsqueda suelen actualizar automáticamente sus enlaces a la nueva URL.  
+
+---
+
+#### 📝 **Ejemplo de respuesta con código 301**  
+
+Supongamos que el usuario intenta acceder a `http://ejemplo.com/antigua-ruta`, pero esta página ha sido movida a `http://ejemplo.com/nueva-ruta`.  
+
+El servidor responde con:  
+
+```
+HTTP/1.1 301 Moved Permanently
+Location: http://ejemplo.com/nueva-ruta
+Content-Type: text/html
+```
+
+Y el navegador redirige automáticamente al usuario a `http://ejemplo.com/nueva-ruta`.
+
+---
+
+#### 🎯 **Casos de uso comunes**  
+
+✔ **Migración de URL de una página a otra**  
+   - Si cambias la estructura de tu sitio web y deseas redirigir tráfico sin perder SEO.  
+   - Ejemplo: `https://miweb.com/blog/post-antiguo` → `https://miweb.com/articulos/post-nuevo`.  
+
+✔ **Cambio de dominio**  
+   - Si una empresa cambia de dominio y quiere redirigir todo el tráfico de `https://antiguodominio.com` a `https://nuevodominio.com`.  
+
+✔ **Forzar HTTPS**  
+   - Redirigir automáticamente tráfico HTTP a HTTPS:  
+     ```htaccess
+     RewriteEngine on
+     RewriteCond %{HTTPS} off
+     RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+     ```  
+   - Esto garantiza que todos los usuarios usen una conexión segura.  
+
+✔ **Eliminar www o agregarlo**  
+   - Para evitar duplicidad en URLs (`www` y sin `www`), redirigir siempre a una versión única.  
+   - Ejemplo en `.htaccess`:  
+     ```htaccess
+     RewriteEngine on
+     RewriteCond %{HTTP_HOST} ^www.ejemplo.com [NC]
+     RewriteRule ^(.*)$ http://ejemplo.com/$1 [L,R=301]
+     ```  
+
+---
+
+### ✅ **Resumen**  
+- **301 Moved Permanently** significa que la URL ha cambiado para siempre.  
+- El navegador o cliente debe usar la nueva URL en futuras solicitudes.  
+- Se usa comúnmente para SEO, redirecciones de dominios y cambios de estructura en sitios web.  
+
+Si necesitas ayuda implementando una redirección 301 en tu proyecto, dime qué tecnología usas y te ayudo. 🚀
+
 */
