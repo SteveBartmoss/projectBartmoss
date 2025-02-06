@@ -46,6 +46,10 @@ export function HttpCode() {
         {
             titulo: '205',
             id: 'code205',
+        },
+        {
+            titulo: '206',
+            id: 'code206',
         }
     ]
 
@@ -496,6 +500,12 @@ export function HttpCode() {
                                 El uso de 205 Reset Content es ideal para aplicaciones donde el cliente necesita orientación clara para restablecer su interfaz o estado después de una operación exitosa.
                             </p>
 
+                            <h1 id="code206">206</h1>
+
+                            <p>
+                                El código de estado `206 Partial Content` indica que el servidor ha procesado exitosamente una solicitud parcial de un recurso. Esto sucede cuando el cliente utiliza el encabezado `Range` para pedir una parte específica del recurso, como una sección de un archivo grande.
+                            </p>
+
                         </DivContent>
                     </DivArticle>
                 </DivCol>
@@ -511,10 +521,6 @@ export function HttpCode() {
 
 -- 206
 
-### **Código de Respuesta HTTP 206: Partial Content**
-
-#### **Descripción**
-El código de estado `206 Partial Content` indica que el servidor ha procesado exitosamente una solicitud parcial de un recurso. Esto sucede cuando el cliente utiliza el encabezado `Range` para pedir una parte específica del recurso, como una sección de un archivo grande.
 
 #### **Características Clave**:
 1. **Respuestas Parciales**: Se envía solo la parte solicitada del recurso, no el contenido completo.
