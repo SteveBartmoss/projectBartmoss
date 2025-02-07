@@ -506,6 +506,14 @@ export function HttpCode() {
                                 El código de estado `206 Partial Content` indica que el servidor ha procesado exitosamente una solicitud parcial de un recurso. Esto sucede cuando el cliente utiliza el encabezado `Range` para pedir una parte específica del recurso, como una sección de un archivo grande.
                             </p>
 
+                            <h2>Características Principales</h2>
+
+                            <p>
+                                Respuestas Parciales: Se envía solo la parte solicitada del recurso, no el contenido completo.
+                                Encabezado Content-Range: El servidor incluye este encabezado en la respuesta para indicar el rango del recurso que se está devolviendo.
+                                Optimización de Recursos: Es útil para descargar archivos grandes, transmitir videos, o retomar descargas interrumpidas.
+                            </p>
+
                         </DivContent>
                     </DivArticle>
                 </DivCol>
@@ -521,11 +529,6 @@ export function HttpCode() {
 
 -- 206
 
-
-#### **Características Clave**:
-1. **Respuestas Parciales**: Se envía solo la parte solicitada del recurso, no el contenido completo.
-2. **Encabezado `Content-Range`**: El servidor incluye este encabezado en la respuesta para indicar el rango del recurso que se está devolviendo.
-3. **Optimización de Recursos**: Es útil para descargar archivos grandes, transmitir videos, o retomar descargas interrumpidas.
 
 ---
 
