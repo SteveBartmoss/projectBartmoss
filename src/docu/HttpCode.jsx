@@ -530,6 +530,18 @@ export function HttpCode() {
                                 Ejemplo: Una aplicación que carga imágenes o documentos en partes mientras el usuario las visualiza.
                             </p>
 
+                            <h2>Ventajas</h2>
+
+                            <p>
+                                Content-Range: Especifica el rango del recurso devuelto (por ejemplo, `bytes 0-1023/1048576`).
+                                Content-Length: Indica el tamaño de la porción devuelta.
+                                Accept-Ranges: En una solicitud previa, el servidor puede indicar si soporta rangos con este encabezado (por ejemplo, `bytes`).
+                            </p>
+
+                            <p>
+                                El código 206 Partial Content es esencial para servicios que manejan recursos grandes y buscan eficiencia y flexibilidad en la entrega de contenido al cliente.
+                            </p>
+                            
                         </DivContent>
                     </DivArticle>
                 </DivCol>
@@ -574,14 +586,6 @@ En este caso, el cliente ha solicitado los primeros 1024 bytes de un archivo de 
 - Facilita el manejo de archivos grandes en entornos con conexiones inestables.
 
 ---
-
-### **Encabezados Importantes en una Respuesta 206**
-- **`Content-Range`**: Especifica el rango del recurso devuelto (por ejemplo, `bytes 0-1023/1048576`).
-- **`Content-Length`**: Indica el tamaño de la porción devuelta.
-- **`Accept-Ranges`**: En una solicitud previa, el servidor puede indicar si soporta rangos con este encabezado (por ejemplo, `bytes`).
-
-El código `206 Partial Content` es esencial para servicios que manejan recursos grandes y buscan eficiencia y flexibilidad en la entrega de contenido al cliente.
-
 
 -- codigo 207
 
