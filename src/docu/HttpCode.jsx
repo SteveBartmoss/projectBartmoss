@@ -514,6 +514,22 @@ export function HttpCode() {
                                 Optimización de Recursos: Es útil para descargar archivos grandes, transmitir videos, o retomar descargas interrumpidas.
                             </p>
 
+                            <h2>Usos Comunes</h2>
+
+                            <p>
+                                Transmisión de Videos o Audios:
+                                Los reproductores multimedia solicitan rangos específicos de un archivo para transmitir solo las partes necesarias en un momento dado.
+                                Ejemplo: Un usuario que avanza rápidamente a la mitad de un video.
+
+                                Descargas Interrumpidas:
+                                Permite retomar descargas desde el punto donde se detuvieron, en lugar de reiniciarlas desde el principio.
+                                Ejemplo: Un gestor de descargas que solicita el resto de un archivo tras una desconexión.
+
+                                Optimización de Ancho de Banda:
+                                Reduce el tráfico de red enviando solo las partes necesarias de un recurso.
+                                Ejemplo: Una aplicación que carga imágenes o documentos en partes mientras el usuario las visualiza.
+                            </p>
+
                         </DivContent>
                     </DivArticle>
                 </DivCol>
@@ -528,9 +544,6 @@ export function HttpCode() {
 
 
 -- 206
-
-
----
 
 ### **Ejemplo**
 Supongamos que el cliente está descargando un archivo grande y solicita un rango específico de bytes del archivo.
@@ -552,23 +565,6 @@ Content-Type: application/zip
 ```
 
 En este caso, el cliente ha solicitado los primeros 1024 bytes de un archivo de 1 MB, y el servidor ha proporcionado exactamente esa parte.
-
----
-
-### **Caso de Uso**
-El código `206 Partial Content` es útil en escenarios como:
-
-1. **Transmisión de Videos o Audios**:
-   - Los reproductores multimedia solicitan rangos específicos de un archivo para transmitir solo las partes necesarias en un momento dado.
-   - **Ejemplo**: Un usuario que avanza rápidamente a la mitad de un video.
-
-2. **Descargas Interrumpidas**:
-   - Permite retomar descargas desde el punto donde se detuvieron, en lugar de reiniciarlas desde el principio.
-   - **Ejemplo**: Un gestor de descargas que solicita el resto de un archivo tras una desconexión.
-
-3. **Optimización de Ancho de Banda**:
-   - Reduce el tráfico de red enviando solo las partes necesarias de un recurso.
-   - **Ejemplo**: Una aplicación que carga imágenes o documentos en partes mientras el usuario las visualiza.
 
 ---
 
