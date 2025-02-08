@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import './CodeSpace.css';
 import { decorateToken } from './decorator/picaso';
 import { processCode, sliceCode } from './lexer/AdaLove';
+import { generateUniqueId, generateUniqueIdV3 } from '../helpers/uid';
 
 export function CodeSpaceV2({title,rawCode=""}){
 
@@ -43,10 +44,10 @@ export function CodeSpaceV2({title,rawCode=""}){
             <div className="code-space">
                 {
                     sliceCode(rawCode).map(lineCode =>
-                        <p>
+                        <p key={generateUniqueIdV3()}>
                             {
                                 processCode(lineCode).map(token =>
-                                    <span className={decorateToken(token)}>{token.character} </span>
+                                    <span key={generateUniqueIdV3()} className={decorateToken(token)}>{token.character} </span>
                                 )
                             }
                         </p>
