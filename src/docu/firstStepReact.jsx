@@ -94,7 +94,7 @@ export function FirstStepReact() {
                                 la terminal
                             </p>
 
-                            <CodeSpace title={'terminal'} rawCode={`curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash`} />
+                            <CodeSpaceV2 title={'terminal'} rawCode={`curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash \n`} />
 
                             <p>
                                 Una vez que ejecutemos el comando simplemente tenemos que
@@ -107,7 +107,7 @@ export function FirstStepReact() {
                                 con el siguiente comando:
                             </p>
 
-                            <CodeSpace title={'terminal'} rawCode={`nvm --version`} />
+                            <CodeSpaceV2 title={'terminal'} rawCode={`nvm --version \n`} />
 
                             <p>
                                 Esto nos muestra la versión de la herramienta, y si no aparece
@@ -115,7 +115,7 @@ export function FirstStepReact() {
                                 siguiente comando para instalar Node.js:
                             </p>
 
-                            <CodeSpace title={'terminal'} rawCode={`nvm install 14.4.0`} />
+                            <CodeSpaceV2 title={'terminal'} rawCode={`nvm install 14.4.0 \n`} />
 
                             <p>
                                 Con esto, tenemos instalada la versión 14.4.0 de Node.js. Este
