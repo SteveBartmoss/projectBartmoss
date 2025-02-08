@@ -4,6 +4,16 @@ import { TimeItem } from "../../componentes/timeItem/timeItem";
 export function SteveTimeLine() {
     return (
         <div>
+            
+            <TimeItem fecha="6/02/2025" autor="Steve" texto="
+                Y ahora es un adulto más, que vive entre las ánimas
+                De sus recuerdos, ve los días como páginas
+                De un libro sin final que busca terminarlo hoy
+                Como cuando ves el final de una historia sin haber leído nada
+                Pero sientes que hoy debe estar ya terminada
+                Le dice el corazón que la vida es asfixiante
+                Se encierra en su habitación a escribir para sentir que no está aquí
+            " />
 
             <TimeItem fecha="31/01/2025" autor="Steve" texto="
                 Debe madurar temprano, supo que murió su hermano

@@ -46,6 +46,10 @@ export function HttpCode() {
         {
             titulo: '205',
             id: 'code205',
+        },
+        {
+            titulo: '206',
+            id: 'code206',
         }
     ]
 
@@ -485,6 +489,59 @@ export function HttpCode() {
                                 Reduce la complejidad del cliente al delegar la responsabilidad del reinicio al servidor.
                             </p>
 
+                            <h2>Diferencias con 204 No Content</h2>
+
+                            <p>
+                                204 No Content: Indica éxito sin contenido adicional, pero no requiere ninguna acción del cliente.
+                                205 Reset Content: Indica éxito y además solicita explícitamente al cliente que reinicie o actualice su estado.
+                            </p>
+
+                            <p>
+                                El uso de 205 Reset Content es ideal para aplicaciones donde el cliente necesita orientación clara para restablecer su interfaz o estado después de una operación exitosa.
+                            </p>
+
+                            <h1 id="code206">206</h1>
+
+                            <p>
+                                El código de estado `206 Partial Content` indica que el servidor ha procesado exitosamente una solicitud parcial de un recurso. Esto sucede cuando el cliente utiliza el encabezado `Range` para pedir una parte específica del recurso, como una sección de un archivo grande.
+                            </p>
+
+                            <h2>Características Principales</h2>
+
+                            <p>
+                                Respuestas Parciales: Se envía solo la parte solicitada del recurso, no el contenido completo.
+                                Encabezado Content-Range: El servidor incluye este encabezado en la respuesta para indicar el rango del recurso que se está devolviendo.
+                                Optimización de Recursos: Es útil para descargar archivos grandes, transmitir videos, o retomar descargas interrumpidas.
+                            </p>
+
+                            <h2>Usos Comunes</h2>
+
+                            <p>
+                                Transmisión de Videos o Audios:
+                                Los reproductores multimedia solicitan rangos específicos de un archivo para transmitir solo las partes necesarias en un momento dado.
+                                Ejemplo: Un usuario que avanza rápidamente a la mitad de un video.
+
+                                Descargas Interrumpidas:
+                                Permite retomar descargas desde el punto donde se detuvieron, en lugar de reiniciarlas desde el principio.
+                                Ejemplo: Un gestor de descargas que solicita el resto de un archivo tras una desconexión.
+
+                                Optimización de Ancho de Banda:
+                                Reduce el tráfico de red enviando solo las partes necesarias de un recurso.
+                                Ejemplo: Una aplicación que carga imágenes o documentos en partes mientras el usuario las visualiza.
+                            </p>
+
+                            <h2>Ventajas</h2>
+
+                            <p>
+                                Content-Range: Especifica el rango del recurso devuelto (por ejemplo, `bytes 0-1023/1048576`).
+                                Content-Length: Indica el tamaño de la porción devuelta.
+                                Accept-Ranges: En una solicitud previa, el servidor puede indicar si soporta rangos con este encabezado (por ejemplo, `bytes`).
+                            </p>
+
+                            <p>
+                                El código 206 Partial Content es esencial para servicios que manejan recursos grandes y buscan eficiencia y flexibilidad en la entrega de contenido al cliente.
+                            </p>
+                            
                         </DivContent>
                     </DivArticle>
                 </DivCol>
@@ -496,19 +553,9 @@ export function HttpCode() {
 
 /*
 
+
+
 -- 206
-
-### **Código de Respuesta HTTP 206: Partial Content**
-
-#### **Descripción**
-El código de estado `206 Partial Content` indica que el servidor ha procesado exitosamente una solicitud parcial de un recurso. Esto sucede cuando el cliente utiliza el encabezado `Range` para pedir una parte específica del recurso, como una sección de un archivo grande.
-
-#### **Características Clave**:
-1. **Respuestas Parciales**: Se envía solo la parte solicitada del recurso, no el contenido completo.
-2. **Encabezado `Content-Range`**: El servidor incluye este encabezado en la respuesta para indicar el rango del recurso que se está devolviendo.
-3. **Optimización de Recursos**: Es útil para descargar archivos grandes, transmitir videos, o retomar descargas interrumpidas.
-
----
 
 ### **Ejemplo**
 Supongamos que el cliente está descargando un archivo grande y solicita un rango específico de bytes del archivo.
@@ -533,37 +580,12 @@ En este caso, el cliente ha solicitado los primeros 1024 bytes de un archivo de 
 
 ---
 
-### **Caso de Uso**
-El código `206 Partial Content` es útil en escenarios como:
-
-1. **Transmisión de Videos o Audios**:
-   - Los reproductores multimedia solicitan rangos específicos de un archivo para transmitir solo las partes necesarias en un momento dado.
-   - **Ejemplo**: Un usuario que avanza rápidamente a la mitad de un video.
-
-2. **Descargas Interrumpidas**:
-   - Permite retomar descargas desde el punto donde se detuvieron, en lugar de reiniciarlas desde el principio.
-   - **Ejemplo**: Un gestor de descargas que solicita el resto de un archivo tras una desconexión.
-
-3. **Optimización de Ancho de Banda**:
-   - Reduce el tráfico de red enviando solo las partes necesarias de un recurso.
-   - **Ejemplo**: Una aplicación que carga imágenes o documentos en partes mientras el usuario las visualiza.
-
----
-
 ### **Beneficios de Usar 206 Partial Content**
 - Mejora la experiencia del usuario al permitir descargas y transmisiones más flexibles.
 - Ahorra ancho de banda al limitar la cantidad de datos transferidos a lo necesario.
 - Facilita el manejo de archivos grandes en entornos con conexiones inestables.
 
 ---
-
-### **Encabezados Importantes en una Respuesta 206**
-- **`Content-Range`**: Especifica el rango del recurso devuelto (por ejemplo, `bytes 0-1023/1048576`).
-- **`Content-Length`**: Indica el tamaño de la porción devuelta.
-- **`Accept-Ranges`**: En una solicitud previa, el servidor puede indicar si soporta rangos con este encabezado (por ejemplo, `bytes`).
-
-El código `206 Partial Content` es esencial para servicios que manejan recursos grandes y buscan eficiencia y flexibilidad en la entrega de contenido al cliente.
-
 
 -- codigo 207
 
@@ -885,5 +907,66 @@ En este caso, el servidor informa al cliente que existen varias versiones del do
 El código `300 Multiple Choices` es útil cuando un recurso tiene múltiples representaciones, pero su uso no es común en la web moderna debido a que los servidores suelen redirigir automáticamente a una opción predeterminada.
 
 ----
+
+--- codigo 301
+
+### 🔹 **Código de respuesta HTTP 301 - Moved Permanently**  
+
+#### 📌 **Descripción**  
+El código de estado **301 Moved Permanently** indica que un recurso ha sido trasladado de forma **permanente** a una nueva URL. Cualquier solicitud futura debe dirigirse a esta nueva ubicación. Los navegadores y motores de búsqueda suelen actualizar automáticamente sus enlaces a la nueva URL.  
+
+---
+
+#### 📝 **Ejemplo de respuesta con código 301**  
+
+Supongamos que el usuario intenta acceder a `http://ejemplo.com/antigua-ruta`, pero esta página ha sido movida a `http://ejemplo.com/nueva-ruta`.  
+
+El servidor responde con:  
+
+```
+HTTP/1.1 301 Moved Permanently
+Location: http://ejemplo.com/nueva-ruta
+Content-Type: text/html
+```
+
+Y el navegador redirige automáticamente al usuario a `http://ejemplo.com/nueva-ruta`.
+
+---
+
+#### 🎯 **Casos de uso comunes**  
+
+✔ **Migración de URL de una página a otra**  
+   - Si cambias la estructura de tu sitio web y deseas redirigir tráfico sin perder SEO.  
+   - Ejemplo: `https://miweb.com/blog/post-antiguo` → `https://miweb.com/articulos/post-nuevo`.  
+
+✔ **Cambio de dominio**  
+   - Si una empresa cambia de dominio y quiere redirigir todo el tráfico de `https://antiguodominio.com` a `https://nuevodominio.com`.  
+
+✔ **Forzar HTTPS**  
+   - Redirigir automáticamente tráfico HTTP a HTTPS:  
+     ```htaccess
+     RewriteEngine on
+     RewriteCond %{HTTPS} off
+     RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+     ```  
+   - Esto garantiza que todos los usuarios usen una conexión segura.  
+
+✔ **Eliminar www o agregarlo**  
+   - Para evitar duplicidad en URLs (`www` y sin `www`), redirigir siempre a una versión única.  
+   - Ejemplo en `.htaccess`:  
+     ```htaccess
+     RewriteEngine on
+     RewriteCond %{HTTP_HOST} ^www.ejemplo.com [NC]
+     RewriteRule ^(.*)$ http://ejemplo.com/$1 [L,R=301]
+     ```  
+
+---
+
+### ✅ **Resumen**  
+- **301 Moved Permanently** significa que la URL ha cambiado para siempre.  
+- El navegador o cliente debe usar la nueva URL en futuras solicitudes.  
+- Se usa comúnmente para SEO, redirecciones de dominios y cambios de estructura en sitios web.  
+
+Si necesitas ayuda implementando una redirección 301 en tu proyecto, dime qué tecnología usas y te ayudo. 🚀
 
 */
