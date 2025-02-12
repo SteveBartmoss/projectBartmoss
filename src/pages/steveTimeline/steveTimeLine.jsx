@@ -5,6 +5,13 @@ export function SteveTimeLine() {
     return (
         <div>
 
+            <TimeItem fecha="12/02/2025" autor="steve" text="
+                Y con una coraza va, va, va
+                Y todo blanco y negro ve, ve, ve
+                En un espejo un día lo vi y me dijo con su voz
+                ¡Bu!, ¿qué tal es verme a ti?
+            " />
+
             <TimeItem fecha="11/02/2025" autor="steve" text="
                 Y con una coraza va, va, va
                 Y todo blanco y negro ve, ve, ve
