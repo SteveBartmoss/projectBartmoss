@@ -500,6 +500,8 @@ export function HttpCode() {
                                 El uso de 205 Reset Content es ideal para aplicaciones donde el cliente necesita orientación clara para restablecer su interfaz o estado después de una operación exitosa.
                             </p>
 
+                            <Divider />
+
                             <h1 id="code206">206</h1>
 
                             <p>
