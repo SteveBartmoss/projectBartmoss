@@ -36,6 +36,10 @@ export function ProfileSteve() {
         {
             value: 10,
             label: "Mocha Editor"
+        },
+        {
+            value: 60,
+            label: "CronosJs"
         }
     ]
 
