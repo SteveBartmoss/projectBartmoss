@@ -28,6 +28,7 @@ import { MapObjects } from "../roadmap/javaScript/Objects";
 import { FirstStepRedux } from "../docu/ReduxFirst";
 import { RoadMapFront } from "../roadmap/frontEnd/roadMapFront";
 import { HttpCode } from "../docu/HttpCode";
+import { CronosJs } from "../pages/portfolio/cronosjs/cronos";
 
 
 export function RouterBlog(){
@@ -61,6 +62,7 @@ export function RouterBlog(){
 
                 <Route path="portfolio/yesornot" element={<YesOrNot />}/> 
                 <Route path="portfolio/findgif" element={<FindGif />} />
+                <Route path="steve/cronosjs" element={<CronosJs />} />
 
                 <Route path="roadmap/javascript" element={<RoadMapJs />}/>
 
