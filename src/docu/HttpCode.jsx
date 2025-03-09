@@ -556,39 +556,6 @@ export function HttpCode() {
 /*
 
 
-
--- 206
-
-### **Ejemplo**
-Supongamos que el cliente está descargando un archivo grande y solicita un rango específico de bytes del archivo.
-
-#### **Solicitud:**
-```http
-GET /large-file.zip HTTP/1.1
-Host: example.com
-Range: bytes=0-1023
-```
-
-#### **Respuesta:**
-```http
-HTTP/1.1 206 Partial Content
-Content-Range: bytes 0-1023/1048576
-Content-Type: application/zip
-
-(binary data of the first 1024 bytes)
-```
-
-En este caso, el cliente ha solicitado los primeros 1024 bytes de un archivo de 1 MB, y el servidor ha proporcionado exactamente esa parte.
-
----
-
-### **Beneficios de Usar 206 Partial Content**
-- Mejora la experiencia del usuario al permitir descargas y transmisiones más flexibles.
-- Ahorra ancho de banda al limitar la cantidad de datos transferidos a lo necesario.
-- Facilita el manejo de archivos grandes en entornos con conexiones inestables.
-
----
-
 -- codigo 207
 
 ### **Código de Respuesta HTTP 207: Multi-Status**
