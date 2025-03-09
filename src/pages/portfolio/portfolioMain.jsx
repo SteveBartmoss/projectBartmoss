@@ -1,4 +1,4 @@
-import { Card } from "../../componentes/card/card";
+import { Card, CardAccions, CardLink } from "../../componentes/card/card";
 import { DivSection, DivTopicos } from "../../componentes/contenedores/contenedores";
 
 
@@ -17,7 +17,15 @@ export function PortFolio() {
             </Card>
             
             <DivTopicos>
+                <Card>
+                    <h1>CronosJs</h1>
 
+                    <p>Libreria para trabajar con fechas</p>
+
+                    <CardAccions>
+                        <CardLink url={'cronosjs'} text={'Ver'}/>
+                    </CardAccions>
+                </Card>
             </DivTopicos>
         </DivSection>
 
