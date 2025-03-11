@@ -1076,4 +1076,70 @@ Si necesitas ayuda implementando un código 303 en tu proyecto, dime qué tecnol
 
 --- termina 303
 
+--- 304
+
+### 🔹 **Código de respuesta HTTP 304 - Not Modified**  
+
+#### 📌 **Descripción**  
+El código de estado **304 Not Modified** indica que el recurso solicitado **no ha cambiado** desde la última vez que el cliente lo obtuvo.  
+El servidor usa este código para decirle al navegador o a un cliente HTTP que **puede usar la versión almacenada en caché**, en lugar de descargar el recurso nuevamente.  
+
+---
+
+#### 📝 **Ejemplo de respuesta con código 304**  
+
+Supongamos que un navegador solicita una imagen de un servidor usando la cabecera `If-Modified-Since` para indicar la última vez que la descargó:
+
+```
+GET /imagen.png HTTP/1.1
+Host: ejemplo.com
+If-Modified-Since: Tue, 30 Jan 2024 12:00:00 GMT
+```
+
+Si el servidor revisa el archivo y no ha cambiado desde esa fecha, responde con:
+
+```
+HTTP/1.1 304 Not Modified
+Date: Tue, 30 Jan 2024 12:30:00 GMT
+```
+
+El navegador usa la imagen en caché, en lugar de descargarla nuevamente.
+
+---
+
+#### 🎯 **Casos de uso comunes**  
+
+✔ **Optimización de carga en páginas web**  
+   - Los navegadores almacenan recursos estáticos (imágenes, CSS, JavaScript).  
+   - Con **304**, el navegador no descarga los archivos si ya tiene una versión válida.  
+
+✔ **Eficiencia en APIs y servicios web**  
+   - Un cliente puede enviar `If-None-Match` con un **ETag** (identificador único de una versión del recurso).  
+   - Si el contenido no cambió, el servidor responde con **304**, reduciendo el consumo de ancho de banda.  
+
+✔ **Mejora del rendimiento en CDN y proxys**  
+   - Los servidores proxy y las redes de entrega de contenido (CDN) pueden usar **304** para no descargar contenido innecesario.  
+
+---
+
+#### ⚠️ **Diferencias clave con otros códigos HTTP**  
+
+| Código | Significado | Descarga el recurso nuevamente? |
+|--------|------------|--------------------------------|
+| **200 OK** | Respuesta normal | ✅ Sí |
+| **301 Moved Permanently** | Redirección permanente | ✅ Sí (a otra URL) |
+| **302 Found** | Redirección temporal | ✅ Sí (a otra URL) |
+| **304 Not Modified** | Sin cambios en el recurso | ❌ No |
+
+---
+
+### ✅ **Resumen**  
+- **304 Not Modified** se usa cuando un recurso **no ha cambiado** y puede cargarse desde la caché.  
+- Optimiza la velocidad de carga y reduce el consumo de ancho de banda.  
+- Funciona con cabeceras `If-Modified-Since` y `If-None-Match`.  
+
+Si necesitas ayuda con la implementación de caché en tu aplicación, dime qué tecnología usas y te ayudo. 🚀
+
+--- termino 304
+
 */
