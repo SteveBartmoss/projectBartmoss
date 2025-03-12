@@ -1142,4 +1142,63 @@ Si necesitas ayuda con la implementación de caché en tu aplicación, dime qué
 
 --- termino 304
 
+-- inicia 305
+
+### 🔹 **Código de respuesta HTTP 305 - Use Proxy**  
+
+#### 📌 **Descripción**  
+El código **305 Use Proxy** indica que el cliente **debe acceder al recurso a través de un proxy específico**, definido en la cabecera `Location` de la respuesta.  
+
+⚠️ **Importante:**  
+- **Este código está en desuso** por razones de seguridad, ya que podría ser explotado para ataques de tipo "hombre en el medio" (**MITM**).  
+- **Los navegadores modernos lo ignoran**, y ya no es recomendado su uso.  
+
+---
+
+#### 📝 **Ejemplo de respuesta con código 305**  
+
+Si un cliente solicita un recurso, el servidor puede responder con:
+
+```
+HTTP/1.1 305 Use Proxy
+Location: http://proxy.ejemplo.com:8080
+```
+
+Esto le dice al cliente que debe reenviar la solicitud a `http://proxy.ejemplo.com:8080`.
+
+---
+
+#### 🎯 **Casos de uso comunes**  
+
+🔹 **(Antes de quedar en desuso)**, se utilizaba para:  
+✔ **Redirigir tráfico a través de un proxy** para filtrar contenido o aplicar políticas de seguridad.  
+✔ **Forzar el uso de un proxy** en redes corporativas o gubernamentales.  
+✔ **Controlar el acceso a ciertos recursos** dependiendo de la ubicación del usuario.  
+
+---
+
+#### ⚠️ **¿Por qué está en desuso?**  
+
+1. **Riesgos de seguridad**  
+   - Un atacante podría redirigir a un usuario a un proxy malicioso y espiar el tráfico.  
+
+2. **Incompatibilidad con navegadores modernos**  
+   - Chrome, Firefox y otros navegadores ignoran el código **305** por seguridad.  
+
+3. **Alternativas más seguras**  
+   - **Configuraciones de proxy a nivel de red** en lugar de respuestas HTTP.  
+   - **Códigos de redirección como 307** si se necesita cambiar la URL de acceso.  
+
+---
+
+### ✅ **Resumen**  
+- **305 Use Proxy** indicaba que un recurso debía solicitarse a través de un proxy.  
+- **Ya no se usa** debido a riesgos de seguridad.  
+- **Navegadores modernos lo ignoran** y no lo implementan.  
+- **Se recomienda configurar proxies en la red directamente**, en lugar de usar este código.  
+
+Si buscas controlar el acceso a recursos a través de un proxy, te puedo ayudar con alternativas más seguras. 🚀
+
+--- finaliza 305
+
 */
