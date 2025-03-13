@@ -1201,4 +1201,79 @@ Si buscas controlar el acceso a recursos a través de un proxy, te puedo ayudar 
 
 --- finaliza 305
 
+--- codigo 307
+
+### 🔹 **Código de respuesta HTTP 307 - Temporary Redirect**  
+
+#### 📌 **Descripción**  
+El código **307 Temporary Redirect** indica que el recurso solicitado **se ha movido temporalmente** a otra URL, pero el cliente **debe seguir usando el mismo método HTTP** al realizar la nueva solicitud.  
+
+🔹 **Diferencia clave con 302 Found:**  
+- **302 Found** puede hacer que algunos clientes cambien la solicitud a un `GET`, incluso si era un `POST`.  
+- **307 Temporary Redirect** **preserva el método HTTP** original (si era `POST`, la nueva solicitud también será `POST`).  
+
+---
+
+#### 📝 **Ejemplo de respuesta con código 307**  
+
+📌 **Escenario:** Un usuario intenta acceder a `https://ejemplo.com/recurso`, pero temporalmente el contenido se movió a otra URL.  
+
+📌 **Solicitud inicial:**  
+
+```
+GET /recurso HTTP/1.1
+Host: ejemplo.com
+```
+
+📌 **Respuesta del servidor:**  
+
+```
+HTTP/1.1 307 Temporary Redirect
+Location: https://nueva-url.com/recurso
+```
+
+📌 **El navegador automáticamente hará una nueva solicitud a:**  
+
+```
+GET /recurso HTTP/1.1
+Host: nueva-url.com
+```
+
+Si la solicitud original fuera un `POST`, el navegador también enviaría un `POST` a la nueva URL.
+
+---
+
+#### 🎯 **Casos de uso comunes**  
+
+✔ **Redirecciones temporales sin alterar la solicitud original**  
+   - Si un recurso cambia de ubicación temporalmente, pero se espera que vuelva a la URL original.  
+
+✔ **Evitar problemas con clientes que cambian el método HTTP**  
+   - Algunos navegadores convierten `POST` en `GET` con **302 Found**, pero **307 mantiene el método**.  
+
+✔ **Balanceo de carga o mantenimiento**  
+   - Redirigir temporalmente a otro servidor sin afectar las solicitudes originales.  
+
+---
+
+#### ⚠️ **Diferencias con otros códigos de redirección**  
+
+| Código | Tipo de redirección | Método HTTP preservado? | Uso común |
+|--------|----------------------|------------------------|------------|
+| **301 Moved Permanently** | Permanente | ❌ No siempre | Cambio de URL definitivo |
+| **302 Found** | Temporal | ❌ No siempre | Redirección temporal, pero puede cambiar `POST` a `GET` |
+| **307 Temporary Redirect** | Temporal | ✅ Sí | Redirección temporal sin modificar el método |
+| **308 Permanent Redirect** | Permanente | ✅ Sí | Como 301, pero manteniendo el método |
+
+---
+
+### ✅ **Resumen**  
+- **307 Temporary Redirect** indica que el recurso se movió **temporalmente**, pero el cliente debe seguir usando el mismo método HTTP.  
+- Es **más seguro que 302** cuando se quiere mantener `POST`, `PUT`, etc.  
+- Se usa en **mantenimiento de sitios, balanceo de carga o cambios temporales de URL**.  
+
+Si necesitas ayuda implementando redirecciones en tu servidor, dime qué tecnología usas y te ayudo. 🚀
+
+--- finaliza 307
+
 */
