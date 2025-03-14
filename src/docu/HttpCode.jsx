@@ -1276,4 +1276,79 @@ Si necesitas ayuda implementando redirecciones en tu servidor, dime qué tecnolo
 
 --- finaliza 307
 
+--- codigo 308
+
+### 🔹 **Código de respuesta HTTP 308 - Permanent Redirect**  
+
+#### 📌 **Descripción**  
+El código **308 Permanent Redirect** indica que el recurso solicitado **se ha movido permanentemente** a una nueva URL, y el cliente **debe seguir usando el mismo método HTTP** al realizar futuras solicitudes.  
+
+🔹 **Diferencia clave con 301 Moved Permanently:**  
+- **301 Moved Permanently** permite que algunos clientes cambien la solicitud a `GET`, incluso si era un `POST`.  
+- **308 Permanent Redirect** **preserva el método HTTP original** (si era `POST`, la nueva solicitud también será `POST`).  
+
+---
+
+#### 📝 **Ejemplo de respuesta con código 308**  
+
+📌 **Escenario:** Un sitio web ha cambiado su dominio de `http://ejemplo.com` a `https://nuevo-ejemplo.com`.  
+
+📌 **Solicitud inicial:**  
+
+```
+POST /api/crear HTTP/1.1
+Host: ejemplo.com
+```
+
+📌 **Respuesta del servidor:**  
+
+```
+HTTP/1.1 308 Permanent Redirect
+Location: https://nuevo-ejemplo.com/api/crear
+```
+
+📌 **El cliente automáticamente hará una nueva solicitud a:**  
+
+```
+POST /api/crear HTTP/1.1
+Host: nuevo-ejemplo.com
+```
+
+⚠ **Si la solicitud original era `POST`, la nueva también será `POST`**, a diferencia del código **301** que podría convertirla en `GET`.
+
+---
+
+#### 🎯 **Casos de uso comunes**  
+
+✔ **Migración permanente de un recurso o API**  
+   - Cuando se cambia una URL de forma definitiva.  
+
+✔ **Evitar problemas con clientes que cambian el método HTTP**  
+   - Algunos navegadores convierten `POST` en `GET` con **301 Moved Permanently**, pero **308 mantiene el método original**.  
+
+✔ **Reubicación de endpoints en APIs**  
+   - Si una API cambia la ruta de un recurso, se puede usar **308** para evitar romper clientes que aún usan la URL antigua.  
+
+---
+
+#### ⚠️ **Diferencias con otros códigos de redirección**  
+
+| Código | Tipo de redirección | Método HTTP preservado? | Uso común |
+|--------|----------------------|------------------------|------------|
+| **301 Moved Permanently** | Permanente | ❌ No siempre | Cambio de URL definitivo, pero puede convertir `POST` en `GET` |
+| **302 Found** | Temporal | ❌ No siempre | Redirección temporal, puede cambiar `POST` a `GET` |
+| **307 Temporary Redirect** | Temporal | ✅ Sí | Redirección temporal sin modificar el método |
+| **308 Permanent Redirect** | Permanente | ✅ Sí | Como 301, pero manteniendo el método |
+
+---
+
+### ✅ **Resumen**  
+- **308 Permanent Redirect** indica que un recurso se ha movido **permanentemente** a una nueva URL.  
+- **Asegura que el método HTTP original se mantenga** (`POST` sigue siendo `POST`).  
+- Se usa en **migraciones de sitios, cambios de URL de APIs y reubicación de recursos**.  
+
+Si necesitas ayuda con redirecciones en tu servidor, dime qué tecnología usas y te oriento. 🚀
+
+--- termina 308
+
 */
