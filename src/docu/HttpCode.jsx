@@ -402,8 +402,8 @@ export function HttpCode() {
                             </p>
 
                             <p>
-                                Aunque su uso es raro, el código `203` tiene aplicaciones específicas en sistemas con servidores 
-                                intermediarios que manipulan o transforman datos. En la mayoría de los casos, los códigos como 
+                                Aunque su uso es raro, el código `203` tiene aplicaciones específicas en sistemas con servidores
+                                intermediarios que manipulan o transforman datos. En la mayoría de los casos, los códigos como
                                 `200 OK` o `304 Not Modified` son suficientes para representar el estado de una respuesta.
                             </p>
 
@@ -412,8 +412,8 @@ export function HttpCode() {
                             <h1 id="code204">204</h1>
 
                             <p>
-                                
-                                El código de estado 204 No Content indica que el servidor ha procesado con éxito la solicitud, pero no necesita devolver un cuerpo 
+
+                                El código de estado 204 No Content indica que el servidor ha procesado con éxito la solicitud, pero no necesita devolver un cuerpo
                                 de respuesta. Se usa cuando no hay contenido que proporcionar al cliente, pero se confirma que la operación solicitada se completó correctamente.
                             </p>
 
@@ -428,13 +428,13 @@ export function HttpCode() {
                             <h2>Usos Comunes</h2>
 
                             <p>
-                                Confirmación Sin Contenido: Se necesita confirmar que la acción fue exitosa sin enviar datos adicionales. Ejemplo: Confirmar que 
+                                Confirmación Sin Contenido: Se necesita confirmar que la acción fue exitosa sin enviar datos adicionales. Ejemplo: Confirmar que
                                 se eliminó un recurso con éxito tras un `DELETE`.
-                                
+
                                 Optimización de Respuestas: Reducir la cantidad de datos transferidos al cliente cuando no es necesario enviar contenido.
                                 Ejemplo: Al guardar automáticamente un borrador sin cambiar la interfaz del cliente.
-                                
-                                Mantener la Experiencia del Usuario: Permitir que el cliente permanezca en la misma página o estado sin realizar actualizaciones visibles. 
+
+                                Mantener la Experiencia del Usuario: Permitir que el cliente permanezca en la misma página o estado sin realizar actualizaciones visibles.
                                 Ejemplo: Una solicitud AJAX que actualiza un estado en el backend sin modificar la UI.
                             </p>
 
@@ -455,9 +455,9 @@ export function HttpCode() {
                             <h1 id="code205">205</h1>
 
                             <p>
-                                El código de estado 205 Reset Content indica que el servidor ha procesado con éxito la solicitud, 
-                                pero además solicita al cliente que reinicie o actualice su estado, como limpiar formularios o restablecer 
-                                vistas en la interfaz de usuario. A diferencia del código 204, que no exige ninguna acción del cliente, el 
+                                El código de estado 205 Reset Content indica que el servidor ha procesado con éxito la solicitud,
+                                pero además solicita al cliente que reinicie o actualice su estado, como limpiar formularios o restablecer
+                                vistas en la interfaz de usuario. A diferencia del código 204, que no exige ninguna acción del cliente, el
                                 205 indica explícitamente que el cliente debe realizar un reinicio.
                             </p>
 
@@ -551,12 +551,18 @@ export function HttpCode() {
                             <h1 id="code207">207</h1>
 
                             <p>
-                                Es una respuesta específica del protocolo [WebDAV](https://en.wikipedia.org/wiki/WebDAV) (extensión de HTTP) que indica que la solicitud ha sido procesada y que el cuerpo de la respuesta contiene múltiples códigos de estado. Es útil cuando una operación afecta a varios recursos, y el servidor necesita proporcionar información detallada sobre el éxito o el error para cada uno de ellos.
+                                Es una respuesta específica del protocolo que indica que la solicitud ha sido procesada y que el cuerpo de la respuesta contiene múltiples códigos de estado. Es útil cuando una operación afecta a varios recursos, y el servidor necesita proporcionar información detallada sobre el éxito o el error para cada uno de ellos.
                                 La respuesta se entrega en un formato XML que describe el resultado de cada operación.
                             </p>
 
-                            
-                            
+                            <h2>Características Clave</h2>
+
+                            <p>
+                                Múltiples Resultados: Permite que el servidor informe sobre el éxito o error de varias operaciones en una sola respuesta.
+                                Formato XML: La respuesta incluye un documento XML con detalles de los recursos afectados y sus códigos de estado individuales.
+                                Usos Exclusivos de WebDAV: Generalmente se utiliza en aplicaciones que implementan el protocolo WebDAV para manejar operaciones en recursos como archivos o carpetas.
+                            </p>
+
                         </DivContent>
                     </DivArticle>
                 </DivCol>
@@ -571,16 +577,6 @@ export function HttpCode() {
 
 -- codigo 207
 
-### **Código de Respuesta HTTP 207: Multi-Status**
-
-#### **Descripción**
-
----
-
-### **Características Clave**
-1. **Múltiples Resultados**: Permite que el servidor informe sobre el éxito o error de varias operaciones en una sola respuesta.
-2. **Formato XML**: La respuesta incluye un documento XML con detalles de los recursos afectados y sus códigos de estado individuales.
-3. **Usos Exclusivos de WebDAV**: Generalmente se utiliza en aplicaciones que implementan el protocolo WebDAV para manejar operaciones en recursos como archivos o carpetas.
 
 ---
 
