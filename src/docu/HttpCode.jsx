@@ -50,6 +50,10 @@ export function HttpCode() {
         {
             titulo: '206',
             id: 'code206',
+        },
+        {
+            titulo: '207',
+            id: 'code207',
         }
     ]
 
@@ -543,6 +547,15 @@ export function HttpCode() {
                             <p>
                                 El código 206 Partial Content es esencial para servicios que manejan recursos grandes y buscan eficiencia y flexibilidad en la entrega de contenido al cliente.
                             </p>
+
+                            <h1 id="code207">207</h1>
+
+                            <p>
+                                Es una respuesta específica del protocolo [WebDAV](https://en.wikipedia.org/wiki/WebDAV) (extensión de HTTP) que indica que la solicitud ha sido procesada y que el cuerpo de la respuesta contiene múltiples códigos de estado. Es útil cuando una operación afecta a varios recursos, y el servidor necesita proporcionar información detallada sobre el éxito o el error para cada uno de ellos.
+                                La respuesta se entrega en un formato XML que describe el resultado de cada operación.
+                            </p>
+
+                            
                             
                         </DivContent>
                     </DivArticle>
@@ -561,9 +574,6 @@ export function HttpCode() {
 ### **Código de Respuesta HTTP 207: Multi-Status**
 
 #### **Descripción**
-El código de estado `207 Multi-Status` es una respuesta específica del protocolo [WebDAV](https://en.wikipedia.org/wiki/WebDAV) (extensión de HTTP) que indica que la solicitud ha sido procesada y que el cuerpo de la respuesta contiene múltiples códigos de estado. Es útil cuando una operación afecta a varios recursos, y el servidor necesita proporcionar información detallada sobre el éxito o el error para cada uno de ellos.
-
-La respuesta se entrega en un formato XML que describe el resultado de cada operación.
 
 ---
 
