@@ -563,6 +563,22 @@ export function HttpCode() {
                                 Usos Exclusivos de WebDAV: Generalmente se utiliza en aplicaciones que implementan el protocolo WebDAV para manejar operaciones en recursos como archivos o carpetas.
                             </p>
 
+                            <h2>Usos comunes</h2>
+
+                            <p>
+                                1. **Gestión de Archivos en Servidores**:
+                                - Operaciones como copiar, mover o eliminar varios archivos o carpetas.
+                                - **Ejemplo**: Un cliente WebDAV que sincroniza un directorio completo con un servidor.
+
+                                2. **Sincronización de Recursos**:
+                                - Informar sobre cambios o conflictos en múltiples recursos durante la sincronización.
+                                - **Ejemplo**: Una aplicación de respaldo en la nube que verifica el estado de múltiples archivos.
+
+                                3. **Operaciones en Lote**:
+                                - Permite ejecutar y obtener resultados para varias operaciones en una sola solicitud.
+                                - **Ejemplo**: Actualización masiva de propiedades o metadatos de recursos en un servidor.
+                            </p>
+
                         </DivContent>
                     </DivArticle>
                 </DivCol>
@@ -616,23 +632,6 @@ En este caso:
 - `file1.txt` fue copiado con éxito (`201 Created`).
 - `file2.txt` falló debido a permisos insuficientes (`403 Forbidden`).
 - `file3.txt` ya existía y no se realizó ninguna acción (`204 No Content`).
-
----
-
-### **Caso de Uso**
-El código `207 Multi-Status` se utiliza principalmente en contextos WebDAV, donde las operaciones afectan múltiples recursos. Algunos casos comunes incluyen:
-
-1. **Gestión de Archivos en Servidores**:
-   - Operaciones como copiar, mover o eliminar varios archivos o carpetas.
-   - **Ejemplo**: Un cliente WebDAV que sincroniza un directorio completo con un servidor.
-
-2. **Sincronización de Recursos**:
-   - Informar sobre cambios o conflictos en múltiples recursos durante la sincronización.
-   - **Ejemplo**: Una aplicación de respaldo en la nube que verifica el estado de múltiples archivos.
-
-3. **Operaciones en Lote**:
-   - Permite ejecutar y obtener resultados para varias operaciones en una sola solicitud.
-   - **Ejemplo**: Actualización masiva de propiedades o metadatos de recursos en un servidor.
 
 ---
 
