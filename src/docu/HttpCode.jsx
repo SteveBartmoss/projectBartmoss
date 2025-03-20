@@ -583,6 +583,15 @@ export function HttpCode() {
                                 Ejemplo: Actualización masiva de propiedades o metadatos de recursos en un servidor.
                             </p>
 
+                            <h2>Beneficios de Usar 207 Multi-Status</h2>
+
+                            <p>
+                                Eficiencia: Reduce el número de solicitudes necesarias para manejar múltiples recursos.
+                                Detalles Individuales: Permite al cliente conocer el estado de cada recurso afectado.
+                                Flexibilidad: Ideal para sistemas complejos que gestionan varios recursos simultáneamente.
+                            </p>
+
+
                         </DivContent>
                     </DivArticle>
                 </DivCol>
@@ -636,13 +645,6 @@ En este caso:
 - `file1.txt` fue copiado con éxito (`201 Created`).
 - `file2.txt` falló debido a permisos insuficientes (`403 Forbidden`).
 - `file3.txt` ya existía y no se realizó ninguna acción (`204 No Content`).
-
----
-
-### **Beneficios de Usar 207 Multi-Status**
-- **Eficiencia**: Reduce el número de solicitudes necesarias para manejar múltiples recursos.
-- **Detalles Individuales**: Permite al cliente conocer el estado de cada recurso afectado.
-- **Flexibilidad**: Ideal para sistemas complejos que gestionan varios recursos simultáneamente.
 
 ---
 
