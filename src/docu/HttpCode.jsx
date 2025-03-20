@@ -566,17 +566,21 @@ export function HttpCode() {
                             <h2>Usos comunes</h2>
 
                             <p>
-                                1. **Gestión de Archivos en Servidores**:
-                                - Operaciones como copiar, mover o eliminar varios archivos o carpetas.
-                                - **Ejemplo**: Un cliente WebDAV que sincroniza un directorio completo con un servidor.
+                                Gestión de Archivos en Servidores:
+                                Operaciones como copiar, mover o eliminar varios archivos o carpetas.
+                                Ejemplo: Un cliente WebDAV que sincroniza un directorio completo con un servidor.
+                            </p>
 
-                                2. **Sincronización de Recursos**:
-                                - Informar sobre cambios o conflictos en múltiples recursos durante la sincronización.
-                                - **Ejemplo**: Una aplicación de respaldo en la nube que verifica el estado de múltiples archivos.
+                            <p>
+                                Sincronización de Recursos:
+                                Informar sobre cambios o conflictos en múltiples recursos durante la sincronización.
+                                Ejemplo: Una aplicación de respaldo en la nube que verifica el estado de múltiples archivos.
+                            </p>
 
-                                3. **Operaciones en Lote**:
-                                - Permite ejecutar y obtener resultados para varias operaciones en una sola solicitud.
-                                - **Ejemplo**: Actualización masiva de propiedades o metadatos de recursos en un servidor.
+                            <p>
+                                Operaciones en Lote:
+                                Permite ejecutar y obtener resultados para varias operaciones en una sola solicitud.
+                                Ejemplo: Actualización masiva de propiedades o metadatos de recursos en un servidor.
                             </p>
 
                         </DivContent>
