@@ -1360,4 +1360,76 @@ Si necesitas ayuda con redirecciones en tu servidor, dime qué tecnología usas 
 
 --- termina 308
 
+--- codifo 400
+
+### 🔹 **Código de respuesta HTTP 400 - Bad Request**  
+
+#### 📌 **Descripción**  
+El código **400 Bad Request** indica que el servidor **no puede procesar la solicitud debido a un error del cliente**. Esto suele ocurrir por:  
+
+✔ **Sintaxis incorrecta** en la solicitud.  
+✔ **Datos inválidos** o mal formateados.  
+✔ **Falta de parámetros requeridos**.  
+✔ **Encabezados HTTP incorrectos o mal formateados**.  
+
+El cliente debe corregir la solicitud antes de intentarla nuevamente.  
+
+---
+
+#### 📝 **Ejemplo de respuesta con código 400**  
+
+📌 **Escenario:** Un cliente intenta enviar datos a un API, pero omite un campo obligatorio.  
+
+📌 **Solicitud incorrecta:**  
+
+```
+POST /api/usuarios HTTP/1.1
+Host: ejemplo.com
+Content-Type: application/json
+
+{
+    "nombre": "Juan"
+}
+```
+
+📌 **Respuesta del servidor:**  
+
+```
+HTTP/1.1 400 Bad Request
+Content-Type: application/json
+
+{
+    "error": "El campo 'email' es obligatorio."
+}
+```
+
+📌 **Corrección:** El cliente debe incluir el campo `email` en la solicitud.  
+
+---
+
+#### 🎯 **Casos de uso comunes**  
+
+✔ **Errores de validación**  
+   - Si faltan parámetros requeridos o los valores tienen un formato incorrecto.  
+
+✔ **Solicitud mal estructurada**  
+   - Por ejemplo, si el JSON enviado tiene errores de sintaxis.  
+
+✔ **Encabezados incorrectos o ausentes**  
+   - Como enviar datos JSON sin el encabezado `Content-Type: application/json`.  
+
+✔ **Datos fuera de los límites permitidos**  
+   - Ejemplo: enviar un número negativo en un campo que solo acepta valores positivos.  
+
+---
+
+#### ✅ **Resumen**  
+- **400 Bad Request** ocurre cuando el cliente envía una solicitud incorrecta o mal formada.  
+- El servidor **no la puede procesar** hasta que el cliente la corrija.  
+- Se usa para **validaciones de datos, errores de sintaxis y encabezados incorrectos**.  
+
+Si tienes un error **400** en una API, dime qué estás enviando y te ayudo a corregirlo. 🚀
+
+---- termina 400
+
 */
