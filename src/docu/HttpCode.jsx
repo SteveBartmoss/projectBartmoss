@@ -583,7 +583,7 @@ export function HttpCode() {
                                 Ejemplo: Actualización masiva de propiedades o metadatos de recursos en un servidor.
                             </p>
 
-                            <h2>Beneficios de Usar 207 Multi-Status</h2>
+                            <h2>Ventajas</h2>
 
                             <p>
                                 Eficiencia: Reduce el número de solicitudes necesarias para manejar múltiples recursos.
@@ -591,6 +591,11 @@ export function HttpCode() {
                                 Flexibilidad: Ideal para sistemas complejos que gestionan varios recursos simultáneamente.
                             </p>
 
+
+                            <p>
+                                El uso de 207 Multi-Status es crucial en aplicaciones avanzadas que gestionan múltiples recursos 
+                                en servidores compatibles con WebDAV, mejorando la comunicación entre cliente y servidor.
+                            </p>
 
                         </DivContent>
                     </DivArticle>
@@ -651,8 +656,6 @@ En este caso:
 ### **Consideraciones**
 - **Formato XML**: El cliente debe estar preparado para analizar una respuesta en XML.
 - **Específico de WebDAV**: Este código no es común fuera de aplicaciones que implementan WebDAV.
-
-El uso de `207 Multi-Status` es crucial en aplicaciones avanzadas que gestionan múltiples recursos en servidores compatibles con WebDAV, mejorando la comunicación entre cliente y servidor.
 
 --codigo 208
 
