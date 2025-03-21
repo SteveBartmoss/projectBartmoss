@@ -608,55 +608,6 @@ export function HttpCode() {
 
 /*
 
-
--- codigo 207
-
-
----
-
-### **Ejemplo**
-Supongamos que un cliente envía una solicitud WebDAV para copiar múltiples archivos en un servidor, y algunos de ellos tienen éxito mientras que otros fallan.
-
-#### **Solicitud:**
-```http
-COPY /folder1/ HTTP/1.1
-Host: example.com
-Destination: /folder2/
-```
-
-#### **Respuesta:**
-```http
-HTTP/1.1 207 Multi-Status
-Content-Type: application/xml; charset="utf-8"
-
-<?xml version="1.0" encoding="utf-8"?>
-<multistatus xmlns="DAV:">
-  <response>
-    <href>/folder2/file1.txt</href>
-    <status>HTTP/1.1 201 Created</status>
-  </response>
-  <response>
-    <href>/folder2/file2.txt</href>
-    <status>HTTP/1.1 403 Forbidden</status>
-  </response>
-  <response>
-    <href>/folder2/file3.txt</href>
-    <status>HTTP/1.1 204 No Content</status>
-  </response>
-</multistatus>
-```
-
-En este caso:
-- `file1.txt` fue copiado con éxito (`201 Created`).
-- `file2.txt` falló debido a permisos insuficientes (`403 Forbidden`).
-- `file3.txt` ya existía y no se realizó ninguna acción (`204 No Content`).
-
----
-
-### **Consideraciones**
-- **Formato XML**: El cliente debe estar preparado para analizar una respuesta en XML.
-- **Específico de WebDAV**: Este código no es común fuera de aplicaciones que implementan WebDAV.
-
 --codigo 208
 
 ### **Código de Respuesta HTTP 208: Already Reported**
