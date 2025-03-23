@@ -54,6 +54,10 @@ export function HttpCode() {
         {
             titulo: '207',
             id: 'code207',
+        },
+        {
+            titulo: '208',
+            id: 'code208',
         }
     ]
 
@@ -593,8 +597,18 @@ export function HttpCode() {
 
 
                             <p>
-                                El uso de 207 Multi-Status es crucial en aplicaciones avanzadas que gestionan múltiples recursos 
+                                El uso de 207 Multi-Status es crucial en aplicaciones avanzadas que gestionan múltiples recursos
                                 en servidores compatibles con WebDAV, mejorando la comunicación entre cliente y servidor.
+                            </p>
+
+                            <h1 id='code208'>208</h1>
+
+                            <p>
+                                Indica que los miembros de un recurso vinculado ya se han enumerado en una respuesta anterior, y no 
+                                se repiten nuevamente en la respuesta actual para evitar redundancia. Este código se usa principalmente 
+                                en respuestas a solicitudes PROPFIND con una profundidad mayor que 0, donde se enumeran múltiples recursos. 
+                                Al devolver 208, el servidor informa que ciertos recursos ya se describieron previamente y no necesitan 
+                                repetirse.
                             </p>
 
                         </DivContent>
@@ -613,9 +627,6 @@ export function HttpCode() {
 ### **Código de Respuesta HTTP 208: Already Reported**
 
 #### **Descripción**
-El código de estado `208 Already Reported` se utiliza en el contexto del protocolo [WebDAV](https://en.wikipedia.org/wiki/WebDAV). Indica que los miembros de un recurso vinculado ya se han enumerado en una respuesta anterior, y no se repiten nuevamente en la respuesta actual para evitar redundancia.
-
-Este código se usa principalmente en respuestas a solicitudes `PROPFIND` con una profundidad mayor que `0`, donde se enumeran múltiples recursos. Al devolver `208`, el servidor informa que ciertos recursos ya se describieron previamente y no necesitan repetirse.
 
 ---
 
