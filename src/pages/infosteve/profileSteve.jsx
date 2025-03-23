@@ -208,11 +208,12 @@ export function ProfileSteve() {
                             1984,
                             Farenheit 451,
                             Un mundo feliz,
+                            El camino de los reyes,
                         </p>
 
                         <h1>Libros  que estoy leyendo</h1>
 
-                        <p>El camino de los reyes, La riada</p>
+                        <p>La riada,Juramentada,Cartero,</p>
 
                         <h1>Libros que quiero leer</h1>
 
