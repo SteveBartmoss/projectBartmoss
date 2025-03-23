@@ -197,7 +197,18 @@ export function ProfileSteve() {
                     <Card>
                         <h1>Libros leidos</h1>
 
-                        <p>Dune, El imperio final, Ready player one, Yo robot</p>
+                        <p>
+                            Dune, 
+                            El imperio final, 
+                            Ready player one, 
+                            Yo robot, 
+                            Palabras radiantes, 
+                            El imperio final,
+                            El poso de la ascencion,
+                            1984,
+                            Farenheit 451,
+                            Un mundo feliz,
+                        </p>
 
                         <h1>Libros  que estoy leyendo</h1>
 
