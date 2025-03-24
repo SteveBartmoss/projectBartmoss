@@ -1472,4 +1472,64 @@ Si necesitas ayuda con autenticación en **JWT, OAuth o API Keys**, dime qué es
 
 --- termina 401
 
+--- codigo 402
+
+### 🔹 **Código de respuesta HTTP 402 - Payment Required**  
+
+#### 📌 **Descripción**  
+El código **402 Payment Required** indica que el acceso al recurso **requiere un pago**, pero la solicitud no ha sido procesada porque no se ha realizado o confirmado el pago.  
+
+Aunque este código fue reservado inicialmente para **sistemas de pago digital**, no se usa ampliamente en la web actual. Sin embargo, algunas plataformas de suscripción y APIs lo implementan para restringir contenido a usuarios sin suscripción activa.  
+
+---
+
+#### 📝 **Ejemplo de respuesta con código 402**  
+
+📌 **Escenario:** Un usuario intenta acceder a un artículo premium sin haber pagado la suscripción.  
+
+📌 **Solicitud del usuario:**  
+
+```
+GET /contenido-premium HTTP/1.1
+Host: ejemplo.com
+Authorization: Bearer <TOKEN_VALIDO>
+```
+
+📌 **Respuesta del servidor:**  
+
+```
+HTTP/1.1 402 Payment Required
+Content-Type: application/json
+
+{
+    "error": "Debes suscribirte para acceder a este contenido."
+}
+```
+
+📌 **Corrección:** El usuario debe completar el pago para acceder.  
+
+---
+
+#### 🎯 **Casos de uso comunes**  
+
+✔ **Servicios de suscripción**  
+   - Plataformas como **Netflix, Spotify o periódicos digitales** pueden usarlo para restringir contenido a usuarios no suscritos.  
+
+✔ **APIs con planes pagos**  
+   - Servicios como **OpenAI, Stripe o Google Maps API** pueden devolver un **402** si se supera el límite de uso gratuito.  
+
+✔ **Pagos pendientes en plataformas SaaS**  
+   - Un usuario con facturas vencidas puede recibir un **402** antes de que su cuenta sea suspendida.  
+
+---
+
+#### ✅ **Resumen**  
+- **402 Payment Required** se usa cuando un recurso **requiere pago** para acceder.  
+- Es común en **plataformas de suscripción, APIs premium y servicios SaaS**.  
+- Se resuelve **completando el pago o renovando la suscripción**.  
+
+Si necesitas ayuda para manejar pagos en tu API, dime qué sistema usas (Stripe, PayPal, etc.). 🚀
+
+--- termina 402
+
 */
