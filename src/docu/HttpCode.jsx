@@ -1532,4 +1532,69 @@ Si necesitas ayuda para manejar pagos en tu API, dime qué sistema usas (Stripe,
 
 --- termina 402
 
+--- code 403
+
+### 🔹 **Código de respuesta HTTP 403 - Forbidden**  
+
+#### 📌 **Descripción**  
+El código **403 Forbidden** indica que el servidor ha entendido la solicitud, pero **rechaza el acceso** porque el cliente **no tiene permisos suficientes**.  
+
+🚫 **Diferencia con 401 Unauthorized**:  
+- **401**: El usuario no está autenticado o su sesión es inválida.  
+- **403**: El usuario está autenticado, pero **no tiene autorización** para acceder al recurso.  
+
+---
+
+#### 📝 **Ejemplo de respuesta con código 403**  
+
+📌 **Escenario:** Un usuario intenta acceder a una página de administración sin ser administrador.  
+
+📌 **Solicitud del usuario:**  
+
+```
+GET /admin HTTP/1.1
+Host: ejemplo.com
+Authorization: Bearer <TOKEN_VALIDO>
+```
+
+📌 **Respuesta del servidor:**  
+
+```
+HTTP/1.1 403 Forbidden
+Content-Type: application/json
+
+{
+    "error": "Acceso denegado. No tienes permisos para ver esta página."
+}
+```
+
+📌 **Corrección:** El usuario necesita **permisos de administrador** o acceder con otra cuenta.  
+
+---
+
+#### 🎯 **Casos de uso comunes**  
+
+✔ **Restricción de acceso por roles**  
+   - Un usuario normal intenta acceder a un **panel de administración**.  
+
+✔ **Protección de recursos sensibles**  
+   - Intento de acceder a **archivos restringidos** en el servidor.  
+
+✔ **Restricciones de IP o región**  
+   - Un usuario fuera de un país permitido intenta acceder a un servicio.  
+
+✔ **Intento de modificar datos sin permiso**  
+   - Un usuario intenta **borrar datos de otra cuenta** sin permisos.  
+
+---
+
+#### ✅ **Resumen**  
+- **403 Forbidden** significa que el acceso está **denegado**, incluso si el usuario está autenticado.  
+- Se usa en **sistemas con roles, permisos de usuario y seguridad de datos**.  
+- Se resuelve **otorgando los permisos correctos** o accediendo con otra cuenta.  
+
+Si necesitas ayuda con **manejo de roles y permisos en tu API**, dime qué tecnología usas. 🚀
+
+--- termine 403
+
 */
