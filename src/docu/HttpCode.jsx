@@ -1597,4 +1597,67 @@ Si necesitas ayuda con **manejo de roles y permisos en tu API**, dime qué tecno
 
 --- termine 403
 
+--  codigo 404
+
+### 🔹 **Código de respuesta HTTP 404 - Not Found**  
+
+#### 📌 **Descripción**  
+El código **404 Not Found** indica que el servidor **no pudo encontrar** el recurso solicitado. Esto puede deberse a:  
+- **Una URL incorrecta o inexistente**.  
+- **Eliminación o movimiento del recurso** sin redirección.  
+- **Restricciones de acceso** donde el servidor decide no revelar la existencia del recurso.  
+
+---
+
+#### 📝 **Ejemplo de respuesta con código 404**  
+
+📌 **Escenario:** Un usuario intenta acceder a una página que no existe.  
+
+📌 **Solicitud del usuario:**  
+
+```
+GET /pagina-inexistente HTTP/1.1
+Host: ejemplo.com
+```
+
+📌 **Respuesta del servidor:**  
+
+```
+HTTP/1.1 404 Not Found
+Content-Type: application/json
+
+{
+    "error": "La página que buscas no existe."
+}
+```
+
+📌 **Corrección:** El usuario debe verificar la URL o buscar si la página fue movida.  
+
+---
+
+#### 🎯 **Casos de uso comunes**  
+
+✔ **Enlaces rotos**  
+   - Una página fue eliminada sin configurar una **redirección 301**.  
+
+✔ **Errores tipográficos en URLs**  
+   - Un usuario escribe /productos/shirt** en lugar de /productos/camisa**.  
+
+   ✔ **Recursos eliminados o movidos**  
+   - Un archivo descargable ya no está disponible.  
+
+✔ **Restricción de acceso sin revelar existencia**  
+   - Un servidor puede devolver **404 en lugar de 403** para ocultar un recurso privado.  
+
+---
+
+#### ✅ **Resumen**  
+- **404 Not Found** significa que el recurso **no existe o no puede ser encontrado**.  
+- Puede ser causado por **errores de URL, eliminación de contenido o enlaces rotos**.  
+- Se soluciona **corrigiendo la URL, agregando redirecciones o restaurando el recurso**.  
+
+Si necesitas ayuda con **redirecciones o manejo de errores en tu API**, dime qué tecnología usas. 🚀
+
+--- termina 404
+
 */
