@@ -1660,4 +1660,69 @@ Si necesitas ayuda con **redirecciones o manejo de errores en tu API**, dime qu�
 
 --- termina 404
 
+--- codigo 405
+
+### 🔹 **Código de respuesta HTTP 405 - Method Not Allowed**  
+
+#### 📌 **Descripción**  
+El código **405 Method Not Allowed** indica que el recurso solicitado **existe**, pero **no permite** el método HTTP utilizado.  
+
+🔴 **Ejemplo de métodos bloqueados:**  
+- Intentar **POST** en una URL que solo permite **GET**.  
+- Intentar **DELETE** en una API que solo permite **PUT** o **PATCH**.  
+
+---
+
+#### 📝 **Ejemplo de respuesta con código 405**  
+
+📌 **Escenario:** Un usuario intenta eliminar un recurso en una API que **no permite DELETE**.  
+
+📌 **Solicitud del usuario:**  
+
+```
+DELETE /usuarios/123 HTTP/1.1
+Host: api.ejemplo.com
+```
+
+📌 **Respuesta del servidor:**  
+
+```
+HTTP/1.1 405 Method Not Allowed
+Allow: GET, POST
+Content-Type: application/json
+
+{
+    "error": "El método DELETE no está permitido en este recurso."
+}
+```
+
+📌 **Corrección:** El cliente debe utilizar **GET o POST**, según lo permitido en la cabecera `Allow`.  
+
+---
+
+#### 🎯 **Casos de uso comunes**  
+
+✔ **Proteger recursos de modificaciones no autorizadas**  
+   - Evitar que un usuario intente **eliminar datos sensibles**.  
+
+✔ **Definir reglas de acceso en APIs**  
+   - Un endpoint puede **aceptar solo POST y rechazar PUT o DELETE**.  
+
+✔ **Controlar métodos en servidores estáticos**  
+   - Un servidor web puede permitir **GET y HEAD**, pero bloquear **POST y DELETE** en archivos HTML.  
+
+✔ **Implementación de seguridad**  
+   - Evitar que usuarios no autenticados intenten **modificar datos mediante métodos bloqueados**.  
+
+---
+
+#### ✅ **Resumen**  
+- **405 Method Not Allowed** significa que el **recurso existe, pero el método HTTP no está permitido**.  
+- Se usa para **proteger datos, restringir accesos y definir reglas en APIs**.  
+- Se soluciona **usando los métodos permitidos en la cabecera `Allow`**.  
+
+Si necesitas ayuda con **configurar restricciones de métodos en tu API o servidor**, dime qué tecnología usas. 🚀
+
+--- termina codigo 405
+
 */
