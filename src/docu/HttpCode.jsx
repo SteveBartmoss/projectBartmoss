@@ -611,6 +611,20 @@ export function HttpCode() {
                                 repetirse.
                             </p>
 
+                            <h2>Características Clave</h2>
+
+                            <p>
+                                Evita Duplicados: Reduce el tamaño de las respuestas al no repetir información sobre recursos que ya se han informado.
+                            </p>
+
+                            <p>
+                                Usos en WebDAV: Exclusivo para operaciones WebDAV como `PROPFIND`, donde se listan propiedades o recursos jerárquicos.
+                            </p>
+
+                            <p>
+                                Optimización: Minimiza la sobrecarga de red al evitar datos redundantes.
+                            </p>
+
                         </DivContent>
                     </DivArticle>
                 </DivCol>
@@ -627,13 +641,6 @@ export function HttpCode() {
 ### **Código de Respuesta HTTP 208: Already Reported**
 
 #### **Descripción**
-
----
-
-### **Características Clave**
-1. **Evita Duplicados**: Reduce el tamaño de las respuestas al no repetir información sobre recursos que ya se han informado.
-2. **Usos en WebDAV**: Exclusivo para operaciones WebDAV como `PROPFIND`, donde se listan propiedades o recursos jerárquicos.
-3. **Optimización**: Minimiza la sobrecarga de red al evitar datos redundantes.
 
 ---
 
