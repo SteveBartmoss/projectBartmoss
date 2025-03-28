@@ -1732,4 +1732,66 @@ Si necesitas ayuda con **configurar restricciones de métodos en tu API o servid
 
 --- termina codigo 405
 
+--- codigo 406
+
+### 🔹 **Código de respuesta HTTP 406 - Not Acceptable**  
+
+#### 📌 **Descripción**  
+El código **406 Not Acceptable** indica que el servidor **no puede proporcionar una respuesta** en un formato que sea **aceptable** según lo especificado por el cliente en la cabecera `Accept`.  
+
+🔴 **Causas comunes:**  
+- El cliente solicita un formato **(ejemplo: XML)**, pero el servidor solo responde en **JSON**.  
+- No hay coincidencia entre los formatos aceptados por el cliente y los que ofrece el servidor.  
+
+---
+
+#### 📝 **Ejemplo de respuesta con código 406**  
+
+📌 **Escenario:** Un usuario solicita una API en **formato XML**, pero la API solo soporta **JSON**.  
+
+📌 **Solicitud del usuario:**  
+
+```
+GET /productos HTTP/1.1
+Host: api.ejemplo.com
+Accept: application/xml
+```
+
+📌 **Respuesta del servidor:**  
+
+```
+HTTP/1.1 406 Not Acceptable
+Content-Type: application/json
+
+{
+    "error": "El formato solicitado no es compatible. Usa 'application/json'."
+}
+```
+
+📌 **Corrección:** El cliente debe cambiar la cabecera `Accept` para pedir un formato soportado, como **JSON**.  
+
+---
+
+#### 🎯 **Casos de uso comunes**  
+
+✔ **Control de formatos de respuesta**  
+   - Una API puede forzar a los clientes a usar **JSON** y rechazar otros formatos.  
+
+✔ **Optimización de respuestas**  
+   - El servidor evita enviar datos en formatos **no compatibles con el cliente**.  
+
+✔ **Implementación de seguridad**  
+   - Se usa para evitar ataques que intentan forzar respuestas en formatos no permitidos.  
+
+---
+
+#### ✅ **Resumen**  
+- **406 Not Acceptable** ocurre cuando el cliente pide un **formato que el servidor no puede proporcionar**.  
+- Se usa para **controlar la compatibilidad de formatos en APIs**.  
+- Se soluciona ajustando la cabecera `Accept` a un formato soportado.  
+
+Si necesitas ayuda con la gestión de formatos en tu API o aplicación, dime qué tecnología estás usando. 🚀
+
+--- termina 406
+
 */
