@@ -642,6 +642,20 @@ export function HttpCode() {
                                 Facilita la sincronización de estructuras complejas de archivos o propiedades, indicando al cliente qué recursos ya se han procesado.
                             </p>
 
+                            <h2>Ventajas</h2>
+
+                            <p>
+                                Eficiencia: Evita duplicar datos en respuestas, ahorrando ancho de banda y tiempo de procesamiento.
+                            </p>
+
+                            <p>
+                                Claridad: Informa explícitamente que un recurso ya ha sido reportado en la misma transacción.
+                            </p>
+
+                            <p>
+                                Reducción de Redundancia: Especialmente útil en estructuras jerárquicas o recursos enlazados.
+                            </p>
+
                         </DivContent>
                     </DivArticle>
                 </DivCol>
@@ -702,13 +716,6 @@ Content-Type: application/xml; charset="utf-8"
 En este caso:
 - El directorio principal (`/folder1/`) se describe normalmente.
 - El subdirectorio (`/folder1/subfolder/`) ya se informó previamente en una operación anterior y no se vuelve a detallar.
-
----
-
-### **Beneficios de Usar 208 Already Reported**
-- **Eficiencia**: Evita duplicar datos en respuestas, ahorrando ancho de banda y tiempo de procesamiento.
-- **Claridad**: Informa explícitamente que un recurso ya ha sido reportado en la misma transacción.
-- **Reducción de Redundancia**: Especialmente útil en estructuras jerárquicas o recursos enlazados.
 
 ---
 
