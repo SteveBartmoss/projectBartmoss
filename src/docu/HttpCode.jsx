@@ -625,6 +625,23 @@ export function HttpCode() {
                                 Optimización: Minimiza la sobrecarga de red al evitar datos redundantes.
                             </p>
 
+                            <h2>Caso de Uso</h2>
+
+                            <p>
+                                Gestión de Árboles de Directorios:
+                                Cuando se enumeran recursos jerárquicos, evita la repetición de información sobre subdirectorios o archivos ya reportados.
+                            </p>
+
+                            <p>
+                                Optimización en Consultas WebDAV:
+                                Reduce la cantidad de datos enviados en respuestas `PROPFIND` o similares, optimizando el uso de red y procesamiento.
+                            </p>
+
+                            <p>
+                                Sincronización de Recursos:
+                                Facilita la sincronización de estructuras complejas de archivos o propiedades, indicando al cliente qué recursos ya se han procesado.
+                            </p>
+
                         </DivContent>
                     </DivArticle>
                 </DivCol>
@@ -685,20 +702,6 @@ Content-Type: application/xml; charset="utf-8"
 En este caso:
 - El directorio principal (`/folder1/`) se describe normalmente.
 - El subdirectorio (`/folder1/subfolder/`) ya se informó previamente en una operación anterior y no se vuelve a detallar.
-
----
-
-### **Caso de Uso**
-El código `208 Already Reported` es útil en los siguientes escenarios:
-
-1. **Gestión de Árboles de Directorios**:
-   - Cuando se enumeran recursos jerárquicos, evita la repetición de información sobre subdirectorios o archivos ya reportados.
-
-2. **Optimización en Consultas WebDAV**:
-   - Reduce la cantidad de datos enviados en respuestas `PROPFIND` o similares, optimizando el uso de red y procesamiento.
-
-3. **Sincronización de Recursos**:
-   - Facilita la sincronización de estructuras complejas de archivos o propiedades, indicando al cliente qué recursos ya se han procesado.
 
 ---
 
