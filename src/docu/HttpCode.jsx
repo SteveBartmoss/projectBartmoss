@@ -556,6 +556,8 @@ export function HttpCode() {
                                 El código 206 Partial Content es esencial para servicios que manejan recursos grandes y buscan eficiencia y flexibilidad en la entrega de contenido al cliente.
                             </p>
 
+                            <Divider />
+
                             <h1 id="code207">207</h1>
 
                             <p>
@@ -604,6 +606,8 @@ export function HttpCode() {
                                 El uso de 207 Multi-Status es crucial en aplicaciones avanzadas que gestionan múltiples recursos
                                 en servidores compatibles con WebDAV, mejorando la comunicación entre cliente y servidor.
                             </p>
+
+                            <Divider />
 
                             <h1 id='code208'>208</h1>
 
@@ -665,6 +669,8 @@ export function HttpCode() {
                                 múltiples recursos jerárquicos, asegurando que los clientes solo reciban la información necesaria 
                                 sin redundancias innecesarias.
                             </p>
+
+                            <Divider />
 
                             <h1 id='code226'>226</h1>
 
