@@ -668,3 +668,59 @@ En este caso:
 - **Específico de WebDAV**: Este código no es común fuera de aplicaciones que implementan WebDAV.
 
 ---
+
+--codigo 208
+
+### **Código de Respuesta HTTP 208: Already Reported**
+
+#### **Descripción**
+
+---
+
+### **Ejemplo**
+Supongamos que un cliente realiza una solicitud `PROPFIND` para obtener las propiedades de un directorio y todos sus subdirectorios.
+
+#### **Solicitud:**
+```http
+PROPFIND /folder1/ HTTP/1.1
+Host: example.com
+Depth: 1
+```
+
+#### **Respuesta:**
+```http
+HTTP/1.1 207 Multi-Status
+Content-Type: application/xml; charset="utf-8"
+
+<?xml version="1.0" encoding="utf-8"?>
+<multistatus xmlns="DAV:">
+  <response>
+    <href>/folder1/</href>
+    <propstat>
+      <prop>
+        <displayname>folder1</displayname>
+      </prop>
+      <status>HTTP/1.1 200 OK</status>
+    </propstat>
+  </response>
+  <response>
+    <href>/folder1/subfolder/</href>
+    <propstat>
+      <prop>
+        <displayname>subfolder</displayname>
+      </prop>
+      <status>HTTP/1.1 208 Already Reported</status>
+    </propstat>
+  </response>
+</multistatus>
+```
+
+En este caso:
+- El directorio principal (`/folder1/`) se describe normalmente.
+- El subdirectorio (`/folder1/subfolder/`) ya se informó previamente en una operación anterior y no se vuelve a detallar.
+
+---
+
+### **Consideraciones**
+- **Formato XML**: Al igual que otros códigos de WebDAV, el cliente debe procesar respuestas en formato XML.
+- **Específico de WebDAV**: No es relevante para aplicaciones fuera del contexto de WebDAV.
