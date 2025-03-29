@@ -718,6 +718,20 @@ export function HttpCode() {
                                 APIs y Servicios Web:
                                 APIs que proporcionan datos actualizados sin necesidad de retransmitir toda la información.
                             </p>
+                            
+                            <h2>Ventajas</h2>
+
+                            <p>
+                                Eficiencia: Reduce el tamaño de las respuestas HTTP, mejorando el rendimiento.
+                            </p>
+
+                            <p>
+                                Ahorro de Ancho de Banda: Ideal para aplicaciones con recursos grandes o redes de baja velocidad.
+                            </p>
+
+                            <p>
+                                Sincronización Rápida: Facilita mantener datos actualizados en tiempo real.
+                            </p>
 
                         </DivContent>
                     </DivArticle>
@@ -767,13 +781,6 @@ IM: delta
 
 - **`IM: delta`**: Indica que se usó una codificación delta para generar la respuesta.
 - **`ETag: "v2"`**: Proporciona una nueva etiqueta de versión para la actualización.
-
----
-
-### **Ventajas del Código 226**
-- **Eficiencia**: Reduce el tamaño de las respuestas HTTP, mejorando el rendimiento.
-- **Ahorro de Ancho de Banda**: Ideal para aplicaciones con recursos grandes o redes de baja velocidad.
-- **Sincronización Rápida**: Facilita mantener datos actualizados en tiempo real.
 
 ---
 
