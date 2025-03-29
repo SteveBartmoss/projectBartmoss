@@ -750,50 +750,6 @@ export function HttpCode() {
 
 /*
 
-
---- codigo 226
-
-### **Código de Respuesta HTTP 226: IM Used**
-
-
----
-
-### **Ejemplo**
-#### **Escenario**
-Un cliente ha descargado previamente una versión de un archivo JSON y solicita solo las actualizaciones desde la última versión que tiene.
-
-#### **Solicitud**
-```http
-GET /data/resource HTTP/1.1
-Host: example.com
-A-IM: delta
-If-None-Match: "v1"
-```
-
-- **`A-IM: delta`**: Solicita al servidor una codificación delta.
-- **`If-None-Match: "v1"`**: Indica que el cliente tiene la versión etiquetada como `"v1"`.
-
-#### **Respuesta**
-```http
-HTTP/1.1 226 IM Used
-Content-Type: application/json
-ETag: "v2"
-IM: delta
-
-{
-  "updatedField": "newValue"
-}
-```
-
-- **`IM: delta`**: Indica que se usó una codificación delta para generar la respuesta.
-- **`ETag: "v2"`**: Proporciona una nueva etiqueta de versión para la actualización.
-
----
-
-### **Consideraciones**
-- **Compatibilidad**: El cliente y el servidor deben admitir manipulaciones delta y el encabezado `A-IM`.
-- **Casos Limitados**: Este código no es ampliamente utilizado fuera de aplicaciones específicas, como sincronización incremental.
-
 --- codigo 300
 
 ### **Código de Respuesta HTTP 300: Multiple Choices**
