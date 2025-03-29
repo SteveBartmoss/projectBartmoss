@@ -678,6 +678,23 @@ export function HttpCode() {
                                 incrementales.
                             </p>
 
+                            <h2>Características Clave</h2>
+
+                            <p>
+                                Reducción del Tamaño de la Respuesta: Solo se envían los cambios entre dos versiones del recurso, 
+                                lo que optimiza el uso del ancho de banda.
+                            </p>
+
+                            <p>
+                                Cabecera IM: El servidor utiliza esta cabecera en la respuesta para indicar qué manipulaciones 
+                                específicas se aplicaron.
+                            </p>
+
+                            <p>
+                                Usos Avanzados: Común en sistemas donde se sincronizan datos frecuentemente, como aplicaciones 
+                                de colaboración en tiempo real o sincronización de archivos.
+                            </p>
+
                         </DivContent>
                     </DivArticle>
                 </DivCol>
@@ -694,15 +711,6 @@ export function HttpCode() {
 
 ### **Código de Respuesta HTTP 226: IM Used**
 
-#### **Descripción**
-
-
----
-
-### **Características Clave**
-1. **Reducción del Tamaño de la Respuesta**: Solo se envían los cambios entre dos versiones del recurso, lo que optimiza el uso del ancho de banda.
-2. **Cabecera `IM`**: El servidor utiliza esta cabecera en la respuesta para indicar qué manipulaciones específicas se aplicaron.
-3. **Usos Avanzados**: Común en sistemas donde se sincronizan datos frecuentemente, como aplicaciones de colaboración en tiempo real o sincronización de archivos.
 
 ---
 
