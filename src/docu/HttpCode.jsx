@@ -656,6 +656,12 @@ export function HttpCode() {
                                 Reducción de Redundancia: Especialmente útil en estructuras jerárquicas o recursos enlazados.
                             </p>
 
+                            <p>
+                                El código 208 Already Reported mejora la eficiencia de las operaciones en sistemas que gestionan 
+                                múltiples recursos jerárquicos, asegurando que los clientes solo reciban la información necesaria 
+                                sin redundancias innecesarias.
+                            </p>
+
                         </DivContent>
                     </DivArticle>
                 </DivCol>
@@ -722,9 +728,6 @@ En este caso:
 ### **Consideraciones**
 - **Formato XML**: Al igual que otros códigos de WebDAV, el cliente debe procesar respuestas en formato XML.
 - **Específico de WebDAV**: No es relevante para aplicaciones fuera del contexto de WebDAV.
-
-El código `208 Already Reported` mejora la eficiencia de las operaciones en sistemas que gestionan múltiples recursos jerárquicos, asegurando que los clientes solo reciban la información necesaria sin redundancias innecesarias.
-
 
 --- codigo 226
 
