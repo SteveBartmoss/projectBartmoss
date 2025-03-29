@@ -695,6 +695,30 @@ export function HttpCode() {
                                 de colaboración en tiempo real o sincronización de archivos.
                             </p>
 
+                            <h2>Usos comunes</h2>
+
+                            <p>
+                                Sincronización de Datos: El código 226 IM Used es útil en escenarios donde un cliente mantiene 
+                                una copia local de los datos y necesita sincronizar los cambios de manera eficiente
+                            </p>
+
+                            <p>
+                                Aplicaciones de Colaboración:
+                                Herramientas como Google Docs o plataformas colaborativas donde múltiples usuarios editan el 
+                                mismo documento.
+                            </p>
+
+                            <p>
+                                Transferencia de Archivos:
+                                Sincronización incremental de datos en aplicaciones como Dropbox o sistemas de control de 
+                                versiones.
+                            </p>
+
+                            <p>
+                                APIs y Servicios Web:
+                                APIs que proporcionan datos actualizados sin necesidad de retransmitir toda la información.
+                            </p>
+
                         </DivContent>
                     </DivArticle>
                 </DivCol>
@@ -743,18 +767,6 @@ IM: delta
 
 - **`IM: delta`**: Indica que se usó una codificación delta para generar la respuesta.
 - **`ETag: "v2"`**: Proporciona una nueva etiqueta de versión para la actualización.
-
----
-
-### **Caso de Uso**
-#### **Sincronización de Datos**
-El código `226 IM Used` es útil en escenarios donde un cliente mantiene una copia local de los datos y necesita sincronizar los cambios de manera eficiente:
-1. **Aplicaciones de Colaboración**:
-   - Herramientas como Google Docs o plataformas colaborativas donde múltiples usuarios editan el mismo documento.
-2. **Transferencia de Archivos**:
-   - Sincronización incremental de datos en aplicaciones como Dropbox o sistemas de control de versiones.
-3. **APIs y Servicios Web**:
-   - APIs que proporcionan datos actualizados sin necesidad de retransmitir toda la información.
 
 ---
 
