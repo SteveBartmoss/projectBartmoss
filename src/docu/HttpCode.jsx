@@ -58,6 +58,10 @@ export function HttpCode() {
         {
             titulo: '208',
             id: 'code208',
+        },
+        {
+            titulo: '226',
+            id: 'code226',
         }
     ]
 
@@ -662,6 +666,18 @@ export function HttpCode() {
                                 sin redundancias innecesarias.
                             </p>
 
+                            <h1 id='code226'>226</h1>
+
+                            <p>
+                                El código de estado HTTP 226 IM Used se utiliza para indicar que el servidor ha cumplido con una 
+                                solicitud GET para un recurso y que la respuesta se generó utilizando una o más manipulaciones de 
+                                contenido (deltas). Esto permite enviar únicamente las diferencias entre una versión previa del 
+                                recurso y la versión actual, en lugar de transferir todo el recurso completo.
+                                Este código es definido como parte del protocolo HTTP Delta Encoding. Es particularmente útil en 
+                                situaciones donde un cliente ya posee una versión del recurso y solo necesita recibir actualizaciones 
+                                incrementales.
+                            </p>
+
                         </DivContent>
                     </DivArticle>
                 </DivCol>
@@ -679,9 +695,7 @@ export function HttpCode() {
 ### **Código de Respuesta HTTP 226: IM Used**
 
 #### **Descripción**
-El código de estado HTTP **226 IM Used** se utiliza para indicar que el servidor ha cumplido con una solicitud GET para un recurso y que la respuesta se generó utilizando una o más manipulaciones de contenido (deltas). Esto permite enviar únicamente las diferencias entre una versión previa del recurso y la versión actual, en lugar de transferir todo el recurso completo.
 
-Este código es definido en la [RFC 3229](https://datatracker.ietf.org/doc/html/rfc3229) como parte del protocolo **HTTP Delta Encoding**. Es particularmente útil en situaciones donde un cliente ya posee una versión del recurso y solo necesita recibir actualizaciones incrementales.
 
 ---
 
