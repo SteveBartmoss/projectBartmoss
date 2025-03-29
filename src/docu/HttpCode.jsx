@@ -733,6 +733,12 @@ export function HttpCode() {
                                 Sincronización Rápida: Facilita mantener datos actualizados en tiempo real.
                             </p>
 
+                            <p>
+                                El código HTTP 226 IM Used es una herramienta poderosa para mejorar la eficiencia en 
+                                la transferencia de datos, especialmente en sistemas que manejan versiones de recursos 
+                                o sincronización incremental.
+                            </p>
+
                         </DivContent>
                     </DivArticle>
                 </DivCol>
@@ -787,8 +793,6 @@ IM: delta
 ### **Consideraciones**
 - **Compatibilidad**: El cliente y el servidor deben admitir manipulaciones delta y el encabezado `A-IM`.
 - **Casos Limitados**: Este código no es ampliamente utilizado fuera de aplicaciones específicas, como sincronización incremental.
-
-El código HTTP `226 IM Used` es una herramienta poderosa para mejorar la eficiencia en la transferencia de datos, especialmente en sistemas que manejan versiones de recursos o sincronización incremental.
 
 --- codigo 300
 
