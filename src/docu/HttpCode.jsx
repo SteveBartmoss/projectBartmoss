@@ -760,6 +760,27 @@ export function HttpCode() {
                                 idiomas o versiones.
                             </p>
 
+                            <h2>Características Clave</h2>
+
+                            <p>
+                                Múltiples Opciones Disponibles: El recurso solicitado tiene más de una representación posible.
+                            </p>
+
+                            <p>
+                                Selección por Parte del Cliente: El cliente puede elegir cuál opción prefiere, ya sea manualmente 
+                                o mediante cabeceras como Accept-Language o Accept.
+                            </p>
+
+                            <p>
+                                Ubicación en la Respuesta: Se proporciona una lista de URLs alternativas en el cuerpo de la respuesta 
+                                o en la cabecera Location.
+                            </p>
+
+                            <p>
+                                No Obligatorio Redirigir: A diferencia de otros códigos de redirección (301, 302), el cliente no está 
+                                obligado a seguir una URL específica.
+                            </p>
+
                         </DivContent>
                     </DivArticle>
                 </DivCol>
@@ -774,13 +795,6 @@ export function HttpCode() {
 --- codigo 300
 
 ### **Código de Respuesta HTTP 300: Multiple Choices**
-
-
-### **Características Clave**
-1. **Múltiples Opciones Disponibles**: El recurso solicitado tiene más de una representación posible.
-2. **Selección por Parte del Cliente**: El cliente puede elegir cuál opción prefiere, ya sea manualmente o mediante cabeceras como `Accept-Language` o `Accept`.
-3. **Ubicación en la Respuesta**: Se proporciona una lista de URLs alternativas en el cuerpo de la respuesta o en la cabecera `Location`.
-4. **No Obligatorio Redirigir**: A diferencia de otros códigos de redirección (301, 302), el cliente no está obligado a seguir una URL específica.
 
 ---
 
