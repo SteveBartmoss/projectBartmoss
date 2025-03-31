@@ -1771,4 +1771,73 @@ Si necesitas ayuda con la gestión de formatos en tu API o aplicación, dime qu�
 
 --- termina 406
 
+--- codigo 407
+
+### 🔹 **Código de respuesta HTTP 407 - Proxy Authentication Required**  
+
+#### 📌 **Descripción**  
+El código **407 Proxy Authentication Required** indica que el cliente **debe autenticarse en un proxy** antes de poder acceder al recurso solicitado.  
+
+🔴 **Diferencia con el código 401 (Unauthorized):**  
+- **401**: El cliente debe autenticarse **directamente en el servidor**.  
+- **407**: El cliente debe autenticarse **en un proxy intermedio**.  
+
+---
+
+#### 📝 **Ejemplo de respuesta con código 407**  
+
+📌 **Escenario:** Un usuario intenta acceder a un sitio web, pero su empresa usa un **proxy que requiere autenticación**.  
+
+📌 **Solicitud del usuario (sin autenticación):**  
+
+```
+GET /pagina HTTP/1.1
+Host: ejemplo.com
+```
+
+📌 **Respuesta del proxy:**  
+
+```
+HTTP/1.1 407 Proxy Authentication Required
+Proxy-Authenticate: Basic realm="Acceso al Proxy"
+Content-Type: text/plain
+
+Debe autenticarse en el proxy para continuar.
+```
+
+📌 **Solicitud corregida (con autenticación):**  
+
+```
+GET /pagina HTTP/1.1
+Host: ejemplo.com
+Proxy-Authorization: Basic dXN1YXJpbzpjbGF2ZXM=
+```
+
+📌 **Corrección:**  
+- El cliente debe incluir una cabecera `Proxy-Authorization` con las credenciales.  
+
+---
+
+#### 🎯 **Casos de uso comunes**  
+
+✔ **Redes empresariales con proxies**  
+   - Empresas requieren autenticación en un **proxy** para filtrar tráfico de Internet.  
+
+✔ **Restricción de acceso a ciertos servicios**  
+   - Algunos servidores imponen proxies para verificar **autenticidad de usuarios**.  
+
+✔ **Monitoreo y control de tráfico**  
+   - Se usa en **firewalls** y herramientas de seguridad para controlar accesos.  
+
+---
+
+#### ✅ **Resumen**  
+- **407 Proxy Authentication Required** significa que el **cliente debe autenticarse en un proxy** antes de acceder al servidor.  
+- Se usa en **redes empresariales, seguridad y control de tráfico**.  
+- Se soluciona enviando las credenciales en la cabecera `Proxy-Authorization`.  
+
+Si necesitas ayuda con proxies o autenticación, dime qué tecnología estás usando. 🚀
+
+--- termina 407
+
 */
