@@ -800,6 +800,32 @@ export function HttpCode() {
                                 la versión deseada.
                             </p>
 
+                            <h2>Ventajas</h2>
+
+                            <p>
+                                Flexible: Permite a los clientes seleccionar la mejor representación del recurso.  
+                            </p>
+
+                            <p>
+                                Útil en Servicios REST: Facilita la entrega de contenido en múltiples formatos.  
+                            </p>
+
+                            <p>
+                                Poca Implementación en la Práctica: La mayoría de los servicios prefieren redirigir automáticamente 
+                                (301, 302) en lugar de requerir interacción del cliente.  
+                            </p>
+
+                            <p>
+                                No Soportado por Algunos Navegadores: Algunos navegadores pueden no manejar adecuadamente el código 
+                                300 y simplemente mostrar una página en blanco.  
+                            </p>
+
+                            <p>
+                                El código 300 Multiple Choices es útil cuando un recurso tiene múltiples representaciones, pero su uso 
+                                no es común en la web moderna debido a que los servidores suelen redirigir automáticamente a una opción 
+                                predeterminada.
+                            </p>
+
                         </DivContent>
                     </DivArticle>
                 </DivCol>
@@ -843,16 +869,6 @@ Content-Type: application/json
 }
 ```
 En este caso, el servidor informa al cliente que existen varias versiones del documento, y el cliente puede elegir la más adecuada.
-
----
-
-### **Ventajas y Consideraciones**
-✔ **Flexible**: Permite a los clientes seleccionar la mejor representación del recurso.  
-✔ **Útil en Servicios REST**: Facilita la entrega de contenido en múltiples formatos.  
-❌ **Poca Implementación en la Práctica**: La mayoría de los servicios prefieren redirigir automáticamente (`301`, `302`) en lugar de requerir interacción del cliente.  
-❌ **No Soportado por Algunos Navegadores**: Algunos navegadores pueden no manejar adecuadamente el código `300` y simplemente mostrar una página en blanco.  
-
-El código `300 Multiple Choices` es útil cuando un recurso tiene múltiples representaciones, pero su uso no es común en la web moderna debido a que los servidores suelen redirigir automáticamente a una opción predeterminada.
 
 ----
 
