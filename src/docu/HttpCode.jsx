@@ -837,41 +837,6 @@ export function HttpCode() {
 
 /*
 
---- codigo 300
-
-### **Código de Respuesta HTTP 300: Multiple Choices**
-
----
-
-### **Ejemplo**
-#### **Escenario**
-Un usuario solicita un documento, pero el servidor tiene el recurso disponible en varios formatos (`PDF`, `HTML`, `TXT`).
-
-#### **Solicitud**
-```http
-GET /document HTTP/1.1
-Host: example.com
-Accept: application/pdf
-```
-
-#### **Respuesta**
-```http
-HTTP/1.1 300 Multiple Choices
-Content-Type: application/json
-
-{
-  "message": "Este recurso tiene múltiples representaciones, seleccione una:",
-  "options": [
-    { "format": "HTML", "url": "https://example.com/document.html" },
-    { "format": "PDF", "url": "https://example.com/document.pdf" },
-    { "format": "TXT", "url": "https://example.com/document.txt" }
-  ]
-}
-```
-En este caso, el servidor informa al cliente que existen varias versiones del documento, y el cliente puede elegir la más adecuada.
-
-----
-
 --- codigo 301
 
 ### 🔹 **Código de respuesta HTTP 301 - Moved Permanently**  
