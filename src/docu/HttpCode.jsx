@@ -616,10 +616,10 @@ export function HttpCode() {
                             <h1 id='code208'>208</h1>
 
                             <p>
-                                Indica que los miembros de un recurso vinculado ya se han enumerado en una respuesta anterior, y no 
-                                se repiten nuevamente en la respuesta actual para evitar redundancia. Este código se usa principalmente 
-                                en respuestas a solicitudes PROPFIND con una profundidad mayor que 0, donde se enumeran múltiples recursos. 
-                                Al devolver 208, el servidor informa que ciertos recursos ya se describieron previamente y no necesitan 
+                                Indica que los miembros de un recurso vinculado ya se han enumerado en una respuesta anterior, y no
+                                se repiten nuevamente en la respuesta actual para evitar redundancia. Este código se usa principalmente
+                                en respuestas a solicitudes PROPFIND con una profundidad mayor que 0, donde se enumeran múltiples recursos.
+                                Al devolver 208, el servidor informa que ciertos recursos ya se describieron previamente y no necesitan
                                 repetirse.
                             </p>
 
@@ -669,8 +669,8 @@ export function HttpCode() {
                             </p>
 
                             <p>
-                                El código 208 Already Reported mejora la eficiencia de las operaciones en sistemas que gestionan 
-                                múltiples recursos jerárquicos, asegurando que los clientes solo reciban la información necesaria 
+                                El código 208 Already Reported mejora la eficiencia de las operaciones en sistemas que gestionan
+                                múltiples recursos jerárquicos, asegurando que los clientes solo reciban la información necesaria
                                 sin redundancias innecesarias.
                             </p>
 
@@ -679,48 +679,48 @@ export function HttpCode() {
                             <h1 id='code226'>226</h1>
 
                             <p>
-                                El código de estado HTTP 226 IM Used se utiliza para indicar que el servidor ha cumplido con una 
-                                solicitud GET para un recurso y que la respuesta se generó utilizando una o más manipulaciones de 
-                                contenido (deltas). Esto permite enviar únicamente las diferencias entre una versión previa del 
+                                El código de estado HTTP 226 IM Used se utiliza para indicar que el servidor ha cumplido con una
+                                solicitud GET para un recurso y que la respuesta se generó utilizando una o más manipulaciones de
+                                contenido (deltas). Esto permite enviar únicamente las diferencias entre una versión previa del
                                 recurso y la versión actual, en lugar de transferir todo el recurso completo.
-                                Este código es definido como parte del protocolo HTTP Delta Encoding. Es particularmente útil en 
-                                situaciones donde un cliente ya posee una versión del recurso y solo necesita recibir actualizaciones 
+                                Este código es definido como parte del protocolo HTTP Delta Encoding. Es particularmente útil en
+                                situaciones donde un cliente ya posee una versión del recurso y solo necesita recibir actualizaciones
                                 incrementales.
                             </p>
 
                             <h2>Características Clave</h2>
 
                             <p>
-                                Reducción del Tamaño de la Respuesta: Solo se envían los cambios entre dos versiones del recurso, 
+                                Reducción del Tamaño de la Respuesta: Solo se envían los cambios entre dos versiones del recurso,
                                 lo que optimiza el uso del ancho de banda.
                             </p>
 
                             <p>
-                                Cabecera IM: El servidor utiliza esta cabecera en la respuesta para indicar qué manipulaciones 
+                                Cabecera IM: El servidor utiliza esta cabecera en la respuesta para indicar qué manipulaciones
                                 específicas se aplicaron.
                             </p>
 
                             <p>
-                                Usos Avanzados: Común en sistemas donde se sincronizan datos frecuentemente, como aplicaciones 
+                                Usos Avanzados: Común en sistemas donde se sincronizan datos frecuentemente, como aplicaciones
                                 de colaboración en tiempo real o sincronización de archivos.
                             </p>
 
                             <h2>Usos comunes</h2>
 
                             <p>
-                                Sincronización de Datos: El código 226 IM Used es útil en escenarios donde un cliente mantiene 
+                                Sincronización de Datos: El código 226 IM Used es útil en escenarios donde un cliente mantiene
                                 una copia local de los datos y necesita sincronizar los cambios de manera eficiente
                             </p>
 
                             <p>
                                 Aplicaciones de Colaboración:
-                                Herramientas como Google Docs o plataformas colaborativas donde múltiples usuarios editan el 
+                                Herramientas como Google Docs o plataformas colaborativas donde múltiples usuarios editan el
                                 mismo documento.
                             </p>
 
                             <p>
                                 Transferencia de Archivos:
-                                Sincronización incremental de datos en aplicaciones como Dropbox o sistemas de control de 
+                                Sincronización incremental de datos en aplicaciones como Dropbox o sistemas de control de
                                 versiones.
                             </p>
 
@@ -728,7 +728,7 @@ export function HttpCode() {
                                 APIs y Servicios Web:
                                 APIs que proporcionan datos actualizados sin necesidad de retransmitir toda la información.
                             </p>
-                            
+
                             <h2>Ventajas</h2>
 
                             <p>
@@ -744,12 +744,21 @@ export function HttpCode() {
                             </p>
 
                             <p>
-                                El código HTTP 226 IM Used es una herramienta poderosa para mejorar la eficiencia en 
-                                la transferencia de datos, especialmente en sistemas que manejan versiones de recursos 
+                                El código HTTP 226 IM Used es una herramienta poderosa para mejorar la eficiencia en
+                                la transferencia de datos, especialmente en sistemas que manejan versiones de recursos
                                 o sincronización incremental.
                             </p>
 
                             <h1 id='code300'>300</h1>
+
+                            <p>
+                                El código de estado HTTP **300 Multiple Choices** indica que el recurso solicitado tiene 
+                                múltiples representaciones posibles y el cliente debe elegir una. Esta respuesta se usa 
+                                cuando hay varias opciones disponibles para un mismo recurso, y el servidor proporciona 
+                                información sobre esas opciones para que el cliente seleccione la más adecuada.
+                                Este código generalmente se utiliza en situaciones donde un recurso tiene múltiples formatos, 
+                                idiomas o versiones.
+                            </p>
 
                         </DivContent>
                     </DivArticle>
@@ -766,12 +775,6 @@ export function HttpCode() {
 
 ### **Código de Respuesta HTTP 300: Multiple Choices**
 
-#### **Descripción**
-El código de estado HTTP **300 Multiple Choices** indica que el recurso solicitado tiene múltiples representaciones posibles y el cliente debe elegir una. Esta respuesta se usa cuando hay varias opciones disponibles para un mismo recurso, y el servidor proporciona información sobre esas opciones para que el cliente seleccione la más adecuada.
-
-Este código se encuentra definido en la [RFC 9110, Sección 15.4.1](https://datatracker.ietf.org/doc/html/rfc9110#section-15.4.1) y generalmente se utiliza en situaciones donde un recurso tiene múltiples formatos, idiomas o versiones.
-
----
 
 ### **Características Clave**
 1. **Múltiples Opciones Disponibles**: El recurso solicitado tiene más de una representación posible.
