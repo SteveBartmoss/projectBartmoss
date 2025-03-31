@@ -66,6 +66,10 @@ export function HttpCode() {
         {
             titulo: '300',
             id: 'code300',
+        },
+        {
+            titulo: '301',
+            id: 'code301',
         }
     ]
 
@@ -825,6 +829,8 @@ export function HttpCode() {
                                 no es común en la web moderna debido a que los servidores suelen redirigir automáticamente a una opción 
                                 predeterminada.
                             </p>
+
+                            <h1 id="code301">301</h1>
 
                         </DivContent>
                     </DivArticle>
