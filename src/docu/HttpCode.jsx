@@ -781,6 +781,25 @@ export function HttpCode() {
                                 obligado a seguir una URL específica.
                             </p>
 
+                            <h2>Usos comunes</h2>
+
+                            <p>
+                                Sitios Multilingües:
+                                Un sitio web con contenido disponible en varios idiomas podría usar 300 Multiple Choices para sugerir 
+                                diferentes versiones según la configuración del navegador del usuario.
+                            </p>
+
+                            <p>
+                                Diferentes Formatos de Archivo:
+                                Cuando un archivo está disponible en múltiples formatos (JSON, XML, CSV), el cliente puede elegir la mejor opción.
+                            </p>
+
+                            <p>
+                                Versiones de un API:
+                                Un API REST que admite varias versiones (v1, v2) puede devolver un 300 cuando un cliente no especifica 
+                                la versión deseada.
+                            </p>
+
                         </DivContent>
                     </DivArticle>
                 </DivCol>
@@ -824,17 +843,6 @@ Content-Type: application/json
 }
 ```
 En este caso, el servidor informa al cliente que existen varias versiones del documento, y el cliente puede elegir la más adecuada.
-
----
-
-### **Caso de Uso**
-#### **Selección de Formatos o Idiomas**
-1. **Sitios Multilingües**:
-   - Un sitio web con contenido disponible en varios idiomas podría usar `300 Multiple Choices` para sugerir diferentes versiones según la configuración del navegador del usuario.
-2. **Diferentes Formatos de Archivo**:
-   - Cuando un archivo está disponible en múltiples formatos (`JSON`, `XML`, `CSV`), el cliente puede elegir la mejor opción.
-3. **Versiones de un API**:
-   - Un API REST que admite varias versiones (`v1`, `v2`) puede devolver un `300` cuando un cliente no especifica la versión deseada.
 
 ---
 
