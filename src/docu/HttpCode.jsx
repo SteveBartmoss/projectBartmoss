@@ -62,6 +62,10 @@ export function HttpCode() {
         {
             titulo: '226',
             id: 'code226',
+        },
+        {
+            titulo: '300',
+            id: 'code300',
         }
     ]
 
@@ -744,6 +748,8 @@ export function HttpCode() {
                                 la transferencia de datos, especialmente en sistemas que manejan versiones de recursos 
                                 o sincronización incremental.
                             </p>
+
+                            <h1 id='code300'>300</h1>
 
                         </DivContent>
                     </DivArticle>
