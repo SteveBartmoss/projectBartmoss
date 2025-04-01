@@ -1983,4 +1983,71 @@ Si necesitas ayuda para manejar conflictos en una API o sistema de bases de dato
 
 --- termina 409
 
+--- codigo 410
+
+### 🔹 **Código de respuesta HTTP 410 - Gone**  
+
+#### 📌 **Descripción**  
+El código **410 Gone** indica que el recurso solicitado **ya no está disponible y no volverá a estarlo**. A diferencia del **404 Not Found**, que indica que un recurso podría estar temporalmente no disponible, el **410** confirma que el recurso ha sido eliminado de forma permanente.  
+
+🚨 **Diferencias entre 404 y 410:**  
+- **404 Not Found**: No se sabe si el recurso volverá a estar disponible.  
+- **410 Gone**: El recurso ha sido eliminado de manera definitiva.  
+
+---
+
+#### 📝 **Ejemplo de respuesta con código 410**  
+
+📌 **Escenario:** Una API eliminó permanentemente un endpoint obsoleto (`/usuarios/antiguo`).  
+
+📌 **Solicitud del usuario:**  
+
+```http
+GET /usuarios/antiguo HTTP/1.1
+Host: api.ejemplo.com
+```
+
+📌 **Respuesta del servidor:**  
+
+```http
+HTTP/1.1 410 Gone
+Content-Type: application/json
+
+{
+    "error": "Este recurso ha sido eliminado permanentemente."
+}
+```
+
+📌 **Corrección:**  
+- Si el recurso fue movido, el servidor debe **redirigir al nuevo recurso** (`301 Moved Permanently`).  
+- Si es una API, la documentación debe **avisar a los usuarios** para evitar solicitudes fallidas.  
+- Si el recurso se eliminó accidentalmente, es posible restaurarlo en el servidor.  
+
+---
+
+#### 🎯 **Casos de uso comunes**  
+
+✔ **Eliminación permanente de recursos**  
+   - Un artículo, cuenta de usuario o documento ha sido **eliminado definitivamente**.  
+
+✔ **Deprecación de servicios o endpoints en APIs**  
+   - Una API **descontinúa** una versión antigua y los desarrolladores deben usar la nueva.  
+
+✔ **Reglas de SEO y motores de búsqueda**  
+   - Google y otros buscadores interpretan el **410** como una eliminación definitiva y **dejan de indexar** la URL.  
+
+✔ **Gestión de contenido en sitios web**  
+   - Una página de noticias o blog ha sido eliminada intencionalmente.  
+
+---
+
+#### ✅ **Resumen**  
+- **410 Gone** significa que un recurso ha sido eliminado **permanentemente**.  
+- Se usa para **APIs, sistemas de contenido y SEO**.  
+- Se soluciona redirigiendo a otro recurso o actualizando la documentación.  
+
+Si necesitas manejar recursos obsoletos en una API o sitio web, dime qué tecnología estás usando. 🚀
+
+--- termino 410
+
 */
