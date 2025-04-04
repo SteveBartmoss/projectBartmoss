@@ -838,6 +838,39 @@ export function HttpCode() {
                                 de búsqueda suelen actualizar automáticamente sus enlaces a la nueva URL.  
                             </p>
 
+                            <h2>Usos comunes</h2>
+
+                            <p>
+                                Migración de URL de una página a otra  
+                                Si cambias la estructura de tu sitio web y deseas redirigir tráfico sin perder SEO.  
+                                Ejemplo: https://miweb.com/blog/post-antiguo https://miweb.com/articulos/post-nuevo. 
+                            </p>
+
+                            <p>
+                                Cambio de dominio  
+                                Si una empresa cambia de dominio y quiere redirigir todo el tráfico de https://antiguodominio.com a https://nuevodominio.com.  
+
+                                Forzar HTTPS  
+                                - Redirigir automáticamente tráfico HTTP a HTTPS:  
+                                    ```htaccess
+                                    RewriteEngine on
+                                    RewriteCond %{HTTPS} off
+                                    RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+                                    ```  
+                                - Esto garantiza que todos los usuarios usen una conexión segura.  
+                            </p> 
+
+                            <p>
+                                Eliminar www o agregarlo
+                                - Para evitar duplicidad en URLs (`www` y sin `www`), redirigir siempre a una versión única.  
+                                - Ejemplo en `.htaccess`:  
+                                    ```htaccess
+                                    RewriteEngine on
+                                    RewriteCond %{HTTP_HOST} ^www.ejemplo.com [NC]
+                                    RewriteRule ^(.*)$ http://ejemplo.com/$1 [L,R=301]
+                                    ```  
+                            </p>
+
                         </DivContent>
                     </DivArticle>
                 </DivCol>
@@ -868,35 +901,6 @@ Content-Type: text/html
 ```
 
 Y el navegador redirige automáticamente al usuario a `http://ejemplo.com/nueva-ruta`.
-
----
-
-#### 🎯 **Casos de uso comunes**  
-
-✔ **Migración de URL de una página a otra**  
-   - Si cambias la estructura de tu sitio web y deseas redirigir tráfico sin perder SEO.  
-   - Ejemplo: `https://miweb.com/blog/post-antiguo` → `https://miweb.com/articulos/post-nuevo`.  
-
-✔ **Cambio de dominio**  
-   - Si una empresa cambia de dominio y quiere redirigir todo el tráfico de `https://antiguodominio.com` a `https://nuevodominio.com`.  
-
-✔ **Forzar HTTPS**  
-   - Redirigir automáticamente tráfico HTTP a HTTPS:  
-     ```htaccess
-     RewriteEngine on
-     RewriteCond %{HTTPS} off
-     RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
-     ```  
-   - Esto garantiza que todos los usuarios usen una conexión segura.  
-
-✔ **Eliminar www o agregarlo**  
-   - Para evitar duplicidad en URLs (`www` y sin `www`), redirigir siempre a una versión única.  
-   - Ejemplo en `.htaccess`:  
-     ```htaccess
-     RewriteEngine on
-     RewriteCond %{HTTP_HOST} ^www.ejemplo.com [NC]
-     RewriteRule ^(.*)$ http://ejemplo.com/$1 [L,R=301]
-     ```  
 
 ---
 
