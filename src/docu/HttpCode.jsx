@@ -871,6 +871,12 @@ export function HttpCode() {
                                     ```  
                             </p>
 
+                            <p>
+                                301 Moved Permanently significa que la URL ha cambiado para siempre.  
+                                El navegador o cliente debe usar la nueva URL en futuras solicitudes.  
+                                Se usa comúnmente para SEO, redirecciones de dominios y cambios de estructura en sitios web.  
+                            </p>
+
                         </DivContent>
                     </DivArticle>
                 </DivCol>
@@ -903,11 +909,6 @@ Content-Type: text/html
 Y el navegador redirige automáticamente al usuario a `http://ejemplo.com/nueva-ruta`.
 
 ---
-
-### ✅ **Resumen**  
-- **301 Moved Permanently** significa que la URL ha cambiado para siempre.  
-- El navegador o cliente debe usar la nueva URL en futuras solicitudes.  
-- Se usa comúnmente para SEO, redirecciones de dominios y cambios de estructura en sitios web.  
 
 Si necesitas ayuda implementando una redirección 301 en tu proyecto, dime qué tecnología usas y te ayudo. 🚀
 
