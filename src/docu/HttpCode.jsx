@@ -832,6 +832,12 @@ export function HttpCode() {
 
                             <h1 id="code301">301</h1>
 
+                            <p>
+                                El código de estado 301 Moved Permanently indica que un recurso ha sido trasladado de forma permanente 
+                                a una nueva URL. Cualquier solicitud futura debe dirigirse a esta nueva ubicación. Los navegadores y motores 
+                                de búsqueda suelen actualizar automáticamente sus enlaces a la nueva URL.  
+                            </p>
+
                         </DivContent>
                     </DivArticle>
                 </DivCol>
@@ -846,9 +852,6 @@ export function HttpCode() {
 --- codigo 301
 
 ### 🔹 **Código de respuesta HTTP 301 - Moved Permanently**  
-
-#### 📌 **Descripción**  
-El código de estado **301 Moved Permanently** indica que un recurso ha sido trasladado de forma **permanente** a una nueva URL. Cualquier solicitud futura debe dirigirse a esta nueva ubicación. Los navegadores y motores de búsqueda suelen actualizar automáticamente sus enlaces a la nueva URL.  
 
 ---
 
