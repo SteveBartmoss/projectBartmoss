@@ -2050,4 +2050,84 @@ Si necesitas manejar recursos obsoletos en una API o sitio web, dime qué tecnol
 
 --- termino 410
 
+--- code 411
+
+¡Claro! Vamos con el código de estado **HTTP 411 Length Required**:
+
+---
+
+### 🔹 **Código HTTP 411 - Length Required**
+
+#### 📌 **Descripción**
+El código **411 Length Required** indica que el servidor **requiere que la petición incluya un encabezado `Content-Length`**, pero este **no fue proporcionado**.
+
+Este encabezado le dice al servidor **cuánto contenido** (en bytes) espera recibir en el cuerpo de la petición, lo cual es importante para poder **procesarla correctamente**, especialmente con métodos como `POST` o `PUT`.
+
+---
+
+#### 📝 **Ejemplo de respuesta con código 411**
+
+📌 **Escenario:** Un cliente intenta enviar una petición `POST` sin incluir el encabezado `Content-Length`.
+
+📌 **Petición del cliente:**
+
+```http
+POST /api/usuarios HTTP/1.1
+Host: ejemplo.com
+Content-Type: application/json
+
+{"nombre": "Marco"}
+```
+
+*→ Falta el encabezado `Content-Length`*
+
+📌 **Respuesta del servidor:**
+
+```http
+HTTP/1.1 411 Length Required
+Content-Type: text/plain
+
+El encabezado Content-Length es obligatorio.
+```
+
+---
+
+#### 🛠️ **Cómo solucionarlo**
+
+Para evitar este error, debes asegurarte de incluir el encabezado `Content-Length` en tus peticiones con cuerpo. Por ejemplo:
+
+```http
+POST /api/usuarios HTTP/1.1
+Host: ejemplo.com
+Content-Type: application/json
+Content-Length: 23
+
+{"nombre": "Marco"}
+```
+
+---
+
+### 🎯 **Casos de uso comunes**
+
+✔ **API RESTful**  
+Cuando el cliente envía datos con `POST`, `PUT` o `PATCH`, algunos servidores esperan saber el tamaño del cuerpo antes de procesarlo.
+
+✔ **Servidores que no aceptan Transfer-Encoding: chunked**  
+Algunos servidores no permiten envío de datos en "trozos" (chunked) y requieren un `Content-Length`.
+
+✔ **Validación de seguridad o recursos limitados**  
+En servidores con políticas de seguridad o control de ancho de banda, saber el tamaño exacto del cuerpo evita sobrecargas o ataques.
+
+---
+
+### ✅ **Resumen**
+
+- **411 Length Required**: El servidor necesita que indiques el tamaño del contenido con `Content-Length`.
+- **Se evita** asegurándote de incluir dicho encabezado en peticiones con cuerpo.
+- **Frecuente** en servicios web y APIs que requieren control estricto sobre lo que se recibe.
+
+¿Quieres un ejemplo en código JavaScript (fetch o Axios), o desde algún backend como Laravel o Express?
+
+--- termina 411
+
 */
