@@ -804,3 +804,29 @@ Content-Type: application/json
 En este caso, el servidor informa al cliente que existen varias versiones del documento, y el cliente puede elegir la más adecuada.
 
 ----
+
+--- codigo 301
+
+### 🔹 **Código de respuesta HTTP 301 - Moved Permanently**  
+
+---
+
+#### 📝 **Ejemplo de respuesta con código 301**  
+
+Supongamos que el usuario intenta acceder a `http://ejemplo.com/antigua-ruta`, pero esta página ha sido movida a `http://ejemplo.com/nueva-ruta`.  
+
+El servidor responde con:  
+
+```
+HTTP/1.1 301 Moved Permanently
+Location: http://ejemplo.com/nueva-ruta
+Content-Type: text/html
+```
+
+Y el navegador redirige automáticamente al usuario a `http://ejemplo.com/nueva-ruta`.
+
+---
+
+Si necesitas ayuda implementando una redirección 301 en tu proyecto, dime qué tecnología usas y te ayudo. 🚀
+
+--termina 301
