@@ -74,6 +74,10 @@ export function HttpCode() {
         {
             titulo: '302',
             id: 'code302',
+        },
+        {
+            titulo: '303',
+            id: 'code303',
         }
     ]
 
@@ -929,6 +933,45 @@ export function HttpCode() {
                                 Útil para mantenimiento, autenticación y gestión de tráfico dinámico.  
                             </p>
 
+                            <h1 id="code302">302</h1>
+
+                            <p>
+                                Indica que el recurso solicitado no se encuentra en la misma ubicación, pero el cliente debe hacer una 
+                                nueva solicitud usando el método GET a la URL proporcionada en el encabezado Location. Se usa comúnmente 
+                                para evitar que un cliente reenvíe datos de un formulario después de enviarlo con POS`, redirigiéndolo a 
+                                una nueva URL con GET.
+                            </p>
+
+                            <h2>Usos comunes</h2>
+
+                            <p>
+                                Evitar la reenvío de formularios POST-Redirect-GET  
+                                Cuando un usuario envía un formulario y luego recarga la página, sin una redirección 303 el navegador intentará reenviar el formulario.  
+                                Con 303, el usuario es redirigido a una nueva página GET, evitando envíos duplicados.  
+                                Ejemplo en Express.js:
+                                app.post'/formulario', req, res = 
+                                // Procesa los datos...
+                                res.redirect 303, '/exito' // Redirige con GET
+                            </p>
+
+                            <p>
+                                Redirección después de una operación de escritura 
+                                Después de crear un recurso en una API con POST, en lugar de devolver los datos inmediatamente, el servidor 
+                                redirige a una URL donde el cliente puede obtener el estado actualizado con `GET`.  
+                            </p>
+
+                            <p>
+                                Evitar que clientes almacenen respuestas en caché
+                                Un servidor puede usar 303 para redirigir a una página que siempre se genera dinámicamente en lugar de 
+                                permitir la caché del navegador.  
+                            </p>
+
+                            <p>
+                                303 See Other redirige a otra URL con GET, sin importar el método original.  
+                                Evita reenvíos de formularios POST-Redirect-GET.  
+                                Útil en formularios, APIs y respuestas dinámicas no cacheables.  
+                            </p>
+
                         </DivContent>
                     </DivArticle>
                 </DivCol>
@@ -939,72 +982,6 @@ export function HttpCode() {
 }
 
 /*
-
---- codigo 303
-
-### 🔹 **Código de respuesta HTTP 303 - See Other**  
-
-#### 📌 **Descripción**  
-El código de estado **303 See Other** indica que el recurso solicitado **no se encuentra en la misma ubicación**, pero el cliente debe hacer una nueva solicitud **usando el método GET** a la URL proporcionada en el encabezado `Location`.  
-
-Se usa comúnmente para evitar que un cliente reenvíe datos de un formulario después de enviarlo con `POST`, redirigiéndolo a una nueva URL con `GET`.
-
----
-
-#### 📝 **Ejemplo de respuesta con código 303**  
-
-Supongamos que un usuario envía un formulario en `http://ejemplo.com/formulario` usando `POST`.  
-El servidor procesa los datos y redirige al usuario a una página de confirmación con una nueva solicitud `GET`:
-
-```
-HTTP/1.1 303 See Other
-Location: http://ejemplo.com/exito
-Content-Type: text/html
-```
-
-El navegador ahora **realiza automáticamente** una solicitud `GET` a `http://ejemplo.com/exito`.
-
----
-
-#### 🎯 **Casos de uso comunes**  
-
-✔ **Evitar la reenvío de formularios (`POST-Redirect-GET`)**  
-   - Cuando un usuario envía un formulario y luego recarga la página, sin una redirección **303** el navegador intentará reenviar el formulario.  
-   - Con **303**, el usuario es redirigido a una nueva página (`GET`), evitando envíos duplicados.  
-   - Ejemplo en **Express.js**:
-     ```js
-     app.post('/formulario', (req, res) => {
-       // Procesa los datos...
-       res.redirect(303, '/exito'); // Redirige con GET
-     });
-     ```  
-
-✔ **Redirección después de una operación de escritura**  
-   - Después de crear un recurso en una API con `POST`, en lugar de devolver los datos inmediatamente, el servidor redirige a una URL donde el cliente puede obtener el estado actualizado con `GET`.  
-
-✔ **Evitar que clientes almacenen respuestas en caché**  
-   - Un servidor puede usar **303** para redirigir a una página que siempre se genera dinámicamente en lugar de permitir la caché del navegador.  
-
----
-
-### ⚠️ **Diferencias clave con otros códigos de redirección**  
-
-| Código | Tipo de redirección | Método después de redirigir |
-|--------|---------------------|---------------------------|
-| **301** | Permanente | Mantiene el mismo método (`GET`, `POST`, etc.) |
-| **302** | Temporal | Mantiene el mismo método |
-| **303** | Temporal | **Siempre usa GET** |
-
----
-
-### ✅ **Resumen**  
-- **303 See Other** redirige a otra URL con **GET**, sin importar el método original.  
-- Evita reenvíos de formularios (`POST-Redirect-GET`).  
-- Útil en formularios, APIs y respuestas dinámicas no cacheables.  
-
-Si necesitas ayuda implementando un código 303 en tu proyecto, dime qué tecnología usas y te ayudo. 🚀
-
---- termina 303
 
 --- 304
 
