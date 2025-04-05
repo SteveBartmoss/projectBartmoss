@@ -883,6 +883,52 @@ export function HttpCode() {
 
                             <h1 id="code302">302</h1>
 
+                            <p>
+                                El código de estado 302 Found indica que el recurso solicitado se ha movido temporalmente 
+                                a otra ubicación. A diferencia del código 301 Moved Permanently, esta redirección es temporal, por 
+                                lo que los clientes navegadores, motores de búsqueda, etc. no deben actualizar sus enlaces y deben 
+                                seguir solicitando la URL original en el futuro.  
+                            </p>
+
+                            <h2>Usos comunes</h2>
+
+                            <p>
+                                Mantenimiento de páginas  
+                                Si un sitio web está en mantenimiento y deseas redirigir temporalmente a otra página sin cambiar la URL definitiva.  
+                                Ejemplo: https://miweb.com/inicio a https://miweb.com/mantenimiento.  
+                            </p>
+
+                            <p>
+                                Autenticación y acceso a contenidos**  
+                                Cuando un usuario intenta acceder a una página privada sin estar autenticado y se lo redirige temporalmente a una página de inicio de sesión.  
+                                Ejemplo en **Express.js**:  
+                                ```js
+                                app.get'/dashboard', req, res =
+                                if !req.user 
+                                    res.redirect302, '/login' // Redirección temporal al login
+                                else 
+                                    res.send'Bienvenido al Dashboard'
+                                ```  
+                            </p>
+
+                            <p>
+                                Control de tráfico dinámico  
+                                Un servicio web puede redirigir usuarios a diferentes servidores según la carga del sistema.  
+                                Ejemplo: https://api.ejemplo.com/recurso a https://server2.ejemplo.com/recurso.  
+                            </p>
+
+                            <p>
+                                Cambio de idioma o versión según el usuario  
+                                Si un usuario de España accede a https://ejemplo.com, se le puede redirigir temporalmente a https://es.ejemplo.com sin cambiar la URL permanente.  
+
+                            </p>
+
+                            <p>
+                                302 Found indica una redirección temporal.  
+                                El navegador sigue solicitando la URL original en el futuro.  
+                                Útil para mantenimiento, autenticación y gestión de tráfico dinámico.  
+                            </p>
+
                         </DivContent>
                     </DivArticle>
                 </DivCol>
@@ -893,77 +939,6 @@ export function HttpCode() {
 }
 
 /*
-
-
---- 302
-
-### 🔹 **Código de respuesta HTTP 302 - Found**  
-
-#### 📌 **Descripción**  
-El código de estado **302 Found** indica que el recurso solicitado **se ha movido temporalmente** a otra ubicación. A diferencia del código **301 (Moved Permanently)**, esta redirección es temporal, por lo que los clientes (navegadores, motores de búsqueda, etc.) **no deben actualizar sus enlaces** y deben seguir solicitando la URL original en el futuro.  
-
----
-
-#### 📝 **Ejemplo de respuesta con código 302**  
-
-Supongamos que un usuario accede a `http://ejemplo.com/perfil`, pero por mantenimiento la página se ha movido temporalmente a `http://ejemplo.com/perfil-temporal`.  
-
-El servidor responde con:  
-
-```
-HTTP/1.1 302 Found
-Location: http://ejemplo.com/perfil-temporal
-Content-Type: text/html
-```
-
-El navegador redirige automáticamente al usuario a la nueva URL, pero seguirá intentando acceder a la URL original en el futuro.  
-
----
-
-#### 🎯 **Casos de uso comunes**  
-
-✔ **Mantenimiento de páginas**  
-   - Si un sitio web está en mantenimiento y deseas redirigir temporalmente a otra página sin cambiar la URL definitiva.  
-   - Ejemplo: `https://miweb.com/inicio` → `https://miweb.com/mantenimiento`.  
-
-✔ **Autenticación y acceso a contenidos**  
-   - Cuando un usuario intenta acceder a una página privada sin estar autenticado y se lo redirige temporalmente a una página de inicio de sesión.  
-   - Ejemplo en **Express.js**:  
-     ```js
-     app.get('/dashboard', (req, res) => {
-       if (!req.user) {
-         res.redirect(302, '/login'); // Redirección temporal al login
-       } else {
-         res.send('Bienvenido al Dashboard');
-       }
-     });
-     ```  
-
-✔ **Control de tráfico dinámico**  
-   - Un servicio web puede redirigir usuarios a diferentes servidores según la carga del sistema.  
-   - Ejemplo: `https://api.ejemplo.com/recurso` → `https://server2.ejemplo.com/recurso`.  
-
-✔ **Cambio de idioma o versión según el usuario**  
-   - Si un usuario de España accede a `https://ejemplo.com`, se le puede redirigir temporalmente a `https://es.ejemplo.com` sin cambiar la URL permanente.  
-
----
-
-### ⚠️ **Diferencia clave entre 301 y 302**  
-| Código | Tipo de redirección | El navegador guarda la nueva URL |
-|--------|---------------------|--------------------------------|
-| **301** | Permanente | Sí (cambia en caché y SEO) |
-| **302** | Temporal | No (sigue usando la original) |
-
----
-
-### ✅ **Resumen**  
-- **302 Found** indica una redirección **temporal**.  
-- El navegador sigue solicitando la URL original en el futuro.  
-- Útil para mantenimiento, autenticación y gestión de tráfico dinámico.  
-
-Si necesitas ayuda implementando una redirección 302 en tu proyecto, dime qué tecnología usas y te ayudo. 🚀
-
--- termina 302
 
 --- codigo 303
 
