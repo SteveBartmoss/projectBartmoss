@@ -830,3 +830,38 @@ Y el navegador redirige automáticamente al usuario a `http://ejemplo.com/nueva-
 Si necesitas ayuda implementando una redirección 301 en tu proyecto, dime qué tecnología usas y te ayudo. 🚀
 
 --termina 301
+
+
+--- 302
+
+### 🔹 **Código de respuesta HTTP 302 - Found**  
+
+#### 📝 **Ejemplo de respuesta con código 302**  
+
+Supongamos que un usuario accede a `http://ejemplo.com/perfil`, pero por mantenimiento la página se ha movido temporalmente a `http://ejemplo.com/perfil-temporal`.  
+
+El servidor responde con:  
+
+```
+HTTP/1.1 302 Found
+Location: http://ejemplo.com/perfil-temporal
+Content-Type: text/html
+```
+
+El navegador redirige automáticamente al usuario a la nueva URL, pero seguirá intentando acceder a la URL original en el futuro.  
+
+---
+
+### ⚠️ **Diferencia clave entre 301 y 302**  
+| Código | Tipo de redirección | El navegador guarda la nueva URL |
+|--------|---------------------|--------------------------------|
+| **301** | Permanente | Sí (cambia en caché y SEO) |
+| **302** | Temporal | No (sigue usando la original) |
+
+---
+
+### ✅ **Resumen** 
+
+Si necesitas ayuda implementando una redirección 302 en tu proyecto, dime qué tecnología usas y te ayudo. 🚀
+
+-- termina 302
