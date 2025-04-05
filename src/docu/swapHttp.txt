@@ -865,3 +865,37 @@ El navegador redirige automáticamente al usuario a la nueva URL, pero seguirá 
 Si necesitas ayuda implementando una redirección 302 en tu proyecto, dime qué tecnología usas y te ayudo. 🚀
 
 -- termina 302
+
+--- codigo 303
+
+### 🔹 **Código de respuesta HTTP 303 - See Other**  
+
+
+#### 📝 **Ejemplo de respuesta con código 303**  
+
+Supongamos que un usuario envía un formulario en `http://ejemplo.com/formulario` usando `POST`.  
+El servidor procesa los datos y redirige al usuario a una página de confirmación con una nueva solicitud `GET`:
+
+```
+HTTP/1.1 303 See Other
+Location: http://ejemplo.com/exito
+Content-Type: text/html
+```
+
+El navegador ahora **realiza automáticamente** una solicitud `GET` a `http://ejemplo.com/exito`.
+
+---
+
+### ⚠️ **Diferencias clave con otros códigos de redirección**  
+
+| Código | Tipo de redirección | Método después de redirigir |
+|--------|---------------------|---------------------------|
+| **301** | Permanente | Mantiene el mismo método (`GET`, `POST`, etc.) |
+| **302** | Temporal | Mantiene el mismo método |
+| **303** | Temporal | **Siempre usa GET** |
+
+---
+
+Si necesitas ayuda implementando un código 303 en tu proyecto, dime qué tecnología usas y te ayudo. 🚀
+
+--- termina 303
