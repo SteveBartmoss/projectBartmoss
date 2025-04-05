@@ -70,6 +70,10 @@ export function HttpCode() {
         {
             titulo: '301',
             id: 'code301',
+        },
+        {
+            titulo: '302',
+            id: 'code302',
         }
     ]
 
@@ -854,20 +858,20 @@ export function HttpCode() {
                                 - Redirigir automáticamente tráfico HTTP a HTTPS:  
                                     ```htaccess
                                     RewriteEngine on
-                                    RewriteCond %{HTTPS} off
-                                    RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+                                    RewriteCond %HTTPS off
+                                    RewriteRule ^.*$ https://%HTTP_HOST/$1 R=301,L
                                     ```  
                                 - Esto garantiza que todos los usuarios usen una conexión segura.  
-                            </p> 
+                            </p>
 
                             <p>
                                 Eliminar www o agregarlo
-                                - Para evitar duplicidad en URLs (`www` y sin `www`), redirigir siempre a una versión única.  
+                                - Para evitar duplicidad en URLs `www` y sin `www`, redirigir siempre a una versión única.  
                                 - Ejemplo en `.htaccess`:  
                                     ```htaccess
                                     RewriteEngine on
-                                    RewriteCond %{HTTP_HOST} ^www.ejemplo.com [NC]
-                                    RewriteRule ^(.*)$ http://ejemplo.com/$1 [L,R=301]
+                                    RewriteCond %HTTP_HOST ^www.ejemplo.com NC
+                                    RewriteRule ^.*$ http://ejemplo.com/$1 L,R=301
                                     ```  
                             </p>
 
@@ -876,6 +880,8 @@ export function HttpCode() {
                                 El navegador o cliente debe usar la nueva URL en futuras solicitudes.  
                                 Se usa comúnmente para SEO, redirecciones de dominios y cambios de estructura en sitios web.  
                             </p>
+
+                            <h1 id="code302">302</h1>
 
                         </DivContent>
                     </DivArticle>
@@ -888,31 +894,6 @@ export function HttpCode() {
 
 /*
 
---- codigo 301
-
-### 🔹 **Código de respuesta HTTP 301 - Moved Permanently**  
-
----
-
-#### 📝 **Ejemplo de respuesta con código 301**  
-
-Supongamos que el usuario intenta acceder a `http://ejemplo.com/antigua-ruta`, pero esta página ha sido movida a `http://ejemplo.com/nueva-ruta`.  
-
-El servidor responde con:  
-
-```
-HTTP/1.1 301 Moved Permanently
-Location: http://ejemplo.com/nueva-ruta
-Content-Type: text/html
-```
-
-Y el navegador redirige automáticamente al usuario a `http://ejemplo.com/nueva-ruta`.
-
----
-
-Si necesitas ayuda implementando una redirección 301 en tu proyecto, dime qué tecnología usas y te ayudo. 🚀
-
---termina 301
 
 --- 302
 
