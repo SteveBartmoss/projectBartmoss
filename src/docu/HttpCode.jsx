@@ -1002,6 +1002,12 @@ export function HttpCode() {
                                 Los servidores proxy y las redes de entrega de contenido (CDN) pueden usar 304 para no descargar contenido innecesario.  
                             </p>
 
+                            <p>
+                                304 Not Modified se usa cuando un recurso no ha cambiado puede cargarse desde la caché.  
+                                Optimiza la velocidad de carga y reduce el consumo de ancho de banda.  
+                                Funciona con cabeceras If-Modified-Since y If-None-Match.
+                            </p>
+
                         </DivContent>
                     </DivArticle>
                 </DivCol>
@@ -1047,12 +1053,7 @@ El navegador usa la imagen en caché, en lugar de descargarla nuevamente.
 | **302 Found** | Redirección temporal | ✅ Sí (a otra URL) |
 | **304 Not Modified** | Sin cambios en el recurso | ❌ No |
 
----
-
-### ✅ **Resumen**  
-- **304 Not Modified** se usa cuando un recurso **no ha cambiado** y puede cargarse desde la caché.  
-- Optimiza la velocidad de carga y reduce el consumo de ancho de banda.  
-- Funciona con cabeceras `If-Modified-Since` y `If-None-Match`.  
+---  
 
 Si necesitas ayuda con la implementación de caché en tu aplicación, dime qué tecnología usas y te ayudo. 🚀
 
