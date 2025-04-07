@@ -983,6 +983,25 @@ export function HttpCode() {
                                 El servidor usa este código para decirle al navegador o a un cliente HTTP que **puede usar la versión almacenada en caché**, en lugar de descargar el recurso nuevamente.  
                             </p>
 
+                            <h2>Usos comunes</h2>
+
+                            <p>
+                                Optimización de carga en páginas web 
+                                Los navegadores almacenan recursos estáticos (imágenes, CSS, JavaScript).  
+                                Con 304, el navegador no descarga los archivos si ya tiene una versión válida.  
+                            </p>
+
+                            <p>
+                                Eficiencia en APIs y servicios web  
+                                Un cliente puede enviar If-None-Match con un ETag (identificador único de una versión del recurso).  
+                                Si el contenido no cambió, el servidor responde con 304, reduciendo el consumo de ancho de banda. 
+                            </p>
+
+                            <p>
+                                Mejora del rendimiento en CDN y proxys
+                                Los servidores proxy y las redes de entrega de contenido (CDN) pueden usar 304 para no descargar contenido innecesario.  
+                            </p>
+
                         </DivContent>
                     </DivArticle>
                 </DivCol>
@@ -997,10 +1016,6 @@ export function HttpCode() {
 --- 304
 
 ### 🔹 **Código de respuesta HTTP 304 - Not Modified**  
-
-
-
----
 
 #### 📝 **Ejemplo de respuesta con código 304**  
 
@@ -1020,21 +1035,6 @@ Date: Tue, 30 Jan 2024 12:30:00 GMT
 ```
 
 El navegador usa la imagen en caché, en lugar de descargarla nuevamente.
-
----
-
-#### 🎯 **Casos de uso comunes**  
-
-✔ **Optimización de carga en páginas web**  
-   - Los navegadores almacenan recursos estáticos (imágenes, CSS, JavaScript).  
-   - Con **304**, el navegador no descarga los archivos si ya tiene una versión válida.  
-
-✔ **Eficiencia en APIs y servicios web**  
-   - Un cliente puede enviar `If-None-Match` con un **ETag** (identificador único de una versión del recurso).  
-   - Si el contenido no cambió, el servidor responde con **304**, reduciendo el consumo de ancho de banda.  
-
-✔ **Mejora del rendimiento en CDN y proxys**  
-   - Los servidores proxy y las redes de entrega de contenido (CDN) pueden usar **304** para no descargar contenido innecesario.  
 
 ---
 
