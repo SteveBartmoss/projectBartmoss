@@ -82,6 +82,10 @@ export function HttpCode() {
         {
             titulo: '304',
             id: 'code304',
+        },
+        {
+            titulo: '305',
+            id: 'code305',
         }
     ]
 
@@ -1008,6 +1012,15 @@ export function HttpCode() {
                                 Funciona con cabeceras If-Modified-Since y If-None-Match.
                             </p>
 
+                            <h1 id="code302">305</h1>
+
+                            <p>
+                                El código 305 Use Proxy indica que el cliente debe acceder al recurso a través de un proxy específico, definido en la 
+                                cabecera Location de la respuesta.  
+                                Este código está en desuso por razones de seguridad, ya que podría ser explotado para ataques de tipo hombre en el medio (MITM).  
+                                Los navegadores modernos lo ignoran, y ya no es recomendado su uso.  
+                            </p>
+
                         </DivContent>
                     </DivArticle>
                 </DivCol>
@@ -1022,15 +1035,6 @@ export function HttpCode() {
 -- inicia 305
 
 ### 🔹 **Código de respuesta HTTP 305 - Use Proxy**  
-
-#### 📌 **Descripción**  
-El código **305 Use Proxy** indica que el cliente **debe acceder al recurso a través de un proxy específico**, definido en la cabecera `Location` de la respuesta.  
-
-⚠️ **Importante:**  
-- **Este código está en desuso** por razones de seguridad, ya que podría ser explotado para ataques de tipo "hombre en el medio" (**MITM**).  
-- **Los navegadores modernos lo ignoran**, y ya no es recomendado su uso.  
-
----
 
 #### 📝 **Ejemplo de respuesta con código 305**  
 
