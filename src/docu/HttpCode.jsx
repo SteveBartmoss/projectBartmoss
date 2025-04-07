@@ -78,6 +78,10 @@ export function HttpCode() {
         {
             titulo: '303',
             id: 'code303',
+        },
+        {
+            titulo: '304',
+            id: 'code304',
         }
     ]
 
@@ -971,6 +975,8 @@ export function HttpCode() {
                                 Evita reenvíos de formularios POST-Redirect-GET.  
                                 Útil en formularios, APIs y respuestas dinámicas no cacheables.  
                             </p>
+
+                            <h1 id="code302">304</h1>
 
                         </DivContent>
                     </DivArticle>
