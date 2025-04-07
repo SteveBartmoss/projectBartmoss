@@ -1048,6 +1048,13 @@ export function HttpCode() {
                                 Códigos de redirección como 307 si se necesita cambiar la URL de acceso.  
                             </p>
 
+                            <p>
+                                305 Use Proxy indicaba que un recurso debía solicitarse a través de un proxy.  
+                                Ya no se usa debido a riesgos de seguridad.  
+                                Navegadores modernos lo ignoran y no lo implementan.  
+                                Se recomienda configurar proxies en la red directamente, en lugar de usar este código.
+                            </p>
+
                         </DivContent>
                     </DivArticle>
                 </DivCol>
@@ -1075,12 +1082,6 @@ Location: http://proxy.ejemplo.com:8080
 Esto le dice al cliente que debe reenviar la solicitud a `http://proxy.ejemplo.com:8080`.
 
 ---
-
-### ✅ **Resumen**  
-- **305 Use Proxy** indicaba que un recurso debía solicitarse a través de un proxy.  
-- **Ya no se usa** debido a riesgos de seguridad.  
-- **Navegadores modernos lo ignoran** y no lo implementan.  
-- **Se recomienda configurar proxies en la red directamente**, en lugar de usar este código.  
 
 Si buscas controlar el acceso a recursos a través de un proxy, te puedo ayudar con alternativas más seguras. 🚀
 
