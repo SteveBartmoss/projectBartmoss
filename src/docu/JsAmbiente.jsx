@@ -11,7 +11,18 @@ export function JsAmbiente(){
                 <DivCol>
                     <DivArticle>
                         <DivContent>
+                            <h1>Preparar ambiente de desarollo para Js</h1>
 
+                            <p>
+                                Cuando se empieza a desarrollar aplicaciones web con javascript 
+                                es importante preparar la pila de tecnologias para trabajar con 
+                                este lenguaje, en este post veremos como preparar la pila de tecnoliga 
+                                para desarrollar en java script
+                            </p>
+
+                            <h2>Entorno de ejecucion</h2>
+
+                            
                         </DivContent>
                     </DivArticle>
                 </DivCol>
