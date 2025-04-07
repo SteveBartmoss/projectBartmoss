@@ -1021,6 +1021,15 @@ export function HttpCode() {
                                 Los navegadores modernos lo ignoran, y ya no es recomendado su uso.  
                             </p>
 
+                            <h2>Usos comunes</h2>
+
+                            <p>
+                                Antes de quedar en desuso, se utilizaba para:  
+                                Redirigir tráfico a través de un proxy para filtrar contenido o aplicar políticas de seguridad.  
+                                Forzar el uso de un proxy en redes corporativas o gubernamentales.  
+                                Controlar el acceso a ciertos recursos dependiendo de la ubicación del usuario.  
+                            </p>
+
                         </DivContent>
                     </DivArticle>
                 </DivCol>
@@ -1046,15 +1055,6 @@ Location: http://proxy.ejemplo.com:8080
 ```
 
 Esto le dice al cliente que debe reenviar la solicitud a `http://proxy.ejemplo.com:8080`.
-
----
-
-#### 🎯 **Casos de uso comunes**  
-
-🔹 **(Antes de quedar en desuso)**, se utilizaba para:  
-✔ **Redirigir tráfico a través de un proxy** para filtrar contenido o aplicar políticas de seguridad.  
-✔ **Forzar el uso de un proxy** en redes corporativas o gubernamentales.  
-✔ **Controlar el acceso a ciertos recursos** dependiendo de la ubicación del usuario.  
 
 ---
 
