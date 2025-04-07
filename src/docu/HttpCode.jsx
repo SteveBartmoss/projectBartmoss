@@ -1030,6 +1030,24 @@ export function HttpCode() {
                                 Controlar el acceso a ciertos recursos dependiendo de la ubicación del usuario.  
                             </p>
 
+                            <h2>¿Por qué está en desuso?</h2>
+
+                            <p>
+                                Riesgos de seguridad 
+                                Un atacante podría redirigir a un usuario a un proxy malicioso y espiar el tráfico.
+                            </p>
+
+                            <p>
+                                Incompatibilidad con navegadores modernos  
+                                Chrome, Firefox y otros navegadores ignoran el código **305** por seguridad.  
+                            </p>
+
+                            <p>
+                                Alternativas más seguras  
+                                Configuraciones de proxy a nivel de red en lugar de respuestas HTTP.  
+                                Códigos de redirección como 307 si se necesita cambiar la URL de acceso.  
+                            </p>
+
                         </DivContent>
                     </DivArticle>
                 </DivCol>
@@ -1055,20 +1073,6 @@ Location: http://proxy.ejemplo.com:8080
 ```
 
 Esto le dice al cliente que debe reenviar la solicitud a `http://proxy.ejemplo.com:8080`.
-
----
-
-#### ⚠️ **¿Por qué está en desuso?**  
-
-1. **Riesgos de seguridad**  
-   - Un atacante podría redirigir a un usuario a un proxy malicioso y espiar el tráfico.  
-
-2. **Incompatibilidad con navegadores modernos**  
-   - Chrome, Firefox y otros navegadores ignoran el código **305** por seguridad.  
-
-3. **Alternativas más seguras**  
-   - **Configuraciones de proxy a nivel de red** en lugar de respuestas HTTP.  
-   - **Códigos de redirección como 307** si se necesita cambiar la URL de acceso.  
 
 ---
 
