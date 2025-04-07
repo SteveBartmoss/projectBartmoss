@@ -21,8 +21,16 @@ export function JsAmbiente(){
                             </p>
 
                             <h2>Entorno de ejecucion</h2>
-
                             
+                            <p>
+                                Para el entorno de ejecucion tenemos la opcion de nodejs, que si bien 
+                                esta pensado para aplciaciones del lado del servidor tambien funciona 
+                                para levantar proyectos con frameworks de javascript como vue, angular o next.
+                                Tambien es util para ejecutar codigo de javascript ya que si por ejemplo solo necesitas 
+                                correr un codigo de ejemplo o estas resolviendo algun problema y solo quieres 
+                                dar forma al codigo de una forma rapida
+                            </p>
+
                         </DivContent>
                     </DivArticle>
                 </DivCol>
