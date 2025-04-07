@@ -978,6 +978,11 @@ export function HttpCode() {
 
                             <h1 id="code302">304</h1>
 
+                            <p>
+                                El código de estado **304 Not Modified** indica que el recurso solicitado **no ha cambiado** desde la última vez que el cliente lo obtuvo.  
+                                El servidor usa este código para decirle al navegador o a un cliente HTTP que **puede usar la versión almacenada en caché**, en lugar de descargar el recurso nuevamente.  
+                            </p>
+
                         </DivContent>
                     </DivArticle>
                 </DivCol>
@@ -993,9 +998,7 @@ export function HttpCode() {
 
 ### 🔹 **Código de respuesta HTTP 304 - Not Modified**  
 
-#### 📌 **Descripción**  
-El código de estado **304 Not Modified** indica que el recurso solicitado **no ha cambiado** desde la última vez que el cliente lo obtuvo.  
-El servidor usa este código para decirle al navegador o a un cliente HTTP que **puede usar la versión almacenada en caché**, en lugar de descargar el recurso nuevamente.  
+
 
 ---
 
