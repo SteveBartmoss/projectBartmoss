@@ -1066,27 +1066,6 @@ export function HttpCode() {
 
 /*
 
--- inicia 305
-
-### 🔹 **Código de respuesta HTTP 305 - Use Proxy**  
-
-#### 📝 **Ejemplo de respuesta con código 305**  
-
-Si un cliente solicita un recurso, el servidor puede responder con:
-
-```
-HTTP/1.1 305 Use Proxy
-Location: http://proxy.ejemplo.com:8080
-```
-
-Esto le dice al cliente que debe reenviar la solicitud a `http://proxy.ejemplo.com:8080`.
-
----
-
-Si buscas controlar el acceso a recursos a través de un proxy, te puedo ayudar con alternativas más seguras. 🚀
-
---- finaliza 305
-
 --- codigo 307
 
 ### 🔹 **Código de respuesta HTTP 307 - Temporary Redirect**  
