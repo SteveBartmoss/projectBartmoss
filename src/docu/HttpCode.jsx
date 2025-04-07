@@ -1019,46 +1019,6 @@ export function HttpCode() {
 
 /*
 
---- 304
-
-### 🔹 **Código de respuesta HTTP 304 - Not Modified**  
-
-#### 📝 **Ejemplo de respuesta con código 304**  
-
-Supongamos que un navegador solicita una imagen de un servidor usando la cabecera `If-Modified-Since` para indicar la última vez que la descargó:
-
-```
-GET /imagen.png HTTP/1.1
-Host: ejemplo.com
-If-Modified-Since: Tue, 30 Jan 2024 12:00:00 GMT
-```
-
-Si el servidor revisa el archivo y no ha cambiado desde esa fecha, responde con:
-
-```
-HTTP/1.1 304 Not Modified
-Date: Tue, 30 Jan 2024 12:30:00 GMT
-```
-
-El navegador usa la imagen en caché, en lugar de descargarla nuevamente.
-
----
-
-#### ⚠️ **Diferencias clave con otros códigos HTTP**  
-
-| Código | Significado | Descarga el recurso nuevamente? |
-|--------|------------|--------------------------------|
-| **200 OK** | Respuesta normal | ✅ Sí |
-| **301 Moved Permanently** | Redirección permanente | ✅ Sí (a otra URL) |
-| **302 Found** | Redirección temporal | ✅ Sí (a otra URL) |
-| **304 Not Modified** | Sin cambios en el recurso | ❌ No |
-
----  
-
-Si necesitas ayuda con la implementación de caché en tu aplicación, dime qué tecnología usas y te ayudo. 🚀
-
---- termino 304
-
 -- inicia 305
 
 ### 🔹 **Código de respuesta HTTP 305 - Use Proxy**  
