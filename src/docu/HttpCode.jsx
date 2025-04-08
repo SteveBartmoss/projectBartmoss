@@ -769,6 +769,8 @@ export function HttpCode() {
                                 o sincronización incremental.
                             </p>
 
+                            <Divider />
+
                             <h1 id='code300'>300</h1>
 
                             <p>
@@ -846,6 +848,8 @@ export function HttpCode() {
                                 predeterminada.
                             </p>
 
+                            <Divider />
+
                             <h1 id="code301">301</h1>
 
                             <p>
@@ -892,6 +896,8 @@ export function HttpCode() {
                                 El navegador o cliente debe usar la nueva URL en futuras solicitudes.  
                                 Se usa comúnmente para SEO, redirecciones de dominios y cambios de estructura en sitios web.  
                             </p>
+
+                            <Divider />
 
                             <h1 id="code302">302</h1>
 
@@ -941,6 +947,8 @@ export function HttpCode() {
                                 Útil para mantenimiento, autenticación y gestión de tráfico dinámico.  
                             </p>
 
+                            <Divider />
+
                             <h1 id="code303">303</h1>
 
                             <p>
@@ -980,6 +988,8 @@ export function HttpCode() {
                                 Útil en formularios, APIs y respuestas dinámicas no cacheables.  
                             </p>
 
+                            <Divider />
+
                             <h1 id="code304">304</h1>
 
                             <p>
@@ -1011,6 +1021,8 @@ export function HttpCode() {
                                 Optimiza la velocidad de carga y reduce el consumo de ancho de banda.  
                                 Funciona con cabeceras If-Modified-Since y If-None-Match.
                             </p>
+
+                            <Divider />
 
                             <h1 id="code305">305</h1>
 
