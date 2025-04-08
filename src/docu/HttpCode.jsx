@@ -941,7 +941,7 @@ export function HttpCode() {
                                 Útil para mantenimiento, autenticación y gestión de tráfico dinámico.  
                             </p>
 
-                            <h1 id="code302">302</h1>
+                            <h1 id="code303">303</h1>
 
                             <p>
                                 Indica que el recurso solicitado no se encuentra en la misma ubicación, pero el cliente debe hacer una 
