@@ -38,6 +38,13 @@ export function JsAmbiente(){
                                 y resulta facil trabajar con le mismo. Para instalarlo tenemos diferentes opciones:
                             </p>
 
+                            <h3>Windows</h3>
+
+                            <p>
+                                Si estamos en windows basta con descargar el instalador de la siguiente liga 
+                                basta con dar siguiente y todo estara instalado sin problemas
+                            </p>
+
                         </DivContent>
                     </DivArticle>
                 </DivCol>
