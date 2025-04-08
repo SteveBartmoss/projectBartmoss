@@ -1012,7 +1012,7 @@ export function HttpCode() {
                                 Funciona con cabeceras If-Modified-Since y If-None-Match.
                             </p>
 
-                            <h1 id="code302">305</h1>
+                            <h1 id="code305">305</h1>
 
                             <p>
                                 El código 305 Use Proxy indica que el cliente debe acceder al recurso a través de un proxy específico, definido en la 
