@@ -980,7 +980,7 @@ export function HttpCode() {
                                 Útil en formularios, APIs y respuestas dinámicas no cacheables.  
                             </p>
 
-                            <h1 id="code302">304</h1>
+                            <h1 id="code304">304</h1>
 
                             <p>
                                 El código de estado **304 Not Modified** indica que el recurso solicitado **no ha cambiado** desde la última vez que el cliente lo obtuvo.  
