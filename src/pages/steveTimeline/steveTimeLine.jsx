@@ -5,21 +5,21 @@ export function SteveTimeLine() {
     return (
         <div>
 
-            <TimeItem fecha="13/02/2025" autor="steve" text="
+            <TimeItem fecha="13/02/2025" autor="steve" texto="
                 Hay un tipo en Venezuela que quiere morir tranquilo
                 Planea meterse un tiro en un banquillo 'e callejón
                 Hasta que un ciego le dijo que la vida es un suspiro
                 Basta verla diferente pa que ella sea mejor
             "/>
 
-            <TimeItem fecha="12/02/2025" autor="steve" text="
+            <TimeItem fecha="12/02/2025" autor="steve" texto="
                 Y con una coraza va, va, va
                 Y todo blanco y negro ve, ve, ve
                 En un espejo un día lo vi y me dijo con su voz
                 ¡Bu!, ¿qué tal es verme a ti?
             " />
 
-            <TimeItem fecha="11/02/2025" autor="steve" text="
+            <TimeItem fecha="11/02/2025" autor="steve" texto="
                 Y con una coraza va, va, va
                 Y todo blanco y negro ve, ve, ve
                 En un espejo un día lo vi y me dijo con su voz
