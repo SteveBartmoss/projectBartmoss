@@ -31,6 +31,13 @@ export function JsAmbiente(){
                                 dar forma al codigo de una forma rapida
                             </p>
 
+                            <h3>NodeJs</h3>
+
+                            <p>
+                                El entorno de ejecucion que suelo usar para javascript es nodejs, ya que estoy familiarizado con el 
+                                y resulta facil trabajar con le mismo. Para instalarlo tenemos diferentes opciones:
+                            </p>
+
                         </DivContent>
                     </DivArticle>
                 </DivCol>
