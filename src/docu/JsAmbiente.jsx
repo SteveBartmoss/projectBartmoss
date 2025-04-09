@@ -53,6 +53,14 @@ export function JsAmbiente(){
                                 instalar el programa que en este caso seria node js
                             </p>
 
+                            <h3>Linux</h3>
+
+                            <p>
+                                En el caso de linux puede depender de la distribucion que uses, ya que por ejemplo 
+                                distribuciones basadas en debian usaran herramientas como dpkg para instalar paquetes .deb pero 
+                                otras distribuciones pueden ser diferentes
+                            </p>
+
                         </DivContent>
                     </DivArticle>
                 </DivCol>
