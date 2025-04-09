@@ -61,6 +61,25 @@ export function JsAmbiente(){
                                 otras distribuciones pueden ser diferentes
                             </p>
 
+                            <p>
+                                En el caso de distribuciones basadas en debian podemos usar el siguiente comando:
+                            </p>
+
+                            <p>
+                                sudo apt install nodejs
+                            </p>
+
+                            <p>
+                                Esto instalara nodejs desde los repositorios predeterminados asi que la version 
+                                que instala puede no ser la mas actual ya que estos repositorios puede que no 
+                                esten actualizandose constantemente. Ademas de esto tambien debemos instalar 
+                                el gestor de paquetes de node con el siguiente comando
+                            </p>
+
+                            <p>
+                                sudo apt install npm
+                            </p>
+
                         </DivContent>
                     </DivArticle>
                 </DivCol>
