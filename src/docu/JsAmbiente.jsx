@@ -45,6 +45,14 @@ export function JsAmbiente(){
                                 basta con dar siguiente y todo estara instalado sin problemas
                             </p>
 
+                            <h3>MacOs</h3>
+
+                            <p>
+                                Para la version del mac igual podemos descargar el archivo .pkg que permite 
+                                usar el propio instalador de macos para que el usuario solo de unos cuantos clicks para 
+                                instalar el programa que en este caso seria node js
+                            </p>
+
                         </DivContent>
                     </DivArticle>
                 </DivCol>
