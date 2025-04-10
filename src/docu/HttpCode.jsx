@@ -1078,6 +1078,23 @@ export function HttpCode() {
                                 otra URL, pero el cliente **debe seguir usando el mismo método HTTP** al realizar la nueva solicitud.
                             </p>
 
+                            <h2>Usos comunes</h2>
+
+                            <p>
+                                Redirecciones temporales sin alterar la solicitud original
+                                Si un recurso cambia de ubicación temporalmente, pero se espera que vuelva a la URL original.  
+                                Evitar problemas con clientes que cambian el método HTTP 
+                                Algunos navegadores convierten POST en GET con 302 Found, pero 307 mantiene el método. 
+                                Balanceo de carga o mantenimiento
+                                Redirigir temporalmente a otro servidor sin afectar las solicitudes originales.  
+                            </p>
+
+                            <p>
+                                307 Temporary Redirect** indica que el recurso se movió temporalmente, pero el cliente debe seguir 
+                                usando el mismo método HTTP. Es más seguro que 302 cuando se quiere mantener POST, PUT, etc.  
+                                Se usa en mantenimiento de sitios, balanceo de carga o cambios temporales de URL**.  
+                            </p>
+
                         </DivContent>
                     </DivArticle>
                 </DivCol>
@@ -1128,19 +1145,6 @@ Si la solicitud original fuera un `POST`, el navegador también enviaría un `PO
 
 ---
 
-#### 🎯 **Casos de uso comunes**  
-
-✔ **Redirecciones temporales sin alterar la solicitud original**  
-   - Si un recurso cambia de ubicación temporalmente, pero se espera que vuelva a la URL original.  
-
-✔ **Evitar problemas con clientes que cambian el método HTTP**  
-   - Algunos navegadores convierten `POST` en `GET` con **302 Found**, pero **307 mantiene el método**.  
-
-✔ **Balanceo de carga o mantenimiento**  
-   - Redirigir temporalmente a otro servidor sin afectar las solicitudes originales.  
-
----
-
 #### ⚠️ **Diferencias con otros códigos de redirección**  
 
 | Código | Tipo de redirección | Método HTTP preservado? | Uso común |
@@ -1151,11 +1155,6 @@ Si la solicitud original fuera un `POST`, el navegador también enviaría un `PO
 | **308 Permanent Redirect** | Permanente | ✅ Sí | Como 301, pero manteniendo el método |
 
 ---
-
-### ✅ **Resumen**  
-- **307 Temporary Redirect** indica que el recurso se movió **temporalmente**, pero el cliente debe seguir usando el mismo método HTTP.  
-- Es **más seguro que 302** cuando se quiere mantener `POST`, `PUT`, etc.  
-- Se usa en **mantenimiento de sitios, balanceo de carga o cambios temporales de URL**.  
 
 Si necesitas ayuda implementando redirecciones en tu servidor, dime qué tecnología usas y te ayudo. 🚀
 
