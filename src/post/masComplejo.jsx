@@ -10,15 +10,25 @@ export function MasComplejo() {
       <DivArticle>
         <DivContent>
           <p>
-            Desde que empece a programar había algunas cosas que no me gustaban 
-            o que criticaba por la forma en que Funcionan, por ejemplo solia decir 
+            Desde que empece a programar notaba algunas cosas que no me gustaban 
+            o que criticaba por la forma en que funcionan, por ejemplo, solia decir 
             frases como “si el compilador sabe que falta un punto y coma porque no lo
-            Agrega y ya” o también solo pensar que la respuesta ante los errores que 
-            me daba el compilador era muy pobre O que ni siquiera era buena, bien en 
-            ese entonces no tenia idea de como era trabajar en un compilador así que 
-            Solo me quejaba pero fue cuando tome clases de lenguajes y autómatas que 
-            entendí porque no todo suele ser tan fácil
+            Agrega y ya” o también me quejaba porque la respuesta sobre el error 
+            que me daba el compilador era muy pobre o simplemente no me daba una buena idea 
+            de que era lo que esta fallando.
           </p>
+
+          <p>
+            Como puedes estar pensando yo no tenia idea de como funcionaba un compilador 
+            y mucho menos tenia idea del trabajo que hay detras de un compilador, por esta 
+            razon me quejaba tanto de la forma en que trabaja un compilador o funciones de 
+            programacion pero puede decir que nunca estuve tan equivocado en mi vida.
+            Cuando tuve que tomar una clase de automatas y el proyecto principal fue recrear 
+            un compilador simple para una implementacion reducida del lenguaje java supe que 
+            habia jusgado demasiado a los compiladores que ya utilizaba en mi dia a dia.
+          </p>
+
+          <h2>Crees que algo no funciona bien, quizas no sabes tanto sobre el tema</h2>
 
           <p>
             Cuando tuve la tarea de hacer una pequeña parte de un compilador me di 
