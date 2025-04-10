@@ -86,6 +86,10 @@ export function HttpCode() {
         {
             titulo: '305',
             id: 'code305',
+        },
+        {
+            titulo: '307',
+            id: 'code307',
         }
     ]
 
@@ -1067,6 +1071,13 @@ export function HttpCode() {
                                 Se recomienda configurar proxies en la red directamente, en lugar de usar este código.
                             </p>
 
+                            <h1 id="code307">307</h1>   
+
+                            <p>
+                                El código 307 Temporary Redirect indica que el recurso solicitado se ha movido temporalmente a 
+                                otra URL, pero el cliente **debe seguir usando el mismo método HTTP** al realizar la nueva solicitud.
+                            </p>
+
                         </DivContent>
                     </DivArticle>
                 </DivCol>
@@ -1081,9 +1092,6 @@ export function HttpCode() {
 --- codigo 307
 
 ### 🔹 **Código de respuesta HTTP 307 - Temporary Redirect**  
-
-#### 📌 **Descripción**  
-El código **307 Temporary Redirect** indica que el recurso solicitado **se ha movido temporalmente** a otra URL, pero el cliente **debe seguir usando el mismo método HTTP** al realizar la nueva solicitud.  
 
 🔹 **Diferencia clave con 302 Found:**  
 - **302 Found** puede hacer que algunos clientes cambien la solicitud a un `GET`, incluso si era un `POST`.  
