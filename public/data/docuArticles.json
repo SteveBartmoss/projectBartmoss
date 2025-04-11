@@ -27,72 +27,144 @@
     "titulo": "Llaves foraneas y velocidad",
     "descripcion": "La informacion que siempre quisistes saber sobre las llaves foraneas",
     "url": "fkvelocidad",
+    "tags": [
+      {
+        "text": "Sql",
+        "color" : "info"
+      }
+    ],
     "topico": ["Sql"]
   },
   {
     "titulo": "Prety commits",
     "descripcion": "Una forma de hacer mas efientes los commits para los demas",
     "url": "pretycommits",
+    "tags": [
+      {
+        "text": "Git",
+        "color" : "info"
+      }
+    ],
     "topico": ["Git"]
   },
   {
     "titulo": "Que es composer",
     "descripcion": "Uno de los programas inconicos cuando se maneja una pila de tecnologias de php",
     "url": "compositor",
+    "tags": [
+      {
+        "text": "pho",
+        "color" : "info"
+      }
+    ],
     "topico": ["php"]
   },
   {
     "titulo": "Mejorar debian",
     "descripcion": "Cuando terminas de instalar debian no siempre esta todo listo",
     "url": "mejorardebian",
+    "tags": [
+      {
+        "text": "Linux",
+        "color" : "info"
+      }
+    ],
     "topico": ["linux"]
   },
   {
     "titulo": "Empezar con Docker",
     "descripcion": "Docker es una buena herramienta si eres desarrollador o encargado de despliegues de aplicacion",
     "url": "basicDocker",
+    "tags": [
+      {
+        "text": "Docker",
+        "color" : "info"
+      }
+    ],
     "topico": ["Docker"]
   },
   {
     "titulo": "Que es git",
     "descripcion": "Si eres desarrollador entonces te interesa saber que esta gran herramienta",
     "url": "whatisgit",
+    "tags": [
+      {
+        "text": "Git",
+        "color" : "info"
+      }
+    ],
     "topico": ["Git"]
   },
   {
     "titulo": "Linked Server",
     "descripcion": "Una forma de tener acceso a diferentes bases de datos no siempre es dificil",
     "url": "linkedserver",
+    "tags": [
+      {
+        "text": "sql",
+        "color" : "info"
+      }
+    ],
     "topico": ["sql"]
   },
   {
     "titulo": "Hacks de Vscode",
     "descripcion": "Con esta lista de atajos podras usar de manera mas eficiente este editor",
     "url": "hackvscode",
+    "tags": [
+      {
+        "text": "vsCode",
+        "color" : "info"
+      }
+    ],
     "topico": ["vsCode"]
   },
   {
     "titulo": "Comandos Basicos de linux",
     "descripcion": "Con esta lista de comandos podras usar linux como un pro",
     "url": "basiclinux",
+    "tags": [
+      {
+        "text": "Linux",
+        "color" : "info"
+      }
+    ],
     "topico": ["linux"]
   },
   {
     "titulo": "Vimgg una guia facil",
     "descripcion": "Con este post podras empezar a usar vim sin morrir en el intento",
     "url": "vimgg",
+    "tags": [
+      {
+        "text": "vim",
+        "color" : "info"
+      }
+    ],
     "topico": ["vim"]
   },
   {
     "titulo": "Primeros Pasos Redux",
     "descripcion": "Con este post podras empezar a usar redux de una forma rapida",
     "url": "primeroredux",
+    "tags": [
+      {
+        "text": "React",
+        "color" : "principal"
+      }
+    ],
     "topico": ["React"]
   },
   {
     "titulo": "Codigos HTTP",
     "descripcion": "Con este post puedes entender los diferentes codigos de respuesta HTTP",
     "url": "httpcodes",
+    "tags": [
+      {
+        "text": "HTTP",
+        "color" : "success"
+      }
+    ],
     "topico": ["HTTP"]
   }
 ]
