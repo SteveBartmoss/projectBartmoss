@@ -3,12 +3,24 @@
     "titulo": "Primeros pasos react",
     "descripcion": "Tus primeros pasos en la libreria de react pueden ser algo complejos, pero aqui te contamos cosas que te pueden ayudar",
     "url": "primerospasos",
+    "tags": [
+      {
+        "text": "Java Script",
+        "color" : "warning"
+      }
+    ],
     "topico": ["Java Script"]
   },
   {
     "titulo": "El hookContext",
     "descripcion": "El hook context puede ser confuso pero ahora si lo entenderas",
     "url": "hookcontext",
+    "tags": [
+      {
+        "text": "Java Script",
+        "color" : "warning"
+      }
+    ],
     "topico": ["Java Script"]
   },
   {
