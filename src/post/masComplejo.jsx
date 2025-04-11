@@ -31,15 +31,18 @@ export function MasComplejo() {
           <h2>Crees que algo no funciona bien, quizas no sabes tanto sobre el tema</h2>
 
           <p>
-            Cuando tuve la tarea de hacer una pequeña parte de un compilador me di 
-            cuenta de la gran cantidad de problemas a Resolver si querias tener un 
-            escaner y un parser mínimamente decente era bastante elevada, cosas como 
+            La primeras cosas que note al enfrentar la tarea de crear un compilador
+            fue la gran cantidad de problemas a resolver si querias tener un 
+            escaner y un parser mínimamente decente eran muchos y ademas no resultaban 
+            tareas trivales si no que eran bastante complejos, cosas como 
             tener que definir Una gramatica, adapatar esa gramática a un automata para 
             que el scanner te proporcione tokens, buscar que la gramática sea LL1 para 
-            que se pueda crear una tabla que hará que parser construya un árbol sintactico 
+            que se pueda crear una tabla que hará que el parser construya un árbol sintactico 
             de manera correcta, leer la tabla de símbolos, hacer el decorado de un tu arbol y 
-            luego hacer el código de tres direcciones, todo esto se realizó para una gramatica
-            Simple que apenas era un calculadora y luego una version de de java mas reducida.
+            luego hacer el código de tres direcciones. Aunque parece que la lista es corta solo 
+            uno de esos problemas lleva bastante programacion y logica para que funciones, pero aun 
+            asi todo esto se realizó para una gramatica simple que apenas era un calculadora 
+            y luego una version de de java mas reducida.
           </p>
 
           <p>
