@@ -61,8 +61,8 @@ export function Docu() {
                                     <h1>{item.titulo}</h1>
                                     <p>{item.descripcion}</p>
                                     {
-                                        item.topico.map(topic =>
-                                            <Chip key={index} color="warning">{topic}</Chip>
+                                        item.tags.map(tag =>
+                                            <Chip key={index} color={tag.color}>{tag.text}</Chip>
                                         )
                                     }
                                     <CardAccions>
