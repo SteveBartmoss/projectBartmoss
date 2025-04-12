@@ -1075,7 +1075,7 @@ export function HttpCode() {
 
                             <p>
                                 El código 307 Temporary Redirect indica que el recurso solicitado se ha movido temporalmente a 
-                                otra URL, pero el cliente **debe seguir usando el mismo método HTTP** al realizar la nueva solicitud.
+                                otra URL, pero el cliente debe seguir usando el mismo método HTTP al realizar la nueva solicitud.
                             </p>
 
                             <h2>Usos comunes</h2>
@@ -1090,9 +1090,16 @@ export function HttpCode() {
                             </p>
 
                             <p>
-                                307 Temporary Redirect** indica que el recurso se movió temporalmente, pero el cliente debe seguir 
+                                307 Temporary Redirect indica que el recurso se movió temporalmente, pero el cliente debe seguir 
                                 usando el mismo método HTTP. Es más seguro que 302 cuando se quiere mantener POST, PUT, etc.  
-                                Se usa en mantenimiento de sitios, balanceo de carga o cambios temporales de URL**.  
+                                Se usa en mantenimiento de sitios, balanceo de carga o cambios temporales de URL.  
+                            </p>
+
+                            <h1 id="code307">307</h1>
+
+                            <p>
+                                El código 308 Permanent Redirect indica que el recurso solicitado se ha movido permanentemente a 
+                                una nueva URL, y el cliente debe seguir usando el mismo método HTTP al realizar futuras solicitudes.  
                             </p>
 
                         </DivContent>
@@ -1109,9 +1116,6 @@ export function HttpCode() {
 --- codigo 308
 
 ### 🔹 **Código de respuesta HTTP 308 - Permanent Redirect**  
-
-#### 📌 **Descripción**  
-El código **308 Permanent Redirect** indica que el recurso solicitado **se ha movido permanentemente** a una nueva URL, y el cliente **debe seguir usando el mismo método HTTP** al realizar futuras solicitudes.  
 
 🔹 **Diferencia clave con 301 Moved Permanently:**  
 - **301 Moved Permanently** permite que algunos clientes cambien la solicitud a `GET`, incluso si era un `POST`.  
