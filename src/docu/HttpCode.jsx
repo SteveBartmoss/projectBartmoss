@@ -8,88 +8,110 @@ export function HttpCode() {
 
     const pageMap = [
         {
-            titulo: '100',
-            id: 'code100',
+            id: 1,
+            section: '100',
+            childs: [
+                {
+                    titulo: '100',
+                    id: 'code100',
+                },
+                {
+                    titulo: '101',
+                    id: 'code101',
+                },
+                {
+                    titulo: '102',
+                    id: 'code102',
+                },
+                {
+                    titulo: '103',
+                    id: 'code103',
+                },
+            ],
         },
         {
-            titulo: '101',
-            id: 'code101',
+            id: 2,
+            section: '200',
+            childs: [
+                {
+                    titulo: '200',
+                    id: 'code200',
+                },
+                {
+                    titulo: '201',
+                    id: 'code201',
+                },
+                {
+                    titulo: '202',
+                    id: 'code202',
+                },
+                {
+                    titulo: '203',
+                    id: 'code203',
+                },
+                {
+                    titulo: '204',
+                    id: 'code204',
+                },
+                {
+                    titulo: '205',
+                    id: 'code205',
+                },
+                {
+                    titulo: '206',
+                    id: 'code206',
+                },
+                {
+                    titulo: '207',
+                    id: 'code207',
+                },
+                {
+                    titulo: '208',
+                    id: 'code208',
+                },
+                {
+                    titulo: '226',
+                    id: 'code226',
+                }
+            ]
         },
         {
-            titulo: '102',
-            id: 'code102',
-        },
-        {
-            titulo: '103',
-            id: 'code103',
-        },
-        {
-            titulo: '200',
-            id: 'code200',
-        },
-        {
-            titulo: '201',
-            id: 'code201',
-        },
-        {
-            titulo: '202',
-            id: 'code202',
-        },
-        {
-            titulo: '203',
-            id: 'code203',
-        },
-        {
-            titulo: '204',
-            id: 'code204',
-        },
-        {
-            titulo: '205',
-            id: 'code205',
-        },
-        {
-            titulo: '206',
-            id: 'code206',
-        },
-        {
-            titulo: '207',
-            id: 'code207',
-        },
-        {
-            titulo: '208',
-            id: 'code208',
-        },
-        {
-            titulo: '226',
-            id: 'code226',
-        },
-        {
-            titulo: '300',
-            id: 'code300',
-        },
-        {
-            titulo: '301',
-            id: 'code301',
-        },
-        {
-            titulo: '302',
-            id: 'code302',
-        },
-        {
-            titulo: '303',
-            id: 'code303',
-        },
-        {
-            titulo: '304',
-            id: 'code304',
-        },
-        {
-            titulo: '305',
-            id: 'code305',
-        },
-        {
-            titulo: '307',
-            id: 'code307',
+            id: 3,
+            section: '300',
+            childs: [
+                {
+                    titulo: '300',
+                    id: 'code300',
+                },
+                {
+                    titulo: '301',
+                    id: 'code301',
+                },
+                {
+                    titulo: '302',
+                    id: 'code302',
+                },
+                {
+                    titulo: '303',
+                    id: 'code303',
+                },
+                {
+                    titulo: '304',
+                    id: 'code304',
+                },
+                {
+                    titulo: '305',
+                    id: 'code305',
+                },
+                {
+                    titulo: '307',
+                    id: 'code307',
+                },
+                {
+                    titulo: '308',
+                    id: 'code308',
+                }
+            ]
         }
     ]
 
@@ -1095,7 +1117,7 @@ export function HttpCode() {
                                 Se usa en mantenimiento de sitios, balanceo de carga o cambios temporales de URL.  
                             </p>
 
-                            <h1 id="code307">307</h1>
+                            <h1 id="code308">308</h1>
 
                             <p>
                                 El código 308 Permanent Redirect indica que el recurso solicitado se ha movido permanentemente a 
