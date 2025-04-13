@@ -143,32 +143,36 @@ export function PretyCommits() {
 
               <Lista elementos={listaTipos} />
 
+              <h2>Detalle de los elementos</h2>
+
+              <h3>Uso del Scope</h3>
+
               <p>
-                Uso del Scope:
                 scope es opcional, pero útil para indicar qué parte del proyecto se vio afectada.
               </p>
 
               <CodeSpace title={'Ejemplo'} rawCode={`feat(auth): add JWT token verification`} />
 
-              <h2>Detalle de los elementos</h2>
+              <h3>Descripción</h3>
 
               <p>
-                Descripción:
                 La descripción debe ser breve, clara y en tiempo presente.
               </p>
 
               <CodeSpace title={'Ejemplo'} rawCode={`fix: correct validation logic in login form`} />
 
+              <h3>Cuerpo del Commit (Opcional)</h3>
+
               <p>
-                Cuerpo del Commit (Opcional):
                 Proporciona detalles adicionales si es necesario.
               </p>
 
               <CodeSpace title={'Ejemplo'} rawCode={`fix: correct validation logic in login form
               The previous logic did not account for edge cases where the user inputs special characters. This change introduces a regex to handle these cases correctly.`} />
 
+              <h3>Footer (Opcional)</h3>
+              
               <p>
-                Footer (Opcional):
                 Se usa para referencias a tickets (por ejemplo, Jira, GitHub Issues) o para indicar cambios importantes.
               </p>
 
