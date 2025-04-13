@@ -9,24 +9,36 @@ export function FirstStepReact() {
 
     const pageMap=[
         {
-            titulo: 'Antes de empezar',
-            id: 'begin',
+            id: 1,
+            section: 'Preparar ambiente',
+            childs: [
+                {
+                    titulo: 'Antes de empezar',
+                    id: 'begin',
+                },
+                {
+                    titulo: 'Instalar node', 
+                    id: 'nodeInstall'
+                },
+                {
+                    titulo: 'Editor de Codigo',
+                    id: 'codeEditor',
+                },
+            ],
         },
         {
-            titulo: 'Instalar node', 
-            id: 'nodeInstall'
-        },
-        {
-            titulo: 'Editor de Codigo',
-            id: 'codeEditor',
-        },
-        {
-            titulo: 'Crear un proyecto con react',
-            id: 'makeProject'
-        },
-        {
-            titulo: 'Estructura de directorios',
-            id: 'dirStructure'
+            id: 2,
+            section: 'Empezar con react',
+            childs: [
+                {
+                    titulo: 'Crear un proyecto con react',
+                    id: 'makeProject'
+                },
+                {
+                    titulo: 'Estructura de directorios',
+                    id: 'dirStructure'
+                }
+            ]
         }
     ]
     return (
