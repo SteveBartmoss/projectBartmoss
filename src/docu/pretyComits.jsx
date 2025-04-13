@@ -16,49 +16,68 @@ export function PretyCommits() {
 
   const pageMap = [
     {
-      titulo: 'Conventional Commits',
-      id: 'coventionalComits',
-    }, 
-    {
-      titulo: 'feat', 
-      id: 'feat',
+      id: 1,
+      section: 'Conventional Commits',
+      childs:[
+        {
+          titulo: 'Descripcion',
+          id: 'coventionalComits',
+        }, 
+      ]
     },
     {
-      titulo: 'fix', 
-      id: 'fix',
+      id: 2,
+      section: 'Relacionado con codigo',
+      childs: [
+        
+        {
+          titulo: 'feat', 
+          id: 'feat',
+        },
+        {
+          titulo: 'fix', 
+          id: 'fix',
+        },
+        {
+          titulo: 'docs', 
+          id: 'docs',
+        },
+        {
+          titulo: 'style', 
+          id: 'style',
+        },
+        {
+          titulo: 'refactor', 
+          id: 'refactor',
+        },
+      ],
     },
     {
-      titulo: 'docs', 
-      id: 'docs',
+      id: 3,
+      section: 'Relacionado con servidor',
+      childs: [
+        {
+          titulo: 'test', 
+          id: 'test',
+        },
+        {
+          titulo: 'chore', 
+          id: 'chore',
+        },
+        {
+          titulo: 'perf', 
+          id: 'perf',
+        },
+        {
+          titulo: 'build', 
+          id: 'build',
+        },
+        {
+          titulo: 'ci', 
+          id: 'ci',
+        }
+      ],
     },
-    {
-      titulo: 'style', 
-      id: 'style',
-    },
-    {
-      titulo: 'refactor', 
-      id: 'refactor',
-    },
-    {
-      titulo: 'test', 
-      id: 'test',
-    },
-    {
-      titulo: 'chore', 
-      id: 'chore',
-    },
-    {
-      titulo: 'perf', 
-      id: 'perf',
-    },
-    {
-      titulo: 'build', 
-      id: 'build',
-    },
-    {
-      titulo: 'ci', 
-      id: 'ci',
-    }
   ]
 
   return (
