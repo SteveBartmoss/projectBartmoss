@@ -27,6 +27,10 @@ export function PretyCommits() {
           titulo: 'Formato Básico',
           id: 'formatoBasico'
         },
+        {
+          titulo: 'Detalle de elementos',
+          id: 'elementosDetalle'
+        }
       ]
     },
     {
@@ -143,7 +147,7 @@ export function PretyCommits() {
 
               <Lista elementos={listaTipos} />
 
-              <h2>Detalle de los elementos</h2>
+              <h2 id='elementosDetalle'>Detalle de los elementos</h2>
 
               <h3>Uso del Scope</h3>
 
@@ -171,7 +175,7 @@ export function PretyCommits() {
               The previous logic did not account for edge cases where the user inputs special characters. This change introduces a regex to handle these cases correctly.`} />
 
               <h3>Footer (Opcional)</h3>
-              
+
               <p>
                 Se usa para referencias a tickets (por ejemplo, Jira, GitHub Issues) o para indicar cambios importantes.
               </p>
