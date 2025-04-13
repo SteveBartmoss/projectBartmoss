@@ -1,11 +1,8 @@
+import { useState } from 'react';
 import './TreeMap.css';
+import { TreeMapChids } from './TreeMapChild';
 
 export function TreeMap({titulo,elementos}){
-
-    const jumpToSection=(id)=>{
-        const section=document.getElementById(id)
-        section.scrollIntoView({behavior: "smooth"});
-    }
 
     return(
         <div className='div-map'>
@@ -13,9 +10,7 @@ export function TreeMap({titulo,elementos}){
             <div>
                 {
                     elementos.map(item =>
-                        <div>
-                            <p onClick={()=>jumpToSection(item.id)}>{item.titulo}</p>
-                        </div>
+                        <TreeMapChids key={item.id} data={item} />
                     )
                 }
             </div>
