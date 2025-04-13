@@ -23,6 +23,10 @@ export function PretyCommits() {
           titulo: 'Descripcion',
           id: 'coventionalComits',
         }, 
+        {
+          titulo: 'Formato Básico',
+          id: 'formatoBasico'
+        },
       ]
     },
     {
@@ -127,7 +131,7 @@ export function PretyCommits() {
 
               <h2>Reglas para Redactar un Buen Commit Usando Conventional Commits</h2>
 
-              <h3>Formato Básico:</h3>
+              <h3 id="formatoBasico">Formato Básico</h3>
 
               <p>
                 Cada commit debe seguir el siguiente formato:
@@ -138,6 +142,38 @@ export function PretyCommits() {
               [optional footer(s)]`} />
 
               <Lista elementos={listaTipos} />
+
+              <p>
+                Uso del Scope:
+                scope es opcional, pero útil para indicar qué parte del proyecto se vio afectada.
+              </p>
+
+              <CodeSpace title={'Ejemplo'} rawCode={`feat(auth): add JWT token verification`} />
+
+              <h2>Detalle de los elementos</h2>
+
+              <p>
+                Descripción:
+                La descripción debe ser breve, clara y en tiempo presente.
+              </p>
+
+              <CodeSpace title={'Ejemplo'} rawCode={`fix: correct validation logic in login form`} />
+
+              <p>
+                Cuerpo del Commit (Opcional):
+                Proporciona detalles adicionales si es necesario.
+              </p>
+
+              <CodeSpace title={'Ejemplo'} rawCode={`fix: correct validation logic in login form
+              The previous logic did not account for edge cases where the user inputs special characters. This change introduces a regex to handle these cases correctly.`} />
+
+              <p>
+                Footer (Opcional):
+                Se usa para referencias a tickets (por ejemplo, Jira, GitHub Issues) o para indicar cambios importantes.
+              </p>
+
+              <CodeSpace title={'Ejemplo'} rawCode={`BREAKING CHANGE: the login API now requires an email instead of username
+              Closes #123`} />
 
               <h2>Tipos Comunes de Commits:</h2>
 
@@ -220,39 +256,6 @@ export function PretyCommits() {
               </p>
 
               <CodeSpace title={'Ejemplo'} rawCode={`ci: update GitHub Actions workflow`} />
-
-              <p>
-                Uso del Scope:
-                scope es opcional, pero útil para indicar qué parte del proyecto se vio afectada.
-              </p>
-
-              <CodeSpace title={'Ejemplo'} rawCode={`feat(auth): add JWT token verification`} />
-
-              <p>
-                Descripción:
-                La descripción debe ser breve, clara y en tiempo presente.
-              </p>
-
-              <CodeSpace title={'Ejemplo'} rawCode={`fix: correct validation logic in login form`} />
-
-              <p>
-                Cuerpo del Commit (Opcional):
-                Proporciona detalles adicionales si es necesario.
-
-                fix: correct validation logic in login form
-
-                The previous logic did not account for edge cases where the user inputs special characters. This change introduces a regex to handle these cases correctly.
-              </p>
-
-              <p>
-                Footer (Opcional):
-
-                Se usa para referencias a tickets (por ejemplo, Jira, GitHub Issues) o para indicar cambios importantes.
-
-                BREAKING CHANGE: the login API now requires an email instead of username
-
-                Closes #123
-              </p>
 
               <p>
                 Conventional Commits proporciona una manera estándar y estructurada de redactar mensajes de commit, lo que facilita la colaboración, el mantenimiento del código, y la automatización de procesos. Al seguir estas reglas, puedes asegurarte de que los commits sean claros, concisos y útiles para cualquier persona que trabaje en el proyecto.
