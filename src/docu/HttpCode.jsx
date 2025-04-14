@@ -1189,6 +1189,11 @@ export function HttpCode() {
                                 Ejemplo: enviar un número negativo en un campo que solo acepta valores positivos.
                             </p>
                                 
+                            <p>  
+                                400 Bad Request ocurre cuando el cliente envía una solicitud incorrecta o mal formada.  
+                                El servidor no la puede procesar hasta que el cliente la corrija.  
+                                Se usa para validaciones de datos, errores de sintaxis y encabezados incorrectos.  
+                            </p>
 
                         </DivContent>
                     </DivArticle>
@@ -1235,11 +1240,6 @@ Content-Type: application/json
 📌 **Corrección:** El cliente debe incluir el campo `email` en la solicitud.  
 
 ---
-
-#### ✅ **Resumen**  
-- **400 Bad Request** ocurre cuando el cliente envía una solicitud incorrecta o mal formada.  
-- El servidor **no la puede procesar** hasta que el cliente la corrija.  
-- Se usa para **validaciones de datos, errores de sintaxis y encabezados incorrectos**.  
 
 Si tienes un error **400** en una API, dime qué estás enviando y te ayudo a corregirlo. 🚀
 
