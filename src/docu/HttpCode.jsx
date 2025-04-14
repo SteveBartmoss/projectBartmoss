@@ -1206,45 +1206,6 @@ export function HttpCode() {
 
 /*
 
---- codifo 400
-
-### 🔹 **Código de respuesta HTTP 400 - Bad Request**  
-
-#### 📝 **Ejemplo de respuesta con código 400**  
-
-📌 **Escenario:** Un cliente intenta enviar datos a un API, pero omite un campo obligatorio.  
-
-📌 **Solicitud incorrecta:**  
-
-```
-POST /api/usuarios HTTP/1.1
-Host: ejemplo.com
-Content-Type: application/json
-
-{
-    "nombre": "Juan"
-}
-```
-
-📌 **Respuesta del servidor:**  
-
-```
-HTTP/1.1 400 Bad Request
-Content-Type: application/json
-
-{
-    "error": "El campo 'email' es obligatorio."
-}
-```
-
-📌 **Corrección:** El cliente debe incluir el campo `email` en la solicitud.  
-
----
-
-Si tienes un error **400** en una API, dime qué estás enviando y te ayudo a corregirlo. 🚀
-
----- termina 400
-
 --- codigo 401
 
 ### 🔹 **Código de respuesta HTTP 401 - Unauthorized**  
