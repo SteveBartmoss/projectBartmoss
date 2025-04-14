@@ -112,6 +112,16 @@ export function HttpCode() {
                     id: 'code308',
                 }
             ]
+        },
+        {
+            id: 4,
+            section: '400',
+            childs: [
+                {
+                    titulo: '400',
+                    id: 'code400',
+                },
+            ]
         }
     ]
 
@@ -1159,6 +1169,25 @@ export function HttpCode() {
                                 Encabezados HTTP incorrectos o mal formateados.  
                                 El cliente debe corregir la solicitud antes de intentarla nuevamente.  
                             </p>
+
+                            <h2>Usos comunes</h2>
+
+                            <p>
+                                Errores de validación  
+                                Si faltan parámetros requeridos o los valores tienen un formato incorrecto.  
+                                Solicitud mal estructurada  
+                                Por ejemplo, si el JSON enviado tiene errores de sintaxis.  
+                            </p>
+                            
+                            <p>
+                                Encabezados incorrectos o ausentes  
+                                Como enviar datos JSON sin el encabezado Content-Type: application/json.
+                            </p>
+
+                            <p>
+                                Datos fuera de los límites permitidos  
+                                Ejemplo: enviar un número negativo en un campo que solo acepta valores positivos.
+                            </p>
                                 
 
                         </DivContent>
@@ -1204,22 +1233,6 @@ Content-Type: application/json
 ```
 
 📌 **Corrección:** El cliente debe incluir el campo `email` en la solicitud.  
-
----
-
-#### 🎯 **Casos de uso comunes**  
-
-✔ **Errores de validación**  
-   - Si faltan parámetros requeridos o los valores tienen un formato incorrecto.  
-
-✔ **Solicitud mal estructurada**  
-   - Por ejemplo, si el JSON enviado tiene errores de sintaxis.  
-
-✔ **Encabezados incorrectos o ausentes**  
-   - Como enviar datos JSON sin el encabezado `Content-Type: application/json`.  
-
-✔ **Datos fuera de los límites permitidos**  
-   - Ejemplo: enviar un número negativo en un campo que solo acepta valores positivos.  
 
 ---
 
