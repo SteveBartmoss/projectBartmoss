@@ -1147,7 +1147,19 @@ export function HttpCode() {
                                 308 Permanent Redirect indica que un recurso se ha movido permanentemente a una nueva URL.  
                                 Asegura que el método HTTP original se mantenga (POST sigue siendo POST).  
                                 Se usa en migraciones de sitios, cambios de URL de APIs y reubicación de recursos.  
-                            </p>            
+                            </p>  
+
+                            <h1 id="code400">400</h1>      
+
+                            <p>
+                                El código 400 Bad Request indica que el servidor no puede procesar la solicitud debido a un error del cliente. Esto suele ocurrir por:  
+                                Sintaxis incorrecta en la solicitud.  
+                                Datos inválidos o mal formateados.  
+                                Falta de parámetros requeridos.  
+                                Encabezados HTTP incorrectos o mal formateados.  
+                                El cliente debe corregir la solicitud antes de intentarla nuevamente.  
+                            </p>
+                                
 
                         </DivContent>
                     </DivArticle>
@@ -1163,18 +1175,6 @@ export function HttpCode() {
 --- codifo 400
 
 ### 🔹 **Código de respuesta HTTP 400 - Bad Request**  
-
-#### 📌 **Descripción**  
-El código **400 Bad Request** indica que el servidor **no puede procesar la solicitud debido a un error del cliente**. Esto suele ocurrir por:  
-
-✔ **Sintaxis incorrecta** en la solicitud.  
-✔ **Datos inválidos** o mal formateados.  
-✔ **Falta de parámetros requeridos**.  
-✔ **Encabezados HTTP incorrectos o mal formateados**.  
-
-El cliente debe corregir la solicitud antes de intentarla nuevamente.  
-
----
 
 #### 📝 **Ejemplo de respuesta con código 400**  
 
