@@ -121,6 +121,10 @@ export function HttpCode() {
                     titulo: '400',
                     id: 'code400',
                 },
+                {
+                    titulo: '401',
+                    id: 'code401',
+                },
             ]
         }
     ]
@@ -1194,6 +1198,8 @@ export function HttpCode() {
                                 El servidor no la puede procesar hasta que el cliente la corrija.  
                                 Se usa para validaciones de datos, errores de sintaxis y encabezados incorrectos.  
                             </p>
+
+                            <h1 id="code401">401</h1>
 
                         </DivContent>
                     </DivArticle>
