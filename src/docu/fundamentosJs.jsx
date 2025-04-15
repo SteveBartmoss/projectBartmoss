@@ -54,6 +54,18 @@ export function FundamentosJs(){
 
                             <CodeSpaceV2 title={"Varios parametros"} rawCode={`const resta = (a,b) => a - b:`} />
 
+                            <h2>Uso comun en react</h2>
+
+                            <p>
+                                En react, las arrow functions se usan mucho para:
+                            </p>
+
+                            <CodeSpaceV2 title={`Manejo de eventos`} rawCode={`<button onClick={() => console.log("Click")}>Presiona</button>`} />
+
+                            <CodeSpaceV2 title={'Componentes funcionales'} rawCode={`const MiComponente = () => <h1>Hola React</h1>;`} />
+
+                            <CodeSpaceV2 title={'Funciones dentro de hooks'} rawCode={`useEffect(() => {\nfetchData();\n }, []);`} />
+
                         </DivContent>
                     </DivArticle>
                 </DivCol>
