@@ -34,6 +34,26 @@ export function FundamentosJs(){
 
                             <CodeSpaceV2 title={"Sin simbolos"} rawCode={`const suma = (a, b) => a + b;`} />
 
+                            <h2>Parentesis en los Parametros</h2>
+
+                            <p>
+                                Un parametro: Los parentesis son opcionales.
+                            </p>
+
+                            <CodeSpaceV2 title={"Un solo parametro"} rawCode={`const cuadrado = x => x * x;`} />
+
+                            <p>
+                                Sin parametros: Se usan parentesis vacios.
+                            </p>
+
+                            <CodeSpaceV2 title={"Sin parametros"} rawCode={`const saludo = () => "Hola Mundo";`} />
+
+                            <p>
+                                Varios parametros: Requiren parentesis.
+                            </p>
+
+                            <CodeSpaceV2 title={"Varios parametros"} rawCode={`const resta = (a,b) => a - b:`} />
+
                         </DivContent>
                     </DivArticle>
                 </DivCol>
