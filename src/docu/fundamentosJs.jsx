@@ -100,7 +100,22 @@ export function FundamentosJs(){
                             <CodeSpaceV2 title={"Ejemplo mala practica"} rawCode={`const objeto = {\n valor: 10,\n incremento: () => {\n
                             this.valor++; // Error: this no apunta al objeto\n }\n };`} />
 
+                            <h1>Template Literals (Plantillas de Cadena/Template Strings)</h1>
 
+                            <p>Son una mejora a las cadenas de texto tradicionales ("" o ''), que permiten: </p>
+
+                            <p>
+                                Interpolacion de variables (incrustar expresiones directamente).
+                            </p>
+
+                            <p>
+                                Cadenas multilinea sin necesidad de \n
+                            </p>
+
+                            <p>
+                                Sintaxis mas legible usando acentos invertidos (`)
+                            </p>
+                            
                         </DivContent>
                     </DivArticle>
                 </DivCol>
