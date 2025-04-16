@@ -66,6 +66,18 @@ export function FundamentosJs(){
 
                             <CodeSpaceV2 title={'Funciones dentro de hooks'} rawCode={`useEffect(() => {\nfetchData();\n }, []);`} />
 
+                            <h2>Buenas Practicas</h2>
+
+                            <p>
+                                Usar arrow functions para callbacks y metodos cortos.
+                                Evitar arrow functions en metodos de objetos si necesitas acceder a this del objeto
+                                Preferir arrow functions en React para evitar problemas con this.
+                            </p>
+
+                            <CodeSpaceV2 title={"Ejemplo mala practica"} rawCode={`const objeto = {\n valor: 10,\n incremento: () => {\n
+                            this.valor++; // Error: this no apunta al objeto\n }\n };`} />
+
+
                         </DivContent>
                     </DivArticle>
                 </DivCol>
