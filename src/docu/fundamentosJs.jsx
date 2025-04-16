@@ -67,6 +67,16 @@ export function FundamentosJs(){
                                 (dinamico).
                             </p>
 
+                             <p>
+                                arguments, las arrow funstions no tienen el objeto arguments, las 
+                                funciones tradicionales tienen el objeto arguments
+                            </p>
+
+                            <p>
+                                Contructores, las arrow functions no pueden usarse como constructor (new),
+                                las funciones tradicionales si pueden usarse como constructor (new MiFuncion())
+                            </p>
+
                             <h2>Uso comun en react</h2>
 
                             <p>
