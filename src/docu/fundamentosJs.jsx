@@ -115,6 +115,16 @@ export function FundamentosJs(){
                             <p>
                                 Sintaxis mas legible usando acentos invertidos (`)
                             </p>
+
+                            <h2>Sintaxis Basica</h2>
+
+                            <CodeSpaceV2 title={'Ejemplo'} rawCode={`const nombre = "Ana";\n const saludo = \` Hola, ${nombre} \`; // Usa backticks (\`\`) y \$\{\}\n console.log(saludo); // "Hola, Ana"`} />
+
+                            <p>
+                                Comparacion con strings tradicionales
+                            </p>
+
+                            <CodeSpaceV2 title={'Ejmplo'} rawCode={`// Antes (ES5)\n var saludo = "Hola, " + nombre;\n  // Ahora (ES6+)\n const saludo = \`Hola, \$\{nombre\}\`; // Más claro y conciso\n`} />
                             
                         </DivContent>
                     </DivArticle>
