@@ -54,6 +54,19 @@ export function FundamentosJs(){
 
                             <CodeSpaceV2 title={"Varios parametros"} rawCode={`const resta = (a,b) => a - b:`} />
 
+                            <h3>Sintaxis</h3>
+
+                            <p>
+                                Las arrow funcion son mas cortas el usar la sintaxis: () => {} a 
+                                diferencia de las funciones tradicionales: function () {}
+                            </p>
+
+                            <p>
+                                Uso de de this, las arrow functions Heredan el this del contexto padre 
+                                (lexical scope). Las funciones tradicionales tienen su propio contexto para this
+                                (dinamico).
+                            </p>
+
                             <h2>Uso comun en react</h2>
 
                             <p>
