@@ -28,10 +28,20 @@ export function FundamentosJs(){
                 },
                 {
                     titulo: 'Buenas Practicas',
-                    id: 'practicasArrow'
+                    id: 'practicasArrow',
                 }
             ],
         },
+        {
+            id: 2,
+            section: 'Template Literals',
+            childs: [
+                {
+                    titulo: 'Sintaxis Basica',
+                    id: 'sintaxisBactips',
+                },
+            ],
+        }
     ]
 
     return(
@@ -148,7 +158,7 @@ export function FundamentosJs(){
                                 Sintaxis mas legible usando acentos invertidos (`)
                             </p>
 
-                            <h2>Sintaxis Basica</h2>
+                            <h2 id="sintaxisBactips">Sintaxis Basica</h2>
 
                             <CodeSpaceV2 title={'Ejemplo'} rawCode={`const nombre = "Ana";\n const saludo = \` Hola, \${nombre} \`; // Usa backticks (\`\`) y \$\{\}\n console.log(saludo); // "Hola, Ana"`} />
 
@@ -157,6 +167,14 @@ export function FundamentosJs(){
                             </p>
 
                             <CodeSpaceV2 title={'Ejmplo'} rawCode={`// Antes (ES5)\n var saludo = "Hola, " + nombre;\n  // Ahora (ES6+)\n const saludo = \`Hola, \$\{nombre\}\`; // Más claro y conciso\n`} />
+
+                            <h2 id="caracteristicasBacktips">Caracteristicas Principales</h2>
+
+                            <p>
+                                Interpolacion de variables y expresiones: Puedes incluir cualquier expresion JavaScript dentro de $ { }
+                            </p>
+
+                            <CodeSpaceV2 title={'Ejemplo'} rawCode={`const a = 5;\n const b = 10;\n console.log(\`La suma es: \${a + b}\`); // "La suma es: 15"\n // Con funciones\n function saludar(nombre) {\n return \`¡Hola, \${nombre.toUpperCase()}!\`;\n }\n console.log(saludar("Carlos")); // "¡Hola, CARLOS!"`} />
                             
                         </DivContent>
                     </DivArticle>
