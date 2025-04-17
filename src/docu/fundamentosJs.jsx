@@ -1,8 +1,38 @@
 import { CodeSpaceV2 } from "../componentes/codeSpace/CodeSpaceV2"
 import { DivArticle, DivCol, DivContent, DivRow } from "../componentes/contenedores/contenedores"
 import { Portada } from "../componentes/portada/portada"
+import { TreeMap } from "../componentes/treeMap/TreeMap"
 
 export function FundamentosJs(){
+
+    const pageMap = [
+        {
+            id: 1,
+            section: 'Arrow Functions',
+            childs: [
+                {
+                    titulo: 'Sintaxis Basica',
+                    id: 'sintaxisArrow',
+                },
+                {
+                    titulo: 'Parentesis en los Parametros',
+                    id: 'parentesisArrow',
+                },
+                {
+                    titulo: 'Diferencias',
+                    id: 'diferenciaArrow',
+                },
+                {
+                    titulo: 'Uso comun en react',
+                    id: 'usoreactArrow',
+                },
+                {
+                    titulo: 'Buenas Practicas',
+                    id: 'practicasArrow'
+                }
+            ],
+        },
+    ]
 
     return(
         <>
@@ -10,7 +40,7 @@ export function FundamentosJs(){
 
             <DivRow>
                 <DivCol>
-
+                    <TreeMap titulo={'Mapa del sitio'} elementos={pageMap} />
                 </DivCol>
                 <DivCol>
                     <DivArticle>
@@ -18,7 +48,7 @@ export function FundamentosJs(){
 
                             <h1>Arrow Functions (Funciones Flecha)</h1>
 
-                            <h2>Sintaxis Basica</h2>
+                            <h2 id="sintaxisArrow">Sintaxis Basica</h2>
 
                             <p>
                                 Las arrow functions son una forma mas corta de escribir funciones en JavaScript.
@@ -34,7 +64,7 @@ export function FundamentosJs(){
 
                             <CodeSpaceV2 title={"Sin simbolos"} rawCode={`const suma = (a, b) => a + b;`} />
 
-                            <h2>Parentesis en los Parametros</h2>
+                            <h2 id="parentesisArrow">Parentesis en los Parametros</h2>
 
                             <p>
                                 Un parametro: Los parentesis son opcionales.
@@ -53,6 +83,8 @@ export function FundamentosJs(){
                             </p>
 
                             <CodeSpaceV2 title={"Varios parametros"} rawCode={`const resta = (a,b) => a - b:`} />
+
+                            <h2 id="diferenciaArrow">Diferencias</h2>
 
                             <h3>Sintaxis</h3>
 
@@ -77,19 +109,19 @@ export function FundamentosJs(){
                                 las funciones tradicionales si pueden usarse como constructor (new MiFuncion())
                             </p>
 
-                            <h2>Uso comun en react</h2>
+                            <h2 id="usoreactArrow">Uso comun en react</h2>
 
                             <p>
                                 En react, las arrow functions se usan mucho para:
                             </p>
 
-                            <CodeSpaceV2 title={`Manejo de eventos`} rawCode={`<button onClick={() => console.log("Click")}>Presiona</button>`} />
+                            <CodeSpaceV2 title={`Manejo de eventos`} rawCode={`<button onClick={() => console.log("Click")}>\nPresiona\n</button>\n`} />
 
-                            <CodeSpaceV2 title={'Componentes funcionales'} rawCode={`const MiComponente = () => <h1>Hola React</h1>;`} />
+                            <CodeSpaceV2 title={'Componentes funcionales'} rawCode={`const MiComponente = () => <h1>Hola React</h1>;\n`} />
 
-                            <CodeSpaceV2 title={'Funciones dentro de hooks'} rawCode={`useEffect(() => {\nfetchData();\n }, []);`} />
+                            <CodeSpaceV2 title={'Funciones dentro de hooks'} rawCode={`useEffect(() => {\nfetchData();\n }, []);\n`} />
 
-                            <h2>Buenas Practicas</h2>
+                            <h2 id="practicasArrow">Buenas Practicas</h2>
 
                             <p>
                                 Usar arrow functions para callbacks y metodos cortos.
@@ -118,7 +150,7 @@ export function FundamentosJs(){
 
                             <h2>Sintaxis Basica</h2>
 
-                            <CodeSpaceV2 title={'Ejemplo'} rawCode={`const nombre = "Ana";\n const saludo = \` Hola, ${nombre} \`; // Usa backticks (\`\`) y \$\{\}\n console.log(saludo); // "Hola, Ana"`} />
+                            <CodeSpaceV2 title={'Ejemplo'} rawCode={`const nombre = "Ana";\n const saludo = \` Hola, \${nombre} \`; // Usa backticks (\`\`) y \$\{\}\n console.log(saludo); // "Hola, Ana"`} />
 
                             <p>
                                 Comparacion con strings tradicionales
