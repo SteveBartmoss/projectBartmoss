@@ -10,13 +10,19 @@ export function MapObjects() {
 
     const pageMap=[ 
         {
-            titulo: 'Propiedades dinámicas',
-            id: 'propiedadesDinamicas',
-        },
-        {
-            titulo: 'Métodos Dinámicos en JavaScript',
-            id: 'metodosDinamicos',
-        },
+            id: 1,
+            section:'Objects',
+            childs: [
+                {
+                    titulo: 'Propiedades dinámicas',
+                    id: 'propiedadesDinamicas',
+                },
+                {
+                    titulo: 'Métodos Dinámicos en JavaScript',
+                    id: 'metodosDinamicos',
+                },
+            ]
+        }
     ]
 
     return (
