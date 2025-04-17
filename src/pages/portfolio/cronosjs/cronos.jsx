@@ -7,9 +7,15 @@ export function CronosJs(){
 
     const pageMap=[
         {
-            titulo: 'Importante',
-            id: 'importante',
-        },
+            id: 1,
+            section: 'CronosJs',
+            childs: [
+                {
+                    titulo: 'Importante',
+                    id: 'importante',
+                }
+            ]
+        }
     ]
 
     return(
