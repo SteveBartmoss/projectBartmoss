@@ -166,5 +166,17 @@
       }
     ],
     "topico": ["HTTP"]
+  },
+  {
+    "titulo": "Fundamentos Js",
+    "descripcion": "Con este post puedes entender los fundamentos de javascript para ser buen desarrollador",
+    "url": "fundajs",
+    "tags": [
+      {
+        "text": "Java Script",
+        "color" : "warning"
+      }
+    ],
+    "topico": ["fundajs"]
   }
 ]
