@@ -30,6 +30,7 @@ import { RoadMapFront } from "../roadmap/frontEnd/roadMapFront";
 import { HttpCode } from "../docu/HttpCode";
 import { CronosJs } from "../pages/portfolio/cronosjs/cronos";
 import { JsAmbiente } from "../docu/JsAmbiente";
+import { FundamentosJs } from "../docu/fundamentosJs";
 
 
 export function RouterBlog(){
@@ -56,6 +57,7 @@ export function RouterBlog(){
                 <Route path="docu/primeroredux" element={<FirstStepRedux />} />
                 <Route path="docu/httpcodes" element={<HttpCode />} />
                 <Route path="docu/jsenv" element={<JsAmbiente />} />
+                <Route path="docu/fundajs" element={<FundamentosJs />} />
 
                 <Route path="steve/desconectado" element={<DesconectadoLife />} />
                 <Route path="steve/pilasinfin" element={<PilaSinFin />} />
