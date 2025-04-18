@@ -182,6 +182,12 @@ export function FundamentosJs(){
 
                             <CodeSpaceV2 title={'Ejemplo'} rawCode={`const a = 5;\n const b = 10;\n console.log(\`La suma es: \${a + b}\`); // "La suma es: 15"\n // Con funciones\n function saludar(nombre) {\n return \`¡Hola, \${nombre.toUpperCase()}!\`;\n }\n console.log(saludar("Carlos")); // "¡Hola, CARLOS!"`} />
                             
+                            <p>
+                                Cadenas multilinea: permite crear multiples lineas en una cadena sin tener que usar el caracter \n
+                            </p>
+
+                            <CodeSpaceV2 title={'Ejemplo'} rawCode={`const mensaje = \`\n Linea 1\n Linea 2\n Linea 3\n \`;\n // Respeta los saltos de línea y la indentación\n`} />
+
                         </DivContent>
                     </DivArticle>
                 </DivCol>
