@@ -56,6 +56,18 @@ export function FkAndIndex() {
                     titulo: 'Hash',
                     id: 'indiceHash',
                 },
+                {
+                    titulo: 'Ventajas',
+                    id: 'indicesVentajas',
+                },
+                {
+                    titulo: 'Desventajas',
+                    id: 'indicesDesventajas',
+                },
+                {
+                    titulo: 'Mejores prácticas',
+                    id: 'mejoresPracticas',
+                },
             ]
         }
     ]
@@ -192,7 +204,7 @@ export function FkAndIndex() {
                                 Adecuado para búsquedas de igualdad, como = y IN. No es eficiente para búsquedas de rango.
                             </p>
 
-                            <h2>Ventajas de los índices</h2>
+                            <h2 id="indicesVentajas">Ventajas de los índices</h2>
 
                             <p>
                                 Mejora en el rendimiento de las consultas: Los índices permiten a la base
@@ -210,7 +222,7 @@ export function FkAndIndex() {
                                 a las filas relevantes.
                             </p>
 
-                            <h2>Desventajas de los índices</h2>
+                            <h2 id="indicesDesventajas">Desventajas de los índices</h2>
 
                             <p>
                                 Espacio adicional: Los índices requieren espacio adicional en disco para almacenarse.
@@ -226,7 +238,7 @@ export function FkAndIndex() {
                                 en las consultas puede resultar en un uso ineficiente de recursos.
                             </p>
 
-                            <h2>Mejores prácticas</h2>
+                            <h2 id="mejoresPracticas">Mejores prácticas</h2>
 
                             <p>
                                 Seleccionar columnas adecuadas: Crea índices en columnas que se utilizan
