@@ -103,19 +103,25 @@ export function FundamentosJs(){
                                 diferencia de las funciones tradicionales: function () {}
                             </p>
 
+                            <h3>Uso de de this</h3>
+
                             <p>
-                                Uso de de this, las arrow functions Heredan el this del contexto padre 
+                                Las arrow functions Heredan el this del contexto padre 
                                 (lexical scope). Las funciones tradicionales tienen su propio contexto para this
                                 (dinamico).
                             </p>
 
+                            <h3>Arguments</h3>
+
                              <p>
-                                arguments, las arrow funstions no tienen el objeto arguments, las 
+                                Las arrow funstions no tienen el objeto arguments, las 
                                 funciones tradicionales tienen el objeto arguments
                             </p>
 
+                            <h3>Contructores</h3>
+
                             <p>
-                                Contructores, las arrow functions no pueden usarse como constructor (new),
+                                Las arrow functions no pueden usarse como constructor (new),
                                 las funciones tradicionales si pueden usarse como constructor (new MiFuncion())
                             </p>
 
