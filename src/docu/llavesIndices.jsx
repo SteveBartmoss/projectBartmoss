@@ -27,6 +27,36 @@ export function FkAndIndex() {
                     id: 'cache',
                 }
             ]
+        },
+        {
+            id: 2,
+            section: 'Indices',
+            childs: [
+                {
+                    titulo: 'Índice simple',
+                    id: 'simpleIdice',
+                },
+                {
+                    titulo: 'Índice compuesto',
+                    id: 'indiceCompuesto',
+                },
+                {
+                    titulo: 'Índice único',
+                    id: 'indiceUnico',
+                },
+                {
+                    titulo: 'Índice no único',
+                    id: 'noUnico',
+                },
+                {
+                    titulo: 'B-Tree',
+                    id: 'btree',
+                },
+                {
+                    titulo: 'Hash',
+                    id: 'indiceHash',
+                },
+            ]
         }
     ]
     return (
@@ -126,37 +156,37 @@ export function FkAndIndex() {
 
                             <h2>Tipos de indices</h2>
 
-                            <h3>Índice simple</h3>
+                            <h3 id='simpleIdice'>Índice simple</h3>
 
                             <p>
                                 Un índice basado en una sola columna.
                             </p>
 
-                            <h3>Índice compuesto</h3>
+                            <h3 id='indiceCompuesto'>Índice compuesto</h3>
 
                             <p>
                                 Un índice basado en múltiples columnas.
                             </p>
 
-                            <h3>Índice único</h3>
+                            <h3 id="indiceUnico">Índice único</h3>
 
                             <p>
                                 Asegura que todos los valores en la columna indexada sean distintos.
                             </p>
 
-                            <h3>Índice no único</h3>
+                            <h3 id='noUnico'>Índice no único</h3>
 
                             <p>
                                 Permite valores duplicados en la columna indexada.
                             </p>
 
-                            <h3>B-Tree (Árbol-B)</h3>
+                            <h3 id='btree'>B-Tree (Árbol-B)</h3>
 
                             <p>
                                 El tipo de índice más común, adecuado para una amplia gama de consultas.
                             </p>
 
-                            <h3>Hash</h3>
+                            <h3 id='indiceHash'>Hash</h3>
 
                             <p>
                                 Adecuado para búsquedas de igualdad, como = y IN. No es eficiente para búsquedas de rango.
