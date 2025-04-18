@@ -64,15 +64,15 @@ export function FundamentosJs(){
                                 Las arrow functions son una forma mas corta de escribir funciones en JavaScript.
                             </p>
 
-                            <CodeSpaceV2 title={"Funcion tradicional"} rawCode={`function suma(a, b) {\n return a + b;\n}`} />
+                            <CodeSpaceV2 title={"Funcion tradicional"} rawCode={`function suma(a, b) {\n return a + b;\n}\n`} />
 
-                            <CodeSpaceV2 title={"Arrow function equivalente"} rawCode={`const suma = (a, b) => {\nreturn a + b;\n};`} />
+                            <CodeSpaceV2 title={"Arrow function equivalente"} rawCode={`const suma = (a, b) => {\nreturn a + b;\n};\n`} />
 
                             <p>
                                 Si el cuerpo es una sola lineam, se puede omitir {} y el return
                             </p>
 
-                            <CodeSpaceV2 title={"Sin simbolos"} rawCode={`const suma = (a, b) => a + b;`} />
+                            <CodeSpaceV2 title={"Sin simbolos"} rawCode={`const suma = (a, b) => a + b;\n`} />
 
                             <h2 id="parentesisArrow">Parentesis en los Parametros</h2>
 
@@ -80,19 +80,19 @@ export function FundamentosJs(){
                                 Un parametro: Los parentesis son opcionales.
                             </p>
 
-                            <CodeSpaceV2 title={"Un solo parametro"} rawCode={`const cuadrado = x => x * x;`} />
+                            <CodeSpaceV2 title={"Un solo parametro"} rawCode={`const cuadrado = x => x * x;\n`} />
 
                             <p>
                                 Sin parametros: Se usan parentesis vacios.
                             </p>
 
-                            <CodeSpaceV2 title={"Sin parametros"} rawCode={`const saludo = () => "Hola Mundo";`} />
+                            <CodeSpaceV2 title={"Sin parametros"} rawCode={`const saludo = () => "Hola Mundo";\n`} />
 
                             <p>
                                 Varios parametros: Requiren parentesis.
                             </p>
 
-                            <CodeSpaceV2 title={"Varios parametros"} rawCode={`const resta = (a,b) => a - b:`} />
+                            <CodeSpaceV2 title={"Varios parametros"} rawCode={`const resta = (a,b) => a - b;\n`} />
 
                             <h2 id="diferenciaArrow">Diferencias</h2>
 
