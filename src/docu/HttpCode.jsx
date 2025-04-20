@@ -1205,6 +1205,28 @@ export function HttpCode() {
                                 El código 401 Unauthorized indica que el cliente **no está autenticado** o **las credenciales proporcionadas son inválidas**.  
                             </p>
 
+                            <h2>Usos comunes</h2>
+
+                            <p>
+                                Autenticación requerida  
+                                El usuario debe iniciar sesión antes de acceder a la API.  
+                            </p>
+
+                            <p>
+                                Credenciales incorrectas
+                                Usuario y contraseña inválidos en autenticación básica.  
+                            </p>
+
+                            <p>
+                                Token de sesión vencido o inválido  
+                                El usuario debe renovar su sesión.  
+                            </p>
+
+                            <p>
+                                No se envió un token de autenticación  
+                                La API espera un JWT, API Key o OAuth token.  
+                            </p>
+
                         </DivContent>
                     </DivArticle>
                 </DivCol>
@@ -1261,22 +1283,6 @@ GET /api/perfil HTTP/1.1
 Host: ejemplo.com
 Authorization: Bearer <TOKEN_VALIDO>
 ```
-
----
-
-#### 🎯 **Casos de uso comunes**  
-
-✔ **Autenticación requerida**  
-   - El usuario debe iniciar sesión antes de acceder a la API.  
-
-✔ **Credenciales incorrectas**  
-   - Usuario y contraseña inválidos en autenticación básica.  
-
-✔ **Token de sesión vencido o inválido**  
-   - El usuario debe renovar su sesión.  
-
-✔ **No se envió un token de autenticación**  
-   - La API espera un **JWT**, **API Key** o **OAuth token**.  
 
 ---
 
