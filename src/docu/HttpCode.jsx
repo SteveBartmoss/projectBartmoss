@@ -1201,6 +1201,10 @@ export function HttpCode() {
 
                             <h1 id="code401">401</h1>
 
+                            <p>
+                                El código 401 Unauthorized indica que el cliente **no está autenticado** o **las credenciales proporcionadas son inválidas**.  
+                            </p>
+
                         </DivContent>
                     </DivArticle>
                 </DivCol>
