@@ -814,11 +814,11 @@ export function HttpCode() {
                             <h1 id='code300'>300</h1>
 
                             <p>
-                                El código de estado HTTP **300 Multiple Choices** indica que el recurso solicitado tiene 
-                                múltiples representaciones posibles y el cliente debe elegir una. Esta respuesta se usa 
-                                cuando hay varias opciones disponibles para un mismo recurso, y el servidor proporciona 
+                                El código de estado HTTP **300 Multiple Choices** indica que el recurso solicitado tiene
+                                múltiples representaciones posibles y el cliente debe elegir una. Esta respuesta se usa
+                                cuando hay varias opciones disponibles para un mismo recurso, y el servidor proporciona
                                 información sobre esas opciones para que el cliente seleccione la más adecuada.
-                                Este código generalmente se utiliza en situaciones donde un recurso tiene múltiples formatos, 
+                                Este código generalmente se utiliza en situaciones donde un recurso tiene múltiples formatos,
                                 idiomas o versiones.
                             </p>
 
@@ -829,17 +829,17 @@ export function HttpCode() {
                             </p>
 
                             <p>
-                                Selección por Parte del Cliente: El cliente puede elegir cuál opción prefiere, ya sea manualmente 
+                                Selección por Parte del Cliente: El cliente puede elegir cuál opción prefiere, ya sea manualmente
                                 o mediante cabeceras como Accept-Language o Accept.
                             </p>
 
                             <p>
-                                Ubicación en la Respuesta: Se proporciona una lista de URLs alternativas en el cuerpo de la respuesta 
+                                Ubicación en la Respuesta: Se proporciona una lista de URLs alternativas en el cuerpo de la respuesta
                                 o en la cabecera Location.
                             </p>
 
                             <p>
-                                No Obligatorio Redirigir: A diferencia de otros códigos de redirección (301, 302), el cliente no está 
+                                No Obligatorio Redirigir: A diferencia de otros códigos de redirección (301, 302), el cliente no está
                                 obligado a seguir una URL específica.
                             </p>
 
@@ -847,7 +847,7 @@ export function HttpCode() {
 
                             <p>
                                 Sitios Multilingües:
-                                Un sitio web con contenido disponible en varios idiomas podría usar 300 Multiple Choices para sugerir 
+                                Un sitio web con contenido disponible en varios idiomas podría usar 300 Multiple Choices para sugerir
                                 diferentes versiones según la configuración del navegador del usuario.
                             </p>
 
@@ -858,33 +858,33 @@ export function HttpCode() {
 
                             <p>
                                 Versiones de un API:
-                                Un API REST que admite varias versiones (v1, v2) puede devolver un 300 cuando un cliente no especifica 
+                                Un API REST que admite varias versiones (v1, v2) puede devolver un 300 cuando un cliente no especifica
                                 la versión deseada.
                             </p>
 
                             <h2>Ventajas</h2>
 
                             <p>
-                                Flexible: Permite a los clientes seleccionar la mejor representación del recurso.  
+                                Flexible: Permite a los clientes seleccionar la mejor representación del recurso.
                             </p>
 
                             <p>
-                                Útil en Servicios REST: Facilita la entrega de contenido en múltiples formatos.  
+                                Útil en Servicios REST: Facilita la entrega de contenido en múltiples formatos.
                             </p>
 
                             <p>
-                                Poca Implementación en la Práctica: La mayoría de los servicios prefieren redirigir automáticamente 
-                                (301, 302) en lugar de requerir interacción del cliente.  
+                                Poca Implementación en la Práctica: La mayoría de los servicios prefieren redirigir automáticamente
+                                (301, 302) en lugar de requerir interacción del cliente.
                             </p>
 
                             <p>
-                                No Soportado por Algunos Navegadores: Algunos navegadores pueden no manejar adecuadamente el código 
-                                300 y simplemente mostrar una página en blanco.  
+                                No Soportado por Algunos Navegadores: Algunos navegadores pueden no manejar adecuadamente el código
+                                300 y simplemente mostrar una página en blanco.
                             </p>
 
                             <p>
-                                El código 300 Multiple Choices es útil cuando un recurso tiene múltiples representaciones, pero su uso 
-                                no es común en la web moderna debido a que los servidores suelen redirigir automáticamente a una opción 
+                                El código 300 Multiple Choices es útil cuando un recurso tiene múltiples representaciones, pero su uso
+                                no es común en la web moderna debido a que los servidores suelen redirigir automáticamente a una opción
                                 predeterminada.
                             </p>
 
@@ -893,48 +893,48 @@ export function HttpCode() {
                             <h1 id="code301">301</h1>
 
                             <p>
-                                El código de estado 301 Moved Permanently indica que un recurso ha sido trasladado de forma permanente 
-                                a una nueva URL. Cualquier solicitud futura debe dirigirse a esta nueva ubicación. Los navegadores y motores 
-                                de búsqueda suelen actualizar automáticamente sus enlaces a la nueva URL.  
+                                El código de estado 301 Moved Permanently indica que un recurso ha sido trasladado de forma permanente
+                                a una nueva URL. Cualquier solicitud futura debe dirigirse a esta nueva ubicación. Los navegadores y motores
+                                de búsqueda suelen actualizar automáticamente sus enlaces a la nueva URL.
                             </p>
 
                             <h2>Usos comunes</h2>
 
                             <p>
-                                Migración de URL de una página a otra  
-                                Si cambias la estructura de tu sitio web y deseas redirigir tráfico sin perder SEO.  
-                                Ejemplo: https://miweb.com/blog/post-antiguo https://miweb.com/articulos/post-nuevo. 
+                                Migración de URL de una página a otra
+                                Si cambias la estructura de tu sitio web y deseas redirigir tráfico sin perder SEO.
+                                Ejemplo: https://miweb.com/blog/post-antiguo https://miweb.com/articulos/post-nuevo.
                             </p>
 
                             <p>
-                                Cambio de dominio  
-                                Si una empresa cambia de dominio y quiere redirigir todo el tráfico de https://antiguodominio.com a https://nuevodominio.com.  
+                                Cambio de dominio
+                                Si una empresa cambia de dominio y quiere redirigir todo el tráfico de https://antiguodominio.com a https://nuevodominio.com.
 
-                                Forzar HTTPS  
-                                - Redirigir automáticamente tráfico HTTP a HTTPS:  
-                                    ```htaccess
-                                    RewriteEngine on
-                                    RewriteCond %HTTPS off
-                                    RewriteRule ^.*$ https://%HTTP_HOST/$1 R=301,L
-                                    ```  
-                                - Esto garantiza que todos los usuarios usen una conexión segura.  
+                                Forzar HTTPS
+                                - Redirigir automáticamente tráfico HTTP a HTTPS:
+                                ```htaccess
+                                RewriteEngine on
+                                RewriteCond %HTTPS off
+                                RewriteRule ^.*$ https://%HTTP_HOST/$1 R=301,L
+                                ```
+                                - Esto garantiza que todos los usuarios usen una conexión segura.
                             </p>
 
                             <p>
                                 Eliminar www o agregarlo
-                                - Para evitar duplicidad en URLs `www` y sin `www`, redirigir siempre a una versión única.  
-                                - Ejemplo en `.htaccess`:  
-                                    ```htaccess
-                                    RewriteEngine on
-                                    RewriteCond %HTTP_HOST ^www.ejemplo.com NC
-                                    RewriteRule ^.*$ http://ejemplo.com/$1 L,R=301
-                                    ```  
+                                - Para evitar duplicidad en URLs `www` y sin `www`, redirigir siempre a una versión única.
+                                - Ejemplo en `.htaccess`:
+                                ```htaccess
+                                RewriteEngine on
+                                RewriteCond %HTTP_HOST ^www.ejemplo.com NC
+                                RewriteRule ^.*$ http://ejemplo.com/$1 L,R=301
+                                ```
                             </p>
 
                             <p>
-                                301 Moved Permanently significa que la URL ha cambiado para siempre.  
-                                El navegador o cliente debe usar la nueva URL en futuras solicitudes.  
-                                Se usa comúnmente para SEO, redirecciones de dominios y cambios de estructura en sitios web.  
+                                301 Moved Permanently significa que la URL ha cambiado para siempre.
+                                El navegador o cliente debe usar la nueva URL en futuras solicitudes.
+                                Se usa comúnmente para SEO, redirecciones de dominios y cambios de estructura en sitios web.
                             </p>
 
                             <Divider />
@@ -942,49 +942,49 @@ export function HttpCode() {
                             <h1 id="code302">302</h1>
 
                             <p>
-                                El código de estado 302 Found indica que el recurso solicitado se ha movido temporalmente 
-                                a otra ubicación. A diferencia del código 301 Moved Permanently, esta redirección es temporal, por 
-                                lo que los clientes navegadores, motores de búsqueda, etc. no deben actualizar sus enlaces y deben 
-                                seguir solicitando la URL original en el futuro.  
+                                El código de estado 302 Found indica que el recurso solicitado se ha movido temporalmente
+                                a otra ubicación. A diferencia del código 301 Moved Permanently, esta redirección es temporal, por
+                                lo que los clientes navegadores, motores de búsqueda, etc. no deben actualizar sus enlaces y deben
+                                seguir solicitando la URL original en el futuro.
                             </p>
 
                             <h2>Usos comunes</h2>
 
                             <p>
-                                Mantenimiento de páginas  
-                                Si un sitio web está en mantenimiento y deseas redirigir temporalmente a otra página sin cambiar la URL definitiva.  
-                                Ejemplo: https://miweb.com/inicio a https://miweb.com/mantenimiento.  
+                                Mantenimiento de páginas
+                                Si un sitio web está en mantenimiento y deseas redirigir temporalmente a otra página sin cambiar la URL definitiva.
+                                Ejemplo: https://miweb.com/inicio a https://miweb.com/mantenimiento.
                             </p>
 
                             <p>
-                                Autenticación y acceso a contenidos**  
-                                Cuando un usuario intenta acceder a una página privada sin estar autenticado y se lo redirige temporalmente a una página de inicio de sesión.  
-                                Ejemplo en **Express.js**:  
+                                Autenticación y acceso a contenidos**
+                                Cuando un usuario intenta acceder a una página privada sin estar autenticado y se lo redirige temporalmente a una página de inicio de sesión.
+                                Ejemplo en **Express.js**:
                                 ```js
                                 app.get'/dashboard', req, res =
-                                if !req.user 
-                                    res.redirect302, '/login' // Redirección temporal al login
-                                else 
-                                    res.send'Bienvenido al Dashboard'
-                                ```  
+                                if !req.user
+                                res.redirect302, '/login' // Redirección temporal al login
+                                else
+                                res.send'Bienvenido al Dashboard'
+                                ```
                             </p>
 
                             <p>
-                                Control de tráfico dinámico  
-                                Un servicio web puede redirigir usuarios a diferentes servidores según la carga del sistema.  
-                                Ejemplo: https://api.ejemplo.com/recurso a https://server2.ejemplo.com/recurso.  
+                                Control de tráfico dinámico
+                                Un servicio web puede redirigir usuarios a diferentes servidores según la carga del sistema.
+                                Ejemplo: https://api.ejemplo.com/recurso a https://server2.ejemplo.com/recurso.
                             </p>
 
                             <p>
-                                Cambio de idioma o versión según el usuario  
-                                Si un usuario de España accede a https://ejemplo.com, se le puede redirigir temporalmente a https://es.ejemplo.com sin cambiar la URL permanente.  
+                                Cambio de idioma o versión según el usuario
+                                Si un usuario de España accede a https://ejemplo.com, se le puede redirigir temporalmente a https://es.ejemplo.com sin cambiar la URL permanente.
 
                             </p>
 
                             <p>
-                                302 Found indica una redirección temporal.  
-                                El navegador sigue solicitando la URL original en el futuro.  
-                                Útil para mantenimiento, autenticación y gestión de tráfico dinámico.  
+                                302 Found indica una redirección temporal.
+                                El navegador sigue solicitando la URL original en el futuro.
+                                Útil para mantenimiento, autenticación y gestión de tráfico dinámico.
                             </p>
 
                             <Divider />
@@ -992,40 +992,40 @@ export function HttpCode() {
                             <h1 id="code303">303</h1>
 
                             <p>
-                                Indica que el recurso solicitado no se encuentra en la misma ubicación, pero el cliente debe hacer una 
-                                nueva solicitud usando el método GET a la URL proporcionada en el encabezado Location. Se usa comúnmente 
-                                para evitar que un cliente reenvíe datos de un formulario después de enviarlo con POS`, redirigiéndolo a 
+                                Indica que el recurso solicitado no se encuentra en la misma ubicación, pero el cliente debe hacer una
+                                nueva solicitud usando el método GET a la URL proporcionada en el encabezado Location. Se usa comúnmente
+                                para evitar que un cliente reenvíe datos de un formulario después de enviarlo con POS`, redirigiéndolo a
                                 una nueva URL con GET.
                             </p>
 
                             <h2>Usos comunes</h2>
 
                             <p>
-                                Evitar la reenvío de formularios POST-Redirect-GET  
-                                Cuando un usuario envía un formulario y luego recarga la página, sin una redirección 303 el navegador intentará reenviar el formulario.  
-                                Con 303, el usuario es redirigido a una nueva página GET, evitando envíos duplicados.  
+                                Evitar la reenvío de formularios POST-Redirect-GET
+                                Cuando un usuario envía un formulario y luego recarga la página, sin una redirección 303 el navegador intentará reenviar el formulario.
+                                Con 303, el usuario es redirigido a una nueva página GET, evitando envíos duplicados.
                                 Ejemplo en Express.js:
-                                app.post'/formulario', req, res = 
+                                app.post'/formulario', req, res =
                                 // Procesa los datos...
                                 res.redirect 303, '/exito' // Redirige con GET
                             </p>
 
                             <p>
-                                Redirección después de una operación de escritura 
-                                Después de crear un recurso en una API con POST, en lugar de devolver los datos inmediatamente, el servidor 
-                                redirige a una URL donde el cliente puede obtener el estado actualizado con `GET`.  
+                                Redirección después de una operación de escritura
+                                Después de crear un recurso en una API con POST, en lugar de devolver los datos inmediatamente, el servidor
+                                redirige a una URL donde el cliente puede obtener el estado actualizado con `GET`.
                             </p>
 
                             <p>
                                 Evitar que clientes almacenen respuestas en caché
-                                Un servidor puede usar 303 para redirigir a una página que siempre se genera dinámicamente en lugar de 
-                                permitir la caché del navegador.  
+                                Un servidor puede usar 303 para redirigir a una página que siempre se genera dinámicamente en lugar de
+                                permitir la caché del navegador.
                             </p>
 
                             <p>
-                                303 See Other redirige a otra URL con GET, sin importar el método original.  
-                                Evita reenvíos de formularios POST-Redirect-GET.  
-                                Útil en formularios, APIs y respuestas dinámicas no cacheables.  
+                                303 See Other redirige a otra URL con GET, sin importar el método original.
+                                Evita reenvíos de formularios POST-Redirect-GET.
+                                Útil en formularios, APIs y respuestas dinámicas no cacheables.
                             </p>
 
                             <Divider />
@@ -1033,32 +1033,32 @@ export function HttpCode() {
                             <h1 id="code304">304</h1>
 
                             <p>
-                                El código de estado **304 Not Modified** indica que el recurso solicitado **no ha cambiado** desde la última vez que el cliente lo obtuvo.  
-                                El servidor usa este código para decirle al navegador o a un cliente HTTP que **puede usar la versión almacenada en caché**, en lugar de descargar el recurso nuevamente.  
+                                El código de estado **304 Not Modified** indica que el recurso solicitado **no ha cambiado** desde la última vez que el cliente lo obtuvo.
+                                El servidor usa este código para decirle al navegador o a un cliente HTTP que **puede usar la versión almacenada en caché**, en lugar de descargar el recurso nuevamente.
                             </p>
 
                             <h2>Usos comunes</h2>
 
                             <p>
-                                Optimización de carga en páginas web 
-                                Los navegadores almacenan recursos estáticos (imágenes, CSS, JavaScript).  
-                                Con 304, el navegador no descarga los archivos si ya tiene una versión válida.  
+                                Optimización de carga en páginas web
+                                Los navegadores almacenan recursos estáticos (imágenes, CSS, JavaScript).
+                                Con 304, el navegador no descarga los archivos si ya tiene una versión válida.
                             </p>
 
                             <p>
-                                Eficiencia en APIs y servicios web  
-                                Un cliente puede enviar If-None-Match con un ETag (identificador único de una versión del recurso).  
-                                Si el contenido no cambió, el servidor responde con 304, reduciendo el consumo de ancho de banda. 
+                                Eficiencia en APIs y servicios web
+                                Un cliente puede enviar If-None-Match con un ETag (identificador único de una versión del recurso).
+                                Si el contenido no cambió, el servidor responde con 304, reduciendo el consumo de ancho de banda.
                             </p>
 
                             <p>
                                 Mejora del rendimiento en CDN y proxys
-                                Los servidores proxy y las redes de entrega de contenido (CDN) pueden usar 304 para no descargar contenido innecesario.  
+                                Los servidores proxy y las redes de entrega de contenido (CDN) pueden usar 304 para no descargar contenido innecesario.
                             </p>
 
                             <p>
-                                304 Not Modified se usa cuando un recurso no ha cambiado puede cargarse desde la caché.  
-                                Optimiza la velocidad de carga y reduce el consumo de ancho de banda.  
+                                304 Not Modified se usa cuando un recurso no ha cambiado puede cargarse desde la caché.
+                                Optimiza la velocidad de carga y reduce el consumo de ancho de banda.
                                 Funciona con cabeceras If-Modified-Since y If-None-Match.
                             </p>
 
@@ -1067,50 +1067,50 @@ export function HttpCode() {
                             <h1 id="code305">305</h1>
 
                             <p>
-                                El código 305 Use Proxy indica que el cliente debe acceder al recurso a través de un proxy específico, definido en la 
-                                cabecera Location de la respuesta.  
-                                Este código está en desuso por razones de seguridad, ya que podría ser explotado para ataques de tipo hombre en el medio (MITM).  
-                                Los navegadores modernos lo ignoran, y ya no es recomendado su uso.  
+                                El código 305 Use Proxy indica que el cliente debe acceder al recurso a través de un proxy específico, definido en la
+                                cabecera Location de la respuesta.
+                                Este código está en desuso por razones de seguridad, ya que podría ser explotado para ataques de tipo hombre en el medio (MITM).
+                                Los navegadores modernos lo ignoran, y ya no es recomendado su uso.
                             </p>
 
                             <h2>Usos comunes</h2>
 
                             <p>
-                                Antes de quedar en desuso, se utilizaba para:  
-                                Redirigir tráfico a través de un proxy para filtrar contenido o aplicar políticas de seguridad.  
-                                Forzar el uso de un proxy en redes corporativas o gubernamentales.  
-                                Controlar el acceso a ciertos recursos dependiendo de la ubicación del usuario.  
+                                Antes de quedar en desuso, se utilizaba para:
+                                Redirigir tráfico a través de un proxy para filtrar contenido o aplicar políticas de seguridad.
+                                Forzar el uso de un proxy en redes corporativas o gubernamentales.
+                                Controlar el acceso a ciertos recursos dependiendo de la ubicación del usuario.
                             </p>
 
                             <h2>¿Por qué está en desuso?</h2>
 
                             <p>
-                                Riesgos de seguridad 
+                                Riesgos de seguridad
                                 Un atacante podría redirigir a un usuario a un proxy malicioso y espiar el tráfico.
                             </p>
 
                             <p>
-                                Incompatibilidad con navegadores modernos  
-                                Chrome, Firefox y otros navegadores ignoran el código **305** por seguridad.  
+                                Incompatibilidad con navegadores modernos
+                                Chrome, Firefox y otros navegadores ignoran el código **305** por seguridad.
                             </p>
 
                             <p>
-                                Alternativas más seguras  
-                                Configuraciones de proxy a nivel de red en lugar de respuestas HTTP.  
-                                Códigos de redirección como 307 si se necesita cambiar la URL de acceso.  
+                                Alternativas más seguras
+                                Configuraciones de proxy a nivel de red en lugar de respuestas HTTP.
+                                Códigos de redirección como 307 si se necesita cambiar la URL de acceso.
                             </p>
 
                             <p>
-                                305 Use Proxy indicaba que un recurso debía solicitarse a través de un proxy.  
-                                Ya no se usa debido a riesgos de seguridad.  
-                                Navegadores modernos lo ignoran y no lo implementan.  
+                                305 Use Proxy indicaba que un recurso debía solicitarse a través de un proxy.
+                                Ya no se usa debido a riesgos de seguridad.
+                                Navegadores modernos lo ignoran y no lo implementan.
                                 Se recomienda configurar proxies en la red directamente, en lugar de usar este código.
                             </p>
 
-                            <h1 id="code307">307</h1>   
+                            <h1 id="code307">307</h1>
 
                             <p>
-                                El código 307 Temporary Redirect indica que el recurso solicitado se ha movido temporalmente a 
+                                El código 307 Temporary Redirect indica que el recurso solicitado se ha movido temporalmente a
                                 otra URL, pero el cliente debe seguir usando el mismo método HTTP al realizar la nueva solicitud.
                             </p>
 
@@ -1118,113 +1118,119 @@ export function HttpCode() {
 
                             <p>
                                 Redirecciones temporales sin alterar la solicitud original
-                                Si un recurso cambia de ubicación temporalmente, pero se espera que vuelva a la URL original.  
-                                Evitar problemas con clientes que cambian el método HTTP 
-                                Algunos navegadores convierten POST en GET con 302 Found, pero 307 mantiene el método. 
+                                Si un recurso cambia de ubicación temporalmente, pero se espera que vuelva a la URL original.
+                                Evitar problemas con clientes que cambian el método HTTP
+                                Algunos navegadores convierten POST en GET con 302 Found, pero 307 mantiene el método.
                                 Balanceo de carga o mantenimiento
-                                Redirigir temporalmente a otro servidor sin afectar las solicitudes originales.  
+                                Redirigir temporalmente a otro servidor sin afectar las solicitudes originales.
                             </p>
 
                             <p>
-                                307 Temporary Redirect indica que el recurso se movió temporalmente, pero el cliente debe seguir 
-                                usando el mismo método HTTP. Es más seguro que 302 cuando se quiere mantener POST, PUT, etc.  
-                                Se usa en mantenimiento de sitios, balanceo de carga o cambios temporales de URL.  
+                                307 Temporary Redirect indica que el recurso se movió temporalmente, pero el cliente debe seguir
+                                usando el mismo método HTTP. Es más seguro que 302 cuando se quiere mantener POST, PUT, etc.
+                                Se usa en mantenimiento de sitios, balanceo de carga o cambios temporales de URL.
                             </p>
 
                             <h1 id="code308">308</h1>
 
                             <p>
-                                El código 308 Permanent Redirect indica que el recurso solicitado se ha movido permanentemente a 
-                                una nueva URL, y el cliente debe seguir usando el mismo método HTTP al realizar futuras solicitudes.  
+                                El código 308 Permanent Redirect indica que el recurso solicitado se ha movido permanentemente a
+                                una nueva URL, y el cliente debe seguir usando el mismo método HTTP al realizar futuras solicitudes.
                             </p>
 
                             <h2>Usos comunes</h2>
 
                             <p>
-                                Migración permanente de un recurso o API  
-                                Cuando se cambia una URL de forma definitiva.  
+                                Migración permanente de un recurso o API
+                                Cuando se cambia una URL de forma definitiva.
                             </p>
 
                             <p>
                                 Evitar problemas con clientes que cambian el método HTTP
-                                Algunos navegadores convierten POST en GET con 301 Moved Permanently, 
-                                pero 308 mantiene el método original.  
-                            </p>      
+                                Algunos navegadores convierten POST en GET con 301 Moved Permanently,
+                                pero 308 mantiene el método original.
+                            </p>
 
                             <p>
                                 Reubicación de endpoints en APIs
-                                Si una API cambia la ruta de un recurso, se puede usar 308 para 
+                                Si una API cambia la ruta de un recurso, se puede usar 308 para
                                 evitar romper clientes que aún usan la URL antigua.
-                            </p>          
+                            </p>
 
                             <p>
-                                308 Permanent Redirect indica que un recurso se ha movido permanentemente a una nueva URL.  
-                                Asegura que el método HTTP original se mantenga (POST sigue siendo POST).  
-                                Se usa en migraciones de sitios, cambios de URL de APIs y reubicación de recursos.  
-                            </p>  
+                                308 Permanent Redirect indica que un recurso se ha movido permanentemente a una nueva URL.
+                                Asegura que el método HTTP original se mantenga (POST sigue siendo POST).
+                                Se usa en migraciones de sitios, cambios de URL de APIs y reubicación de recursos.
+                            </p>
 
-                            <h1 id="code400">400</h1>      
+                            <h1 id="code400">400</h1>
 
                             <p>
-                                El código 400 Bad Request indica que el servidor no puede procesar la solicitud debido a un error del cliente. Esto suele ocurrir por:  
-                                Sintaxis incorrecta en la solicitud.  
-                                Datos inválidos o mal formateados.  
-                                Falta de parámetros requeridos.  
-                                Encabezados HTTP incorrectos o mal formateados.  
-                                El cliente debe corregir la solicitud antes de intentarla nuevamente.  
+                                El código 400 Bad Request indica que el servidor no puede procesar la solicitud debido a un error del cliente. Esto suele ocurrir por:
+                                Sintaxis incorrecta en la solicitud.
+                                Datos inválidos o mal formateados.
+                                Falta de parámetros requeridos.
+                                Encabezados HTTP incorrectos o mal formateados.
+                                El cliente debe corregir la solicitud antes de intentarla nuevamente.
                             </p>
 
                             <h2>Usos comunes</h2>
 
                             <p>
-                                Errores de validación  
-                                Si faltan parámetros requeridos o los valores tienen un formato incorrecto.  
-                                Solicitud mal estructurada  
-                                Por ejemplo, si el JSON enviado tiene errores de sintaxis.  
+                                Errores de validación
+                                Si faltan parámetros requeridos o los valores tienen un formato incorrecto.
+                                Solicitud mal estructurada
+                                Por ejemplo, si el JSON enviado tiene errores de sintaxis.
                             </p>
-                            
+
                             <p>
-                                Encabezados incorrectos o ausentes  
+                                Encabezados incorrectos o ausentes
                                 Como enviar datos JSON sin el encabezado Content-Type: application/json.
                             </p>
 
                             <p>
-                                Datos fuera de los límites permitidos  
+                                Datos fuera de los límites permitidos
                                 Ejemplo: enviar un número negativo en un campo que solo acepta valores positivos.
                             </p>
-                                
-                            <p>  
-                                400 Bad Request ocurre cuando el cliente envía una solicitud incorrecta o mal formada.  
-                                El servidor no la puede procesar hasta que el cliente la corrija.  
-                                Se usa para validaciones de datos, errores de sintaxis y encabezados incorrectos.  
+
+                            <p>
+                                400 Bad Request ocurre cuando el cliente envía una solicitud incorrecta o mal formada.
+                                El servidor no la puede procesar hasta que el cliente la corrija.
+                                Se usa para validaciones de datos, errores de sintaxis y encabezados incorrectos.
                             </p>
 
                             <h1 id="code401">401</h1>
 
                             <p>
-                                El código 401 Unauthorized indica que el cliente **no está autenticado** o **las credenciales proporcionadas son inválidas**.  
+                                El código 401 Unauthorized indica que el cliente **no está autenticado** o **las credenciales proporcionadas son inválidas**.
                             </p>
 
                             <h2>Usos comunes</h2>
 
                             <p>
-                                Autenticación requerida  
-                                El usuario debe iniciar sesión antes de acceder a la API.  
+                                Autenticación requerida
+                                El usuario debe iniciar sesión antes de acceder a la API.
                             </p>
 
                             <p>
                                 Credenciales incorrectas
-                                Usuario y contraseña inválidos en autenticación básica.  
+                                Usuario y contraseña inválidos en autenticación básica.
                             </p>
 
                             <p>
-                                Token de sesión vencido o inválido  
-                                El usuario debe renovar su sesión.  
+                                Token de sesión vencido o inválido
+                                El usuario debe renovar su sesión.
                             </p>
 
                             <p>
-                                No se envió un token de autenticación  
-                                La API espera un JWT, API Key o OAuth token.  
+                                No se envió un token de autenticación
+                                La API espera un JWT, API Key o OAuth token.
+                            </p>
+
+                            <p>
+                                401 Unauthorized significa que el cliente debe autenticarse primero.
+                                Se usa en APIs protegidas, sesiones de usuario y servicios OAuth.
+                                Se corrige enviando credenciales válidas o renovando el token.
                             </p>
 
                         </DivContent>
@@ -1285,11 +1291,6 @@ Authorization: Bearer <TOKEN_VALIDO>
 ```
 
 ---
-
-#### ✅ **Resumen**  
-- **401 Unauthorized** significa que el cliente debe autenticarse primero.  
-- Se usa en **APIs protegidas, sesiones de usuario y servicios OAuth**.  
-- Se corrige enviando credenciales válidas o renovando el token.  
 
 Si necesitas ayuda con autenticación en **JWT, OAuth o API Keys**, dime qué estás usando. 🚀
 
