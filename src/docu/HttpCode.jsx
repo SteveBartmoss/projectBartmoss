@@ -1244,58 +1244,6 @@ export function HttpCode() {
 
 /*
 
---- codigo 401
-
-### 🔹 **Código de respuesta HTTP 401 - Unauthorized**  
-
-#### 📌 **Descripción**  
-El código **401 Unauthorized** indica que el cliente **no está autenticado** o **las credenciales proporcionadas son inválidas**.  
-
-🚫 **Diferencia con 403 Forbidden**:  
-- **401**: Falta autenticación o es incorrecta.  
-- **403**: El cliente está autenticado pero no tiene permisos para acceder.  
-
----
-
-#### 📝 **Ejemplo de respuesta con código 401**  
-
-📌 **Escenario:** Un usuario intenta acceder a un recurso protegido sin autenticarse.  
-
-📌 **Solicitud sin autenticación:**  
-
-```
-GET /api/perfil HTTP/1.1
-Host: ejemplo.com
-```
-
-📌 **Respuesta del servidor:**  
-
-```
-HTTP/1.1 401 Unauthorized
-WWW-Authenticate: Bearer realm="Acceso restringido"
-Content-Type: application/json
-
-{
-    "error": "No autorizado. Inicie sesión para continuar."
-}
-```
-
-📌 **Corrección:** El cliente debe incluir un **token de autenticación** válido en los encabezados.  
-
-📌 **Solicitud corregida con autenticación:**  
-
-```
-GET /api/perfil HTTP/1.1
-Host: ejemplo.com
-Authorization: Bearer <TOKEN_VALIDO>
-```
-
----
-
-Si necesitas ayuda con autenticación en **JWT, OAuth o API Keys**, dime qué estás usando. 🚀
-
---- termina 401
-
 --- codigo 402
 
 ### 🔹 **Código de respuesta HTTP 402 - Payment Required**  
