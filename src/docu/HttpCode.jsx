@@ -1266,6 +1266,12 @@ export function HttpCode() {
                                 Un usuario con facturas vencidas puede recibir un **402** antes de que su cuenta sea suspendida.  
                             </p>
 
+                            <p>
+                                402 Payment Required se usa cuando un recurso **requiere pago** para acceder.  
+                                Es común en plataformas de suscripción, APIs premium y servicios SaaS.  
+                                Se resuelve completando el pago o renovando la suscripción. 
+                            </p>
+
                         </DivContent>
                     </DivArticle>
                 </DivCol>
@@ -1306,10 +1312,6 @@ Content-Type: application/json
 
 ---
 
-#### ✅ **Resumen**  
-- **402 Payment Required** se usa cuando un recurso **requiere pago** para acceder.  
-- Es común en **plataformas de suscripción, APIs premium y servicios SaaS**.  
-- Se resuelve **completando el pago o renovando la suscripción**.  
 
 Si necesitas ayuda para manejar pagos en tu API, dime qué sistema usas (Stripe, PayPal, etc.). 🚀
 
