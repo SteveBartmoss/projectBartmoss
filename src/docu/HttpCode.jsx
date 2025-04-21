@@ -1247,6 +1247,25 @@ export function HttpCode() {
                                 APIs lo implementan para restringir contenido a usuarios sin suscripción activa.  
                             </p>
 
+                            <h2>Usos comunes</h2>
+
+                            <p>
+                                Servicios de suscripción  
+                                Plataformas como **Netflix, Spotify o periódicos digitales** pueden usarlo para 
+                                restringir contenido a usuarios no suscritos.  
+                            </p>
+
+                            <p>
+                                APIs con planes pagos  
+                                Servicios como OpenAI, Stripe o Google Maps API pueden devolver un 402 si se supera 
+                                el límite de uso gratuito.  
+                            </p>
+
+                            <p>
+                                Pagos pendientes en plataformas SaaS  
+                                Un usuario con facturas vencidas puede recibir un **402** antes de que su cuenta sea suspendida.  
+                            </p>
+
                         </DivContent>
                     </DivArticle>
                 </DivCol>
@@ -1284,19 +1303,6 @@ Content-Type: application/json
 ```
 
 📌 **Corrección:** El usuario debe completar el pago para acceder.  
-
----
-
-#### 🎯 **Casos de uso comunes**  
-
-✔ **Servicios de suscripción**  
-   - Plataformas como **Netflix, Spotify o periódicos digitales** pueden usarlo para restringir contenido a usuarios no suscritos.  
-
-✔ **APIs con planes pagos**  
-   - Servicios como **OpenAI, Stripe o Google Maps API** pueden devolver un **402** si se supera el límite de uso gratuito.  
-
-✔ **Pagos pendientes en plataformas SaaS**  
-   - Un usuario con facturas vencidas puede recibir un **402** antes de que su cuenta sea suspendida.  
 
 ---
 
