@@ -1283,39 +1283,7 @@ export function HttpCode() {
 
 /*
 
---- codigo 402
 
-#### 📝 **Ejemplo de respuesta con código 402**  
-
-📌 **Escenario:** Un usuario intenta acceder a un artículo premium sin haber pagado la suscripción.  
-
-📌 **Solicitud del usuario:**  
-
-```
-GET /contenido-premium HTTP/1.1
-Host: ejemplo.com
-Authorization: Bearer <TOKEN_VALIDO>
-```
-
-📌 **Respuesta del servidor:**  
-
-```
-HTTP/1.1 402 Payment Required
-Content-Type: application/json
-
-{
-    "error": "Debes suscribirte para acceder a este contenido."
-}
-```
-
-📌 **Corrección:** El usuario debe completar el pago para acceder.  
-
----
-
-
-Si necesitas ayuda para manejar pagos en tu API, dime qué sistema usas (Stripe, PayPal, etc.). 🚀
-
---- termina 402
 
 --- code 403
 
