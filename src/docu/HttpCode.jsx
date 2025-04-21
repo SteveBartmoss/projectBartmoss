@@ -125,6 +125,10 @@ export function HttpCode() {
                     titulo: '401',
                     id: 'code401',
                 },
+                {
+                    titulo: '402',
+                    id: 'code402',
+                },
             ]
         }
     ]
@@ -1233,6 +1237,16 @@ export function HttpCode() {
                                 Se corrige enviando credenciales válidas o renovando el token.
                             </p>
 
+                            <h1 id="code402">402</h1>
+
+                            <p>
+                                El código 402 Payment Required indica que el acceso al recurso requiere un pago, 
+                                pero la solicitud no ha sido procesada porque no se ha realizado o confirmado el pago.  
+                                Aunque este código fue reservado inicialmente para sistemas de pago digital, no se 
+                                usa ampliamente en la web actual. Sin embargo, algunas plataformas de suscripción y 
+                                APIs lo implementan para restringir contenido a usuarios sin suscripción activa.  
+                            </p>
+
                         </DivContent>
                     </DivArticle>
                 </DivCol>
@@ -1245,15 +1259,6 @@ export function HttpCode() {
 /*
 
 --- codigo 402
-
-### 🔹 **Código de respuesta HTTP 402 - Payment Required**  
-
-#### 📌 **Descripción**  
-El código **402 Payment Required** indica que el acceso al recurso **requiere un pago**, pero la solicitud no ha sido procesada porque no se ha realizado o confirmado el pago.  
-
-Aunque este código fue reservado inicialmente para **sistemas de pago digital**, no se usa ampliamente en la web actual. Sin embargo, algunas plataformas de suscripción y APIs lo implementan para restringir contenido a usuarios sin suscripción activa.  
-
----
 
 #### 📝 **Ejemplo de respuesta con código 402**  
 
