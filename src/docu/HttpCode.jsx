@@ -129,6 +129,10 @@ export function HttpCode() {
                     titulo: '402',
                     id: 'code402',
                 },
+                {
+                    titulo: '403',
+                    id: 'code$03',
+                }
             ]
         }
     ]
@@ -1272,6 +1276,20 @@ export function HttpCode() {
                                 Se resuelve completando el pago o renovando la suscripción. 
                             </p>
 
+                            <h1 id="code403">402</h1>
+
+                            <p>  
+                                El código 403 Forbidden indica que el servidor ha entendido la solicitud, pero echaza el acceso 
+                                porque el cliente no tiene permisos suficientes.  
+                            </p>
+
+                            <h2>Diferencia con 401 Unauthorized</h2>
+
+                            <p>
+                                401: El usuario no está autenticado o su sesión es inválida.  
+                                403: El usuario está autenticado, pero **no tiene autorización** para acceder al recurso.  
+                            </p>
+
                         </DivContent>
                     </DivArticle>
                 </DivCol>
@@ -1286,17 +1304,6 @@ export function HttpCode() {
 
 
 --- code 403
-
-### 🔹 **Código de respuesta HTTP 403 - Forbidden**  
-
-#### 📌 **Descripción**  
-El código **403 Forbidden** indica que el servidor ha entendido la solicitud, pero **rechaza el acceso** porque el cliente **no tiene permisos suficientes**.  
-
-🚫 **Diferencia con 401 Unauthorized**:  
-- **401**: El usuario no está autenticado o su sesión es inválida.  
-- **403**: El usuario está autenticado, pero **no tiene autorización** para acceder al recurso.  
-
----
 
 #### 📝 **Ejemplo de respuesta con código 403**  
 
