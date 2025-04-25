@@ -34,8 +34,30 @@ export function WhatIsGit() {
                 Distribuido: A diferencia de otros sistemas de control de versiones que requieren un servidor central, Git es distribuido, lo que significa que cada desarrollador tiene una copia completa del historial del proyecto. Esto mejora la redundancia y permite trabajar sin conexión.
               </p>
 
+              <h2>Instalacion</h2>
+
+              <h3>Windows</h3>
+
               <p>
                 Para instalar git en un sistema windows debemos ir al siguiente enlace:
+              </p>
+
+              <p>
+                Una vez que visitamos el enlace basta con descargar el setup para windows y simplemento seguir la tipica instalacion de cualquier programa de windows
+              </p>
+
+              <h3>MacOs</h3>
+
+              <p>
+                Para instalar git en un sistema de apple es un poco diferente, pues primero nos pide instalar homebrew y luego simplemente tenemos que usar el siguiente comando
+              </p>
+
+              <p>
+                brew install git
+              </p>
+
+              <p>
+                Esto nos permite instalar git de una forma rapida y cencilla
               </p>
 
             </DivContent>
