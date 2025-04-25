@@ -1115,6 +1115,8 @@ export function HttpCode() {
                                 Se recomienda configurar proxies en la red directamente, en lugar de usar este código.
                             </p>
 
+                            <Divider />
+
                             <h1 id="code307">307</h1>
 
                             <p>
@@ -1138,6 +1140,8 @@ export function HttpCode() {
                                 usando el mismo método HTTP. Es más seguro que 302 cuando se quiere mantener POST, PUT, etc.
                                 Se usa en mantenimiento de sitios, balanceo de carga o cambios temporales de URL.
                             </p>
+
+                            <Divider />
 
                             <h1 id="code308">308</h1>
 
@@ -1170,6 +1174,8 @@ export function HttpCode() {
                                 Asegura que el método HTTP original se mantenga (POST sigue siendo POST).
                                 Se usa en migraciones de sitios, cambios de URL de APIs y reubicación de recursos.
                             </p>
+
+                            <Divider />
 
                             <h1 id="code400">400</h1>
 
@@ -1207,6 +1213,8 @@ export function HttpCode() {
                                 Se usa para validaciones de datos, errores de sintaxis y encabezados incorrectos.
                             </p>
 
+                            <Divider />
+
                             <h1 id="code401">401</h1>
 
                             <p>
@@ -1240,6 +1248,8 @@ export function HttpCode() {
                                 Se usa en APIs protegidas, sesiones de usuario y servicios OAuth.
                                 Se corrige enviando credenciales válidas o renovando el token.
                             </p>
+
+                            <Divider />
 
                             <h1 id="code402">402</h1>
 
@@ -1275,6 +1285,8 @@ export function HttpCode() {
                                 Es común en plataformas de suscripción, APIs premium y servicios SaaS.  
                                 Se resuelve completando el pago o renovando la suscripción. 
                             </p>
+
+                            <Divider />
 
                             <h1 id="code403">402</h1>
 
