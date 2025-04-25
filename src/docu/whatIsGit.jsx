@@ -60,6 +60,20 @@ export function WhatIsGit() {
                 Esto nos permite instalar git de una forma rapida y cencilla
               </p>
 
+              <h3>Linux</h3>
+
+              <p>
+                En caso de que el sistema operativo sea alguna distro de linux entonces la forma de instalar git puede variar ligeramente, 
+                lo mas comun es que se use un gestor de paquetes y basta con un simple comando para instalar el software pero dependiendo 
+                de la distribucion este gesto cambia
+              </p>
+
+              <h3>Debian y derivados</h3>
+
+              <p>
+                Para las distribuciones basadas en debian se puede usar elk siguiente comando para instalar git
+              </p>
+
             </DivContent>
           </DivArticle>
         </DivCol>
