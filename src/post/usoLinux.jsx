@@ -42,6 +42,13 @@ export function UsoLinux() {
                                 pensara que simplemente tenia que instalar los controladores y todo estaria resuelto, pero yo era un usuario novato asi que
                                 no sabia como hacer esto y simplemente decidi reinstalar todo de nuevo.
                             </p>
+
+                            <h2>Tener los recursos para ti</h2>
+
+                            <p>
+                                Cuando la mala experiencia de la instalacion paso note algo interesante al usar el nuevo sistema 
+                                operativo 
+                            </p>
                         </DivContent>
                     </DivArticle>
                 </DivCol>
