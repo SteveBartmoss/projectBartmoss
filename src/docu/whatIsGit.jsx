@@ -97,6 +97,18 @@ export function WhatIsGit() {
                 pacman -S git
               </p>
 
+              <h3>openSUSE</h3>
+
+              <p>
+                zypper install git
+              </p>
+
+              <h3>Mageia</h3>
+
+              <p>
+                urpmi git
+              </p>
+
             </DivContent>
           </DivArticle>
         </DivCol>
