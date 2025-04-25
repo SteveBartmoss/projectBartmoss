@@ -74,6 +74,29 @@ export function WhatIsGit() {
                 Para las distribuciones basadas en debian se puede usar elk siguiente comando para instalar git
               </p>
 
+              <p>
+                apt-get install git
+              </p>
+
+              <h3>Fedora</h3>
+
+              <p>
+                yum install git
+                dnf install git
+              </p>
+
+              <h3>Gentoo</h3>
+
+              <p>
+                emerge --ask --verbose dev-vcs/git
+              </p>
+
+              <h3>Arch Linux</h3>
+
+              <p>
+                pacman -S git
+              </p>
+
             </DivContent>
           </DivArticle>
         </DivCol>
