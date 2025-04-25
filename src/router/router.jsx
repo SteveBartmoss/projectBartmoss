@@ -31,6 +31,7 @@ import { HttpCode } from "../docu/HttpCode";
 import { CronosJs } from "../pages/portfolio/cronosjs/cronos";
 import { JsAmbiente } from "../docu/JsAmbiente";
 import { FundamentosJs } from "../docu/fundamentosJs";
+import { UsoLinux } from "../post/usoLinux";
 
 
 export function RouterBlog(){
@@ -63,6 +64,7 @@ export function RouterBlog(){
                 <Route path="steve/pilasinfin" element={<PilaSinFin />} />
                 <Route path="steve/pimpterminal" element={<PimpTerminal />} />
                 <Route path="steve/mascomplejo" element={<MasComplejo/>} />
+                <Route path="steve/usolinux" element={<UsoLinux />} />
 
                 <Route path="portfolio/yesornot" element={<YesOrNot />}/> 
                 <Route path="portfolio/findgif" element={<FindGif />} />
