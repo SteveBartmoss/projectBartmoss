@@ -210,8 +210,8 @@ export function HttpCode() {
 
                             <p>
                                 Requisitos:
-                                El cliente incluye un encabezado `Upgrade` especificando el protocolo al que desea cambiar.
-                                El servidor responde con un encabezado `Upgrade` confirmando el cambio.
+                                El cliente incluye un encabezado Upgrade especificando el protocolo al que desea cambiar.
+                                El servidor responde con un encabezado Upgrade confirmando el cambio.
                             </p>
 
                             <Divider />
@@ -220,8 +220,8 @@ export function HttpCode() {
 
                             <p>
                                 El código de respuesta 102 Processing es parte del protocolo HTTP/1.1 y está definido en la
-                                especificación RFC 2518 (https://www.rfc-editor.org/rfc/rfc2518), que introduce extensiones
-                                para el protocolo HTTP en el contexto de Web Distributed Authoring and Versioning (WebDAV).
+                                especificación RFC 2518, que introduce extensiones para el protocolo HTTP en el contexto de 
+                                Web Distributed Authoring and Versioning (WebDAV).
                             </p>
 
                             <h2>Propósito del Código 102 Processing</h2>
@@ -234,15 +234,18 @@ export function HttpCode() {
                             <h2>Usos Comunes</h2>
 
                             <p>
-                                WebDAV: Se utiliza en operaciones complejas de WebDAV, como cuando se ejecutan múltiples operaciones en recursos (por ejemplo, copiar o mover un árbol de directorios).
-                                Evitar Timeouts: Responde al cliente que el servidor aún está trabajando en la solicitud, para evitar que el cliente asuma que la conexión se ha perdido.
+                                WebDAV: Se utiliza en operaciones complejas de WebDAV, como cuando se ejecutan múltiples 
+                                operaciones en recursos (por ejemplo, copiar o mover un árbol de directorios).
+                                Evitar Timeouts: Responde al cliente que el servidor aún está trabajando en la solicitud, 
+                                para evitar que el cliente asuma que la conexión se ha perdido.
                             </p>
 
                             <h2>Características Principales</h2>
 
                             <p>
                                 Indicación de Progreso: Sirve como una señal al cliente de que la solicitud no ha sido olvidada.
-                                No Finaliza la Solicitud: La respuesta `102 Processing` no es una respuesta final. La operación sigue en curso.
+                                No Finaliza la Solicitud: La respuesta 102 Processing no es una respuesta final. La operación 
+                                sigue en curso.
                                 Uso Limitado: Normalmente utilizado en contextos específicos (como WebDAV) y no en solicitudes HTTP estándar.
                             </p>
 
@@ -261,21 +264,24 @@ export function HttpCode() {
 
                             <p>
                                 Reduce el tiempo de carga de la página web.
-                                Permite a los clientes obtener una "pista temprana" sobre recursos críticos que probablemente necesitarán para procesar la solicitud completa.
+                                Permite a los clientes obtener una "pista temprana" sobre recursos críticos que probablemente 
+                                necesitarán para procesar la solicitud completa.
                             </p>
 
                             <h2>Usos Comunes</h2>
 
                             <p>
-                                Se utiliza principalmente con encabezados como `Link` para indicar los recursos que el navegador puede cargar anticipadamente.
-                                Común en aplicaciones que implementan HTTP/2 o HTTP/3, ya que estas versiones del protocolo soportan bien la multiplexación.
+                                Se utiliza principalmente con encabezados como Link para indicar los recursos que el navegador 
+                                puede cargar anticipadamente. Común en aplicaciones que implementan HTTP/2 o HTTP/3, ya que estas 
+                                versiones del protocolo soportan bien la multiplexación.
                             </p>
 
                             <h2>Flujo de Trabajo</h2>
 
                             <p>
-                                El servidor responde inicialmente con un código `103 Early Hints`, incluyendo encabezados que apuntan a recursos necesarios.
-                                Luego, el servidor envía la respuesta completa con el estado final, como `200 OK`.
+                                El servidor responde inicialmente con un código 103 Early Hints, incluyendo encabezados que 
+                                apuntan a recursos necesarios.
+                                Luego, el servidor envía la respuesta completa con el estado final, como 200 OK.
                             </p>
 
                             <h2>Ventajas</h2>
@@ -288,12 +294,13 @@ export function HttpCode() {
                             <h2>Soporte y Consideraciones</h2>
 
                             <p>
-                                Algunos navegadores modernos ya soportan el código `103`, pero su adopción aún no es universal.
+                                Algunos navegadores modernos ya soportan el código 103, pero su adopción aún no es universal.
                                 Debe usarse junto con protocolos que admitan conexiones rápidas y paralelas, como HTTP/2.
                             </p>
 
                             <p>
-                                El código `103 Early Hints` es una herramienta poderosa para optimizar tiempos de carga y mejorar la experiencia del usuario en la web.
+                                El código 103 Early Hints es una herramienta poderosa para optimizar tiempos de carga y 
+                                mejorar la experiencia del usuario en la web.
                             </p>
 
                             <Divider />
@@ -350,9 +357,9 @@ export function HttpCode() {
                             <h1 id="code201">201</h1>
 
                             <p>
-                                El código de estado `201 Created` indica que una solicitud HTTP ha sido procesada con éxito y ha resultado en la
+                                El código de estado 201 Created indica que una solicitud HTTP ha sido procesada con éxito y ha resultado en la
                                 creación de un nuevo recurso. La ubicación del recurso recién creado generalmente se proporciona en el encabezado
-                                `Location` de la respuesta.
+                                Location de la respuesta.
                             </p>
 
                             <h1>Características Principales</h1>
@@ -360,7 +367,7 @@ export function HttpCode() {
                             <h3>Método Usual</h3>
 
                             <p>
-                                Generalmente asociado con solicitudes `POST` o `PUT`.
+                                Generalmente asociado con solicitudes POST o PUT.
                             </p>
 
                             <h3>Encabezado Location</h3>
@@ -449,7 +456,7 @@ export function HttpCode() {
                             <h1 id="code203">203</h1>
 
                             <p>
-                                El código de estado `203 Non-Authoritative Information` indica que la solicitud se ha procesado con éxito, pero la respuesta no contiene información del servidor de origen. En cambio, la información de la respuesta puede haber sido modificada por un servidor intermedio, como un proxy o una caché.
+                                El código de estado 203 Non-Authoritative Information indica que la solicitud se ha procesado con éxito, pero la respuesta no contiene información del servidor de origen. En cambio, la información de la respuesta puede haber sido modificada por un servidor intermedio, como un proxy o una caché.
 
                                 Este código se utiliza principalmente en escenarios donde el servidor intermedio devuelve datos que no provienen directamente de la fuente original o han sido transformados.
                             </p>
@@ -459,7 +466,7 @@ export function HttpCode() {
                             <p>
                                 No Original: La información devuelta puede no coincidir con la del servidor de origen.
                                 Uso Raro: Su uso en APIs modernas es inusual, pero puede ser relevante en configuraciones específicas.
-                                Método Usual: Frecuentemente asociado con solicitudes `GET`.
+                                Método Usual: Frecuentemente asociado con solicitudes GET.
                             </p>
 
                             <h2>Usos Comunes</h2>
@@ -482,9 +489,9 @@ export function HttpCode() {
                             </p>
 
                             <p>
-                                Aunque su uso es raro, el código `203` tiene aplicaciones específicas en sistemas con servidores
+                                Aunque su uso es raro, el código 203 tiene aplicaciones específicas en sistemas con servidores
                                 intermediarios que manipulan o transforman datos. En la mayoría de los casos, los códigos como
-                                `200 OK` o `304 Not Modified` son suficientes para representar el estado de una respuesta.
+                                200 OK o 304 Not Modified son suficientes para representar el estado de una respuesta.
                             </p>
 
                             <Divider />
@@ -502,14 +509,14 @@ export function HttpCode() {
                             <p>
                                 Sin Contenido en el Cuerpo: La respuesta incluye solo los encabezados HTTP.
                                 Mantiene el Estado del Cliente: Ideal cuando el cliente no necesita recargar su interfaz o cambiar su estado como resultado de la respuesta.
-                                Métodos Usuales: Frecuentemente usado con `DELETE`, `PUT`, o acciones que actualizan datos sin necesidad de retroalimentación al cliente.
+                                Métodos Usuales: Frecuentemente usado con DELETE, PUT, o acciones que actualizan datos sin necesidad de retroalimentación al cliente.
                             </p>
 
                             <h2>Usos Comunes</h2>
 
                             <p>
                                 Confirmación Sin Contenido: Se necesita confirmar que la acción fue exitosa sin enviar datos adicionales. Ejemplo: Confirmar que
-                                se eliminó un recurso con éxito tras un `DELETE`.
+                                se eliminó un recurso con éxito tras un DELETE.
 
                                 Optimización de Respuestas: Reducir la cantidad de datos transferidos al cliente cuando no es necesario enviar contenido.
                                 Ejemplo: Al guardar automáticamente un borrador sin cambiar la interfaz del cliente.
@@ -544,9 +551,9 @@ export function HttpCode() {
                             <h2>Características Principales</h2>
 
                             <p>
-                                Sin Cuerpo de Respuesta: Similar al código `204`, no incluye contenido en el cuerpo.
+                                Sin Cuerpo de Respuesta: Similar al código 204, no incluye contenido en el cuerpo.
                                 Acción Requerida por el Cliente: Se utiliza cuando el cliente debe realizar un restablecimiento visual o funcional.
-                                Métodos Usuales: A menudo asociado con solicitudes como `POST`, `PUT` o `DELETE`.
+                                Métodos Usuales: A menudo asociado con solicitudes como POST, PUT o DELETE.
                             </p>
 
                             <h2>Usos Comunes</h2>
@@ -589,7 +596,7 @@ export function HttpCode() {
                             <h1 id="code206">206</h1>
 
                             <p>
-                                El código de estado `206 Partial Content` indica que el servidor ha procesado exitosamente una solicitud parcial de un recurso. Esto sucede cuando el cliente utiliza el encabezado `Range` para pedir una parte específica del recurso, como una sección de un archivo grande.
+                                El código de estado 206 Partial Content indica que el servidor ha procesado exitosamente una solicitud parcial de un recurso. Esto sucede cuando el cliente utiliza el encabezado Range para pedir una parte específica del recurso, como una sección de un archivo grande.
                             </p>
 
                             <h2>Características Principales</h2>
@@ -619,9 +626,9 @@ export function HttpCode() {
                             <h2>Ventajas</h2>
 
                             <p>
-                                Content-Range: Especifica el rango del recurso devuelto (por ejemplo, `bytes 0-1023/1048576`).
+                                Content-Range: Especifica el rango del recurso devuelto (por ejemplo, bytes 0-1023/1048576).
                                 Content-Length: Indica el tamaño de la porción devuelta.
-                                Accept-Ranges: En una solicitud previa, el servidor puede indicar si soporta rangos con este encabezado (por ejemplo, `bytes`).
+                                Accept-Ranges: En una solicitud previa, el servidor puede indicar si soporta rangos con este encabezado (por ejemplo, bytes).
                             </p>
 
                             <p>
@@ -698,7 +705,7 @@ export function HttpCode() {
                             </p>
 
                             <p>
-                                Usos en WebDAV: Exclusivo para operaciones WebDAV como `PROPFIND`, donde se listan propiedades o recursos jerárquicos.
+                                Usos en WebDAV: Exclusivo para operaciones WebDAV como PROPFIND, donde se listan propiedades o recursos jerárquicos.
                             </p>
 
                             <p>
@@ -714,7 +721,7 @@ export function HttpCode() {
 
                             <p>
                                 Optimización en Consultas WebDAV:
-                                Reduce la cantidad de datos enviados en respuestas `PROPFIND` o similares, optimizando el uso de red y procesamiento.
+                                Reduce la cantidad de datos enviados en respuestas PROPFIND o similares, optimizando el uso de red y procesamiento.
                             </p>
 
                             <p>
@@ -822,7 +829,7 @@ export function HttpCode() {
                             <h1 id='code300'>300</h1>
 
                             <p>
-                                El código de estado HTTP **300 Multiple Choices** indica que el recurso solicitado tiene
+                                El código de estado HTTP 300 Multiple Choices indica que el recurso solicitado tiene
                                 múltiples representaciones posibles y el cliente debe elegir una. Esta respuesta se usa
                                 cuando hay varias opciones disponibles para un mismo recurso, y el servidor proporciona
                                 información sobre esas opciones para que el cliente seleccione la más adecuada.
@@ -1002,7 +1009,7 @@ export function HttpCode() {
                             <p>
                                 Indica que el recurso solicitado no se encuentra en la misma ubicación, pero el cliente debe hacer una
                                 nueva solicitud usando el método GET a la URL proporcionada en el encabezado Location. Se usa comúnmente
-                                para evitar que un cliente reenvíe datos de un formulario después de enviarlo con POS`, redirigiéndolo a
+                                para evitar que un cliente reenvíe datos de un formulario después de enviarlo con POS, redirigiéndolo a
                                 una nueva URL con GET.
                             </p>
 
@@ -1041,8 +1048,8 @@ export function HttpCode() {
                             <h1 id="code304">304</h1>
 
                             <p>
-                                El código de estado **304 Not Modified** indica que el recurso solicitado **no ha cambiado** desde la última vez que el cliente lo obtuvo.
-                                El servidor usa este código para decirle al navegador o a un cliente HTTP que **puede usar la versión almacenada en caché**, en lugar de descargar el recurso nuevamente.
+                                El código de estado 304 Not Modified indica que el recurso solicitado no ha cambiado desde la última vez que el cliente lo obtuvo.
+                                El servidor usa este código para decirle al navegador o a un cliente HTTP que puede usar la versión almacenada en caché, en lugar de descargar el recurso nuevamente.
                             </p>
 
                             <h2>Usos comunes</h2>
