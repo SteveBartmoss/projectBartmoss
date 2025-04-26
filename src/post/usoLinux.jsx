@@ -47,7 +47,13 @@ export function UsoLinux() {
 
                             <p>
                                 Cuando la mala experiencia de la instalacion paso note algo interesante al usar el nuevo sistema 
-                                operativo 
+                                operativo ya que normalmente el uso de memoria suele mayor, por ejemplo si tienes instalado solo 4gigas 
+                                de ram, windows suele usar 3.5 gigas o un poco menos asi que te queda libre muy poca memoria  y solo te queda 
+                                una cantidad decente si tienes instalado al menos 16 gigas de ram. Cuando trabajaba con ubuntu esto no era asi 
+                                pues podia ver en el monitos de recursos como tenia disponibles 7 gigas de ram de los 8 que tenia la laptop, esto 
+                                me sorprendio bastante pues no pense que algo asi fuera posible y ademas se podia notar que el uso de ram era mas 
+                                eficiente pues nunca se sentian lentos los precesos y tampoco se queda colgada la computadora cuando abria 
+                                algun otro programa.
                             </p>
                         </DivContent>
                     </DivArticle>
