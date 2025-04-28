@@ -6,6 +6,12 @@ export function SteveTimeLine() {
         <div>
 
             <TimeItem fecha="13/02/2025" autor="steve" texto="
+                Bueno si han pasado muchas cosas desde la ultima 
+                vez que actualice este contenido, quiza deberia hacer 
+                esta seccion mas interesante
+            "/>
+
+            <TimeItem fecha="13/02/2025" autor="steve" texto="
                 Hay un tipo en Venezuela que quiere morir tranquilo
                 Planea meterse un tiro en un banquillo 'e callejón
                 Hasta que un ciego le dijo que la vida es un suspiro
