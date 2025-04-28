@@ -220,7 +220,7 @@ export function HttpCode() {
 
                             <p>
                                 El código de respuesta 102 Processing es parte del protocolo HTTP/1.1 y está definido en la
-                                especificación RFC 2518, que introduce extensiones para el protocolo HTTP en el contexto de 
+                                especificación RFC 2518, que introduce extensiones para el protocolo HTTP en el contexto de
                                 Web Distributed Authoring and Versioning (WebDAV).
                             </p>
 
@@ -234,9 +234,9 @@ export function HttpCode() {
                             <h2>Usos Comunes</h2>
 
                             <p>
-                                WebDAV: Se utiliza en operaciones complejas de WebDAV, como cuando se ejecutan múltiples 
+                                WebDAV: Se utiliza en operaciones complejas de WebDAV, como cuando se ejecutan múltiples
                                 operaciones en recursos (por ejemplo, copiar o mover un árbol de directorios).
-                                Evitar Timeouts: Responde al cliente que el servidor aún está trabajando en la solicitud, 
+                                Evitar Timeouts: Responde al cliente que el servidor aún está trabajando en la solicitud,
                                 para evitar que el cliente asuma que la conexión se ha perdido.
                             </p>
 
@@ -244,7 +244,7 @@ export function HttpCode() {
 
                             <p>
                                 Indicación de Progreso: Sirve como una señal al cliente de que la solicitud no ha sido olvidada.
-                                No Finaliza la Solicitud: La respuesta 102 Processing no es una respuesta final. La operación 
+                                No Finaliza la Solicitud: La respuesta 102 Processing no es una respuesta final. La operación
                                 sigue en curso.
                                 Uso Limitado: Normalmente utilizado en contextos específicos (como WebDAV) y no en solicitudes HTTP estándar.
                             </p>
@@ -264,22 +264,22 @@ export function HttpCode() {
 
                             <p>
                                 Reduce el tiempo de carga de la página web.
-                                Permite a los clientes obtener una "pista temprana" sobre recursos críticos que probablemente 
+                                Permite a los clientes obtener una "pista temprana" sobre recursos críticos que probablemente
                                 necesitarán para procesar la solicitud completa.
                             </p>
 
                             <h2>Usos Comunes</h2>
 
                             <p>
-                                Se utiliza principalmente con encabezados como Link para indicar los recursos que el navegador 
-                                puede cargar anticipadamente. Común en aplicaciones que implementan HTTP/2 o HTTP/3, ya que estas 
+                                Se utiliza principalmente con encabezados como Link para indicar los recursos que el navegador
+                                puede cargar anticipadamente. Común en aplicaciones que implementan HTTP/2 o HTTP/3, ya que estas
                                 versiones del protocolo soportan bien la multiplexación.
                             </p>
 
                             <h2>Flujo de Trabajo</h2>
 
                             <p>
-                                El servidor responde inicialmente con un código 103 Early Hints, incluyendo encabezados que 
+                                El servidor responde inicialmente con un código 103 Early Hints, incluyendo encabezados que
                                 apuntan a recursos necesarios.
                                 Luego, el servidor envía la respuesta completa con el estado final, como 200 OK.
                             </p>
@@ -299,7 +299,7 @@ export function HttpCode() {
                             </p>
 
                             <p>
-                                El código 103 Early Hints es una herramienta poderosa para optimizar tiempos de carga y 
+                                El código 103 Early Hints es una herramienta poderosa para optimizar tiempos de carga y
                                 mejorar la experiencia del usuario en la web.
                             </p>
 
@@ -1261,52 +1261,75 @@ export function HttpCode() {
                             <h1 id="code402">402</h1>
 
                             <p>
-                                El código 402 Payment Required indica que el acceso al recurso requiere un pago, 
-                                pero la solicitud no ha sido procesada porque no se ha realizado o confirmado el pago.  
-                                Aunque este código fue reservado inicialmente para sistemas de pago digital, no se 
-                                usa ampliamente en la web actual. Sin embargo, algunas plataformas de suscripción y 
-                                APIs lo implementan para restringir contenido a usuarios sin suscripción activa.  
+                                El código 402 Payment Required indica que el acceso al recurso requiere un pago,
+                                pero la solicitud no ha sido procesada porque no se ha realizado o confirmado el pago.
+                                Aunque este código fue reservado inicialmente para sistemas de pago digital, no se
+                                usa ampliamente en la web actual. Sin embargo, algunas plataformas de suscripción y
+                                APIs lo implementan para restringir contenido a usuarios sin suscripción activa.
                             </p>
 
                             <h2>Usos comunes</h2>
 
                             <p>
-                                Servicios de suscripción  
-                                Plataformas como **Netflix, Spotify o periódicos digitales** pueden usarlo para 
-                                restringir contenido a usuarios no suscritos.  
+                                Servicios de suscripción
+                                Plataformas como **Netflix, Spotify o periódicos digitales** pueden usarlo para
+                                restringir contenido a usuarios no suscritos.
                             </p>
 
                             <p>
-                                APIs con planes pagos  
-                                Servicios como OpenAI, Stripe o Google Maps API pueden devolver un 402 si se supera 
-                                el límite de uso gratuito.  
+                                APIs con planes pagos
+                                Servicios como OpenAI, Stripe o Google Maps API pueden devolver un 402 si se supera
+                                el límite de uso gratuito.
                             </p>
 
                             <p>
-                                Pagos pendientes en plataformas SaaS  
-                                Un usuario con facturas vencidas puede recibir un **402** antes de que su cuenta sea suspendida.  
+                                Pagos pendientes en plataformas SaaS
+                                Un usuario con facturas vencidas puede recibir un **402** antes de que su cuenta sea suspendida.
                             </p>
 
                             <p>
-                                402 Payment Required se usa cuando un recurso **requiere pago** para acceder.  
-                                Es común en plataformas de suscripción, APIs premium y servicios SaaS.  
-                                Se resuelve completando el pago o renovando la suscripción. 
+                                402 Payment Required se usa cuando un recurso **requiere pago** para acceder.
+                                Es común en plataformas de suscripción, APIs premium y servicios SaaS.
+                                Se resuelve completando el pago o renovando la suscripción.
                             </p>
 
                             <Divider />
 
                             <h1 id="code403">402</h1>
 
-                            <p>  
-                                El código 403 Forbidden indica que el servidor ha entendido la solicitud, pero echaza el acceso 
-                                porque el cliente no tiene permisos suficientes.  
+                            <p>
+                                El código 403 Forbidden indica que el servidor ha entendido la solicitud, pero echaza el acceso
+                                porque el cliente no tiene permisos suficientes.
                             </p>
 
                             <h2>Diferencia con 401 Unauthorized</h2>
 
                             <p>
-                                401: El usuario no está autenticado o su sesión es inválida.  
-                                403: El usuario está autenticado, pero **no tiene autorización** para acceder al recurso.  
+                                401: El usuario no está autenticado o su sesión es inválida.
+                                403: El usuario está autenticado, pero **no tiene autorización** para acceder al recurso.
+                            </p>
+
+                            <h2>Usos comunes</h2>
+
+                            <p>
+                                Restricción de acceso por roles
+                                Un usuario normal intenta acceder a un panel de administración.
+                            </p>
+
+                            <p>
+                                Protección de recursos sensibles
+                                Intento de acceder a archivos restringidos en el servidor.
+                            </p>
+
+                            <p>
+                                Restricciones de IP o región
+                                Un usuario fuera de un país permitido intenta acceder a un servicio.
+                            </p>
+
+                            <p>
+
+                                Intento de modificar datos sin permiso
+                                Un usuario intenta borrar datos de otra cuenta sin permisos.
                             </p>
 
                         </DivContent>
@@ -1348,22 +1371,6 @@ Content-Type: application/json
 ```
 
 📌 **Corrección:** El usuario necesita **permisos de administrador** o acceder con otra cuenta.  
-
----
-
-#### 🎯 **Casos de uso comunes**  
-
-✔ **Restricción de acceso por roles**  
-   - Un usuario normal intenta acceder a un **panel de administración**.  
-
-✔ **Protección de recursos sensibles**  
-   - Intento de acceder a **archivos restringidos** en el servidor.  
-
-✔ **Restricciones de IP o región**  
-   - Un usuario fuera de un país permitido intenta acceder a un servicio.  
-
-✔ **Intento de modificar datos sin permiso**  
-   - Un usuario intenta **borrar datos de otra cuenta** sin permisos.  
 
 ---
 
