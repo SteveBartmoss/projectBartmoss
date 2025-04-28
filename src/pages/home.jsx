@@ -48,20 +48,21 @@ export function Home() {
 
                 <h1>Ultimos post</h1>
                 <DivTopicos>
-                    <DivGrow>
-                        {
-                            dataPost && Array.isArray(dataPost) ? (
-                                dataPost.map(item =>
-                                    <Card key={item.titulo}>
-                                        <h1>{item.titulo}</h1>
-                                        <p>{item.descripcion}</p>
-                                    </Card>
-                                )
-                            ) : (
-                                <p>Caragando informacion ...</p>
+                    {
+                        dataPost && Array.isArray(dataPost) ? (
+                            dataPost.map(item =>
+                                <Card key={item.titulo}>
+                                    <h1>{item.titulo}</h1>
+                                    <p>{item.descripcion}</p>
+                                    <CardAccions>
+                                        <CardLink url={`steve/${item.url}`} text={'Ir al articulo'} />
+                                    </CardAccions>
+                                </Card>
                             )
-                        }
-                    </DivGrow>
+                        ) : (
+                            <p>Caragando informacion ...</p>
+                        )
+                    }
                 </DivTopicos>
 
             </DivSection>
