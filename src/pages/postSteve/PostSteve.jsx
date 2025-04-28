@@ -1,8 +1,19 @@
+import { useEffect, useState } from "react";
 import { Card, CardAccions, CardLink } from "../../componentes/card/card";
 import { DivSection } from "../../componentes/contenedores/contenedores";
 
 
 export function PostSteve() {
+
+    const [dataPost, setDataPost] = useState(null)
+
+    useEffect(() => {
+        fetch('/data/stevePost.json')
+            .then((response) => response.json())
+            .then((jsonData) => setDataPost(jsonData))
+            .catch((error) => console.log('Error: ',error))
+    }, [])
+
     return (
         <>
             
