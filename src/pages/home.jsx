@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { DivGrow, DivRow, DivSection, DivTopicos } from "../componentes/contenedores/contenedores";
 import { Portada } from "../componentes/portada/portada";
-import { Card } from "../componentes/card/card";
+import { Card, CardAccions, CardLink } from "../componentes/card/card";
 
 export function Home() {
 
@@ -29,21 +29,21 @@ export function Home() {
             <DivSection>
                 <h1>Ultimos Articulos</h1>
                 <DivTopicos>
-
-                    <DivGrow>
-                        {
-                            dataDocu && Array.isArray(dataDocu) ? (
-                                dataDocu.map(item =>
-                                    <Card key={item.titulo}>
-                                        <h1>{item.titulo}</h1>
-                                        <p>{item.descripcion}</p>
-                                    </Card>
-                                )
-                            ) : (
-                                <p>Cargando informacion ...</p>
+                    {
+                        dataDocu && Array.isArray(dataDocu) ? (
+                            dataDocu.map(item =>
+                                <Card size={30} key={item.titulo}>
+                                    <h1>{item.titulo}</h1>
+                                    <p>{item.descripcion}</p>
+                                    <CardAccions>
+                                        <CardLink url={`docu/${item.url}`} text={'Ir al articulo'} />
+                                    </CardAccions>
+                                </Card>
                             )
-                        }
-                    </DivGrow>
+                        ) : (
+                            <p>Cargando informacion ...</p>
+                        )
+                    }
                 </DivTopicos>
 
                 <h1>Ultimos post</h1>
