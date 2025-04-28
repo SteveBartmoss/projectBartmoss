@@ -18,7 +18,7 @@ export function Home() {
         fetch('/data/stevePost.json')
             .then((response) => response.json())
             .then((jsonData) => setDataPost(jsonData))
-            .catch((error) => console.log('Error: ',error))
+            .catch((error) => console.log('Error: ', error))
 
     }, [])
 
@@ -44,6 +44,10 @@ export function Home() {
                             )
                         }
                     </DivGrow>
+                </DivTopicos>
+
+                <h1>Ultimos post</h1>
+                <DivTopicos>
                     <DivGrow>
                         {
                             dataPost && Array.isArray(dataPost) ? (
