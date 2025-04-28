@@ -33,17 +33,6 @@ export function PostSteve() {
                 </Card>
 
                 <Card size={30}>
-                    <h1>Pimp my Terminal</h1>
-                    <p>
-                        Trabajar en una terminal no te obliga
-                        a tener que ser aburrido
-                    </p>
-                    <CardAccions>
-                        <CardLink url={'pimpterminal'} text={'Ir al articulo'} />
-                    </CardAccions>
-                </Card>
-
-                <Card size={30}>
                     <h1>Haslo tu mismo</h1>
                     <p>
                         No te agrada un programa, entonces haslo
@@ -53,6 +42,18 @@ export function PostSteve() {
                         <CardLink url={'mascomplejo'} text={'Ir al articulo'} />
                     </CardAccions>
                 </Card>
+
+                <Card size={30}>
+                    <h1>Mi experiencia usando linux</h1>
+                    <p>
+                        El sistema operativo del pinguino 
+                        es mejor de lo que parece
+                    </p>
+                    <CardAccions>
+                        <CardLink url={'usolinux'} text={'Ir al articulo'} />
+                    </CardAccions>
+                </Card>
+
             </DivSection>
         </>
     )
