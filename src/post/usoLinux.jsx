@@ -68,6 +68,20 @@ export function UsoLinux() {
                                 no dejaba de responder del todo si no que hacia lo posible por terminar procesos, poco a poco iba liberando los procesos 
                                 en cola asi que por unos minutos se congelaba parcialmente pero se iba recuperando con el tiempo.
                             </p>
+
+                            <h2>Todo con un simple comando</h2>
+
+                            <p>
+                                Otro de los aspectos que me sorprendio al usar el sistema fue la facilidad con la que podia instalar programas, 
+                                si puede que pienses que esto es una contradiccion al ser linux un sistema en el que los ejecutables como los de 
+                                windows no existen pero la verdad es que el gestor de paquete de ubuntu y las distribuciones basadas en debian 
+                                es bastante bueno y al menos en mi caso la mayoria de herramientas de desarrollo estab disponibles por apt. En los 
+                                casos en los que no existia un paquete bastaba con buscar la aplicacion desde el navegador y era comun encontrar 
+                                un paquete de tipo .deb que es el estandar para las distribuciones basadas en debian y que se instalar con el 
+                                mismo gestor de paquetes, realmente fueron pocos los programas que no podia instalar mediante el gestor de paquetes 
+                                pero es importante aclarar que en mi caso solo usaba mi equipo para desarollar y puede que si lo usas mas como 
+                                equipo de recreacion y diario si notes que ciertas aplicaciones no estan disponibles.
+                            </p>
                         </DivContent>
                     </DivArticle>
                 </DivCol>
