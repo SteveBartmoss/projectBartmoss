@@ -1,8 +1,11 @@
 [
-  <TimeItem fecha="08/11/2024" autor="Steve"
-                texto="Bueno eso si fue un mes interesante, 
-                pero bueno volvemos a la normalidad, faltan 19 dias 
-                para navidad" />
+  {
+    "fecha":"08/11/2024", 
+    "autor":"Steve",
+    "texto":"Bueno eso si fue un mes interesante, pero bueno volvemos a la normalidad, faltan 19 dias para navidad"
+  }
+  <TimeItem 
+                 />
 
             <TimeItem fecha="08/11/2024" autor="Steve" 
                 texto="De nuevo viernes, trabajo todo el dia 
@@ -111,48 +114,52 @@
             <TimeItem fecha="11/10/2024" autor="Steve"
                 texto="Bueno otro dia, otro programa mas XD"
                 />
-                
-            <TimeItem fecha="10/10/2024" autor="Steve"
-                texto="whats the matter pumpkin? 
-                (Que te pasa calabaza?)" />
 
-            <TimeItem fecha="9/10/2024" autor="Steve"
-                texto="Bueno la libreria esta mejor, 
-                espero que pronto se pueda liberar la 
-                version 1" />
-
-            <TimeItem fecha="8/10/2024" autor="Steve"
-                texto="Caracoles jimbo el socialismo de 
-                you tube no funciona" />
-
-            <TimeItem fecha="7/10/2024" autor="Steve"
-                texto="jujuy, ya casi hay descuentos del 
-                festival de terror en steam" />
-
-            <TimeItem fecha="03/10/2024" autor="Steve"
-                texto="Alguien nerfee a nintendo, tiene m
-                mucho poder XD" />
-
-            <TimeItem fecha="02/10/2024" autor="Steve"
-                texto="Bueno es hora de comprar cartones, 
-                de todas formas ya no tengo nada que perder" 
-                />
-
-            <TimeItem fecha="30/09/2024" autor="Steve" 
-                texto="Bueno otro gobierno termina, 
-                algunos piensan que trae un cambio pero 
-                se cambia un tirano por otro" />
-
-            <TimeItem fecha="26/09/2024" autor="Steve" 
-                texto="Vulnerabilidad en linux de 9.9, 
-                la realidad esta en peligro date prisa 
-                goku" />
-
-            <TimeItem fecha="25/09/2024" autor="Steve" 
-                texto="I cant believe, today was a good 
-                day" />
-
-            
+  {
+    "fecha": "10/10/2024", 
+    "autor": "Steve",
+    "texto": "whats the matter pumpkin? (Que te pasa calabaza?)"
+  },
+  {
+    "fecha": "9/10/2024", 
+    "autor": "Steve",
+    "texto": "Bueno la libreria esta mejor, espero que pronto se pueda liberar la version 1"
+  },
+  {
+    "fecha": "8/10/2024", 
+    "autor": "Steve",
+    "texto": "Caracoles jimbo el socialismo de you tube no funciona"
+  },
+  {
+    "fecha": "7/10/2024", 
+    "autor": "Steve",
+    "texto": "jujuy, ya casi hay descuentos del festival de terror en steam"
+  },
+  {
+    "fecha": "03/10/2024", 
+    "autor": "Steve",
+    "texto": "Alguien nerfee a nintendo, tiene mucho poder XD"
+  },
+  {
+    "fecha":"02/10/2024", 
+    "autor": "Steve",
+    "texto": "Bueno es hora de comprar cartones, de todas formas ya no tengo nada que perder"
+  },
+  {
+    "fecha": "30/09/2024", 
+    "autor": "Steve", 
+    "texto": "Bueno otro gobierno termina, algunos piensan que trae un cambio pero se cambia un tirano por otro"
+  },
+  {
+    "fecha": "26/09/2024", 
+    "autor": "Steve", 
+    "texto": "Vulnerabilidad en linux de 9.9, la realidad esta en peligro date prisa goku"
+  },
+  {
+    "fecha": "25/09/2024", 
+    "autor": "Steve",
+    "texto": "I cant believe, today was a good day"
+  },    
   {
     "fecha": "24/09/2024", 
     "autor": "Steve",
