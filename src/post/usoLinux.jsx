@@ -5,7 +5,7 @@ import { Portada } from "../componentes/portada/portada";
 export function UsoLinux() {
     return (
         <>
-            <Portada imgPortada={"/Assets/steveA.png"} title={"Usar linux"} text={"Por Steve 25/04/2025"} />
+            <Portada imgPortada={"/Assets/steveA.png"} title={"Mi experiencia con linux"} text={"Por Steve 25/04/2025"} />
 
             <DivRow>
                 <DivCol>
