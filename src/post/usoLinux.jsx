@@ -55,6 +55,19 @@ export function UsoLinux() {
                                 eficiente pues nunca se sentian lentos los precesos y tampoco se queda colgada la computadora cuando abria 
                                 algun otro programa.
                             </p>
+
+                            <p>
+                                Algo que tambien me parecion interesante es que al principio me esforce por llevar la limite el equipo 
+                                ya que con windows era facil congelar el sistema, bastaba con tener mas de 3 programas abierto para 
+                                que se notara que el equipo le costaba trajabar, pero cuando intente hacer lo mismo con ubuntu no lograba 
+                                hacerlo tan facil. Primero probe a mantener corriendo mi proyecto web pero esto realmente no causaba gran impacto 
+                                asi que probe a tener varias pestanas de fireforx abiertas y solo note un ligero cambio en el tiempo en el 
+                                que respondia, decidio que era tiempo de aumentar la carga asi que puse al equipo a descargar archivos de video y 
+                                tambien lo puse a copiar multiples carpetas de un lado a otro. Esto finalmente detuvo el equipo y pense que tendria 
+                                que reiniciarlo como suelo hacer con windows pero me sorprendi al ver que aunque el equipo empezaba a congelarse 
+                                no dejaba de responder del todo si no que hacia lo posible por terminar procesos, poco a poco iba liberando los procesos 
+                                en cola asi que por unos minutos se congelaba parcialmente pero se iba recuperando con el tiempo.
+                            </p>
                         </DivContent>
                     </DivArticle>
                 </DivCol>
