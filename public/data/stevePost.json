@@ -10,13 +10,13 @@
       "url": "pilasinfin"
     },
     {
-      "titulo": "Pimp my terminal",
-      "descripcion": "Trabajar en una terminal no te obliga a tener que ser aburrido",
-      "url": "pimpterminal"
-    },
-    {
       "titulo": "Haslo tu mismo",
       "descripcion": "No te agrada un programa, entonces haslo tu mismo",
       "url": "mascomplejo"
-    }    
+    },
+    {
+      "titulo": "Mi experiencia usando linux",
+      "descripcion": "El sistema operativo del pinguino es mejor de lo que parece",
+      "url": "usolinux"
+    }
 ]
