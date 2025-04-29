@@ -79,42 +79,42 @@
                 texto="Bueno el futuro no es como el doc 
                 lo penso pero quizas estamos en el futuro malo"
                 />
-
-            <TimeItem fecha="21/10/2024" autor="Steve"
-                texto="Ya solo un mes mas y 23 dias para 
-                que sea navidad, que rapido XD"
-                />
-
-            <TimeItem fecha="18/10/2024" autor="Steve"
-                texto="Al fin es viernes, espero este fin 
-                no se pase tan rapido"
-                />
                 
-            <TimeItem fecha="17/10/2024" autor="Steve"
-                texto="Oh no, elon tenia una empresa de ia y 
-                apenas me entero que ya hasta tienen versiones 
-                de su modelo jajaja" 
-                />
-
-            <TimeItem fecha="16/10/2024" autor="Steve"
-                texto="Bueno las brumas son mis aliados no ?, 
-                al menos eso dacia el buen kelsier"
-                />
-
-            <TimeItem fecha="15/10/2024" autor="Steve"
-                texto="Quizas usar un vps para mis proyectos
-                seria buena idea, pero no soy rico asi que 
-                tendra que esperar" />
-
-            <TimeItem fecha="14/10/2024" autor="Steve"
-                texto="Oh no hermano, wordpress esta en 
-                peligro, bueno nunca me gusto ese servicio"
-                />
-
-            <TimeItem fecha="11/10/2024" autor="Steve"
-                texto="Bueno otro dia, otro programa mas XD"
-                />
-
+  {
+    "fecha": "21/10/2024", 
+    "autor": "Steve",
+    "texto": "Ya solo un mes mas y 23 dias para que sea navidad, que rapido XD"
+  },
+  {
+    "fecha": "18/10/2024", 
+    "autor": "Steve",
+    "texto": "Al fin es viernes, espero este fin no se pase tan rapido"
+  },            
+  {
+    "fecha": "17/10/2024", 
+    "autor": "Steve",
+    "texto": "Oh no, elon tenia una empresa de ia y penas me entero que ya hasta tienen versiones de su modelo jajaja"
+  },
+  {
+    "fecha": "16/10/2024", 
+    "autor": "Steve",
+    "texto": "Bueno las brumas son mis aliados no ?, al menos eso dacia el buen kelsier"
+  },
+  {
+    "fecha": "15/10/2024", 
+    "autor": "Steve",
+    "texto": "Quizas usar un vps para mis proyectos seria buena idea, pero no soy rico asi que tendra que esperar"
+  },
+  {
+    "fecha": "14/10/2024", 
+    "autor": "Steve",
+    "texto": "Oh no hermano, wordpress esta en peligro, bueno nunca me gusto ese servicio"
+  },
+  {
+    "fecha": "11/10/2024", 
+    "autor": "Steve",
+    "texto": "Bueno otro dia, otro programa mas XD"
+  },
   {
     "fecha": "10/10/2024", 
     "autor": "Steve",
