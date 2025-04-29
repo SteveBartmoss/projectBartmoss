@@ -85,7 +85,11 @@ export function UsoLinux() {
 
                             <p>
                                 Una de las mejores herramientas que tiene un sistema de tipo linux es la terminal ya que es bastante buena y supera 
-                                las terminales de macos y windows, 
+                                las terminales de macos y windows, por lo general se usa bash pero esto es opcional ya que se puede instalar alguna 
+                                otra terminal que se quiera usar. Los comandos que se usa en el sistema linux son bastantes utiles pero ademas hacen 
+                                mas sentido que algunos comandos de windows (ya que los comandos de macos son muy similares) y con el tiempo se volvio 
+                                una gran herramienta de desarollo y en general del sistema pues gran parte del tiempo en el que usas el sistema operativo 
+                                lo pasaras en la consola configurando algo del sistema o instalando paquetes.
                             </p>
                         </DivContent>
                     </DivArticle>
