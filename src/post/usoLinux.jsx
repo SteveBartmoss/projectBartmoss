@@ -82,6 +82,11 @@ export function UsoLinux() {
                                 pero es importante aclarar que en mi caso solo usaba mi equipo para desarollar y puede que si lo usas mas como 
                                 equipo de recreacion y diario si notes que ciertas aplicaciones no estan disponibles.
                             </p>
+
+                            <p>
+                                Una de las mejores herramientas que tiene un sistema de tipo linux es la terminal ya que es bastante buena y supera 
+                                las terminales de macos y windows, 
+                            </p>
                         </DivContent>
                     </DivArticle>
                 </DivCol>
