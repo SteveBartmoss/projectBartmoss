@@ -91,6 +91,19 @@ export function UsoLinux() {
                                 una gran herramienta de desarollo y en general del sistema pues gran parte del tiempo en el que usas el sistema operativo 
                                 lo pasaras en la consola configurando algo del sistema o instalando paquetes.
                             </p>
+
+                            <h2>Personalizacion a otro nivel</h2>
+
+                            <p>
+                                Otra de las cosas que puede notar es que el nivel de personalizacion que permite este sistema es mayor a la que normalmente 
+                                permite otros sistemas, con esto no me refiero a que puedas cambiar el color de enfasis o poner una imagen como fondo de pantalla 
+                                mas bien me refiero a que el sistema permite cambiar la estructura del propio sistema. No te gusta el sistema de archivos? puedes 
+                                cambiarlo, el escritorio no de agrada? busca alguno que se masa llamativo e instalalo, la gran mayoria de elementos que componen 
+                                el sistema operativo pueden ser modificados y reemplazados por otro elemento diferente. En el caso de que ninguna opcion sea de tu 
+                                agrado incluso puedes crear tu propia version ya que el codigo fuente suele estar disponible para el usuario y puedes realizar 
+                                modificaciones en el mismo.
+                            </p>
+                            
                         </DivContent>
                     </DivArticle>
                 </DivCol>
