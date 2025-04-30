@@ -103,6 +103,13 @@ export function UsoLinux() {
                                 agrado incluso puedes crear tu propia version ya que el codigo fuente suele estar disponible para el usuario y puedes realizar 
                                 modificaciones en el mismo.
                             </p>
+
+                            <p>
+                                Este nivel de personalizacion puede ser un arma de doble filo ya que si bien puedes modificar todo a tu gusto, tambien puedes terminar 
+                                rompiendo tu ditribucion dejandola inservible pero aun asi puedes estar seguro de que aprendiste algo o que aprenderas algo 
+                                tratando de reparar lo que rompiste. En el caso de que no puedas o no quieras pasar tanto tiempo siempre puedes simplemente volver a 
+                                instalar todo el sistema operativo de nuevo y listo, una solucion extremista pero que aun asi puede solucionar un problema de este tipo
+                            </p>
                             
                         </DivContent>
                     </DivArticle>
