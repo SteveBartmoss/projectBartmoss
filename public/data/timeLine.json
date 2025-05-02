@@ -69,17 +69,17 @@
                 texto="Bueno caminar no siempre es malo pero 
                 seria bueno no tener que cuidarse de los asaltos"
                 />
-
-            <TimeItem fecha="22/10/2024" autor="Steve"
-                texto="Wow que palisa esta recibiendo wordpress, 
-                bueno quizas sea ora de usar sus propias tecnologias"
-                />
-
-            <TimeItem fecha="21/10/2024" autor="Steve"
-                texto="Bueno el futuro no es como el doc 
-                lo penso pero quizas estamos en el futuro malo"
-                />
                 
+  {
+    "fecha": "22/10/2024", 
+    "autor": "Steve",
+    "texto": "Wow que palisa esta recibiendo wordpress, bueno quizas sea ora de usar sus propias tecnologias"
+  },
+  {
+    "fecha": "21/10/2024",  
+    "autor": "Steve",
+    "texto": "Bueno el futuro no es como el doc lo penso pero quizas estamos en el futuro malo"
+  },         
   {
     "fecha": "21/10/2024", 
     "autor": "Steve",
