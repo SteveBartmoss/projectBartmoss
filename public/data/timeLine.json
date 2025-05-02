@@ -59,17 +59,17 @@
                 texto="Viernes pero a que costo, bueno al menos 
                 sera un mini puente"
                 />
-
-            <TimeItem fecha="24/10/2024" autor="Steve" 
-                texto="Como que What Was I Made For originalmente
-                no lleva maullidos"
-                />
-
-            <TimeItem fecha="23/10/2024" autor="Steve"
-                texto="Bueno caminar no siempre es malo pero 
-                seria bueno no tener que cuidarse de los asaltos"
-                />
                 
+  {
+    "fecha": "24/10/2024", 
+    "autor": "Steve", 
+    "texto": "Como que What Was I Made For originalmente no lleva maullidos"
+  },
+  {
+    "fecha":"23/10/2024", 
+    "autor": "Steve",
+    "texto": "Bueno caminar no siempre es malo pero seria bueno no tener que cuidarse de los asaltos"
+  },
   {
     "fecha": "22/10/2024", 
     "autor": "Steve",
