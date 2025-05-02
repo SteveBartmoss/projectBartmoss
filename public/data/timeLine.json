@@ -3,20 +3,17 @@
     "fecha":"08/11/2024", 
     "autor":"Steve",
     "texto":"Bueno eso si fue un mes interesante, pero bueno volvemos a la normalidad, faltan 19 dias para navidad"
-  }
-  <TimeItem 
-                 />
-
-            <TimeItem fecha="08/11/2024" autor="Steve" 
-                texto="De nuevo viernes, trabajo todo el dia 
-                y entonces despierto"
-                />
-
-            <TimeItem fecha="07/11/2024" autor="Steve"
-                texto="Las brumas aumentan cada vez mas, 
-                podria este ser el fin ?"
-                />
-                
+  },
+  {
+    "fecha": "08/11/2024", 
+    "autor": "Steve", 
+    "texto": "De nuevo viernes, trabajo todo el dia y entonces despierto"
+  },
+  {
+    "fecha": "07/11/2024", 
+    "autor": "Steve",
+    "texto": "Las brumas aumentan cada vez mas, podria este ser el fin ?"
+  },        
   {
     "fecha": "06/11/2024",
     "autor": "Steve",
