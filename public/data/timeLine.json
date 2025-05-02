@@ -16,22 +16,22 @@
                 texto="Las brumas aumentan cada vez mas, 
                 podria este ser el fin ?"
                 />
-
-            <TimeItem fecha="06/11/2024" autor="Steve"
-                texto="jajaja, pero eso que tiene que ver con la 
-                navidad"
-                />
-
-            <TimeItem fecha="04/11/2024" autor="Steve"
-                texto="Bueno esta vez no paso tan rapido el tiempo, 
-                pero aun asi, sigue sin ser suficiente"
-                />
-
-            <TimeItem fecha="01/11/2024" autor="Steve"
-                texto="Al fin es viernes, espero esta 
-                vez no se pase tan rapido"
-                />
                 
+  {
+    "fecha": "06/11/2024",
+    "autor": "Steve",
+    "texto": "jajaja, pero eso que tiene que ver con la navidad"
+  },
+  {
+    "fecha": "04/11/2024", 
+    "autor": "Steve",
+    "texto": "Bueno esta vez no paso tan rapido el tiempo, pero aun asi, sigue sin ser suficiente"
+  },
+  {
+    "fecha": "01/11/2024", 
+    "autor": "Steve",
+    "texto": "Al fin es viernes, espero esta vez no se pase tan rapido"
+  },          
   {
     "fecha": "31/10/2024", 
     "autor": "Steve",
