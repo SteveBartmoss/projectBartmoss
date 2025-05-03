@@ -1,9 +1,205 @@
 [
-  {
-    "fecha":"08/11/2024", 
-    "autor":"Steve",
-    "texto":"Bueno eso si fue un mes interesante, pero bueno volvemos a la normalidad, faltan 19 dias para navidad"
-  },
+  <TimeItem fecha="13/02/2025" autor="steve" texto="
+                Bueno si han pasado muchas cosas desde la ultima 
+                vez que actualice este contenido, quiza deberia hacer 
+                esta seccion mas interesante
+            "/>
+
+            <TimeItem fecha="13/02/2025" autor="steve" texto="
+                Hay un tipo en Venezuela que quiere morir tranquilo
+                Planea meterse un tiro en un banquillo 'e callejón
+                Hasta que un ciego le dijo que la vida es un suspiro
+                Basta verla diferente pa que ella sea mejor
+            "/>
+
+            <TimeItem fecha="12/02/2025" autor="steve" texto="
+                Y con una coraza va, va, va
+                Y todo blanco y negro ve, ve, ve
+                En un espejo un día lo vi y me dijo con su voz
+                ¡Bu!, ¿qué tal es verme a ti?
+            " />
+
+            <TimeItem fecha="11/02/2025" autor="steve" texto="
+                Y con una coraza va, va, va
+                Y todo blanco y negro ve, ve, ve
+                En un espejo un día lo vi y me dijo con su voz
+                ¡Bu!, ¿qué tal es verme a ti?
+            " />
+
+            <TimeItem fecha="10/02/2025" autor="Steve" texto="
+                Pero sientes que hoy debe estar ya terminada
+                Le dice el corazón que la vida es asfixiante
+                Se encierra en su habitación a escribir para sentir que no está aquí
+            " />
+            
+            <TimeItem fecha="6/02/2025" autor="Steve" texto="
+                Y ahora es un adulto más, que vive entre las ánimas
+                De sus recuerdos, ve los días como páginas
+                De un libro sin final que busca terminarlo hoy
+                Como cuando ves el final de una historia sin haber leído nada
+            " />
+
+            <TimeItem fecha="31/01/2025" autor="Steve" texto="
+                Debe madurar temprano, supo que murió su hermano
+                Y, aunque no le han preguntado, le causó un grave dolor
+                Hay un hombre en Venezuela que poco a poco comprende
+                Que la vida es diferente y que pudiera ser mejor
+            " />
+
+            <TimeItem fecha="30/01/2025" autor="Steve" texto="
+                El niño es adolescente, vive solo con su padre
+                Porque su madre se ha ido, dicen, que a un mundo mejor
+                Su padre trabaja fuerte, pero, mientras está ausente
+                La calle, que está caliente, le sirve como tutor
+                
+            "/>
+
+            <TimeItem fecha="29/01/2025" autor="Steve" texto="
+                Y con una coraza va, va, va
+                Y todo blanco y negro ve, ve, ve
+                En un espejo un día lo vi y me dijo con su voz
+                ¡Bu!, ¿qué tal es verme a ti?
+            "/>
+
+            <TimeItem fecha="24/01/2025" autor="Steve" texto="
+               Y con una coraza va, va, va
+                Y todo blanco y negro ve, ve, ve
+                En un espejo un día lo vi y me dijo con su voz
+                ¡Bu!, ¿qué tal es verte a mí?"
+            />
+
+            <TimeItem fecha="23/01/2025" autor="Steve" texto="
+               El niño que ya crecido, por caprichos del destino
+                Recorrió muchos caminos, vive sólo con rencor
+                Nada sueña, ni dormido, no confía ni en sus amigos
+                Porque sabe que el camino fue creado pa'l león
+                "
+            />
+
+            <TimeItem fecha="22/01/2025" autor="Steve" texto="
+               Riendo se pasa el tiempo, jugando olvidas el hambre
+                Hasta que vas comprendiendo la difícil situación
+                Cuando ves un niño afuera jugando con su Nintendo
+                Viendo cómo sus dos padres son como en televisión"
+            />
+
+            <TimeItem fecha="20/01/2025" autor="Steve" texto="
+               Hay un niño en Venezuela que creció como cualquiera
+                Jugando en calles y aceras sin mucha preocupación
+                Es fácil para los niños, que de cualquier forma juegan
+                Sin pensar que el mundo afuera fue creado pa'l león"
+            />
+
+            <TimeItem fecha="18/01/2025" autor="Steve" texto="
+                Para eso están los cantantes
+                Para tocar el corazón
+                La historia de la que hablamos dice así"
+            />
+
+            <TimeItem fecha="16/01/2025" autor="Steve" texto="
+                La razón de lo que soy, la historia que se repite en muchas vidas
+                Pero que no todos pueden
+                Expresar con tu don
+                Y es por eso que tú debes servir de conexión"
+            />
+
+
+            <TimeItem fecha="15/01/2025" autor="Steve" texto="
+                Como cuando tú recuerdas una historia que no debe ser contada
+                Pero escuchas una voz que te dice: cántala 
+                Te exige: por favor, nárrale a tus semejantes"
+            />
+
+            <TimeItem fecha="14/01/2025" autor="Steve" texto="
+                Y hoy la fui a visitar, caminando entre lápidas
+                Y me di cuenta que la vida aquí es muy rápida
+                Aunque ya lo he dicho antes, quiero recordarlo hoy
+                Como cuando tú recuerdas una historia que no debe ser contada"
+            />
+
+            <TimeItem fecha="6/01/2025" autor="Steve" texto="
+                Bueno el 2025 si viene recargado, que nos espera :("
+            />
+
+            <TimeItem fecha="3/01/2025" autor="Steve" texto="
+                Espero este fin de semana, poder inciar el nuevo 
+                proyecto"
+            />
+
+            <TimeItem fecha="2/01/2025" autor="Steve" texto="
+                Como que este nuevo 2025 no tiene semana de 
+                chocolate ?"
+            />
+
+            <TimeItem fecha="1/01/2025" autor="Steve" texto="
+                Bueno, hagamos esto una ultima vez"
+            />
+
+            <TimeItem fecha="31/12/2024" autor="Steve" texto="
+                Que loco, el ultimo time line del 2024, ni siquiera 
+                pense que esto pudiera llegar mas lejos de unos meses"
+            />
+
+            <TimeItem fecha="29/12/2024" autor="Steve" texto="
+                Bueno ahi va otro año, al menos en este no habia 
+                pandemia"
+            />
+
+            <TimeItem fecha="27/12/2024" autor="Steve" texto="
+                Maldito sea el hombre que confía en otro hombre
+                Gran verdad en esa frase se esconde"
+            />
+
+            <TimeItem fecha="26/12/2024" autor="Steve" texto="
+                Supongo que se termino vientos de invierno no ?
+                Deberia seguir sueño de primavera ?"
+            />
+
+            <TimeItem fecha="25/12/2024" autor="Steve" texto="
+                Bueno, hoy fue un buen dia"
+            />
+
+            <TimeItem fecha="24/12/2024" autor="Steve" texto="
+                Si cada caracter del codigo de un software costara, 
+                quizas los clientes lo pensarian dos veces antes de 
+                pedir tantas cosas XD"
+            />
+
+            <TimeItem fecha="23/12/2024" autor="Steve" texto="
+                Un poeta en Venezuela canta con la frente arriba
+                Lo que la razón le diga y lo que dicte el corazón"
+            />
+
+            <TimeItem fecha="22/12/2024" autor="Steve" texto="
+                Hay un tipo en Venezuela que, aunque digan lo que digan
+                Es real como cualquiera que sienta rencor y amor"
+            />
+
+            <TimeItem fecha="20/12/2024" autor="Steve" texto="
+                Hay un tipo en Venezuela que quiere morir tranquilo
+                Planea meterse un tiro en un banquillo'e callejón"
+            />
+
+            <TimeItem fecha="19/12/2024" autor="Steve" texto="
+                Hay un chamo en Venezuela que poco a poco comprende
+                Que la vida es diferente y que pudiera ser mejor
+            " />
+
+            <TimeItem fecha="11/12/2024" autor="Steve" texto="
+                Jajaja ahora si el frio esta potente, el invierno 
+                llego :(
+            " />
+
+            <TimeItem fecha="11/12/2024" autor="Steve"
+                texto="Hay un niño en Venezuela que creció como cualquiera
+                    Jugando en calles y aceras sin mucha preocupación
+                    Es fácil para los niños, que de cualquier forma juegan
+                    Sin pensar que el mundo afuera fue creado pa'l león" />
+
+            <TimeItem fecha="05/12/2024" autor="Steve"
+                texto="Bueno eso si fue un mes interesante, 
+                pero bueno volvemos a la normalidad, faltan 19 dias 
+                para navidad" />
   {
     "fecha": "08/11/2024", 
     "autor": "Steve", 
