@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
-import { DivGrow, DivRow, DivSection, DivTopicos } from "../componentes/contenedores/contenedores";
+import { DivGrow, DivRow, DivSection, DivTopicos, PostCard } from "../componentes/contenedores/contenedores";
 import { Portada } from "../componentes/portada/portada";
 import { Card, CardAccions, CardLink } from "../componentes/card/card";
+import { PostCardAccions, PostCardLink } from "../componentes/postCard/postCard";
 
 export function Home() {
 
@@ -27,6 +28,24 @@ export function Home() {
             <Portada imgPortada={"/Assets/steveA.png"} title={"Void Return"}
                 text={"Blog dedicado a contar la vida de un programador y algunas otras cosas interesates"} />
             <DivSection>
+                <h1>Prueba</h1>
+                <DivTopicos>
+                    {
+                        dataDocu && Array.isArray(dataDocu) ? (
+                            dataDocu.map(item => 
+                                <PostCard key={item.titulo}>
+                                    <h1>{item.titulo}</h1>
+                                    <p>{item.descripcion}</p>
+                                    <PostCardAccions>
+                                        <PostCardLink url={`docu/${item.url}`} text={'Ir al acticulo'} />
+                                    </PostCardAccions>
+                                </PostCard>
+                            )
+                        ) : (
+                            <p>Cargando informacion ...</p>
+                        )
+                    }
+                </DivTopicos>
                 <h1>Ultimos Articulos</h1>
                 <DivTopicos>
                     {
