@@ -8,11 +8,11 @@ export function SteveTimeLine() {
 
     useEffect(() => {
         fetch('/data/timeLine.json')
-            .them((response) => response.json())
+            .then((response) => response.json())
             .then((jsonData) => setDataTimeLine(jsonData))
             .catch((error) => console.log('Error: ',error))
     },[])
-    
+
     return (
         <div>
 
