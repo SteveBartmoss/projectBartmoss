@@ -1,0 +1,49 @@
+.post-card {
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 1rem;
+    font-family: "Poppins";
+}
+
+.dark{
+    background-color: #1E2326;
+    color: #9DA9A0;
+}
+
+.ligth{
+    background-color: #374145;
+    color: #9DA9A0;
+}
+
+.post-card h1 {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.post-card p {
+    font-size: 1.2rem;
+}
+
+.post-card-link {
+    text-decoration: none;
+    color: white;
+    font-family: "Poppins";
+    font-weight: 600;
+    background-color: #149eca;
+    padding: 1rem;
+    border-radius: .5rem;
+}
+
+.post-card-actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.post-card-content {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+}
