@@ -1,7 +1,18 @@
+import { useEffect, useState } from "react";
 import { TimeItem } from "../../componentes/timeItem/timeItem";
 
 
 export function SteveTimeLine() {
+
+    const [dataTimeLine, setDataTimeLine] = useState(null)
+
+    useEffect(() => {
+        fetch('/data/timeLine.json')
+            .them((response) => response.json())
+            .then((jsonData) => setDataTimeLine(jsonData))
+            .catch((error) => console.log('Error: ',error))
+    },[])
+    
     return (
         <div>
 
