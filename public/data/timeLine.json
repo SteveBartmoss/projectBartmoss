@@ -170,26 +170,26 @@
                 Lo que la razón le diga y lo que dicte el corazón"
             />
 
-            <TimeItem fecha="22/12/2024" autor="Steve" texto="
-                Hay un tipo en Venezuela que, aunque digan lo que digan
-                Es real como cualquiera que sienta rencor y amor"
-            />
-
-            <TimeItem fecha="20/12/2024" autor="Steve" texto="
-                Hay un tipo en Venezuela que quiere morir tranquilo
-                Planea meterse un tiro en un banquillo'e callejón"
-            />
-
-            <TimeItem fecha="19/12/2024" autor="Steve" texto="
-                Hay un chamo en Venezuela que poco a poco comprende
-                Que la vida es diferente y que pudiera ser mejor
-            " />
-
-            <TimeItem fecha="11/12/2024" autor="Steve" texto="
-                Jajaja ahora si el frio esta potente, el invierno 
-                llego :(
-            " />
-            
+  {
+    "fecha": "22/12/2024", 
+    "autor": "Steve", 
+    "texto": " Hay un tipo en Venezuela que, aunque digan lo que digan Es real como cualquiera que sienta rencor y amor"
+  },
+  {
+    "fecha": "20/12/2024", 
+    "autor": "Steve", 
+    "texto": " Hay un tipo en Venezuela que quiere morir tranquilo Planea meterse un tiro en un banquillo'e callejón"
+  },
+  {
+    "fecha": "19/12/2024", 
+    "autor": "Steve", 
+    "texto": "Hay un chamo en Venezuela que poco a poco comprende Que la vida es diferente y que pudiera ser mejor"
+  },
+  {
+    "fecha": "11/12/2024", 
+    "autor": "Steve", 
+    "texto": " Jajaja ahora si el frio esta potente, el invierno llego :("
+  },
   {
     "fecha": "11/12/2024", 
     "autor": "Steve",
