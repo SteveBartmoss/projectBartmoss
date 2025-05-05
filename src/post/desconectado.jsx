@@ -1,3 +1,4 @@
+import { AsideContent } from "../componentes/asideContent/asideContent";
 import { DivArticle, DivCol, DivContent, DivRow, DivSection } from "../componentes/contenedores/contenedores";
 import { Portada } from "../componentes/portada/portada";
 
@@ -9,7 +10,7 @@ export function DesconectadoLife() {
 
       <DivRow>
         <DivCol>
-
+          <AsideContent />
         </DivCol>
         <DivCol>
           <DivArticle>
