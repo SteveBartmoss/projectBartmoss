@@ -27,12 +27,15 @@ export function Home() {
         <div>
             <Portada imgPortada={"/Assets/steveA.png"} title={"Void Return"}
                 text={"Blog dedicado a contar la vida de un programador y algunas otras cosas interesates"} />
+
             <DivSection>
-                <h1>Prueba</h1>
-                <DivTopicos>
+
+                <h1>Ultimos Articulos</h1>
+
+                <DivGrow>
                     {
                         dataDocu && Array.isArray(dataDocu) ? (
-                            dataDocu.map(item => 
+                            dataDocu.map(item =>
                                 <PostCard key={item.titulo}>
                                     <h1>{item.titulo}</h1>
                                     <p>{item.descripcion}</p>
@@ -45,44 +48,26 @@ export function Home() {
                             <p>Cargando informacion ...</p>
                         )
                     }
-                </DivTopicos>
-                <h1>Ultimos Articulos</h1>
-                <DivTopicos>
-                    {
-                        dataDocu && Array.isArray(dataDocu) ? (
-                            dataDocu.map(item =>
-                                <Card size={30} key={item.titulo}>
-                                    <h1>{item.titulo}</h1>
-                                    <p>{item.descripcion}</p>
-                                    <CardAccions>
-                                        <CardLink url={`docu/${item.url}`} text={'Ir al articulo'} />
-                                    </CardAccions>
-                                </Card>
-                            )
-                        ) : (
-                            <p>Cargando informacion ...</p>
-                        )
-                    }
-                </DivTopicos>
+                </DivGrow>
 
                 <h1>Ultimos post</h1>
-                <DivTopicos>
+                <DivGrow>
                     {
                         dataPost && Array.isArray(dataPost) ? (
                             dataPost.map(item =>
-                                <Card key={item.titulo}>
+                                <PostCard key={item.titulo}>
                                     <h1>{item.titulo}</h1>
                                     <p>{item.descripcion}</p>
-                                    <CardAccions>
-                                        <CardLink url={`steve/${item.url}`} text={'Ir al articulo'} />
-                                    </CardAccions>
-                                </Card>
+                                    <PostCardAccions>
+                                        <PostCardLink url={`steve/${item.url}`} text={'Ir al articulo'} />
+                                    </PostCardAccions>
+                                </PostCard>
                             )
                         ) : (
                             <p>Caragando informacion ...</p>
                         )
                     }
-                </DivTopicos>
+                </DivGrow>
 
             </DivSection>
         </div>
