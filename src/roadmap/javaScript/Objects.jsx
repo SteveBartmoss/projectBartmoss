@@ -1,5 +1,6 @@
 import { CodeSpace } from "../../componentes/codeSpace/CodeSpace";
 import { CodeSpaceV2 } from "../../componentes/codeSpace/CodeSpaceV2";
+import { CodeSpaceV3 } from "../../componentes/codeSpace/CodeSpaceV3";
 import { DivArticle, DivCol, DivContent, DivRow } from "../../componentes/contenedores/contenedores";
 import { Divider } from "../../componentes/divider/Divider";
 import { Portada } from "../../componentes/portada/portada";
@@ -48,6 +49,9 @@ export function MapObjects() {
                             <p>
                                 En JavaScript, puedes agregar propiedades a un objeto en cualquier momento, incluso después de haberlo creado.
                             </p>
+
+                            <CodeSpaceV3 title={'Ejemplo'} 
+                                rawCode={`const persona = { nombre: "Juan" }\n persona.edad = 30; //Añadiendo la propiedad 'edad' en tiempo de ejecucion \n console.log(persona); //nombre: 'Juan', edad: 30 \n`} />
 
                             <CodeSpaceV2 title={'Ejemplo'}
                                 rawCode={`const persona = { nombre: "Juan" }\n persona.edad = 30; //Añadiendo la propiedad 'edad' en tiempo de ejecucion# \n console.log(persona); //nombre: 'Juan', edad: 30# \n`} />
