@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
-import { DivGrow, DivRow, DivSection, DivTopicos } from "../componentes/contenedores/contenedores";
+import { DivGrow, DivSection } from "../componentes/contenedores/contenedores";
 import { Portada } from "../componentes/portada/portada";
-import { Card, CardAccions, CardLink } from "../componentes/card/card";
 import { PostCard, PostCardAccions, PostCardLink } from "../componentes/postCard/postCard";
 
 export function Home() {
