@@ -1348,37 +1348,6 @@ export function HttpCode() {
 
 /*
 
-
-
---- code 403
-
-#### 📝 **Ejemplo de respuesta con código 403**  
-
-📌 **Escenario:** Un usuario intenta acceder a una página de administración sin ser administrador.  
-
-📌 **Solicitud del usuario:**  
-
-```
-GET /admin HTTP/1.1
-Host: ejemplo.com
-Authorization: Bearer <TOKEN_VALIDO>
-```
-
-📌 **Respuesta del servidor:**  
-
-```
-HTTP/1.1 403 Forbidden
-Content-Type: application/json
-
-{
-    "error": "Acceso denegado. No tienes permisos para ver esta página."
-}
-```
-
-📌 **Corrección:** El usuario necesita **permisos de administrador** o acceder con otra cuenta.  
-
---- termine 403
-
 --  codigo 404
 
 ### 🔹 **Código de respuesta HTTP 404 - Not Found**  
