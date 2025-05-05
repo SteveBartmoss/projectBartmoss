@@ -1,12 +1,13 @@
 import { NavLink } from "react-router-dom";
 import { useApp } from "../../context/contextApp"
+import './postCard.css';
 
 export function PostCard({children}){
 
     const {isDarkTheme} = useApp()
 
     return(
-        <div className={`card-basic ${isDarkTheme ? 'ligth' : 'dark'}`}>
+        <div className={`post-card ${isDarkTheme ? 'ligth' : 'dark'}`}>
             {children}
         </div>
     )
