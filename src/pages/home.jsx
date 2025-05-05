@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import { DivGrow, DivRow, DivSection, DivTopicos, PostCard } from "../componentes/contenedores/contenedores";
+import { DivGrow, DivRow, DivSection, DivTopicos } from "../componentes/contenedores/contenedores";
 import { Portada } from "../componentes/portada/portada";
 import { Card, CardAccions, CardLink } from "../componentes/card/card";
-import { PostCardAccions, PostCardLink } from "../componentes/postCard/postCard";
+import { PostCard, PostCardAccions, PostCardLink } from "../componentes/postCard/postCard";
 
 export function Home() {
 
