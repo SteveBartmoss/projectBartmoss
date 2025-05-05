@@ -1295,7 +1295,7 @@ export function HttpCode() {
 
                             <Divider />
 
-                            <h1 id="code403">402</h1>
+                            <h1 id="code403">403</h1>
 
                             <p>
                                 El código 403 Forbidden indica que el servidor ha entendido la solicitud, pero echaza el acceso
@@ -1327,9 +1327,14 @@ export function HttpCode() {
                             </p>
 
                             <p>
-
                                 Intento de modificar datos sin permiso
                                 Un usuario intenta borrar datos de otra cuenta sin permisos.
+                            </p>
+
+                            <p>
+                                403 Forbidden significa que el acceso está denegado, incluso si el usuario está autenticado.  
+                                Se usa en sistemas con roles, permisos de usuario y seguridad de datos.  
+                                Se resuelve otorgando los permisos correctos o accediendo con otra cuenta.
                             </p>
 
                         </DivContent>
@@ -1371,15 +1376,6 @@ Content-Type: application/json
 ```
 
 📌 **Corrección:** El usuario necesita **permisos de administrador** o acceder con otra cuenta.  
-
----
-
-#### ✅ **Resumen**  
-- **403 Forbidden** significa que el acceso está **denegado**, incluso si el usuario está autenticado.  
-- Se usa en **sistemas con roles, permisos de usuario y seguridad de datos**.  
-- Se resuelve **otorgando los permisos correctos** o accediendo con otra cuenta.  
-
-Si necesitas ayuda con **manejo de roles y permisos en tu API**, dime qué tecnología usas. 🚀
 
 --- termine 403
 
