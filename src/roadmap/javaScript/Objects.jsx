@@ -57,7 +57,7 @@ export function MapObjects() {
                                 También se puede añadir una propiedad usando corchetes [], lo cual es útil cuando el nombre de la propiedad está almacenado en una variable:
                             </p>
 
-                            <CodeSpaceV2 title={'Ejemplo'}
+                            <CodeSpaceV3 title={'Ejemplo'}
                                 rawCode={`const key = "ocupacion";\n persona[key]="Desarrollador";\n`} />
 
                             <h2>Modificar propiedades dinámicamente</h2>
