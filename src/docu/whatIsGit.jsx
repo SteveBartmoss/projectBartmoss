@@ -109,6 +109,24 @@ export function WhatIsGit() {
                 urpmi git
               </p>
 
+              <h3>Nix/MixOs</h3>
+
+              <p>
+                nix-env -i git
+              </p>
+
+              <h3>FreeBSD</h3>
+
+              <p>
+                pkg install git
+              </p>
+
+              <h3>Solaris 9/10/11(OpenCSW)</h3>
+
+              <p>
+                pkgutil -i git
+              </p>
+              
             </DivContent>
           </DivArticle>
         </DivCol>
