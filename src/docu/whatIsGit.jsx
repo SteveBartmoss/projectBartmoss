@@ -4,7 +4,7 @@ import { Portada } from "../componentes/portada/portada"
 export function WhatIsGit() {
   return (
     <>
-      <Portada imgPortada={"/Assets/steveA.png"} title={"El hook Context en react"} text={"Por Steve 03/09/2024"} />
+      <Portada imgPortada={"/Assets/steveA.png"} title={"Git el gestor de versiones mas popular"} text={"Por Steve 06/05/2025"} />
 
       <DivRow>
         <DivCol>
