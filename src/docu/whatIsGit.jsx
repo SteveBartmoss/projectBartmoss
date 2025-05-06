@@ -126,7 +126,39 @@ export function WhatIsGit() {
               <p>
                 pkgutil -i git
               </p>
-              
+
+              <h3>Solaris 11 Express, OpenIndiana</h3>
+
+              <p>
+                pkg install developer/versioning/git
+              </p>
+
+              <h3>OpenBSD</h3>
+
+              <p>
+                pkg_add git
+              </p>
+
+              <h3>Alpine</h3>
+
+              <p>
+                apk add git
+              </p>
+
+              <h3>Red Hat Enterprise Linux, Oracle Linux, CentOS, Scientific Linux, et al.</h3>
+
+              <p>
+                RHEL y sus derivados suelen incluir versiones antiguas de git. 
+                Puede descargar un tarball y compilar desde el código fuente, o utilizar un repositorio de terceros como 
+                el IUS Community Project para obtener una versión más reciente de git.
+              </p>
+
+              <h3>Slitaz</h3>
+
+              <p>
+                tazpkg get-install git
+              </p>
+
             </DivContent>
           </DivArticle>
         </DivCol>
