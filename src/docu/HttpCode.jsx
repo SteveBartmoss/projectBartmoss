@@ -1332,11 +1332,19 @@ export function HttpCode() {
                             </p>
 
                             <p>
-                                403 Forbidden significa que el acceso está denegado, incluso si el usuario está autenticado.  
-                                Se usa en sistemas con roles, permisos de usuario y seguridad de datos.  
+                                403 Forbidden significa que el acceso está denegado, incluso si el usuario está autenticado.
+                                Se usa en sistemas con roles, permisos de usuario y seguridad de datos.
                                 Se resuelve otorgando los permisos correctos o accediendo con otra cuenta.
                             </p>
 
+                            <h1 id="code404">404</h1>
+
+                            <p>
+                                El código **404 Not Found** indica que el servidor **no pudo encontrar** el recurso solicitado. Esto puede deberse a:
+                                - **Una URL incorrecta o inexistente**.
+                                - **Eliminación o movimiento del recurso** sin redirección.
+                                - **Restricciones de acceso** donde el servidor decide no revelar la existencia del recurso.
+                            </p>
                         </DivContent>
                     </DivArticle>
                 </DivCol>
@@ -1351,13 +1359,6 @@ export function HttpCode() {
 --  codigo 404
 
 ### 🔹 **Código de respuesta HTTP 404 - Not Found**  
-
-#### 📌 **Descripción**  
-El código **404 Not Found** indica que el servidor **no pudo encontrar** el recurso solicitado. Esto puede deberse a:  
-- **Una URL incorrecta o inexistente**.  
-- **Eliminación o movimiento del recurso** sin redirección.  
-- **Restricciones de acceso** donde el servidor decide no revelar la existencia del recurso.  
-
 ---
 
 #### 📝 **Ejemplo de respuesta con código 404**  
