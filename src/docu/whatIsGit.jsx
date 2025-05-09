@@ -159,6 +159,19 @@ export function WhatIsGit() {
                 tazpkg get-install git
               </p>
 
+              <h1>Inicializar un repositorio</h1>
+
+              <p>
+                Si ya tenemos un proyecto creado, lo mas simple es que inicializemos un repositorio de git con el siguiente comando
+              </p>
+
+              <p>
+                git init 
+              </p>
+
+              <p>
+                Este comando crea un carpeta con lo necesario para git, (normalmente esta carpeta estara oculta, pero podemos verla de diferentes maneras si es necesario)
+              </p>
             </DivContent>
           </DivArticle>
         </DivCol>
