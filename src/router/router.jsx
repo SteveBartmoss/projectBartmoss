@@ -32,6 +32,7 @@ import { CronosJs } from "../pages/portfolio/cronosjs/cronos";
 import { JsAmbiente } from "../docu/JsAmbiente";
 import { FundamentosJs } from "../docu/fundamentosJs";
 import { UsoLinux } from "../post/usoLinux";
+import { FirstStepGo } from "../docu/firstStepGo";
 
 
 export function RouterBlog(){
@@ -59,6 +60,7 @@ export function RouterBlog(){
                 <Route path="docu/httpcodes" element={<HttpCode />} />
                 <Route path="docu/jsenv" element={<JsAmbiente />} />
                 <Route path="docu/fundajs" element={<FundamentosJs />} />
+                <Route path="docu/primerogo" element={<FirstStepGo />} />
 
                 <Route path="steve/desconectado" element={<DesconectadoLife />} />
                 <Route path="steve/pilasinfin" element={<PilaSinFin />} />
