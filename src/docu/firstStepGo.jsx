@@ -2,7 +2,7 @@ import { DivArticle, DivCol, DivContent, DivRow } from "../componentes/contenedo
 import { Portada } from "../componentes/portada/portada";
 
 
-export function FistStepGo(){
+export function FirstStepGo(){
 
 
     return(
