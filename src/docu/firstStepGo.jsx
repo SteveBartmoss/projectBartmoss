@@ -32,6 +32,25 @@ export function FistStepGo(){
                             <h3>MacOs</h3>
 
                             <h3>Linux</h3>
+
+                            <p>
+                                En el caso de linux debemos descargar el archivo comprimido .tar.gz que aparece 
+                                en la pagina principal, luego debemos abrir una terminal, nos colocamos en el mismo 
+                                directorio donde descargamos este archivo y ejecutamos los siguientes comandos
+                            </p>
+
+                            <p>
+                                sudo tar -C /usr/local -xzf go*.tar.gz
+                            </p>
+
+                            <p>
+                                Despues debemos agregar go al path de la termina para que pueda ser reconocido
+                            </p>
+
+                            <p>
+                                echo 'export PATH=$PATH:/usr/local/go/bin' >> ~/.bashrc
+                                source ~/.bashrc
+                            </p>
                         </DivContent>
                     </DivArticle>
                 </DivCol>
