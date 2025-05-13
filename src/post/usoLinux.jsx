@@ -116,7 +116,9 @@ export function UsoLinux() {
                             <p>
                                 Aunque actualmente uso una distribucion no tan minimalista y con algo de software de relleno he visto muchas veces distribuciones 
                                 que permiten un nivel de minimalismo bastante elevado, siendo por ejemplo arch linux uno de los ejemplos mas potentes al momento 
-                                de revisar distribuciones ligeras y sin softwarte inncesario
+                                de revisar distribuciones ligeras y sin softwarte inncesario que rara vez utilizas y que solamente te esta consumiendo recursos del 
+                                ordenador, creo que la mejor analogia de esto es como tener un celular android al que si le pudes borrar las aplicaciones 
+                                de google o cualquier otra empres que solomente las instala por defecto y ocupan espacio en tu telefono.
                             </p>
                             
                         </DivContent>
