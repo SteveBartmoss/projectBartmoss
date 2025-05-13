@@ -178,5 +178,17 @@
       }
     ],
     "topico": ["fundajs"]
+  },
+  {
+    "titulo": "Primeros pasos Go",
+    "descripcion": "En este post se abordan los primeros temas del lenguaje go",
+    "url": "primerogo",
+    "tags": [
+      {
+        "text": "go",
+        "color" : "principal"
+      }
+    ],
+    "topico": ["fundajs"]
   }
 ]
