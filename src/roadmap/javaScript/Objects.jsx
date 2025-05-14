@@ -66,10 +66,8 @@ export function MapObjects() {
                                 Modificar una propiedad es tan sencillo como reasignarle un valor:
                             </p>
 
-                            <CodeSpace title={'Ejemplo'}
-                                rawCode={`persona.edad = 31; // Cambia el valor de la propiedad 'edad'
-                        console.log(persona); // nombre: "Juan", edad: 31, ocupacion: "Desarrollador"`}
-                            />
+                            <CodeSpaceV3 title={'Ejemplo'}
+                                rawCode={`persona.edad = 31; // Cambia el valor de la propiedad 'edad'\n console.log(persona); // nombre: "Juan", edad: 31, ocupacion: "Desarrollador"\n`} />
 
                             <h2>Eliminar propiedades dinámicamente</h2>
 
