@@ -75,10 +75,8 @@ export function MapObjects() {
                                 Para eliminar una propiedad, utiliza el operador delete:
                             </p>
 
-                            <CodeSpace title={'Ejemplo'}
-                                rawCode={`delete persona.edad; // Elimina la propiedad 'edad'
-                        console.log(persona); // nombre: "Juan", ocupacion: "Desarrollador"`}
-                            />
+                            <CodeSpaceV3 title={'Ejemplo'}
+                                rawCode={`delete persona.edad; // Elimina la propiedad 'edad'\n console.log(persona); // nombre: "Juan", ocupacion: "Desarrollador"\n`} />
 
                             <Divider />
 
