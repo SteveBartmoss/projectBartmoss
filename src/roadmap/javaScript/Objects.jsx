@@ -1,5 +1,4 @@
 import { CodeSpace } from "../../componentes/codeSpace/CodeSpace";
-import { CodeSpaceV2 } from "../../componentes/codeSpace/CodeSpaceV2";
 import { CodeSpaceV3 } from "../../componentes/codeSpace/CodeSpaceV3";
 import { DivArticle, DivCol, DivContent, DivRow } from "../../componentes/contenedores/contenedores";
 import { Divider } from "../../componentes/divider/Divider";
