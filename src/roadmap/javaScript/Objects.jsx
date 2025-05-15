@@ -91,10 +91,7 @@ export function MapObjects() {
                                 Puedes añadir un método asignando una función a una propiedad del objeto.
                             </p>
 
-                            <CodeSpace title={"Ejemplo"} rawCode={`persona.saludar = function() {
-                        console.log('Hola, soy $ {this.nombre}')
-                        }
-                        persona.saludar() // "Hola, soy Ana"`} />
+                            <CodeSpaceV3 title={"Ejemplo"} rawCode={`persona.saludar = function() {\n console.log('Hola, soy $ {this.nombre}') }\n persona.saludar() // "Hola, soy Ana"\n`} />
 
                             <p>
                                 También se puede añadir un metodo usando corchetes [], esto es útil cuando el nombre del método está almacenado en una variable.
