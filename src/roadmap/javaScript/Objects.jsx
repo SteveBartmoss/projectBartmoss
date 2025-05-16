@@ -21,6 +21,18 @@ export function MapObjects() {
                     titulo: 'Métodos Dinámicos en JavaScript',
                     id: 'metodosDinamicos',
                 },
+                {
+                    titulo: 'Acceso a Propiedades en JavaScript',
+                    id: 'accesoPropiedades'
+                },
+                {
+                    titulo: 'Enumeración de Propiedades en JavaScript',
+                    id: 'enumeracionPropiedades',
+                },
+                {
+                    titulo: 'Mutabilidad en Objetos en JavaScript',
+                    id: 'mutabilidadObjetos',
+                }
             ]
         }
     ]
@@ -113,7 +125,7 @@ export function MapObjects() {
 
                             <Divider />
 
-                            <h1>Acceso a Propiedades en JavaScript</h1>
+                            <h1 id="accesoPropiedades">Acceso a Propiedades en JavaScript</h1>
 
                             <p>
                                 JavaScript permite acceder a las propiedades de un objeto utilizando dos tipos de notación: notación de punto y notación de corchetes. Ambas formas permiten leer, añadir, modificar o eliminar propiedades, pero tienen diferentes usos y limitaciones.
@@ -159,7 +171,7 @@ export function MapObjects() {
 
                             <Divider />
 
-                            <h1>Enumeración de Propiedades en JavaScript</h1>
+                            <h1 id="enumeracionPropiedades">Enumeración de Propiedades en JavaScript</h1>
 
                             <p>
                                 La enumeración de propiedades en un objeto es una técnica importante en JavaScript, especialmente para trabajar con estructuras de datos dinámicas o desconocidas. Los métodos disponibles (for...in, Object.keys, Object.values, y Object.entries) permiten acceder y recorrer las propiedades y valores de un objeto de maneras diferentes, cada uno con sus ventajas.
@@ -256,7 +268,7 @@ export function MapObjects() {
 
                             <Divider />
 
-                            <h1>Mutabilidad en Objetos en JavaScript</h1>
+                            <h1 id="mutabilidadObjetos">Mutabilidad en Objetos en JavaScript</h1>
 
                             <p>
                                 En JavaScript, los objetos son mutables por naturaleza, lo cual significa que una vez que se crea un objeto, su contenido puede modificarse a lo largo del tiempo. Esto se relaciona con cómo JavaScript maneja el paso por referencia para objetos, lo que implica que diferentes variables pueden referirse al mismo objeto en memoria. Estos conceptos son cruciales para entender cómo los datos cambian y se comparten en aplicaciones JavaScript.
