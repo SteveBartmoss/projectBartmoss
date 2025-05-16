@@ -215,18 +215,13 @@ export function MapObjects() {
                                 Es ideal cuando necesitas trabajar solo con los valores sin preocuparte por las claves.
                             </p>
 
-                            <CodeSpace title={"Ejemplo"} rawCode={`const usuario = { nombre: "Ana", edad: 25, pais: "México" }
-                        const valores = Object.values(usuario);
-                        console.log(valores); // ["Ana", 25, "México"]`} />
+                            <CodeSpaceV3 title={"Ejemplo"} rawCode={`const usuario = { nombre: "Ana", edad: 25, pais: "México" }\n const valores = Object.values(usuario);\n console.log(valores); // ["Ana", 25, "México"]\n`} />
 
                             <p>
                                 Iteración Usando forEach
                             </p>
 
-                            <CodeSpace title={"Ejemplo"} rawCode={`valores.forEach(valor => {
-                        console.log(valor)
-                    })`} />
-
+                            <CodeSpaceV3 title={"Ejemplo"} rawCode={`valores.forEach(valor => {\n console.log(valor)\n })\n`} />
 
                             <p>
                                 Ideal para casos en los que solo necesitas los valores de las propiedades, como cuando quieres sumar valores o realizar operaciones estadísticas.
