@@ -197,15 +197,11 @@ export function MapObjects() {
                                 El método es ideal cuando solo necesitas las claves sin preocuparte por las propiedades del prototipo.
                             </p>
 
-                            <CodeSpace title={"Ejemplo"} rawCode={`const producto = {nombre: "Laptop", precio: 1500, disponible: true }
-                        const propiedades = Object.keys(producto)
-                        console.log(propiedades) // ["nombre", "precio", "disponible"]`} />
+                            <CodeSpaceV3 title={"Ejemplo"} rawCode={`const producto = {nombre: "Laptop", precio: 1500, disponible: true }\n const propiedades = Object.keys(producto)\n console.log(propiedades) // ["nombre", "precio", "disponible"]\n`} />
 
                             <h3>Iteración Usando forEach</h3>
 
-                            <CodeSpace title={"Ejemplo"} rawCode={`propiedades.forEach(propiedad => {
-                        console.log('$ {propiedad}: $ {producto[propiedad]}');
-                        })`} />
+                            <CodeSpaceV3 title={"Ejemplo"} rawCode={`propiedades.forEach(propiedad => {\n console.log('$ {propiedad}: $ {producto[propiedad]}');\n })\n`} />
 
                             <p>
                                 Es útil para obtener una lista de todas las claves del objeto, especialmente si no necesitas iterar sobre propiedades heredadas.
