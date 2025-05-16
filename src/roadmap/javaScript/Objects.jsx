@@ -103,17 +103,13 @@ export function MapObjects() {
 
                             <p>Puedes modificar un método reasignándolo a una nueva función.</p>
 
-                            <CodeSpace title={"Ejemplo"} rawCode={`persona.saludar = function() {
-                            console.log('Hola, mi nombre es $ {;this.nombre} y tengo $ {this.edad} años')
-                        }
-                        persona.saludar() // "Hola, mi nombre es Ana y tengo 26 años"`} />
+                            <CodeSpaceV3 title={"Ejemplo"} rawCode={`persona.saludar = function() {\n console.log('Hola, mi nombre es $ {;this.nombre} y tengo $ {this.edad} años')\n }\n persona.saludar() // "Hola, mi nombre es Ana y tengo 26 años"\n`} />
 
                             <h2>Eliminar Métodos Dinámicamente</h2>
 
                             <p>delete también elimina métodos del objeto.</p>
 
-                            <CodeSpace title={'Ejemplo'} rawCode={`delete persona.saludar // Elimina el método 'saludar'
-                        console.log(persona.saludar) // undefined`} />
+                            <CodeSpaceV3 title={'Ejemplo'} rawCode={`delete persona.saludar // Elimina el método 'saludar'\n console.log(persona.saludar) // undefined\n`} />
 
                             <Divider />
 
