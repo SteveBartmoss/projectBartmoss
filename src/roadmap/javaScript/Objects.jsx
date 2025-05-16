@@ -126,9 +126,7 @@ export function MapObjects() {
                                 Se utiliza cuando el nombre de la propiedad es un identificador válido de JavaScript (no contiene espacios, guiones, ni empieza con un número).
                             </p>
 
-                            <CodeSpace title={"Ejemplo"} rawCode={`const persona = {nombre: "Luis", edad: 30 }
-                        console.log(persona.nombre) // "Luis"
-                        console.log(persona.edad) // 30`} />
+                            <CodeSpaceV3 title={"Ejemplo"} rawCode={`const persona = {nombre: "Luis", edad: 30 }\n console.log(persona.nombre) // "Luis"\n console.log(persona.edad) // 30\n`} />
 
                             <p>
                                 No se puede usar la notación de punto si el nombre de la propiedad:
@@ -136,8 +134,7 @@ export function MapObjects() {
                                 Es un número o comienza con un número (persona.123 no es válido).
                             </p>
 
-                            <CodeSpace title={"Ejemplo"} rawCode={`const objeto = {"nombre completo": "Luis Pérez" }
-                        console.log(objeto.nombre completo)`} />
+                            <CodeSpaceV3 title={"Ejemplo"} rawCode={`const objeto = {"nombre completo": "Luis Pérez" }\n console.log(objeto.nombre completo)\n`} />
 
                             <h2>Notación de Corchetes ([])</h2>
 
