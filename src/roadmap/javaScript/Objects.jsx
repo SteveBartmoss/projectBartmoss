@@ -34,6 +34,16 @@ export function MapObjects() {
                     id: 'mutabilidadObjetos',
                 }
             ]
+        },
+        {
+            id: 2,
+            section: 'Funciones',
+            childs: [
+                {
+                    titulo: 'Funciones de Fábrica en JavaScript',
+                    id: 'funcionesFabrica',
+                },
+            ]
         }
     ]
 
@@ -384,7 +394,7 @@ export function MapObjects() {
 
                             <Divider />
 
-                            <h1>Funciones de Fábrica en JavaScript</h1>
+                            <h1 id="funcionesFabrica">Funciones de Fábrica en JavaScript</h1>
 
                             <p>
                                 Las funciones de fábrica son un patrón de diseño en JavaScript que permite crear objetos de manera flexible y reutilizable. A diferencia de las funciones constructores, las funciones de fábrica no requieren el uso del operador new y son ideales para crear múltiples instancias de un objeto con una lógica común.
