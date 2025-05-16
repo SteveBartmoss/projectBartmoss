@@ -166,8 +166,7 @@ export function MapObjects() {
                                 La notación de corchetes permite acceder a propiedades a través de una variable. Este enfoque es útil para acceder a propiedades basadas en condiciones o entradas de usuario.
                             </p>
 
-                            <CodeSpace title={"Ejemplo"} rawCode={`const propiedad = "edad"
-                        console.log(persona[propiedad]) // 30`} />
+                            <CodeSpaceV3 title={"Ejemplo"} rawCode={`const propiedad = "edad"\n console.log(persona[propiedad]) // 30\n`} />
 
                             <Divider />
 
@@ -184,12 +183,7 @@ export function MapObjects() {
                                 Este bucle es útil para obtener el nombre de cada propiedad, pero es recomendable combinarlo con hasOwnProperty() para asegurarse de que la propiedad pertenece directamente al objeto y no a su prototipo.
                             </p>
 
-                            <CodeSpace title={"Ejemplo"} rawCode={` const persona = { nombre: "Luis", edad: 30, ocupacion: "Ingeniero" }
-                        for (const propiedad in persona) {
-                        if (persona.hasOwnProperty(propiedad)) {
-                            console.log('$ {123;propiedad}: $ {persona[propiedad]} ')
-                        }
-                        }`} />
+                            <CodeSpaceV3 title={"Ejemplo"} rawCode={` const persona = { nombre: "Luis", edad: 30, ocupacion: "Ingeniero" }\n for (const propiedad in persona) {\n if (persona.hasOwnProperty(propiedad)) {\n console.log('$ {123;propiedad}: $ {persona[propiedad]} ')\n }\n }\n`} /> 
 
                             <p>
                                 Este bucle es útil cuando necesitas iterar tanto sobre las propiedades propias como heredadas de un objeto.
