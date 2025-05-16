@@ -287,11 +287,7 @@ export function MapObjects() {
                                 Referencias en Objetos
                             </p>
 
-                            <CodeSpace title={"Ejemplo"} rawCode={`const objeto1 = { nombre: "Carlos" }
-                        const objeto2 = objeto1 // Ambos apuntan al mismo objeto
-
-                        objeto2.nombre = "Luis"
-                        console.log(objeto1.nombre) // "Luis" (ambas variables reflejan el cambio)`} />
+                            <CodeSpaceV3 title={"Ejemplo"} rawCode={`const objeto1 = { nombre: "Carlos" }\n const objeto2 = objeto1 // Ambos apuntan al mismo objeto\n objeto2.nombre = "Luis"\n console.log(objeto1.nombre) // "Luis" (ambas variables reflejan el cambio)\n`} />
 
                             <p>
                                 Paso por Referencia en Funciones
