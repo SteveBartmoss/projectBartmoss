@@ -1340,11 +1340,12 @@ export function HttpCode() {
                             <h1 id="code404">404</h1>
 
                             <p>
-                                El código **404 Not Found** indica que el servidor **no pudo encontrar** el recurso solicitado. Esto puede deberse a:
-                                - **Una URL incorrecta o inexistente**.
-                                - **Eliminación o movimiento del recurso** sin redirección.
-                                - **Restricciones de acceso** donde el servidor decide no revelar la existencia del recurso.
+                                Indica que el servidor no pudo encontrar el recurso solicitado. Esto puede deberse a:
+                                Una URL incorrecta o inexistente.
+                                Eliminación o movimiento del recurso sin redirección.
+                                Restricciones de acceso donde el servidor decide no revelar la existencia del recurso.
                             </p>
+                            
                         </DivContent>
                     </DivArticle>
                 </DivCol>
