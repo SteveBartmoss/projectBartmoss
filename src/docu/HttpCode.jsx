@@ -1345,7 +1345,25 @@ export function HttpCode() {
                                 Eliminación o movimiento del recurso sin redirección.
                                 Restricciones de acceso donde el servidor decide no revelar la existencia del recurso.
                             </p>
-                            
+
+                            <h2>Usos comunes</h2>
+
+                            <p>
+                                Enlaces rotos: Una página fue eliminada sin configurar una redirección 301.  
+                            </p>
+
+                            <p>
+                                Errores tipográficos en URLs: Un usuario escribe /productos/shirt en lugar de /productos/camisa.
+                            </p>
+
+                            <p>
+                                Recursos eliminados o movidos: Un archivo descargable ya no está disponible.  
+                            </p>
+
+                            <p>
+                                Restricción de acceso sin revelar existencia: Un servidor puede devolver 404 en lugar de 403 para ocultar un recurso privado
+                            </p>
+q
                         </DivContent>
                     </DivArticle>
                 </DivCol>
@@ -1385,22 +1403,6 @@ Content-Type: application/json
 ```
 
 📌 **Corrección:** El usuario debe verificar la URL o buscar si la página fue movida.  
-
----
-
-#### 🎯 **Casos de uso comunes**  
-
-✔ **Enlaces rotos**  
-   - Una página fue eliminada sin configurar una **redirección 301**.  
-
-✔ **Errores tipográficos en URLs**  
-   - Un usuario escribe /productos/shirt** en lugar de /productos/camisa**.  
-
-   ✔ **Recursos eliminados o movidos**  
-   - Un archivo descargable ya no está disponible.  
-
-✔ **Restricción de acceso sin revelar existencia**  
-   - Un servidor puede devolver **404 en lugar de 403** para ocultar un recurso privado.  
 
 ---
 
