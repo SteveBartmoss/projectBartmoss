@@ -1222,3 +1222,38 @@ Content-Type: application/json
 📌 **Corrección:** El usuario necesita **permisos de administrador** o acceder con otra cuenta.  
 
 --- termine 403
+
+--  codigo 404
+
+### 🔹 **Código de respuesta HTTP 404 - Not Found**  
+---
+
+#### 📝 **Ejemplo de respuesta con código 404**  
+
+📌 **Escenario:** Un usuario intenta acceder a una página que no existe.  
+
+📌 **Solicitud del usuario:**  
+
+```
+GET /pagina-inexistente HTTP/1.1
+Host: ejemplo.com
+```
+
+📌 **Respuesta del servidor:**  
+
+```
+HTTP/1.1 404 Not Found
+Content-Type: application/json
+
+{
+    "error": "La página que buscas no existe."
+}
+```
+
+📌 **Corrección:** El usuario debe verificar la URL o buscar si la página fue movida.  
+
+---
+
+Si necesitas ayuda con **redirecciones o manejo de errores en tu API**, dime qué tecnología usas. 🚀
+
+--- termina 404
