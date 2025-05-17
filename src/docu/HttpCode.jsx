@@ -131,7 +131,7 @@ export function HttpCode() {
                 },
                 {
                     titulo: '403',
-                    id: 'code$03',
+                    id: 'code403',
                 }
             ]
         }
