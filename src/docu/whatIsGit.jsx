@@ -15,31 +15,38 @@ export function WhatIsGit() {
           <DivArticle>
             <DivContent>
               <p>
-                Git es un sistema de control de versiones distribuido que permite a múltiples desarrolladores trabajar en un proyecto de manera colaborativa. Fue creado por Linus Torvalds en 2005, inicialmente para gestionar el desarrollo del kernel de Linux. Git es especialmente útil en proyectos de desarrollo de software porque permite:
+                Git es un sistema de control de versiones distribuido que permite a múltiples desarrolladores trabajar en un proyecto de manera colaborativa. 
+                Fue creado por Linus Torvalds en 2005, inicialmente para gestionar el desarrollo del kernel de Linux. 
+                Git es especialmente útil en proyectos de desarrollo de software porque permite:
               </p>
 
               <h3>Rastreo de Cambios</h3>
 
               <p>
-                Git guarda un historial de todos los cambios realizados en el código fuente. Cada vez que se hace un cambio, se puede "commit" (confirmar) ese cambio con un mensaje que describe lo que se hizo. Esto facilita volver a versiones anteriores del proyecto si es necesario.
+                Git guarda un historial de todos los cambios realizados en el código fuente. 
+                Cada vez que se hace un cambio, se puede hacer "commit" (confirmar) de ese cambio con un mensaje que describe lo que se hizo. 
+                Esto facilita volver a versiones anteriores del proyecto si es necesario.
               </p>
 
               <h3>Trabajo en Rama</h3>
 
               <p>
-                Git permite crear ramas (branches) del proyecto, lo que significa que puedes desarrollar una característica nueva en una rama separada sin afectar la versión principal del proyecto. Una vez que la nueva característica está completa y probada, se puede fusionar (merge) de nuevo con la rama principal.
+                Git permite crear ramas (branches) del proyecto, lo que significa que puedes desarrollar una característica nueva en una rama separada sin afectar la versión principal del proyecto. 
+                Una vez que la nueva característica está completa y probada, se puede fusionar (merge) de nuevo con la rama principal.
               </p>
 
               <h3>Colaboración</h3>
 
               <p>
-                Varios desarrolladores pueden trabajar en el mismo proyecto al mismo tiempo sin interferir entre sí. Cada desarrollador puede clonar un repositorio (copia local del proyecto), trabajar en él y luego enviar (push) sus cambios de vuelta al repositorio central.
+                Varios desarrolladores pueden trabajar en el mismo proyecto al mismo tiempo sin interferir entre sí. 
+                Cada desarrollador puede clonar un repositorio (copia local del proyecto), trabajar en él y luego enviar (push) sus cambios de vuelta al repositorio central.
               </p>
 
               <h3>Distribuido</h3>
-              
+
               <p>
-                A diferencia de otros sistemas de control de versiones que requieren un servidor central, Git es distribuido, lo que significa que cada desarrollador tiene una copia completa del historial del proyecto. Esto mejora la redundancia y permite trabajar sin conexión.
+                A diferencia de otros sistemas de control de versiones que requieren un servidor central, Git es distribuido, lo que significa que cada desarrollador tiene una copia completa del historial del proyecto. 
+                Esto mejora la redundancia y permite trabajar sin conexión.
               </p>
 
               <h2>Instalacion</h2>
@@ -270,7 +277,17 @@ export function WhatIsGit() {
                </p>
 
                <p>
-                git checout -b 'nombreRama'
+                git checkout -b 'nombreRama'
+               </p>
+
+               <p>
+                Por defecto el comando crea la nueva rama a partir de la rama acutal en la que se encuentra el usuario, si se 
+                quiere crear una rama nueva tomando como base una rama diferente se puede hacer con el mismo comando pero se debe 
+                agregar otro parametro
+               </p>
+
+               <p>
+                git checkout -b 'nombreRama' 'ramaBase'
                </p>
                
             </DivContent>
