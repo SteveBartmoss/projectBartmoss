@@ -202,10 +202,40 @@ export function WhatIsGit() {
                </p>
 
                <p>
-                  Ele ejemplo anterior parece muy simple pero hay que imaginar que un equipo de desarrolladores puede estar conformado por al menos 5 personas 
+                  El ejemplo anterior parece muy simple pero hay que imaginar que un equipo de desarrolladores puede estar conformado por al menos 5 personas 
                   o incluso mas y manejar este tipo de cambio es dificil ya que cada uno tiene una copia del proyecto y tambien trabaja en cosas diferentes. Por esta 
                   misma razon el equipo de desarrollo del kernel linux tomo la tarea de crear git, un manejador de versiones que ayudara a resolver estos problemas de 
                   copias del proyecto.
+               </p>
+
+               <p>
+                  Una rama es precisamente una copia del proyecto (mostrandolo como de una forma simplicada pero en realidad internamente git trabaja con aputadores y cosas mas complejas) que 
+                  cada desarrollador tiene y en la que puede trabajar sin tener que preocuparse por los cambios de los demas, ya que estos tambien estaran trabajando en sus propias copias y se 
+                  que parece el mismo concepto que antes pero mas adelante se entiende porque es mas eficiente usar git.
+               </p>
+
+               <h2>Listar las ramas existentes</h2>
+
+               <p>
+                Para ver las ramas que se tienen el repositorio podemos usar el siguiente comando
+               </p>
+               
+               <p>
+                git branch 
+               </p>
+
+               <p>
+                Esto mostrara las listas de ramas de forma local que son las que estan en nuestro equipo pero pueden existir ramas que estan en el servidor remoto
+                asi que podemos ver las ramas locales tanto remotas con agregando un parametro al comando anterior
+               </p>
+
+               <p>
+                git branch --all
+               </p>
+
+               <p>
+                Ahora la lista de los repositorios se muestra de manera global, las ramas que estan en el servidor remoto deberian aparecer como 
+                remote/ seguido la informacion del nombre de la rama
                </p>
 
             </DivContent>
