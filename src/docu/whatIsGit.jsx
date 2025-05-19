@@ -172,6 +172,19 @@ export function WhatIsGit() {
               <p>
                 Este comando crea un carpeta con lo necesario para git, (normalmente esta carpeta estara oculta, pero podemos verla de diferentes maneras si es necesario)
               </p>
+
+              <h1>Clonar repositorio desde remoto</h1>
+
+               <p>
+                  Si estas trabajando en equipo o si te incorporas a un equipo de desarrollo es probable que tengas que clonar un repositorio 
+                  desde un host remoto como puede ser bitbucket, gitlab, github o algun otro host de repositorio. 
+                  Para esto solo devemos conseguir la url para clonarlo desde la terminal con el siguiente comando
+               </p>
+
+               <p>
+                  git clone 'urlremota'
+               </p>
+               
             </DivContent>
           </DivArticle>
         </DivCol>
