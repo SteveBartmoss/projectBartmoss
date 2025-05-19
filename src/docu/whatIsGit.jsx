@@ -184,7 +184,30 @@ export function WhatIsGit() {
                <p>
                   git clone 'urlremota'
                </p>
-               
+
+               <p>
+                  Cuando se clona un repositorio remoto, normalmente no es necesario configurar nada de git porque esta misma configuracion 
+                  se clona al momento de traer toda la informacion desde el servidor remoto
+               </p>
+
+               <h1>Ramas</h1>
+
+               <p>
+                  Esta es la ventaja principal por la que se usa un manejador de versiones como git hub ya que imagina la siguiente situacion: 
+                  el desarrollador uno cambia el color de la aplicacion a rojo, pero como esa era su unica tarea manda sus archivos al desarrollador dos,
+                  el desarrollador dos tenia como tarea crear el menu de la aplicacion asi que no tiene nada para manejar el color. Cuando recibe el codigo 
+                  descubre que si remplaza el archivo pierde la configuracion del menu y si en su lugar toma sus archivos pierde la configuracion del color, la 
+                  solucion mas simple es mezclar ambos archivos para que nadie pierda informacion pero esto debe realizarlo el desarrollador y puede que le tome 
+                  tiempo. 
+               </p>
+
+               <p>
+                  Ele ejemplo anterior parece muy simple pero hay que imaginar que un equipo de desarrolladores puede estar conformado por al menos 5 personas 
+                  o incluso mas y manejar este tipo de cambio es dificil ya que cada uno tiene una copia del proyecto y tambien trabaja en cosas diferentes. Por esta 
+                  misma razon el equipo de desarrollo del kernel linux tomo la tarea de crear git, un manejador de versiones que ayudara a resolver estos problemas de 
+                  copias del proyecto.
+               </p>
+
             </DivContent>
           </DivArticle>
         </DivCol>
