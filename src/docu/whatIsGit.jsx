@@ -238,6 +238,33 @@ export function WhatIsGit() {
                 remote/ seguido la informacion del nombre de la rama
                </p>
 
+               <h2>Crear una rama</h2>
+
+               <p>
+                Crear una rama es tan simple como usar el comando
+               </p>
+
+               <p>
+                git branch 'nombreRama'
+               </p>
+
+               <p>
+                Esto crea una nueva pero si seguimos trabajando con normalidad lo estaremos en la rama original no en la rama nueva, esto es porque git creo la rama pero no nos 
+                movimos a la nueva rama, debemos decirle a git que queremos trabajar con la otra rama usando el siguiente comando
+               </p>
+
+               <p>
+                git checkout 'nombreRama'
+               </p>
+
+               <p>
+                De esta forma podremos trabajar en la nueva rama, pero existe un forma de crear una rama y movernos a ella cuando se crea usando el siguiente comando
+               </p>
+
+               <p>
+                git checout -b 'nombreRama'
+               </p>
+               
             </DivContent>
           </DivArticle>
         </DivCol>
