@@ -1337,6 +1337,8 @@ export function HttpCode() {
                                 Se resuelve otorgando los permisos correctos o accediendo con otra cuenta.
                             </p>
 
+                            <Divider />
+
                             <h1 id="code404">404</h1>
 
                             <p>
