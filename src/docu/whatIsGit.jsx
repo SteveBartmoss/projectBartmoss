@@ -1,4 +1,5 @@
 import { DivArticle, DivCol, DivContent, DivRow } from "../componentes/contenedores/contenedores"
+import { Divider } from "../componentes/divider/Divider"
 import { Portada } from "../componentes/portada/portada"
 
 export function WhatIsGit() {
@@ -48,6 +49,8 @@ export function WhatIsGit() {
                 A diferencia de otros sistemas de control de versiones que requieren un servidor central, Git es distribuido, lo que significa que cada desarrollador tiene una copia completa del historial del proyecto. 
                 Esto mejora la redundancia y permite trabajar sin conexión.
               </p>
+
+              <Divider />
 
               <h2>Instalacion</h2>
 
@@ -173,6 +176,8 @@ export function WhatIsGit() {
               <p>
                 tazpkg get-install git
               </p>
+
+              <Divider />
 
               <h1>Inicializar un repositorio</h1>
 
