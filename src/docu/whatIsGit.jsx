@@ -2,15 +2,43 @@ import { CodeSpaceV3 } from "../componentes/codeSpace/CodeSpaceV3"
 import { DivArticle, DivCol, DivContent, DivRow } from "../componentes/contenedores/contenedores"
 import { Divider } from "../componentes/divider/Divider"
 import { Portada } from "../componentes/portada/portada"
+import { TreeMap } from "../componentes/treeMap/TreeMap"
 
 export function WhatIsGit() {
+
+  const pageMap = [
+        {
+            id: 1,
+            section: 'Sobre git',
+            childs: [
+                {
+                    titulo: 'Rastreo de Cambios',
+                    id: 'restreoCambios',
+                },
+                {
+                    titulo: 'Trabajo en Rama',
+                    id: 'trabajoRama',
+                },
+                {
+                    titulo: 'Colaboración',
+                    id: 'colaboracion',
+                },
+                {
+                    titulo: 'Distribuido',
+                    id: 'distribuido',
+                },
+            ],
+        },
+      ]
+      
+      
   return (
     <>
       <Portada imgPortada={"/Assets/steveA.png"} title={"Git el gestor de versiones mas popular"} text={"Por Steve 06/05/2025"} />
 
       <DivRow>
         <DivCol>
-
+          <TreeMap titutlo={'Mapa del sitio'} elementos={pageMap} />
         </DivCol>
 
         <DivCol>
@@ -25,7 +53,7 @@ export function WhatIsGit() {
                 Git es especialmente útil en proyectos de desarrollo de software porque permite:
               </p>
 
-              <h3>Rastreo de Cambios</h3>
+              <h3 id="restreoCambios">Rastreo de Cambios</h3>
 
               <p>
                 Git guarda un historial de todos los cambios realizados en el código fuente. 
@@ -33,21 +61,21 @@ export function WhatIsGit() {
                 Esto facilita volver a versiones anteriores del proyecto si es necesario.
               </p>
 
-              <h3>Trabajo en Rama</h3>
+              <h3 id="trabajoRama">Trabajo en Rama</h3>
 
               <p>
                 Git permite crear ramas (branches) del proyecto, lo que significa que puedes desarrollar una característica nueva en una rama separada sin afectar la versión principal del proyecto. 
                 Una vez que la nueva característica está completa y probada, se puede fusionar (merge) de nuevo con la rama principal.
               </p>
 
-              <h3>Colaboración</h3>
+              <h3 id="colaboracion">Colaboración</h3>
 
               <p>
                 Varios desarrolladores pueden trabajar en el mismo proyecto al mismo tiempo sin interferir entre sí. 
                 Cada desarrollador puede clonar un repositorio (copia local del proyecto), trabajar en él y luego enviar (push) sus cambios de vuelta al repositorio central.
               </p>
 
-              <h3>Distribuido</h3>
+              <h3 id="distribuido">Distribuido</h3>
 
               <p>
                 A diferencia de otros sistemas de control de versiones que requieren un servidor central, Git es distribuido, lo que significa que cada desarrollador tiene una copia completa del historial del proyecto. 
