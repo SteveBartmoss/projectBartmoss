@@ -15,6 +15,9 @@ export function WhatIsGit() {
         <DivCol>
           <DivArticle>
             <DivContent>
+
+              <h1>Sobre git</h1>
+
               <p>
                 Git es un sistema de control de versiones distribuido que permite a múltiples desarrolladores trabajar en un proyecto de manera colaborativa. 
                 Fue creado por Linus Torvalds en 2005, inicialmente para gestionar el desarrollo del kernel de Linux. 
@@ -52,7 +55,7 @@ export function WhatIsGit() {
 
               <Divider />
 
-              <h2>Instalacion</h2>
+              <h1>Instalacion</h1>
 
               <h3>Windows</h3>
 
@@ -179,7 +182,9 @@ export function WhatIsGit() {
 
               <Divider />
 
-              <h1>Inicializar un repositorio</h1>
+              <h1>Uso basico de git</h1>
+
+              <h2>Inicializar un repositorio</h2>
 
               <p>
                 Si ya tenemos un proyecto creado, lo mas simple es que inicializemos un repositorio de git con el siguiente comando
@@ -193,7 +198,7 @@ export function WhatIsGit() {
                 Este comando crea un carpeta con lo necesario para git, (normalmente esta carpeta estara oculta, pero podemos verla de diferentes maneras si es necesario)
               </p>
 
-              <h1>Clonar repositorio desde remoto</h1>
+              <h2>Clonar repositorio desde remoto</h2>
 
                <p>
                   Si estas trabajando en equipo o si te incorporas a un equipo de desarrollo es probable que tengas que clonar un repositorio 
@@ -210,7 +215,7 @@ export function WhatIsGit() {
                   se clona al momento de traer toda la informacion desde el servidor remoto
                </p>
 
-               <h1>Ramas</h1>
+               <h2>Ramas</h2>
 
                <p>
                   Esta es la ventaja principal por la que se usa un manejador de versiones como git hub ya que imagina la siguiente situacion: 
