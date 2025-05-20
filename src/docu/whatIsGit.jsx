@@ -289,6 +289,76 @@ export function WhatIsGit() {
                <p>
                 git checkout -b 'nombreRama' 'ramaBase'
                </p>
+
+               <h2>Moverse entre ramas</h2>
+
+               <p>
+                Puede que ya estuviera claro pero por si acaso el comando para moverse de una rama 
+                a otra es el siguiente
+               </p>
+
+               <p>
+                git checkout 'nombreRama'
+               </p>
+
+               <h2>Confirmar cambios en una rama</h2>
+
+               <p>
+                Ahora que tenemos la rama en la que queremos trabajar podemos realizar las 
+                modificaciones en el archivo que queremos y cuando guardemos los cambios, podemos 
+                confirmar esos cambios en git
+               </p>
+
+               <h3>Ver el estatus</h3>
+
+               <p>
+                Para poder ver que canbios temos sin agregaer y sin confirmar o por confirmar podemos 
+                usar el siguiente comando
+               </p>
+
+               <p>
+                git status
+               </p>
+
+               <p>
+                Este comando muestra la lista de cambios que no estan rastreados, normalmente esta lista 
+                se mostrara de un color rojo, para agregar esos cambios debemos usar el siguiente comando
+               </p>
+
+               <p>
+                git add 'ruta del archivo'
+               </p>
+
+               <p>
+                Con el comando anterior agregamos los cambios pero aun hace falta confirmarlos con el 
+                siguiente comando: 
+               </p>
+
+               <p>
+                git commit -m "mensja si es necesario"
+               </p>
+
+               <p>
+                Con el comando anterior confirmamas los cambios que fueron agrados y estan listos para 
+                ser enviados al repositorio remoto
+               </p>
+
+               <h3>Sincronizar con remoto</h3>
+
+               <p>
+                Cuando nuestros cambio ya fueron confirmados podemos hacer push al repositorio 
+                remoto con el siguiente comando
+               </p>
+
+               <p>
+                git push
+               </p>
+
+               <p>
+                Cuando ejecutamos el comando es probable que nos pida un nombre y el token que la plataforma 
+                de githud nos proporciona o en caso de que usemos algun otro host de repositorios no sera 
+                necesario pues el repositorio estarua configurado por ssh
+               </p>
                
             </DivContent>
           </DivArticle>
