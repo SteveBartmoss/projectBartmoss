@@ -1,3 +1,4 @@
+import { CodeSpaceV3 } from "../componentes/codeSpace/CodeSpaceV3"
 import { DivArticle, DivCol, DivContent, DivRow } from "../componentes/contenedores/contenedores"
 import { Divider } from "../componentes/divider/Divider"
 import { Portada } from "../componentes/portada/portada"
@@ -95,76 +96,51 @@ export function WhatIsGit() {
                 Para las distribuciones basadas en debian se puede usar elk siguiente comando para instalar git
               </p>
 
-              <p>
-                apt-get install git
-              </p>
+              <CodeSpaceV3 title={'Comando'} rawCode={`apt-get install git`} />
 
               <h3>Fedora</h3>
 
-              <p>
-                yum install git
-                dnf install git
-              </p>
+              <CodeSpaceV3 title={'Comando'} rawCode={`yum install git\n dnf install git\n`} />
 
               <h3>Gentoo</h3>
 
-              <p>
-                emerge --ask --verbose dev-vcs/git
-              </p>
+              <CodeSpaceV3 title={'Comando'} rawCode={`emerge --ask --verbose dev-vcs/git`} />
 
               <h3>Arch Linux</h3>
 
-              <p>
-                pacman -S git
-              </p>
+              <CodeSpaceV3 title={'Comando'} rawCode={`pacman -S git`} />
 
               <h3>openSUSE</h3>
 
-              <p>
-                zypper install git
-              </p>
+              <CodeSpaceV3 title={'Comando'} rawCode={`zypper install git`} />
 
               <h3>Mageia</h3>
 
-              <p>
-                urpmi git
-              </p>
+              <CodeSpaceV3 title={'Comando'} rawCode={`urpmi git`} />
 
               <h3>Nix/MixOs</h3>
 
-              <p>
-                nix-env -i git
-              </p>
+              <CodeSpaceV3 title={'Comando'} rawCode={`nix-env -i git`} />
 
               <h3>FreeBSD</h3>
 
-              <p>
-                pkg install git
-              </p>
+              <CodeSpaceV3 title={'Comando'} rawCode={`pkg install git`} />
 
               <h3>Solaris 9/10/11(OpenCSW)</h3>
 
-              <p>
-                pkgutil -i git
-              </p>
+              <CodeSpaceV3 title={'Comando'} rawCode={`pkgutil -i git`} />
 
               <h3>Solaris 11 Express, OpenIndiana</h3>
 
-              <p>
-                pkg install developer/versioning/git
-              </p>
+              <CodeSpaceV3 title={'Comando'} rawCode={`pkg install developer/versioning/git`} />
 
               <h3>OpenBSD</h3>
 
-              <p>
-                pkg_add git
-              </p>
+              <CodeSpaceV3 title={'Comando'} rawCode={`pkg_add git`} />
 
               <h3>Alpine</h3>
 
-              <p>
-                apk add git
-              </p>
+              <CodeSpaceV3 title={'Comando'} rawCode={`apk add git`} />
 
               <h3>Red Hat Enterprise Linux, Oracle Linux, CentOS, Scientific Linux, et al.</h3>
 
@@ -176,9 +152,7 @@ export function WhatIsGit() {
 
               <h3>Slitaz</h3>
 
-              <p>
-                tazpkg get-install git
-              </p>
+              <CodeSpaceV3 title={'Comando'} rawCode={`tazpkg get-install git`} />
 
               <Divider />
 
