@@ -164,9 +164,7 @@ export function WhatIsGit() {
                 Si ya tenemos un proyecto creado, lo mas simple es que inicializemos un repositorio de git con el siguiente comando
               </p>
 
-              <p>
-                git init 
-              </p>
+              <CodeSpaceV3 title={"Comando"} rawCode={`git init`} />
 
               <p>
                 Este comando crea un carpeta con lo necesario para git, (normalmente esta carpeta estara oculta, pero podemos verla de diferentes maneras si es necesario)
@@ -180,9 +178,7 @@ export function WhatIsGit() {
                   Para esto solo devemos conseguir la url para clonarlo desde la terminal con el siguiente comando
                </p>
 
-               <p>
-                  git clone 'urlremota'
-               </p>
+               <CodeSpaceV3 title={"Comando"} rawCode={`git clone 'urlremota'`} />
 
                <p>
                   Cuando se clona un repositorio remoto, normalmente no es necesario configurar nada de git porque esta misma configuracion 
@@ -219,18 +215,14 @@ export function WhatIsGit() {
                 Para ver las ramas que se tienen el repositorio podemos usar el siguiente comando
                </p>
                
-               <p>
-                git branch 
-               </p>
+               <CodeSpaceV3 title={"Comando"} rawCode={`git branch`} />
 
                <p>
                 Esto mostrara las listas de ramas de forma local que son las que estan en nuestro equipo pero pueden existir ramas que estan en el servidor remoto
                 asi que podemos ver las ramas locales tanto remotas con agregando un parametro al comando anterior
                </p>
 
-               <p>
-                git branch --all
-               </p>
+               <CodeSpaceV3 title={"Comando"} rawCode={`git branch --all`} />
 
                <p>
                 Ahora la lista de los repositorios se muestra de manera global, las ramas que estan en el servidor remoto deberian aparecer como 
@@ -243,26 +235,20 @@ export function WhatIsGit() {
                 Crear una rama es tan simple como usar el comando
                </p>
 
-               <p>
-                git branch 'nombreRama'
-               </p>
+               <CodeSpaceV3 title={"Comando"} rawCode={` git branch 'nombreRama'`} />
 
                <p>
                 Esto crea una nueva pero si seguimos trabajando con normalidad lo estaremos en la rama original no en la rama nueva, esto es porque git creo la rama pero no nos 
                 movimos a la nueva rama, debemos decirle a git que queremos trabajar con la otra rama usando el siguiente comando
                </p>
 
-               <p>
-                git checkout 'nombreRama'
-               </p>
+               <CodeSpaceV3 title={"Comando"} rawCode={`git checkout 'nombreRama'`} />
 
                <p>
                 De esta forma podremos trabajar en la nueva rama, pero existe un forma de crear una rama y movernos a ella cuando se crea usando el siguiente comando
                </p>
 
-               <p>
-                git checkout -b 'nombreRama'
-               </p>
+               <CodeSpaceV3 title={"Comando"} rawCode={`git checkout -b 'nombreRama'`} />
 
                <p>
                 Por defecto el comando crea la nueva rama a partir de la rama acutal en la que se encuentra el usuario, si se 
@@ -270,9 +256,7 @@ export function WhatIsGit() {
                 agregar otro parametro
                </p>
 
-               <p>
-                git checkout -b 'nombreRama' 'ramaBase'
-               </p>
+               <CodeSpaceV3 title={"Comando"} rawCode={`git checkout -b 'nombreRama' 'ramaBase'`} />
 
                <h2>Moverse entre ramas</h2>
 
@@ -281,9 +265,7 @@ export function WhatIsGit() {
                 a otra es el siguiente
                </p>
 
-               <p>
-                git checkout 'nombreRama'
-               </p>
+               <CodeSpaceV3 title={"Comando"} rawCode={`git checkout 'nombreRama'`} />
 
                <h2>Confirmar cambios en una rama</h2>
 
@@ -300,27 +282,21 @@ export function WhatIsGit() {
                 usar el siguiente comando
                </p>
 
-               <p>
-                git status
-               </p>
+               <CodeSpaceV3 title={"Comando"} rawCode={`git status`} />
 
                <p>
                 Este comando muestra la lista de cambios que no estan rastreados, normalmente esta lista 
                 se mostrara de un color rojo, para agregar esos cambios debemos usar el siguiente comando
                </p>
 
-               <p>
-                git add 'ruta del archivo'
-               </p>
+               <CodeSpaceV3 title={"Comando"} rawCode={`git add 'ruta del archivo'`} />
 
                <p>
                 Con el comando anterior agregamos los cambios pero aun hace falta confirmarlos con el 
                 siguiente comando: 
                </p>
 
-               <p>
-                git commit -m "mensja si es necesario"
-               </p>
+               <CodeSpaceV3 title={"Comando"} rawCode={`git commit -m "mensaja si es necesario"`} />
 
                <p>
                 Con el comando anterior confirmamas los cambios que fueron agrados y estan listos para 
@@ -334,14 +310,17 @@ export function WhatIsGit() {
                 remoto con el siguiente comando
                </p>
 
-               <p>
-                git push
-               </p>
+               <CodeSpaceV3 title={"Comando"} rawCode={`git push`} />
 
                <p>
                 Cuando ejecutamos el comando es probable que nos pida un nombre y el token que la plataforma 
                 de githud nos proporciona o en caso de que usemos algun otro host de repositorios no sera 
                 necesario pues el repositorio estarua configurado por ssh
+               </p>
+
+               <p>
+                Con lo anterior ya puedes iniciar con tus primeros pasos en git y experimentar por tu cuenta como 
+                es que trabaja esta herramienta de gestion de versiones
                </p>
                
             </DivContent>
