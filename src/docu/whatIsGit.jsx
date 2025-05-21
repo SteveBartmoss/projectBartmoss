@@ -29,6 +29,76 @@ export function WhatIsGit() {
                 },
             ],
         },
+        {
+          id: 2,
+          section: 'Instalaciontalacion',
+          childs: [
+            {
+              titulo: 'Windows',
+              id: 'windows',
+            },
+            {
+              titulo: 'MacOs',
+              id: 'macos',
+            },
+            {
+              titulo: 'Debian y derivados',
+              id: 'debian',
+            },
+            {
+              titulo: 'Fedora',
+              id: 'fedora',
+            },
+            {
+              titulo: 'Gentoo',
+              id: 'gentoo',
+            },
+            {
+              titulo: 'Arch Linux',
+              id: 'arch'
+            },
+            {
+              titulo: 'openSUSE',
+              id: 'opensuse', 
+            },
+            {
+              titulo: 'Mageia',
+              id: 'mageia'
+            },
+            {
+              titulo: 'Nix/MixOs',
+              id: 'nix',
+            },
+            {
+              titulo: 'FreeBSD',
+              id: 'freebsd',
+            },
+            {
+              titulo: 'Solaris 9/10/11(OpenCSW)',
+              id: 'solaris',
+            },
+            {
+              titulo: 'Solaris 11 Express, OpenIndiana',
+              id: 'openindiana',
+            },
+            {
+              titulo: 'OpenBSD',
+              id: 'openbsd',
+            },
+            {
+              titulo: 'Alpine',
+              id: 'alpine',
+            },
+            {
+              titulo: 'Red Hat Enterprise Linux, Oracle Linux, CentOS, Scientific Linux, et al',
+              id: 'redhat',
+            },
+            {
+              titulo: 'Slitaz',
+              id: 'slitaz'
+            }
+          ]
+        }
       ]
       
       
@@ -86,7 +156,7 @@ export function WhatIsGit() {
 
               <h1>Instalacion</h1>
 
-              <h3>Windows</h3>
+              <h3 id="windows">Windows</h3>
 
               <p>
                 Para instalar git en un sistema windows debemos ir al siguiente enlace:
@@ -96,7 +166,7 @@ export function WhatIsGit() {
                 Una vez que visitamos el enlace basta con descargar el setup para windows y simplemento seguir la tipica instalacion de cualquier programa de windows
               </p>
 
-              <h3>MacOs</h3>
+              <h3 id="macos">MacOs</h3>
 
               <p>
                 Para instalar git en un sistema de apple es un poco diferente, pues primero nos pide instalar homebrew y luego simplemente tenemos que usar el siguiente comando
@@ -118,7 +188,7 @@ export function WhatIsGit() {
                 de la distribucion este gesto cambia
               </p>
 
-              <h3>Debian y derivados</h3>
+              <h3 id="debian">Debian y derivados</h3>
 
               <p>
                 Para las distribuciones basadas en debian se puede usar elk siguiente comando para instalar git
@@ -126,51 +196,51 @@ export function WhatIsGit() {
 
               <CodeSpaceV3 title={'Comando'} rawCode={`apt-get install git`} />
 
-              <h3>Fedora</h3>
+              <h3 id="fedora">Fedora</h3>
 
               <CodeSpaceV3 title={'Comando'} rawCode={`yum install git\n dnf install git\n`} />
 
-              <h3>Gentoo</h3>
+              <h3 id="gentoo">Gentoo</h3>
 
               <CodeSpaceV3 title={'Comando'} rawCode={`emerge --ask --verbose dev-vcs/git`} />
 
-              <h3>Arch Linux</h3>
+              <h3 id="arch">Arch Linux</h3>
 
               <CodeSpaceV3 title={'Comando'} rawCode={`pacman -S git`} />
 
-              <h3>openSUSE</h3>
+              <h3 id="opensuse">openSUSE</h3>
 
               <CodeSpaceV3 title={'Comando'} rawCode={`zypper install git`} />
 
-              <h3>Mageia</h3>
+              <h3 id="mageia">Mageia</h3>
 
               <CodeSpaceV3 title={'Comando'} rawCode={`urpmi git`} />
 
-              <h3>Nix/MixOs</h3>
+              <h3 id="nix">Nix/MixOs</h3>
 
               <CodeSpaceV3 title={'Comando'} rawCode={`nix-env -i git`} />
 
-              <h3>FreeBSD</h3>
+              <h3 id="freebsd">FreeBSD</h3>
 
               <CodeSpaceV3 title={'Comando'} rawCode={`pkg install git`} />
 
-              <h3>Solaris 9/10/11(OpenCSW)</h3>
+              <h3 id="solaris">Solaris 9/10/11(OpenCSW)</h3>
 
               <CodeSpaceV3 title={'Comando'} rawCode={`pkgutil -i git`} />
 
-              <h3>Solaris 11 Express, OpenIndiana</h3>
+              <h3 id="openindiana">Solaris 11 Express, OpenIndiana</h3>
 
               <CodeSpaceV3 title={'Comando'} rawCode={`pkg install developer/versioning/git`} />
 
-              <h3>OpenBSD</h3>
+              <h3 id='openbsd'>OpenBSD</h3>
 
               <CodeSpaceV3 title={'Comando'} rawCode={`pkg_add git`} />
 
-              <h3>Alpine</h3>
+              <h3 id="alpine">Alpine</h3>
 
               <CodeSpaceV3 title={'Comando'} rawCode={`apk add git`} />
 
-              <h3>Red Hat Enterprise Linux, Oracle Linux, CentOS, Scientific Linux, et al.</h3>
+              <h3 id="redhat">Red Hat Enterprise Linux, Oracle Linux, CentOS, Scientific Linux, et al.</h3>
 
               <p>
                 RHEL y sus derivados suelen incluir versiones antiguas de git. 
@@ -178,7 +248,7 @@ export function WhatIsGit() {
                 el IUS Community Project para obtener una versión más reciente de git.
               </p>
 
-              <h3>Slitaz</h3>
+              <h3 id="slitaz">Slitaz</h3>
 
               <CodeSpaceV3 title={'Comando'} rawCode={`tazpkg get-install git`} />
 
