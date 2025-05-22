@@ -4,7 +4,7 @@ import { Portada } from "../componentes/portada/portada"
 export function Compositor() {
       return (
             <>
-                  <Portada imgPortada={"/Assets/steveA.png"} title={"Ques compose?"} text={"Por Steve 23/08/2024"} />
+                  <Portada imgPortada={"/Assets/steveA.png"} title={"Que es composer?"} text={"Por Steve 23/08/2024"} />
 
                   <DivArticle>
                         <DivContent>
