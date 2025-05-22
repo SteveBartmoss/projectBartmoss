@@ -118,6 +118,18 @@ export function WhatIsGit() {
             {
               titulo: 'Listar las ramas existentes',
               id: 'ramaslistar',
+            },
+            {
+              titulo: 'Crear una rama',
+              id: 'ramaCrear',
+            },
+            {
+              titulo: 'Moverse entre ramas',
+              id: 'ramaCambiar',
+            },
+            {
+              titulo: 'Confirmar cambios en una rama',
+              id: 'confirmar',
             }
           ]
         }
@@ -349,7 +361,7 @@ export function WhatIsGit() {
                 remote/ seguido la informacion del nombre de la rama
                </p>
 
-               <h2>Crear una rama</h2>
+               <h2 id="ramaCrear">Crear una rama</h2>
 
                <p>
                 Crear una rama es tan simple como usar el comando
@@ -378,7 +390,7 @@ export function WhatIsGit() {
 
                <CodeSpaceV3 title={"Comando"} rawCode={`git checkout -b 'nombreRama' 'ramaBase'`} />
 
-               <h2>Moverse entre ramas</h2>
+               <h2 id='ramaCambiar'>Moverse entre ramas</h2>
 
                <p>
                 Puede que ya estuviera claro pero por si acaso el comando para moverse de una rama 
@@ -387,7 +399,7 @@ export function WhatIsGit() {
 
                <CodeSpaceV3 title={"Comando"} rawCode={`git checkout 'nombreRama'`} />
 
-               <h2>Confirmar cambios en una rama</h2>
+               <h2 id='confirmar'>Confirmar cambios en una rama</h2>
 
                <p>
                 Ahora que tenemos la rama en la que queremos trabajar podemos realizar las 
