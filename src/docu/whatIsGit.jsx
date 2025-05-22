@@ -98,6 +98,28 @@ export function WhatIsGit() {
               id: 'slitaz'
             }
           ]
+        },
+        {
+          id: 3,
+          section: 'Uso basico de git',
+          childs: [
+            {
+              titulo: 'Inicializar un repositorio',
+              id: 'inicializar',
+            },
+            {
+              titulo: 'Clonar repositorio desde remoto',
+              id: 'clonar',
+            }, 
+            {
+              titulo: 'Ramas',
+              id: 'ramas', 
+            },
+            {
+              titulo: 'Listar las ramas existentes',
+              id: 'ramaslistar',
+            }
+          ]
         }
       ]
       
@@ -256,7 +278,7 @@ export function WhatIsGit() {
 
               <h1>Uso basico de git</h1>
 
-              <h2>Inicializar un repositorio</h2>
+              <h2 id="inicializar">Inicializar un repositorio</h2>
 
               <p>
                 Si ya tenemos un proyecto creado, lo mas simple es que inicializemos un repositorio de git con el siguiente comando
@@ -268,7 +290,7 @@ export function WhatIsGit() {
                 Este comando crea un carpeta con lo necesario para git, (normalmente esta carpeta estara oculta, pero podemos verla de diferentes maneras si es necesario)
               </p>
 
-              <h2>Clonar repositorio desde remoto</h2>
+              <h2 id="clonar">Clonar repositorio desde remoto</h2>
 
                <p>
                   Si estas trabajando en equipo o si te incorporas a un equipo de desarrollo es probable que tengas que clonar un repositorio 
@@ -283,7 +305,7 @@ export function WhatIsGit() {
                   se clona al momento de traer toda la informacion desde el servidor remoto
                </p>
 
-               <h2>Ramas</h2>
+               <h2 id="ramas">Ramas</h2>
 
                <p>
                   Esta es la ventaja principal por la que se usa un manejador de versiones como git hub ya que imagina la siguiente situacion: 
@@ -307,7 +329,7 @@ export function WhatIsGit() {
                   que parece el mismo concepto que antes pero mas adelante se entiende porque es mas eficiente usar git.
                </p>
 
-               <h2>Listar las ramas existentes</h2>
+               <h2 id='ramaslistar'>Listar las ramas existentes</h2>
 
                <p>
                 Para ver las ramas que se tienen el repositorio podemos usar el siguiente comando
