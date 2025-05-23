@@ -1,3 +1,4 @@
+import { CodeSpaceV3 } from "../componentes/codeSpace/CodeSpaceV3"
 import { DivArticle, DivCol, DivContent, DivRow, DivSection } from "../componentes/contenedores/contenedores"
 import { Portada } from "../componentes/portada/portada"
 
@@ -83,23 +84,33 @@ export function Compositor() {
 
                                           <h2>Comandos Básicos de Composer</h2>
 
+                                          <h3>Instalar Dependencias</h3>
+
                                           <p>
-                                                
+                                                Instala las dependencias definidas en composer.json.
+                                          </p>
 
-                                                Instalar Dependencias: Instala las dependencias definidas en composer.json.
+                                          <CodeSpaceV3 title={'Instalar dependencias'} rawCode={`composer install`} />
 
-                                                composer install
+                                          <h3>Actualizar Dependencias</h3>
 
-                                                Actualizar Dependencias: Actualiza las dependencias a sus versiones más recientes permitidas por composer.json.
+                                          <p>
+                                                Actualiza las dependencias a sus versiones más recientes permitidas por composer.json.
+                                          </p>
 
-                                                composer update
+                                          <CodeSpaceV3 title={'Actualizar dependencias'} rawCode={`composer update`} />
 
-                                                Añadir una Dependencia: Añade una nueva biblioteca al proyecto y la instala.
 
-                                                composer require nombre/paquete
+                                          <h3>Añadir una Dependencia</h3>
 
+                                          <p>
+                                                Añade una nueva biblioteca al proyecto y la instala.
+                                          </p>
+
+                                          <CodeSpaceV3 title={'Añadir dependencia'} rawCode={`composer require nombre/paquete`} />
+
+                                          <p>
                                                 Eliminar una Dependencia: Elimina una biblioteca del proyecto y actualiza composer.json.
-
                                                 composer remove nombre/paquete
                                           </p>
 
