@@ -1,15 +1,30 @@
 import { CodeSpaceV3 } from "../componentes/codeSpace/CodeSpaceV3"
 import { DivArticle, DivCol, DivContent, DivRow, DivSection } from "../componentes/contenedores/contenedores"
 import { Portada } from "../componentes/portada/portada"
+import { TreeMap } from "../componentes/treeMap/TreeMap"
 
 export function Compositor() {
+
+      const pageMap = [
+            {
+                  id: 1,
+                  section: 'Funcionalidades Principales',
+                  childs: [
+                        {
+                              titulo: 'Gestión de Dependencias',
+                              id: 'gestionDependencia',
+                        }     
+                  ]
+            }
+      ]
+
       return (
             <>
                   <Portada imgPortada={"/Assets/steveA.png"} title={"Que es composer?"} text={"Por Steve 23/08/2024"} />
 
                   <DivRow>
                         <DivCol>
-
+                              <TreeMap titulo={'Mapa del sitio'} elementos={pageMap} />
                         </DivCol>
 
                         <DivCol>
@@ -42,7 +57,7 @@ export function Compositor() {
 
                                           <h2>Funcionalidades Principales de Composer</h2>
 
-                                          <h3>Gestión de Dependencias</h3>
+                                          <h3 id='gestionDependencia'>Gestión de Dependencias</h3>
 
                                           <p>
                                                 Composer descarga e instala automáticamente todas las bibliotecas y 
