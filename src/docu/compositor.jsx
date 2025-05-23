@@ -109,10 +109,13 @@ export function Compositor() {
 
                                           <CodeSpaceV3 title={'Añadir dependencia'} rawCode={`composer require nombre/paquete`} />
 
+                                          <h3>Eliminar una Dependencia</h3>
+
                                           <p>
-                                                Eliminar una Dependencia: Elimina una biblioteca del proyecto y actualiza composer.json.
-                                                composer remove nombre/paquete
+                                                Elimina una biblioteca del proyecto y actualiza composer.json.
                                           </p>
+
+                                          <CodeSpaceV3 title={'Eliminar dependencia'} rawCode={`composer remove nombre/paquete`} />
 
                                           <p>
                                                 Composer es una herramienta esencial para cualquier proyecto PHP moderno. Facilita la gestión de dependencias, asegurando que todas las bibliotecas necesarias estén disponibles y funcionando correctamente en tu proyecto, mientras automatiza tareas tediosas como el autoloading de clases. Es ampliamente utilizado en la comunidad PHP y ha transformado la forma en que los desarrolladores manejan sus proyectos.
