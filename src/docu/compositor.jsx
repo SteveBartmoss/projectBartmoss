@@ -13,7 +13,23 @@ export function Compositor() {
                         {
                               titulo: 'Gestión de Dependencias',
                               id: 'gestionDependencia',
-                        }     
+                        },
+                        {
+                              titulo: 'Autoloading',
+                              id: 'autoloading',
+                        },
+                        {
+                              titulo: 'Versionado Semántico',
+                              id: 'versionadoSemantico',
+                        },
+                        {
+                              titulo: 'Repositorio de Paquetes',
+                              id: 'repositorio',
+                        },
+                        {
+                              titulo: 'Archivo composer.json',
+                              id: 'composerjson',
+                        }
                   ]
             }
       ]
@@ -66,7 +82,7 @@ export function Compositor() {
                                                 todas las dependencias sean compatibles entre sí.
                                           </p>
 
-                                          <h3>Autoloading</h3>
+                                          <h3 id='autoloading'>Autoloading</h3>
 
                                           <p>
                                                 Composer también puede generar automáticamente un script de autoloading, que permite 
@@ -74,7 +90,7 @@ export function Compositor() {
                                                 Esto es posible gracias a las convenciones de PSR-4, que Composer implementa.
                                           </p>
 
-                                          <h3>Versionado Semántico</h3>
+                                          <h3 id='versionadoSemantico'>Versionado Semántico</h3>
 
                                           <p>
                                                 Composer sigue las reglas de versionado semántico (SemVer), lo que permite especificar 
@@ -82,7 +98,7 @@ export function Compositor() {
                                                 cuando una dependencia se actualiza.
                                           </p>
 
-                                          <h3>Repositorio de Paquetes</h3>
+                                          <h3 id='repositorio'>Repositorio de Paquetes</h3>
 
                                           <p>
                                                 Composer utiliza un repositorio central llamado Packagist para encontrar y descargar 
@@ -90,7 +106,7 @@ export function Compositor() {
                                                 sus bibliotecas y herramientas para que otros puedan usarlas.
                                           </p>
 
-                                          <h3>Archivo composer.json</h3>
+                                          <h3 id='composerjson'>Archivo composer.json</h3>
 
                                           <p>
                                                 El archivo composer.json es donde defines las dependencias de tu proyecto. Aquí es donde 
