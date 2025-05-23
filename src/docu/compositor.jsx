@@ -31,6 +31,16 @@ export function Compositor() {
                               id: 'composerjson',
                         }
                   ]
+            },
+            {
+                  id: 2,
+                  section: 'Comandos Básicos de Composer',
+                  childs: [
+                        {
+                              title: 'Instalar Dependencias',
+                              id: 'instalar',
+                        }
+                  ]
             }
       ]
 
@@ -115,7 +125,7 @@ export function Compositor() {
 
                                           <h2>Comandos Básicos de Composer</h2>
 
-                                          <h3>Instalar Dependencias</h3>
+                                          <h3 id='instalar'>Instalar Dependencias</h3>
 
                                           <p>
                                                 Instala las dependencias definidas en composer.json.
