@@ -15,6 +15,8 @@ export function Compositor() {
                               <DivArticle>
                                     <DivContent>
 
+                                          <h1>Sobre composer</h1>
+
                                           <p>
                                                 Cuando inicias un desarrollo en una pila de tecnologia
                                                 que involucra el lenguaje php entonces es posible que
@@ -30,47 +32,59 @@ export function Compositor() {
                                           </p>
 
                                           <p>
-                                                Composer es una herramienta de gestión de dependencias para PHP. Facilita la administración de las librerías y paquetes que un proyecto PHP necesita para funcionar. Composer permite declarar las bibliotecas que tu proyecto depende y se encarga de instalarlas y actualizarlas según sea necesario, garantizando que tengas todas las versiones correctas y compatibles.
+                                                Composer es una herramienta de gestión de dependencias para PHP. Facilita 
+                                                la administración de las librerías y paquetes que un proyecto PHP necesita para 
+                                                funcionar. Composer permite declarar las bibliotecas que tu proyecto depende y se 
+                                                encarga de instalarlas y actualizarlas según sea necesario, garantizando que tengas 
+                                                todas las versiones correctas y compatibles.
                                           </p>
 
+                                          <h2>Funcionalidades Principales de Composer</h2>
+
+                                          <h3>Gestión de Dependencias</h3>
+
                                           <p>
-                                                Funcionalidades Principales de Composer
-
-                                                Gestión de Dependencias:
-
-                                                Composer descarga e instala automáticamente todas las bibliotecas y paquetes que tu proyecto necesita, según lo especificado en un archivo composer.json.
-
-                                                Puedes especificar versiones específicas de las dependencias para asegurarte de que todas las dependencias sean compatibles entre sí.
+                                                Composer descarga e instala automáticamente todas las bibliotecas y 
+                                                paquetes que tu proyecto necesita, según lo especificado en un archivo composer.json.
+                                                Puedes especificar versiones específicas de las dependencias para asegurarte de que 
+                                                todas las dependencias sean compatibles entre sí.
                                           </p>
 
+                                          <h3>Autoloading</h3>
+
                                           <p>
-                                                Autoloading:
-
-                                                Composer también puede generar automáticamente un script de autoloading, que permite cargar clases de forma automática sin tener que incluir manualmente cada archivo de clase en tu proyecto.
-
+                                                Composer también puede generar automáticamente un script de autoloading, que permite 
+                                                cargar clases de forma automática sin tener que incluir manualmente cada archivo de clase en tu proyecto. 
                                                 Esto es posible gracias a las convenciones de PSR-4, que Composer implementa.
                                           </p>
 
-                                          <p>
-                                                Versionado Semántico:
+                                          <h3>Versionado Semántico</h3>
 
-                                                Composer sigue las reglas de versionado semántico (SemVer), lo que permite especificar rangos de versiones para las dependencias. Esto ayuda a evitar problemas de compatibilidad cuando una dependencia se actualiza.
+                                          <p>
+                                                Composer sigue las reglas de versionado semántico (SemVer), lo que permite especificar 
+                                                rangos de versiones para las dependencias. Esto ayuda a evitar problemas de compatibilidad 
+                                                cuando una dependencia se actualiza.
                                           </p>
 
-                                          <p>
-                                                Repositorio de Paquetes:
+                                          <h3>Repositorio de Paquetes</h3>
 
-                                                Composer utiliza un repositorio central llamado Packagist para encontrar y descargar paquetes de PHP. Packagist es el repositorio principal donde los desarrolladores publican sus bibliotecas y herramientas para que otros puedan usarlas.
+                                          <p>
+                                                Composer utiliza un repositorio central llamado Packagist para encontrar y descargar 
+                                                paquetes de PHP. Packagist es el repositorio principal donde los desarrolladores publican 
+                                                sus bibliotecas y herramientas para que otros puedan usarlas.
                                           </p>
 
-                                          <p>
-                                                Archivo composer.json
+                                          <h3>Archivo composer.json</h3>
 
-                                                El archivo composer.json es donde defines las dependencias de tu proyecto. Aquí es donde especificas qué bibliotecas necesitas, sus versiones, y cualquier otro metadato necesario.
+                                          <p>
+                                                El archivo composer.json es donde defines las dependencias de tu proyecto. Aquí es donde 
+                                                especificas qué bibliotecas necesitas, sus versiones, y cualquier otro metadato necesario.
                                           </p>
 
+                                          <h2>Comandos Básicos de Composer</h2>
+
                                           <p>
-                                                Comandos Básicos de Composer
+                                                
 
                                                 Instalar Dependencias: Instala las dependencias definidas en composer.json.
 
