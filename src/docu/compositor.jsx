@@ -1,4 +1,4 @@
-import { DivArticle, DivContent, DivSection } from "../componentes/contenedores/contenedores"
+import { DivArticle, DivCol, DivContent, DivRow, DivSection } from "../componentes/contenedores/contenedores"
 import { Portada } from "../componentes/portada/portada"
 
 export function Compositor() {
@@ -6,87 +6,97 @@ export function Compositor() {
             <>
                   <Portada imgPortada={"/Assets/steveA.png"} title={"Que es composer?"} text={"Por Steve 23/08/2024"} />
 
-                  <DivArticle>
-                        <DivContent>
-                              <p>
-                                    Cuando inicias un desarrollo en una pila de tecnologia
-                                    que involucra el lenguaje php entonces es posible que
-                                    te encuentres con un programa llamado composer, el cual
-                                    puede que no conoscas pero no resulta tan complejo
-                              </p>
+                  <DivRow>
+                        <DivCol>
 
-                              <p>
-                                    Si has trabajado con proyectos de JavaScript y con
-                                    npm entonces tienes el concepto de lo que es un manejador
-                                    de paquetes y composer es eso aunque digamos que con
-                                    otro lenguaje como objetivo
-                              </p>
+                        </DivCol>
 
-                              <p>
-                                    Composer es una herramienta de gestión de dependencias para PHP. Facilita la administración de las librerías y paquetes que un proyecto PHP necesita para funcionar. Composer permite declarar las bibliotecas que tu proyecto depende y se encarga de instalarlas y actualizarlas según sea necesario, garantizando que tengas todas las versiones correctas y compatibles.
-                              </p>
+                        <DivCol>
+                              <DivArticle>
+                                    <DivContent>
 
-                              <p>
-                                    Funcionalidades Principales de Composer
+                                          <p>
+                                                Cuando inicias un desarrollo en una pila de tecnologia
+                                                que involucra el lenguaje php entonces es posible que
+                                                te encuentres con un programa llamado composer, el cual
+                                                puede que no conoscas pero no resulta tan complejo
+                                          </p>
 
-                                    Gestión de Dependencias:
+                                          <p>
+                                                Si has trabajado con proyectos de JavaScript y con
+                                                npm entonces tienes el concepto de lo que es un manejador
+                                                de paquetes y composer es eso aunque digamos que con
+                                                otro lenguaje como objetivo
+                                          </p>
 
-                                    Composer descarga e instala automáticamente todas las bibliotecas y paquetes que tu proyecto necesita, según lo especificado en un archivo composer.json.
+                                          <p>
+                                                Composer es una herramienta de gestión de dependencias para PHP. Facilita la administración de las librerías y paquetes que un proyecto PHP necesita para funcionar. Composer permite declarar las bibliotecas que tu proyecto depende y se encarga de instalarlas y actualizarlas según sea necesario, garantizando que tengas todas las versiones correctas y compatibles.
+                                          </p>
 
-                                    Puedes especificar versiones específicas de las dependencias para asegurarte de que todas las dependencias sean compatibles entre sí.
-                              </p>
+                                          <p>
+                                                Funcionalidades Principales de Composer
 
-                              <p>
-                                    Autoloading:
+                                                Gestión de Dependencias:
 
-                                    Composer también puede generar automáticamente un script de autoloading, que permite cargar clases de forma automática sin tener que incluir manualmente cada archivo de clase en tu proyecto.
+                                                Composer descarga e instala automáticamente todas las bibliotecas y paquetes que tu proyecto necesita, según lo especificado en un archivo composer.json.
 
-                                    Esto es posible gracias a las convenciones de PSR-4, que Composer implementa.
-                              </p>
+                                                Puedes especificar versiones específicas de las dependencias para asegurarte de que todas las dependencias sean compatibles entre sí.
+                                          </p>
 
-                              <p>
-                                    Versionado Semántico:
+                                          <p>
+                                                Autoloading:
 
-                                    Composer sigue las reglas de versionado semántico (SemVer), lo que permite especificar rangos de versiones para las dependencias. Esto ayuda a evitar problemas de compatibilidad cuando una dependencia se actualiza.
-                              </p>
+                                                Composer también puede generar automáticamente un script de autoloading, que permite cargar clases de forma automática sin tener que incluir manualmente cada archivo de clase en tu proyecto.
 
-                              <p>
-                                    Repositorio de Paquetes:
+                                                Esto es posible gracias a las convenciones de PSR-4, que Composer implementa.
+                                          </p>
 
-                                    Composer utiliza un repositorio central llamado Packagist para encontrar y descargar paquetes de PHP. Packagist es el repositorio principal donde los desarrolladores publican sus bibliotecas y herramientas para que otros puedan usarlas.
-                              </p>
+                                          <p>
+                                                Versionado Semántico:
 
-                              <p>
-                                    Archivo composer.json
+                                                Composer sigue las reglas de versionado semántico (SemVer), lo que permite especificar rangos de versiones para las dependencias. Esto ayuda a evitar problemas de compatibilidad cuando una dependencia se actualiza.
+                                          </p>
 
-                                    El archivo composer.json es donde defines las dependencias de tu proyecto. Aquí es donde especificas qué bibliotecas necesitas, sus versiones, y cualquier otro metadato necesario.
-                              </p>
+                                          <p>
+                                                Repositorio de Paquetes:
 
-                              <p>
-                                    Comandos Básicos de Composer
+                                                Composer utiliza un repositorio central llamado Packagist para encontrar y descargar paquetes de PHP. Packagist es el repositorio principal donde los desarrolladores publican sus bibliotecas y herramientas para que otros puedan usarlas.
+                                          </p>
 
-                                    Instalar Dependencias: Instala las dependencias definidas en composer.json.
+                                          <p>
+                                                Archivo composer.json
 
-                                    composer install
+                                                El archivo composer.json es donde defines las dependencias de tu proyecto. Aquí es donde especificas qué bibliotecas necesitas, sus versiones, y cualquier otro metadato necesario.
+                                          </p>
 
-                                    Actualizar Dependencias: Actualiza las dependencias a sus versiones más recientes permitidas por composer.json.
+                                          <p>
+                                                Comandos Básicos de Composer
 
-                                    composer update
+                                                Instalar Dependencias: Instala las dependencias definidas en composer.json.
 
-                                    Añadir una Dependencia: Añade una nueva biblioteca al proyecto y la instala.
+                                                composer install
 
-                                    composer require nombre/paquete
+                                                Actualizar Dependencias: Actualiza las dependencias a sus versiones más recientes permitidas por composer.json.
 
-                                    Eliminar una Dependencia: Elimina una biblioteca del proyecto y actualiza composer.json.
+                                                composer update
 
-                                    composer remove nombre/paquete
-                              </p>
+                                                Añadir una Dependencia: Añade una nueva biblioteca al proyecto y la instala.
 
-                              <p>
-                                    Composer es una herramienta esencial para cualquier proyecto PHP moderno. Facilita la gestión de dependencias, asegurando que todas las bibliotecas necesarias estén disponibles y funcionando correctamente en tu proyecto, mientras automatiza tareas tediosas como el autoloading de clases. Es ampliamente utilizado en la comunidad PHP y ha transformado la forma en que los desarrolladores manejan sus proyectos.
-                              </p>
-                        </DivContent>
-                  </DivArticle>
+                                                composer require nombre/paquete
+
+                                                Eliminar una Dependencia: Elimina una biblioteca del proyecto y actualiza composer.json.
+
+                                                composer remove nombre/paquete
+                                          </p>
+
+                                          <p>
+                                                Composer es una herramienta esencial para cualquier proyecto PHP moderno. Facilita la gestión de dependencias, asegurando que todas las bibliotecas necesarias estén disponibles y funcionando correctamente en tu proyecto, mientras automatiza tareas tediosas como el autoloading de clases. Es ampliamente utilizado en la comunidad PHP y ha transformado la forma en que los desarrolladores manejan sus proyectos.
+                                          </p>
+
+                                    </DivContent>
+                              </DivArticle>
+                        </DivCol>
+                  </DivRow>
             </>
       )
 }
