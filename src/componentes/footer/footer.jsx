@@ -1,5 +1,4 @@
 import { useApp } from '../../context/contextApp'
-import { AnchorLink } from '../anchorlink/AnchorLink'
 import './footer.css'
 
 export function Footer() {
