@@ -13,19 +13,19 @@ export function AsideContent() {
                 <div>
                     <h2>Pila sin fin</h2>
                     <p>info Pila</p>
-                    <a>ir al post</a>
+                    <a href='docu'>ir al post</a>
                 </div>
 
                 <div>
                     <h2>Pila sin fin</h2>
                     <p>info Pila</p>
-                    <a>ir al post</a>
+                    <a href='docu'>ir al post</a>
                 </div>
 
                 <div>
                     <h2>Pila sin fin</h2>
                     <p>info Pila</p>
-                    <a>ir al post</a>
+                    <a href='docu'>ir al post</a>
                 </div>
 
             </div>
