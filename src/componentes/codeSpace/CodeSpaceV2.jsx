@@ -1,8 +1,8 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import './CodeSpace.css';
 import { decorateToken } from './decorator/picaso';
 import { processCode, sliceCode } from './lexer/AdaLove';
-import { generateUniqueId, generateUniqueIdV3 } from '../helpers/uid';
+import { generateUniqueIdV3 } from '../helpers/uid';
 
 export function CodeSpaceV2({title,rawCode=""}){
 
@@ -20,12 +20,6 @@ export function CodeSpaceV2({title,rawCode=""}){
 
 
     */
-
-    const tokenCode=(codeLine)=>{
-        let tokens=codeLine.split(' ')
-        //console.log(tokens)
-        return tokens
-    }
 
     useEffect(()=>{
         //console.log(processCode('const persona = { nombre: "Juan" }'))
