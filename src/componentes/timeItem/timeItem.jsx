@@ -5,7 +5,7 @@ export function TimeItem({ fecha, texto, autor }) {
         <div className='div-time-item'>
             <div className='head-time-item'>
                 <div>
-                    <img className='img-time-item' src="/Assets/steveA.png" />
+                    <img className='img-time-item' src="/Assets/steveA.png" alt='steveimg' />
                 </div>
                 <div className='div-date-item'>
                     <h1>{autor}</h1>
