@@ -1,7 +1,6 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import './CodeSpace.css';
 import { clasificateToken } from './gogh';
-import { processCode } from './saramago';
 
 export function CodeSpace({title,rawCode=""}){
 
