@@ -1372,6 +1372,14 @@ export function HttpCode() {
                                 Se soluciona corrigiendo la URL, agregando redirecciones o restaurando el recurso.  
                             </p>
 
+                            <h1 id='code405'>405</h1>
+
+                            <p>
+                                Indica que el recurso solicitado existe, pero no permite el método HTTP utilizado, por ejemplo 
+                                intentar 0POST en una URL que solo permite GET, intentar DELETE en una API que solo permite PUT o PATCH.  
+
+                            </p>
+
                         </DivContent>
                     </DivArticle>
                 </DivCol>
@@ -1385,14 +1393,6 @@ export function HttpCode() {
 
 --- codigo 405
 
-### 🔹 **Código de respuesta HTTP 405 - Method Not Allowed**  
-
-#### 📌 **Descripción**  
-El código **405 Method Not Allowed** indica que el recurso solicitado **existe**, pero **no permite** el método HTTP utilizado.  
-
-🔴 **Ejemplo de métodos bloqueados:**  
-- Intentar **POST** en una URL que solo permite **GET**.  
-- Intentar **DELETE** en una API que solo permite **PUT** o **PATCH**.  
 
 ---
 
