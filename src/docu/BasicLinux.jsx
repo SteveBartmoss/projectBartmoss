@@ -15,6 +15,11 @@ export function BasicLinux() {
                     titulo: 'cd',
                     id: 'cd',
                 },
+                {
+                    titulo: 'ls',
+                    id: 'ls',
+                },
+
             ]
         }
     ]
@@ -37,7 +42,7 @@ export function BasicLinux() {
                                 a la hora de usar un sistema Linux.
                             </p>
 
-                            <h2>cd</h2>
+                            <h2 id='cd'>cd</h2>
 
                             <p>
                                 Este comando permite al usuario cambiar entre rutas de las
