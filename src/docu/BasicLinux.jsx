@@ -19,6 +19,46 @@ export function BasicLinux() {
                     titulo: 'ls',
                     id: 'ls',
                 },
+                {
+                    titulo: 'touch',
+                    id: 'touch',
+                },
+                {
+                    titulo: 'apt update',
+                    id: 'aptupdate',
+                },
+                {
+                    titulo: 'apt upgrade',
+                    id: 'aptupgrade',
+                },
+                {
+                    titulo: 'dpkg -i',
+                    id: 'dpkg',
+                },
+                {
+                    titulo: 'apt install',
+                    id: 'aptinstall',
+                },
+                {
+                    titulo: 'rm',
+                    id: 'rm',
+                },
+                {
+                    titulo: 'cp',
+                    id: 'cp',
+                },
+                {
+                    titulo: 'pwd',
+                    id: 'pwd',
+                },
+                {
+                    titulo: 'mkdir',
+                    id: 'mkdir',
+                },
+                {
+                    titulo: 'man',
+                    id: 'man',
+                },
 
             ]
         }
