@@ -52,7 +52,7 @@ export function BasicLinux() {
                                 dejara un nivel arriba.
                             </p>
 
-                            <h2>ls</h2>
+                            <h2 id='ls'>ls</h2>
 
                             <p>
                                 este comando listara el contenido de la carpeta en la que nos encontramos,
@@ -61,7 +61,7 @@ export function BasicLinux() {
                                 mostrará el listado largo o ls - a que mostrará todos los archivos.
                             </p>
 
-                            <h2>touch</h2>
+                            <h2 id='touch'>touch</h2>
 
                             <p>
                                 este comando permite crear un archivo en la carpeta o ruta actual en la que
@@ -72,7 +72,7 @@ export function BasicLinux() {
                                 deseamos.
                             </p>
 
-                            <h2>apt update</h2>
+                            <h2 id='aptupdate'>apt update</h2>
 
                             <p>
                                 este comando actualiza las lista de los paquetes disponibles para nuestro
@@ -80,7 +80,7 @@ export function BasicLinux() {
                                 nuevos que después actualizaremos.
                             </p>
 
-                            <h2>apt upgrade</h2>
+                            <h2 id='aptupgrade'>apt upgrade</h2>
 
                             <p>
                                 este comando toma la lista actualizada de los paquetes disponibles y los instala,
@@ -90,7 +90,7 @@ export function BasicLinux() {
                                 los comandos.
                             </p>
 
-                            <h2>dpkg - i</h2>
+                            <h2 id='dpkg'>dpkg - i</h2>
 
                             <p>
                                 este comando y el parámetro i permiten instalar paquetes.deb que pertenecen a debian,
@@ -99,7 +99,7 @@ export function BasicLinux() {
                                 el nombre del archivo.deb.
                             </p>
 
-                            <h2>apt install</h2>
+                            <h2 id='aptinstall'>apt install</h2>
 
                             <p>
                                 este comando permite instalar aplicaciones mediante el manejador de parques apt,
@@ -122,7 +122,7 @@ export function BasicLinux() {
                                 debes buscar su comando específico.
                             </p>
 
-                            <h2>rm</h2>
+                            <h2 id='rm'>rm</h2>
 
                             <p>
                                 este comando permite eliminar un archivo pero hay que usarlo con cautela ya que eliminara el archivo sin
@@ -130,7 +130,7 @@ export function BasicLinux() {
                                 cual permite borrar los archivos y las subcarpetas así que también es peligroso.
                             </p>
 
-                            <h2>cp</h2>
+                            <h2 id='cp'>cp</h2>
 
                             <p>
                                 este comando permite mover una archivo o fichero hacía otra ruta la cual recibe como argumento, para utilizar
@@ -139,14 +139,14 @@ export function BasicLinux() {
                                 copia del archivo o fichero en la ruta origen.
                             </p>
 
-                            <h2>pwd</h2>
+                            <h2 id='pwd'>pwd</h2>
 
                             <p>
                                 este comando te permite mostrar la ruta actual en la que te encuentras, esto es util para saber en qué nivel te
                                 encuentras y poder moverte hacia otro directorio con el comando cd.
                             </p>
 
-                            <h2>mkdir</h2>
+                            <h2 id='mkdir'>mkdir</h2>
 
                             <p>
                                 este comando permite crear un directorio con el nombre que le pasemos como argumento, la carpeta será creada
@@ -154,7 +154,7 @@ export function BasicLinux() {
                                 directorio.
                             </p>
 
-                            <h2>man</h2>
+                            <h2 id='man'>man</h2>
 
                             <p>
                                 este comando mostrará información sobre un comando que se pase como parametro, de esta manera podemos aprender
