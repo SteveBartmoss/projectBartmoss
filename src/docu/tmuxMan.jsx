@@ -81,7 +81,7 @@ export function TmuxMan() {
                             </p>
 
                             <p>
-                                Esto hara que el programa inici y podremos notarlo porque en la parte inferior de la 
+                                Esto hara que el programa inicie y podremos notarlo porque en la parte inferior de la 
                                 terminal tendremos una franja de color que nos indica en que capa de terminal estamos y 
                                 el nombre que asignamos a esta terminal
                             </p>
@@ -114,6 +114,48 @@ export function TmuxMan() {
 
                             <p>
                                 ctrl-b + x
+                            </p>
+
+                            <h3>Crear una vetana nueva</h3>
+
+                            <p>
+                                ctrl-b + c
+                            </p>
+
+                            <h3>Pasar a la siguiente ventana</h3>
+
+                            <p>
+                                ctrl-b + n
+                            </p>
+
+                            <h3>Volver a la ventana anterior</h3>
+
+                            <p>
+                                ctrl-b + p
+                            </p>
+
+                            <h3>Moverse a una ventana en especifico</h3>
+
+                            <p>
+                                ctrl-b + numero ID
+                            </p>
+
+                            <h3>Abrir el modo linea de comandos</h3>
+
+                            <p>
+                                ctrl-b + :
+                            </p>
+
+                            <h3>Mostrar todos los atajos</h3>
+
+                            <p>
+                                ctrl-b ?
+                            </p>
+
+                            <h3>Listar las ventanas de la sesion actual</h3>
+
+                            <p>
+                                ctrl-b + w
                             </p>
 
                         </DivContent>
