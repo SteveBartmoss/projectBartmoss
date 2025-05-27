@@ -92,10 +92,20 @@ export function TmuxMan() {
                                 ctrl-b + d
                             </p>
 
+                            <p>
+                                De esta forma cerraremos el programa y regresamos a la terminal simple que se suele usar 
+                                normalmente 
+                            </p>
+
                             <h3>Dividir la ventana de forma vertical</h3>
 
                             <p>
                                 ctrl-b + %
+                            </p>
+
+                            <p>
+                                Con esto el panel actual se divive por la mitad de forma horizontal por lo que tendremos 
+                                el panel izquierdo y el panel derecho, ambos funcionaran de forma independiente
                             </p>
 
                             <h3>Dividir la ventaba de forma horizaontal</h3>
@@ -104,16 +114,32 @@ export function TmuxMan() {
                                 ctrl-b + "
                             </p>
 
+                            <p>
+                                Similar al comando anterior divide el panel actual de forma horizontal por lo que tendremos 
+                                el panel superior y el inferior, igual que antes los paneles funcionan de forma independiente
+                            </p>
+
                             <h3>Moverse entre divisiones de la terminal</h3>
 
                             <p>
                                 ctrl-b + flecha
                             </p>
 
+                            <p>
+                                De esta forma podemos movernos entre los paneles que tenemos en la sesion, las direcciones seran izquierda, derecha, arriba 
+                                a bajo segun la flecha que usemos. De esta forma podemos interactuar con diferentes paneles y la division en la que estamos 
+                                actualmente se resaltara de un color diferente al de los otros para indicarnos en donde estamos
+                            </p>
+
                             <h3>Cerrar el panel actual</h3>
 
                             <p>
                                 ctrl-b + x
+                            </p>
+
+                            <p>
+                                Esto cerrara el panel actual pero no terminara el programa si tenemos paneles adicionales, de esta forma podemos 
+                                cerrar un panel que ya no necesitamos, evitando terminar el programa
                             </p>
 
                             <h3>Crear una vetana nueva</h3>
