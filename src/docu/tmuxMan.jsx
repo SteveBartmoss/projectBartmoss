@@ -89,13 +89,31 @@ export function TmuxMan() {
                             <h3>Salir de la sesion actual</h3>
 
                             <p>
-                                cntrl-b + d
+                                ctrl-b + d
                             </p>
 
                             <h3>Dividir la ventana de forma vertical</h3>
 
                             <p>
-                                cntrl-b + %
+                                ctrl-b + %
+                            </p>
+
+                            <h3>Dividir la ventaba de forma horizaontal</h3>
+
+                            <p>
+                                ctrl-b + "
+                            </p>
+
+                            <h3>Moverse entre divisiones de la terminal</h3>
+
+                            <p>
+                                ctrl-b + flecha
+                            </p>
+
+                            <h3>Cerrar el panel actual</h3>
+
+                            <p>
+                                ctrl-b + x
                             </p>
 
                         </DivContent>
