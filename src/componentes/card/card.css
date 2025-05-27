@@ -1,8 +1,9 @@
 .card-basic{
-    border-radius: 1rem;
+    border-radius: .5rem;
     padding: 1rem;
     margin: 1rem;
     font-family: "Poppins";
+    border: .1rem solid rgba(255, 255, 255,.12);
 }
 
 .card-basic h1 {
