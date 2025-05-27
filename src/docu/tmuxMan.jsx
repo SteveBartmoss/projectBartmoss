@@ -148,6 +148,12 @@ export function TmuxMan() {
                                 ctrl-b + c
                             </p>
 
+                            <p>
+                                Esto creara otra ventana que podemos verlo como una capa superior, ya que no veremos una tab o algo 
+                                similar mas bien veremos que el numero que tenemos en la franja inferior cambia pues ahora estamos una 
+                                capa extra
+                            </p>
+
                             <h3>Pasar a la siguiente ventana</h3>
 
                             <p>
