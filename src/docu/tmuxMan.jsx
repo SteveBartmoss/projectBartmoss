@@ -200,6 +200,11 @@ export function TmuxMan() {
                                 ctrl-b ?
                             </p>
 
+                            <p>
+                                Con esto podemos ver los atajos de la aplicacion asi que tambien podemos consultar esto si necesitamos algun 
+                                atajo en especifico o si no sabemos que hacia cierto atajo
+                            </p>
+
                             <h3>Listar las ventanas de la sesion actual</h3>
 
                             <p>
