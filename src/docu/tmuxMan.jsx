@@ -189,6 +189,11 @@ export function TmuxMan() {
                                 ctrl-b + :
                             </p>
 
+                            <p>
+                                Este modo de trabajo es mas avanzado y permite ejecutar comandos como si de una misma terminal se tratara, de esta forma podemos configurar 
+                                el mismo programa de tmux, ademas de realizar combos wombos que permiten trabajar de forma rapida con el programa
+                            </p>
+
                             <h3>Mostrar todos los atajos</h3>
 
                             <p>
