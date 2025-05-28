@@ -91,12 +91,9 @@
 
 .div-article {
     width: 80%;
-    margin: auto;
     padding: 1rem;
     height: 100vh;
     overflow-y: scroll;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
 }
 
 .div-article h1 {
