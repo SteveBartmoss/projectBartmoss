@@ -166,10 +166,21 @@ export function TmuxMan() {
                                 ctrl-b + p
                             </p>
 
+                            <p>
+                                Ambos comandos permiten navegar entre ventanas, por lo que podemos ver el comando n y p como un adelante y atras, con estos 
+                                comandos podemos movernos entre las vetanas de la terminal o entre las capas de la tmux, ya que tambien podemos ver las ventanas 
+                                como diferentes capas de la terminal que estamos multiplexando
+                            </p>
+
                             <h3>Moverse a una ventana en especifico</h3>
 
                             <p>
                                 ctrl-b + numero ID
+                            </p>
+
+                            <p>
+                                Este comando es mas eficiente, ya que podemos movernos directamente a la section que queremos directamente, sin tener que pasar por las demas 
+                                capas de la terminal.
                             </p>
 
                             <h3>Abrir el modo linea de comandos</h3>
