@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom"
 import { Btn } from "../../componentes/btn/Btn"
-import { DivArticle, DivCol, DivContent, DivRow, DivTopicos } from "../../componentes/contenedores/contenedores"
+import { DivArticle, DivCol, DivContent, DivRow, DivSection, DivTopicos } from "../../componentes/contenedores/contenedores"
 import { ExtendPanel } from "../../componentes/extendpanel/ExtendPanel"
 import { Portada } from "../../componentes/portada/portada"
 import { CardLink } from "../../componentes/card/card"
@@ -39,7 +39,7 @@ export function RoadMapJs() {
 
     const navigate = useNavigate();
 
-    const handleNavigate=(url)=>{
+    const handleNavigate = (url) => {
         console.log('prueba')
         //navigate(url)
     }
@@ -48,8 +48,7 @@ export function RoadMapJs() {
         <>
             <Portada imgPortada={"/Assets/steveA.png"} title={"Road map Js"} text={"Por Steve 04/11/2024"} />
 
-            <DivArticle>
-
+            <DivSection>
                 <DivContent>
                     <h1>Objetos</h1>
 
@@ -75,7 +74,7 @@ export function RoadMapJs() {
                         </p>
 
                         <h3>Mutabilidad</h3>
-                        
+
                         <p>
                             Cómo los objetos pueden cambiar a lo largo del tiempo y
                             cómo funciona el paso por referencia.
@@ -125,7 +124,7 @@ export function RoadMapJs() {
 
                         <DivRow>
                             <DivCol>
-                            <AnchorLink url={'objects'} text={'Ir al articulo'} />
+                                <AnchorLink url={'objects'} text={'Ir al articulo'} />
                             </DivCol>
                         </DivRow>
                     </ExtendPanel>
@@ -144,7 +143,7 @@ export function RoadMapJs() {
                         </p>
                         <DivRow>
                             <DivCol>
-                            <AnchorLink url={'objects'} text={'Ir al articulo'} />
+                                <AnchorLink url={'objects'} text={'Ir al articulo'} />
                             </DivCol>
                         </DivRow>
                     </ExtendPanel>
@@ -166,7 +165,7 @@ export function RoadMapJs() {
 
                         <DivRow>
                             <DivCol>
-                            <AnchorLink url={'objects'} text={'Ir al articulo'} />
+                                <AnchorLink url={'objects'} text={'Ir al articulo'} />
                             </DivCol>
                         </DivRow>
                     </ExtendPanel>
@@ -185,7 +184,7 @@ export function RoadMapJs() {
 
                         <DivRow>
                             <DivCol>
-                            <AnchorLink url={'objects'} text={'Ir al articulo'} />
+                                <AnchorLink url={'objects'} text={'Ir al articulo'} />
                             </DivCol>
                         </DivRow>
                     </ExtendPanel>
@@ -207,7 +206,7 @@ export function RoadMapJs() {
 
                         <DivRow>
                             <DivCol>
-                            <AnchorLink url={'objects'} text={'Ir al articulo'} />
+                                <AnchorLink url={'objects'} text={'Ir al articulo'} />
                             </DivCol>
                         </DivRow>
                     </ExtendPanel>
@@ -227,7 +226,7 @@ export function RoadMapJs() {
 
                         <DivRow>
                             <DivCol>
-                            <AnchorLink url={'objects'} text={'Ir al articulo'} />
+                                <AnchorLink url={'objects'} text={'Ir al articulo'} />
                             </DivCol>
                         </DivRow>
                     </ExtendPanel>
@@ -245,7 +244,7 @@ export function RoadMapJs() {
 
                         <DivRow>
                             <DivCol>
-                            <AnchorLink url={'objects'} text={'Ir al articulo'} />
+                                <AnchorLink url={'objects'} text={'Ir al articulo'} />
                             </DivCol>
                         </DivRow>
                     </ExtendPanel>
@@ -456,7 +455,7 @@ export function RoadMapJs() {
 
                     </ExtendPanel>
 
-                    <ExtendPanel title='Prototipos'>
+                     <ExtendPanel title='Prototipos'>
                         <p>
                             Sistema de prototipos en JavaScript: Entender que cada objeto tiene una referencia interna([[Prototype]]) a otro objeto.
                         </p>
@@ -528,7 +527,7 @@ export function RoadMapJs() {
                         </p>
                     </ExtendPanel>
 
-                    <ExtendPanel title='Method Override'>
+                     <ExtendPanel title='Method Override'>
                         <p>
                             Sobrescribir métodos: Cómo una subclase puede redefinir los métodos heredados de una superclase.
                         </p>
@@ -564,7 +563,7 @@ export function RoadMapJs() {
                         </p>
                     </ExtendPanel>
 
-                    <ExtendPanel title='Mixins'>
+                     <ExtendPanel title='Mixins'>
                         <p>
                             Concepto de Mixins: Definición de objetos o funciones que contienen métodos y propiedades para combinar en otros objetos.
                         </p>
@@ -729,7 +728,8 @@ export function RoadMapJs() {
 
                 </DivContent>
 
-            </DivArticle>
+            </DivSection>
+            
         </>
     )
 }
