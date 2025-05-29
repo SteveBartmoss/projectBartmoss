@@ -237,7 +237,7 @@ export function processCodeV2(code){
                     estado=0
                     iterador++
                 }
-                else if(char == ' '){
+                else if(char === ' '){
                     listTokens.push({
                         typeToken: 'Espacio',
                         character: char,
@@ -368,6 +368,14 @@ export function processCodeV2(code){
                     estado=7
                 }
                 break
+            
+            default:
+                listTokens.push({
+                    typeToken: 'Unknow',
+                    character: char,
+                })
+                iterador++
+                break
         }
 
     }
@@ -398,6 +406,12 @@ export function processCodeV2(code){
                     character: swap
                 })
                 break
+            default:
+                listTokens.push({
+                    typeToken: 'Unknow',
+                    character: swap,
+                })
+                break;
         }
     }
 
