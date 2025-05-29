@@ -1,6 +1,6 @@
 .portada {
     width: 70%;
-    height: 19%;
+    height: 200px;
     background: url("../../../public/Assets/fog_forest_alt_2.png") no-repeat center center/cover;
     padding-bottom: 50px;
     /*margin-bottom: 20px;*/
