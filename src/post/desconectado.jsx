@@ -1,5 +1,5 @@
 import { AsideContent } from "../componentes/asideContent/asideContent";
-import { DivArticle, DivCol, DivContent, DivRow, DivSection } from "../componentes/contenedores/contenedores";
+import { DivArticle, DivCol, DivContent, DivRow } from "../componentes/contenedores/contenedores";
 import { Portada } from "../componentes/portada/portada";
 
 export function DesconectadoLife() {
