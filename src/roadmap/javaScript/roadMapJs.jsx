@@ -1,6 +1,5 @@
 import { useNavigate } from "react-router-dom"
-import { Btn } from "../../componentes/btn/Btn"
-import { DivArticle, DivCol, DivContent, DivRow, DivSection, DivTopicos } from "../../componentes/contenedores/contenedores"
+import { DivCol, DivContent, DivRow, DivSection } from "../../componentes/contenedores/contenedores"
 import { ExtendPanel } from "../../componentes/extendpanel/ExtendPanel"
 import { Portada } from "../../componentes/portada/portada"
 import { CardLink } from "../../componentes/card/card"
