@@ -116,9 +116,7 @@ export function TmuxMan() {
 
                             <h3>Iniciar tmux</h3>
 
-                            <p>
-                                tmux
-                            </p>
+                            <CodeSpaceV3 title={'iniciar el programa'} rawCode="tmux" />
 
                             <p>
                                 Esto hara que el programa inicie y podremos notarlo porque en la parte inferior de la 
@@ -128,9 +126,7 @@ export function TmuxMan() {
 
                             <h3>Salir de la sesion actual</h3>
 
-                            <p>
-                                ctrl-b + d
-                            </p>
+                            <CodeSpaceV3 title={'cerrar el programa'} rawCode="ctrl-b + d" />
 
                             <p>
                                 De esta forma cerraremos el programa y regresamos a la terminal simple que se suele usar 
@@ -139,9 +135,7 @@ export function TmuxMan() {
 
                             <h3>Dividir la ventana de forma vertical</h3>
 
-                            <p>
-                                ctrl-b + %
-                            </p>
+                            <CodeSpaceV3 title={'dividir en vertical'} rawCode="ctrl-b + %" />
 
                             <p>
                                 Con esto el panel actual se divive por la mitad de forma horizontal por lo que tendremos 
@@ -150,9 +144,7 @@ export function TmuxMan() {
 
                             <h3>Dividir la ventaba de forma horizaontal</h3>
 
-                            <p>
-                                ctrl-b + "
-                            </p>
+                            <CodeSpaceV3 title={'dividir en horizontal'} rawCode='ctrl-b + "' />
 
                             <p>
                                 Similar al comando anterior divide el panel actual de forma horizontal por lo que tendremos 
@@ -161,9 +153,7 @@ export function TmuxMan() {
 
                             <h3>Moverse entre divisiones de la terminal</h3>
 
-                            <p>
-                                ctrl-b + flecha
-                            </p>
+                            <CodeSpaceV3 title={'moverse entre divisiones'} rawCode="ctrl-b + flecha" />
 
                             <p>
                                 De esta forma podemos movernos entre los paneles que tenemos en la sesion, las direcciones seran izquierda, derecha, arriba 
@@ -173,9 +163,7 @@ export function TmuxMan() {
 
                             <h3>Cerrar el panel actual</h3>
 
-                            <p>
-                                ctrl-b + x
-                            </p>
+                            <CodeSpaceV3 title={'cerrar ventana actual'} rawCode="ctrl-b + x" />
 
                             <p>
                                 Esto cerrara el panel actual pero no terminara el programa si tenemos paneles adicionales, de esta forma podemos 
@@ -184,9 +172,7 @@ export function TmuxMan() {
 
                             <h3>Crear una vetana nueva</h3>
 
-                            <p>
-                                ctrl-b + c
-                            </p>
+                            <CodeSpaceV3 title={'crear nueva ventana'} rawCode="ctrl-b + c" />
 
                             <p>
                                 Esto creara otra ventana que podemos verlo como una capa superior, ya que no veremos una tab o algo 
@@ -196,15 +182,15 @@ export function TmuxMan() {
 
                             <h3>Pasar a la siguiente ventana</h3>
 
+                            <CodeSpaceV3 title={'siguiente vetana'} rawCode="ctrl-b + n" />
+
                             <p>
-                                ctrl-b + n
+                                
                             </p>
 
                             <h3>Volver a la ventana anterior</h3>
 
-                            <p>
-                                ctrl-b + p
-                            </p>
+                            <CodeSpaceV3 title={'ventana anterior'} rawCode="ctrl-b + p" />
 
                             <p>
                                 Ambos comandos permiten navegar entre ventanas, por lo que podemos ver el comando n y p como un adelante y atras, con estos 
@@ -214,9 +200,7 @@ export function TmuxMan() {
 
                             <h3>Moverse a una ventana en especifico</h3>
 
-                            <p>
-                                ctrl-b + numero ID
-                            </p>
+                            <CodeSpaceV3 title={'ir a ventana especifica'} rawCode="ctrl-b + numero ID" />
 
                             <p>
                                 Este comando es mas eficiente, ya que podemos movernos directamente a la section que queremos directamente, sin tener que pasar por las demas 
@@ -225,9 +209,7 @@ export function TmuxMan() {
 
                             <h3>Abrir el modo linea de comandos</h3>
 
-                            <p>
-                                ctrl-b + :
-                            </p>
+                            <CodeSpaceV3 title={'abrir modo comandos'} rawCode="ctrl-b + :" />
 
                             <p>
                                 Este modo de trabajo es mas avanzado y permite ejecutar comandos como si de una misma terminal se tratara, de esta forma podemos configurar 
@@ -236,9 +218,7 @@ export function TmuxMan() {
 
                             <h3>Mostrar todos los atajos</h3>
 
-                            <p>
-                                ctrl-b ?
-                            </p>
+                            <CodeSpaceV3 title={'mostrar atajos'} rawCode="ctrl-b ?" />
 
                             <p>
                                 Con esto podemos ver los atajos de la aplicacion asi que tambien podemos consultar esto si necesitamos algun 
@@ -247,9 +227,7 @@ export function TmuxMan() {
 
                             <h3>Listar las ventanas de la sesion actual</h3>
 
-                            <p>
-                                ctrl-b + w
-                            </p>
+                            <CodeSpaceV3 title={'listar ventanas'} rawCode="ctrl-b + w" />
 
                             <p>
                                 De esta forma podemos ver todas las ventanas si es que no recordamos alguna en especifico a la que queremos 
