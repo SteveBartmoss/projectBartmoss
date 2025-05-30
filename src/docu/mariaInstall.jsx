@@ -64,13 +64,51 @@ export function MariaInstall() {
                         </p>
 
                         <p>
-                            Es mensaje nos indica que para inicar el proceso debemos ingresar la contraseña del 
-                            usuario root de mariaDB pero que si solamente instalamos el paquete y no se agrego 
-                            ninguna contraseña para root podemos simplemente dar enter para continuar. 
+                            Es mensaje nos indica que para inicar el proceso debemos ingresar la contraseña del
+                            usuario root de mariaDB pero que si solamente instalamos el paquete y no se agrego
+                            ninguna contraseña para root podemos simplemente dar enter para continuar.
                         </p>
 
                         <p>
                             Como solo se instalo el paquete podemos dar enter y continuar con el script
+                        </p>
+
+                        <p>
+                            OK, successfully used password, moving on...
+
+                            Setting the root password or using the unix_socket ensures that nobody
+                            can log into the MariaDB root user without the proper authorisation.
+
+                            You already have your root account protected, so you can safely answer 'n'.
+
+                            Switch to unix_socket authentication [Y/n]
+                        </p>
+
+                        <p>
+                            Este mensaje puede parecer confuso pero en realidad es sencillo, normalmente para
+                            iniciar sesion en el servidor debemos pasar el usuario root y una contraseña, (puede ser
+                            tambien un usuario cualquiera) pero en el caso de linux tambien podemos iniciar sesion
+                            desde el socket de linux, lo que nos permite iniciar sesion sin contraseña solo con el usuario
+                            root del sistema o con sudo.
+                        </p>
+
+                        <p>
+                            Si selecionamos y entonces configuramos que se puede iniciar sesion con root o sudo, algo que
+                            personalmente no me agrada sobre todo cuando tengo que trabajar con un driver de conexion
+                            para algun lenguaje de programacion, si selecionamos n entonces tendremos que configurar un usuario
+                            root junto con la contraseña para poder iniciar sesion en el servidor
+                        </p>
+
+                        <p>
+                            You already have your root account protected, so you can safely answer 'n'.
+
+                            Change the root password? [Y/n]
+                        </p>
+
+                        <p>
+                            Si selecionamos n en la opcion anterior nos aparece este mensaje que nos pregunta si queremos 
+                            cambiar la contraseña de root, como es una instalacion desde cero seleccionamos y para 
+                            configurar una nueva constraseña para el usuario root
                         </p>
 
 
