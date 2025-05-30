@@ -41,6 +41,20 @@ export function TmuxMan() {
                 },
 
             ]
+        },
+        {
+            id: 2,
+            section: 'Uso basico',
+            childs: [
+                {
+                    titulo: 'Iniciar tmux',
+                    id: 'iniciar'
+                },
+                {
+                    titulo: 'Salir de la sesion actual',
+                    id: 'cerrar'
+                }
+            ]
         }
     ]
 
@@ -114,7 +128,7 @@ export function TmuxMan() {
 
                             <h2>Uso basico de tmux</h2>
 
-                            <h3>Iniciar tmux</h3>
+                            <h3 id="iniciar">Iniciar tmux</h3>
 
                             <CodeSpaceV3 title={'iniciar el programa'} rawCode="tmux" />
 
@@ -124,7 +138,7 @@ export function TmuxMan() {
                                 el nombre que asignamos a esta terminal
                             </p>
 
-                            <h3>Salir de la sesion actual</h3>
+                            <h3 id='cerrar'>Salir de la sesion actual</h3>
 
                             <CodeSpaceV3 title={'cerrar el programa'} rawCode="ctrl-b + d" />
 
