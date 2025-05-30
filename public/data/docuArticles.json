@@ -190,5 +190,17 @@
       }
     ],
     "topico": ["fundajs"]
+  },
+  {
+    "titulo": "Manual de tmux",
+    "descripcion": "En este post se explica como trabajar con una herramienta de terminal como tmux",
+    "url": "tmuxman",
+    "tags": [
+      {
+        "text": "tmux",
+        "color" : "principal"
+      }
+    ],
+    "topico": ["fundajs"]
   }
 ]
