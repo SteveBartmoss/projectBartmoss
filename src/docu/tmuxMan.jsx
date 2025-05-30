@@ -1,8 +1,23 @@
+import { CodeSpaceV3 } from "../componentes/codeSpace/CodeSpaceV3";
 import { DivArticle, DivCol, DivContent, DivRow } from "../componentes/contenedores/contenedores";
 import { Portada } from "../componentes/portada/portada";
+import { TreeMap } from "../componentes/treeMap/TreeMap";
 
 
 export function TmuxMan() {
+
+    const pageMap = [
+        {
+            id: 1,
+            section: 'Instalacion',
+            childs: [
+                {
+                    titulo: 'Arch',
+                    id: 'arch'
+                },
+            ]
+        }
+    ]
 
     return (
         <>
@@ -10,7 +25,7 @@ export function TmuxMan() {
 
             <DivRow>
                 <DivCol>
-
+                    <TreeMap titulo={'Mapa del sitio'} elementos={pageMap} />
                 </DivCol>
                 <DivCol>
                     <DivArticle>
@@ -37,9 +52,11 @@ export function TmuxMan() {
                                 se muestran algunos ejemplos
                             </p>
 
-                            <h3>Arch linux</h3>
+                            <h3 id='arch'>Arch linux</h3>
 
-                            <p>pacman -S tmux</p>
+                            <CodeSpaceV3 title={'Comando'} rawCode="pacman -S tmux" />
+
+                            <p></p>
 
                             <h3>Debian o derivados</h3>
 
@@ -209,6 +226,11 @@ export function TmuxMan() {
 
                             <p>
                                 ctrl-b + w
+                            </p>
+
+                            <p>
+                                De esta forma podemos ver todas las ventanas si es que no recordamos alguna en especifico a la que queremos 
+                                movernos
                             </p>
 
                         </DivContent>
