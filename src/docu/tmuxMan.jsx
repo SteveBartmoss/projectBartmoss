@@ -45,7 +45,7 @@ export function TmuxMan() {
 
                             <h1>Instalar tmux</h1>
 
-                            <h3>Linux</h3>
+                            <h2>Linux</h2>
 
                             <p>
                                 Si estamos en linux podemos usar el gestor de paquete la distribucion que usas, a continuacion
@@ -56,25 +56,23 @@ export function TmuxMan() {
 
                             <CodeSpaceV3 title={'Comando'} rawCode="pacman -S tmux" />
 
-                            <p></p>
-
                             <h3>Debian o derivados</h3>
 
-                            <p>apt install tmux</p>
+                            <CodeSpaceV3 title={'Comando'} rawCode="apt install tmux" />
 
                             <h3>Fedora</h3>
 
-                            <p>dnf install tmux</p>
+                            <CodeSpaceV3 title={'Comando'} rawCode="dnf install tmux" />
 
                             <h3>RHEL or CentOS</h3>
 
-                            <p>yum install tmux</p>
+                            <CodeSpaceV3 title={'Comando'} rawCode="yum install tmux" />
 
                             <h3>openSUSE</h3>
 
-                            <p>zypper install tmux</p>
+                            <CodeSpaceV3 title={'Comando'} rawCode="zypper install tmux" />
 
-                            <h3>macOs</h3>
+                            <h2>macOs</h2>
 
                             <p>
                                 Si usamos el popular sistema de la manzana podemos usar algunos gestores 
@@ -83,11 +81,11 @@ export function TmuxMan() {
 
                             <h3>macOS HomeBrew</h3>
 
-                            <p>brew install tmux</p>
+                            <CodeSpaceV3 title={'Comando'} rawCode="brew install tmux" />
 
                             <h3>macOs macporst</h3>
 
-                            <p>port install tmux</p>
+                            <CodeSpaceV3 title={'Comando'} rawCode="port install tmux" />
 
                             <h2>Uso basico de tmux</h2>
 
