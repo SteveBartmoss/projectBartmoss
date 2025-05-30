@@ -15,6 +15,31 @@ export function TmuxMan() {
                     titulo: 'Arch',
                     id: 'arch'
                 },
+                {
+                    titulo: 'Debian o derivados',
+                    id: 'debian'
+                },
+                {
+                    titulo: 'Fedora',
+                    id: 'fedora'
+                },
+                {
+                    titulo: 'RHEL or CentOS',
+                    id: 'rhel'
+                },
+                {
+                    titulo: 'openSUSE',
+                    id: 'opensuse'
+                },
+                {
+                    titulo: 'macOS HomeBrew',
+                    id: 'homebrew'
+                },
+                {
+                    titulo: 'macOs macporst',
+                    id: 'macporst'
+                },
+
             ]
         }
     ]
@@ -56,19 +81,19 @@ export function TmuxMan() {
 
                             <CodeSpaceV3 title={'Comando'} rawCode="pacman -S tmux" />
 
-                            <h3>Debian o derivados</h3>
+                            <h3 id='debian'>Debian o derivados</h3>
 
                             <CodeSpaceV3 title={'Comando'} rawCode="apt install tmux" />
 
-                            <h3>Fedora</h3>
+                            <h3 id='fedora'>Fedora</h3>
 
                             <CodeSpaceV3 title={'Comando'} rawCode="dnf install tmux" />
 
-                            <h3>RHEL or CentOS</h3>
+                            <h3 id='rhel'>RHEL or CentOS</h3>
 
                             <CodeSpaceV3 title={'Comando'} rawCode="yum install tmux" />
 
-                            <h3>openSUSE</h3>
+                            <h3 id='opensuse'>openSUSE</h3>
 
                             <CodeSpaceV3 title={'Comando'} rawCode="zypper install tmux" />
 
@@ -79,11 +104,11 @@ export function TmuxMan() {
                                 para instalar esta herramienta
                             </p>
 
-                            <h3>macOS HomeBrew</h3>
+                            <h3 id='homebrew'>macOS HomeBrew</h3>
 
                             <CodeSpaceV3 title={'Comando'} rawCode="brew install tmux" />
 
-                            <h3>macOs macporst</h3>
+                            <h3 id='macporst'>macOs macporst</h3>
 
                             <CodeSpaceV3 title={'Comando'} rawCode="port install tmux" />
 
