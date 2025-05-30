@@ -121,127 +121,128 @@
                 Bueno el 2025 si viene recargado, que nos espera :("
             />
 
-            <TimeItem fecha="3/01/2025" autor="Steve" texto="
-                Espero este fin de semana, poder inciar el nuevo 
-                proyecto"
-            />
-
-            <TimeItem fecha="2/01/2025" autor="Steve" texto="
-                Como que este nuevo 2025 no tiene semana de 
-                chocolate ?"
-            />
-
-            <TimeItem fecha="1/01/2025" autor="Steve" texto="
-                Bueno, hagamos esto una ultima vez"
-            />
-
-            <TimeItem fecha="31/12/2024" autor="Steve" texto="
-                Que loco, el ultimo time line del 2024, ni siquiera 
-                pense que esto pudiera llegar mas lejos de unos meses"
-            />
-
-            <TimeItem fecha="29/12/2024" autor="Steve" texto="
-                Bueno ahi va otro año, al menos en este no habia 
-                pandemia"
-            />
-
-            <TimeItem fecha="27/12/2024" autor="Steve" texto="
-                Maldito sea el hombre que confía en otro hombre
-                Gran verdad en esa frase se esconde"
-            />
-
-            <TimeItem fecha="26/12/2024" autor="Steve" texto="
-                Supongo que se termino vientos de invierno no ?
-                Deberia seguir sueño de primavera ?"
-            />
-
-            <TimeItem fecha="25/12/2024" autor="Steve" texto="
-                Bueno, hoy fue un buen dia"
-            />
-
-            <TimeItem fecha="24/12/2024" autor="Steve" texto="
-                Si cada caracter del codigo de un software costara, 
-                quizas los clientes lo pensarian dos veces antes de 
-                pedir tantas cosas XD"
-            />
-
-            <TimeItem fecha="23/12/2024" autor="Steve" texto="
-                Un poeta en Venezuela canta con la frente arriba
-                Lo que la razón le diga y lo que dicte el corazón"
-            />
-
+            {
+    "fecha": "3/01/2025",
+    "autor": "Steve",
+    "texto": "Espero este fin de semana, poder inciar el nuevo proyecto"
+  },
   {
-    "fecha": "22/12/2024", 
-    "autor": "Steve", 
+    "fecha": "2/01/2025",
+    "autor": "Steve",
+    "texto": "Como que este nuevo 2025 no tiene semana de chocolate ?"
+  },
+  {
+    "fecha": "1/01/2025",
+    "autor": "Steve",
+    "texto": "Bueno, hagamos esto una ultima vez"
+  },
+  {
+    "fecha": "31/12/2024",
+    "autor": "Steve",
+    "texto": "Que loco, el ultimo time line del 2024, ni siquiera pense que esto pudiera llegar mas lejos de unos meses"
+  },
+  {
+    "fecha": "29/12/2024",
+    "autor": "Steve",
+    "texto": "Bueno ahi va otro año, al menos en este no habia pandemia"
+  },
+  {
+    "fecha": "27/12/2024",
+    "autor": "Steve",
+    "texto": "Maldito sea el hombre que confía en otro hombre Gran verdad en esa frase se esconde"
+  },
+  {
+    "fecha": "26/12/2024",
+    "autor": "Steve",
+    "texto": "Supongo que se termino vientos de invierno no ? Deberia seguir sueño de primavera ?"
+  },
+  {
+    "fecha": "25/12/2024",
+    "autor": "Steve",
+    "texto": "Bueno, hoy fue un buen dia"
+  },
+  {
+    "fecha": "24/12/2024",
+    "autor": "Steve",
+    "texto": "Si cada caracter del codigo de un software costara, quizas los clientes lo pensarian dos veces antes de pedir tantas cosas XD"
+  },
+  {
+    "fecha": "23/12/2024",
+    "autor": "Steve",
+    "texto": "Un poeta en Venezuela canta con la frente arriba Lo que la razón le diga y lo que dicte el corazón"
+  },
+  {
+    "fecha": "22/12/2024",
+    "autor": "Steve",
     "texto": " Hay un tipo en Venezuela que, aunque digan lo que digan Es real como cualquiera que sienta rencor y amor"
   },
   {
-    "fecha": "20/12/2024", 
-    "autor": "Steve", 
+    "fecha": "20/12/2024",
+    "autor": "Steve",
     "texto": " Hay un tipo en Venezuela que quiere morir tranquilo Planea meterse un tiro en un banquillo'e callejón"
   },
   {
-    "fecha": "19/12/2024", 
-    "autor": "Steve", 
+    "fecha": "19/12/2024",
+    "autor": "Steve",
     "texto": "Hay un chamo en Venezuela que poco a poco comprende Que la vida es diferente y que pudiera ser mejor"
   },
   {
-    "fecha": "11/12/2024", 
-    "autor": "Steve", 
+    "fecha": "11/12/2024",
+    "autor": "Steve",
     "texto": " Jajaja ahora si el frio esta potente, el invierno llego :("
   },
   {
-    "fecha": "11/12/2024", 
+    "fecha": "11/12/2024",
     "autor": "Steve",
     "texto": "Hay un niño en Venezuela que creció como cualquiera Jugando en calles y aceras sin mucha preocupación Es fácil para los niños, que de cualquier forma juegan Sin pensar que el mundo afuera fue creado pa'l león"
   },
   {
-    "fecha": "05/12/2024", 
+    "fecha": "05/12/2024",
     "autor": "Steve",
     "texto": "Bueno eso si fue un mes interesante, pero que bueno volvemos a la normalidad, faltan 19 dias para navidad"
   },
   {
-    "fecha": "08/11/2024", 
-    "autor": "Steve", 
+    "fecha": "08/11/2024",
+    "autor": "Steve",
     "texto": "De nuevo viernes, trabajo todo el dia y entonces despierto"
   },
   {
-    "fecha": "07/11/2024", 
+    "fecha": "07/11/2024",
     "autor": "Steve",
     "texto": "Las brumas aumentan cada vez mas, podria este ser el fin ?"
-  },        
+  },
   {
     "fecha": "06/11/2024",
     "autor": "Steve",
     "texto": "jajaja, pero eso que tiene que ver con la navidad"
   },
   {
-    "fecha": "04/11/2024", 
+    "fecha": "04/11/2024",
     "autor": "Steve",
     "texto": "Bueno esta vez no paso tan rapido el tiempo, pero aun asi, sigue sin ser suficiente"
   },
   {
-    "fecha": "01/11/2024", 
+    "fecha": "01/11/2024",
     "autor": "Steve",
     "texto": "Al fin es viernes, espero esta vez no se pase tan rapido"
-  },          
+  },
   {
-    "fecha": "31/10/2024", 
+    "fecha": "31/10/2024",
     "autor": "Steve",
     "texto": "Salir al trabajo sin datos es mi pasion, bueno espero el regreso a casa no sea un problema"
   },
   {
-    "fecha": "30/10/2024", 
+    "fecha": "30/10/2024",
     "autor": "Steve",
     "texto": "Leer ready player one por cuarta vez no me hara rico pero si feliz XD"
   },
   {
-    "fecha": "29/10/2024", 
+    "fecha": "29/10/2024",
     "autor": "Steve",
     "texto": "Otro dia, otra linea de codigo"
-  },      
+  },
   {
-    "fecha": "27/10/2024", 
+    "fecha": "27/10/2024",
     "autor": "Steve",
     "texto": "Bueno el viaje estubo algo cansado :("
   },
@@ -251,117 +252,117 @@
     "texto": "Oh no, oh no, las fiestas son aburridas, mejor que no me festejen"
   },
   {
-    "fecha": "24/10/2024", 
+    "fecha": "24/10/2024",
     "autor": "Steve",
     "texto": "Viernes pero a que costo, bueno al menos sera un mini puente"
-  },         
+  },
   {
-    "fecha": "24/10/2024", 
-    "autor": "Steve", 
+    "fecha": "24/10/2024",
+    "autor": "Steve",
     "texto": "Como que What Was I Made For originalmente no lleva maullidos"
   },
   {
-    "fecha":"23/10/2024", 
+    "fecha": "23/10/2024",
     "autor": "Steve",
     "texto": "Bueno caminar no siempre es malo pero seria bueno no tener que cuidarse de los asaltos"
   },
   {
-    "fecha": "22/10/2024", 
+    "fecha": "22/10/2024",
     "autor": "Steve",
     "texto": "Wow que palisa esta recibiendo wordpress, bueno quizas sea ora de usar sus propias tecnologias"
   },
   {
-    "fecha": "21/10/2024",  
+    "fecha": "21/10/2024",
     "autor": "Steve",
     "texto": "Bueno el futuro no es como el doc lo penso pero quizas estamos en el futuro malo"
-  },         
+  },
   {
-    "fecha": "21/10/2024", 
+    "fecha": "21/10/2024",
     "autor": "Steve",
     "texto": "Ya solo un mes mas y 23 dias para que sea navidad, que rapido XD"
   },
   {
-    "fecha": "18/10/2024", 
+    "fecha": "18/10/2024",
     "autor": "Steve",
     "texto": "Al fin es viernes, espero este fin no se pase tan rapido"
-  },            
+  },
   {
-    "fecha": "17/10/2024", 
+    "fecha": "17/10/2024",
     "autor": "Steve",
     "texto": "Oh no, elon tenia una empresa de ia y penas me entero que ya hasta tienen versiones de su modelo jajaja"
   },
   {
-    "fecha": "16/10/2024", 
+    "fecha": "16/10/2024",
     "autor": "Steve",
     "texto": "Bueno las brumas son mis aliados no ?, al menos eso dacia el buen kelsier"
   },
   {
-    "fecha": "15/10/2024", 
+    "fecha": "15/10/2024",
     "autor": "Steve",
     "texto": "Quizas usar un vps para mis proyectos seria buena idea, pero no soy rico asi que tendra que esperar"
   },
   {
-    "fecha": "14/10/2024", 
+    "fecha": "14/10/2024",
     "autor": "Steve",
     "texto": "Oh no hermano, wordpress esta en peligro, bueno nunca me gusto ese servicio"
   },
   {
-    "fecha": "11/10/2024", 
+    "fecha": "11/10/2024",
     "autor": "Steve",
     "texto": "Bueno otro dia, otro programa mas XD"
   },
   {
-    "fecha": "10/10/2024", 
+    "fecha": "10/10/2024",
     "autor": "Steve",
     "texto": "whats the matter pumpkin? (Que te pasa calabaza?)"
   },
   {
-    "fecha": "9/10/2024", 
+    "fecha": "9/10/2024",
     "autor": "Steve",
     "texto": "Bueno la libreria esta mejor, espero que pronto se pueda liberar la version 1"
   },
   {
-    "fecha": "8/10/2024", 
+    "fecha": "8/10/2024",
     "autor": "Steve",
     "texto": "Caracoles jimbo el socialismo de you tube no funciona"
   },
   {
-    "fecha": "7/10/2024", 
+    "fecha": "7/10/2024",
     "autor": "Steve",
     "texto": "jujuy, ya casi hay descuentos del festival de terror en steam"
   },
   {
-    "fecha": "03/10/2024", 
+    "fecha": "03/10/2024",
     "autor": "Steve",
     "texto": "Alguien nerfee a nintendo, tiene mucho poder XD"
   },
   {
-    "fecha":"02/10/2024", 
+    "fecha": "02/10/2024",
     "autor": "Steve",
     "texto": "Bueno es hora de comprar cartones, de todas formas ya no tengo nada que perder"
   },
   {
-    "fecha": "30/09/2024", 
-    "autor": "Steve", 
+    "fecha": "30/09/2024",
+    "autor": "Steve",
     "texto": "Bueno otro gobierno termina, algunos piensan que trae un cambio pero se cambia un tirano por otro"
   },
   {
-    "fecha": "26/09/2024", 
-    "autor": "Steve", 
+    "fecha": "26/09/2024",
+    "autor": "Steve",
     "texto": "Vulnerabilidad en linux de 9.9, la realidad esta en peligro date prisa goku"
   },
   {
-    "fecha": "25/09/2024", 
+    "fecha": "25/09/2024",
     "autor": "Steve",
     "texto": "I cant believe, today was a good day"
-  },    
+  },
   {
-    "fecha": "24/09/2024", 
+    "fecha": "24/09/2024",
     "autor": "Steve",
     "texto": "Parecia broma pero los foros si estan volviendo, que esta pasando doctor"
-  },         
+  },
   {
-    "fecha": "23/09/2024", 
+    "fecha": "23/09/2024",
     "autor": "Steve",
     "texto": "El invicto no se va recuperar solo, arriba la esperanza abuelita"
   },
