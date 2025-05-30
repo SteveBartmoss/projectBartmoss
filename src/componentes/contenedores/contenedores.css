@@ -1,6 +1,6 @@
 .div-main-dark {
     background-color: #282c34;
-    color: #9DA9A0;
+    color: #9ba3b4;
     scrollbar-color: #61dafb rgba(49, 49, 49, 0.2);
     scrollbar-width: thin;
     height: 100vh;
@@ -127,7 +127,7 @@
 @media (min-width: 360px) and (max-width: 430px) {
     .div-main-dark {
         background-color: #282c34;
-        color: #9DA9A0;
+        color: #9ba3b4; 
         scrollbar-color: #61dafb rgba(49, 49, 49, 0.2);
         scrollbar-width: thin;
         height: 100vh;
