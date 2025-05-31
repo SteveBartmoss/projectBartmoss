@@ -11,7 +11,7 @@ export function MariaInstall() {
             section: 'Instalacion',
             childs: [
                 {
-                    title: 'Instalacion',
+                    titulo: 'Comando para instalar',
                     id: 'instalacion'
                 }
             ]
@@ -40,7 +40,7 @@ export function MariaInstall() {
                                 basa en debian que es la distribucion base desde la que se creo ubuntu
                             </p>
 
-                            <h2>Instalar mariaDB</h2>
+                            <h2 id='instalacion'>Instalar mariaDB</h2>
 
                             <p>
                                 Para instalar el gestor de base de datos basta con usar el siguiente comando
