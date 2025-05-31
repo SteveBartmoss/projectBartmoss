@@ -126,11 +126,31 @@ export function MariaInstall() {
                         </p>
 
                         <p>
-                            Este mensaje nos avisa que por defecto se crea un usuario anonimo con el cual se puede iniciar sesion con algo como 
-                            lo siguiente mysql -u '' y con esto accede paracialmente a la base de datos, en teoria esto facilita pruebas 
-                            con la base de datos pero no es seguro para el sistema por lo cual el script nos preguntata si queremos eliminar el 
-                            usuario anonimo, en nuestro caso deberiamos decir que no para que la instalacions sea segura pero si no queremos 
+                            Este mensaje nos avisa que por defecto se crea un usuario anonimo con el cual se puede iniciar sesion con algo como
+                            lo siguiente mysql -u '' y con esto accede paracialmente a la base de datos, en teoria esto facilita pruebas
+                            con la base de datos pero no es seguro para el sistema por lo cual el script nos preguntata si queremos eliminar el
+                            usuario anonimo, en nuestro caso deberiamos decir que no para que la instalacions sea segura pero si no queremos
                             hacerlo simplemente debemos ingresar n
+                        </p>
+
+                        <p>
+                            Normally, root should only be allowed to connect from 'localhost'.  This
+                            ensures that someone cannot guess at the root password from the network.
+                        </p>
+
+                        <p>
+                            Esto nos indica que por defecto el usuario root solo puede iniciar sesion desde localhost, que en otras palabras 
+                            quiere decir que no podemoos iniciar sesion con el usuario root de manera remota asi que el script nos pregunta si queremos 
+                            desahabilitar el acceso remoto para el usuario root o queremos mantenerlo activo para poder iniciar sesion de forma 
+                            remota, aqui podemos responder y para quitar el acceso remoto o n para mantener el acceso remoto
+                        </p>
+
+                        <p>
+                            Hasta aqui se terminan los mensajes en los que la configuracion result de gran relevancia ya que el siguiente 
+                            mensaje nos indica si queremos borrar la base de datos de pruebas (test), podemos mantener la base Y o eliminar la base N, despues 
+                            de esto el nuevo mensaje nos indica que si queremos reestablecer los privilegios para que los cambios de configuracion se vean 
+                            reflejados, aqui deberiamos responder Y pero si no lo hacemos solo tendremos que reiniciar luego en caso de que alguna 
+                            configuracion no este reflejandose
                         </p>
 
 
