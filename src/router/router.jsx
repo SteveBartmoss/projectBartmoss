@@ -34,6 +34,7 @@ import { FundamentosJs } from "../docu/fundamentosJs";
 import { UsoLinux } from "../post/usoLinux";
 import { FirstStepGo } from "../docu/firstStepGo";
 import { TmuxMan } from "../docu/tmuxMan";
+import { MariaInstall } from "../docu/mariaInstall";
 
 
 export function RouterBlog(){
@@ -63,6 +64,7 @@ export function RouterBlog(){
                 <Route path="docu/fundajs" element={<FundamentosJs />} />
                 <Route path="docu/primerogo" element={<FirstStepGo />} />
                 <Route path="docu/tmuxman" element={<TmuxMan />} />
+                <Route path="docu/installmaria" element={<MariaInstall />} />
 
                 <Route path="steve/desconectado" element={<DesconectadoLife />} />
                 <Route path="steve/pilasinfin" element={<PilaSinFin />} />
