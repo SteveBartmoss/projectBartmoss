@@ -106,9 +106,31 @@ export function MariaInstall() {
                         </p>
 
                         <p>
-                            Si selecionamos n en la opcion anterior nos aparece este mensaje que nos pregunta si queremos 
-                            cambiar la contraseña de root, como es una instalacion desde cero seleccionamos y para 
+                            Si selecionamos n en la opcion anterior nos aparece este mensaje que nos pregunta si queremos
+                            cambiar la contraseña de root, como es una instalacion desde cero seleccionamos y para
                             configurar una nueva constraseña para el usuario root
+                        </p>
+
+                        <p>
+                            Nuevamente como es una instalacion nueva si es recomendable asignar un nueva contraseña para el usuario root
+                            sobre todo si no configuramos el inicio por el socket de linux, luego de esto nos aparece que ingresemos una contraseña
+                            para el usuario root de la base de datos
+                        </p>
+
+                        <p>
+                            By default, a MariaDB installation has an anonymous user, allowing anyone
+                            to log into MariaDB without having to have a user account created for
+                            them.  This is intended only for testing, and to make the installation
+                            go a bit smoother.  You should remove them before moving into a
+                            production environment.
+                        </p>
+
+                        <p>
+                            Este mensaje nos avisa que por defecto se crea un usuario anonimo con el cual se puede iniciar sesion con algo como 
+                            lo siguiente mysql -u '' y con esto accede paracialmente a la base de datos, en teoria esto facilita pruebas 
+                            con la base de datos pero no es seguro para el sistema por lo cual el script nos preguntata si queremos eliminar el 
+                            usuario anonimo, en nuestro caso deberiamos decir que no para que la instalacions sea segura pero si no queremos 
+                            hacerlo simplemente debemos ingresar n
                         </p>
 
 
