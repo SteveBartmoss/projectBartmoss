@@ -202,5 +202,17 @@
       }
     ],
     "topico": ["fundajs"]
+  },
+  {
+    "titulo": "Instalar mariaDB",
+    "descripcion": "En este post se explica como instalar mariaDB en ubuntu",
+    "url": "installmaria",
+    "tags": [
+      {
+        "text": "mariaDB",
+        "color" : "principal"
+      }
+    ],
+    "topico": ["fundajs"]
   }
 ]
