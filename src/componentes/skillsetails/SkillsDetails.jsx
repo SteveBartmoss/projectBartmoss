@@ -7,7 +7,7 @@ export function SkillsDetails(){
                 <img alt="imgSkills" className="img-profile-skills" src="/Assets/steveA.png" />
                 <div className='title-container'>
                     <h1>Seteve</h1>
-                    <p>clase: Desarrollador Especialidad: Aplicaciones web Nivel: DesarolladorJr</p>
+                    <p>clase: Desarrollador Especialidad: Aplicaciones web Nivel: DesarolladorJr Horas de programacion: 1135</p>
                 </div>
             </div>
             <div className='row-container'>
@@ -36,9 +36,25 @@ export function SkillsDetails(){
                     <p>React: Framework usado por eleccion</p>
 
                     <p>Angular: Framewortk usado en el trabajo</p>
+
+                    <p>mysql: base de datos usada por opcion</p>
+
+                    <p>sqlSeve: Base de datos usasa por el trabajo</p>
+
+                    <p>informix: Base de datos usada por el trabajo</p>
+
                 </div>
                 <div className='column-container'>
-                    <h1>Por definir</h1>
+                    <h1>miscelanea</h1>
+
+                    <p>vsCode: Editor de codigo predeterminado</p>
+
+                    <p>Git: manejador de versiones predeterminado</p>
+
+                    <p>Linux mint: Sistema operativo para trabajar</p>
+
+                    <p>GitHub: Gestor de repositorios remotos predeterminado</p>
+
                 </div>
             </div>
             <div>
