@@ -1,0 +1,30 @@
+.main-div-skills{
+    width: 90rem;
+    height: 40rem;
+    overflow-y: scroll;
+}
+
+.img-profile-skills{
+    width: 10%;
+}
+
+.header-skills{
+    display: flex;
+    flex-direction: row;
+}
+
+.title-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.row-container{
+    display: flex;
+    flex-direction: row;    
+}
+
+.column-container{
+    display: flex;
+    flex-direction: column;
+    border: .1rem solid rgba(255, 255, 255,.12);
+}
