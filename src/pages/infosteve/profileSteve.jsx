@@ -56,14 +56,6 @@ export function ProfileSteve() {
 
     const [openSkills, setOpenSkills] = useState(false)
 
-    const openDetailsSkills = () =>{
-        setOpenSkills(true)
-    }
-
-    const closeDetailsSkils = () =>{
-        setOpenSkills(false)
-    }
-
     return (
         <>
             <DivCol>
@@ -98,7 +90,7 @@ export function ProfileSteve() {
                                 </DivCol>
                             </DivRow>
                             <DivRow>
-                                <Btn evento={()=>openDetailsSkills()} variant='' color={'principal'}>Saber mas</Btn>
+                                <Btn evento={()=>setOpenSkills(true)} variant='' color={'principal'}>Saber mas</Btn>
                             </DivRow>
                         </Card>
                         <Card>
@@ -136,7 +128,7 @@ export function ProfileSteve() {
 
                             <p>5</p>
 
-                            <Btn evento={() => openDetailsBooks()} variant='' color={'principal'}>Detalles</Btn>
+                            <Btn evento={() =>setOpenBooks(true)} variant='' color={'principal'}>Detalles</Btn>
                         </Card>
                     </DivCol>
 
@@ -209,7 +201,7 @@ export function ProfileSteve() {
                     </DivCol>
                 </DivRow>
 
-                <Modal estado={openBooks} close={closeDetailsBooks}>
+                <Modal estado={openBooks} close={()=>setOpenBooks(false)}>
                     <Card>
                         <h1>Libros leidos</h1>
 
@@ -235,14 +227,14 @@ export function ProfileSteve() {
 
                         <p>Hijos de dune, El aliento de los dioses</p>
 
-                        <Btn evento={() => closeDetailsBooks()} variant='' color={'error'}>Cerrar</Btn>
+                        <Btn evento={() => setOpenBooks(false)} variant='' color={'error'}>Cerrar</Btn>
                     </Card>
                 </Modal>
 
-                <Modal estado={openSkills} close={closeDetailsSkils}>
+                <Modal estado={openSkills} close={()=>setOpenSkills(false)}>
                     <Card>
                         <SkillsDetails />
-                        <Btn evento={()=> closeDetailsSkils()} variant='' color={'error'}>Cerrar</Btn>
+                        <Btn evento={()=> setOpenSkills(false)} variant='' color={'error'}>Cerrar</Btn>
                     </Card>
                 </Modal>
             </DivCol>
