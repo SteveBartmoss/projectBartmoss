@@ -5,6 +5,7 @@ import { DivCol, DivRow } from "../../componentes/contenedores/contenedores";
 import { ProgresBar } from "../../componentes/progresbar/ProgresBar";
 import { Btn } from "../../componentes/btn/Btn";
 import { Modal } from "../../componentes/modal/Modal";
+import { SkillsDetails } from "../../componentes/skillsetails/SkillsDetails";
 
 
 export function ProfileSteve() {
@@ -53,6 +54,16 @@ export function ProfileSteve() {
         setOpenBooks(false)
     }
 
+    const [openSkills, setOpenSkills] = useState(false)
+
+    const openDetailsSkills = () =>{
+        setOpenSkills(true)
+    }
+
+    const closeDetailsSkils = () =>{
+        setOpenSkills(false)
+    }
+
     return (
         <>
             <DivCol>
@@ -79,10 +90,15 @@ export function ProfileSteve() {
                         <Card>
                             <h1>Skills</h1>
                             <DivRow>
-                                <Chip color={"principal"}>React</Chip>
-                                <Chip color={"warning"}>JavaScript</Chip>
-                                <Chip color={"success"}>Linux</Chip>
-                                <Chip color={"principal"}>Vue</Chip>
+                                <DivCol>
+                                    <Chip color={"principal"}>React</Chip>
+                                </DivCol>
+                                <DivCol>
+                                    <Chip color={"warning"}>JavaScript</Chip>
+                                </DivCol>
+                            </DivRow>
+                            <DivRow>
+                                <Btn evento={()=>openDetailsSkills()} variant='' color={'principal'}>Saber mas</Btn>
                             </DivRow>
                         </Card>
                         <Card>
@@ -220,6 +236,13 @@ export function ProfileSteve() {
                         <p>Hijos de dune, El aliento de los dioses</p>
 
                         <Btn evento={() => closeDetailsBooks()} variant='' color={'error'}>Cerrar</Btn>
+                    </Card>
+                </Modal>
+
+                <Modal estado={openSkills} close={closeDetailsSkils}>
+                    <Card>
+                        <SkillsDetails />
+                        <Btn evento={()=> closeDetailsSkils()} variant='' color={'error'}>Cerrar</Btn>
                     </Card>
                 </Modal>
             </DivCol>
