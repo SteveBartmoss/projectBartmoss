@@ -53,25 +53,16 @@ export function FirstStepGo(){
                             <CodeSpaceV3 title={'Comando'} rawCode="sudo tar -C /usr/local -xzf go*.tar.gz" />
 
                             <p>
-                                
-                            </p>
-
-                            <p>
                                 Despues debemos agregar go al path de la termina para que pueda ser reconocido
                             </p>
 
-                            <p>
-                                echo 'export PATH=$PATH:/usr/local/go/bin' >> ~/.bashrc
-                                source ~/.bashrc
-                            </p>
+                            <CodeSpaceV3 title={'Comando'} rawCode={"echo 'export PATH=$PATH:/usr/local/go/bin' >> ~/.bashrc\n source ~/.bashrc\n"} />
 
                             <p>
                                 Esto agrega go a nuestro $PATH y ahora podemos verificar la version de go que tenemos instalado con el siguiente comando
                             </p>
 
-                            <p>
-                                go version
-                            </p>
+                            <CodeSpaceV3 title={'Comando'} rawCode="go version" />
 
                             <p>
                                 Esto nos mostrara la version de go que tenemos instalada y con esto sabremos que todo se instalo correctamente
@@ -83,15 +74,7 @@ export function FirstStepGo(){
                                 Ahora con el entorno configurado podemos crear un progama simple de hola mundo
                             </p>
 
-                            <p>
-                                package main
-
-                                import "fmt"
-
-                                func main() {
-                                    fmt.Println("¡Hola, Linux Mint!")
-                                }
-                            </p>
+                            <CodeSpaceV3 title={'Hola.go'} rawCode={'package main\n import "fmt"\n func main()\n {\n fmt.Println("¡Hola, Linux Mint!")\n }\n'} />
 
                             <p>
                                 Guardamos el archivo como hola.go o el nombre que queramos y podemos ejecutarlo de la siguiente manera
@@ -112,12 +95,7 @@ export function FirstStepGo(){
                                 del usuario que seria una ruta como /home/usuario pero podemos cambiar esto de la siguiente manera
                             </p>
 
-                            <p>
-                                sudo mkdir -p /opt/goprojects # o puede ser mejor golibrerias
-                                sudo chmod -R $USER:$USER /opt/goprojects
-                                export GOPATH=/opt/goprojects
-                                export PATH=$PATH:$GOPATH/bin
-                            </p>
+                            <CodeSpaceV3 title={'Comandos'} rawCode={"sudo mkdir -p /opt/goprojects # o puede ser mejor golibrerias\n sudo chmod -R $USER:$USER /opt/goprojects\n  export GOPATH=/opt/goprojects\n export PATH=$PATH:$GOPATH/bin\n"} />
 
                             <p>
                                 De esta manera las instalacion de librerias o paquetes para go se instalar en /opt/goprojecs en 
