@@ -25,6 +25,96 @@
       <description>La informacion que siempre quisistes saber sobre las llaves foraneas</description>
       <pubDate>Sat, 18 Sep 2024 00:00:00 +0000</pubDate>
     </item>
+    <item>
+      <title>Prety commits</title>
+      <link>https://voidreturn.netlify.app/docu/pretycommits</link>
+      <description>Una forma de hacer mas efientes los commits para los demas</description>
+      <pubDate>Sun, 21 Aug 2024 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Que es composer</title>
+      <link>https://voidreturn.netlify.app/docu/compositor</link>
+      <description>Uno de los programas iconicos cuando se maneja una pila de tecnologias de php</description>
+      <pubDate>Sun, 23 Aug 2024 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Mejorar debian</title>
+      <link>https://voidreturn.netlify.app/docu/mejorardebian</link>
+      <description>Cuando terminas de instalar debian no siempre esta todo listo</description>
+      <pubDate>Sun, 27 Aug 2024 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Empezar con Docker</title>
+      <link>https://voidreturn.netlify.app/docu/basicDocker</link>
+      <description>Docker es una buena herramienta si eres desarrollador o encargado de despliegues de aplicacion</description>
+      <pubDate>Sun, 30 Aug 2024 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Que es git</title>
+      <link>https://voidreturn.netlify.app/docu/whatisgit</link>
+      <description>Si eres desarrollador entonces te interesa saber que esta gran herramienta</description>
+      <pubDate>Sun, 05 May 2025 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Linked Server</title>
+      <link>https://voidreturn.netlify.app/docu/linkedserver</link>
+      <description>Una forma de tener acceso a diferentes bases de datos no siempre es dificil</description>
+      <pubDate>Sun, 05 Sep 2024 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Hacks de Vscode</title>
+      <link>https://voidreturn.netlify.app/docu/hackvscode</link>
+      <description>Con esta lista de atajos podras usar de manera mas eficiente este editor</description>
+      <pubDate>Sun, 06 Sep 2024 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Comandos Basicos de linux</title>
+      <link>https://voidreturn.netlify.app/docu/basiclinux</link>
+      <description>Con esta lista de comandos podras usar linux como un pro</description>
+      <pubDate>Sun, 28 Oct 2024 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Vimgg una guia facil</title>
+      <link>https://voidreturn.netlify.app/docu/vimgg</link>
+      <description>Con este post podras empezar a usar vim sin morrir en el intento</description>
+      <pubDate>Sun, 03 Nov 2024 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Primeros Pasos Redux</title>
+      <link>https://voidreturn.netlify.app/docu/primeroredux</link>
+      <description>Con este post podras empezar a usar redux de una forma rapida</description>
+      <pubDate>Sun, 30 Nov 2024 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Codigos HTTP</title>
+      <link>https://voidreturn.netlify.app/docu/httpcodes</link>
+      <description>Con este post puedes entender los diferentes codigos de respuesta HTTP</description>
+      <pubDate>Sun, 03 Sep 2024 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Fundamentos Js</title>
+      <link>https://voidreturn.netlify.app/docu/fundajs</link>
+      <description>Con este post puedes entender los fundamentos de javascript para ser buen desarrollador</description>
+      <pubDate>Sun, 15 Apl 2025 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Primeros pasos Go</title>
+      <link>https://voidreturn.netlify.app/docu/primerogo</link>
+      <description>En este post se abordan los primeros temas del lenguaje go</description>
+      <pubDate>Sun, 10 May 2025 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Manual de tmux</title>
+      <link>https://voidreturn.netlify.app/docu/tmuxman</link>
+      <description>En este post se explica como trabajar con una herramienta de terminal como tmux</description>
+      <pubDate>Sun, 26 May 2025 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Instalar mariaDB</title>
+      <link>https://voidreturn.netlify.app/docu/installmaria</link>
+      <description>En este post se explica como instalar mariaDB en ubuntu</description>
+      <pubDate>Sun, 29 May 2025 00:00:00 +0000</pubDate>
+    </item>
     <!-- Agrega más elementos según sea necesario -->
   </channel>
 </rss>
