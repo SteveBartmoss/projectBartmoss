@@ -58,18 +58,24 @@ export function Vimgg() {
                         asi que este programa fue de gran utilidad para ese entonces.
                     </p>
 
+                    <h2>Installar vim</h2>
+
+                    <p>
+                        Si usas una distribucion de tipo unix como puede ser linux puede que
+                        ya este instalado por lo que podemos simplemente ejecutar el comando vim
+                        en la terminal y que el programa se ejecute, pero en caso de que no se
+                        encuentre instalado podemos usar los siguientes comandos para instalar vim
+                    </p>
+
                 </DivContent>
             </DivArticle>
 
             <p>
 
 
-                Installas vim
 
-                Si usas una distribucion de tipo unix como puede ser linux puede que
-                ya este instalado por lo que podemos simplemente ejecutar el comando vim
-                en la terminal y que el programa se ejecute, pero en caso de que no se
-                encuentre instalado podemos usar los siguientes comandos para instalar vim
+
+
 
                 Si usamos una ditribucion derivada de debian
                 sudo apt install vim
