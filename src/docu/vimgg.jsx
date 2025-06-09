@@ -5,7 +5,7 @@ import { Portada } from "../componentes/portada/portada";
 export function Vimgg() {
     return (
         <>
-            <Portada imgPortada={"/Assets/steveA.png"} title={"Vimgg guia para mostales"} text={"Por Steve 03/11/2024"} />
+            <Portada imgPortada={"/Assets/steveA.png"} title={"Vimgg guia para mortales"} text={"Por Steve 03/11/2024"} />
 
             <DivArticle>
                 <DivContent>
