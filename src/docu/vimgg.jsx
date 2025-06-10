@@ -116,24 +116,24 @@ export function Vimgg() {
                         En general seria buena idea solo usar las versiones de terminal pero si
                         se desea usar las versiones graficas no existe problema
                     </p>
-                    
+
+                    <h2>Ejecutando Vim</h2>
+
+                    <p>
+                        Para correr el programa de vim simplemente debemos ejecutar el comando vim
+
+                        Una vez que ejecutamos este comando podemos ver que en la terminal aparecen
+                        unas letras que indican que estamos en  Vi IMproved que es el programa que
+                        queremos usar, cuando estemos en esta pantalla notaremos algo raro y es que
+                        lo que escribimos no se ve reflejado en la pantalla pero esto es algo normal
+                        ya que por defecto el modo de vim no es insertar y por esta razon no podemos
+                        escribir o mas bien no se refleja lo que estamos escribiendo.
+                    </p>
+
                 </DivContent>
             </DivArticle>
 
             <p>
-
-
-
-                Ejecutando Vim
-
-                Para correr el programa de vim simplemente debemos ejecutar el comando vim
-
-                Una vez que ejecutamos este comando podemos ver que en la terminal aparecen
-                unas letras que indican que estamos en  Vi IMproved que es el programa que
-                queremos usar, cuando estemos en esta pantalla notaremos algo raro y es que
-                lo que escribimos no se ve reflejado en la pantalla pero esto es algo normal
-                ya que por defecto el modo de vim no es insertar y por esta razon no podemos
-                escribir o mas bien no se refleja lo que estamos escribiendo.
 
                 Para poder entrar en el modo de insertar tenemos que pulsar la tecla i
                 lo cual nos coloca en el modo insertar y esto lo podemos ver en la parte
