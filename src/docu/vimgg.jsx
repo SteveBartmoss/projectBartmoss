@@ -67,37 +67,57 @@ export function Vimgg() {
                         encuentre instalado podemos usar los siguientes comandos para instalar vim
                     </p>
 
+                    <h3>debian</h3>
+
+                    <p>
+                        sudo apt install vim
+                    </p>
+
+                    <h3>fedora</h3>
+
+                    <p>
+                        sudo dnf install vim
+                    </p>
+
+                    <h3>Arch</h3>
+
+                    <p>
+                        pacman -S vim
+                    </p>
+
+                    <h3>usar la version de snap</h3>
+
+                    <p>
+                        sudo snap install vim-editor --beta
+                    </p>
+
+                    <h3>Windows</h3>
+
+                    <p>
+                        En caso de que tengamos windows podemos instalarlos desde la pagina
+                        oficial https://www.vim.org/download.php#pc
+
+                        Cuando instalamos el ejecutable podemos ver que existen dos  versiones
+                        que se instalaron vim y gvim
+                    </p>
+
+                    <p>
+                        Gvim es una version grafica de vim lo que quiere decir que no se ejecuta
+                        en la consola si no que se ejecuta como un programa independiente y por esta
+                        razon es que se considera GUI o que tiene una interfaz de grafica de usuario.
+                    </p>
+
+                    <h3></h3>
+                    <h3></h3>
+                    <h3></h3>
+                    <h3></h3>
+                    <h3></h3>
+                    <h3></h3>
+
                 </DivContent>
             </DivArticle>
 
             <p>
-
-
-
-
-
-
-                Si usamos una ditribucion derivada de debian
-                sudo apt install vim
-
-                Si usamos fedora
-                sudo dnf install vim
-
-                si usamos arch linux
-                pacman -S vim
-
-                Si queremos usar la version de snap
-                sudo snap install vim-editor --beta
-
-                En caso de que tengamos windows podemos instalarlos desde la pagina
-                oficial https://www.vim.org/download.php#pc
-
-                Cuando instalamos el ejecutable podemos ver que existen dos  versiones
-                que se instalaron vim y gvim
-
-                Gvim es una version grafica de vim lo que quiere decir que no se ejecuta
-                en la consola si no que se ejecuta como un programa independiente y por esta
-                razon es que se considera GUI o que tiene una interfaz de grafica de usuario.
 
                 En caso de que tengamos un sistema con MacOs podemos instalarlo desde el
                 siguiente enlace de su pagina oficial https://www.vim.org/download.php#mac
