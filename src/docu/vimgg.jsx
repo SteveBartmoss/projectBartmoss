@@ -107,23 +107,22 @@ export function Vimgg() {
                         razon es que se considera GUI o que tiene una interfaz de grafica de usuario.
                     </p>
 
-                    <h3></h3>
-                    <h3></h3>
-                    <h3></h3>
-                    <h3></h3>
-                    <h3></h3>
-                    <h3></h3>
+                    <h3>macOs</h3>
 
+                    <p>
+                        En caso de que tengamos un sistema con MacOs podemos instalarlo desde el
+                        siguiente enlace de su pagina oficial https://www.vim.org/download.php#mac
+
+                        En general seria buena idea solo usar las versiones de terminal pero si
+                        se desea usar las versiones graficas no existe problema
+                    </p>
+                    
                 </DivContent>
             </DivArticle>
 
             <p>
 
-                En caso de que tengamos un sistema con MacOs podemos instalarlo desde el
-                siguiente enlace de su pagina oficial https://www.vim.org/download.php#mac
 
-                En general seria buena idea solo usar las versiones de terminal pero si
-                se desea usar las versiones graficas no existe problema
 
                 Ejecutando Vim
 
