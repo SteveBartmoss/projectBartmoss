@@ -1,3 +1,4 @@
+import { CodeSpaceV3 } from "../componentes/codeSpace/CodeSpaceV3";
 import { DivArticle, DivCol, DivContent, DivRow } from "../componentes/contenedores/contenedores";
 import { Portada } from "../componentes/portada/portada";
 import { TreeMap } from "../componentes/treeMap/TreeMap";
@@ -59,9 +60,7 @@ export function MariaInstall() {
 
                             <h2>Configurar mariaDB</h2>
 
-                            <p>
-                                sudo mysql_secure_installation
-                            </p>
+                            <CodeSpaceV3 title={'Comando'} rawCode="sudo mysql_secure_installation" />
 
                             <p>
                                 Con esto iniciaremos el script de instalacion segura que continua con el siguiente mensaje
