@@ -66,10 +66,10 @@ export function MariaInstall() {
                                 Con esto iniciaremos el script de instalacion segura que continua con el siguiente mensaje
                             </p>
 
-                            <p>
-                                NOTE: RUNNING ALL PARTS OF THIS SCRIPT IS RECOMMENDED FOR ALL MariaDB
-                                SERVERS IN PRODUCTION USE!  PLEASE READ EACH STEP CAREFULLY!
+                            <CodeSpaceV3 title={"script"} rawCode="NOTE: RUNNING ALL PARTS OF THIS SCRIPT IS RECOMMENDED FOR ALL MariaDB\n SERVERS IN PRODUCTION USE!  PLEASE READ EACH STEP CAREFULLY!" /> 
 
+                            <p>
+                                
                                 In order to log into MariaDB to secure it, we'll need the current
                                 password for the root user. If you've just installed MariaDB, and
                                 haven't set the root password yet, you should just press enter here.
