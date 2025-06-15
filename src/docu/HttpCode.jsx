@@ -1380,6 +1380,28 @@ export function HttpCode() {
 
                             </p>
 
+                            <h2>Usos comunes</h2>
+
+                            <p>
+                                 Proteger recursos de modificaciones no autorizadas 
+                                 Evitar que un usuario intente eliminar datos sensibles. 
+                            </p>
+
+                            <p>
+                                Definir reglas de acceso en APIs  
+                                Un endpoint puede aceptar solo POST y rechazar PUT o DELETE.  
+                            </p>
+
+                            <p>
+                                Controlar métodos en servidores estáticos  
+                                Un servidor web puede permitir GET y HEAD, pero bloquear POST y DELETE en archivos HTML.  
+                            </p>
+
+                            <p>
+                                Implementación de seguridad
+                                Evitar que usuarios no autenticados intenten modificar datos mediante métodos bloqueados.  
+                            </p>
+
                         </DivContent>
                     </DivArticle>
                 </DivCol>
@@ -1420,22 +1442,6 @@ Content-Type: application/json
 ```
 
 📌 **Corrección:** El cliente debe utilizar **GET o POST**, según lo permitido en la cabecera `Allow`.  
-
----
-
-#### 🎯 **Casos de uso comunes**  
-
-✔ **Proteger recursos de modificaciones no autorizadas**  
-   - Evitar que un usuario intente **eliminar datos sensibles**.  
-
-✔ **Definir reglas de acceso en APIs**  
-   - Un endpoint puede **aceptar solo POST y rechazar PUT o DELETE**.  
-
-✔ **Controlar métodos en servidores estáticos**  
-   - Un servidor web puede permitir **GET y HEAD**, pero bloquear **POST y DELETE** en archivos HTML.  
-
-✔ **Implementación de seguridad**  
-   - Evitar que usuarios no autenticados intenten **modificar datos mediante métodos bloqueados**.  
 
 ---
 
