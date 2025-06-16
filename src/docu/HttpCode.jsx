@@ -1402,6 +1402,13 @@ export function HttpCode() {
                                 Evitar que usuarios no autenticados intenten modificar datos mediante métodos bloqueados.  
                             </p>
 
+                            <p>
+                                405 Method Not Allowed significa que el recurso existe, pero el método HTTP no está permitido.  
+                                Se usa para proteger datos, restringir accesos y definir reglas en APIs.  
+                                Se soluciona usando los métodos permitidos en la cabecera Allow.  
+                            </p>
+
+
                         </DivContent>
                     </DivArticle>
                 </DivCol>
@@ -1444,11 +1451,6 @@ Content-Type: application/json
 📌 **Corrección:** El cliente debe utilizar **GET o POST**, según lo permitido en la cabecera `Allow`.  
 
 ---
-
-#### ✅ **Resumen**  
-- **405 Method Not Allowed** significa que el **recurso existe, pero el método HTTP no está permitido**.  
-- Se usa para **proteger datos, restringir accesos y definir reglas en APIs**.  
-- Se soluciona **usando los métodos permitidos en la cabecera `Allow`**.  
 
 Si necesitas ayuda con **configurar restricciones de métodos en tu API o servidor**, dime qué tecnología usas. 🚀
 
