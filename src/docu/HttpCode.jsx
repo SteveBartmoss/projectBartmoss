@@ -1420,41 +1420,7 @@ export function HttpCode() {
 
 /*
 
---- codigo 405
 
-
----
-
-#### 📝 **Ejemplo de respuesta con código 405**  
-
-📌 **Escenario:** Un usuario intenta eliminar un recurso en una API que **no permite DELETE**.  
-
-📌 **Solicitud del usuario:**  
-
-```
-DELETE /usuarios/123 HTTP/1.1
-Host: api.ejemplo.com
-```
-
-📌 **Respuesta del servidor:**  
-
-```
-HTTP/1.1 405 Method Not Allowed
-Allow: GET, POST
-Content-Type: application/json
-
-{
-    "error": "El método DELETE no está permitido en este recurso."
-}
-```
-
-📌 **Corrección:** El cliente debe utilizar **GET o POST**, según lo permitido en la cabecera `Allow`.  
-
----
-
-Si necesitas ayuda con **configurar restricciones de métodos en tu API o servidor**, dime qué tecnología usas. 🚀
-
---- termina codigo 405
 
 --- codigo 406
 
