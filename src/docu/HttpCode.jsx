@@ -1408,6 +1408,13 @@ export function HttpCode() {
                                 Se soluciona usando los métodos permitidos en la cabecera Allow.  
                             </p>
 
+                            <h1 id="code406">406</h1>
+
+                            <p>
+                                Indica que el servidor no puede proporcionar una respuesta en un formato que sea 
+                                aceptable según lo especificado por el cliente en la cabecera Accept. 
+                            </p>
+
 
                         </DivContent>
                     </DivArticle>
@@ -1425,9 +1432,6 @@ export function HttpCode() {
 --- codigo 406
 
 ### 🔹 **Código de respuesta HTTP 406 - Not Acceptable**  
-
-#### 📌 **Descripción**  
-El código **406 Not Acceptable** indica que el servidor **no puede proporcionar una respuesta** en un formato que sea **aceptable** según lo especificado por el cliente en la cabecera `Accept`.  
 
 🔴 **Causas comunes:**  
 - El cliente solicita un formato **(ejemplo: XML)**, pero el servidor solo responde en **JSON**.  
