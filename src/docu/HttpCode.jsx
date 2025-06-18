@@ -1415,6 +1415,27 @@ export function HttpCode() {
                                 aceptable según lo especificado por el cliente en la cabecera Accept. 
                             </p>
 
+                            <h2>Usos comunes</h2>
+
+                            <p>
+                                El cliente solicita un formato por ejemplo XML, pero el servidor solo responde en JSON.  
+                            </p>
+
+                            <p>
+                                No hay coincidencia entre los formatos aceptados por el cliente y los que ofrece el servidor.  
+                            </p>
+
+                            <p>
+                                Control de formatos de respuesta: Una API puede forzar a los clientes a usar **JSON** y rechazar otros formatos.  
+                            </p>
+
+                            <p>
+                                Optimización de respuestas El servidor evita enviar datos en formatos **no compatibles con el cliente**. 
+                            </p>
+
+                            <p>
+                                 Implementación de seguridad Se usa para evitar ataques que intentan forzar respuestas en formatos no permitidos.  
+                            </p>
 
                         </DivContent>
                     </DivArticle>
@@ -1430,14 +1451,6 @@ export function HttpCode() {
 
 
 --- codigo 406
-
-### 🔹 **Código de respuesta HTTP 406 - Not Acceptable**  
-
-🔴 **Causas comunes:**  
-- El cliente solicita un formato **(ejemplo: XML)**, pero el servidor solo responde en **JSON**.  
-- No hay coincidencia entre los formatos aceptados por el cliente y los que ofrece el servidor.  
-
----
 
 #### 📝 **Ejemplo de respuesta con código 406**  
 
@@ -1463,19 +1476,6 @@ Content-Type: application/json
 ```
 
 📌 **Corrección:** El cliente debe cambiar la cabecera `Accept` para pedir un formato soportado, como **JSON**.  
-
----
-
-#### 🎯 **Casos de uso comunes**  
-
-✔ **Control de formatos de respuesta**  
-   - Una API puede forzar a los clientes a usar **JSON** y rechazar otros formatos.  
-
-✔ **Optimización de respuestas**  
-   - El servidor evita enviar datos en formatos **no compatibles con el cliente**.  
-
-✔ **Implementación de seguridad**  
-   - Se usa para evitar ataques que intentan forzar respuestas en formatos no permitidos.  
 
 ---
 
