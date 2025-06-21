@@ -119,13 +119,11 @@ export function MariaInstall() {
                                 para el usuario root de la base de datos
                             </p>
 
-                            <p>
-                                By default, a MariaDB installation has an anonymous user, allowing anyone
-                                to log into MariaDB without having to have a user account created for
-                                them.  This is intended only for testing, and to make the installation
-                                go a bit smoother.  You should remove them before moving into a
-                                production environment.
-                            </p>
+                            <CodeSpaceV3 title={"script"} rawCode={`By default, a MariaDB installation has an anonymous user, allowing anyone 
+                                to log into MariaDB without having to have a user account created for 
+                                them.  This is intended only for testing, and to make the installation 
+                                go a bit smoother.  You should remove them before moving into a 
+                                production environment. `} />
 
                             <p>
                                 Este mensaje nos avisa que por defecto se crea un usuario anonimo con el cual se puede iniciar sesion con algo como
