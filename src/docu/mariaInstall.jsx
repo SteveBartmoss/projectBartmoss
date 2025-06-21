@@ -83,16 +83,11 @@ export function MariaInstall() {
                                 Como solo se instalo el paquete podemos dar enter y continuar con el script
                             </p>
 
-                            <p>
-                                OK, successfully used password, moving on...
-
-                                Setting the root password or using the unix_socket ensures that nobody
-                                can log into the MariaDB root user without the proper authorisation.
-
-                                You already have your root account protected, so you can safely answer 'n'.
-
-                                Switch to unix_socket authentication [Y/n]
-                            </p>
+                            <CodeSpaceV3 title={"script"} rawCode={`OK, successfully used password, moving on... 
+                                Setting the root password or using the unix_socket ensures that nobody 
+                                can log into the MariaDB root user without the proper authorisation. 
+                                You already have your root account protected, so you can safely answer 'n'. 
+                                Switch to unix_socket authentication [Y/n] `} />
 
                             <p>
                                 Este mensaje puede parecer confuso pero en realidad es sencillo, normalmente para
