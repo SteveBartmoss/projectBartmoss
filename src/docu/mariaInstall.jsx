@@ -104,11 +104,8 @@ export function MariaInstall() {
                                 root junto con la contraseña para poder iniciar sesion en el servidor
                             </p>
 
-                            <p>
-                                You already have your root account protected, so you can safely answer 'n'.
-
-                                Change the root password? [Y/n]
-                            </p>
+                            <CodeSpaceV3 title={"script"} rawCode={`You already have your root account protected, so you can safely answer 'n'. 
+                                Change the root password? [Y/n]`} />
 
                             <p>
                                 Si selecionamos n en la opcion anterior nos aparece este mensaje que nos pregunta si queremos
