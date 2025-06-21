@@ -133,10 +133,8 @@ export function MariaInstall() {
                                 hacerlo simplemente debemos ingresar n
                             </p>
 
-                            <p>
-                                Normally, root should only be allowed to connect from 'localhost'.  This
-                                ensures that someone cannot guess at the root password from the network.
-                            </p>
+                            <CodeSpaceV3 title={"script"} rawCode={`Normally, root should only be allowed to connect from 'localhost'.  This 
+                                ensures that someone cannot guess at the root password from the network.`} />
 
                             <p>
                                 Esto nos indica que por defecto el usuario root solo puede iniciar sesion desde localhost, que en otras palabras
