@@ -1437,6 +1437,12 @@ export function HttpCode() {
                                  Implementación de seguridad Se usa para evitar ataques que intentan forzar respuestas en formatos no permitidos.  
                             </p>
 
+                            <p>
+                                406 Not Acceptable ocurre cuando el cliente pide un formato que el servidor no puede proporcionar.  
+                                Se usa para controlar la compatibilidad de formatos en APIs.  
+                                Se soluciona ajustando la cabecera Accept a un formato soportado.  
+                            </p>
+
                         </DivContent>
                     </DivArticle>
                 </DivCol>
@@ -1478,11 +1484,6 @@ Content-Type: application/json
 📌 **Corrección:** El cliente debe cambiar la cabecera `Accept` para pedir un formato soportado, como **JSON**.  
 
 ---
-
-#### ✅ **Resumen**  
-- **406 Not Acceptable** ocurre cuando el cliente pide un **formato que el servidor no puede proporcionar**.  
-- Se usa para **controlar la compatibilidad de formatos en APIs**.  
-- Se soluciona ajustando la cabecera `Accept` a un formato soportado.  
 
 Si necesitas ayuda con la gestión de formatos en tu API o aplicación, dime qué tecnología estás usando. 🚀
 
