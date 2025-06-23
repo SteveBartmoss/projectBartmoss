@@ -12,7 +12,11 @@ export function VsCodeHack() {
         {
           titulo: 'ctrl b',
           id: 'ctrlb',
-        }
+        },
+        {
+          titulo: 'ctrl p',
+          id: 'ctrlb',
+        },
       ]
     }
   ]
