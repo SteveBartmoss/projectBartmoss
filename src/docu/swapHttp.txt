@@ -1293,3 +1293,36 @@ Content-Type: application/json
 Si necesitas ayuda con **configurar restricciones de métodos en tu API o servidor**, dime qué tecnología usas. 🚀
 
 --- termina codigo 405
+
+--- codigo 406
+
+#### 📝 **Ejemplo de respuesta con código 406**  
+
+📌 **Escenario:** Un usuario solicita una API en **formato XML**, pero la API solo soporta **JSON**.  
+
+📌 **Solicitud del usuario:**  
+
+```
+GET /productos HTTP/1.1
+Host: api.ejemplo.com
+Accept: application/xml
+```
+
+📌 **Respuesta del servidor:**  
+
+```
+HTTP/1.1 406 Not Acceptable
+Content-Type: application/json
+
+{
+    "error": "El formato solicitado no es compatible. Usa 'application/json'."
+}
+```
+
+📌 **Corrección:** El cliente debe cambiar la cabecera `Accept` para pedir un formato soportado, como **JSON**.  
+
+---
+
+Si necesitas ayuda con la gestión de formatos en tu API o aplicación, dime qué tecnología estás usando. 🚀
+
+--- termina 406
