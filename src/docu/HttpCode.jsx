@@ -1443,6 +1443,20 @@ export function HttpCode() {
                                 Se soluciona ajustando la cabecera Accept a un formato soportado.  
                             </p>
 
+                            <h1 id="code407">407</h1>
+
+                            <p>  
+                                indica que el cliente **debe autenticarse en un proxy** antes de poder acceder al recurso solicitado.  
+                            </p>
+
+                            <h2>Usos comunes</h2>
+
+                            <p>
+                                Redes empresariales con proxies: Empresas requieren autenticación en un proxy para filtrar tráfico de Internet.  
+                                Restricción de acceso a ciertos servicios: Algunos servidores imponen proxies para verificar autenticidad de usuarios.  
+                                Monitoreo y control de tráfico: Se usa en firewalls y herramientas de seguridad para controlar accesos.  
+                            </p>
+
                         </DivContent>
                     </DivArticle>
                 </DivCol>
@@ -1454,47 +1468,9 @@ export function HttpCode() {
 
 /*
 
-
-
---- codigo 406
-
-#### 📝 **Ejemplo de respuesta con código 406**  
-
-📌 **Escenario:** Un usuario solicita una API en **formato XML**, pero la API solo soporta **JSON**.  
-
-📌 **Solicitud del usuario:**  
-
-```
-GET /productos HTTP/1.1
-Host: api.ejemplo.com
-Accept: application/xml
-```
-
-📌 **Respuesta del servidor:**  
-
-```
-HTTP/1.1 406 Not Acceptable
-Content-Type: application/json
-
-{
-    "error": "El formato solicitado no es compatible. Usa 'application/json'."
-}
-```
-
-📌 **Corrección:** El cliente debe cambiar la cabecera `Accept` para pedir un formato soportado, como **JSON**.  
-
----
-
-Si necesitas ayuda con la gestión de formatos en tu API o aplicación, dime qué tecnología estás usando. 🚀
-
---- termina 406
-
 --- codigo 407
 
-### 🔹 **Código de respuesta HTTP 407 - Proxy Authentication Required**  
 
-#### 📌 **Descripción**  
-El código **407 Proxy Authentication Required** indica que el cliente **debe autenticarse en un proxy** antes de poder acceder al recurso solicitado.  
 
 🔴 **Diferencia con el código 401 (Unauthorized):**  
 - **401**: El cliente debe autenticarse **directamente en el servidor**.  
@@ -1533,19 +1509,6 @@ Proxy-Authorization: Basic dXN1YXJpbzpjbGF2ZXM=
 
 📌 **Corrección:**  
 - El cliente debe incluir una cabecera `Proxy-Authorization` con las credenciales.  
-
----
-
-#### 🎯 **Casos de uso comunes**  
-
-✔ **Redes empresariales con proxies**  
-   - Empresas requieren autenticación en un **proxy** para filtrar tráfico de Internet.  
-
-✔ **Restricción de acceso a ciertos servicios**  
-   - Algunos servidores imponen proxies para verificar **autenticidad de usuarios**.  
-
-✔ **Monitoreo y control de tráfico**  
-   - Se usa en **firewalls** y herramientas de seguridad para controlar accesos.  
 
 ---
 
