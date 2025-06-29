@@ -1457,6 +1457,12 @@ export function HttpCode() {
                                 Monitoreo y control de tráfico: Se usa en firewalls y herramientas de seguridad para controlar accesos.  
                             </p>
 
+                            <p>
+                                Diferencia con el código 401 (Unauthorized):  
+                                401: El cliente debe autenticarse directamente en el servidor.  
+                                407: El cliente debe autenticarse **en un proxy intermedio.  
+                            </p>
+
                         </DivContent>
                     </DivArticle>
                 </DivCol>
@@ -1468,15 +1474,7 @@ export function HttpCode() {
 
 /*
 
---- codigo 407
-
-
-
-🔴 **Diferencia con el código 401 (Unauthorized):**  
-- **401**: El cliente debe autenticarse **directamente en el servidor**.  
-- **407**: El cliente debe autenticarse **en un proxy intermedio**.  
-
----
+--- codigo 407qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
 
 #### 📝 **Ejemplo de respuesta con código 407**  
 
