@@ -237,6 +237,14 @@ export function processCodeV2(code){
                     estado=0
                     iterador++
                 }
+                else if(operetorsIntervals.test(char)){
+                    listTokens.push({
+                        typeToken: 'OperatorInterval',
+                        character: char
+                    })
+                    estado=0
+                    iterador++
+                }
                 else if(char === ' '){
                     listTokens.push({
                         typeToken: 'Espacio',
