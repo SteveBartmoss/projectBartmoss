@@ -217,15 +217,7 @@ export function FirstStepRedux() {
                                 para poder implementarlo en nuestro almacenamiento
                             </p>
 
-                            <CodeSpace title={'store.js'}
-                                rawCode={`import { configureStore } from '@reduxjs/toolkit'
-                                    import counterReducer from '../features/counter/counterSlice'
-
-                                    export const store = configureStore({
-                                        reducer: {
-                                            counter: counterReducer,
-                                        },
-                                    })`} />
+                            <CodeSpaceV3 title={'store.js'} rawCode={`import { configureStore } from '@reduxjs/toolkit'\n import counterReducer from '../features/counter/counterSlice'\n export const store = configureStore({\n reducer: {\n counter: counterReducer,\n },\n })\n`} />
 
                             <p>
                                 Ahora hemos agregado a nuestro store el slice que creamos, tenemos que importarlo
