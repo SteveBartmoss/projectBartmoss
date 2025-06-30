@@ -1,4 +1,5 @@
 import { CodeSpace } from "../componentes/codeSpace/CodeSpace";
+import { CodeSpaceV3 } from "../componentes/codeSpace/CodeSpaceV3";
 import { DivArticle, DivCol, DivContent, DivRow, DivSection } from "../componentes/contenedores/contenedores";
 import { Portada } from "../componentes/portada/portada";
 import { TreeMap } from "../componentes/treeMap/TreeMap";
@@ -52,11 +53,7 @@ export function FirstStepRedux() {
                                 aplicacion de react
                             </p>
 
-                            <p>
-                                npm install @reduxjs/toolkit react-redux
-                            </p>
-
-                            <CodeSpace title={'Comando instalar reduxtoolkit'} rawCode={'npm install @reduxjs/toolkit react-redux'} />
+                            <CodeSpaceV3 title={'Comando instalar reduxtoolkit'} rawCode={'npm install @reduxjs/toolkit react-redux'} />
 
                             <h2>Configurar el Store</h2>
 
@@ -71,9 +68,7 @@ export function FirstStepRedux() {
                                 documentacion de reduxtoolkit
                             </p>
 
-                            <p>
-                                src/app/store.js
-                            </p>
+                            <CodeSpaceV3 title={'estructura'} rawCode={'src/app/store.js'} />
 
                             <p>
                                 El archivo store.js deberia tener la siguiente configuracion basica
