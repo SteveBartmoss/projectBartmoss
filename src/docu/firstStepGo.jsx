@@ -69,21 +69,21 @@ export function FirstStepGo(){
                                 instrucciones
                             </p>
 
-                            <h3>Windows</h3>
+                            <h3 id='ambientWindows'>Windows</h3>
 
                             <p>
                                 Basta con usar el tipico instalador y dar siguiente, siguiente y siguiente hasta 
                                 terminar con la instalacion del programa y cerrar el instalador
                             </p>
 
-                            <h3>MacOs</h3>
+                            <h3 id='ambientMacOs'>MacOs</h3>
 
                             <p>
                                 Similar a windows tiene un instalador y basta con seguir las instrucciones para que 
                                 se termine de instalar el lenguaje y cerrar el mismo instalador
                             </p>
 
-                            <h3>Linux</h3>
+                            <h3 id='ambientLinux'>Linux</h3>
 
                             <p>
                                 En el caso de linux debemos descargar el archivo comprimido .tar.gz que aparece 
