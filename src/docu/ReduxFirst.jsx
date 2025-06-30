@@ -139,33 +139,27 @@ export function FirstStepRedux() {
                                 La estructura del archivo slice es la siguiente:
                             </p>
 
-                            <CodeSpace title={'counterSlice.js'}
-                                rawCode={`import { createSlice } from '@reduxjs/toolkit'
-
-                                    const initialState = {
-                                    value: 0,
-                                    }
-
-                                    export const counterSlice = createSlice({
-                                    name: 'counter',
-                                    initialState,
-                                    reducers: {
-                                            increment: (state) => {
-                                                state.value += 1
-                                            },
-                                            decrement: (state) => {
-                                                state.value -= 1
-                                            },
-                                            incrementByAmount: (state, action) => {
-                                                state.value += action.payload
-                                            },
-                                        },
-                                    })
-
-
-                                    export const { increment, decrement, incrementByAmount } = counterSlice.actions
-
-                                    export default counterSlice.reducer`} />
+                            <CodeSpaceV3 title={'counterSlice.js'} rawCode={`import { createSlice } from '@reduxjs/toolkit'\n 
+                                const initialState = {\n
+                                value: 0,\n
+                                }\n
+                                export const counterSlice = createSlice({\n
+                                name: 'counter',\n
+                                initialState,\n
+                                reducers: {\n
+                                increment: (state) => {\n
+                                state.value += 1\n
+                                },\n
+                                decrement: (state) => {\n
+                                state.value -= 1\n
+                                },\n
+                                incrementByAmount: (state, action) => {\n
+                                state.value += action.payload\n
+                                },\n
+                                },\n
+                                })\n
+                                export const { increment, decrement, incrementByAmount } = counterSlice.actions\n
+                                export default counterSlice.reducer\n`} />
 
                             <p>
                                 En este archivo existen muchas cosas que permiten manipular el estado pero por ahora solo
