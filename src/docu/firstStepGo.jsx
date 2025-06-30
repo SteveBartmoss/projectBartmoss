@@ -1,6 +1,7 @@
 import { CodeSpaceV3 } from "../componentes/codeSpace/CodeSpaceV3";
 import { DivArticle, DivCol, DivContent, DivRow } from "../componentes/contenedores/contenedores";
 import { Portada } from "../componentes/portada/portada";
+import { TreeMap } from "../componentes/treeMap/TreeMap";
 
 
 export function FirstStepGo(){
@@ -23,6 +24,26 @@ export function FirstStepGo(){
                     id: 'ambientLinux',
                 }
             ]
+        },
+        {
+            id: 2,
+            section: 'Primer programa',
+            childs: [
+                {
+                    titulo: 'Hola a todos',
+                    id: 'firstProgram',
+                },
+            ],
+        },
+        {
+            id: 3,
+            section: 'Bonus',
+            childs: [
+                {
+                    titulo: 'Carpeta de librerias',
+                    id: 'dirLib',
+                }
+            ]
         }
     ]
 
@@ -32,7 +53,7 @@ export function FirstStepGo(){
 
             <DivRow>
                 <DivCol>
-                    
+                    <TreeMap titulo={'Mapa del sitio'} elementos={pageMap} />
                 </DivCol>
 
                 <DivCol>
