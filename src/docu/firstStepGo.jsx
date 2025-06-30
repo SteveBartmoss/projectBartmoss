@@ -109,7 +109,7 @@ export function FirstStepGo(){
                                 Esto nos mostrara la version de go que tenemos instalada y con esto sabremos que todo se instalo correctamente
                             </p>
 
-                            <h2>Crear el primer programa en go</h2>
+                            <h2 id='firstProgram'>Crear el primer programa en go</h2>
 
                             <p>
                                 Ahora con el entorno configurado podemos crear un progama simple de hola mundo
@@ -129,7 +129,7 @@ export function FirstStepGo(){
                                 Si todo sale bien deberiamos ver el mensaje hola mundo en la consola
                             </p>
 
-                            <h2>Bonus configurar camperta para librerias</h2>
+                            <h2 id='dirLib'>Bonus configurar camperta para librerias</h2>
 
                             <p>
                                 Por defecto go instalara librerias externas que configuremos en el escritorio 
