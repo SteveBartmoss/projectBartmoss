@@ -410,10 +410,11 @@ export function FirstStepRedux() {
                                 la propiedad paylod y es que el parametro tiene la siguiente forma:
                             </p>
 
-                            <CodeSpace title={"Ejemplo"} rawCode={`{
-                                    payload: '2',
-                                    type: "task/deleteTask,
-                                    }`} />
+                            <CodeSpaceV3 title={'Ejemplo'} rawCode={`{\n 
+                                payload: '2',\n
+                                type: "task/deleteTask,\n
+                                }\n
+                                `} />
 
                             <p>
                                 Con el ejemplo anterior podemos ver porque llamamos la propiedad payload, ya que
