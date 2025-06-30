@@ -324,28 +324,24 @@ export function FirstStepRedux() {
                                 del estado por lo que el archivo del slice quedaria algo asi:
                             </p>
 
-                            <CodeSpace title={'counterSlice.js'}
-                                rawCode={`import { createSlice } from '@reduxjs/toolkit'
-
-                                    const initialValue = {
-                                        value: 0,
-                                    }
-
-                                    export const counterSlice = createSlice({
-                                        name: 'counter',
-                                        initialState: initialValue,
-                                        reducers: {
-                                                increment: (state,action)=>{
-                                                    state.value += 1
-                                                },
-                                                decrement: (state,action)=>{
-                                                    state.value -=1
-                                                },
-                                            },
-                                    })
-                                    
-                                    export const {increment,decrement,} = counterSlice.actions
-                                    export default counterSlice.reducer`} />
+                            <CodeSpaceV3 title={'counterSlice.js'} rawCode={`import { createSlice } from '@reduxjs/toolkit'\n 
+                                const initialValue = {\n
+                                value: 0,\n
+                                }\n
+                                export const counterSlice = createSlice({\n
+                                name: 'counter',\n
+                                initialState: initialValue,\n
+                                reducers: {\n
+                                increment: (state,action)=>{\n
+                                state.value += 1\n
+                                },\n
+                                decrement: (state,action)=>{\n
+                                state.value -=1\n
+                                },\n
+                                },\n
+                                })\n
+                                export const {increment,decrement,} = counterSlice.actions\n
+                                export default counterSlice.reducer\n`} />
 
                             <p>
                                 Con esta modificacion podemos ver que hay cosas interesantes, como
