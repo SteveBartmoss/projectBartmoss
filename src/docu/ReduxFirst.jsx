@@ -385,14 +385,14 @@ export function FirstStepRedux() {
                             </p>
 
                             <CodeSpaceV3 title={'Ejemplo'} rawCode={`return state.filter(element => element.id !== action.payload)`} />
+
                             <p>
                                 En este nuevo codigo le estamos indicando a la libreria que necesitamos un nuevo estado
                                 para que se actualice ya que la asignacion directa no la podemos hacer directamente
                                 otros ejemplo de que podemos hacer con el estado son los siguientes:
                             </p>
 
-                            <CodeSpace title={"Ejemplo"}
-                                rawCode={`state.push(action.payload)`} />
+                            <CodeSpaceV3 title={'Ejemplo'} rawCode={`state.push(action.payload)`} />
 
                             <p>
                                 En este caso estamos mutando directamente el estado pero eso realmente
