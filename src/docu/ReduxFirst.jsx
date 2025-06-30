@@ -74,11 +74,7 @@ export function FirstStepRedux() {
                                 El archivo store.js deberia tener la siguiente configuracion basica
                             </p>
 
-                            <CodeSpace title={'store.js'}
-                                rawCode={`import { configureStore } from '@reduxjs/toolkit'
-                                        export const store = configureStore ( {
-                                        reducer: { }
-                                        } )`} />
+                            <CodeSpaceV3 title={'store.js'} rawCode={`import { configureStore } from '@reduxjs/toolkit'\n export const store = configureStore ( {\n reducer: { }\n } )\n`} />
 
                             <p>
                                 Dentro de este estore almacenameremos un objeto gigante, que es donde
