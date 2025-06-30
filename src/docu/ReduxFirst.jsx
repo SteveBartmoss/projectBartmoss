@@ -133,7 +133,7 @@ export function FirstStepRedux() {
                                 Para crear un slice usaremo la siguiente ruta
                             </p>
 
-                            <CodeSpace title={'counterSlice.js'} rawCode={'src/features/counter/counterSlice.js'} />
+                            <CodeSpaceV3 title={'counterSlice.js'} rawCode={'src/features/counter/counterSlice.js'} />
 
                             <p>
                                 La estructura del archivo slice es la siguiente:
