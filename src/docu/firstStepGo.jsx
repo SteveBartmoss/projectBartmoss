@@ -5,6 +5,26 @@ import { Portada } from "../componentes/portada/portada";
 
 export function FirstStepGo(){
 
+    const pageMap = [
+        {
+            id: 1,
+            section: 'Preparar ambiente',
+            childs: [
+                {
+                    titulo: 'Windows',
+                    id: 'ambientWindows',
+                },
+                {
+                    titulo: 'MacOs',
+                    id: 'ambientMacOs',
+                },
+                {
+                    titulo: 'Linux',
+                    id: 'ambientLinux',
+                }
+            ]
+        }
+    ]
 
     return(
         <>
