@@ -289,26 +289,22 @@ export function FirstStepRedux() {
                                 de dos botones lo cuales pondremos en nuestra pagina principal
                             </p>
 
-                            <CodeSpace title={"App.js"} rawCode={`import logo from './logo.svg';
-                                import './App.css';
-                                import { useSelector } from 'react-redux';
-
-                                function App() {
-                                
-                                    const count = useSelector((state)=> state.counter.value)
-
-                                    return (
-                                        <div className="App">
-                                        <h1>Contador</h1>
-                                        <p>{count}</p>
-                                        <button>Increment</button>
-                                        <button>Decrement</butto>
-                                        </div>
-                                    );
-                                }
-
-                                export default App;
-                            `} />
+                            <CodeSpaceV3 title={'App.js'} rawCode={`
+                                import logo from './logo.svg';\n 
+                                import './App.css';\n 
+                                import { useSelector } from 'react-redux';\n 
+                                function App() {\n 
+                                const count = useSelector((state)=> state.counter.value)\n 
+                                return (\n
+                                <div className="App">\n
+                                <h1>Contador</h1>\n
+                                <p>{count}</p>\n
+                                <button>Increment</button>\n
+                                <button>Decrement</butto>\n
+                                </div>\n
+                                );\n
+                                }\n
+                                export default App;\n`} />
 
                             <p>
                                 Con esto tenemos los dos botones para incrementar
