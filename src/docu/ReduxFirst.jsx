@@ -96,20 +96,20 @@ export function FirstStepRedux() {
                                 como si se trata de una gran etiquta
                             </p>
 
-                            <CodeSpace title={'index.js'}
-                                rawCode={`import React from 'react'
-                                    import ReactDOM from 'react-dom'
-                                    import './index.css'
-                                    import App from './App'
-                                    import { store } from './app/store'
-                                    import { Provider } from 'react-redux'
-
-                                    ReactDOM.render(
-                                        < Provider store = { store } >
-                                            < App />
-                                        </ Provider > ,
-                                        document.getElementById('root')
-                                    )`} />
+                            <CodeSpaceV3 title={'index.js'} rawCode={
+                                `import React from 'react'\n 
+                                import ReactDOM from 'react-dom'\n 
+                                import './index.css'\n 
+                                import App from './App'\n 
+                                import { store } from './app/store'\n 
+                                import { Provider } from 'react-redux'\n
+                                ReactDOM.render(\n
+                                <Provider store = { store }>\n 
+                                <App />\n
+                                </Provider>\n
+                                document.getElementById('root')\n
+                                )\n
+                                `} />
 
                             <p>
                                 En este caso se implemento el provider antes del
