@@ -375,8 +375,7 @@ export function FirstStepRedux() {
                                 que la libreria trabaja esto lo podemos ver en el siguiente ejemplo:
                             </p>
 
-                            <CodeSpace title={"Ejemplo"}
-                                rawCode={` state = state.filter(element => element.id !== action.payload)`} />
+                            <CodeSpaceV3 title={'Ejemplo'} rawCode={`state = state.filter(element => element.id !== action.payload)`} />
 
                             <p>
                                 Esto no funciona ya que al hace la asignacion state =, estamos rompiedo la convencion
