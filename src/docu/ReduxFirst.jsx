@@ -1,6 +1,5 @@
-import { CodeSpace } from "../componentes/codeSpace/CodeSpace";
 import { CodeSpaceV3 } from "../componentes/codeSpace/CodeSpaceV3";
-import { DivArticle, DivCol, DivContent, DivRow, DivSection } from "../componentes/contenedores/contenedores";
+import { DivArticle, DivCol, DivContent, DivRow } from "../componentes/contenedores/contenedores";
 import { Portada } from "../componentes/portada/portada";
 import { TreeMap } from "../componentes/treeMap/TreeMap";
 
