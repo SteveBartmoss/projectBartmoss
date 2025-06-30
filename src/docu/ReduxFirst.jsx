@@ -166,22 +166,8 @@ export function FirstStepRedux() {
                                 veremo la version simplificada como la siguiente
                             </p>
 
-                            <CodeSpace title={'counterSlice.js'}
-                                rawCode={`import { createSlice } from '@reduxjs/toolkit'
-
-                                    const initialValue = {
-                                        value: 0,
-                                    }
-
-                                    export const counterSlice = createSlice({
-                                    name: 'counter',
-                                    initialState: initialValue,
-                                    reducers: {
-
-                                        },
-                                    })
-
-                                    export default counterSlice.reducer`} />
+                            <CodeSpaceV3 title={'counterSlice.js'} rawCode={
+                                `import { createSlice } from '@reduxjs/toolkit'\n const initialValue = {\n value: 0,\n }\n export const counterSlice = createSlice({\n name: 'counter',\n initialState: initialValue,\n reducers: {\n },\n })\n export default counterSlice.reducer\n`} />
 
                             <p>
                                 En esta version simplificada podemos ver como se compone
