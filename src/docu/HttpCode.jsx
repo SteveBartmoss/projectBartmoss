@@ -1463,6 +1463,12 @@ export function HttpCode() {
                                 407: El cliente debe autenticarse **en un proxy intermedio.  
                             </p>
 
+                            <p>  
+                                407 Proxy Authentication Required significa que el cliente debe autenticarse en un proxy antes de acceder al servidor.  
+                                Se usa en redes empresariales, seguridad y control de tráfico.  
+                                Se soluciona enviando las credenciales en la cabecera Proxy-Authorization.  
+                            </p>
+
                         </DivContent>
                     </DivArticle>
                 </DivCol>
@@ -1474,7 +1480,7 @@ export function HttpCode() {
 
 /*
 
---- codigo 407qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
+--- codigo 407
 
 #### 📝 **Ejemplo de respuesta con código 407**  
 
@@ -1510,10 +1516,7 @@ Proxy-Authorization: Basic dXN1YXJpbzpjbGF2ZXM=
 
 ---
 
-#### ✅ **Resumen**  
-- **407 Proxy Authentication Required** significa que el **cliente debe autenticarse en un proxy** antes de acceder al servidor.  
-- Se usa en **redes empresariales, seguridad y control de tráfico**.  
-- Se soluciona enviando las credenciales en la cabecera `Proxy-Authorization`.  
+
 
 Si necesitas ayuda con proxies o autenticación, dime qué tecnología estás usando. 🚀
 
