@@ -1480,48 +1480,6 @@ export function HttpCode() {
 
 /*
 
---- codigo 407
-
-#### 📝 **Ejemplo de respuesta con código 407**  
-
-📌 **Escenario:** Un usuario intenta acceder a un sitio web, pero su empresa usa un **proxy que requiere autenticación**.  
-
-📌 **Solicitud del usuario (sin autenticación):**  
-
-```
-GET /pagina HTTP/1.1
-Host: ejemplo.com
-```
-
-📌 **Respuesta del proxy:**  
-
-```
-HTTP/1.1 407 Proxy Authentication Required
-Proxy-Authenticate: Basic realm="Acceso al Proxy"
-Content-Type: text/plain
-
-Debe autenticarse en el proxy para continuar.
-```
-
-📌 **Solicitud corregida (con autenticación):**  
-
-```
-GET /pagina HTTP/1.1
-Host: ejemplo.com
-Proxy-Authorization: Basic dXN1YXJpbzpjbGF2ZXM=
-```
-
-📌 **Corrección:**  
-- El cliente debe incluir una cabecera `Proxy-Authorization` con las credenciales.  
-
----
-
-
-
-Si necesitas ayuda con proxies o autenticación, dime qué tecnología estás usando. 🚀
-
---- termina 407
-
 --- codigo 408
 
 ### 🔹 **Código de respuesta HTTP 408 - Request Timeout**  
