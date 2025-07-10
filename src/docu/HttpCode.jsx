@@ -1469,6 +1469,22 @@ export function HttpCode() {
                                 Se soluciona enviando las credenciales en la cabecera Proxy-Authorization.  
                             </p>
 
+                            <h1 id="code408">408</h1>
+
+                            <p>
+                                El código 408 Request Timeout indica que el servidor cerró la conexión porque el cliente tardó demasiado en enviar su solicitud.  
+                            </p>
+
+                            <h2>Causas comunes</h2>
+
+                            <p>
+                                La conexión del cliente es lenta o inestable.  
+                                El servidor tiene un límite de tiempo para recibir la solicitud.  
+                                El cliente se quedó inactivo antes de enviar la solicitud completa.  
+                            </p>
+
+
+
                         </DivContent>
                     </DivArticle>
                 </DivCol>
@@ -1484,13 +1500,7 @@ export function HttpCode() {
 
 ### 🔹 **Código de respuesta HTTP 408 - Request Timeout**  
 
-#### 📌 **Descripción**  
-El código **408 Request Timeout** indica que el **servidor cerró la conexión** porque el cliente tardó demasiado en enviar su solicitud.  
 
-🔴 **Causas comunes:**  
-- La conexión del cliente es **lenta o inestable**.  
-- El servidor tiene un **límite de tiempo** para recibir la solicitud.  
-- El cliente se **quedó inactivo** antes de enviar la solicitud completa.  
 
 ---
 
