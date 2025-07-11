@@ -17,6 +17,30 @@ export function VsCodeHack() {
           titulo: 'ctrl p',
           id: 'ctrlb',
         },
+        {
+          titulo: 'ctrl t',
+          id: 'ctrlt',
+        },
+        {
+          titulo: 'alt flecha abajo/flecha arriba',
+          id: 'altup',
+        },
+        {
+          titulo: 'alt flecha izquierda/flecha derecha',
+          id: 'altleft',
+        },
+        {
+          titulo: 'alt shift flecha izquierda/flecha derecha',
+          id: 'altshiftleft',
+        },
+        {
+          titulo: 'ctrl d',
+          id: 'ctrld',
+        },
+        {
+          titulo: 'ctrl a',
+          id: 'ctrla',
+        },
       ]
     }
   ]
@@ -40,7 +64,7 @@ export function VsCodeHack() {
                 comoda
               </p>
 
-              <h2>ctrl + b</h2>
+              <h2 id='ctrlb'>ctrl + b</h2>
 
               <p>
                 permite colapsar la barra de actividad del editor, que es donde se suele mostrar el
@@ -48,14 +72,14 @@ export function VsCodeHack() {
                 esto permite liberar mas espacio visual a la hora de programar.
               </p>
 
-              <h2>ctrl + p</h2>
+              <h2 id='ctrlb'>ctrl + p</h2>
 
               <p>
                 nos permitira buscar de forma rapida un archivo en nuestro proyecto, basta con
                 poner el nombre del archivo que no encontramos para poder abrir el archivo.
               </p>
 
-              <h2>ctrl + t</h2>
+              <h2 id='ctrlt'>ctrl + t</h2>
 
               <p>
                 permite buscar el contenido dentro de un archivo, como por ejemplo
@@ -63,35 +87,35 @@ export function VsCodeHack() {
                 un metodo podemos buscar el nombre del metodo con este comando
               </p>
 
-              <h2>alt + flecha abajo/flecha arriba</h2>
+              <h2 id='altup'>alt + flecha abajo/flecha arriba</h2>
 
               <p>
                 permite mover una linea de texto hacia arriba
                 o hacia abajo
               </p>
 
-              <h2>alt + flecha izquierda/flecha derecha</h2>
+              <h2 id='altleft'>alt + flecha izquierda/flecha derecha</h2>
 
               <p>
                 permite movernos horizontalmente
                 entre palabras lo cual es mas rapido que saltar espacio por espacio
               </p>
 
-              <h2>alt + shift + flecha izquierda/flecha derecha</h2>
+              <h2 id='altshiftleft'>alt + shift + flecha izquierda/flecha derecha</h2>
 
               <p>
                 seleccionara las palabras que vamos recoriendo lo cual es util si
                 queremos hacar un copiado o correccion de una palabra
               </p>
 
-              <h2>ctrl + d</h2>
+              <h2 id='ctrld'>ctrl + d</h2>
 
               <p>
                 Si tenemos seleccionada una palara y esta se repite en el documento se puede
                 seleccionar otra instancia mas de la palabra usando este comando
               </p>
 
-              <h2>ctrl + a </h2>
+              <h2 id='ctrla'>ctrl + a </h2>
 
               <p>
                 permite seleccionar todo el texto de una archivo muy util para borrar su contenido
