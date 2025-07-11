@@ -14,6 +14,40 @@ export function Vimgg() {
                     titulo: 'Porque usar vim',
                     id: 'useVim',
                 },
+                {
+                    titulo: 'Que es vim',
+                    id: 'wathis',
+                },
+            ],
+        },
+        {
+            id: 1,
+            section: 'Instalacion',
+            childs: [
+                {
+                    titulo: 'debian',
+                    id: 'debian',
+                },
+                {
+                    titulo: 'fedora',
+                    id: 'fedora',
+                },
+                {
+                    titulo: 'arch',
+                    id: 'arch',
+                },
+                {
+                    titulo: 'snap',
+                    id: 'snap',
+                },
+                {
+                    titulo: 'Windows',
+                    id: 'windows',
+                },
+                {
+                    titulo: 'MacOs',
+                    id: 'macOs',
+                },
             ],
         }
     ]
@@ -39,7 +73,7 @@ export function Vimgg() {
                                 variar el entorno de trabajo y poder elegir de otras opciones
                             </p>
 
-                            <h2>¿Porque aprender vim?</h2>
+                            <h2 id='useVim'>¿Porque aprender vim?</h2>
 
                             <p>
                                 Aunque puede parecer que este tipo de programas solo perjudica a
@@ -65,7 +99,7 @@ export function Vimgg() {
                                 de ayuda.
                             </p>
 
-                            <h2>¿Que es vim?</h2>
+                            <h2 id='wathis'>¿Que es vim?</h2>
 
                             <p>
                                 Vim es un editor de codigo de pero con una caracteristica interesante y
@@ -91,31 +125,31 @@ export function Vimgg() {
                                 encuentre instalado podemos usar los siguientes comandos para instalar vim
                             </p>
 
-                            <h3>debian</h3>
+                            <h3 id='debian'>debian</h3>
 
                             <p>
                                 sudo apt install vim
                             </p>
 
-                            <h3>fedora</h3>
+                            <h3 id='fedora'>fedora</h3>
 
                             <p>
                                 sudo dnf install vim
                             </p>
 
-                            <h3>Arch</h3>
+                            <h3 id='arch'>Arch</h3>
 
                             <p>
                                 pacman -S vim
                             </p>
 
-                            <h3>usar la version de snap</h3>
+                            <h3 id='snap'>usar la version de snap</h3>
 
                             <p>
                                 sudo snap install vim-editor --beta
                             </p>
 
-                            <h3>Windows</h3>
+                            <h3 id='windows'>Windows</h3>
 
                             <p>
                                 En caso de que tengamos windows podemos instalarlos desde la pagina
@@ -131,7 +165,7 @@ export function Vimgg() {
                                 razon es que se considera GUI o que tiene una interfaz de grafica de usuario.
                             </p>
 
-                            <h3>macOs</h3>
+                            <h3 id='macOs'>macOs</h3>
 
                             <p>
                                 En caso de que tengamos un sistema con MacOs podemos instalarlo desde el
