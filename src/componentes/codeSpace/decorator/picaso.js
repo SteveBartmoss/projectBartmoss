@@ -32,3 +32,7 @@ export function decorateToken(token){
         return 'string-word'
     }
 }
+
+export function getIdent(ident){
+    return `tabulation-${ident}`
+}
