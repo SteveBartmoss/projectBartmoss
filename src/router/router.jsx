@@ -35,6 +35,7 @@ import { UsoLinux } from "../post/usoLinux";
 import { FirstStepGo } from "../docu/firstStepGo";
 import { TmuxMan } from "../docu/tmuxMan";
 import { MariaInstall } from "../docu/mariaInstall";
+import { NotFound } from "../pages/NotFound";
 
 
 export function RouterBlog(){
@@ -81,6 +82,9 @@ export function RouterBlog(){
                 <Route path="roadmap/javascript/objects" element={<MapObjects />} />
 
                 <Route path="roadmap/frontend" element={<RoadMapFront />} />
+
+                <Route path="*" element={<NotFound />} />
+                
             </Routes>
             <Footer />
         </BrowserRouter>
