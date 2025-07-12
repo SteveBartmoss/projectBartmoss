@@ -5,6 +5,8 @@ const operatorsAccess=/([:\.])/
 const numbers=/([0-9])/
 const text=/(['"])/
 const operetorsIntervals=/([<>])/
+const openIdent=/([\{\[\(])/
+const closeIdent=/([\}\]\)])/ 
 
 export function processCode(code){
 
@@ -188,6 +190,7 @@ export function processCodeV2(code){
     let estado=0
     let iterador=0
     let swap='' 
+    let tabs=0
 
     while(iterador < code.length){
 
@@ -224,15 +227,23 @@ export function processCodeV2(code){
                 else if(operatorsAccess.test(char)){
                     listTokens.push({
                         typeToken: 'OperatorAcces',
-                        character: char
+                        character: char,
+                        ident: tabs,
                     })
                     estado=0
                     iterador++
                 }
                 else if(operatorsSet.test(char)){
+                    if(openIdent.test(char) && code[iterador+1] === '\n'){
+                        tabs++
+                    }
+                    else if (closeIdent.test(char) && code[iterador+1] === '\n'){
+                        tabs--
+                    }
                     listTokens.push({
                         typeToken: 'OperatorSet',
-                        character: char
+                        character: char,
+                        ident: tabs,
                     })
                     estado=0
                     iterador++
@@ -240,7 +251,8 @@ export function processCodeV2(code){
                 else if(operetorsIntervals.test(char)){
                     listTokens.push({
                         typeToken: 'OperatorInterval',
-                        character: char
+                        character: char,
+                        ident: tabs,
                     })
                     estado=0
                     iterador++
@@ -249,6 +261,7 @@ export function processCodeV2(code){
                     listTokens.push({
                         typeToken: 'Espacio',
                         character: char,
+                        ident: tabs,
                     })
                     estado=0
                     iterador++
@@ -266,14 +279,16 @@ export function processCodeV2(code){
                 }else if(operatorsAccess.test(char)){
                     listTokens.push({
                         typeToken: 'Letters',
-                        character: swap
+                        character: swap,
+                        ident: tabs,
                     })
                     swap=''
                     estado=0
                 }else{
                     listTokens.push({
                         typeToken: 'Letters',
-                        character: swap
+                        character: swap,
+                        ident: tabs,
                     })
                     swap=''
                     estado=0
@@ -292,7 +307,8 @@ export function processCodeV2(code){
                 }else{
                     listTokens.push({
                         typeToken: 'Numbers',
-                        character: swap
+                        character: swap,
+                        ident: tabs,
                     })
                     swap=''
                     estado=0
@@ -306,7 +322,8 @@ export function processCodeV2(code){
                 }else{
                     listTokens.push({
                         typeToken: 'Operator',
-                        character: swap
+                        character: swap,
+                        ident: tabs,
                     })
                     swap=''
                     estado=0
@@ -318,7 +335,8 @@ export function processCodeV2(code){
                     iterador++
                     listTokens.push({
                         typeToken: 'String',
-                        character: swap
+                        character: swap,
+                        ident: tabs,
                     })
                     swap=''
                     estado=0
@@ -340,7 +358,8 @@ export function processCodeV2(code){
                 }else{
                     listTokens.push({
                         typeToken: 'Operator',
-                        character: swap
+                        character: swap,
+                        ident: tabs,
                     })
                     swap=''
                     estado=0
@@ -350,7 +369,8 @@ export function processCodeV2(code){
                 if(char==='\n'){
                     listTokens.push({
                         typeToken: 'Comment',
-                        character: swap
+                        character: swap,
+                        ident: tabs,
                     })
                     swap=''
                     estado=0
@@ -365,7 +385,8 @@ export function processCodeV2(code){
                     swap += char + '/'
                     listTokens.push({
                         typeToken: 'Comment',
-                        character: swap
+                        character: swap,
+                        ident: tabs,
                     })
                     swap=''
                     iterador+=2
@@ -381,6 +402,7 @@ export function processCodeV2(code){
                 listTokens.push({
                     typeToken: 'Unknow',
                     character: char,
+                    ident: tabs,
                 })
                 iterador++
                 break
@@ -393,31 +415,36 @@ export function processCodeV2(code){
             case 1:
                 listTokens.push({
                     typeToken: 'Letters',
-                    character: swap
+                    character: swap,
+                    ident: tabs,
                 })
                 break
             case 2:
                 listTokens.push({
                     typeToken: 'Numbers',
-                    character: swap
+                    character: swap,
+                    ident: tabs,
                 })
                 break
             case 3:
                 listTokens.push({
                     typeToken: 'Operator',
-                    character: swap
+                    character: swap,
+                    ident: tabs,
                 })
                 break
             case 4: 
                 listTokens.push({
                     typeToken: 'String',
-                    character: swap
+                    character: swap,
+                    ident: tabs,
                 })
                 break
             default:
                 listTokens.push({
                     typeToken: 'Unknow',
                     character: swap,
+                    ident: tabs,
                 })
                 break;
         }
