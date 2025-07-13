@@ -1,4 +1,5 @@
 import { CodeSpaceV3 } from "../componentes/codeSpace/CodeSpaceV3";
+import { CodeSpaceV4 } from "../componentes/codeSpace/CodeSpaceV4";
 import { DivArticle, DivCol, DivContent, DivRow } from "../componentes/contenedores/contenedores";
 import { Portada } from "../componentes/portada/portada";
 import { TreeMap } from "../componentes/treeMap/TreeMap";
@@ -115,7 +116,7 @@ export function FirstStepGo(){
                                 Ahora con el entorno configurado podemos crear un progama simple de hola mundo
                             </p>
 
-                            <CodeSpaceV3 title={'Hola.go'} rawCode={'package main\n import "fmt"\n func main()\n {\n fmt.Println("¡Hola, Linux Mint!")\n }\n'} />
+                            <CodeSpaceV4 title={'Hola.go'} rawCode={'package main\n import "fmt"\n func main() {\n fmt.Println("¡Hola, Linux Mint!")\n }\n'} />
 
                             <p>
                                 Guardamos el archivo como hola.go o el nombre que queramos y podemos ejecutarlo de la siguiente manera
