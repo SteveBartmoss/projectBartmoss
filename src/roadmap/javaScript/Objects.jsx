@@ -1,5 +1,6 @@
 import { CodeSpace } from "../../componentes/codeSpace/CodeSpace";
 import { CodeSpaceV3 } from "../../componentes/codeSpace/CodeSpaceV3";
+import { CodeSpaceV4 } from "../../componentes/codeSpace/CodeSpaceV4";
 import { DivArticle, DivCol, DivContent, DivRow } from "../../componentes/contenedores/contenedores";
 import { Divider } from "../../componentes/divider/Divider";
 import { Portada } from "../../componentes/portada/portada";
@@ -71,8 +72,9 @@ export function MapObjects() {
                                 En JavaScript, puedes agregar propiedades a un objeto en cualquier momento, incluso después de haberlo creado.
                             </p>
 
-                            <CodeSpaceV3 title={'Ejemplo'} 
-                                rawCode={`const persona = { nombre: "Juan" }\n persona.edad = 30; //Añadiendo la propiedad 'edad' en tiempo de ejecucion \n console.log(persona); //nombre: 'Juan', edad: 30 \n`} />
+                            <CodeSpaceV4 title={'Ejemplo'}
+                            rawCode={`const persona = {\n nombre: "Juan"\n }\n persona.edad = 30; //Añadiendo la propiedad 'edad' en tiempo de ejecucion \n console.log(persona); //nombre: 'Juan', edad: 30 \n`} />
+                            
 
                             <p>
                                 También se puede añadir una propiedad usando corchetes [], lo cual es útil cuando el nombre de la propiedad está almacenado en una variable:
