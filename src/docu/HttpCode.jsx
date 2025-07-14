@@ -1483,7 +1483,19 @@ export function HttpCode() {
                                 El cliente se quedó inactivo antes de enviar la solicitud completa.  
                             </p>
 
+                            <h2>Usos comunes</h2>
 
+                            <p>
+                                Evitar bloqueos en el servidor: El servidor libera recursos si el cliente no responde a tiempo. 
+                            </p>  
+
+                            <p>
+                                Mejorar la experiencia del usuario: Los navegadores pueden mostrar un mensaje para que el usuario reintente la solicitud.  
+                            </p>
+
+                            <p>
+                                Seguridad: Previene ataques donde clientes dejan conexiones abiertas sin enviar datos. 
+                            </p>
 
                         </DivContent>
                     </DivArticle>
@@ -1531,16 +1543,7 @@ El servidor cerró la conexión porque la solicitud tardó demasiado.
 
 ---
 
-#### 🎯 **Casos de uso comunes**  
-
-✔ **Evitar bloqueos en el servidor**  
-   - El servidor libera recursos si el cliente no responde a tiempo.  
-
-✔ **Mejorar la experiencia del usuario**  
-   - Los navegadores pueden mostrar un mensaje para que el usuario **reintente la solicitud**.  
-
-✔ **Seguridad**  
-   - Previene ataques donde clientes dejan conexiones abiertas sin enviar datos.  
+ 
 
 ---
 
