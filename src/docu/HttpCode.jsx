@@ -1497,6 +1497,14 @@ export function HttpCode() {
                                 Seguridad: Previene ataques donde clientes dejan conexiones abiertas sin enviar datos. 
                             </p>
 
+                            <p>
+                                408 Request Timeout ocurre cuando el cliente tarda demasiado en completar la solicitud.  
+                                Se usa para liberar recursos en el servidor y mejorar la seguridad.  
+                                Se soluciona verificando la conexión o aumentando el tiempo de espera del cliente.  
+
+                            </p>
+
+
                         </DivContent>
                     </DivArticle>
                 </DivCol>
@@ -1540,19 +1548,6 @@ El servidor cerró la conexión porque la solicitud tardó demasiado.
 - Revisar la conexión a Internet.  
 - Intentar **recargar la página**.  
 - Si se trata de una API, **aumentar el tiempo de espera del cliente**.  
-
----
-
- 
-
----
-
-#### ✅ **Resumen**  
-- **408 Request Timeout** ocurre cuando el **cliente tarda demasiado en completar la solicitud**.  
-- Se usa para **liberar recursos en el servidor y mejorar la seguridad**.  
-- Se soluciona verificando la conexión o aumentando el tiempo de espera del cliente.  
-
-Si necesitas optimizar tiempos de espera en una API o aplicación, dime qué tecnología estás usando. 🚀
 
 ---- termina 408
 
