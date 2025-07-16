@@ -3,6 +3,7 @@ import { Portada } from "../componentes/portada/portada";
 import { CodeSpace } from "../componentes/codeSpace/CodeSpace";
 import { TreeMap } from "../componentes/treeMap/TreeMap";
 import { CodeSpaceV2 } from "../componentes/codeSpace/CodeSpaceV2";
+import { CodeSpaceV4 } from "../componentes/codeSpace/CodeSpaceV4";
 
 
 export function FirstStepReact() {
@@ -106,7 +107,7 @@ export function FirstStepReact() {
                                 la terminal
                             </p>
 
-                            <CodeSpaceV2 title={'terminal'} rawCode={`curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash \n`} />
+                            <CodeSpaceV4 title={'terminal'} rawCode={`curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash \n`} />
 
                             <p>
                                 Una vez que ejecutemos el comando simplemente tenemos que
@@ -119,7 +120,7 @@ export function FirstStepReact() {
                                 con el siguiente comando:
                             </p>
 
-                            <CodeSpaceV2 title={'terminal'} rawCode={`nvm --version \n`} />
+                            <CodeSpaceV4 title={'terminal'} rawCode={`nvm --version \n`} />
 
                             <p>
                                 Esto nos muestra la versión de la herramienta, y si no aparece
@@ -127,7 +128,7 @@ export function FirstStepReact() {
                                 siguiente comando para instalar Node.js:
                             </p>
 
-                            <CodeSpaceV2 title={'terminal'} rawCode={`nvm install 14.4.0 \n`} />
+                            <CodeSpaceV4 title={'terminal'} rawCode={`nvm install 14.4.0 \n`} />
 
                             <p>
                                 Con esto, tenemos instalada la versión 14.4.0 de Node.js. Este
@@ -389,21 +390,17 @@ export function FirstStepReact() {
                                 create react app suele tener la siguiente estructura
                             </p>
 
-                            <CodeSpace title={'index.js'} rawCode={`import React from 'react';
-                        import ReactDOM from 'react-dom/client';
-                        import './index.css';
-                        import App from './App';
-                        import reportWebVitals from './reportWebVitals';
+                            <CodeSpaceV4 title={'terminal'} rawCode={` import React from 'react';\n import ReactDOM from 'react-dom/client';\n import './index.css';\n
+                                import App from './App';\n
+                                import reportWebVitals from './reportWebVitals';\n
 
-                        const root = ReactDOM.createRoot(document.getElementById('root'));
-                        root.render(
-                        <React.StrictMode>
-                        <App />
-                        </React.StrictMode>
-                        );
-
-
-                        reportWebVitals();`} />
+                                const root = ReactDOM.createRoot(document.getElementById('root'));\n
+                                root.render(\n
+                                <React.StrictMode>\n
+                                <App />\n
+                                </React.StrictMode>\n
+                                );\n
+                                reportWebVitals(); \n`} />
 
                             <p>
                                 Este archivo suele contener la entrada inicial
