@@ -14,7 +14,7 @@ export class Lexer {
         const numbers = /([0-9])/
         const operetorsIntervals = /([<>])/
         const text = /(['"])/
-        
+
         let listTokens = []
         let estado = 0
         let iterador = 0
@@ -61,9 +61,17 @@ export class Lexer {
                         iterador++
                     }
                     else if (operatorsSet.test(char)) {
-                        
+
                         listTokens.push({
                             typeToken: 'OperatorSet',
+                            character: char,
+                        })
+                        estado = 0
+                        iterador++
+                    }
+                    else if (operetorsIntervals.test(char)) {
+                        listTokens.push({
+                            typeToken: 'OperatorInterval',
                             character: char,
                         })
                         estado = 0
@@ -249,20 +257,20 @@ export class Lexer {
 
         for (let ite = 0; ite <= code.length; ite++) {
             if (code[ite] === '\n' || code[ite] === '\r') {
-                
-                if(closeIdent.test(code[ite-1])){
+
+                if (closeIdent.test(code[ite - 1])) {
                     this.tabs--
                 }
 
-                this.listCode.push({ tokens: this.processCode(code.slice(start, ite) + '\n'), ident: this.tabs})
+                this.listCode.push({ tokens: this.processCode(code.slice(start, ite) + '\n'), ident: this.tabs })
                 start = ite + 1
 
-                if(openIdent.test(code[ite-1])){
+                if (openIdent.test(code[ite - 1])) {
                     this.tabs++
                 }
             }
         }
-        
+
     }
 
 }
