@@ -1,4 +1,5 @@
 import { CodeSpaceV2 } from "../componentes/codeSpace/CodeSpaceV2"
+import { CodeSpaceV4 } from "../componentes/codeSpace/CodeSpaceV4"
 import { DivArticle, DivCol, DivContent, DivRow } from "../componentes/contenedores/contenedores"
 import { Portada } from "../componentes/portada/portada"
 import { TreeMap } from "../componentes/treeMap/TreeMap"
@@ -64,15 +65,15 @@ export function FundamentosJs(){
                                 Las arrow functions son una forma mas corta de escribir funciones en JavaScript.
                             </p>
 
-                            <CodeSpaceV2 title={"Funcion tradicional"} rawCode={`function suma(a, b) {\n return a + b;\n}\n`} />
+                            <CodeSpaceV4 title={"Funcion tradicional"} rawCode={`function suma(a, b) {\n return a + b;\n}\n`} />
 
-                            <CodeSpaceV2 title={"Arrow function equivalente"} rawCode={`const suma = (a, b) => {\nreturn a + b;\n};\n`} />
+                            <CodeSpaceV4 title={"Arrow function equivalente"} rawCode={`const suma = (a, b) => {\nreturn a + b;\n }\n`} />
 
                             <p>
                                 Si el cuerpo es una sola lineam, se puede omitir {} y el return
                             </p>
 
-                            <CodeSpaceV2 title={"Sin simbolos"} rawCode={`const suma = (a, b) => a + b;\n`} />
+                            <CodeSpaceV4 title={"Sin simbolos"} rawCode={`const suma = (a, b) => a + b;\n`} />
 
                             <h2 id="parentesisArrow">Parentesis en los Parametros</h2>
 
@@ -80,19 +81,19 @@ export function FundamentosJs(){
                                 Un parametro: Los parentesis son opcionales.
                             </p>
 
-                            <CodeSpaceV2 title={"Un solo parametro"} rawCode={`const cuadrado = x => x * x;\n`} />
+                            <CodeSpaceV4 title={"Un solo parametro"} rawCode={`const cuadrado = x => x * x;\n`} />
 
                             <p>
                                 Sin parametros: Se usan parentesis vacios.
                             </p>
 
-                            <CodeSpaceV2 title={"Sin parametros"} rawCode={`const saludo = () => "Hola Mundo";\n`} />
+                            <CodeSpaceV4 title={"Sin parametros"} rawCode={`const saludo = () => "Hola Mundo";\n`} />
 
                             <p>
                                 Varios parametros: Requiren parentesis.
                             </p>
 
-                            <CodeSpaceV2 title={"Varios parametros"} rawCode={`const resta = (a,b) => a - b;\n`} />
+                            <CodeSpaceV4 title={"Varios parametros"} rawCode={`const resta = (a,b) => a - b;\n`} />
 
                             <h2 id="diferenciaArrow">Diferencias</h2>
 
@@ -131,11 +132,11 @@ export function FundamentosJs(){
                                 En react, las arrow functions se usan mucho para:
                             </p>
 
-                            <CodeSpaceV2 title={`Manejo de eventos`} rawCode={`<button onClick={() => console.log("Click")}>\nPresiona\n</button>\n`} />
+                            <CodeSpaceV4 title={`Manejo de eventos`} rawCode={`<button onClick={() => console.log("Click")}>\n Presiona\n </button>\n`} />
 
-                            <CodeSpaceV2 title={'Componentes funcionales'} rawCode={`const MiComponente = () => <h1>Hola React</h1>;\n`} />
+                            <CodeSpaceV4 title={'Componentes funcionales'} rawCode={`const MiComponente = () => <h1>Hola React</h1>;\n`} />
 
-                            <CodeSpaceV2 title={'Funciones dentro de hooks'} rawCode={`useEffect(() => {\nfetchData();\n }, []);\n`} />
+                            <CodeSpaceV4 title={'Funciones dentro de hooks'} rawCode={`useEffect(() => {\n fetchData();\n }, [])\n`} />
 
                             <h2 id="practicasArrow">Buenas Practicas</h2>
 
@@ -145,8 +146,8 @@ export function FundamentosJs(){
                                 Preferir arrow functions en React para evitar problemas con this.
                             </p>
 
-                            <CodeSpaceV2 title={"Ejemplo mala practica"} rawCode={`const objeto = {\n valor: 10,\n incremento: () => {\n
-                            this.valor++; // Error: this no apunta al objeto\n }\n };`} />
+                            <CodeSpaceV4 title={"Ejemplo mala practica"} rawCode={`const objeto = {\n valor: 10,\n incremento: () => {\n
+                            this.valor++; // Error: this no apunta al objeto\n }\n }\n`} />
 
                             <h1>Template Literals (Plantillas de Cadena/Template Strings)</h1>
 
@@ -166,13 +167,13 @@ export function FundamentosJs(){
 
                             <h2 id="sintaxisBactips">Sintaxis Basica</h2>
 
-                            <CodeSpaceV2 title={'Ejemplo'} rawCode={`const nombre = "Ana";\n const saludo = \` Hola, \${nombre} \`; // Usa backticks (\`\`) y \$\{\}\n console.log(saludo); // "Hola, Ana"`} />
+                            <CodeSpaceV4 title={'Ejemplo'} rawCode={`const nombre = "Ana";\n const saludo = \` Hola, \${nombre} \`; // Usa backticks (\`\`) y \$\{\}\n console.log(saludo); // "Hola, Ana"`} />
 
                             <p>
                                 Comparacion con strings tradicionales
                             </p>
 
-                            <CodeSpaceV2 title={'Ejmplo'} rawCode={`// Antes (ES5)\n var saludo = "Hola, " + nombre;\n  // Ahora (ES6+)\n const saludo = \`Hola, \$\{nombre\}\`; // Más claro y conciso\n`} />
+                            <CodeSpaceV4 title={'Ejmplo'} rawCode={`// Antes (ES5)\n var saludo = "Hola, " + nombre;\n  // Ahora (ES6+)\n const saludo = \`Hola, \$\{nombre\}\`; // Más claro y conciso\n`} />
 
                             <h2 id="caracteristicasBacktips">Caracteristicas Principales</h2>
 
@@ -180,13 +181,20 @@ export function FundamentosJs(){
                                 Interpolacion de variables y expresiones: Puedes incluir cualquier expresion JavaScript dentro de $ { }
                             </p>
 
-                            <CodeSpaceV2 title={'Ejemplo'} rawCode={`const a = 5;\n const b = 10;\n console.log(\`La suma es: \${a + b}\`); // "La suma es: 15"\n // Con funciones\n function saludar(nombre) {\n return \`¡Hola, \${nombre.toUpperCase()}!\`;\n }\n console.log(saludar("Carlos")); // "¡Hola, CARLOS!"`} />
+                            <CodeSpaceV4 title={'Ejemplo'} rawCode={`const a = 5;\n 
+                                const b = 10;\n 
+                                console.log(\`La suma es: \${a + b}\`); // "La suma es: 15"\n // Con funciones\n 
+                                function saludar(nombre) {\n 
+                                return \`¡Hola, \${nombre.toUpperCase()}!\`;\n 
+                                }\n 
+                                console.log(saludar("Carlos")); //"¡Hola, CARLOS!"\n`} />
                             
                             <p>
                                 Cadenas multilinea: permite crear multiples lineas en una cadena sin tener que usar el caracter \n
                             </p>
 
-                            <CodeSpaceV2 title={'Ejemplo'} rawCode={`const mensaje = \`\n Linea 1\n Linea 2\n Linea 3\n \`;\n // Respeta los saltos de línea y la indentación\n`} />
+                            <CodeSpaceV4 title={'Ejemplo'} rawCode={`
+                                const mensaje = \` \n Linea 1\n Linea 2\n Linea 3\n \`;\n // Respeta los saltos de línea y la indentación\n`} />
 
                         </DivContent>
                     </DivArticle>
