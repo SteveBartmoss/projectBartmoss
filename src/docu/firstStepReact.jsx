@@ -1,9 +1,9 @@
-import { DivArticle, DivSection, DivContent, DivRow, DivCol } from "../componentes/contenedores/contenedores";
+import { DivArticle, DivContent, DivRow, DivCol } from "../componentes/contenedores/contenedores";
 import { Portada } from "../componentes/portada/portada";
-import { CodeSpace } from "../componentes/codeSpace/CodeSpace";
 import { TreeMap } from "../componentes/treeMap/TreeMap";
 import { CodeSpaceV2 } from "../componentes/codeSpace/CodeSpaceV2";
 import { CodeSpaceV4 } from "../componentes/codeSpace/CodeSpaceV4";
+import { CodeSpaceV3 } from "../componentes/codeSpace/CodeSpaceV3";
 
 
 export function FirstStepReact() {
@@ -418,9 +418,18 @@ export function FirstStepReact() {
                                 renderiza dentro del DOM (Document Object Model) de la página web.
                             </p>
 
-                            <CodeSpaceV2 title={'App.js'} 
-                                rawCode={`import React from 'react';\n import './App.css';\n function App() {\n return (\n <div className="App">\n <header className="App-header">\n <h1>¡Hola, React!</h1>\n <p>Bienvenido a tu nueva aplicación creada con Create React App.</p>\n </header>\n </div>\n );\n }\n export default App;\n `} />
-
+                            <CodeSpaceV4 title={'App.js'} 
+                                rawCode={`import React from 'react';\n import './App.css';\n 
+                                function App() {\n return (\n 
+                                <div className="App">\n 
+                                <header className="App-header">\n 
+                                <h1>¡Hola, React!</h1>\n 
+                                <p>Bienvenido a tu nueva aplicación creada con Create React App.</p>\n 
+                                </header>\n 
+                                </div>\n 
+                                );\n 
+                                }\n 
+                                export default App;\n `} />
                             <p>
                                 Este componente normalmente es el punto de partida para una aplicacion creada con 
                                 la libreria react, dentro de este componente podemos montar los elementos que queramos,
