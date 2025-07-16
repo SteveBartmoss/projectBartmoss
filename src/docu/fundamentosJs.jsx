@@ -1,4 +1,3 @@
-import { CodeSpaceV2 } from "../componentes/codeSpace/CodeSpaceV2"
 import { CodeSpaceV4 } from "../componentes/codeSpace/CodeSpaceV4"
 import { DivArticle, DivCol, DivContent, DivRow } from "../componentes/contenedores/contenedores"
 import { Portada } from "../componentes/portada/portada"
