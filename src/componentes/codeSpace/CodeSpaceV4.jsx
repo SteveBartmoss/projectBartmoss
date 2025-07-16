@@ -19,7 +19,7 @@ export function CodeSpaceV4({title, rawCode = ""}){
             <div className="code-space">
                 {
                     adaLove.listCode.map(lineCode =>
-                        <p key={generateUniqueIdV3()} style={{paddingLeft: lineCode.ident * 3 + 'rem'}} >
+                        <p key={generateUniqueIdV3()} style={{paddingLeft: lineCode.ident * 3 + 'rem', paddingBottom: '0rem', paddingTop: '0rem'}} >
                             {
                                 lineCode.tokens.map(token =>
                                     <span key={generateUniqueIdV3()} className={`${decorateToken(token)}`}>{token.character}</span>
