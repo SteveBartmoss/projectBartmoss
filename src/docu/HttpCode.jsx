@@ -1516,40 +1516,7 @@ export function HttpCode() {
 
 /*
 
---- codigo 408
 
-### 🔹 **Código de respuesta HTTP 408 - Request Timeout**  
-
-
-
----
-
-#### 📝 **Ejemplo de respuesta con código 408**  
-
-📌 **Escenario:** Un usuario intenta cargar una página, pero su conexión es muy lenta.  
-
-📌 **Solicitud del usuario (que tarda demasiado en enviarse):**  
-
-```
-GET /pagina HTTP/1.1
-Host: ejemplo.com
-```
-
-📌 **Respuesta del servidor:**  
-
-```
-HTTP/1.1 408 Request Timeout
-Content-Type: text/plain
-
-El servidor cerró la conexión porque la solicitud tardó demasiado.
-```
-
-📌 **Corrección:**  
-- Revisar la conexión a Internet.  
-- Intentar **recargar la página**.  
-- Si se trata de una API, **aumentar el tiempo de espera del cliente**.  
-
----- termina 408
 
 --- codigo 409
 
