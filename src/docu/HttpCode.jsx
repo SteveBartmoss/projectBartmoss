@@ -1483,6 +1483,26 @@ export function HttpCode() {
                                 El cliente se quedó inactivo antes de enviar la solicitud completa.  
                             </p>
 
+                            <h2>Usos comunes</h2>
+
+                            <p>
+                                Evitar bloqueos en el servidor: El servidor libera recursos si el cliente no responde a tiempo. 
+                            </p>  
+
+                            <p>
+                                Mejorar la experiencia del usuario: Los navegadores pueden mostrar un mensaje para que el usuario reintente la solicitud.  
+                            </p>
+
+                            <p>
+                                Seguridad: Previene ataques donde clientes dejan conexiones abiertas sin enviar datos. 
+                            </p>
+
+                            <p>
+                                408 Request Timeout ocurre cuando el cliente tarda demasiado en completar la solicitud.  
+                                Se usa para liberar recursos en el servidor y mejorar la seguridad.  
+                                Se soluciona verificando la conexión o aumentando el tiempo de espera del cliente.  
+
+                            </p>
 
 
                         </DivContent>
@@ -1528,28 +1548,6 @@ El servidor cerró la conexión porque la solicitud tardó demasiado.
 - Revisar la conexión a Internet.  
 - Intentar **recargar la página**.  
 - Si se trata de una API, **aumentar el tiempo de espera del cliente**.  
-
----
-
-#### 🎯 **Casos de uso comunes**  
-
-✔ **Evitar bloqueos en el servidor**  
-   - El servidor libera recursos si el cliente no responde a tiempo.  
-
-✔ **Mejorar la experiencia del usuario**  
-   - Los navegadores pueden mostrar un mensaje para que el usuario **reintente la solicitud**.  
-
-✔ **Seguridad**  
-   - Previene ataques donde clientes dejan conexiones abiertas sin enviar datos.  
-
----
-
-#### ✅ **Resumen**  
-- **408 Request Timeout** ocurre cuando el **cliente tarda demasiado en completar la solicitud**.  
-- Se usa para **liberar recursos en el servidor y mejorar la seguridad**.  
-- Se soluciona verificando la conexión o aumentando el tiempo de espera del cliente.  
-
-Si necesitas optimizar tiempos de espera en una API o aplicación, dime qué tecnología estás usando. 🚀
 
 ---- termina 408
 
