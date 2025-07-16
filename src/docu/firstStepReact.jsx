@@ -1,9 +1,7 @@
 import { DivArticle, DivContent, DivRow, DivCol } from "../componentes/contenedores/contenedores";
 import { Portada } from "../componentes/portada/portada";
 import { TreeMap } from "../componentes/treeMap/TreeMap";
-import { CodeSpaceV2 } from "../componentes/codeSpace/CodeSpaceV2";
 import { CodeSpaceV4 } from "../componentes/codeSpace/CodeSpaceV4";
-import { CodeSpaceV3 } from "../componentes/codeSpace/CodeSpaceV3";
 
 
 export function FirstStepReact() {
