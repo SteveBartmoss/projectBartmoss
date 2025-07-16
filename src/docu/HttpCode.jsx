@@ -1501,9 +1501,16 @@ export function HttpCode() {
                                 408 Request Timeout ocurre cuando el cliente tarda demasiado en completar la solicitud.  
                                 Se usa para liberar recursos en el servidor y mejorar la seguridad.  
                                 Se soluciona verificando la conexión o aumentando el tiempo de espera del cliente.  
-
                             </p>
 
+                            <h1 id="code409">409</h1>
+
+                            <p>
+                                Indica que hay un conflicto en la solicitud, lo que impide que el servidor la procese. Este conflicto generalmente ocurre cuando:  
+                                Hay inconsistencias en los datos (por ejemplo, una versión antigua del recurso intenta sobrescribir una más reciente).  
+                                Dos usuarios intentan modificar el mismo recurso al mismo tiempo (problema de concurrencia).  
+                                Se intenta crear un recurso que entra en conflicto con otro existente.
+                            </p>
 
                         </DivContent>
                     </DivArticle>
@@ -1520,14 +1527,7 @@ export function HttpCode() {
 
 --- codigo 409
 
-### 🔹 **Código de respuesta HTTP 409 - Conflict**  
-
-#### 📌 **Descripción**  
-El código **409 Conflict** indica que **hay un conflicto en la solicitud**, lo que impide que el servidor la procese. Este conflicto generalmente ocurre cuando:  
-
-- Hay **inconsistencias en los datos** (por ejemplo, una versión antigua del recurso intenta sobrescribir una más reciente).  
-- Dos usuarios intentan modificar el mismo recurso al mismo tiempo (**problema de concurrencia**).  
-- Se intenta **crear un recurso que entra en conflicto con otro existente**.  
+### 🔹 **Código de respuesta HTTP 409 - Conflict**   
 
 ---
 
