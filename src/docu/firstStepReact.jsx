@@ -388,7 +388,7 @@ export function FirstStepReact() {
                                 create react app suele tener la siguiente estructura
                             </p>
 
-                            <CodeSpaceV4 title={'terminal'} rawCode={` import React from 'react';\n import ReactDOM from 'react-dom/client';\n import './index.css';\n
+                            <CodeSpaceV4 title={'index.js'} rawCode={` import React from 'react';\n import ReactDOM from 'react-dom/client';\n import './index.css';\n
                                 import App from './App';\n
                                 import reportWebVitals from './reportWebVitals';\n
 
@@ -397,7 +397,7 @@ export function FirstStepReact() {
                                 <React.StrictMode>\n
                                 <App />\n
                                 </React.StrictMode>\n
-                                );\n
+                                )\n
                                 reportWebVitals(); \n`} />
 
                             <p>
@@ -425,7 +425,7 @@ export function FirstStepReact() {
                                 <p>Bienvenido a tu nueva aplicación creada con Create React App.</p>\n 
                                 </header>\n 
                                 </div>\n 
-                                );\n 
+                                )\n 
                                 }\n 
                                 export default App;\n `} />
                             <p>
