@@ -1,11 +1,13 @@
 .code-container{
     border-radius: .5rem;
+    margin: 1rem;
 }
 
 .code-space{
     background: #16181d;
     border-bottom-left-radius: .5rem;
     border-bottom-right-radius: .5rem;
+    padding: 1rem;
 }
 
 .code-space p{
