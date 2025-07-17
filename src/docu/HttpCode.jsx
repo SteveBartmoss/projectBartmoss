@@ -1530,7 +1530,12 @@ export function HttpCode() {
                             <p>
                                 Evitar duplicados en creación de recursos: Si se intenta crear un recurso que ya existe y genera una inconsistencia. 
                             </p>
-                            
+
+                            <p>
+                                409 Conflict ocurre cuando hay un conflicto entre la solicitud y el estado actual del servidor.  
+                                Se usa en APIs, bases de datos y sistemas colaborativos para manejar concurrencia. Se soluciona con control de versiones, bloqueos o actualización de datos antes de modificarlos. 
+                            </p>
+  
                         </DivContent>
                     </DivArticle>
                 </DivCol>
@@ -1584,12 +1589,7 @@ Content-Type: application/json
 - Implementar un **control de versiones** (usando `ETag` o `If-Match`).  
 - Manejar bloqueos optimistas o pesimistas para evitar conflictos en bases de datos.  
 
----
-
-#### ✅ **Resumen**  
-- **409 Conflict** ocurre cuando hay un conflicto entre la solicitud y el estado actual del servidor.  
-- Se usa en **APIs, bases de datos y sistemas colaborativos** para manejar concurrencia.  
-- Se soluciona con **control de versiones, bloqueos o actualización de datos antes de modificarlos**.  
+--- 
 
 Si necesitas ayuda para manejar conflictos en una API o sistema de bases de datos, dime qué tecnología estás usando. 🚀
 
