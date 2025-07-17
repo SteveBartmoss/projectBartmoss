@@ -1512,6 +1512,25 @@ export function HttpCode() {
                                 Se intenta crear un recurso que entra en conflicto con otro existente.
                             </p>
 
+                            <h2>Usos comunes</h2>
+
+                            <p>
+                                Control de concurrencia en APIs: Se usa en APIs RESTful para evitar que usuarios sobrescriban datos entre sí. 
+                            </p>
+
+                            <p>
+                                Sistemas de gestión de contenido (CMS, editores de documentos, etc.): 
+                                Se muestra un mensaje si alguien más ha editado el mismo documento. 
+                            </p>
+
+                            <p>
+                                Sistemas de bases de datos con múltiples usuarios: Evita conflictos cuando dos usuarios intentan modificar un mismo registro.  
+                            </p>
+
+                            <p>
+                                Evitar duplicados en creación de recursos: Si se intenta crear un recurso que ya existe y genera una inconsistencia. 
+                            </p>
+                            
                         </DivContent>
                     </DivArticle>
                 </DivCol>
@@ -1564,22 +1583,6 @@ Content-Type: application/json
 - Obtener la versión más reciente del documento antes de actualizarlo.  
 - Implementar un **control de versiones** (usando `ETag` o `If-Match`).  
 - Manejar bloqueos optimistas o pesimistas para evitar conflictos en bases de datos.  
-
----
-
-#### 🎯 **Casos de uso comunes**  
-
-✔ **Control de concurrencia en APIs**  
-   - Se usa en **APIs RESTful** para evitar que usuarios sobrescriban datos entre sí.  
-
-✔ **Sistemas de gestión de contenido (CMS, editores de documentos, etc.)**  
-   - Se muestra un mensaje si alguien más ha editado el mismo documento.  
-
-✔ **Sistemas de bases de datos con múltiples usuarios**  
-   - Evita conflictos cuando dos usuarios intentan modificar un mismo registro.  
-
-✔ **Evitar duplicados en creación de recursos**  
-   - Si se intenta crear un recurso que ya existe y genera una inconsistencia.  
 
 ---
 
