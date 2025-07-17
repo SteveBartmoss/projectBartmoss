@@ -1547,54 +1547,6 @@ export function HttpCode() {
 
 /*
 
-
-
---- codigo 409
-
-### 🔹 **Código de respuesta HTTP 409 - Conflict**   
-
----
-
-#### 📝 **Ejemplo de respuesta con código 409**  
-
-📌 **Escenario:** Un usuario intenta actualizar un documento en una API, pero otro usuario ya lo ha modificado.  
-
-📌 **Solicitud del usuario (intentando actualizar un documento con datos desactualizados):**  
-
-```http
-PUT /documentos/123 HTTP/1.1
-Host: api.ejemplo.com
-Content-Type: application/json
-If-Match: "v1"
-
-{
-    "titulo": "Nuevo título",
-    "contenido": "Texto actualizado"
-}
-```
-
-📌 **Respuesta del servidor:**  
-
-```http
-HTTP/1.1 409 Conflict
-Content-Type: application/json
-
-{
-    "error": "El documento ha sido modificado por otro usuario. Actualiza tu versión antes de enviar cambios."
-}
-```
-
-📌 **Corrección:**  
-- Obtener la versión más reciente del documento antes de actualizarlo.  
-- Implementar un **control de versiones** (usando `ETag` o `If-Match`).  
-- Manejar bloqueos optimistas o pesimistas para evitar conflictos en bases de datos.  
-
---- 
-
-Si necesitas ayuda para manejar conflictos en una API o sistema de bases de datos, dime qué tecnología estás usando. 🚀
-
---- termina 409
-
 --- codigo 410
 
 ### 🔹 **Código de respuesta HTTP 410 - Gone**  
