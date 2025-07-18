@@ -14,7 +14,7 @@ export class Lexer {
         const numbers = /([0-9])/
         const operetorsIntervals = /([<>])/
         const text = /(['"])/
-
+        
         let listTokens = []
         let estado = 0
         let iterador = 0
@@ -26,30 +26,21 @@ export class Lexer {
 
             switch (estado) {
                 case 0:
+                    iterador++
                     if (letters.test(char)) {
                         swap += char
-                        iterador++
                         estado = 1
                     }
                     else if (numbers.test(char)) {
                         swap += char
-                        iterador++
                         estado = 2
                     }
                     else if (operators.test(char)) {
-                        if (char === '/') {
-                            swap += char
-                            iterador++
-                            estado = 5
-                        } else {
-                            swap += char
-                            iterador++
-                            estado = 3
-                        }
+                        swap += char
+                        char === '/' ? estado = 5 : estado = 3
                     }
                     else if (text.test(char)) {
                         swap += char
-                        iterador++
                         estado = 4
                     }
                     else if (operatorsAccess.test(char)) {
@@ -58,24 +49,14 @@ export class Lexer {
                             character: char,
                         })
                         estado = 0
-                        iterador++
                     }
                     else if (operatorsSet.test(char)) {
-
+                        
                         listTokens.push({
                             typeToken: 'OperatorSet',
                             character: char,
                         })
                         estado = 0
-                        iterador++
-                    }
-                    else if (operetorsIntervals.test(char)) {
-                        listTokens.push({
-                            typeToken: 'OperatorInterval',
-                            character: char,
-                        })
-                        estado = 0
-                        iterador++
                     }
                     else if (char == ' ') {
                         listTokens.push({
@@ -83,10 +64,6 @@ export class Lexer {
                             character: char,
                         })
                         estado = 0
-                        iterador++
-                    }
-                    else {
-                        iterador++
                     }
                     break
 
@@ -145,9 +122,9 @@ export class Lexer {
                     }
                     break
                 case 4:
+                    iterador++
                     if (text.test(char)) {
                         swap += char
-                        iterador++
                         listTokens.push({
                             typeToken: 'String',
                             character: swap,
@@ -156,7 +133,6 @@ export class Lexer {
                         estado = 0
                     } else {
                         swap += char
-                        iterador++
                         estado = 4
                     }
                     break
