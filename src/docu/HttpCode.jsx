@@ -1501,10 +1501,41 @@ export function HttpCode() {
                                 408 Request Timeout ocurre cuando el cliente tarda demasiado en completar la solicitud.  
                                 Se usa para liberar recursos en el servidor y mejorar la seguridad.  
                                 Se soluciona verificando la conexión o aumentando el tiempo de espera del cliente.  
-
                             </p>
 
+                            <h1 id="code409">409</h1>
 
+                            <p>
+                                Indica que hay un conflicto en la solicitud, lo que impide que el servidor la procese. Este conflicto generalmente ocurre cuando:  
+                                Hay inconsistencias en los datos (por ejemplo, una versión antigua del recurso intenta sobrescribir una más reciente).  
+                                Dos usuarios intentan modificar el mismo recurso al mismo tiempo (problema de concurrencia).  
+                                Se intenta crear un recurso que entra en conflicto con otro existente.
+                            </p>
+
+                            <h2>Usos comunes</h2>
+
+                            <p>
+                                Control de concurrencia en APIs: Se usa en APIs RESTful para evitar que usuarios sobrescriban datos entre sí. 
+                            </p>
+
+                            <p>
+                                Sistemas de gestión de contenido (CMS, editores de documentos, etc.): 
+                                Se muestra un mensaje si alguien más ha editado el mismo documento. 
+                            </p>
+
+                            <p>
+                                Sistemas de bases de datos con múltiples usuarios: Evita conflictos cuando dos usuarios intentan modificar un mismo registro.  
+                            </p>
+
+                            <p>
+                                Evitar duplicados en creación de recursos: Si se intenta crear un recurso que ya existe y genera una inconsistencia. 
+                            </p>
+
+                            <p>
+                                409 Conflict ocurre cuando hay un conflicto entre la solicitud y el estado actual del servidor.  
+                                Se usa en APIs, bases de datos y sistemas colaborativos para manejar concurrencia. Se soluciona con control de versiones, bloqueos o actualización de datos antes de modificarlos. 
+                            </p>
+  
                         </DivContent>
                     </DivArticle>
                 </DivCol>
@@ -1515,115 +1546,6 @@ export function HttpCode() {
 }
 
 /*
-
---- codigo 408
-
-### 🔹 **Código de respuesta HTTP 408 - Request Timeout**  
-
-
-
----
-
-#### 📝 **Ejemplo de respuesta con código 408**  
-
-📌 **Escenario:** Un usuario intenta cargar una página, pero su conexión es muy lenta.  
-
-📌 **Solicitud del usuario (que tarda demasiado en enviarse):**  
-
-```
-GET /pagina HTTP/1.1
-Host: ejemplo.com
-```
-
-📌 **Respuesta del servidor:**  
-
-```
-HTTP/1.1 408 Request Timeout
-Content-Type: text/plain
-
-El servidor cerró la conexión porque la solicitud tardó demasiado.
-```
-
-📌 **Corrección:**  
-- Revisar la conexión a Internet.  
-- Intentar **recargar la página**.  
-- Si se trata de una API, **aumentar el tiempo de espera del cliente**.  
-
----- termina 408
-
---- codigo 409
-
-### 🔹 **Código de respuesta HTTP 409 - Conflict**  
-
-#### 📌 **Descripción**  
-El código **409 Conflict** indica que **hay un conflicto en la solicitud**, lo que impide que el servidor la procese. Este conflicto generalmente ocurre cuando:  
-
-- Hay **inconsistencias en los datos** (por ejemplo, una versión antigua del recurso intenta sobrescribir una más reciente).  
-- Dos usuarios intentan modificar el mismo recurso al mismo tiempo (**problema de concurrencia**).  
-- Se intenta **crear un recurso que entra en conflicto con otro existente**.  
-
----
-
-#### 📝 **Ejemplo de respuesta con código 409**  
-
-📌 **Escenario:** Un usuario intenta actualizar un documento en una API, pero otro usuario ya lo ha modificado.  
-
-📌 **Solicitud del usuario (intentando actualizar un documento con datos desactualizados):**  
-
-```http
-PUT /documentos/123 HTTP/1.1
-Host: api.ejemplo.com
-Content-Type: application/json
-If-Match: "v1"
-
-{
-    "titulo": "Nuevo título",
-    "contenido": "Texto actualizado"
-}
-```
-
-📌 **Respuesta del servidor:**  
-
-```http
-HTTP/1.1 409 Conflict
-Content-Type: application/json
-
-{
-    "error": "El documento ha sido modificado por otro usuario. Actualiza tu versión antes de enviar cambios."
-}
-```
-
-📌 **Corrección:**  
-- Obtener la versión más reciente del documento antes de actualizarlo.  
-- Implementar un **control de versiones** (usando `ETag` o `If-Match`).  
-- Manejar bloqueos optimistas o pesimistas para evitar conflictos en bases de datos.  
-
----
-
-#### 🎯 **Casos de uso comunes**  
-
-✔ **Control de concurrencia en APIs**  
-   - Se usa en **APIs RESTful** para evitar que usuarios sobrescriban datos entre sí.  
-
-✔ **Sistemas de gestión de contenido (CMS, editores de documentos, etc.)**  
-   - Se muestra un mensaje si alguien más ha editado el mismo documento.  
-
-✔ **Sistemas de bases de datos con múltiples usuarios**  
-   - Evita conflictos cuando dos usuarios intentan modificar un mismo registro.  
-
-✔ **Evitar duplicados en creación de recursos**  
-   - Si se intenta crear un recurso que ya existe y genera una inconsistencia.  
-
----
-
-#### ✅ **Resumen**  
-- **409 Conflict** ocurre cuando hay un conflicto entre la solicitud y el estado actual del servidor.  
-- Se usa en **APIs, bases de datos y sistemas colaborativos** para manejar concurrencia.  
-- Se soluciona con **control de versiones, bloqueos o actualización de datos antes de modificarlos**.  
-
-Si necesitas ayuda para manejar conflictos en una API o sistema de bases de datos, dime qué tecnología estás usando. 🚀
-
---- termina 409
 
 --- codigo 410
 
