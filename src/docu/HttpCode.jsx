@@ -1535,6 +1535,21 @@ export function HttpCode() {
                                 409 Conflict ocurre cuando hay un conflicto entre la solicitud y el estado actual del servidor.  
                                 Se usa en APIs, bases de datos y sistemas colaborativos para manejar concurrencia. Se soluciona con control de versiones, bloqueos o actualización de datos antes de modificarlos. 
                             </p>
+
+                              <h1 id="code410">410</h1>
+
+                              <p>
+                                Indica que el recurso solicitado ya no está disponible y no volverá a estarlo. A diferencia del 404 Not Found, 
+                                que indica que un recurso podría estar temporalmente no disponible, el 410 confirma que el recurso ha sido 
+                                eliminado de forma permanente.  
+                              </p>
+
+                              <h2>Diferencias entre 404 y 410</h2>
+
+                              <p>
+                                404 Not Found: No se sabe si el recurso volverá a estar disponible.  
+                                410 Gone: El recurso ha sido eliminado de manera definitiva. 
+                              </p>
   
                         </DivContent>
                     </DivArticle>
@@ -1551,12 +1566,7 @@ export function HttpCode() {
 
 ### 🔹 **Código de respuesta HTTP 410 - Gone**  
 
-#### 📌 **Descripción**  
-El código **410 Gone** indica que el recurso solicitado **ya no está disponible y no volverá a estarlo**. A diferencia del **404 Not Found**, que indica que un recurso podría estar temporalmente no disponible, el **410** confirma que el recurso ha sido eliminado de forma permanente.  
-
-🚨 **Diferencias entre 404 y 410:**  
-- **404 Not Found**: No se sabe si el recurso volverá a estar disponible.  
-- **410 Gone**: El recurso ha sido eliminado de manera definitiva.  
+ 
 
 ---
 
