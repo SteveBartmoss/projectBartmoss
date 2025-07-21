@@ -1550,6 +1550,36 @@ export function HttpCode() {
                                 404 Not Found: No se sabe si el recurso volverá a estar disponible.  
                                 410 Gone: El recurso ha sido eliminado de manera definitiva. 
                               </p>
+
+                            <h2>Usos comunes</h2>
+
+                            <p>
+                               ✔ **Eliminación permanente de recursos**  
+   - Un artículo, cuenta de usuario o documento ha sido **eliminado definitivamente**.  
+                              </p>
+
+                            <p>
+                                ✔ **Deprecación de servicios o endpoints en APIs**  
+   - Una API **descontinúa** una versión antigua y los desarrolladores deben usar la nueva.
+                              </p>
+
+                            <p>
+                                ✔ **Reglas de SEO y motores de búsqueda**  
+   - Google y otros buscadores interpretan el **410** como una eliminación definitiva y **dejan de indexar** la URL.
+                              </p>
+
+                            #### 🎯 **Casos de uso comunes**  
+
+
+
+  
+
+  
+
+✔ **Gestión de contenido en sitios web**  
+   - Una página de noticias o blog ha sido eliminada intencionalmente.  
+
+---
   
                         </DivContent>
                     </DivArticle>
@@ -1599,21 +1629,7 @@ Content-Type: application/json
 
 ---
 
-#### 🎯 **Casos de uso comunes**  
 
-✔ **Eliminación permanente de recursos**  
-   - Un artículo, cuenta de usuario o documento ha sido **eliminado definitivamente**.  
-
-✔ **Deprecación de servicios o endpoints en APIs**  
-   - Una API **descontinúa** una versión antigua y los desarrolladores deben usar la nueva.  
-
-✔ **Reglas de SEO y motores de búsqueda**  
-   - Google y otros buscadores interpretan el **410** como una eliminación definitiva y **dejan de indexar** la URL.  
-
-✔ **Gestión de contenido en sitios web**  
-   - Una página de noticias o blog ha sido eliminada intencionalmente.  
-
----
 
 #### ✅ **Resumen**  
 - **410 Gone** significa que un recurso ha sido eliminado **permanentemente**.  
