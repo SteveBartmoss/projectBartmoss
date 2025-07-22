@@ -1554,32 +1554,24 @@ export function HttpCode() {
                             <h2>Usos comunes</h2>
 
                             <p>
-                               ✔ **Eliminación permanente de recursos**  
-   - Un artículo, cuenta de usuario o documento ha sido **eliminado definitivamente**.  
+                               Eliminación permanente de recursos 
+                               Un artículo, cuenta de usuario o documento ha sido eliminado definitivamente.  
                               </p>
 
                             <p>
-                                ✔ **Deprecación de servicios o endpoints en APIs**  
-   - Una API **descontinúa** una versión antigua y los desarrolladores deben usar la nueva.
+                                Deprecación de servicios o endpoints en APIs  
+                                Una API descontinúa una versión antigua y los desarrolladores deben usar la nueva.
                               </p>
 
                             <p>
-                                ✔ **Reglas de SEO y motores de búsqueda**  
-   - Google y otros buscadores interpretan el **410** como una eliminación definitiva y **dejan de indexar** la URL.
+                                Reglas de SEO y motores de búsqueda
+                                Google y otros buscadores interpretan el 410 como una eliminación definitiva y dejan de indexar la URL.
                               </p>
 
-                            #### 🎯 **Casos de uso comunes**  
-
-
-
-  
-
-  
-
-✔ **Gestión de contenido en sitios web**  
-   - Una página de noticias o blog ha sido eliminada intencionalmente.  
-
----
+                              <p>
+                                Gestión de contenido en sitios web**  
+                                Una página de noticias o blog ha sido eliminada intencionalmente.  
+                              </p>
   
                         </DivContent>
                     </DivArticle>
