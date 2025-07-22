@@ -49,6 +49,26 @@ export function JsFunctionsOne() {
             condicion que se pasa como parametro
           </p>
 
+          <p>
+            operador spreed
+          </p>
+
+          <p>
+            arrow functions
+          </p>
+
+          <p>
+            deestruccturacion de objetos
+          </p>
+
+          <p>
+            regular expresion test()
+          </p>
+
+          <p>
+            split
+          </p>
+          
         </DivContent>
       </DivArticle>
     </>
