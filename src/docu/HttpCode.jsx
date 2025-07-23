@@ -1572,7 +1572,13 @@ export function HttpCode() {
                                 Gestión de contenido en sitios web**  
                                 Una página de noticias o blog ha sido eliminada intencionalmente.  
                               </p>
-  
+
+                              <p>
+                                410 Gone significa que un recurso ha sido eliminado permanentemente. 
+                                Se usa para APIs, sistemas de contenido y SEO. Se soluciona redirigiendo 
+                                a otro recurso o actualizando la documentación.  
+                              </p>
+
                         </DivContent>
                     </DivArticle>
                 </DivCol>
@@ -1587,9 +1593,6 @@ export function HttpCode() {
 --- codigo 410
 
 ### 🔹 **Código de respuesta HTTP 410 - Gone**  
-
- 
-
 ---
 
 #### 📝 **Ejemplo de respuesta con código 410**  
@@ -1620,13 +1623,6 @@ Content-Type: application/json
 - Si el recurso se eliminó accidentalmente, es posible restaurarlo en el servidor.  
 
 ---
-
-
-
-#### ✅ **Resumen**  
-- **410 Gone** significa que un recurso ha sido eliminado **permanentemente**.  
-- Se usa para **APIs, sistemas de contenido y SEO**.  
-- Se soluciona redirigiendo a otro recurso o actualizando la documentación.  
 
 Si necesitas manejar recursos obsoletos en una API o sitio web, dime qué tecnología estás usando. 🚀
 
