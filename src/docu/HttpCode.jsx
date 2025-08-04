@@ -1590,43 +1590,7 @@ export function HttpCode() {
 
 /*
 
---- codigo 410
 
-### 🔹 **Código de respuesta HTTP 410 - Gone**  
----
-
-#### 📝 **Ejemplo de respuesta con código 410**  
-
-📌 **Escenario:** Una API eliminó permanentemente un endpoint obsoleto (`/usuarios/antiguo`).  
-
-📌 **Solicitud del usuario:**  
-
-```http
-GET /usuarios/antiguo HTTP/1.1
-Host: api.ejemplo.com
-```
-
-📌 **Respuesta del servidor:**  
-
-```http
-HTTP/1.1 410 Gone
-Content-Type: application/json
-
-{
-    "error": "Este recurso ha sido eliminado permanentemente."
-}
-```
-
-📌 **Corrección:**  
-- Si el recurso fue movido, el servidor debe **redirigir al nuevo recurso** (`301 Moved Permanently`).  
-- Si es una API, la documentación debe **avisar a los usuarios** para evitar solicitudes fallidas.  
-- Si el recurso se eliminó accidentalmente, es posible restaurarlo en el servidor.  
-
----
-
-Si necesitas manejar recursos obsoletos en una API o sitio web, dime qué tecnología estás usando. 🚀
-
---- termino 410
 
 --- code 411
 
