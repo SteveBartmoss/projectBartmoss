@@ -1579,6 +1579,14 @@ export function HttpCode() {
                                 a otro recurso o actualizando la documentación.  
                               </p>
 
+                              <h1 id="code411">411</h1>
+
+                              <p>
+                                Indica que el servidor requiere que la petición incluya un encabezado Content-Length, pero este no fue proporcionado.
+                                Este encabezado le dice al servidor cuánto contenido (en bytes) espera recibir en el cuerpo de la petición, 
+                                lo cual es importante para poder procesarla correctamente, especialmente con métodos como POST o PUT.
+                              </p>
+
                         </DivContent>
                     </DivArticle>
                 </DivCol>
@@ -1598,14 +1606,7 @@ export function HttpCode() {
 
 ---
 
-### 🔹 **Código HTTP 411 - Length Required**
 
-#### 📌 **Descripción**
-El código **411 Length Required** indica que el servidor **requiere que la petición incluya un encabezado `Content-Length`**, pero este **no fue proporcionado**.
-
-Este encabezado le dice al servidor **cuánto contenido** (en bytes) espera recibir en el cuerpo de la petición, lo cual es importante para poder **procesarla correctamente**, especialmente con métodos como `POST` o `PUT`.
-
----
 
 #### 📝 **Ejemplo de respuesta con código 411**
 
