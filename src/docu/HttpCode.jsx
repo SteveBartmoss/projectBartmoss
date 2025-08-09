@@ -132,7 +132,11 @@ export function HttpCode() {
                 {
                     titulo: '403',
                     id: 'code403',
-                }
+                },
+                {
+                    titulo: '404',
+                    id: 'code404',
+                },
             ]
         }
     ]
