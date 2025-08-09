@@ -1561,7 +1561,7 @@ export function HttpCode() {
                             <p>
                                 Deprecación de servicios o endpoints en APIs  
                                 Una API descontinúa una versión antigua y los desarrolladores deben usar la nueva.
-                              </p>
+                            </p>
 
                             <p>
                                 Reglas de SEO y motores de búsqueda
@@ -1586,6 +1586,24 @@ export function HttpCode() {
                                 Este encabezado le dice al servidor cuánto contenido (en bytes) espera recibir en el cuerpo de la petición, 
                                 lo cual es importante para poder procesarla correctamente, especialmente con métodos como POST o PUT.
                               </p>
+
+                              <h2>Usos comunes</h2>
+
+                              <p>
+                                API RESTful 
+                                Cuando el cliente envía datos con POST, PUT o PATCH, algunos servidores esperan saber el tamaño del cuerpo antes de procesarlo.
+                              </p>
+
+                              <p>
+                                Servidores que no aceptan Transfer-Encoding: chunked  
+                                Algunos servidores no permiten envío de datos en "trozos" (chunked) y requieren un `Content-Length`.
+                              </p>
+
+                              <p>
+                                Validación de seguridad o recursos limitados  
+                                En servidores con políticas de seguridad o control de ancho de banda, saber el tamaño exacto del cuerpo evita sobrecargas o ataques.
+                              </p>
+
 
                         </DivContent>
                     </DivArticle>
@@ -1647,19 +1665,6 @@ Content-Length: 23
 
 {"nombre": "Marco"}
 ```
-
----
-
-### 🎯 **Casos de uso comunes**
-
-✔ **API RESTful**  
-Cuando el cliente envía datos con `POST`, `PUT` o `PATCH`, algunos servidores esperan saber el tamaño del cuerpo antes de procesarlo.
-
-✔ **Servidores que no aceptan Transfer-Encoding: chunked**  
-Algunos servidores no permiten envío de datos en "trozos" (chunked) y requieren un `Content-Length`.
-
-✔ **Validación de seguridad o recursos limitados**  
-En servidores con políticas de seguridad o control de ancho de banda, saber el tamaño exacto del cuerpo evita sobrecargas o ataques.
 
 ---
 
