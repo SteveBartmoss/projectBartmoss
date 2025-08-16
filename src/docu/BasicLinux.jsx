@@ -1,6 +1,3 @@
-import { DivArticle, DivCol, DivContent, DivRow } from "../componentes/contenedores/contenedores";
-import { Portada } from "../componentes/portada/portada";
-import { TreeMap } from "../componentes/treeMap/TreeMap";
 import { LayoutPost } from "../layouts/layoutPost";
 
 
