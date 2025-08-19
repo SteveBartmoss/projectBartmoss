@@ -1612,6 +1612,11 @@ export function HttpCode() {
                                 En servidores con políticas de seguridad o control de ancho de banda, saber el tamaño exacto del cuerpo evita sobrecargas o ataques.
                               </p>
 
+                              <p>
+                                411 Length Required: El servidor necesita que indiques el tamaño del contenido con Content-Length.
+                                Se evita asegurándote de incluir dicho encabezado en peticiones con cuerpo.
+                                Frecuente en servicios web y APIs que requieren control estricto sobre lo que se recibe.
+                              </p>
 
                         </DivContent>
                     </DivArticle>
@@ -1675,12 +1680,6 @@ Content-Length: 23
 ```
 
 ---
-
-### ✅ **Resumen**
-
-- **411 Length Required**: El servidor necesita que indiques el tamaño del contenido con `Content-Length`.
-- **Se evita** asegurándote de incluir dicho encabezado en peticiones con cuerpo.
-- **Frecuente** en servicios web y APIs que requieren control estricto sobre lo que se recibe.
 
 ¿Quieres un ejemplo en código JavaScript (fetch o Axios), o desde algún backend como Laravel o Express?
 
