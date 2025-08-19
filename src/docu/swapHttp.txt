@@ -1479,3 +1479,55 @@ Content-Type: application/json
 Si necesitas manejar recursos obsoletos en una API o sitio web, dime qué tecnología estás usando. 🚀
 
 --- termino 410
+
+--- code 411
+
+¡Claro! Vamos con el código de estado **HTTP 411 Length Required**:
+
+---
+
+#### 📝 **Ejemplo de respuesta con código 411**
+
+📌 **Escenario:** Un cliente intenta enviar una petición `POST` sin incluir el encabezado `Content-Length`.
+
+📌 **Petición del cliente:**
+
+```http
+POST /api/usuarios HTTP/1.1
+Host: ejemplo.com
+Content-Type: application/json
+
+{"nombre": "Marco"}
+```
+
+*→ Falta el encabezado `Content-Length`*
+
+📌 **Respuesta del servidor:**
+
+```http
+HTTP/1.1 411 Length Required
+Content-Type: text/plain
+
+El encabezado Content-Length es obligatorio.
+```
+
+---
+
+#### 🛠️ **Cómo solucionarlo**
+
+Para evitar este error, debes asegurarte de incluir el encabezado `Content-Length` en tus peticiones con cuerpo. Por ejemplo:
+
+```http
+POST /api/usuarios HTTP/1.1
+Host: ejemplo.com
+Content-Type: application/json
+Content-Length: 23
+
+{"nombre": "Marco"}
+```
+
+---
+
+¿Quieres un ejemplo en código JavaScript (fetch o Axios), o desde algún backend como Laravel o Express?
+
+--- termina 411
