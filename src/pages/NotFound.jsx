@@ -37,7 +37,7 @@ export function NotFound(){
                             <p>
                                 Puede que lo buscas no existe (aun) pero no te desanimes quisas pronto la pagina se actualice con lo que 
                                 estas buscando o puede que nunca se agregue, quien sabe pero por el momento porque no te relajas y 
-                                vuelves al chum
+                                vuelves al inicio chum
                             </p>
 
                             <a id="linkto" href="/" >Volver al inicio</a>
