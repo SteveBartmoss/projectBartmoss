@@ -1,3 +1,4 @@
+import { CodeSpaceV4 } from "../componentes/codeSpace/CodeSpaceV4"
 import { DivArticle, DivContent } from "../componentes/contenedores/contenedores"
 import { Portada } from "../componentes/portada/portada"
 
@@ -35,6 +36,40 @@ export function DockerBasic() {
           <p>
             https://docs.docker.com/engine/install/debian/
           </p>
+
+          <p>
+            A continuacion se muestran algunos pasos para instalar en distribuciones basadas en debian
+          </p>
+
+          <h2 id="instalacion">Instalacion</h2>
+
+          <p>
+            Es recomendable que tengamos actualizado el sistema por lo que podemos usar los siguientes comandos para 
+            linux mint
+          </p>
+
+          <CodeSpaceV4 title={'terminal'} rawCode={`sudo apt update \n sudo apt upgrade -y \n`} />
+
+          <h3>Intalar dependencias necesarias</h3>
+
+          <CodeSpaceV4 title={'terminal'} rawCode={`sudo apt install -y apt-transport-https ca-certificates curl software-properties-common lsb-release \n`} />
+
+          <h3>Agregar la clave GPG oficial de Docker</h3>
+
+          <CodeSpaceV4 title={'terminal'} rawCode={`curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker.gpg \n`} />
+
+          <h3>Agregar el repositorio de Docker</h3>
+
+          <CodeSpaceV4 title={'terminal'} rawCode={`echo \ \n "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \ \n $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null \n `} />
+
+
+          <h3>Instalar Docker Engine</h3>
+
+          <CodeSpaceV4 title={'terminal'} rawCode={`sudo apt update \n sudo apt install -y docker-ce docker-ce-cli containerd.io \n `} />
+
+          <h3>Probar la instalacion</h3>
+
+          <CodeSpaceV4 title={'terminal'} rawCode={`docker run hello-world \n`} />
 
           <p>
             Una imagen en Docker es una plantilla inmutable que contiene todo lo necesario para ejecutar una aplicación, incluyendo el código, las bibliotecas, las dependencias, las variables de entorno y los archivos de configuración. Las imágenes son la base para crear contenedores, que son instancias en ejecución de estas imágenes.
