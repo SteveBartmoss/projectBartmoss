@@ -1,130 +1,140 @@
 import { CodeSpaceV4 } from "../componentes/codeSpace/CodeSpaceV4"
-import { DivArticle, DivContent } from "../componentes/contenedores/contenedores"
+import { DivArticle, DivCol, DivContent, DivRow } from "../componentes/contenedores/contenedores"
 import { Portada } from "../componentes/portada/portada"
+import { LayoutPost } from "../layouts/layoutPost"
 
 export function DockerBasic() {
+
+  const pageMap = [
+    {
+      id: 1,
+      section: 'Configurar Docker',
+      childs: [
+        {
+          titulo: 'Instalacion',
+          id: 'instalacion'
+        }
+      ],
+    }
+  ]
+
   return (
     <>
-      <Portada imgPortada={"/Assets/steveA.png"} title={"Empezar con Docker"} text={"Por Steve 30/08/2024"} />
 
-      <DivArticle>
-        <DivContent>
-          <p>
-            Como desarrollador es bueno utilizar herramientas que faciliten el trabajo
-            y una de estas herramientas es docker, que nos permitira configurar
-            ambientes de desarrollo y despliegue del mismo de una forma rapida
-          </p>
+      <LayoutPost titlePortada={"Empezar con Docker"} textPortada={"Por Steve 30/08/2024"} titleMap={'Mapa del sitio'} elementsMap={pageMap}>
+        <p>
+          Como desarrollador es bueno utilizar herramientas que faciliten el trabajo
+          y una de estas herramientas es docker, que nos permitira configurar
+          ambientes de desarrollo y despliegue del mismo de una forma rapida
+        </p>
 
-          <p>
-            Docker es una aplicacion que permite crear maquinas virtuales de
-            una manera mas simple y eficiente al crear contenedores para
-            cada maquina que tenemos que implementar, cada uno de los
-            contenedores esta aislado entre ellos.
-          </p>
+        <p>
+          Docker es una aplicacion que permite crear maquinas virtuales de
+          una manera mas simple y eficiente al crear contenedores para
+          cada maquina que tenemos que implementar, cada uno de los
+          contenedores esta aislado entre ellos.
+        </p>
 
-          <p>
-            Estos contenedores son mas eficientes y portatiles que
-            una maquina virtual pero tambien dependen mas del sistema
-            operavito que contiene el motor de docker
-          </p>
+        <p>
+          Estos contenedores son mas eficientes y portatiles que
+          una maquina virtual pero tambien dependen mas del sistema
+          operavito que contiene el motor de docker
+        </p>
 
-          <p>
-            Para hacer la instalacion podemos ir a la documentacion de docker
-            en el siguiente enlace
-          </p>
+        <p>
+          Para hacer la instalacion podemos ir a la documentacion de docker
+          en el siguiente enlace
+        </p>
 
-          <p>
-            https://docs.docker.com/engine/install/debian/
-          </p>
+        <p>
+          https://docs.docker.com/engine/install/debian/
+        </p>
 
-          <p>
-            A continuacion se muestran algunos pasos para instalar en distribuciones basadas en debian
-          </p>
+        <p>
+          A continuacion se muestran algunos pasos para instalar en distribuciones basadas en debian
+        </p>
 
-          <h2 id="instalacion">Instalacion</h2>
+        <h2 id="instalacion">Instalacion</h2>
 
-          <p>
-            Es recomendable que tengamos actualizado el sistema por lo que podemos usar los siguientes comandos para 
-            linux mint
-          </p>
+        <p>
+          Es recomendable que tengamos actualizado el sistema por lo que podemos usar los siguientes comandos para
+          linux mint
+        </p>
 
-          <CodeSpaceV4 title={'terminal'} rawCode={`sudo apt update \n sudo apt upgrade -y \n`} />
+        <CodeSpaceV4 title={'terminal'} rawCode={`sudo apt update \n sudo apt upgrade -y \n`} />
 
-          <h3>Intalar dependencias necesarias</h3>
+        <h3>Intalar dependencias necesarias</h3>
 
-          <CodeSpaceV4 title={'terminal'} rawCode={`sudo apt install -y apt-transport-https ca-certificates curl software-properties-common lsb-release \n`} />
+        <CodeSpaceV4 title={'terminal'} rawCode={`sudo apt install -y apt-transport-https ca-certificates curl software-properties-common lsb-release \n`} />
 
-          <h3>Agregar la clave GPG oficial de Docker</h3>
+        <h3>Agregar la clave GPG oficial de Docker</h3>
 
-          <CodeSpaceV4 title={'terminal'} rawCode={`curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker.gpg \n`} />
+        <CodeSpaceV4 title={'terminal'} rawCode={`curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker.gpg \n`} />
 
-          <h3>Agregar el repositorio de Docker</h3>
+        <h3>Agregar el repositorio de Docker</h3>
 
-          <CodeSpaceV4 title={'terminal'} rawCode={`echo \ \n "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \ \n $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null \n `} />
+        <CodeSpaceV4 title={'terminal'} rawCode={`echo \ \n "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \ \n $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null \n `} />
 
+        <h3>Instalar Docker Engine</h3>
 
-          <h3>Instalar Docker Engine</h3>
+        <CodeSpaceV4 title={'terminal'} rawCode={`sudo apt update \n sudo apt install -y docker-ce docker-ce-cli containerd.io \n `} />
 
-          <CodeSpaceV4 title={'terminal'} rawCode={`sudo apt update \n sudo apt install -y docker-ce docker-ce-cli containerd.io \n `} />
+        <h3>Probar la instalacion</h3>
 
-          <h3>Probar la instalacion</h3>
+        <CodeSpaceV4 title={'terminal'} rawCode={`docker run hello-world \n`} />
 
-          <CodeSpaceV4 title={'terminal'} rawCode={`docker run hello-world \n`} />
+        <p>
+          Una imagen en Docker es una plantilla inmutable que contiene todo lo necesario para ejecutar una aplicación, incluyendo el código, las bibliotecas, las dependencias, las variables de entorno y los archivos de configuración. Las imágenes son la base para crear contenedores, que son instancias en ejecución de estas imágenes.
+        </p>
 
-          <p>
-            Una imagen en Docker es una plantilla inmutable que contiene todo lo necesario para ejecutar una aplicación, incluyendo el código, las bibliotecas, las dependencias, las variables de entorno y los archivos de configuración. Las imágenes son la base para crear contenedores, que son instancias en ejecución de estas imágenes.
-          </p>
+        <p>
+          Características de las imágenes Docker:
+        </p>
 
-          <p>
-            Características de las imágenes Docker:
-          </p>
+        <p>
+          Capas: Las imágenes de Docker están compuestas de capas, donde cada capa representa una instrucción en el Dockerfile, como la instalación de un paquete o la copia de archivos. Esto permite que las imágenes sean ligeras y eficientes, ya que las capas pueden ser compartidas entre múltiples imágenes.
+        </p>
 
-          <p>
-            Capas: Las imágenes de Docker están compuestas de capas, donde cada capa representa una instrucción en el Dockerfile, como la instalación de un paquete o la copia de archivos. Esto permite que las imágenes sean ligeras y eficientes, ya que las capas pueden ser compartidas entre múltiples imágenes.
-          </p>
+        <p>
+          Inmutabilidad: Una vez que una imagen es creada, no puede ser modificada. Esto garantiza que la misma imagen siempre producirá el mismo contenedor, lo que es clave para la reproducibilidad y la consistencia en diferentes entornos.
+        </p>
 
-          <p>
-            Inmutabilidad: Una vez que una imagen es creada, no puede ser modificada. Esto garantiza que la misma imagen siempre producirá el mismo contenedor, lo que es clave para la reproducibilidad y la consistencia en diferentes entornos.
-          </p>
+        <p>
+          Versionamiento: Las imágenes pueden tener múltiples versiones o tags, permitiendo a los desarrolladores y operadores especificar qué versión de la aplicación desean ejecutar.
+        </p>
 
-          <p>
-            Versionamiento: Las imágenes pueden tener múltiples versiones o tags, permitiendo a los desarrolladores y operadores especificar qué versión de la aplicación desean ejecutar.
-          </p>
+        <p>
+          Distribución: Las imágenes pueden ser distribuidas a través de un registro, como Docker Hub, lo que facilita el compartir y desplegar aplicaciones en diferentes sistemas o entornos.
+        </p>
 
-          <p>
-            Distribución: Las imágenes pueden ser distribuidas a través de un registro, como Docker Hub, lo que facilita el compartir y desplegar aplicaciones en diferentes sistemas o entornos.
-          </p>
+        <p>
+          Un contenedor en Docker es una instancia en ejecución de una imagen de Docker. Es un entorno aislado donde se ejecuta una aplicación con todas sus dependencias, configuraciones, y bibliotecas necesarias para funcionar correctamente. A diferencia de las máquinas virtuales, los contenedores son ligeros y comparten el mismo núcleo del sistema operativo, lo que los hace más eficientes en términos de recursos.
+        </p>
 
-          <p>
-            Un contenedor en Docker es una instancia en ejecución de una imagen de Docker. Es un entorno aislado donde se ejecuta una aplicación con todas sus dependencias, configuraciones, y bibliotecas necesarias para funcionar correctamente. A diferencia de las máquinas virtuales, los contenedores son ligeros y comparten el mismo núcleo del sistema operativo, lo que los hace más eficientes en términos de recursos.
-          </p>
+        <p>
+          Características principales de un contenedor Docker:
+        </p>
 
-          <p>
-            Características principales de un contenedor Docker:
-          </p>
+        <p>
+          Aislamiento: Un contenedor está aislado del sistema host y de otros contenedores, lo que significa que cada contenedor tiene su propio sistema de archivos, espacio de red, y entorno de ejecución. Sin embargo, todos los contenedores comparten el mismo núcleo del sistema operativo.
+        </p>
 
-          <p>
-            Aislamiento: Un contenedor está aislado del sistema host y de otros contenedores, lo que significa que cada contenedor tiene su propio sistema de archivos, espacio de red, y entorno de ejecución. Sin embargo, todos los contenedores comparten el mismo núcleo del sistema operativo.
-          </p>
+        <p>
+          Portabilidad: Los contenedores pueden ejecutarse de manera consistente en diferentes entornos, ya sea en una máquina local, en un servidor de producción, o en un entorno en la nube. Esto es posible porque los contenedores incluyen todas las dependencias necesarias en la imagen base.
+        </p>
 
-          <p>
-            Portabilidad: Los contenedores pueden ejecutarse de manera consistente en diferentes entornos, ya sea en una máquina local, en un servidor de producción, o en un entorno en la nube. Esto es posible porque los contenedores incluyen todas las dependencias necesarias en la imagen base.
-          </p>
+        <p>
+          Eficiencia: A diferencia de las máquinas virtuales, que requieren su propio sistema operativo completo, los contenedores comparten el núcleo del sistema operativo del host, lo que reduce el uso de recursos y permite ejecutar múltiples contenedores en una sola máquina de manera más eficiente.
+        </p>
 
-          <p>
-            Eficiencia: A diferencia de las máquinas virtuales, que requieren su propio sistema operativo completo, los contenedores comparten el núcleo del sistema operativo del host, lo que reduce el uso de recursos y permite ejecutar múltiples contenedores en una sola máquina de manera más eficiente.
-          </p>
+        <p>
+          Ciclo de vida: Los contenedores pueden iniciarse, detenerse, reiniciarse y eliminarse de manera muy rápida, lo que facilita su manejo en entornos de desarrollo, pruebas, y producción.
+        </p>
 
-          <p>
-            Ciclo de vida: Los contenedores pueden iniciarse, detenerse, reiniciarse y eliminarse de manera muy rápida, lo que facilita su manejo en entornos de desarrollo, pruebas, y producción.
-          </p>
-
-          <p>
-            Volatilidad: Un contenedor es efímero por naturaleza. Esto significa que, si se elimina un contenedor, todo lo que estaba en él se pierde a menos que se haya configurado almacenamiento persistente o se hayan guardado los datos en un volumen.
-          </p>
-
-        </DivContent>
-      </DivArticle>
+        <p>
+          Volatilidad: Un contenedor es efímero por naturaleza. Esto significa que, si se elimina un contenedor, todo lo que estaba en él se pierde a menos que se haya configurado almacenamiento persistente o se hayan guardado los datos en un volumen.
+        </p>
+      </LayoutPost>
     </>
   )
 }
