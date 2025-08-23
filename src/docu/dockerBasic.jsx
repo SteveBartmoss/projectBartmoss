@@ -1,6 +1,4 @@
 import { CodeSpaceV4 } from "../componentes/codeSpace/CodeSpaceV4"
-import { DivArticle, DivCol, DivContent, DivRow } from "../componentes/contenedores/contenedores"
-import { Portada } from "../componentes/portada/portada"
 import { LayoutPost } from "../layouts/layoutPost"
 
 export function DockerBasic() {
