@@ -1,8 +1,5 @@
 import { CodeSpace } from "../componentes/codeSpace/CodeSpace";
-import { DivArticle, DivCol, DivContent, DivRow, DivSection } from "../componentes/contenedores/contenedores"
 import { Lista } from "../componentes/lista/Lista"
-import { Portada } from "../componentes/portada/portada"
-import { TreeMap } from "../componentes/treeMap/TreeMap";
 import { LayoutPost } from "../layouts/layoutPost";
 
 export function PretyCommits() {
