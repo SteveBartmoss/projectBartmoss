@@ -3,6 +3,7 @@ import { DivArticle, DivCol, DivContent, DivRow, DivSection } from "../component
 import { Lista } from "../componentes/lista/Lista"
 import { Portada } from "../componentes/portada/portada"
 import { TreeMap } from "../componentes/treeMap/TreeMap";
+import { LayoutPost } from "../layouts/layoutPost";
 
 export function PretyCommits() {
 
@@ -18,11 +19,11 @@ export function PretyCommits() {
     {
       id: 1,
       section: 'Conventional Commits',
-      childs:[
+      childs: [
         {
           titulo: 'Descripcion',
           id: 'coventionalComits',
-        }, 
+        },
         {
           titulo: 'Formato Básico',
           id: 'formatoBasico'
@@ -37,25 +38,25 @@ export function PretyCommits() {
       id: 2,
       section: 'Relacionado con codigo',
       childs: [
-        
+
         {
-          titulo: 'feat', 
+          titulo: 'feat',
           id: 'feat',
         },
         {
-          titulo: 'fix', 
+          titulo: 'fix',
           id: 'fix',
         },
         {
-          titulo: 'docs', 
+          titulo: 'docs',
           id: 'docs',
         },
         {
-          titulo: 'style', 
+          titulo: 'style',
           id: 'style',
         },
         {
-          titulo: 'refactor', 
+          titulo: 'refactor',
           id: 'refactor',
         },
       ],
@@ -65,23 +66,23 @@ export function PretyCommits() {
       section: 'Relacionado con servidor',
       childs: [
         {
-          titulo: 'test', 
+          titulo: 'test',
           id: 'test',
         },
         {
-          titulo: 'chore', 
+          titulo: 'chore',
           id: 'chore',
         },
         {
-          titulo: 'perf', 
+          titulo: 'perf',
           id: 'perf',
         },
         {
-          titulo: 'build', 
+          titulo: 'build',
           id: 'build',
         },
         {
-          titulo: 'ci', 
+          titulo: 'ci',
           id: 'ci',
         }
       ],
@@ -90,30 +91,20 @@ export function PretyCommits() {
 
   return (
     <>
-      <Portada imgPortada={"/Assets/steveA.png"} title={"Prety Commits"} text={"Por Steve 21/08/2024"} />
+      <LayoutPost titlePortada={"Prety Commits"} textPortada={"Por Steve 21/08/2024"} titleMap={'Mapa del sitio'} elementsMap={pageMap}>
 
-      <DivRow>
+        <h1>Mejorar tus commits</h1>
 
-        <DivCol>
-          <TreeMap titulo={'Mapa del Sitio'} elementos={pageMap} />
-        </DivCol>
+        <p>
+          Cuando se trabaja con un proyecto de software ya sea
+          de manera independiente, colaborando en un proyecto de
+          codigo abierto o en una empresa es casi seguro que usen
+          un manejador de versiones como lo es git, lo cual no es
+          precisamente el tema de este post pero si tiene relacion
+          y es que los commits pueden ser algo serio
+        </p>
 
-        <DivCol>
-          <DivArticle>
-            <DivContent>
-
-              <h1>Mejorar tus commits</h1>
-
-              <p>
-                Cuando se trabaja con un proyecto de software ya sea
-                de manera independiente, colaborando en un proyecto de
-                codigo abierto o en una empresa es casi seguro que usen
-                un manejador de versiones como lo es git, lo cual no es
-                precisamente el tema de este post pero si tiene relacion
-                y es que los commits pueden ser algo serio
-              </p>
-
-              <p>
+        <p>
                 Cuando trabajamos en nuestro propio repositorio puede que
                 no sigamos un orden claro a la hora de hacer commits y
                 es que realmente los unicos que vemos estos mensajes somos
@@ -133,7 +124,7 @@ export function PretyCommits() {
                 de changelogs.
               </p>
 
-              <h2>Reglas para Redactar un Buen Commit Usando Conventional Commits</h2>
+               <h2>Reglas para Redactar un Buen Commit Usando Conventional Commits</h2>
 
               <h3 id="formatoBasico">Formato Básico</h3>
 
@@ -268,11 +259,7 @@ export function PretyCommits() {
               <p>
                 Conventional Commits proporciona una manera estándar y estructurada de redactar mensajes de commit, lo que facilita la colaboración, el mantenimiento del código, y la automatización de procesos. Al seguir estas reglas, puedes asegurarte de que los commits sean claros, concisos y útiles para cualquier persona que trabaje en el proyecto.
               </p>
-
-            </DivContent>
-          </DivArticle>
-        </DivCol>
-      </DivRow>
+      </LayoutPost>
 
     </>
   )
