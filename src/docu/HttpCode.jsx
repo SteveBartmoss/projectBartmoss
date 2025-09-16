@@ -140,6 +140,10 @@ export function HttpCode() {
                 {
                     titulo: '405',
                     id: 'code405',
+                },
+                {
+                    tiulo: '406',
+                    id: 'code406',
                 }
             ]
         }
