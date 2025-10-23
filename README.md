@@ -16,6 +16,8 @@ pero esto no sera una especie de regla ya que puede que esto sea intermmitente
 
 ### `Novedades`
 
+Se implemento un nuevo componente para mostrar el codigo con un resaltado mas eficiente
+
 Se agrego contenido para la pagina de home y ahora se muestran algunas cards 
 se agrego mas compatibilidad con telefonos mobiles y aun se sigue trabajando en eso
 
