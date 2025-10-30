@@ -2,6 +2,7 @@ import { CodeSpaceV4 } from "../componentes/codeSpace/CodeSpaceV4"
 import { DivArticle, DivCol, DivContent, DivRow } from "../componentes/contenedores/contenedores"
 import { Portada } from "../componentes/portada/portada"
 import { TreeMap } from "../componentes/treeMap/TreeMap"
+import { LayoutPost } from "../layouts/layoutPost"
 
 export function FundamentosJs(){
 
@@ -46,17 +47,9 @@ export function FundamentosJs(){
 
     return(
         <>
-            <Portada imgPortada={"/Assets/steveA.png"} title={"Fundamentos de Js"} text={"Por Steve 15/04/2025"} />
+            <LayoutPost titlePortada={"Fundamentos de Js"} textPortada={"Por Steve 15/04/2025"} titleMap={'Mapa del sitio'} elementsMap={pageMap}>
 
-            <DivRow>
-                <DivCol>
-                    <TreeMap titulo={'Mapa del sitio'} elementos={pageMap} />
-                </DivCol>
-                <DivCol>
-                    <DivArticle>
-                        <DivContent>
-
-                            <h1>Arrow Functions (Funciones Flecha)</h1>
+            <h1>Arrow Functions (Funciones Flecha)</h1>
 
                             <h2 id="sintaxisArrow">Sintaxis Basica</h2>
 
@@ -139,7 +132,7 @@ export function FundamentosJs(){
 
                             <h2 id="practicasArrow">Buenas Practicas</h2>
 
-                            <p>
+                             <p>
                                 Usar arrow functions para callbacks y metodos cortos.
                                 Evitar arrow functions en metodos de objetos si necesitas acceder a this del objeto
                                 Preferir arrow functions en React para evitar problemas con this.
@@ -195,10 +188,8 @@ export function FundamentosJs(){
                             <CodeSpaceV4 title={'Ejemplo'} rawCode={`
                                 const mensaje = \` \n Linea 1\n Linea 2\n Linea 3\n \`;\n // Respeta los saltos de línea y la indentación\n`} />
 
-                        </DivContent>
-                    </DivArticle>
-                </DivCol>
-            </DivRow>
+            </LayoutPost>
+            
         </>
     )
 
