@@ -1,12 +1,11 @@
 import { DivArticle, DivSection, DivContent } from "../componentes/contenedores/contenedores"
+import { LayoutPost } from "../layouts/layoutPost"
 
 
 export function JsFunctionsOne() {
   return (
     <>
-      <DivArticle>
-        <DivContent>
-          
+      <LayoutPost titlePortada={"Funciones utiles de Js"} textPortada={"Por Steve 26/09/2024"} titleMap={'Mapa del sitio'} elementsMap={pageMap}>
           <p>
             Cuando trabajas en programacion web te
             toparas con el lenguaje JavaScript y estas
@@ -68,9 +67,8 @@ export function JsFunctionsOne() {
           <p>
             split
           </p>
-          
-        </DivContent>
-      </DivArticle>
+
+      </LayoutPost>
     </>
   )
 }
