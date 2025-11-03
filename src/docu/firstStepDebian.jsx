@@ -3,6 +3,19 @@ import { Portada } from "../componentes/portada/portada"
 import { LayoutPost } from "../layouts/layoutPost"
 
 export function FirstStepDebian() {
+
+  const pageMap = [
+    {
+      id: 1,
+      section: 'Configuracion',
+      childs: [
+        {
+          titulo: 'cd',
+          id: 'cd'
+        }
+      ]
+    }
+  ]
   return (
     <>
       <LayoutPost titlePortada={"Mejorar debian"} textPortada={"Por Steve 27/08/2024"} titleMap={'Mapa del sitio'} elementsMap={pageMap}>
