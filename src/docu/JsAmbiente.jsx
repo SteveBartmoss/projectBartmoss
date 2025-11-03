@@ -19,7 +19,6 @@ export function JsAmbiente(){
 
     return(
         <>
-            <Portada imgPortada={"/Assets/steveA.png"} title={"Ambiente de desarrollo para js"} text={"Por Steve 04/04/2025"} />
 
             <LayoutPost titlePortada={"Ambiente de desarrollo para js"} textPortada={"Por Steve 04/04/2025"} titleMap={'Mapa del sitio'} elementsMap={pageMap}>
 
