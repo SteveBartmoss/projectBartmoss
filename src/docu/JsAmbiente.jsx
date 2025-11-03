@@ -3,6 +3,20 @@ import { DivArticle, DivCol, DivContent, DivRow } from "../componentes/contenedo
 import { LayoutPost } from "../layouts/layoutPost"
 
 export function JsAmbiente(){
+
+    const pageMap = [
+        {
+            id: 1,
+            section: 'Instalaciones',
+            childs: [
+                {
+                    titulo: 'cd',
+                    id: 'cd',
+                },
+            ]
+        }
+    ]
+
     return(
         <>
             <Portada imgPortada={"/Assets/steveA.png"} title={"Ambiente de desarrollo para js"} text={"Por Steve 04/04/2025"} />
