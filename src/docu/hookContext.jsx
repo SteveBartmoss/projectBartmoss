@@ -1,14 +1,27 @@
 import { DivArticle, DivContent } from "../componentes/contenedores/contenedores"
 import { Portada } from "../componentes/portada/portada"
+import { LayoutPost } from "../layouts/layoutPost"
 
 export function HookContext() {
-    return (
-        <>
-            <Portada imgPortada={"/Assets/steveA.png"} title={"El hook Context en react"} text={"Por Steve 21/07/2024"} />
 
-            <DivArticle>
-                <DivContent>
-                    <p>
+    const pageMap = [
+        {
+            id: 1,
+            section: 'Comandos Basicos',
+            childs: [
+                {
+                    titulo: 'cd',
+                    id: 'cd',
+                },
+            ]
+        }
+    ]
+
+    return (
+        <>  
+            <LayoutPost titlePortada={"El hook Context en react"} textPortada={"Por Steve 21/07/2024"} titleMap={'Mapa del sitio'} elementsMap={pageMap}>
+
+            <p>
                         Si has trabajado con react entonces sabras
                         que mantener el estado en los componentes
                         no suele ser tan trivial pero aun peor es
@@ -89,8 +102,8 @@ export function HookContext() {
                         es especialmente útil para datos que deben ser accesibles globalmente, como el tema (claro/oscuro),
                         el usuario autenticado, o la configuración de la aplicación.
                     </p>
-                </DivContent>
-            </DivArticle>
+
+            </LayoutPost>
 
         </>
     )
